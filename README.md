@@ -5,7 +5,7 @@
  >> We solve the hardest problems so you don't have to.
  
  
- ![DotNetBuildingBlocksMainImage](images/DotNetBuildingBlocks.jpg "DotNetBuildingBlocks")
+ ![DotNetBuildingBlocksMainImage](..Images/DotNetBuildingBlocks.jpg "DotNetBuildingBlocks")
  
 # DotNet Building Blocks
 
