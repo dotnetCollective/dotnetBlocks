@@ -9,7 +9,7 @@
  
 # DotNet Building Blocks
 
- Fundamental building blocks for developing and supporting large scalable applications and platforms. with minimal code and minimial custom technical design or problem solving. Focus on solving the "business problem".
+ Fundamental building blocks for developing and supporting large scalable applications and platforms. with minimal code and minimal custom technical design or problem solving. Focus on solving the "business problem".
  
 
 - .Net Building blocks provides design, patterns and fundamental blocks used in creating distributed scalable applications.
