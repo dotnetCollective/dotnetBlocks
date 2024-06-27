@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetBlocks.System.IO.Stre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetBlocks.System.IO.StreamBuffer.Tests", "tests\dotNetBlocks.System.IO.Tests\dotNetBlocks.System.IO.StreamBuffer.Tests\dotNetBlocks.System.IO.StreamBuffer.Tests.csproj", "{9B9246CD-334C-4B4C-A740-9DAD7FBA3578}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetBlocks.System.Threading", "src\dotNetBlocks.System.Threading\dotNetBlocks.System.Threading.csproj", "{042947BD-7852-44D5-A02D-2F8CD821A5A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetBlocks.System.Threading", "src\dotNetBlocks.System.Threading\dotNetBlocks.System.Threading.csproj", "{042947BD-7852-44D5-A02D-2F8CD821A5A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetBlocks.System.Threading.Tests", "tests\dotNetBlocks.System.Threading.Tests\dotNetBlocks.System.Threading.Tests.csproj", "{A265D605-0AEC-49E0-AB6B-C5C8B6F6D9D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetBlocks.System.Threading.Tests", "tests\dotNetBlocks.System.Threading.Tests\dotNetBlocks.System.Threading.Tests.csproj", "{A265D605-0AEC-49E0-AB6B-C5C8B6F6D9D3}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "dotNetBlocks.docs", "dotNetBlocks.docs.shproj", "{727ACB6C-4A93-4933-8011-8292C0481D60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,5 +60,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A781B71A-BE6A-4843-9B10-4EACAF950BE1}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DotNetBlocks.docs.projitems*{727acb6c-4a93-4933-8011-8292c0481d60}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
