@@ -11,4 +11,8 @@
     <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\dotNetBlocks.System.IO.csproj" />
+  </ItemGroup>
+
 </Project>
