@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetBlocks.System.IO.Stre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetBlocks.System.IO.StreamBuffer.Tests", "tests\dotNetBlocks.System.IO.Tests\dotNetBlocks.System.IO.StreamBuffer.Tests\dotNetBlocks.System.IO.StreamBuffer.Tests.csproj", "{9B9246CD-334C-4B4C-A740-9DAD7FBA3578}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetBlocks.System.Threading", "src\dotNetBlocks.System.Threading\dotNetBlocks.System.Threading.csproj", "{042947BD-7852-44D5-A02D-2F8CD821A5A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetBlocks.System.Threading.Tests", "tests\dotNetBlocks.System.Threading.Tests\dotNetBlocks.System.Threading.Tests.csproj", "{A265D605-0AEC-49E0-AB6B-C5C8B6F6D9D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,14 @@ Global
 		{9B9246CD-334C-4B4C-A740-9DAD7FBA3578}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B9246CD-334C-4B4C-A740-9DAD7FBA3578}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B9246CD-334C-4B4C-A740-9DAD7FBA3578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{042947BD-7852-44D5-A02D-2F8CD821A5A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042947BD-7852-44D5-A02D-2F8CD821A5A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042947BD-7852-44D5-A02D-2F8CD821A5A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042947BD-7852-44D5-A02D-2F8CD821A5A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A265D605-0AEC-49E0-AB6B-C5C8B6F6D9D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A265D605-0AEC-49E0-AB6B-C5C8B6F6D9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A265D605-0AEC-49E0-AB6B-C5C8B6F6D9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A265D605-0AEC-49E0-AB6B-C5C8B6F6D9D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +54,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DF2DDF5C-3BA4-4DCF-A6A5-CF7562D03CBF} = {FD93DC27-9AAC-4201-9AD6-5F22D7EBEF9E}
 		{9B9246CD-334C-4B4C-A740-9DAD7FBA3578} = {FD93DC27-9AAC-4201-9AD6-5F22D7EBEF9E}
+		{A265D605-0AEC-49E0-AB6B-C5C8B6F6D9D3} = {FD93DC27-9AAC-4201-9AD6-5F22D7EBEF9E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A781B71A-BE6A-4843-9B10-4EACAF950BE1}

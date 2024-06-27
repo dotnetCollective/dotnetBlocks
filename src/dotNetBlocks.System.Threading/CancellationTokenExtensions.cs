@@ -73,6 +73,7 @@ namespace System.Threading
         /// <seealso cref="CancellationTokenSource.CreateLinkedTokenSource(CancellationToken[])"/>
         public static CancellationTokenSource CreateLinkedTokenSource(this IEnumerable<CancellationToken> tokens)
         {
+            // Filter out the valid tokens.
             var cleanTokens = from t in tokens where t != default(CancellationToken) select t;
             return CancellationTokenSource.CreateLinkedTokenSource(cleanTokens.ToArray());
         }
@@ -83,15 +84,22 @@ namespace System.Threading
 
         /// <seealso cref="CancellationTokenSource.CreateLinkedTokenSource(CancellationToken[])"/>
         public static CancellationTokenSource CreateLinkedTokenSource(this CancellationToken cancellationToken, params CancellationToken[] tokens)
-            => tokens.Append(cancellationToken).CreateLinkedTokenSource();
+            => cancellationToken.CreateLinkedTokenSource(tokens.AsEnumerable());
 
 
         #endregion
 
         #region Linked Tokens
 
-        /// <seealso cref="CancellationTokenSource.CreateLinkedTokenSource(CancellationToken[])"/>
-        /// <remarks> This only works because disposing a token source doesn't break the token. </remarks>
+        /// <summary>
+        /// Creates the linked token.
+        /// </summary>
+        /// <param name="tokens">The tokens.</param>
+        /// <returns></returns>
+        /// <remarks>
+        /// This only works because disposing a token source doesn't break the token.
+        /// </remarks>
+        /// <seealso cref="CancellationTokenSource.CreateLinkedTokenSource(CancellationToken[])" />
         public static CancellationToken CreateLinkedToken(this IEnumerable<CancellationToken> tokens)
         {
             using var cts = tokens.CreateLinkedTokenSource(); return cts.Token;
@@ -106,7 +114,7 @@ namespace System.Threading
 
     /// <seealso cref="CancellationTokenSource.CreateLinkedTokenSource(CancellationToken[])"/>
     public static CancellationToken CreateLinkedToken(this CancellationToken cancellationToken, params CancellationToken[] tokens)
-            => cancellationToken.CreateLinkedToken(tokens);
+            => cancellationToken.CreateLinkedToken(tokens.AsEnumerable());
 
     #endregion
 

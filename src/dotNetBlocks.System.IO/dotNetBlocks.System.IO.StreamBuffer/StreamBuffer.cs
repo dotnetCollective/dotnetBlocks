@@ -17,7 +17,7 @@ namespace System.IO
     /// Buffer class controlling flow of data between reader and writer stream, limiting the amount of data in the buffer.
     /// </summary>
     /// <remarks> This class uses the <see cref="_pipe"/> class as the underlying implementation and wraps helper methods for asynchronous functionality.</remarks>
-    public class StreamBuffer : IAsyncDisposable, IDisposable
+    public class StreamBuffer: IAsyncDisposable, IDisposable
     {
         // ActionDelegateDefinitions.
         public delegate void bufferAction(Stream stream, CancellationToken cancellationToken);
@@ -25,11 +25,11 @@ namespace System.IO
 
 
         #region Pipe
-            private const long DefaultBufferSize = 65536; // 64k
-            private Pipe? _pipe;
-            // Streams
-            public Stream ReadStream => _disposed ? throw new ObjectDisposedException(nameof(StreamBuffer)) : _pipe!.Reader.AsStream();
-            public Stream WriteStream => _disposed ? throw new ObjectDisposedException(nameof(StreamBuffer)) : _pipe!.Writer.AsStream();
+        private const long DefaultBufferSize = 65536; // 64k
+        private Pipe? _pipe;
+        // Streams
+        public Stream ReadStream => _disposed ? throw new ObjectDisposedException(nameof(StreamBuffer)) : _pipe!.Reader.AsStream();
+        public Stream WriteStream => _disposed ? throw new ObjectDisposedException(nameof(StreamBuffer)) : _pipe!.Writer.AsStream();
         #endregion
 
 
@@ -38,7 +38,16 @@ namespace System.IO
         /// <summary>
         /// Initializes a new instance of the <see cref="StreamBuffer"/> class.
         /// </summary>
-        public StreamBuffer()
+        public StreamBuffer():this(default)
+        {
+
+
+        }
+
+        /// <summary>
+        /// Default buffer size is 64k
+        /// </summary>
+        public StreamBuffer(long? bufferSize = DefaultBufferSize)
         {
 
             // Initialize the master background token.
@@ -48,13 +57,6 @@ namespace System.IO
             CancelBackgroundReadToken = CancelAllBackgroundTasksToken.Token.CreateLinkedTokenSource();
             CancelBackgroundWriteToken = CancelAllBackgroundTasksToken.Token.CreateLinkedTokenSource();
 
-        }
-
-        /// <summary>
-        /// Default buffer size is 64k
-        /// </summary>
-        public StreamBuffer(long? bufferSize = DefaultBufferSize): this()
-        {
             // Configure the options based on the buffer.
             long pauseWriterThreshold = bufferSize ?? DefaultBufferSize;
             long resumeWriterThreshold = pauseWriterThreshold / 2;
@@ -78,16 +80,14 @@ namespace System.IO
         {
             // Already done?
             if ((backgroundWriteTask?.IsCompleted ?? true) && (backgroundWriteTask?.IsCompleted ?? true))
-                    return;
+                return;
             // Request cancelation of all work.
             if (!CancelAllBackgroundTasksToken.IsCancellationRequested)
                 await CancelAllBackgroundTasksToken.CancelAsync();
 
 
-
             // Wait for the background tasks to exit gracefully.
-            var tasks = new Task[] {backgroundReadTask?? Task.CompletedTask, backgroundWriteTask?? Task.CompletedTask};
-            await tasks.WaitAllAsync(waitTime?? DefaultMaxTimeToWaitForTaskComplete, cancellationToken);
+            await WaitForBackgroundAsync(waitTime, cancellationToken);
         }
 
         /// <summary>
@@ -111,10 +111,10 @@ namespace System.IO
 
         public Task? backgroundWriteTask { get; protected set; } = default;
         public bool IsBackgroundWriteTaskAssigned => backgroundWriteTask != default;
-        
+
         public Task StartBackgroundWrite(bufferAction? writeAction = default, bufferActionAsync? writeActionAsync = default, CancellationToken cancellationToken = default)
         {
-            if (IsBackgroundWriteTaskAssigned && !backgroundWriteTask!.IsCompleted) throw new InvalidOperationException("Beackground write already started.");
+            if (!(backgroundWriteTask?.IsCompleted??true)) throw new InvalidOperationException("Beackground write already started.");
 
             // We need at least one action.
             if (writeActionAsync is null && writeAction is null) ArgumentNullException.ThrowIfNull(writeAction);
@@ -144,7 +144,7 @@ namespace System.IO
 
         }
         public async Task WaitForBackgroundWriteAsync(TimeSpan? timeout = default, CancellationToken cancelWait = default)
-        => await (backgroundWriteTask?? Task.CompletedTask).WaitAsync(timeout ?? DefaultMaxTimeToWaitForTaskComplete, cancelWait);
+        => await (backgroundWriteTask??Task.CompletedTask).WaitAsync(timeout ?? DefaultMaxTimeToWaitForTaskComplete, cancelWait);
 
 
 
@@ -154,13 +154,13 @@ namespace System.IO
         protected readonly CancellationTokenSource CancelBackgroundReadToken;
 
         public Task? backgroundReadTask { get; protected set; } = default;
-        
+
         public bool IsBackgroundReadTaskAssigned => backgroundReadTask != default;
 
-        
+
         public Task StartBackgroundRead(bufferAction? readAction = default, bufferActionAsync? readActionAsync = default, CancellationToken cancellationToken = default)
         {
-            if (IsBackgroundReadTaskAssigned && !backgroundReadTask!.IsCompleted) throw new InvalidOperationException("Beackground reader already started.");
+            if (!(backgroundReadTask?.IsCompleted??true)) throw new InvalidOperationException("Beackground reader already started.");
 
             // We need at least one action.
             if (readActionAsync is null && readAction is null) ArgumentNullException.ThrowIfNull(readAction);
@@ -175,7 +175,7 @@ namespace System.IO
             return backgroundReadTask = RunActionAsync(readAction!, ReadStream, cancellationToken, CancelBackgroundReadToken.Token);
         }
 
-        public async Task CancelBackgroundReadAsync(TimeSpan? timeout=default, CancellationToken cancelWait = default)
+        public async Task CancelBackgroundReadAsync(TimeSpan? timeout = default, CancellationToken cancelWait = default)
         {
             // Already done?
             if (backgroundReadTask?.IsCompleted ?? true) return;
@@ -184,7 +184,7 @@ namespace System.IO
             if (!CancelBackgroundReadToken.IsCancellationRequested)
                 await CancelBackgroundReadToken.CancelAsync();
 
-             await WaitForBackgroundReadAsync(timeout, cancelWait).ConfigureAwait(false);
+            await WaitForBackgroundReadAsync(timeout, cancelWait).ConfigureAwait(false);
 
         }
         /// <summary>
@@ -209,7 +209,7 @@ namespace System.IO
         /// <param name="cancellationToken">action <see cref="CancellationToken"/></param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentNullException"></exception>
-        private static Task RunActionAsync(bufferAction action, Stream stream, CancellationToken masterCancel,CancellationToken cancellationToken = default)
+        private static Task RunActionAsync(bufferAction action, Stream stream, CancellationToken masterCancel, CancellationToken cancellationToken = default)
         {
             ArgumentNullException.ThrowIfNull(action); ArgumentNullException.ThrowIfNull(stream);
 
@@ -245,7 +245,7 @@ namespace System.IO
 
             // Run the action.
             using (var ts = masterCancel.CreateLinkedTokenSource(cancellationToken)) // Disposed after action completes.
-                await action(stream, ts.Token); 
+                await action(stream, ts.Token);
         }
         #endregion
 
@@ -263,7 +263,16 @@ namespace System.IO
             GC.SuppressFinalize(this);
         }
 
-        protected virtual async ValueTask DisposeAsyncCore() => await ValueTask.CompletedTask;
+        /// <summary>
+        /// Over-ridable implemention for async dispose by implementors.
+        /// </summary>
+        /// <returns></returns>
+        protected virtual async ValueTask DisposeAsyncCore()
+        {
+            // Cancal and wait for all background tasks.
+            await CancelBackgroundAsync();
+                await ValueTask.CompletedTask;
+        }
 
 
         protected virtual void Dispose(bool disposing)
@@ -274,12 +283,28 @@ namespace System.IO
                 {
                     // TODO: dispose managed state (managed objects)
 
+                    // We Assume that DisposeAsync is already called.
+                    // We assume that background threads
+                    // // had a chance to finish.
+
+                    // Clean up the pipe
                     // Dispose the pipe streams to removing blocking.
                     ReadStream.Dispose();
                     WriteStream.Dispose();
 
                     // Release a reference to the pipe
                     _pipe = null;
+
+                    // Dispose all token sources.
+                    CancelAllBackgroundTasksToken.Dispose();
+                    CancelBackgroundReadToken.Dispose();
+                    CancelBackgroundWriteToken.Dispose();
+                    // Release Tasks.
+                    backgroundReadTask?.Dispose();
+                    backgroundReadTask  = null;
+
+                    backgroundWriteTask?.Dispose();
+                    backgroundWriteTask = null;
                 }
 
                 // TODO: free unmanaged resources (unmanaged objects) and override finalizer
