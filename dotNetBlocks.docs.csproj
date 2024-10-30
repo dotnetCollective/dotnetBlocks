@@ -20,6 +20,10 @@
 
 
 	<Target Name="Build">
+		<ItemGroup>
+			<Compile Remove="**.cs" />
+			
+		</ItemGroup>
 	</Target>
 
 </Project>
