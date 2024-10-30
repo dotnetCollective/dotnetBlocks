@@ -17,11 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetBlocks.System.Threadi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetBlocks.System.Threading.Tests", "tests\dotNetBlocks.System.Threading.Tests\dotNetBlocks.System.Threading.Tests.csproj", "{A265D605-0AEC-49E0-AB6B-C5C8B6F6D9D3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetBlocks.docs", "dotNetBlocks.docs.csproj", "{0B88EC60-9211-4266-A345-C6CDBC67ECF2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetBlocks.Business.Shared", "..\dotNetBlocks.Business.Shared\dotNetBlocks.Business.Shared.csproj", "{9BBB03B5-1AEA-40AA-B686-EAE16CA15464}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetBlocks.Business", "..\DotNetBlocks.Business\DotNetBlocks.Business.csproj", "{DA7ECD90-13F6-4DF8-8F9B-850F277174F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetBlocks.docs", "dotNetBlocks.docs.csproj", "{7538D6FA-F13E-4466-8B9D-C2B76F0526EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,9 +53,6 @@ Global
 		{A265D605-0AEC-49E0-AB6B-C5C8B6F6D9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A265D605-0AEC-49E0-AB6B-C5C8B6F6D9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A265D605-0AEC-49E0-AB6B-C5C8B6F6D9D3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B88EC60-9211-4266-A345-C6CDBC67ECF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B88EC60-9211-4266-A345-C6CDBC67ECF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B88EC60-9211-4266-A345-C6CDBC67ECF2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9BBB03B5-1AEA-40AA-B686-EAE16CA15464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9BBB03B5-1AEA-40AA-B686-EAE16CA15464}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BBB03B5-1AEA-40AA-B686-EAE16CA15464}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -64,6 +61,9 @@ Global
 		{DA7ECD90-13F6-4DF8-8F9B-850F277174F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA7ECD90-13F6-4DF8-8F9B-850F277174F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA7ECD90-13F6-4DF8-8F9B-850F277174F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7538D6FA-F13E-4466-8B9D-C2B76F0526EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7538D6FA-F13E-4466-8B9D-C2B76F0526EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7538D6FA-F13E-4466-8B9D-C2B76F0526EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

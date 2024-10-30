@@ -11,10 +11,12 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)docs**" />
-    <None Include="$(MSBuildThisFileDirectory)docs\test.md" />
     <None Include="$(MSBuildThisFileDirectory)license" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)Images\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)docs\" />
   </ItemGroup>
 </Project>

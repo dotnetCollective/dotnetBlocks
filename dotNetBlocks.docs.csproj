@@ -9,12 +9,12 @@
 	</PropertyGroup>
 	
 	<ItemGroup>
+			<EmbeddedResource Remove="src\**" />
 			<None Remove="src\**" />
-			<Content Remove="src\**" />
-
-			<None Include="src\**"></None>
 			<None Include="*.md"></None>
+			<Compile Remove="src\**" />
 			<Content Remove="*.md" />
+		<None Remove="*.projitems"/>
 
 		</ItemGroup>
 
