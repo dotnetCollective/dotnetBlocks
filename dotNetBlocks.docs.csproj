@@ -9,19 +9,17 @@
 	</PropertyGroup>
 	
 	<ItemGroup>
-			<EmbeddedResource Remove="src\**" />
-			<None Remove="src\**" />
-			<None Include="*.md"></None>
-			<Compile Remove="src\**" />
-			<Content Remove="*.md" />
-		<None Remove="*.projitems"/>
-
+		<None Include="*.md" Exclude="*.cs"></None>
 		</ItemGroup>
+	
+	<ItemGroup>
+	  <Folder Include="docs\Framework\" />
+	</ItemGroup>
 
 
 	<Target Name="Build">
 		<ItemGroup>
-			<Compile Remove="**.cs" />
+			<Compile Remove="**" />
 			
 		</ItemGroup>
 	</Target>
