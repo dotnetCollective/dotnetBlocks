@@ -14,7 +14,7 @@ namespace System.Threading.Tasks
         /// Disposes resources after task completion.
         /// </summary>
         /// <param name="taskusingdispoable">The <see cref="Task"/>> using the resource</param>
-        /// <param name="disposable"><see cref="IDisposable" resource to dispose./></param>
+        /// <param name="disposable"><see cref="IDisposable" /> resource to dispose. </param>
         /// <param name="cancelDispose"><see cref="CancellationToken"/> cancel the dispose process.</param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentNullException"></exception>
@@ -28,8 +28,8 @@ namespace System.Threading.Tasks
         /// <summary>
         /// Disposes resources after task completion.
         /// </summary>
-        /// <param name="taskusingdispoable">The <see cref="Task"/>> using the resource</param>
-        /// <param name="disposable"><see cref="IDisposable" resource to dispose./></param>
+        /// <param name="taskusingdisposable">The <see cref="Task"/>> using the resource</param>
+        /// <param name="disposable"><see cref="IDisposable" /> resource to dispose./></param>
         /// <param name="cancelDispose"><see cref="CancellationToken"/> cancel the dispose process.</param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentNullException"></exception>

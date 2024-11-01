@@ -1,0 +1,4 @@
+﻿#document build acache files
+**/cache
+#documentation output, relocate later
+**/output

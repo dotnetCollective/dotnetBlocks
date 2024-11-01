@@ -25,10 +25,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetBlocks.Business.Share
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3FEA2FD7-5AEE-4A7A-9E3F-CAB69F5A4C52}"
 	ProjectSection(SolutionItems) = preProject
-		dotNetBlocks.common.props = dotNetBlocks.common.props
+		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetBlocks.docs", "dotNetBlocks.docs.csproj", "{CEEA34F0-5ADE-4853-9F6A-C12D2015F30E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6E54EFB0-B815-42B7-8B9E-A718064B8DDC}"
+	ProjectSection(SolutionItems) = preProject
+		src\directory.build.props = src\directory.build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "buildtarget", "buildtarget", "{60EF7900-9E0B-4765-A621-CDDDD86D10B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{E4CFA930-7348-4257-BFAB-8F8BEF9BFA31}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetBlocks.docs", "src\dotNetBlocks.docs\dotNetBlocks.docs.csproj", "{0F03EA1A-79E8-43D2-86AB-50F5905AA28E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,9 +84,10 @@ Global
 		{49792FCF-2C15-4D41-969A-BEAFC0E0622D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49792FCF-2C15-4D41-969A-BEAFC0E0622D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49792FCF-2C15-4D41-969A-BEAFC0E0622D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CEEA34F0-5ADE-4853-9F6A-C12D2015F30E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEEA34F0-5ADE-4853-9F6A-C12D2015F30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CEEA34F0-5ADE-4853-9F6A-C12D2015F30E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F03EA1A-79E8-43D2-86AB-50F5905AA28E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F03EA1A-79E8-43D2-86AB-50F5905AA28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F03EA1A-79E8-43D2-86AB-50F5905AA28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F03EA1A-79E8-43D2-86AB-50F5905AA28E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +97,9 @@ Global
 		{9B9246CD-334C-4B4C-A740-9DAD7FBA3578} = {FD93DC27-9AAC-4201-9AD6-5F22D7EBEF9E}
 		{A265D605-0AEC-49E0-AB6B-C5C8B6F6D9D3} = {FD93DC27-9AAC-4201-9AD6-5F22D7EBEF9E}
 		{49792FCF-2C15-4D41-969A-BEAFC0E0622D} = {FD93DC27-9AAC-4201-9AD6-5F22D7EBEF9E}
+		{6E54EFB0-B815-42B7-8B9E-A718064B8DDC} = {60EF7900-9E0B-4765-A621-CDDDD86D10B8}
+		{60EF7900-9E0B-4765-A621-CDDDD86D10B8} = {3FEA2FD7-5AEE-4A7A-9E3F-CAB69F5A4C52}
+		{E4CFA930-7348-4257-BFAB-8F8BEF9BFA31} = {60EF7900-9E0B-4765-A621-CDDDD86D10B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A781B71A-BE6A-4843-9B10-4EACAF950BE1}

@@ -78,7 +78,8 @@ namespace System.Threading
             return CancellationTokenSource.CreateLinkedTokenSource(cleanTokens.ToArray());
         }
 
-        /// <seealso cref="cref="CancellationTokenSource.CreateLinkedTokenSource(CancellationToken[])"/>
+
+        /// <seealso cref="CancellationTokenSource.CreateLinkedTokenSource(CancellationToken[])"/>
         public static CancellationTokenSource CreateLinkedTokenSource(this CancellationToken cancellationToken, IEnumerable<CancellationToken> tokens)
             => tokens.Append(cancellationToken).CreateLinkedTokenSource();
 
@@ -106,7 +107,7 @@ namespace System.Threading
         }
         
 
-        /// <seealso cref="cref="CancellationTokenSource.CreateLinkedTokenSource(CancellationToken[])"/>
+        /// <seealso cref="CancellationTokenSource.CreateLinkedTokenSource(CancellationToken[])"/>
         public static CancellationToken CreateLinkedToken(this CancellationToken cancellationToken, IEnumerable<CancellationToken> tokens)
         {
             using var cts = tokens.CreateLinkedTokenSource(); return cts.Token;
