@@ -23,7 +23,7 @@
 
 
       <!-- Makes files and folders in docs visible in editor-->
-        <None Include="../../docs/*/*.md" />
+        <None Include="..\..\docs\**\*\*.md" />
 
 
   </ItemGroup>

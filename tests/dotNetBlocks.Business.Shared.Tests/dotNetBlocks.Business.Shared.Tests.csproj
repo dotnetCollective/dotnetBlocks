@@ -23,6 +23,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\..\..\dotNetBlocks.Business.Shared\dotNetBlocks.Business.Shared.csproj" />
+		<ProjectReference Include="..\..\src\dotNetBlocks.Business.Shared\dotNetBlocks.Business.Shared.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

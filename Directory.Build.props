@@ -21,7 +21,7 @@
 
         <PackageProjectUrl>https://github.com/dotnetCollective/dotnetBlocks</PackageProjectUrl>
         <PackageTags>DotNetBlocks architecture</PackageTags>
-        <PublicRepositoryUrl>https://github.com/dotnet/orleans</PublicRepositoryUrl>
+        <PublicRepositoryUrl>https://github.com/dotnetCollective/dotnetBlocks</PublicRepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <LangVersion>12</LangVersion>
         <Features>strict</Features>

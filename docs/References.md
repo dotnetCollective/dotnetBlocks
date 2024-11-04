@@ -1,6 +1,9 @@
-﻿
+﻿# Building projects
 #Centrally managing properties in MS Build
 https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022
+
+https://kaylumah.nl/2021/03/27/set-nuget-metadata-via-msbuild.html
+
 
 # Documentation Generation
 https://www.statiq.dev/
