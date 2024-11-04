@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using System.Threading.Tasks;
+using Devlead.Statiq.Themes;
 using Statiq.App;
 using Statiq.Web;
 
@@ -20,7 +21,11 @@ namespace dotNetBlocks.docs
 
             return await Bootstrapper
                 .Factory
-                .CreateWeb(args)
+                .CreateDefault(args)
+                // This additional functionality pulls in the latest version of the themes site once running.
+                //.AddThemeFromUri(new Uri("https://github.com/statiqdev/CleanBlog/archive/refs/heads/main.zip"))
+
+                .AddWeb()
                 .RunAsync();
         }
     }
