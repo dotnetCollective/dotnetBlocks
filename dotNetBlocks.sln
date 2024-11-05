@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetBlocks.System.Threadi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNetBlocks.docs", "dotNetBlocks.docs.csproj", "{0B88EC60-9211-4266-A345-C6CDBC67ECF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetBlocks.Business.Shared", "..\dotNetBlocks.Business.Shared\dotNetBlocks.Business.Shared.csproj", "{9BBB03B5-1AEA-40AA-B686-EAE16CA15464}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetBlocks.Business.Shared", "src\dotNetBlocks.Business.Shared\dotNetBlocks.Business.Shared.csproj", "{9BBB03B5-1AEA-40AA-B686-EAE16CA15464}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetBlocks.Business", "..\DotNetBlocks.Business\DotNetBlocks.Business.csproj", "{DA7ECD90-13F6-4DF8-8F9B-850F277174F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetBlocks.Business", "src\DotNetBlocks.Business\DotNetBlocks.Business.csproj", "{DA7ECD90-13F6-4DF8-8F9B-850F277174F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
