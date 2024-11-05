@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "dotNetBlocks.docs": {
+      "commandName": "Project",
+      "commandLineArgs": "preview -l Debug"
+    }
+  }
+}
