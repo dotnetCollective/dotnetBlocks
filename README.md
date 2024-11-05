@@ -15,6 +15,8 @@
 - .Net Building blocks provides design, patterns and fundamental blocks used in creating distributed scalable applications.
 - Building blocks allow developers and organizations to build applications that rapidly scale quickly with strong repeatable design patterns.
 
+## Components
+[Stream Buffer](src/dotNetBlocks.System.IO/dotNetBlocks.System.IO.StreamBuffer/readme.md) - allows blocked writing to and reading from the streams concurrently with restricted memory usage. write stream and read stream connected by a memory buffer - provides a connected write and read stream and threading options.
 
 ## License
 
