@@ -23,17 +23,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetBlocks.Business", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetBlocks.Business.Shared.Tests", "tests\dotNetBlocks.Business.Shared.Tests\dotNetBlocks.Business.Shared.Tests.csproj", "{49792FCF-2C15-4D41-969A-BEAFC0E0622D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3FEA2FD7-5AEE-4A7A-9E3F-CAB69F5A4C52}"
-	ProjectSection(SolutionItems) = preProject
-		.gitignore = .gitignore
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6E54EFB0-B815-42B7-8B9E-A718064B8DDC}"
 	ProjectSection(SolutionItems) = preProject
 		src\directory.build.props = src\directory.build.props
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "buildtarget", "buildtarget", "{60EF7900-9E0B-4765-A621-CDDDD86D10B8}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{E4CFA930-7348-4257-BFAB-8F8BEF9BFA31}"
 	ProjectSection(SolutionItems) = preProject
