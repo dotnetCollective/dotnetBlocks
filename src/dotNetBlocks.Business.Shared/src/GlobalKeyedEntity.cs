@@ -10,7 +10,7 @@ namespace dotNetBlocks.Business.Shared
     /// <summary>
     /// Keyed entity with GlobalId <see cref=" Guid"/> for a dual key strategy.
     /// </summary>
-    /// <seealso cref="dotNetBlocks.Business.Shared.KeyedEntity&lt;System.Guid&gt;" />
+    /// <seealso cref="dotNetBlocks.Business.Shared.KeyedEntity{TId}" />
     public class GlobalKeyedEntity<TId> : KeyedEntity<TId>
                 where TId : struct, IEquatable<TId> // TODO: Convertible, IComparable
 

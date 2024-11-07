@@ -31,10 +31,10 @@ namespace StreamBufferTests
 
         }
 
-        [TestMethod]
         /// <summary>
         /// Writes in background using an async method.
         /// </summary>
+        [TestMethod]
         public void Background_AsyncWriter_Test()
         {
             const int testSize = 4096;
@@ -54,11 +54,11 @@ namespace StreamBufferTests
             }
         }
 
-        [TestMethod]
         /// <summary>
         /// Background Synchronous writer method is blocked until the data is read
         /// and then it is released. Test hangs if this doesn't work properly.
         /// </summary>
+        [TestMethod]
         public void Background_sync_Writer_blocked_until_read()
         {
             const int testSize = 4096;

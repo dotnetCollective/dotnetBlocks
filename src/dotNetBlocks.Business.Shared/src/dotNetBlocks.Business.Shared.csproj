@@ -4,9 +4,25 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageProjectUrl>https://github.com/dotnetCollective</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
+
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+
+    <PackageDescription> Contracts and models for the DotNetBlocks event based actor model architecture.
+
+Commonly Used Types:
+
+    Operation
+    BusinessEntity
+    Keyed Entity
+    AuditProperties
+    IBusinessLogic
+    IKeyedEntity
+    GlobalKeyedEntity
+    AuditableKeyedEntity
+    AuditableGlobalKeyedEntity
+
+</PackageDescription>
 
   </PropertyGroup>
 

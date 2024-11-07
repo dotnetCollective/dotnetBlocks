@@ -9,7 +9,7 @@ namespace dotNetBlocks.Business.Shared
 
 
     /// <summary>
-    /// class represents a <cref="BusinessEntity"/> with unique identifier.
+    /// class represents a <see cref="BusinessEntity"/> with unique identifier.
     /// </summary>
     /// <seealso cref="dotNetBlocks.Business.Shared.BusinessEntity" />
     public abstract class KeyedEntity : BusinessEntity

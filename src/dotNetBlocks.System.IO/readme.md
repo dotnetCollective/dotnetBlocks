@@ -1,4 +1,11 @@
-﻿# Stream Buffer
+﻿# dotNetBlocks.System.IO
+
+New Stream functionality.
+
+* Stream Buffer - adanced concurrent reading and writing pass through
+
+
+# Stream Buffer
 A stream buffer wraps a source stream, allowing the consumer code to read the stream without pulling the entire stream into memory.
 # Problem solved
 In the code pattern where a source wants to write into a sink stream and another process wants to read the stream to write it into another destination, developers often use a MemoryStream class.

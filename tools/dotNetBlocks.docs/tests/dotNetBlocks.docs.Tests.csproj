@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\dotNetBlocks.docs\dotNetBlocks.docs.csproj" />
+    <ProjectReference Include="..\src\dotNetBlocks.docs.csproj" />
   </ItemGroup>
 
 </Project>

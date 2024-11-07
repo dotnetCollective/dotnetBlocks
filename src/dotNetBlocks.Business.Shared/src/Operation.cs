@@ -20,7 +20,7 @@ namespace dotNetBlocks.Business.Shared
         /// </summary>
         /// 
         /// <remarks>
-        /// Identfies the current transaction this operation is a part of.
+        /// Identifies the current transaction this operation is a part of.
         /// </remarks>
         /// <value>
         /// The transaction identifier.

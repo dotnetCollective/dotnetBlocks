@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\dotNetBlocks.System.Threading\dotNetBlocks.System.Threading.csproj" />
+    <ProjectReference Include="..\src\dotNetBlocks.System.Threading.csproj" />
   </ItemGroup>
 
   <ItemGroup>

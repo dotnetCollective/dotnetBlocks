@@ -1,6 +1,7 @@
 <Project>
   <!-- Set the repository root into a variable -->
   <PropertyGroup>
+     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <SourceRoot>$(MSBuildThisFileDirectory)</SourceRoot>
   </PropertyGroup>
 
@@ -15,7 +16,10 @@
 		<Copyright>@ .Net Collective. All rights reserved.</Copyright>
 
 
-		<Version> 1.0 </Version>
+        <!--
+		<Version> 1.0.0-pre-release-$([System.DateTime]::Now.ToString("yyyy-MM-dd-HHmmss")) </Version>
+        -->
+		<Version> 1.0.0-alpha-pre-release-$([System.DateTime]::Now.ToString("yyyy-MM-dd-HHmmss")) </Version>
 
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
