@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RepositoryType>git</RepositoryType>
+
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+
+    <PackageDescription> Contracts and models for the DotNetBlocks event based actor model architecture.
+
+Commonly Used Types:
+
+    Operation
+    BusinessEntity
+    Keyed Entity
+    AuditProperties
+    IBusinessLogic
+    IKeyedEntity
+    GlobalKeyedEntity
+    AuditableKeyedEntity
+    AuditableGlobalKeyedEntity
+
+</PackageDescription>
+
+  </PropertyGroup>
+
+	
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="RT.Comb" Version="4.0.1" />
+  </ItemGroup>
+
+</Project>

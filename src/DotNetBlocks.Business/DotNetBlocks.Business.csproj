@@ -4,6 +4,16 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+
+    <PackageDescription> Business functions, implementations, extensions and helpers  for operation based actor model event driven DotNetBlocks architecture.
+
+Commonly Used Types:
+
+</PackageDescription>
+
+
   </PropertyGroup>
 	
 	<PropertyGroup>
@@ -12,6 +22,10 @@
 
 
 	</PropertyGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\dotNetBlocks.Business.Shared\src\dotNetBlocks.Business.Shared.csproj" />
+	</ItemGroup>
 		
 
 </Project>
