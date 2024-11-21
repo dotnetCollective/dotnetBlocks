@@ -12,13 +12,13 @@ namespace dotNetBlocks.Business.Shared
     /// <remarks>
     /// Operations are similar to a command patter, but are not active. They contain data only and are not active except for self-validation.
     /// </remarks>
-    public class Operation : BusinessActivity
+    public class Result : Event
     {
-        public Operation(): base() { }
+        public Result(): base() { }
 
-        public Operation(Operation relatedTo) : base(relatedTo) { }
+        public Result(Event relatedTo) : base(relatedTo) { }
 
-        public Operation(BusinessActivity relatedTo) : base(relatedTo){ }
+        public Result(BusinessActivity relatedTo) : base(relatedTo){ }
     }
 
 
@@ -26,10 +26,10 @@ namespace dotNetBlocks.Business.Shared
     /// operation containing <see cref="BusinessEntity"/> required to execute the business operation.
     /// </summary>
     /// <typeparam name="TEntity">The type of the entity.</typeparam>
-    public class Operation<TEntity> : Operation
+    public class Result<TEntity> : Result
         where TEntity : BusinessEntity, new()
     {
-        public Operation(TEntity? entity, Operation relatedTo) : base(relatedTo)
+        public Result(TEntity? entity, Event relatedTo) : base(relatedTo)
         {
             Entity = entity;
         }
