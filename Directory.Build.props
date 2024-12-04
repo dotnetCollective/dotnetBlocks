@@ -1,3 +1,4 @@
+<!-- Repo root build properties. -->
 <Project>
   <!-- Set the repository root into a variable -->
   <PropertyGroup>

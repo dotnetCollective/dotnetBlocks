@@ -1,3 +1,6 @@
+<!--
+Buidl properties for all the test projects
+-->
 <Project>
 	<PropertyGroup>
 		<_ParentDirectoryBuildPropsPath Condition="'$(_DirectoryBuildPropsFile)' != ''">$([System.IO.Path]::Combine('..', '$(_DirectoryBuildPropsFile)'))</_ParentDirectoryBuildPropsPath>
@@ -6,7 +9,10 @@
 	<!--
 	<Import Project="$(_ParentDirectoryBuildPropsPath)" Condition="Exists('$(_ParentDirectoryBuildPropsPath)')"/>
 	-->
+	<!--
 	<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+	-->
+
 	<PropertyGroup>
 		<NuGetAudit>false</NuGetAudit>
 		<WarningLevel>3</WarningLevel>
@@ -20,8 +26,9 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
-		<IsPackable>true</IsPackable>
-	</PropertyGroup>
+		<IsPackable>False</IsPackable>
+<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+</PropertyGroup>
 
 	<PropertyGroup>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
