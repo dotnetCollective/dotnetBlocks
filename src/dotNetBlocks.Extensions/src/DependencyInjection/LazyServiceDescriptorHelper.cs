@@ -332,10 +332,10 @@ namespace dotNetBlocks.Extensions.DependencyInjection
             [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] Type implementationType,
             ServiceLifetime lifetime)
         {
-            var lazyService = serviceType.MakeGenericType(serviceType);
+            var lazyServiceType = serviceType.MakeLazyType();
             var implementationFactory =
-                CreateLazyFactoryByType(lazyService, implementationType);
-            return ServiceDescriptor.Describe(serviceType, implementationFactory, lifetime);
+                CreateLazyFactoryByType(serviceType, implementationType);
+            return ServiceDescriptor.Describe(lazyServiceType, implementationFactory, lifetime);
         }
 
 
@@ -350,10 +350,11 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// <returns>A new valueInstance of <see cref="ServiceDescriptor"/>.</returns>
         internal static ServiceDescriptor DescribeLazy(Type serviceType, Func<IServiceProvider, object> implementationFactory, ServiceLifetime lifetime)
         {
-            var lazyService = serviceType.MakeGenericType(serviceType);
             implementationFactory =
-                CreateLazyFactoryByType(lazyService,valuefactoryMethod:implementationFactory);
-            return ServiceDescriptor.Describe(serviceType, implementationFactory, lifetime);
+                CreateLazyFactoryByType(serviceType,valuefactoryMethod:implementationFactory);
+
+            var lazyServiceType = serviceType.MakeLazyType();
+            return ServiceDescriptor.Describe(lazyServiceType, implementationFactory, lifetime);
         }
 
 

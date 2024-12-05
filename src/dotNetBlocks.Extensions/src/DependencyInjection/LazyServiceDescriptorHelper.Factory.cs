@@ -12,11 +12,12 @@ namespace dotNetBlocks.Extensions.DependencyInjection
 
 	{
 		#region Types and constants
+		private const BindingFlags SearchBindingFlags = BindingFlags.Default | BindingFlags.Instance | BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.NonPublic|BindingFlags.Static;
 		private readonly static Type LazyType = typeof(Lazy<>);
-		private readonly static Type LazyServiceType = typeof(LazyService<>);
+		private readonly static Type LazyServiceType = typeof(LazyService<>);		
 
-		private readonly static MethodInfo createlazyFactoryMethod = typeof(DependencyInjectionExtensions).GetMethod(nameof(CreateLazyFactory)) ?? throw new InvalidOperationException();
-		private readonly static MethodInfo createlazyFactoryMethodKeyed = typeof(DependencyInjectionExtensions).GetMethod(nameof(CreateLazyFactoryKeyed)) ?? throw new InvalidOperationException();
+		private readonly static MethodInfo createlazyFactoryMethod = typeof(LazyServiceDescriptorHelper).GetMethod(nameof(CreateLazyFactory),SearchBindingFlags) ?? throw new InvalidOperationException();
+		private readonly static MethodInfo createlazyFactoryMethodKeyed = typeof(LazyServiceDescriptorHelper).GetMethod(nameof(CreateLazyFactoryKeyed), SearchBindingFlags) ?? throw new InvalidOperationException();
 		#endregion
 
 		private static Func<IServiceProvider, object> CreateLazyFactoryByType(Type serviceType, Type? implementationType = default, object? lazyInstance = default, object? valueInstance = default, Func<IServiceProvider, object?>? valuefactoryMethod = default)
