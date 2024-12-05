@@ -24,3 +24,14 @@ You also can't use a generic factory method and a dynamic keyword because there 
 
 Solution inspiration is this discussion aboard
 [Solution ideas discussion - for credit](https://stackoverflow.com/questions/44934511/does-net-core-dependency-injection-support-lazyt)
+
+## details
+
+This library implements two solutions internally. One uses a Lazy Implementation class that inherits from Lazy but with a constructor with DI support. This is a simple but effective solution to the problem
+and is the soution implementation when you "add Lazy Support" to the service collection. It registers this LazyService type for use in all lazy<T> requests.
+
+The second implementation is a "true lazy" implementation using a delegate constructor to create an true Lazy class with a dynamic costructor. This is the solution used when you use a Lazy registration for a type or the AsLazy registration extension method.
+The "true" implementation is modeled on the standard microsoft libraries, using copied and modified versions of the microsoft DI service registration and service descriptor static methods.
+
+
+The internal pattern is to create ServiceDescriptors using the "describe" pattern and add those to the service collection. The describe method creates the appropriate factories and lifetimes supporting the requeted lazy usage registration type.

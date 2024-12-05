@@ -9,20 +9,10 @@ using System;
 
 namespace dotNetBlocks.Extensions.DependencyInjection
 {
-    internal class LazyServiceCollectionServiceExtensions
-    {
-    }
-}
-// Licensed to the .NET Foundation under one or more agreements.
-// The .NET Foundation licenses this file to you under the MIT license.
-
-
-namespace dotNetBlocks.Extensions.DependencyInjection
-{
     /// <summary>
     /// Extension methods for adding services to an <see cref="IServiceCollection" />.
     /// </summary>
-    public static partial class ServiceCollectionServiceExtensions
+    public static partial class ServiceservicesServiceLazyExtensions
     {
         /// <summary>
         /// Adds a transient service of the type specified in <paramref name="serviceType"/> with an
@@ -31,21 +21,20 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
         /// <param name="serviceType">The type of the service to register.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
         /// <param name="implementationType">The implementation type of the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Transient"/>
-        public static IServiceCollection AddKeyedTransientLazy(
+        public static IServiceCollection AddTransientLazy(
             this IServiceCollection services,
             Type serviceType,
-            object? serviceKey,
             [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] Type implementationType)
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(serviceType);
             ArgumentNullException.ThrowIfNull(implementationType);
-
-            return AddKeyedLazy(services, serviceType, serviceKey, implementationType, ServiceLifetime.Transient);
+            var descriptor = LazyServiceDescriptorHelper.DescribeTransientLazy(serviceType, implementationType);
+            services.Add(descriptor);
+            return services;
         }
 
         /// <summary>
@@ -55,21 +44,22 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
         /// <param name="serviceType">The type of the service to register.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+
         /// <param name="implementationFactory">The factory that creates the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Transient"/>
-        public static IServiceCollection AddKeyedTransientLazy(
+        public static IServiceCollection AddTransientLazy(
             this IServiceCollection services,
             Type serviceType,
-            object? serviceKey,
-            Func<IServiceProvider, object?, object> implementationFactory)
+            Func<IServiceProvider,object> implementationFactory)
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(serviceType);
             ArgumentNullException.ThrowIfNull(implementationFactory);
 
-            return AddKeyedLazy(services, serviceType, serviceKey, implementationFactory, ServiceLifetime.Transient);
+            var descriptor = LazyServiceDescriptorHelper.DescribeTransientLazy(serviceType, implementationFactory);
+            services.Add(descriptor);
+            return services;
         }
 
         /// <summary>
@@ -80,18 +70,16 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// <typeparam name="TService">The type of the service to add.</typeparam>
         /// <typeparam name="TImplementation">The type of the implementation to use.</typeparam>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Transient"/>
-        public static IServiceCollection AddKeyedTransientLazy<TService, [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TImplementation>(
-            this IServiceCollection services,
-            object? serviceKey)
+        public static IServiceCollection AddTransientLazy<TService, [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TImplementation>(
+            this IServiceCollection services)
             where TService : class
             where TImplementation : class, TService
         {
             ArgumentNullException.ThrowIfNull(services);
 
-            return services.AddKeyedTransientLazy(typeof(TService), serviceKey, typeof(TImplementation));
+            return services.AddTransientLazy(typeof(TService), typeof(TImplementation));
         }
 
         /// <summary>
@@ -100,19 +88,20 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
         /// <param name="serviceType">The type of the service to register and the implementation to use.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Transient"/>
-        public static IServiceCollection AddKeyedTransientLazy(
+        public static IServiceCollection AddTransientLazy(
             this IServiceCollection services,
-            [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] Type serviceType,
-            object? serviceKey)
+            [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] Type serviceType)
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(serviceType);
 
-            return services.AddKeyedTransientLazy(serviceType, serviceKey, serviceType);
+            var descriptor = LazyServiceDescriptorHelper.DescribeTransientLazy(serviceType, serviceType);
+            services.Add(descriptor);
+            return services;
         }
+
 
         /// <summary>
         /// Adds a transient service of the type specified in <typeparamref name="TService"/> to the
@@ -120,17 +109,16 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <typeparam name="TService">The type of the service to add.</typeparam>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Transient"/>
-        public static IServiceCollection AddKeyedTransientLazy<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TService>(
-            this IServiceCollection services,
-            object? serviceKey)
+        public static IServiceCollection AddTransientLazy<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TService>(
+            this IServiceCollection services)
             where TService : class
         {
             ArgumentNullException.ThrowIfNull(services);
 
-            return services.AddKeyedTransientLazy(typeof(TService), serviceKey);
+            return services.AddTransientLazy(typeof(TService));
         }
 
         /// <summary>
@@ -140,20 +128,20 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <typeparam name="TService">The type of the service to add.</typeparam>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <param name="implementationFactory">The factory that creates the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Transient"/>
-        public static IServiceCollection AddKeyedTransientLazy<TService>(
+        public static IServiceCollection AddTransientLazy<TService>(
             this IServiceCollection services,
-            object? serviceKey,
-            Func<IServiceProvider, object?, TService> implementationFactory)
+            
+            Func<IServiceProvider, TService> implementationFactory)
             where TService : class
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(implementationFactory);
 
-            return services.AddKeyedTransientLazy(typeof(TService), serviceKey, implementationFactory);
+            return services.AddTransientLazy(typeof(TService), implementationFactory);
         }
 
         /// <summary>
@@ -165,21 +153,21 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// <typeparam name="TService">The type of the service to add.</typeparam>
         /// <typeparam name="TImplementation">The type of the implementation to use.</typeparam>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <param name="implementationFactory">The factory that creates the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Transient"/>
-        public static IServiceCollection AddKeyedTransientLazy<TService, TImplementation>(
+        public static IServiceCollection AddTransientLazy<TService, TImplementation>(
             this IServiceCollection services,
-            object? serviceKey,
-            Func<IServiceProvider, object?, TImplementation> implementationFactory)
+            
+            Func<IServiceProvider, TImplementation> implementationFactory)
             where TService : class
             where TImplementation : class, TService
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(implementationFactory);
 
-            return services.AddKeyedTransientLazy(typeof(TService), serviceKey, implementationFactory);
+            return services.AddTransientLazy(typeof(TService), implementationFactory);
         }
 
         /// <summary>
@@ -189,21 +177,21 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
         /// <param name="serviceType">The type of the service to register.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <param name="implementationType">The implementation type of the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Scoped"/>
-        public static IServiceCollection AddKeyedScopedLazy(
+        public static IServiceCollection AddScopedLazy(
             this IServiceCollection services,
             Type serviceType,
-            object? serviceKey,
+            
             [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] Type implementationType)
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(serviceType);
             ArgumentNullException.ThrowIfNull(implementationType);
 
-            return AddKeyedLazy(services, serviceType, serviceKey, implementationType, ServiceLifetime.Scoped);
+            return AddLazy(services, serviceType, implementationType, ServiceLifetime.Scoped);
         }
 
         /// <summary>
@@ -213,21 +201,21 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
         /// <param name="serviceType">The type of the service to register.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <param name="implementationFactory">The factory that creates the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Scoped"/>
-        public static IServiceCollection AddKeyedScopedLazy(
+        public static IServiceCollection AddScopedLazy(
             this IServiceCollection services,
             Type serviceType,
-            object? serviceKey,
-            Func<IServiceProvider, object?, object> implementationFactory)
+            
+            Func<IServiceProvider, object> implementationFactory)
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(serviceType);
             ArgumentNullException.ThrowIfNull(implementationFactory);
 
-            return AddKeyedLazy(services, serviceType, serviceKey, implementationFactory, ServiceLifetime.Scoped);
+            return AddLazy(services, serviceType, implementationFactory, ServiceLifetime.Scoped);
         }
 
         /// <summary>
@@ -238,10 +226,10 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// <typeparam name="TService">The type of the service to add.</typeparam>
         /// <typeparam name="TImplementation">The type of the implementation to use.</typeparam>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Scoped"/>
-        public static IServiceCollection AddKeyedScopedLazy<TService, [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TImplementation>(
+        public static IServiceCollection AddScopedLazy<TService, [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TImplementation>(
             this IServiceCollection services,
             object? serviceKey)
             where TService : class
@@ -249,7 +237,7 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         {
             ArgumentNullException.ThrowIfNull(services);
 
-            return services.AddKeyedScopedLazy(typeof(TService), serviceKey, typeof(TImplementation));
+            return services.AddScopedLazy(typeof(TService), typeof(TImplementation));
         }
 
         /// <summary>
@@ -258,10 +246,10 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
         /// <param name="serviceType">The type of the service to register and the implementation to use.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Scoped"/>
-        public static IServiceCollection AddKeyedScopedLazy(
+        public static IServiceCollection AddScopedLazy(
             this IServiceCollection services,
             [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] Type serviceType,
             object? serviceKey)
@@ -269,7 +257,7 @@ namespace dotNetBlocks.Extensions.DependencyInjection
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(serviceType);
 
-            return services.AddKeyedScopedLazy(serviceType, serviceKey, serviceType);
+            return services.AddScopedLazy(serviceType, serviceType);
         }
 
         /// <summary>
@@ -278,17 +266,17 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <typeparam name="TService">The type of the service to add.</typeparam>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Scoped"/>
-        public static IServiceCollection AddKeyedScopedLazy<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TService>(
+        public static IServiceCollection AddScopedLazy<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TService>(
             this IServiceCollection services,
             object? serviceKey)
             where TService : class
         {
             ArgumentNullException.ThrowIfNull(services);
 
-            return services.AddKeyedScopedLazy(typeof(TService), serviceKey);
+            return services.AddScopedLazy(typeof(TService), serviceKey);
         }
 
         /// <summary>
@@ -298,20 +286,20 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <typeparam name="TService">The type of the service to add.</typeparam>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <param name="implementationFactory">The factory that creates the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Scoped"/>
-        public static IServiceCollection AddKeyedScopedLazy<TService>(
+        public static IServiceCollection AddScopedLazy<TService>(
             this IServiceCollection services,
-            object? serviceKey,
-            Func<IServiceProvider, object?, TService> implementationFactory)
+            
+            Func<IServiceProvider, TService> implementationFactory)
             where TService : class
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(implementationFactory);
 
-            return services.AddKeyedScopedLazy(typeof(TService), serviceKey, implementationFactory);
+            return services.AddScopedLazy(typeof(TService), implementationFactory);
         }
 
         /// <summary>
@@ -323,21 +311,21 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// <typeparam name="TService">The type of the service to add.</typeparam>
         /// <typeparam name="TImplementation">The type of the implementation to use.</typeparam>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <param name="implementationFactory">The factory that creates the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Scoped"/>
-        public static IServiceCollection AddKeyedScoped<TService, TImplementation>(
+        public static IServiceCollection AddScoped<TService, TImplementation>(
             this IServiceCollection services,
-            object? serviceKey,
-            Func<IServiceProvider, object?, TImplementation> implementationFactory)
+            
+            Func<IServiceProvider,  TImplementation> implementationFactory)
             where TService : class
             where TImplementation : class, TService
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(implementationFactory);
 
-            return services.AddKeyedScopedLazy(typeof(TService), serviceKey, implementationFactory);
+            return services.AddScopedLazy(typeof(TService), implementationFactory);
         }
 
         /// <summary>
@@ -347,21 +335,21 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
         /// <param name="serviceType">The type of the service to register.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <param name="implementationType">The implementation type of the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Singleton"/>
-        public static IServiceCollection AddKeyedSingletonLazy(
+        public static IServiceCollection AddSingletonLazy(
             this IServiceCollection services,
             Type serviceType,
-            object? serviceKey,
+            
             [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] Type implementationType)
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(serviceType);
             ArgumentNullException.ThrowIfNull(implementationType);
 
-            return AddKeyedLazy(services, serviceType, serviceKey, implementationType, ServiceLifetime.Singleton);
+            return AddLazy(services, serviceType, implementationType, ServiceLifetime.Singleton);
         }
 
         /// <summary>
@@ -371,21 +359,21 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
         /// <param name="serviceType">The type of the service to register.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <param name="implementationFactory">The factory that creates the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Singleton"/>
-        public static IServiceCollection AddKeyedSingletonLazy(
+        public static IServiceCollection AddSingletonLazy(
             this IServiceCollection services,
             Type serviceType,
-            object? serviceKey,
-            Func<IServiceProvider, object?, object> implementationFactory)
+            
+            Func<IServiceProvider, object> implementationFactory)
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(serviceType);
             ArgumentNullException.ThrowIfNull(implementationFactory);
 
-            return AddKeyedLazy(services, serviceType, serviceKey, implementationFactory, ServiceLifetime.Singleton);
+            return AddLazy(services, serviceType, implementationFactory, ServiceLifetime.Singleton);
         }
 
         /// <summary>
@@ -396,18 +384,17 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// <typeparam name="TService">The type of the service to add.</typeparam>
         /// <typeparam name="TImplementation">The type of the implementation to use.</typeparam>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Singleton"/>
-        public static IServiceCollection AddKeyedSingletonLazy<TService, [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TImplementation>(
-            this IServiceCollection services,
-            object? serviceKey)
+        public static IServiceCollection AddSingletonLazy<TService, [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TImplementation>(
+            this IServiceCollection services)
             where TService : class
             where TImplementation : class, TService
         {
             ArgumentNullException.ThrowIfNull(services);
 
-            return services.AddKeyedSingletonLazy(typeof(TService), serviceKey, typeof(TImplementation));
+            return services.AddSingletonLazy(typeof(TService), typeof(TImplementation));
         }
 
         /// <summary>
@@ -416,7 +403,7 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
         /// <param name="serviceType">The type of the service to register and the implementation to use.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Singleton"/>
         public static IServiceCollection AddKeyedSingletonLazy(
@@ -427,7 +414,7 @@ namespace dotNetBlocks.Extensions.DependencyInjection
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(serviceType);
 
-            return services.AddKeyedSingletonLazy(serviceType, serviceKey, serviceType);
+            return services.AddSingletonLazy(serviceType, serviceType);
         }
 
         /// <summary>
@@ -436,17 +423,16 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <typeparam name="TService">The type of the service to add.</typeparam>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Singleton"/>
-        public static IServiceCollection AddKeyedSingletonLazy<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TService>(
-            this IServiceCollection services,
-            object? serviceKey)
+        public static IServiceCollection AddSingletonLazy<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] TService>(
+            this IServiceCollection services)
             where TService : class
         {
             ArgumentNullException.ThrowIfNull(services);
 
-            return services.AddKeyedSingletonLazy(typeof(TService), serviceKey, typeof(TService));
+            return services.AddSingletonLazy(typeof(TService), typeof(TService));
         }
 
         /// <summary>
@@ -456,20 +442,20 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <typeparam name="TService">The type of the service to add.</typeparam>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <param name="implementationFactory">The factory that creates the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Singleton"/>
-        public static IServiceCollection AddKeyedSingletonLazy<TService>(
+        public static IServiceCollection AddSingletonLazy<TService>(
             this IServiceCollection services,
-            object? serviceKey,
-            Func<IServiceProvider, object?, TService> implementationFactory)
+            
+            Func<IServiceProvider, TService> implementationFactory)
             where TService : class
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(implementationFactory);
 
-            return services.AddKeyedSingletonLazy(typeof(TService), serviceKey, implementationFactory);
+            return services.AddSingletonLazy(typeof(TService), implementationFactory);
         }
 
         /// <summary>
@@ -481,21 +467,24 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// <typeparam name="TService">The type of the service to add.</typeparam>
         /// <typeparam name="TImplementation">The type of the implementation to use.</typeparam>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <param name="implementationFactory">The factory that creates the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Singleton"/>
-        public static IServiceCollection AddKeyedSingletonLazy<TService, TImplementation>(
+        public static IServiceCollection AddSingletonLazy<TService, TImplementation>(
             this IServiceCollection services,
-            object? serviceKey,
-            Func<IServiceProvider, object?, TImplementation> implementationFactory)
+            
+            Func<IServiceProvider, TImplementation> implementationFactory)
             where TService : class
             where TImplementation : class, TService
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(implementationFactory);
 
-            return services.AddKeyedSingletonLazy(typeof(TService), serviceKey, implementationFactory);
+            //return services.AddSingletonLazy(typeof(TService), implementationFactory);
+            var serviceDescriptor = LazyServiceDescriptorHelper.DescribeSingletonLazy<TService, TImplementation>(implementationFactory);
+            services.Add(serviceDescriptor);
+            return services;
         }
 
         /// <summary>
@@ -505,21 +494,21 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
         /// <param name="serviceType">The type of the service to register.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <param name="implementationInstance">The instance of the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Singleton"/>
-        public static IServiceCollection AddKeyedSingletonLazy(
+        public static IServiceCollection AddSingletonLazy(
             this IServiceCollection services,
             Type serviceType,
-            object? serviceKey,
+            
             object implementationInstance)
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(serviceType);
             ArgumentNullException.ThrowIfNull(implementationInstance);
 
-            var serviceDescriptor = LazyServiceDescriptorHelper.DescribeKeyedSingletonLazy(serviceType, serviceKey, implementationInstance);
+            var serviceDescriptor = LazyServiceDescriptorHelper.DescribeSingletonLazy(serviceType, implementationInstance);
             services.Add(serviceDescriptor);
             return services;
         }
@@ -530,44 +519,42 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// specified <see cref="IServiceCollection"/>.
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection"/> to add the service to.</param>
-        /// <param name="serviceKey">The <see cref="ServiceDescriptor.ServiceKey"/> of the service.</param>
+        
         /// <param name="implementationInstance">The instance of the service.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
         /// <seealso cref="ServiceLifetime.Singleton"/>
-        public static IServiceCollection AddKeyedSingletonLazy<TService>(
+        public static IServiceCollection AddSingletonLazy<TService>(
             this IServiceCollection services,
-            object? serviceKey,
+            
             TService implementationInstance)
             where TService : class
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(implementationInstance);
 
-            return services.AddKeyedSingletonLazy(typeof(TService), serviceKey, implementationInstance);
+            return services.AddSingletonLazy<TService>(implementationInstance);
         }
 
-        private static IServiceCollection AddKeyedLazy(
-            IServiceCollection collection,
+        private static IServiceCollection AddLazy(
+            this IServiceCollection services,
             Type serviceType,
-            object? serviceKey,
             [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)] Type implementationType,
             ServiceLifetime lifetime)
         {
-            var descriptor = LazyServiceDescriptorHelper.DescribeKeyedLazy(serviceType, serviceKey, implementationType, lifetime);
-            collection.Add(descriptor);
-            return collection;
+            var descriptor = LazyServiceDescriptorHelper.DescribeLazy(serviceType, implementationType, lifetime);
+            services.Add(descriptor);
+            return services;
         }
 
-        private static IServiceCollection AddKeyedLazy(
-            IServiceCollection collection,
+        private static IServiceCollection AddLazy(
+            this IServiceCollection services,
             Type serviceType,
-            object? serviceKey,
-            Func<IServiceProvider, object?, object> implementationFactory,
+            Func<IServiceProvider, object> implementationFactory,
             ServiceLifetime lifetime)
         {
-            var descriptor = LazyServiceDescriptorHelper.DescribeKeyedLazy(serviceType, serviceKey, implementationFactory, lifetime);
-            collection.Add(descriptor);
-            return collection;
+            var descriptor = LazyServiceDescriptorHelper.DescribeLazy(serviceType, implementationFactory, lifetime);
+            services.Add(descriptor);
+            return services;
         }
     }
 }

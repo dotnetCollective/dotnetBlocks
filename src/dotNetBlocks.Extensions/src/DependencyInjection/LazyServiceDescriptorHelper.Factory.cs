@@ -12,11 +12,13 @@ namespace dotNetBlocks.Extensions.DependencyInjection
 
 	{
 		#region Types and constants
+		private readonly static Type LazyType = typeof(Lazy<>);
+		private readonly static Type LazyServiceType = typeof(LazyService<>);
+
 		private readonly static MethodInfo createlazyFactoryMethod = typeof(DependencyInjectionExtensions).GetMethod(nameof(CreateLazyFactory)) ?? throw new InvalidOperationException();
 		private readonly static MethodInfo createlazyFactoryMethodKeyed = typeof(DependencyInjectionExtensions).GetMethod(nameof(CreateLazyFactoryKeyed)) ?? throw new InvalidOperationException();
 		#endregion
 
-		#region LazyFactory methods
 		private static Func<IServiceProvider, object> CreateLazyFactoryByType(Type serviceType, Type? implementationType = default, object? lazyInstance = default, object? valueInstance = default, Func<IServiceProvider, object?>? valuefactoryMethod = default)
 		{
 			// unless specified, implementation and service type are the same.
@@ -76,6 +78,20 @@ namespace dotNetBlocks.Extensions.DependencyInjection
 			return (IServiceProvider serviceProvider, object? serviceKey) =>
 				new Lazy<TService>(() => (TService)valuefactoryMethod(serviceProvider.CreateScope().ServiceProvider, serviceKey)!);
 		}
-		#endregion>
-	}
+
+        // Lazy object helpers."
+        private static Type MakeLazyType<T>()
+                    where T : class
+                    => typeof(T).MakeLazyType();
+        private static Type MakeLazyType(this Type type) 
+			=> LazyType.MakeGenericType(type);
+        private static Type MakeLazyServiceType(this Type type) 
+			=> LazyServiceType.MakeGenericType(type);
+		private static Type MakeLazyServiceType<T>() where T : class 
+			=> typeof(T).MakeLazyServiceType();
+
+        
+        private static object ObjectToLazy(this object value) => ToLazy((dynamic)value);
+        private static Lazy<T> ToLazy<T>(this T instance) => new Lazy<T>(instance);
+    }
 }
