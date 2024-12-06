@@ -16,10 +16,6 @@ namespace dotNetBlocks.Extensions.Tests.DependencyInjection
     public class DependencyInjectionTests
     {
 
-        [TestMethod]
-        public void LazyFactoryConversionTests()
-        {
-        }
 
         [TestMethod]
         public void TestDILazyConstructorInjection()
@@ -29,7 +25,6 @@ namespace dotNetBlocks.Extensions.Tests.DependencyInjection
             services.AddLazyService();
             services.AddTransient<ServiceA>();
             services.AddTransient<ServiceB>();
-
 
 
             using (var provider = services.BuildServiceProvider())
@@ -45,13 +40,37 @@ namespace dotNetBlocks.Extensions.Tests.DependencyInjection
 
         }
 
+
+        [TestMethod]
+        public void LazyFailureTests()
+        {
+            var services = new ServiceCollection();
+
+            services.AddTransient<ServiceA>(); // Need to resolve the service.
+            services.AddTransient<ServiceB>(); // Need to resolve the service.
+
+            using (var provider = services.BuildServiceProvider())
+            {
+                Action act = () => provider.GetRequiredService<ServiceA>();
+                act.Should().NotThrow();
+
+                act = () => provider.GetRequiredService<Lazy<ServiceA>>();
+                act.Should().Throw< InvalidOperationException>();
+
+                act = () => provider.GetRequiredService<ServiceB>();
+                act.Should().Throw<InvalidOperationException>();
+
+
+            }
+        }
+
+
         [TestMethod]
         public void TestDILazyConstructorInjectionWithIndividualLazyRegistration()
         {
             var services = new ServiceCollection();
 
-            services.AddTransient<ServiceA>(); // Need to resolve the service.
-            services.AddTransientLazy<ServiceA>(); // This lazyA is injected intoB.
+            services.AddTransient<ServiceA>().AsLazy(); // Need to resolve the service.
             services.AddTransient<ServiceB>();
 
 
@@ -105,8 +124,7 @@ namespace dotNetBlocks.Extensions.Tests.DependencyInjection
             var services = new ServiceCollection();
 
             //Add the implementation classes to inject into a lazy
-            services.AddTransient<ServiceA>();
-            services.AddTransientLazy<ServiceA>();
+            services.AddTransient<ServiceA>().AsLazy();
             using (var provider = services.BuildServiceProvider())
             {
 

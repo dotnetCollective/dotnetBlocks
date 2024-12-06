@@ -13,14 +13,14 @@ namespace dotNetBlocks.Extensions.DependencyInjection
 	{
 		#region Types and constants
 		private const BindingFlags SearchBindingFlags = BindingFlags.Default | BindingFlags.Instance | BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.NonPublic|BindingFlags.Static;
-		private readonly static Type LazyType = typeof(Lazy<>);
-		private readonly static Type LazyServiceType = typeof(LazyService<>);		
+		internal readonly static Type LazyType = typeof(Lazy<>);
+		internal readonly static Type LazyServiceType = typeof(LazyService<>);		
 
 		private readonly static MethodInfo createlazyFactoryMethod = typeof(LazyServiceDescriptorHelper).GetMethod(nameof(CreateLazyFactory),SearchBindingFlags) ?? throw new InvalidOperationException();
 		private readonly static MethodInfo createlazyFactoryMethodKeyed = typeof(LazyServiceDescriptorHelper).GetMethod(nameof(CreateLazyFactoryKeyed), SearchBindingFlags) ?? throw new InvalidOperationException();
-		#endregion
+        #endregion
 
-		private static Func<IServiceProvider, object> CreateLazyFactoryByType(Type serviceType, Type? implementationType = default, object? lazyInstance = default, object? valueInstance = default, Func<IServiceProvider, object?>? valuefactoryMethod = default)
+        internal static Func<IServiceProvider, object> CreateLazyFactoryByType(Type serviceType, Type? implementationType = default, object? lazyInstance = default, object? valueInstance = default, Func<IServiceProvider, object?>? valuefactoryMethod = default)
 		{
 			// unless specified, implementation and service type are the same.
 			if (implementationType == default) implementationType = serviceType;
@@ -28,7 +28,7 @@ namespace dotNetBlocks.Extensions.DependencyInjection
 			// call the generic factory constructor.
 			return createlazyFactoryMethod.MakeGenericMethod(serviceType, implementationType).Invoke(null, new object?[] { lazyInstance, valueInstance, valuefactoryMethod }) as Func<IServiceProvider, object> ?? throw new InvalidOperationException();
 		}
-		private static Func<IServiceProvider, object?, object> CreateLazyFactorybyTypeKeyed(Type serviceType, Type? implementationType = default, object? lazyInstance = default, object? valueInstance = default,
+        internal static Func<IServiceProvider, object?, object> CreateLazyFactorybyTypeKeyed(Type serviceType, Type? implementationType = default, object? lazyInstance = default, object? valueInstance = default,
 			Func<IServiceProvider, object?, object>? valuefactoryMethod = default
 			)
 		{
@@ -36,9 +36,9 @@ namespace dotNetBlocks.Extensions.DependencyInjection
 			if (implementationType == default) implementationType = serviceType;
 			return createlazyFactoryMethodKeyed.MakeGenericMethod(serviceType, implementationType).Invoke(null, new object?[] { lazyInstance, valueInstance, valuefactoryMethod }) as Func<IServiceProvider, object?, object> ?? throw new InvalidOperationException();
 		}
-		private static Func<IServiceProvider, object> CreateLazyFactory<TService, TImplementation>(Lazy<TService>? lazyInstance = default, TService? valueInstance = default, Func<IServiceProvider, object?>? valuefactoryMethod = default)
+        internal static Func<IServiceProvider, object> CreateLazyFactory<TService, TImplementation>(Lazy<TService>? lazyInstance = default, TService? valueInstance = default, Func<IServiceProvider, object?>? valuefactoryMethod = default)
 			where TService : class
-			where TImplementation : class
+			where TImplementation : class, TService
 		{
 			if (lazyInstance != default)
 				// the factory always returns the provided lazy instance.
@@ -58,9 +58,9 @@ namespace dotNetBlocks.Extensions.DependencyInjection
 				new Lazy<TService>(() => (TService)valuefactoryMethod(serviceProvider.CreateScope().ServiceProvider)!);
 		}
 
-		private static Func<IServiceProvider, object?, object> CreateLazyFactoryKeyed<TService, TImplementation>(Lazy<TService>? lazyInstance = default, TService? valueInstance = default, Func<IServiceProvider, object?, object?>? valuefactoryMethod = default)
+        internal static Func<IServiceProvider, object?, object> CreateLazyFactoryKeyed<TService, TImplementation>(Lazy<TService>? lazyInstance = default, TService? valueInstance = default, Func<IServiceProvider, object?, object?>? valuefactoryMethod = default)
 			where TService : class
-			where TImplementation : class
+			where TImplementation : class, TService
 		{
 			if (lazyInstance != default)
 				// the factory always returns the provided lazy instance.
@@ -80,19 +80,22 @@ namespace dotNetBlocks.Extensions.DependencyInjection
 				new Lazy<TService>(() => (TService)valuefactoryMethod(serviceProvider.CreateScope().ServiceProvider, serviceKey)!);
 		}
 
-        // Lazy object helpers."
-        private static Type MakeLazyType<T>()
+        #region// Lazy object helpers."
+        internal static Type MakeLazyType<T>()
                     where T : class
                     => typeof(T).MakeLazyType();
-        private static Type MakeLazyType(this Type type) 
+        internal static Type MakeLazyType(this Type type) 
 			=> LazyType.MakeGenericType(type);
-        private static Type MakeLazyServiceType(this Type type) 
+        internal static Type MakeLazyServiceType(this Type type) 
 			=> LazyServiceType.MakeGenericType(type);
-		private static Type MakeLazyServiceType<T>() where T : class 
+        internal static Type MakeLazyServiceType<T>() where T : class 
 			=> typeof(T).MakeLazyServiceType();
 
-        
-        private static object ObjectToLazy(this object value) => ToLazy((dynamic)value);
-        private static Lazy<T> ToLazy<T>(this T instance) => new Lazy<T>(instance);
+
+        internal static object ObjectToLazy(this object value) => ToLazy((dynamic)value);
+        internal static Lazy<T> ToLazy<T>(this T instance) => new Lazy<T>(instance);
+
+        #endregion // Lazy object helpers."
+
     }
 }
