@@ -35,3 +35,7 @@ The "true" implementation is modeled on the standard microsoft libraries, using 
 
 
 The internal pattern is to create ServiceDescriptors using the "describe" pattern and add those to the service collection. The describe method creates the appropriate factories and lifetimes supporting the requeted lazy usage registration type.
+
+## Factory methods
+
+The factory methods use methodInfo to close the types and invoke the factory method builder, but its important to note this does not have a performance impact, because the builder method is only called during registration to create an appropriate delegate that is passed to the dependency registration. This technique is faster than building the lambdas using code and more maintainable.

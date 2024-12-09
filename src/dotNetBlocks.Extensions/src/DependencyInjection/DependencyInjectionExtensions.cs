@@ -16,29 +16,48 @@ namespace dotNetBlocks.Extensions.DependencyInjection
     {
 
         /// <summary>
-        /// Adds unkeyed implicit support for lazy types with <see cref="LazyService{T}"/> Support
+        /// Adds support for lazy types implementing using <see cref="LazyService{T}"/> approximation.
         /// </summary>
         /// <param name="services"><see cref="IServiceCollection"/> service collection being extended.</param>
-        /// <param name="lifetime">The lifetime.</param>
+        /// <param name="lifetime">The default lifetime for a <see cref="Lazy{T}"/> class.</param>
         /// <remarks>
         /// This is not a true <see cref="Lazy{T}"/> class implementation but uses a descendant service class to provide identical functionality <see cref="LazyService{T}"/>
         /// </remarks>
-        public static void AddLazyService(this IServiceCollection services, ServiceLifetime lifetime = ServiceLifetime.Transient)
+        public static void AddLazyServiceSupport(this IServiceCollection services, ServiceLifetime lifetime = ServiceLifetime.Transient)
         {   // Register Lazy<>, LazyService<>;
             services.Add(ServiceDescriptor.Describe(LazyServiceDescriptorHelper.LazyType, LazyServiceDescriptorHelper.LazyServiceType, lifetime));
         }
 
         /// <summary>
-        /// /// Adds a <see cref="Lazy{T}"/> definition for the last <see cref="ServiceDescriptor"/> Registered in the collection.
+        /// /// Adds a <see cref="Lazy{T}"/> definition to lookup the last registration and add a lazy class to.
         /// </summary>
-        /// <param name="services">The services.</param>
+        /// <param name="services"><see cref="IServiceCollection"/>containing the registration to add a lazy functionality for.</param>
         /// <returns></returns>
-        /// <exception cref="System.ArgumentNullException"></exception>
-        public static IServiceCollection AsLazy(this IServiceCollection services)
+        /// <exception cref="System.ArgumentNullException">service collection is null.</exception>
+        /// <remarks>Looks up the last class and adds a lazy registration.</remarks>
+        public static IServiceCollection AsLazy(this IServiceCollection services, ServiceLifetime? serviceLifetime = default)
         {
             var lastService = services.LastOrDefault();
             ArgumentNullException.ThrowIfNull(lastService);
-            services.Add(lastService.AsLazy());
+            services.Add(lastService.AsLazy(serviceLifetime));
+            return services;
+        }
+
+
+        /// <summary>
+        /// Creates a <see cref="Lazy{T}"/> <see cref="ServiceDescriptor"/> for the descriptor provided.
+        /// </summary>
+        /// <param name="services"><see cref="IServiceCollection"/>containing the registration to add a lazy functionality for.</param>
+        /// <param name="serviceLifetime">The <see cref="ServiceLifetime"/>> for the lazy class. Uses the source lifetime if none provided.</param>
+        /// <param name="valueInstance">Instance value to use in the lazy class instead of resolving the value. </param>
+        /// <param name="lazyInstance">The lazy instance to register.</param>
+        /// <returns>New <see cref=" ServiceDescriptor"/> defining a lazy version of the source descriptor.</returns>
+        /// <exception cref="System.ArgumentException">instance object is not {lazyServiceType.FullName} - lazyInstance</exception>
+        public static IServiceCollection AsLazyAdvanced(this IServiceCollection services, ServiceLifetime? serviceLifetime = default, object? valueInstance = default, object? lazyInstance = default)
+        {
+            var lastService = services.LastOrDefault();
+            ArgumentNullException.ThrowIfNull(lastService);
+            services.Add(lastService.AsLazyAdvanced(serviceLifetime, valueInstance, lazyInstance));
             return services;
         }
 

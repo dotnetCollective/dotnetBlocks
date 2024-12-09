@@ -18,11 +18,11 @@ namespace dotNetBlocks.Extensions.Tests.DependencyInjection
 
 
         [TestMethod]
-        public void TestDILazyConstructorInjection()
+        public void TestDILazyConstructorInjectionusingLazyServiceSupport()
         {
             var services = new ServiceCollection();
 
-            services.AddLazyService();
+            services.AddLazyServiceSupport();
             services.AddTransient<ServiceA>();
             services.AddTransient<ServiceB>();
 
@@ -42,7 +42,7 @@ namespace dotNetBlocks.Extensions.Tests.DependencyInjection
 
 
         [TestMethod]
-        public void LazyFailureTests()
+        public void EnsureLazyFailureTestswithoutLazySupport()
         {
             var services = new ServiceCollection();
 
@@ -89,11 +89,12 @@ namespace dotNetBlocks.Extensions.Tests.DependencyInjection
         }
 
 
+        [TestMethod]
         public void TestDILazyLifetimes()
         {
             var services = new ServiceCollection();
 
-            services.AddLazyService();
+            services.AddLazyServiceSupport();
             services.AddTransient<ServiceA>();
             services.AddTransient<ServiceB>();
 
@@ -111,12 +112,6 @@ namespace dotNetBlocks.Extensions.Tests.DependencyInjection
 
         }
 
-        [TestMethod]
-        public void LazyDescriptorTest()
-        {
-            var serviceDescriptor = ServiceDescriptor.Describe(typeof(ServiceA), typeof(ServiceA),ServiceLifetime.Singleton);
-            //serviceDescriptor.AsLazy();
-        }
 
         [TestMethod]
         public void SimpleLazyTransientTests()
