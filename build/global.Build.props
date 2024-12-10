@@ -1,0 +1,38 @@
+<!-- Repo root build properties. -->
+<Project>
+  <!-- Set the repository root into a variable -->
+  <PropertyGroup>
+     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <!-- Set common properties regarding assembly information and nuget packages -->
+  <PropertyGroup>
+
+		<Company> .Net Collective </Company>
+		<Authors> Brian Rogers and the .Net Collective</Authors>
+
+        <Product> dotNetBlocks</Product>
+
+		<Copyright>@ .Net Collective. All rights reserved.</Copyright>
+
+
+        <!--
+		<Version> 1.0.0-pre-release-$([System.DateTime]::Now.ToString("yyyy-MM-dd-HHmmss")) </Version>
+        -->
+		<Version> 1.0.0-alpha-pre-release-$([System.DateTime]::Now.ToString("yyyy-MM-dd-HHmmss")) </Version>
+
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+        <PackageProjectUrl>https://github.com/dotnetCollective/dotnetBlocks</PackageProjectUrl>
+        <PackageTags>DotNetBlocks architecture, Microsoft.Extensions.DependencyInjection.</PackageTags>
+        <PublicRepositoryUrl>https://github.com/dotnetCollective/dotnetBlocks</PublicRepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <LangVersion>12</LangVersion>
+        <Features>strict</Features>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludePackageReferencesDuringMarkupCompilation>true</IncludePackageReferencesDuringMarkupCompilation>
+        <IncludeSymbols>false</IncludeSymbols>
+        <IncludeSource>false</IncludeSource>
+  </PropertyGroup>
+
+</Project>
