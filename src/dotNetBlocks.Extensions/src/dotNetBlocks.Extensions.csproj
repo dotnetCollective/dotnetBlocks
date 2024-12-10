@@ -20,6 +20,7 @@ using dotNetBlocks.Extensions.DependencyInjection;
 
 
 </PackageDescription>
+<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 
   </PropertyGroup>
 
