@@ -11,7 +11,7 @@ using System.Linq;
 namespace dotNetBlocks.Examples.LightManager.Tests
 {
     [TestClass]
-    public sealed class InProcess
+    public sealed class InProcessExamples
     {
         [TestMethod]
         public async Task DirectCallTestsAsync()

@@ -1,38 +1,28 @@
+<!-- Repo root build properties. -->
 <Project>
-  <!-- Set the repository root into a variable -->
+      <!-- Set the repository root into a variable -->
   <PropertyGroup>
-     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <SourceRoot>$(MSBuildThisFileDirectory)</SourceRoot>
+        <SourceRoot>$(MSBuildThisFileDirectory)</SourceRoot>
+
+      <!--
+      <RootFolder>$([MSBuild]::GetDirectoryNameOfFileAbove('Directory.Build.props',$(MSBuildThisFileDirectory)))</RootFolder>
+      -->
+      <RootFolder>$(MSBuildThisFileDirectory)</RootFolder>
+    <propsFolderName>$(RootFolder)/build</propsFolderName>
+      <GlobalPropertiesFileName>$(propsFolderName)/global.Build.props</GlobalPropertiesFileName>
+      <TestPropertiesFileName>$(propsFolderName)/test.build.props</TestPropertiesFileName>
   </PropertyGroup>
 
-  <!-- Set common properties regarding assembly information and nuget packages -->
-  <PropertyGroup>
+    <!--  Detect test projects and set properties -->
+<PropertyGroup Condition="$(MSBuildProjectFile.Contains('Test'))">
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition="$(IsTestProject)=='True'">
+        <IsPackable>false</IsPackable>
+        <GenerateProgramFile>false</GenerateProgramFile>
+    </PropertyGroup>
 
-		<Company> .Net Collective </Company>
-		<Authors> Brian Rogers and the .Net Collective</Authors>
-
-        <Product> dotNetBlocks</Product>
-
-		<Copyright>@ .Net Collective. All rights reserved.</Copyright>
-
-
-        <!--
-		<Version> 1.0.0-pre-release-$([System.DateTime]::Now.ToString("yyyy-MM-dd-HHmmss")) </Version>
-        -->
-		<Version> 1.0.0-alpha-pre-release-$([System.DateTime]::Now.ToString("yyyy-MM-dd-HHmmss")) </Version>
-
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
-
-        <PackageProjectUrl>https://github.com/dotnetCollective/dotnetBlocks</PackageProjectUrl>
-        <PackageTags>DotNetBlocks architecture</PackageTags>
-        <PublicRepositoryUrl>https://github.com/dotnetCollective/dotnetBlocks</PublicRepositoryUrl>
-        <RepositoryType>git</RepositoryType>
-        <LangVersion>12</LangVersion>
-        <Features>strict</Features>
-        <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <IncludePackageReferencesDuringMarkupCompilation>true</IncludePackageReferencesDuringMarkupCompilation>
-        <IncludeSymbols>false</IncludeSymbols>
-        <IncludeSource>false</IncludeSource>
-  </PropertyGroup>
-
+<Import Project="$(GlobalPropertiesFileName)"/>
+<Import Project="$(TestPropertiesFileName)" Condition="$(IsTestProject)=='true'" />
 </Project>
