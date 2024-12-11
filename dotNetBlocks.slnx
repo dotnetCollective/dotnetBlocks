@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/Tests/">
+    <Project Path="tests/dotNetBlocks.System.IO.Tests/dotNetBlocks.System.IO.StreamBuffer.Tests/dotNetBlocks.System.IO.StreamBuffer.Tests.csproj" />
+    <Project Path="tests/dotNetBlocks.System.IO.Tests/dotNetBlocks.System.IO.Tests.csproj" />
+    <Project Path="tests/dotNetBlocks.System.Threading.Tests/dotNetBlocks.System.Threading.Tests.csproj" />
+  </Folder>
+  <Project Path="src/dotNetBlocks.Business.Shared/dotNetBlocks.Business.Shared.csproj" />
+  <Project Path="src/DotNetBlocks.Business/DotNetBlocks.Business.csproj" />
+  <Project Path="src/dotNetBlocks.docs/dotNetBlocks.docs.csproj" />
+  <Project Path="src/dotNetBlocks.System.IO/dotNetBlocks.System.IO.csproj" />
+  <Project Path="src/dotNetBlocks.System.IO/dotNetBlocks.System.IO.StreamBuffer/dotNetBlocks.System.IO.StreamBuffer.csproj" />
+  <Project Path="src/dotNetBlocks.System.Threading/dotNetBlocks.System.Threading.csproj" />
+</Solution>
