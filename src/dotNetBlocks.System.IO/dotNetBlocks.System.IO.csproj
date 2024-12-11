@@ -4,15 +4,32 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+
+    <PackageDescription> adds stream functionality for buffering streams without memory usage.
+
+Commonly Used Types:
+dotNetBlocks.System.IO.StreamBuffer
+</PackageDescription>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
-    <Compile Remove="\**" />
-    <EmbeddedResource Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
-    <EmbeddedResource Remove="StreamBuffer\**" />
-    <None Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
-    <None Remove="StreamBuffer\**" />
+    <Compile Remove="tests\**" />
+    <EmbeddedResource Remove="tests\**" />
+    <None Remove="tests\**" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Pipelines" Version="8.0.0" />
+    <PackageReference Include="System.IO.Pipes" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\dotNetBlocks.System.Threading\src\dotNetBlocks.System.Threading.csproj" />
+  </ItemGroup>
+
+  
 
 </Project>

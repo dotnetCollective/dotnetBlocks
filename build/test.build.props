@@ -1,0 +1,33 @@
+<!--
+Test project build properties.
+-->
+<Project>
+
+
+	<PropertyGroup>
+		<NuGetAudit>false</NuGetAudit>
+		<WarningLevel>3</WarningLevel>
+		<AnalysisLevel>preview</AnalysisLevel>
+		<Features>strict</Features>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<CompatibilityTargetFrameworks>netstandard2.0</CompatibilityTargetFrameworks>
+		<DefaultTargetFrameworks>net8.0</DefaultTargetFrameworks>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<IsPackable>False</IsPackable>
+<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+</PropertyGroup>
+
+	<PropertyGroup>
+		<GenerateDocumentationFile>False</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<SourceLinkCreate>false</SourceLinkCreate>
+	</PropertyGroup>
+
+
+</Project>

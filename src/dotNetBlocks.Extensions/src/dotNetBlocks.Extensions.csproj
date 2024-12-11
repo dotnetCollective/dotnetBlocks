@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+            <IsPackable>True</IsPackable>
+<PackageDescription> Package adds Lazy Support for Microsoft.Extensions.Dependency Injection System. Used to support Lazy{T} constructor injection.
+
+Commonly Used Types:
+services.Lazy(), service.Lazy() -- Adds lazy registration for last class.
+services.AddLazyServiceSupport() - Adds lazy support to services
+services.AsLazyAdvanced() - lazy registration with advanced options.
+
+Commonly Used Namespaces:
+- dotNetBlocks.Extensions.DependencyInjection
+using dotNetBlocks.Extensions.DependencyInjection;
+
+
+
+
+</PackageDescription>
+<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>
