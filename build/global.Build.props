@@ -33,6 +33,11 @@
         <IncludePackageReferencesDuringMarkupCompilation>true</IncludePackageReferencesDuringMarkupCompilation>
         <IncludeSymbols>false</IncludeSymbols>
         <IncludeSource>false</IncludeSource>
+        <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+  <None Include="readme.md" pack="true" PackagePath="." />
+</ItemGroup>
 
 </Project>
