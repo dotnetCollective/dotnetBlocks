@@ -16,13 +16,16 @@ dotNetBlocks.System.IO.StreamBuffer
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
     <Compile Remove="tests\**" />
+    <EmbeddedResource Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
     <EmbeddedResource Remove="tests\**" />
+    <None Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
     <None Remove="tests\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.IO.Pipelines" Version="8.0.0" />
+    <PackageReference Include="System.IO.Pipelines" Version="9.0.0" />
     <PackageReference Include="System.IO.Pipes" Version="4.3.0" />
   </ItemGroup>
 

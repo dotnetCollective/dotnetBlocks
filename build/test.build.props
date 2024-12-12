@@ -17,15 +17,11 @@ Test project build properties.
 	</PropertyGroup>
 
 	<PropertyGroup>
+
 		<IsPackable>False</IsPackable>
-<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-</PropertyGroup>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 
-	<PropertyGroup>
 		<GenerateDocumentationFile>False</GenerateDocumentationFile>
-	</PropertyGroup>
-
-	<PropertyGroup>
 		<SourceLinkCreate>false</SourceLinkCreate>
 	</PropertyGroup>
 

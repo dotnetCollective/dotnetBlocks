@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/build/">
+    <File Path="../build/global.Build.props" />
+    <File Path="../build/test.build.props" />
+    <File Path="../Directory.Build.props" />
+  </Folder>
+  <Folder Name="/Solution Items/" />
+  <Folder Name="/Tests/">
+    <Project Path="dotNetBlocks.System.IO/tests/dotNetBlocks.System.IO.Tests.csproj" />
+    <Project Path="dotNetBlocks.System.Threading/tests/dotNetBlocks.System.Threading.Tests.csproj" />
+  </Folder>
+  <Project Path="dotNetBlocks.System.IO/dotNetBlocks.System.IO.csproj" />
+  <Project Path="dotNetBlocks.System.Threading/src/dotNetBlocks.System.Threading.csproj" />
+</Solution>
