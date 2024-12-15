@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using System.IO.Pipelines;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace System.IO
@@ -25,6 +27,7 @@ namespace System.IO
 
 
         #region Pipe
+        private const double DefaultResumePercentBufferUsed = 0.75;
         private const long DefaultBufferSize = 65536; // 64k
         private Pipe? _pipe;
         // Streams
@@ -38,34 +41,44 @@ namespace System.IO
         /// <summary>
         /// Initializes a new instance of the <see cref="StreamBuffer"/> class.
         /// </summary>
-        public StreamBuffer():this(default)
+        public StreamBuffer(PipeOptions pipeOptions)
         {
+            _pipe = new Pipe(pipeOptions);
 
+            // Initialize the master background token.
+            CancelAllBackgroundTasksTokenSource = new CancellationTokenSource();
+
+            // Initialize Background Read Write tokens and join to the Background Master token;
+            CancelBackgroundReadTokenSource = CancelAllBackgroundTasksTokenSource.Token.CreateLinkedTokenSource();
+            CancelBackgroundWriteTokenSource = CancelAllBackgroundTasksTokenSource.Token.CreateLinkedTokenSource();
 
         }
 
-        /// <summary>
-        /// Default buffer size is 64k
+        /// <remarks> The buffer stops writing and connot completely at EXACTLY buffer size bytes.
+        /// </remarks>
         /// </summary>
-        public StreamBuffer(long? bufferSize = DefaultBufferSize)
+        /// <param name="bufferSize">Size of the buffer.
+        ///         /// Default buffer size is 64k
+
+        /// </param>
+        public StreamBuffer(long? bufferSize = DefaultBufferSize,  double? resumePercentBufferUsed = DefaultResumePercentBufferUsed) 
+            : this( CalculatePipeOptions(bufferSize, resumePercentBufferUsed))
         {
 
-            // Initialize the master background token.
-            CancelAllBackgroundTasksToken = new CancellationTokenSource();
-
-            // Initialize Background Read Write tokens and join to the Background Master token;
-            CancelBackgroundReadToken = CancelAllBackgroundTasksToken.Token.CreateLinkedTokenSource();
-            CancelBackgroundWriteToken = CancelAllBackgroundTasksToken.Token.CreateLinkedTokenSource();
-
+        }
+        // ToDo: Rework this with a buffer options class.
+        private static PipeOptions CalculatePipeOptions(long? bufferSize = DefaultBufferSize, double? resumePercentBufferUsed = DefaultResumePercentBufferUsed)
+        {
             // Configure the options based on the buffer.
-            long pauseWriterThreshold = bufferSize ?? DefaultBufferSize;
-            long resumeWriterThreshold = pauseWriterThreshold / 2;
+            bufferSize ??= DefaultBufferSize;
+            resumePercentBufferUsed ??= DefaultResumePercentBufferUsed;
 
-            // Default resume writing at half-buffer size.
+            long pauseWriterThreshold = bufferSize.Value;
+            long resumeWriteThreshold = (long)(pauseWriterThreshold * resumePercentBufferUsed);
 
             // Create the pipe for this buffer;
-            PipeOptions options = new PipeOptions(pauseWriterThreshold: pauseWriterThreshold, resumeWriterThreshold: resumeWriterThreshold);
-            _pipe = new Pipe(options);
+            return new PipeOptions(pauseWriterThreshold: pauseWriterThreshold, resumeWriterThreshold: resumeWriteThreshold);
+
         }
 
 
@@ -74,7 +87,7 @@ namespace System.IO
 
         public readonly TimeSpan DefaultMaxTimeToWaitForTaskComplete = TimeSpan.FromMilliseconds(100);
 
-        protected readonly CancellationTokenSource CancelAllBackgroundTasksToken;
+        protected readonly CancellationTokenSource CancelAllBackgroundTasksTokenSource;
 
         public async Task CancelBackgroundAsync(TimeSpan? waitTime = default, CancellationToken cancellationToken = default)
         {
@@ -82,8 +95,8 @@ namespace System.IO
             if ((backgroundWriteTask?.IsCompleted ?? true) && (backgroundWriteTask?.IsCompleted ?? true))
                 return;
             // Request cancelation of all work.
-            if (!CancelAllBackgroundTasksToken.IsCancellationRequested)
-                await CancelAllBackgroundTasksToken.CancelAsync();
+            if (!CancelAllBackgroundTasksTokenSource.IsCancellationRequested)
+                await CancelAllBackgroundTasksTokenSource.CancelAsync();
 
 
             // Wait for the background tasks to exit gracefully.
@@ -107,28 +120,33 @@ namespace System.IO
 
         #region Background Write
 
-        protected readonly CancellationTokenSource CancelBackgroundWriteToken;
+        protected readonly CancellationTokenSource CancelBackgroundWriteTokenSource;
 
         public Task? backgroundWriteTask { get; protected set; } = default;
         public bool IsBackgroundWriteTaskAssigned => backgroundWriteTask != default;
 
-        public Task StartBackgroundWrite(bufferAction? writeAction = default, bufferActionAsync? writeActionAsync = default, CancellationToken cancellationToken = default)
+
+        [MemberNotNull(nameof(backgroundWriteTask))]
+        public Task StartBackgroundWrite(bufferActionAsync writeActionAsync, CancellationToken cancellationToken = default)
+            => StartBackgroundWrite(writeActionAsync, writeAction:default, cancellationToken);
+
+        [MemberNotNull(nameof(backgroundWriteTask))]
+        public Task StartBackgroundWrite(bufferAction writeAction, CancellationToken cancellationToken = default)
+            => StartBackgroundWrite(writeActionAsync:default, writeAction, cancellationToken);
+
+        [MemberNotNull(nameof(backgroundWriteTask))]
+        public Task StartBackgroundWrite(bufferActionAsync? writeActionAsync = default, bufferAction? writeAction = default, CancellationToken cancellationToken = default)
         {
-            if (!(backgroundWriteTask?.IsCompleted??true)) throw new InvalidOperationException("Beackground write already started.");
 
-            // We need at least one action.
-            if (writeActionAsync is null && writeAction is null) ArgumentNullException.ThrowIfNull(writeAction);
+            if (!(backgroundWriteTask?.IsCompleted ?? true)) throw new InvalidOperationException("Beackground write already started.");
 
-            // Start the async action.
-            if (writeActionAsync is not null)
-            {
-                return backgroundWriteTask = RunAsyncAction(writeActionAsync, WriteStream, CancelBackgroundWriteToken.Token);
-            }
-            // Start the sync action
+            // We need at least one asyncAction but not both.
+            if (writeActionAsync == default && writeAction == default) ArgumentNullException.ThrowIfNull(writeAction);
+            if (writeActionAsync != default && writeAction != default) throw new ArgumentException("cannot provide sync and async action");
 
-            // can't supply two actions.
-            if (writeAction is null) throw new ArgumentException(nameof(writeAction));
-            return backgroundWriteTask = RunActionAsync(writeAction!, WriteStream, cancellationToken, CancelBackgroundWriteToken.Token);
+            // Start the action.
+            backgroundWriteTask = RunAction(WriteStream, CancelAllBackgroundTasksTokenSource.Token, writeActionAsync, writeAction, CancelBackgroundWriteTokenSource.Token, cancellationToken);
+            return backgroundWriteTask;
         }
 
         public async Task CancelBackgroundWriteAsync(TimeSpan? timeout = default, CancellationToken cancelWait = default)
@@ -137,42 +155,39 @@ namespace System.IO
             if (backgroundWriteTask?.IsCompleted ?? true) return;
 
             // Request cancelation of the task.
-            if (!CancelBackgroundWriteToken.IsCancellationRequested)
-                await CancelBackgroundWriteToken.CancelAsync();
+            if (!CancelBackgroundWriteTokenSource.IsCancellationRequested)
+                await CancelBackgroundWriteTokenSource.CancelAsync();
 
             await WaitForBackgroundWriteAsync(timeout, cancelWait);
 
         }
         public async Task WaitForBackgroundWriteAsync(TimeSpan? timeout = default, CancellationToken cancelWait = default)
-        => await (backgroundWriteTask??Task.CompletedTask).WaitAsync(timeout ?? DefaultMaxTimeToWaitForTaskComplete, cancelWait);
+        => await (backgroundWriteTask!??Task.CompletedTask).WaitAsync(timeout ?? DefaultMaxTimeToWaitForTaskComplete, cancelWait);
 
 
 
-        #endregion
+        #endregion Background processing
 
         #region Background Read
-        protected readonly CancellationTokenSource CancelBackgroundReadToken;
+        protected readonly CancellationTokenSource CancelBackgroundReadTokenSource;
 
         public Task? backgroundReadTask { get; protected set; } = default;
 
         public bool IsBackgroundReadTaskAssigned => backgroundReadTask != default;
 
 
-        public Task StartBackgroundRead(bufferAction? readAction = default, bufferActionAsync? readActionAsync = default, CancellationToken cancellationToken = default)
+        [MemberNotNull(nameof(backgroundReadTask))]
+        public Task StartBackgroundRead(bufferActionAsync? readActionAsync = default, bufferAction ? readAction = default, CancellationToken cancellationToken = default)
         {
+
             if (!(backgroundReadTask?.IsCompleted??true)) throw new InvalidOperationException("Beackground reader already started.");
 
-            // We need at least one action.
+            // We need at least one asyncAction but not both.
+            if (readActionAsync != default && readAction != default) throw new ArgumentException("Provide a sync of async action, not both.");
             if (readActionAsync is null && readAction is null) ArgumentNullException.ThrowIfNull(readAction);
 
-            //async action supplied.
-            if (readActionAsync is not null)
-            {
-                return backgroundReadTask = RunAsyncAction(readActionAsync, ReadStream, cancellationToken, CancelBackgroundReadToken.Token);
-            }
-
-            ArgumentNullException.ThrowIfNull(readAction);
-            return backgroundReadTask = RunActionAsync(readAction!, ReadStream, cancellationToken, CancelBackgroundReadToken.Token);
+            //Run the aaction
+            return backgroundReadTask = RunAction(ReadStream, CancelAllBackgroundTasksTokenSource.Token,  readActionAsync, readAction, cancellationToken, CancelBackgroundReadTokenSource.Token, cancellationToken);
         }
 
         public async Task CancelBackgroundReadAsync(TimeSpan? timeout = default, CancellationToken cancelWait = default)
@@ -181,8 +196,8 @@ namespace System.IO
             if (backgroundReadTask?.IsCompleted ?? true) return;
 
             // Request cancelation of the task.
-            if (!CancelBackgroundReadToken.IsCancellationRequested)
-                await CancelBackgroundReadToken.CancelAsync();
+            if (!CancelBackgroundReadTokenSource.IsCancellationRequested)
+                await CancelBackgroundReadTokenSource.CancelAsync();
 
             await WaitForBackgroundReadAsync(timeout, cancelWait).ConfigureAwait(false);
 
@@ -201,52 +216,48 @@ namespace System.IO
         #region helper methods
 
         /// <summary>
-        /// Runs the synchronouse action asynchronous.
+        /// Runs the synchronouse asyncAction asynchronous.
         /// </summary>
-        /// <param name="action">action delegate to execute</param>
-        /// <param name="stream"><see cref="Stream"/> process by the action.</param>
+        /// <param name="action">asyncAction delegate to execute</param>
+        /// <param name="stream"><see cref="Stream"/> process by the asyncAction.</param>
         /// <param name="masterCancel">The master <see cref="CancellationToken"/></param>
-        /// <param name="cancellationToken">action <see cref="CancellationToken"/></param>
+        /// <param name="cancellationToken">asyncAction <see cref="CancellationToken"/></param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentNullException"></exception>
-        private static Task RunActionAsync(bufferAction action, Stream stream, CancellationToken masterCancel, CancellationToken cancellationToken = default)
+        private static Task RunAction( Stream stream, CancellationToken masterCancel, bufferActionAsync? asyncAction = default, bufferAction? action = default, params CancellationToken[] cancellationTokens)
         {
-            ArgumentNullException.ThrowIfNull(action); ArgumentNullException.ThrowIfNull(stream);
+            // validate parameters.
+
+            // We must have an action.
+            if (asyncAction == default && action == default) 
+            {
+                throw new ArgumentException( message: $"{ nameof(action)} or { nameof(asyncAction)} is required");
+            }
+
+            //Did we get a unique action provided?
+            if (action != default && asyncAction != default) throw new ArgumentException(message: $"{nameof(action)} and {nameof(asyncAction)} supplied.");
+
 
             // Are we cancelled?
-            if (cancellationToken.IsCancellationRequested || masterCancel.IsCancellationRequested) return Task.CompletedTask;
+            if (cancellationTokens.Any(t => t.IsCancellationRequested) || masterCancel.IsCancellationRequested) return Task.CompletedTask;
 
-            // Start the task
-            var runAction = () =>
+            // prepare an action as an async function.
+            //asyncAction ??= async (stream, cancel) => { action!(stream, cancel); await Task.CompletedTask; };
+            if(asyncAction == default)
+                asyncAction = async (stream, cancel) => { action!(stream, cancel); await Task.CompletedTask; };
+
+            // Wrap the action and add a joined token.
+            var runAction = async () =>
                 {
-                    using (CancellationTokenSource ts = masterCancel.CreateLinkedTokenSource(cancellationToken)) // Joined token source for the task.
-                        action(stream, ts.Token);
+                    using (CancellationTokenSource ts = masterCancel.CreateLinkedTokenSource(cancellationTokens)) // Joined token source for the task.
+                        await asyncAction(stream, ts.Token);
                 };
 
-            // Run the action asynchronously.
-            return Task.Run(runAction, masterCancel.CreateLinkedToken(cancellationToken));
-        }
-
-        /// <summary>
-        /// Runs the a synchronouse action.
-        /// </summary>
-        /// <param name="action">action delegate to execute</param>
-        /// <param name="stream"><see cref="Stream"/> process by the action.</param>
-        /// <param name="masterCancel">The master <see cref="CancellationToken"/></param>
-        /// <param name="cancellationToken">action <see cref="CancellationToken"/></param>
-        /// <returns></returns>
-        /// <exception cref="System.ArgumentNullException"></exception>
-        private async static Task RunAsyncAction(bufferActionAsync action, Stream stream, CancellationToken masterCancel = default, CancellationToken cancellationToken = default)
-        {
-            ArgumentNullException.ThrowIfNull(action); ArgumentNullException.ThrowIfNull(stream);
-
-            // Are we canceled already?
-            if (cancellationToken.IsCancellationRequested || masterCancel.IsCancellationRequested) { await Task.CompletedTask; return; }
-
             // Run the action.
-            using (var ts = masterCancel.CreateLinkedTokenSource(cancellationToken)) // Disposed after action completes.
-                await action(stream, ts.Token);
+            return Task.Run(runAction, masterCancel.CreateLinkedToken(cancellationTokens));
+            //return Task.Factory.StartNew(runAction, TaskCreationOptions.LongRunning).Unwrap();
         }
+
         #endregion
 
         #region IDisposable
@@ -296,9 +307,9 @@ namespace System.IO
                     _pipe = null;
 
                     // Dispose all token sources.
-                    CancelAllBackgroundTasksToken.Dispose();
-                    CancelBackgroundReadToken.Dispose();
-                    CancelBackgroundWriteToken.Dispose();
+                    CancelAllBackgroundTasksTokenSource.Dispose();
+                    CancelBackgroundReadTokenSource.Dispose();
+                    CancelBackgroundWriteTokenSource.Dispose();
                     // Release Tasks.
                     backgroundReadTask?.Dispose();
                     backgroundReadTask  = null;

@@ -1,29 +1,40 @@
+using dotNetBlocks.System.IO.Tests.StreamBuffer;
+using FluentAssertions.Extensions;
+using Mono.Cecil.Cil;
 using System.Diagnostics;
 using System.IO.Hashing;
+using System.Threading.Tasks.Sources;
+
 
 
 namespace StreamBufferTests
 {
-    public partial class StreamBufferTests
+    public partial class Background_AsyncWriter_TestAsync
     {
 
         /// <summary>
         /// Test using a synchronous method to write in the background.
         /// </summary>
+        /// <remarks> You can rapidly deadlock your self with these tests as blocking is part of the buffer design.</remarks>
         [TestMethod]
-        public void Background_SyncWriter_Test()
+        public async Task Background_SyncWriter_TestAsync()
         {
             const int testSize = 4096;
-            StreamBuffer buffer = new();
+            const int bufferSize = testSize / 2;
+            StreamBuffer buffer = new( bufferSize);
 
             using (RandomStream sourceStream = new RandomStream(testSize))
             {
                 var readHash = new Crc32();
 
-                // Write source stream into pipe
-                buffer.StartBackgroundWrite((s, c) => sourceStream.CopyTo(s), default, CancellationToken.None);
+                // Write source stream into pipe and close it so the reader doesn't wait for more data.
+
+                _= buffer.StartBackgroundWrite(async (s, c) => { await sourceStream.CopyToAsync(s); }, default, CancellationToken.None);
+
                 // Read destination stream
-                buffer.ReadStream.ReadAndCalculateCRC(testSize, readHash);
+                var read = () => buffer.ReadStream.ReadAndCalculateCRCAsync(readHash, bufferSize);
+
+                await read.Should().CompleteWithinAsync(1.Seconds());
 
                 // Compare checksum
                 CollectionAssert.AreEquivalent(sourceStream.CRC.GetCurrentHash(), readHash.GetCurrentHash());
@@ -35,7 +46,7 @@ namespace StreamBufferTests
         /// Writes in background using an async method.
         /// </summary>
         [TestMethod]
-        public void Background_AsyncWriter_Test()
+        public async Task Background_AsyncWriter_Test_Async()
         {
             const int testSize = 4096;
             StreamBuffer buffer = new();
@@ -45,9 +56,11 @@ namespace StreamBufferTests
                 var readHash = new Crc32();
 
                 // Write source stream into pipe
-                buffer.StartBackgroundWrite(async (s, c) => await sourceStream.CopyToAsync(s, c), default, CancellationToken.None);
+                buffer.StartBackgroundWrite(async (s, c) => await sourceStream.CopyToAsync(s, c), default, CancellationToken.None).Should().NotBeNull();
+                await buffer.backgroundWriteTask!;
+                buffer.WriteStream.Close();
                 // Read destination stream
-                buffer.ReadStream.ReadAndCalculateCRC(testSize, readHash);
+               await buffer.ReadStream.ReadAndCalculateCRCAsync(readHash);
 
                 // Compare checksum
                 CollectionAssert.AreEquivalent(sourceStream.CRC.GetCurrentHash(), readHash.GetCurrentHash());
@@ -55,11 +68,11 @@ namespace StreamBufferTests
         }
 
         /// <summary>
-        /// Background Synchronous writer method is blocked until the data is read
+        /// Background Synchronous writer method is blocked until the data is readhalf
         /// and then it is released. Test hangs if this doesn't work properly.
         /// </summary>
         [TestMethod]
-        public void Background_sync_Writer_blocked_until_read()
+        public async Task Background_sync_Writer_blocked_until_read_async()
         {
             const int testSize = 4096;
             const int blockSize = testSize / 2;
@@ -71,13 +84,17 @@ namespace StreamBufferTests
                 var readHash = new Crc32();
 
                 // Write source stream into pipe in the background.
-                // We will hang here if this doesn't work properly.
+                // The write will block under the reader has readhalf everything.
 
-                buffer.StartBackgroundWrite((s, c) => sourceStream.CopyTo(s), default, CancellationToken.None);
+                var writeTask = buffer.StartBackgroundWrite((s, c) => { sourceStream.CopyTo(s); s.Close();  });
 
-                // Read destination stream
-                // This releases the writer.
-                buffer.ReadStream.ReadAndCalculateCRC(testSize, readHash);
+
+                Task.WaitAll(new Task[] { writeTask }, 100).Should().BeFalse();
+
+                await buffer.ReadStream.ReadAndCalculateCRCAsync(readHash);
+                Task.WaitAll(new Task[] { writeTask }, 100).Should().BeTrue();
+
+                // Now the write task shoudl be complete.
 
                 // Compare checksum
                 CollectionAssert.AreEquivalent(sourceStream.CRC.GetCurrentHash(), readHash.GetCurrentHash());
@@ -85,15 +102,16 @@ namespace StreamBufferTests
         }
 
         /// <summary>
-        /// Async Background writer is blocked until the data is read
+        /// Async Background writer is blocked until the data is readhalf
         /// and then it is released. Test hangs if this doesn't work properly.
         /// </summary>
         [TestMethod]
-        void Background_Async_Writer_blocked_until_read()
+        public async Task Background_Async_Writer_blocked_until_read_async()
         {
-            const int testSize = 4096;
-            const int blockSize = testSize / 2;
-            StreamBuffer buffer = new(blockSize); // Forces the write stream to block.
+
+            const int bufferSize = 1024;
+            const int testSize = bufferSize * 8;
+            StreamBuffer buffer = new(bufferSize); // Forces the write stream to block.
 
             // The source data is larger than the buffer so we should block.
             using (RandomStream sourceStream = new RandomStream(testSize))
@@ -103,19 +121,33 @@ namespace StreamBufferTests
                 // Write source stream into pipe in the background.
                 // We will hang here if this doesn't work properly.
 
-                buffer.StartBackgroundWrite(async (s, c) => await sourceStream.CopyToAsync(s, c), default, CancellationToken.None);
+                _= buffer.StartBackgroundWrite(
+                    async (Stream s, CancellationToken c) =>
+                {
+                    {
+                        await sourceStream.CopyToAsync(s, c);
+                    }
+                    }, CancellationToken.None);
 
-                // Read destination stream
+                //Func<Task> waitComplete = async () => await buffer.backgroundWriteTask;
+                Func<Task> waitComplete = async () => await buffer.backgroundWriteTask;
+                
+                await waitComplete.Should().NotCompleteWithinAsync(250.Milliseconds(),because:"full buffer blocks writer");
+
+                // Read destination stream and calculate the CRC.
                 // This releases the writer.
-                buffer.ReadStream.ReadAndCalculateCRC(testSize, readHash);
+                await buffer.ReadStream.ReadAndCalculateCRCAsync(readHash,testSize);
+
+                await waitComplete.Should().CompleteWithinAsync(250.Milliseconds());
+                buffer.backgroundWriteTask.IsCompletedSuccessfully.Should().BeTrue();
 
                 // Compare checksum
-                CollectionAssert.AreEquivalent(sourceStream.CRC.GetCurrentHash(), readHash.GetCurrentHash());
+                sourceStream.CRC.GetCurrentHash().Should().BeEquivalentTo(readHash.GetCurrentHash(), because: "Write and read checksums must match.");
             }
         }
 
         /// <summary>
-        /// Async Background writer is blocked until the data is read
+        /// Async Background writer is blocked until the data is readhalf
         /// and then it is released. Test hangs if this doesn't work properly.
         /// </summary>
         [TestMethod]
@@ -138,7 +170,7 @@ namespace StreamBufferTests
                 // Read destination stream
                 // This releases the writer.
                 // 
-                await buffer.StartBackgroundRead((s, c) => s.ReadAndCalculateCRC(testSize, readHash));
+                await buffer.StartBackgroundRead(async(s, c) => await s.ReadAndCalculateCRCAsync(readHash));
 
                 await buffer.WaitForBackgroundAsync();
 
