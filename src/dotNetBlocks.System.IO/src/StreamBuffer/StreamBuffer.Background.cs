@@ -76,6 +76,7 @@ namespace System.IO
         public Task StartBackgroundWriteAction(bufferAction writeAction,CancellationToken cancellationToken = default)
             => StartBackgroundWrite(writeAction:writeAction, options:default, cancellationToken: cancellationToken);
 
+        [MemberNotNull(nameof(backgroundWriteTask))]
         public Task StartBackgroundWriteAsync(bufferActionAsync writeActionAsync ,CancellationToken cancellationToken = default)
             => StartBackgroundWrite(writeActionAsync:writeActionAsync, options: default, cancellationToken:cancellationToken);
 

@@ -40,13 +40,14 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
         /// <remarks>
         /// These are low performance purpose built helpers.
         /// </remarks>
-        public static async Task CopyBytesAsync(this Stream sourceStream, Stream targetStream, int byteCount)
+        public static async Task CopyBytesAsync(this Stream sourceStream, Stream targetStream, int byteCount, CancellationToken cancellationToken = default)
         {
             // Allocate a new memory chunk.
             var bufferBlock = new Memory<byte>(new byte[byteCount]);
 
-            await sourceStream.ReadExactlyAsync(bufferBlock);
-            await targetStream.WriteAsync(bufferBlock);
+            await sourceStream.ReadExactlyAsync(bufferBlock, cancellationToken);
+            await targetStream.WriteAsync(bufferBlock, cancellationToken);
+            
         }
 
         /// <summary>
@@ -55,18 +56,18 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
         /// <param name="stream">The stream to readhalf.</param>
         /// <param name="totalBytes">The total bufferBlock to readhalf.</param>
         /// <param name="crc">The CRC.</param>
-        public static async Task ReadAndCalculateCRCAsync(this Stream stream, Crc32 crc, int? readSize = default)
+        public static async Task ReadAndCalculateCRCAsync(this Stream stream, Crc32 crc, int? readSize = default, CancellationToken cancellationToken = default)
         {
-            if (readSize == default) // readhalf the whole stream. 
+            if (readSize == default) // Read the whole stream.
             {
-                await crc.AppendAsync(stream);
+                await crc.AppendAsync(stream, cancellationToken);
                 return;
             }
             using (var buffer = new MemoryStream())
             {
-                await stream.CopyBytesAsync(buffer, readSize!.Value);
+                await stream.CopyBytesAsync(buffer, readSize!.Value, cancellationToken);
                 buffer.Position = 0;
-                await crc.AppendAsync(buffer);
+                await crc.AppendAsync(buffer, cancellationToken);
             }
         }
 

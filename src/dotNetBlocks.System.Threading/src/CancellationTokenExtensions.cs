@@ -73,9 +73,12 @@ namespace System.Threading
         /// <seealso cref="CancellationTokenSource.CreateLinkedTokenSource(CancellationToken[])"/>
         public static CancellationTokenSource CreateLinkedTokenSource(this IEnumerable<CancellationToken> tokens)
         {
-            // Filter out the valid tokens.
+            // Filter out the default tokens.
             var cleanTokens = from t in tokens where t != default(CancellationToken) select t;
-            return CancellationTokenSource.CreateLinkedTokenSource(cleanTokens.ToArray());
+            if (cleanTokens.Any())
+                return CancellationTokenSource.CreateLinkedTokenSource(cleanTokens.ToArray());
+            // Create a source linked to the default token because there are not valid tokens supplied.
+            else return CancellationTokenSource.CreateLinkedTokenSource(default(CancellationToken));
         }
 
 

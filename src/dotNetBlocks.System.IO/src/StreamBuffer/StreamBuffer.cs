@@ -18,7 +18,9 @@ namespace System.IO
     /// <summary>
     /// Buffer class controlling flow of data between reader and writer stream, limiting the amount of data in the buffer.
     /// </summary>
-    /// <remarks> This class uses the <see cref="_pipe"/> class as the underlying implementation and wraps helper methods for asynchronous functionality.</remarks>
+    /// <remarks> This class uses the <see cref="_pipe"/> class as the underlying implementation and wraps helper methods for asynchronous functionality.
+    /// To prevent becoming blocked or locked, read this article.     https://learn.microsoft.com/en-us/dotnet/standard/io/pipelines#backpressure-and-flow-control
+    /// </remarks>
     public partial class StreamBuffer: IAsyncDisposable, IDisposable
     {
 
