@@ -29,7 +29,7 @@ namespace StreamBufferTests
 
                 // Write source stream into pipe and close it so the reader doesn't wait for more data.
 
-                _= buffer.StartBackgroundWrite(async (s, c) => { await sourceStream.CopyToAsync(s); }, default, CancellationToken.None);
+                _= buffer.StartBackgroundWriteAsync(async (s, c) => { await sourceStream.CopyToAsync(s); }, CancellationToken.None);
 
                 // Read destination stream
                 var read = () => buffer.ReadStream.ReadAndCalculateCRCAsync(readHash, bufferSize);
@@ -56,7 +56,7 @@ namespace StreamBufferTests
                 var readHash = new Crc32();
 
                 // Write source stream into pipe
-                buffer.StartBackgroundWrite(async (s, c) => await sourceStream.CopyToAsync(s, c), default, CancellationToken.None).Should().NotBeNull();
+                buffer.StartBackgroundWriteAsync(async (s, c) => await sourceStream.CopyToAsync(s, c), CancellationToken.None).Should().NotBeNull();
                 await buffer.backgroundWriteTask!;
                 buffer.WriteStream.Close();
                 // Read destination stream
@@ -86,7 +86,7 @@ namespace StreamBufferTests
                 // Write source stream into pipe in the background.
                 // The write will block under the reader has readhalf everything.
 
-                var writeTask = buffer.StartBackgroundWrite((s, c) => { sourceStream.CopyTo(s); s.Close();  });
+                var writeTask = buffer.StartBackgroundWriteAction((s, c) => { sourceStream.CopyTo(s); s.Close();  });
 
 
                 Task.WaitAll(new Task[] { writeTask }, 100).Should().BeFalse();
@@ -121,7 +121,7 @@ namespace StreamBufferTests
                 // Write source stream into pipe in the background.
                 // We will hang here if this doesn't work properly.
 
-                _= buffer.StartBackgroundWrite(
+                _= buffer.StartBackgroundWriteAsync( 
                     async (Stream s, CancellationToken c) =>
                 {
                     {
@@ -165,7 +165,7 @@ namespace StreamBufferTests
                 // Write source stream into pipe in the background.
                 // We will hang here if this doesn't work properly.
 
-                await buffer.StartBackgroundWrite(async (s, c) => await sourceStream.CopyToAsync(s, c), default, CancellationToken.None);
+                await buffer.StartBackgroundWriteAsync(async (s, c) => await sourceStream.CopyToAsync(s, c), CancellationToken.None);
 
                 // Read destination stream
                 // This releases the writer.
