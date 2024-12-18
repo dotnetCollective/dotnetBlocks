@@ -12,7 +12,7 @@ namespace StreamBufferTests
         /// <summary>
         /// Test data written into the buffer is readhalf from it correctly.
         /// </summary>
-        [TestMethod]
+        [TestCategory("pass through"),TestMethod]
         public void BasicPassThroughTest()
         {
             const int testSize = 4096;
@@ -38,7 +38,7 @@ namespace StreamBufferTests
         /// <summary>
         /// Full buffer blocks write until readhalf.
         /// </summary>
-        [TestMethod]
+        [TestCategory("Buffer Blocking"), TestMethod]
         public async Task FullBufferBlocksWriteUntilReadAsync()
         {
             const int testSize = 1024; //4096;

@@ -44,10 +44,8 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
         {
             // Allocate a new memory chunk.
             var bufferBlock = new Memory<byte>(new byte[byteCount]);
-
             await sourceStream.ReadExactlyAsync(bufferBlock, cancellationToken);
             await targetStream.WriteAsync(bufferBlock, cancellationToken);
-            
         }
 
         /// <summary>
@@ -103,7 +101,18 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
         /// <param name="timeout">timespan to timeout.</param>
         /// <returns>true if timed out otherwise false</returns>
         public static async Task<bool> ExecuteWithTimeoutAsync(this Action action, int timeoutmilliseconds, CancellationToken cancellation = default)
-            => await ExecuteWithTimeoutAsync(action:action,asyncAction:default,  timeoutmilliseconds, cancellation);
+            => await ExecuteWithTimeoutAsync(action,  timeoutmilliseconds, cancellation);
+
+        /// <summary>
+        /// Executes the action with a timeout
+        /// </summary>
+        /// 
+        /// <param name="action">Action tp execute</param>
+        /// <param name="timeout">timespan to timeout.</param>
+        /// <returns>true if timed out otherwise false</returns>
+        public static async Task<bool> ExecuteWithTimeoutAsync(this Task actionTask, int timeoutmilliseconds, CancellationToken cancellation = default)
+            => await ExecuteWithTimeoutAsync(default, default, actionTask,  timeoutmilliseconds, cancellation);
+
 
         /// <summary>
         /// Executes the with timeout asynchronous.
@@ -113,7 +122,7 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
         /// <param name="cancellation">The cancellation.</param>
         /// <returns></returns>
         public static async Task<bool> ExecuteWithTimeoutAsync(this Func<Task> asyncAction, int timeoutmilliseconds, CancellationToken cancellation = default)
-                        => await ExecuteWithTimeoutAsync(action:default, asyncAction, timeoutmilliseconds, cancellation);
+                        => await ExecuteWithTimeoutAsync(default, asyncAction, default, timeoutmilliseconds:timeoutmilliseconds, cancellation);
 
 
         /// <summary>
@@ -126,10 +135,12 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
         /// <returns>
         /// true if timed out otherwise false
         /// </returns>
-        public static async Task<bool> ExecuteWithTimeoutAsync(Action? action = default, Func<Task>? asyncAction = default, int timeoutmilliseconds = 250, CancellationToken cancellation = default)
+        public static async Task<bool> ExecuteWithTimeoutAsync(Action? action = default, Func<Task>? asyncAction = default, Task? actionTask = default, int timeoutmilliseconds = 250, CancellationToken cancellation = default)
         {
             // Build a list of all the action tasks.
             List<Task> actionTasks = new List<Task>();
+            if (actionTask != default)
+                actionTasks.Add(actionTask);
             if (action != default) 
                 actionTasks.Add( Task.Run(action, cancellation));
             if (asyncAction != default)
@@ -145,7 +156,7 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
 
 
             // Return true if the tasks are completed sucessfully
-            return allActionsTasks.IsCompletedSuccessfully || cancellation.IsCancellationRequested;
+            return allActionsTasks.IsCompletedSuccessfully&&!timeoutTask.IsCompletedSuccessfully || cancellation.IsCancellationRequested;
         }
 
         #endregion
