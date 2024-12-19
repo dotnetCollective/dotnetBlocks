@@ -1,3 +1,4 @@
+using dotNetBlocks.System.IO;
 using dotNetBlocks.System.IO.Tests.StreamBuffer;
 using FluentAssertions.Extensions;
 using System.Diagnostics;
@@ -23,7 +24,7 @@ namespace StreamBufferTests
                 var readHash = new Crc32();
 
                 // Write source stream into pipe
-                sourceStream.CopyBytes(buffer.WriteStream,testSize);
+                sourceStream.CopyToAsync(buffer.WriteStream,testSize);
                 // Read destination stream
                 buffer.ReadStream.ReadAndCalculateCRC(readHash,testSize);
 
@@ -57,8 +58,8 @@ namespace StreamBufferTests
 
                 // read buffer
                 int readSize = 0;
-                var read = () => buffer.ReadStream.ReadAndCalculateCRCAsync(readHash, readSize);
-                var readDiscardByte = () => buffer.ReadStream.ReadAndCalculateCRCAsync(new Crc32(), 1);
+                var read = async () => await buffer.ReadStream.ReadAndCalculateCRCAsync(readHash, readSize, null).AsTask();
+                var readDiscardByte = () => buffer.ReadStream.ReadAndCalculateCRCAsync(new Crc32(), 1, null);
 
                 // End define methods
 

@@ -16,54 +16,21 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
     {
 
         /// <summary>
-        /// Copies the specified number of bytes from one stream to another.
-        /// </summary>
-        /// <param name="sourceStream">The source stream.</param>
-        /// <param name="targetStream">The target stream.</param>
-        /// <param name="byteCount">The byte count.</param>
-        /// <remarks>
-        /// These are low performance purpose built helpers.
-        /// </remarks>
-        public static void CopyBytes(this Stream sourceStream, Stream targetStream, int byteCount)
-        {
-            var bufferBlock = new Span<byte>(new byte[byteCount]);
-            sourceStream.ReadExactly(bufferBlock);
-            targetStream.Write(bufferBlock);
-        }
-
-        /// <summary>
-        /// Copies the block asynchronous.
-        /// </summary>
-        /// <param name="sourceStream">The source stream.</param>
-        /// <param name="targetStream">The target stream.</param>
-        /// <param name="byteCount">The byte count.</param>
-        /// <remarks>
-        /// These are low performance purpose built helpers.
-        /// </remarks>
-        public static async Task CopyBytesAsync(this Stream sourceStream, Stream targetStream, int byteCount, CancellationToken cancellationToken = default)
-        {
-            // Allocate a new memory chunk.
-            var bufferBlock = new Memory<byte>(new byte[byteCount]);
-            await sourceStream.ReadExactlyAsync(bufferBlock, cancellationToken);
-            await targetStream.WriteAsync(bufferBlock, cancellationToken);
-        }
-
-        /// <summary>
         /// Reads the data and calculates the CRC.
         /// </summary>
         /// <param name="stream">The stream to readhalf.</param>
         /// <param name="totalBytes">The total bufferBlock to readhalf.</param>
         /// <param name="crc">The CRC.</param>
-        public static async Task ReadAndCalculateCRCAsync(this Stream stream, Crc32 crc, int? readSize = default, CancellationToken cancellationToken = default)
+        public static async Task ReadAndCalculateCRCAsync(this Stream stream, Crc32 crc, int? count = default, CancellationToken cancellationToken = default)
         {
-            if (readSize == default) // Read the whole stream.
+            if (count == default) // Read the whole stream.
             {
                 await crc.AppendAsync(stream, cancellationToken);
                 return;
             }
             using (var buffer = new MemoryStream())
             {
-                await stream.CopyBytesAsync(buffer, readSize!.Value, cancellationToken);
+                await stream.CopyBytesAsync(buffer, count!.Value, cancellationToken);
                 buffer.Position = 0;
                 await crc.AppendAsync(buffer, cancellationToken);
             }

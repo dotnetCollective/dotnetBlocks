@@ -33,7 +33,7 @@ namespace StreamBufferTests
                 // Write source stream into pipe. The pipe hangs as you hit the buffer size.
 
 
-                _ = buffer.StartBackgroundWrite(async(s, c) => await sourceStream.CopyBytesAsync(s, blockSize, c), CancellationToken.None);
+                _ = buffer.StartBackgroundWrite(async(s, c) => await sourceStream.CopyToAsync(s, blockSize, c), CancellationToken.None);
 
                 var write = async Task () => await buffer.backgroundWriteTask!;
 
@@ -41,7 +41,7 @@ namespace StreamBufferTests
 
                 // Read destination stream
                 var read = () => buffer.ReadStream.ReadAndCalculateCRCAsync(readHash, blockSize);
-                await read.Should().CompleteWithinAsync(250.Milliseconds(), because:" We read al the data..");
+                await read.Should().CompleteWithinAsync(250.Milliseconds(), because:" We read all the data..");
 
                 // Compare checksum
                 CollectionAssert.AreEquivalent(sourceStream.CRC.GetCurrentHash(), readHash.GetCurrentHash());
@@ -58,14 +58,14 @@ namespace StreamBufferTests
             const int blockSize = 1024;
             const int bufferSize = blockSize;
             const int testSize = blockSize*2;
-            StreamBuffer buffer = new(blockSize);
+            StreamBuffer buffer = new(bufferSize);
 
             using (RandomStream sourceStream = new RandomStream(testSize))
             {
                 var readHash = new Crc32();
 
                 // Write source stream into pipe
-                _= buffer.StartBackgroundWrite(async Task (s, c) => await sourceStream.CopyBytesAsync(s, blockSize)  , CancellationToken.None);
+                _= buffer.StartBackgroundWrite(async Task (s, c) => await sourceStream.CopyToAsync(s, blockSize)  , CancellationToken.None);
 
                 var  writeComplete = async Task() =>   await buffer.backgroundWriteTask!;
 
@@ -105,7 +105,7 @@ namespace StreamBufferTests
 
                 // Write source stream into pipe in the background.
                 // The write will block under the reader has readhalf everything.
-                _ = buffer.StartBackgroundWrite( async (s, c) => { await sourceStream.CopyBytesAsync(s, bufferSize, c); });
+                _ = buffer.StartBackgroundWrite( async (s, c) => { await sourceStream.CopyToAsync(s, bufferSize, c); });
 
 
                 var writeTask = async Task() => await buffer.backgroundWriteTask!;
@@ -148,7 +148,7 @@ namespace StreamBufferTests
                     async (Stream s, CancellationToken c) =>
                 {
                     {
-                        await sourceStream.CopyBytesAsync(s, testSize, c);
+                        await sourceStream.CopyToAsync(s, testSize, c);
                     }
                 }, CancellationToken.None);
 
@@ -189,17 +189,22 @@ namespace StreamBufferTests
                 // Write source stream into pipe in the background.
                 // Writer will block until more data is read.
 
-                var writeWait = async () => await buffer.StartBackgroundWrite(async (s, c) => await sourceStream.CopyBytesAsync(s, blockSize, c), default);
+                var writeWait = async () => await buffer.StartBackgroundWrite(async (s, c) => await sourceStream.CopyToAsync(s, blockSize, c), default);
 
                 await writeWait.Should().NotCompleteWithinAsync(250.Milliseconds(), because: "full buffer blocks write.");
 
                 // Read destination stream
                 // This releases the writer.
                 // 
-                var readWait = async () => await buffer.StartBackgroundRead(async (s, c) => await s.ReadAndCalculateCRCAsync(readHash, blockSize));
+                _= buffer.StartBackgroundRead(async (s, c) => await s.ReadAndCalculateCRCAsync(readHash, blockSize,c));
+
+                var readWait = async () => await buffer.backgroundReadTask!;
 
                 await readWait.Should().CompleteWithinAsync(250.Milliseconds(), because: "Buffer ready to read.");
 
+
+                // Reset the source stream to calculate the correct CRC.
+                sourceStream.Position = blockSize;
                 // Compare checksum
                 readHash.GetCurrentHash().Should().BeEquivalentTo(sourceStream.CRC.GetCurrentHash());
             }

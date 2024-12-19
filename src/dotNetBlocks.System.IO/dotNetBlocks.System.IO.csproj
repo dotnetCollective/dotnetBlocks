@@ -13,6 +13,7 @@
 Commonly Used Types:
 dotNetBlocks.System.IO.StreamBuffer
 </PackageDescription>
+
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,12 +26,17 @@ dotNetBlocks.System.IO.StreamBuffer
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.IO.Hashing" Version="9.0.0" />
     <PackageReference Include="System.IO.Pipelines" Version="9.0.0" />
     <PackageReference Include="System.IO.Pipes" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\dotNetBlocks.System.Threading\src\dotNetBlocks.System.Threading.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FluentAssertions" Version="8.0.0-alpha.1" />
   </ItemGroup>
 
   

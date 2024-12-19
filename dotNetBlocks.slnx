@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/build/" Id="02ea681e-c7d8-13c7-8484-4ac65e1b71e8">
+    <File Path="Directory.Build.props" />
+  </Folder>
   <Folder Name="/Tests/">
     <Project Path="src/dotNetBlocks.System.IO/tests/dotNetBlocks.System.IO.Tests.csproj" />
     <Project Path="src/dotNetBlocks.System.Threading/tests/dotNetBlocks.System.Threading.Tests.csproj" />

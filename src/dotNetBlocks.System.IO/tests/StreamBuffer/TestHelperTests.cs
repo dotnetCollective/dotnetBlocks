@@ -5,6 +5,7 @@ using System.IO.Hashing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using dotNetBlocks.System.IO;
 
 namespace dotNetBlocks.System.IO.Tests.StreamBuffer
 {
@@ -73,11 +74,11 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
         {
             await Task.CompletedTask;
 
-            const int bufferSize = 1024;
-            const int sliceSize = bufferSize / 2;
-            using (var source = new RandomStream(bufferSize))
+            const int testSize = 1024;
+            const int sliceSize = testSize / 2;
+            using (var source = new RandomStream(testSize))
             {
-                using (var target = new MemoryStream(sliceSize))
+                using (var target = new MemoryStream(testSize))
                 {
                     await source.CopyBytesAsync(target, sliceSize);
                     source.Position = 0;
@@ -99,8 +100,6 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
         [TestMethod()]
         public async Task streamCopyCalculateCRC()
         {
-            await Task.CompletedTask;
-
             const int bufferSize = 1024;
             const int sliceSize = bufferSize / 2;
 

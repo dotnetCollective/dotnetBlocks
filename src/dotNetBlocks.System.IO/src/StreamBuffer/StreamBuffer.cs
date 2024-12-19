@@ -21,7 +21,7 @@ namespace System.IO
     /// <remarks> This class uses the <see cref="_pipe"/> class as the underlying implementation and wraps helper methods for asynchronous functionality.
     /// To prevent becoming blocked or locked, read this article.     https://learn.microsoft.com/en-us/dotnet/standard/io/pipelines#backpressure-and-flow-control
     /// </remarks>
-    public partial class StreamBuffer: IAsyncDisposable, IDisposable
+    public partial class StreamBuffer : IAsyncDisposable, IDisposable, IStreamBuffer
     {
 
 
@@ -62,8 +62,8 @@ namespace System.IO
         ///         /// Default buffer size is 64k
 
         /// </param>
-        public StreamBuffer(long? bufferSize = DefaultBufferSize,  double? resumePercentBufferUsed = DefaultResumePercentBufferUsed) 
-            : this( CalculatePipeOptions(bufferSize, resumePercentBufferUsed))
+        public StreamBuffer(long? bufferSize = DefaultBufferSize, double? resumePercentBufferUsed = DefaultResumePercentBufferUsed)
+            : this(CalculatePipeOptions(bufferSize, resumePercentBufferUsed))
         {
 
         }
@@ -106,7 +106,7 @@ namespace System.IO
         {
             // Cancal and wait for all background tasks.
             await CancelBackgroundAsync();
-                await ValueTask.CompletedTask;
+            await ValueTask.CompletedTask;
         }
 
 
@@ -136,7 +136,7 @@ namespace System.IO
                     CancelBackgroundWriteTokenSource.Dispose();
                     // Release Tasks.
                     backgroundReadTask?.Dispose();
-                    backgroundReadTask  = null;
+                    backgroundReadTask = null;
 
                     backgroundWriteTask?.Dispose();
                     backgroundWriteTask = null;

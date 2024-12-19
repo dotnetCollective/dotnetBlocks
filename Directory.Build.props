@@ -15,6 +15,12 @@
       <TestPropsFile>$(propsFolder)test.Build.props</TestPropsFile>
   </PropertyGroup>
 
+  <!-- Enable features - file nesting.-->
+<ItemGroup>
+  <ProjectCapability Include="ConfigurableFileNesting" />
+  <ProjectCapability Include="ConfigurableFileNestingFeatureEnabled" />
+</ItemGroup>
+
   <PropertyGroup>
       <!-- Set test project if not set and the project name contains ".Test"-->
       <IsTestProject Condition="'$IsTestProject'!='True' Or '$projectNameContainsTest' == 'True' ">True</IsTestProject>
