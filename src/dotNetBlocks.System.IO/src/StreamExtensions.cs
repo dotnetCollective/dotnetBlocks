@@ -21,12 +21,13 @@ namespace dotNetBlocks.System.IO
             using (var buffer = MemoryPool<byte>.Shared.Rent(bufferSize.Value)) // Allocate a buffer for the copy process.
             {
                 while (byteCount > 0)
-            {
-                    var bytesRead = await source.ReadAsync(buffer.Memory.Slice(0, (int)Math.Min(byteCount, buffer.Memory.Length)), cancellation);
+                {
+                    var readSlice = buffer.Memory.Slice(0, (int)Math.Min(byteCount, buffer.Memory.Length));
+                    var bytesRead = await source.ReadAsync(readSlice, cancellation);
                     if (bytesRead == 0) return; // Source is complete.
-                        crc.Append(buffer.Memory.Span.Slice(0, bytesRead));
+                    crc.Append(buffer.Memory.Span.Slice(0, bytesRead));
                     byteCount -= bytesRead; //
-                }
+                } 
             }
         }
 
@@ -50,18 +51,18 @@ namespace dotNetBlocks.System.IO
             {
                 var bytesRemaining = count;
                 var bytesCopied = 0;
-
                 while (bytesRemaining > 0)
                 {
                     cancellationToken.ThrowIfCancellationRequested();
                     // Fill the buffer. Read the remaining bytes or a full buffer. 
-                    var bytesRead = await source.ReadAsync(buffer.Memory.Slice(0, (int)Math.Min(bytesRemaining, buffer.Memory.Length)),cancellationToken);
+                    var readSlice = buffer.Memory.Slice(0, (int)Math.Min(bytesRemaining, buffer.Memory.Length));
+                    var bytesRead = await source.ReadAsync(readSlice, cancellationToken);
 
                     // Is the source done?
                     if (bytesRead == 0) return bytesCopied;
 
                     // Write the bytes to the target.
-                    target.Write(buffer.Memory.Span.Slice(0, bytesRead));
+                    await target.WriteAsync(readSlice.Slice(0, bytesRead), cancellationToken);
 
                     // Adjust the counters.
                     bytesCopied += bytesRead;
@@ -96,14 +97,15 @@ namespace dotNetBlocks.System.IO
                 while (bytesRemaining > 0)
                 {
                     cancellationToken.ThrowIfCancellationRequested();
-                    // Fill the buffer. Read the remaining bytes or a full buffer. 
-                    var bytesRead = source.Read(buffer.Memory.Span.Slice(0, (int)Math.Min(bytesRemaining, buffer.Memory.Length)));
+                    // Fill the buffer. Read the remaining bytes or a full buffer.
+                    var readSlice = buffer.Memory.Slice(0, (int)Math.Min(bytesRemaining, buffer.Memory.Length));
+                    var bytesRead = source.Read(readSlice.Span);
 
                     // Is the source done?
                     if (bytesRead == 0) return bytesCopied;
 
                     // Write the bytes to the target.
-                    target.Write(buffer.Memory.Span.Slice(0, bytesRead));
+                    target.Write(readSlice.Slice(0, bytesRead).Span);
 
                     // Adjust the counters.
                     bytesCopied += bytesRead;
@@ -133,9 +135,7 @@ namespace dotNetBlocks.System.IO
         /// <param name="destination">The target source.</param>
         /// <param name="count">The number of bytes to copy.</param>
         /// <returns>A task representing the asynchronous operation.</returns>
-        public static async Task CopyBytesAsync(this Stream source, Stream destination, long count)
-        {
-            await source.CopyBytesAsync(destination, count, CancellationToken.None);
-        }
+        public static async ValueTask<int> CopyBytesAsync(this Stream source, Stream destination, long count)
+        => await source.CopyBytesAsync(destination, count, CancellationToken.None);
     }
 }
