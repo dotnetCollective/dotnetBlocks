@@ -32,7 +32,7 @@
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
         <IncludePackageReferencesDuringMarkupCompilation>true</IncludePackageReferencesDuringMarkupCompilation>
         <IncludeSymbols>false</IncludeSymbols>
-        <IncludeSource>false</IncludeSource>
+        <IncludeSource>True</IncludeSource>
         <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
 

@@ -1,13 +1,12 @@
 <Solution>
-  <Folder Name="/Tests/">
-    <Project Path="tests/dotNetBlocks.System.IO.Tests/dotNetBlocks.System.IO.StreamBuffer.Tests/dotNetBlocks.System.IO.StreamBuffer.Tests.csproj" />
-    <Project Path="tests/dotNetBlocks.System.IO.Tests/dotNetBlocks.System.IO.Tests.csproj" />
-    <Project Path="tests/dotNetBlocks.System.Threading.Tests/dotNetBlocks.System.Threading.Tests.csproj" />
+  <Folder Name="/build/" Id="02ea681e-c7d8-13c7-8484-4ac65e1b71e8">
+    <File Path="Directory.Build.props" />
   </Folder>
-  <Project Path="src/dotNetBlocks.Business.Shared/dotNetBlocks.Business.Shared.csproj" />
-  <Project Path="src/DotNetBlocks.Business/DotNetBlocks.Business.csproj" />
-  <Project Path="src/dotNetBlocks.docs/dotNetBlocks.docs.csproj" />
+  <Folder Name="/Tests/">
+    <Project Path="src/dotNetBlocks.System.IO/tests/dotNetBlocks.System.IO.Tests.csproj" />
+    <Project Path="src/dotNetBlocks.System.Threading/tests/dotNetBlocks.System.Threading.Tests.csproj" />
+  </Folder>
+  <Project Path="src/dotNetBlocks.Business.Shared/src/dotNetBlocks.Business.Shared.csproj" Id="5038afeb-3d93-c0ad-7899-c6c0a3a5b038" />
   <Project Path="src/dotNetBlocks.System.IO/dotNetBlocks.System.IO.csproj" />
-  <Project Path="src/dotNetBlocks.System.IO/dotNetBlocks.System.IO.StreamBuffer/dotNetBlocks.System.IO.StreamBuffer.csproj" />
-  <Project Path="src/dotNetBlocks.System.Threading/dotNetBlocks.System.Threading.csproj" />
+  <Project Path="src/dotNetBlocks.System.Threading/src/dotNetBlocks.System.Threading.csproj" Id="7d8e59f4-3ee5-170f-81be-392e27934d18" />
 </Solution>

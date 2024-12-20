@@ -9,25 +9,36 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 
     <PackageDescription> adds stream functionality for buffering streams without memory usage.
+        Stream extensions provide methods to copy parts of streams or calculate CRC checksums.
 
 Commonly Used Types:
 dotNetBlocks.System.IO.StreamBuffer
+dotNetBlocks.System.IO.StreamBufferExtensions
 </PackageDescription>
+
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
     <Compile Remove="tests\**" />
+    <EmbeddedResource Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
     <EmbeddedResource Remove="tests\**" />
+    <None Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
     <None Remove="tests\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.IO.Pipelines" Version="8.0.0" />
+    <PackageReference Include="System.IO.Hashing" Version="9.0.0" />
+    <PackageReference Include="System.IO.Pipelines" Version="9.0.0" />
     <PackageReference Include="System.IO.Pipes" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\dotNetBlocks.System.Threading\src\dotNetBlocks.System.Threading.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FluentAssertions" Version="8.0.0-alpha.1" />
   </ItemGroup>
 
   
