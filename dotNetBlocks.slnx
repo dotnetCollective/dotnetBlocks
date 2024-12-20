@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/build/" Id="02ea681e-c7d8-13c7-8484-4ac65e1b71e8">
+    <File Path="build/global.Build.props" />
     <File Path="Directory.Build.props" />
   </Folder>
   <Folder Name="/Tests/">

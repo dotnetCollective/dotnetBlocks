@@ -16,7 +16,9 @@
 - Building blocks allow developers and organizations to build applications that rapidly scale quickly with strong repeatable design patterns.
 
 ## Components
-[Stream Buffer](src/dotNetBlocks.System.IO/dotNetBlocks.System.IO.StreamBuffer/readme.md) - allows blocked writing to and reading from the streams concurrently with restricted memory usage. write stream and read stream connected by a memory buffer - provides a connected write and read stream and threading options.
+
+[System.IO](src/dotNetBlocks.System.IO/readme.md)
+* Adds functionality to Streams, solving problems with Stream Buffers, Calculating CRCs and specialized Copy commands. Stream Buffer - allows blocked writing to and reading from the streams concurrently with restricted memory usage. write stream and read stream connected by a memory buffer - provides a connected write and read stream and threading options.
 
 ## License
 
