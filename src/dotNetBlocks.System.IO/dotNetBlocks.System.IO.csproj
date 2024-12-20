@@ -9,9 +9,11 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 
     <PackageDescription> adds stream functionality for buffering streams without memory usage.
+        Stream extensions provide methods to copy parts of streams or calculate CRC checksums.
 
 Commonly Used Types:
 dotNetBlocks.System.IO.StreamBuffer
+dotNetBlocks.System.IO.StreamBufferExtensions
 </PackageDescription>
 
   </PropertyGroup>

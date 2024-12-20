@@ -58,8 +58,8 @@ namespace StreamBufferTests
 
                 // read buffer
                 int readSize = 0;
-                var read = async Task () => await buffer.ReadStream.ReadAndCalculateCRCAsync(readHash, readSize, null);
-                var readDiscardByte = async Task() => await buffer.ReadStream.ReadAndCalculateCRCAsync(new Crc32(), 1, null);
+                var read = async Task () => await buffer.ReadStream.ReadAndCalculateCRCAsync(readHash, readSize);
+                var readDiscardByte = async Task() => await buffer.ReadStream.ReadAndCalculateCRCAsync(new Crc32(), 1);
 
                 // End define methods
 

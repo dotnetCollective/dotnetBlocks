@@ -8,6 +8,11 @@ using System.Threading.Tasks;
 
 namespace StreamBufferTests
 {
+    /// <summary>
+    /// Creates a stream of random data.
+    /// </summary>
+    /// <remarks> TODO: Productize, generating the random data as its being read and storing it in the stream on use instead of creating in advance. Also create a stream class with a CRC calc built in.</remarks>
+    /// <seealso cref="System.IO.MemoryStream" />
     internal class RandomStream : MemoryStream
     {
         public Random dataGenerator = new();

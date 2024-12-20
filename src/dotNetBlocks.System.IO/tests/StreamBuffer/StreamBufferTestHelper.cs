@@ -15,47 +15,6 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
     static internal class StreamBufferTestHelper
     {
 
-        /// <summary>
-        /// Reads the data and calculates the CRC.
-        /// </summary>
-        /// <param name="stream">The stream to readhalf.</param>
-        /// <param name="totalBytes">The total bufferBlock to readhalf.</param>
-        /// <param name="crc">The CRC.</param>
-        public static async Task ReadAndCalculateCRCAsync(this Stream stream, Crc32 crc, int? count = default, CancellationToken cancellationToken = default)
-        {
-            if (count == default) // Read the whole stream.
-            {
-                await crc.AppendAsync(stream, cancellationToken);
-                return;
-            }
-            using (var buffer = new MemoryStream())
-            {
-                await stream.CopyBytesAsync(buffer, count!.Value, cancellationToken);
-                buffer.Position = 0;
-                await crc.AppendAsync(buffer, cancellationToken);
-            }
-        }
-
-        /// <summary>
-        /// Reads the data and calculates the CRC.
-        /// </summary>
-        /// <param name="stream">The stream to readhalf.</param>
-        /// <param name="totalBytes">The total bufferBlock to readhalf.</param>
-        /// <param name="crc">The CRC.</param>
-        public static void ReadAndCalculateCRC(this Stream stream, Crc32 crc, int? readSize = default)
-        {
-            if (readSize == default) // readhalf the whole stream. 
-            {
-                crc.Append(stream);
-                return;
-            }
-            using (var buffer = new MemoryStream(readSize!.Value))
-            {
-                stream.CopyBytes(buffer, readSize!.Value);
-                buffer.Position = 0;
-                crc.Append(buffer);
-            }
-        }
 
 
         #region Execute with timeout helpers.
