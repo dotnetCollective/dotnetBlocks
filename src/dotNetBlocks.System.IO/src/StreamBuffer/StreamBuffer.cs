@@ -24,10 +24,7 @@ namespace System.IO
     public partial class StreamBuffer : IAsyncDisposable, IDisposable, IStreamBuffer
     {
 
-
         #region Pipe
-        private const double DefaultResumePercentBufferUsed = 0.75;
-        private const long DefaultBufferSize = 65536; // 64k
         private Pipe? _pipe;
         // Streams
         public Stream ReadStream => _disposed ? throw new ObjectDisposedException(nameof(StreamBuffer)) : _pipe!.Reader.AsStream();
@@ -62,27 +59,18 @@ namespace System.IO
         ///         /// Default buffer size is 64k
 
         /// </param>
-        public StreamBuffer(long? bufferSize = DefaultBufferSize, double? resumePercentBufferUsed = DefaultResumePercentBufferUsed)
-            : this(CalculatePipeOptions(bufferSize, resumePercentBufferUsed))
+        public StreamBuffer(int bufferSize) : this(
+                new StreamBufferOptions()
+                {
+                    BufferSize = bufferSize
+                })
         {
-
-        }
-        // ToDo: Rework this with a buffer taskOptions class.
-        private static PipeOptions CalculatePipeOptions(long? bufferSize = DefaultBufferSize, double? resumePercentBufferUsed = DefaultResumePercentBufferUsed)
-        {
-            // Configure the taskOptions based on the buffer.
-            bufferSize ??= DefaultBufferSize;
-            resumePercentBufferUsed ??= DefaultResumePercentBufferUsed;
-
-            long pauseWriterThreshold = bufferSize.Value;
-            long resumeWriteThreshold = (long)(pauseWriterThreshold * resumePercentBufferUsed);
-
-            // Create the pipe for this buffer;
-            return new PipeOptions(pauseWriterThreshold: pauseWriterThreshold, resumeWriterThreshold: resumeWriteThreshold);
-
         }
 
-
+        public StreamBuffer(StreamBufferOptions bufferOptions)
+            : this(bufferOptions.PipeOptions)
+        {
+        }
 
         #region IDisposable
 

@@ -17,14 +17,14 @@ namespace StreamBufferTests
         public void BasicPassThroughTest()
         {
             const int testSize = 4096;
-            StreamBuffer buffer = new();
+            StreamBuffer buffer = new(testSize+1); // Add a byte so the write completes.
 
             using (RandomStream sourceStream = new RandomStream(testSize))
             {
                 var readHash = new Crc32();
 
                 // Write source stream into pipe
-                sourceStream.CopyToAsync(buffer.WriteStream,testSize);
+                sourceStream.CopyBytes(buffer.WriteStream,testSize);
                 // Read destination stream
                 buffer.ReadStream.ReadAndCalculateCRC(readHash,testSize);
 
