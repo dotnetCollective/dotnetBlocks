@@ -1,0 +1,3 @@
+[submodule "tools/dotNetBlocks.docs/src/themes/docable"]
+	path = tools/dotNetBlocks.docs/src/themes/docable
+	url = https://github.com/statiqdev/Docable.git
