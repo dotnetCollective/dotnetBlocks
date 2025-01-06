@@ -41,24 +41,19 @@ namespace dotNetBlocks.docs
         {
 
             // Start the search at the executing directory.
-            NormalizedPath appPath = $@"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}/"
+            NormalizedPath appPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 ;
-            var folder = new DirectoryInfo(appPath.FullPath);
-            bool found = folder!.EnumerateFiles("Directory.Build.props").Any();
-            while (!found)
-            {
-                folder = folder.Parent;
-                found = folder!.EnumerateFiles("Directory.Build.props").Any();
-            }
 
-            NormalizedPath repoRoot = $"{folder.FullName}";
-            if (!folder.FullName!.EndsWith("dotNetBlocks")) throw new Exception("Could not find the root of the dot net blocks repo.");
+            var repoRoot = FindRepoRoot(appPath.FullPath);
 
-            repoRoot = $"{repoRoot}/";
+             //repoRoot = $"{repoRoot}{NormalizedPath.Slash}";
 
-            // Set the docs root where we want output to go to.
-            NormalizedPath docsRoot = repoRoot.Combine("docs");
-            NormalizedPath srcRoot = repoRoot.Combine("src");
+            // Set all the required paths.
+            var docsRoot = repoRoot.Combine("docs");
+            var srcRoot = repoRoot.Combine("src");
+            var tempPath = appPath.Combine("temp");
+                var cachePath = appPath.Combine("cache");
+            var outputPath = docsRoot.Combine("output");
 
             //args = new string[] { "serve" };
             //args = new string[] { "-l Debug", "run serve", };
@@ -82,37 +77,64 @@ namespace dotNetBlocks.docs
 
             var settings = new Dictionary<string, object>
             {
-                //{ DocsKeys.ApiPath, "api" },
-                { WebKeys.TempPath, (NormalizedPath) appPath.Combine("temp") },
-                { WebKeys.CachePath, (NormalizedPath) appPath.Combine("cache") },
-                { WebKeys.OutputPath, (NormalizedPath)docsRoot.Combine("output")},
-                { DocsKeys.SourceFiles, sourceFiles },
-                //{ WebKeys.InputPaths, (NormalizedPath) @$"{docsRoot}input" },
-                //{ WebKeys.InputPaths, new NormalizedPath[]{ @"input",@"" } },
+                { DocsKeys.ApiPath, "api" },
+                { WebKeys.TempPath, tempPath },
+                { WebKeys.CachePath, cachePath },
+                { WebKeys.OutputPath, outputPath },
+                //{ DocsKeys.SourceFiles, sourceFiles },
+                ////{ WebKeys.InputPaths, new NormalizedPath[]{ @"input",@"" } },
+                { WebKeys.InputPaths, new NormalizedPath[]{ $"{docsRoot}{{!output}}" } },
                 //{ WebKeys.ThemePaths, new NormalizedPath[] { @$"themes/docable/" } }, // Does not work for this setup.
                 //{ WebKeys.Title, "dotNetBlocks API" },
             };
 
 
             CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
-            return await Bootstrapper.Factory
-                .CreateDocs(args) 
+            var bootstrapper = Bootstrapper.Factory.CreateDocs(args);
+
+            bootstrapper
+                .AddInputPath($@"{docsRoot}/**{{!output}}/*.*")
                 .AddDefaultConfigurationFiles()
                 .AddSettings(settings)
-                .ConfigureSettings(
-                    (settings) => {
-                    //settings[DocsKeys.SourceFiles] = new string[]{};
-                    }
-                )
-                // This needs to be set at this point to ensure the theme works correctly. Earlier or late fails silently.
-                .SetThemePath((NormalizedPath) "themes/docable/")
-                //.AddSourceFiles(sourceFiles.Cast<string>().ToArray())
-                .AddSetting(Statiq.Markdown.MarkdownKeys.MarkdownExtensions, "bootstrap")
-                .AddInputPath($@"{docsRoot}/**{{!output}}")
-                //
-                .SetFailureLogLevel(Microsoft.Extensions.Logging.LogLevel.None)
 
-                .RunAsync();
+
+                // This needs to be set at this point to ensure the theme works correctly. Earlier or late fails silently.
+                .SetThemePath((NormalizedPath)"themes/docable/")
+                //.AddSourceFiles(sourceFiles.Cast<string>().ToArray())
+                //.AddSetting(Statiq.Markdown.MarkdownKeys.MarkdownExtensions, "bootstrap")
+                //.AddInputPath($@"{docsRoot}/**{{!output}}")
+                //
+                .SetFailureLogLevel(Microsoft.Extensions.Logging.LogLevel.None);
+
+
+                return await bootstrapper.RunAsync();
+
+            /// <summary>
+            /// Finds the repo root.
+            /// </summary>
+            /// <param name="path">The path.</param>
+            /// <returns></returns>
+            /// <exception cref="System.Exception">Could not find the root of the dot net blocks repo.</exception>
+            NormalizedPath FindRepoRoot(string? path = default)
+            {
+                path ??= $@"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}/";
+
+                // Start the search at the executing directory.
+                NormalizedPath appPath = path!;
+    ;
+                var folder = new DirectoryInfo(appPath.FullPath); // Load the executing folder.
+                bool found = folder!.EnumerateFiles("Directory.Build.props").Any(); // Search for the props file in the current folder.
+                while (!found)
+                {
+                    folder = folder.Parent; // move up to the parent folder
+                    found = folder!.EnumerateFiles("Directory.Build.props").Any(); // search for the props file.
+                }
+
+                NormalizedPath repoRoot = $"{folder.FullName}";
+                if (!folder.FullName!.EndsWith("dotNetBlocks")) throw new Exception("Could not find the root of the dot net blocks repo.");
+
+                return repoRoot;
+            }
         }
     }
 }
