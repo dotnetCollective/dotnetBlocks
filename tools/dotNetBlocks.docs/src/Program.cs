@@ -61,8 +61,8 @@ namespace dotNetBlocks.docs
             //args = new string[] { @"glob eval"};
 
             //args = new string[] { "-- preview" };
-            //args = new string[] { "preview" };
-            args = new string[] { "-l Debug", "-- serve" };
+            args = new string[] { "preview" };
+            //args = new string[] { "-l Debug", "-- preview" };
 
 
             // Set up the bootstrapper
@@ -92,8 +92,9 @@ namespace dotNetBlocks.docs
             var srcPath = rootPath.Combine("src");
             var tempPath = appPath.Combine("temp");
             var cachePath = appPath.Combine("cache");
-            //var outputPath = docsPath.Combine("output");
-            var outputPath = docsPath.Combine("../test_output");
+            //var outputPath = tempPath.Combine("docs/output");
+            //var outputPath = docsPath.Combine("../test_output");
+            var outputPath = repoRoot.Combine("docs_site");
             var themePath = appPath.Combine("themes/docable/");
 
             var sourceFiles = new string[]
@@ -127,11 +128,14 @@ namespace dotNetBlocks.docs
                 //{ WebKeys.InputPaths, new PathCollection(){  inputPath } },
             };
 
+            // fileSystem.GetInputFiles("../{docs,src,!.git,}/{!output,*.md,*.txt}").Take(1000)
+            
             //.AddInputPath($@"{srcPath.Combine("**/*.md")}")
             //NormalizedPath inputPath = rootPath.Combine("src");
 
 
             bootstrapper
+
                 // Order of operations RunAsync, 1. Settings, 2. file system callback delegates.
 
                 // Add all the configurations and settings.
@@ -142,32 +146,39 @@ namespace dotNetBlocks.docs
                 //  The themes path is in the app path by design as content.
                 .SetThemePath(themePath)
                 //.AddExcludedPath(fileSystem.RootPath.GetRelativePath(@"C:/Code/Repos/dotNetCollective/dotNetBlocks/tools/dotNetBlocks.docs/src/bin/Debug/net9.0"))
+                //.AddExcludedPath(fileSystem.OutputPath)
+                //.AddInputPath(@"docs/{!output}")
+                .AddInputPath("docs")
+                //.AddInputPath(@"src")
 
                 .ConfigureFileSystem(
                     (fs, settings) =>
                         {
                             fs.TempPath = tempPath;
                             fs.CachePath = cachePath;
+                            //fs.InputPaths.Remove("input");
+                            //fs.InputPaths.Insert(0,"../docs/{!input,*}/{*.md,!*.html}");
                         }
                 )
-                //.AddSetting(nameof(CleanMode), CleanMode.Self)
+                //.AddSetting(nameof(CleanMode), CleanMode.Self) // This is the default mode.
                 .ConfigureSettings(
                     (settings, svcs, fs) =>
                     {
                         settings.Remove(DocsKeys.SourceFiles);
-                        settings.Add(DocsKeys.SourceFiles, new string[] { cspath.ToString() });
+                        settings.Add(DocsKeys.SourceFiles, new string[] { });
                         settings.Remove(DocsKeys.ProjectFiles);
                         settings.Remove(DocsKeys.SolutionFiles);
                         settings.Remove(DocsKeys.AssemblyFiles);
-                        settings.Add(DocsKeys.ProjectFiles, new string[] { csprojpath });
+                        settings.Add(DocsKeys.ProjectFiles, new string[] { csprojpath.ToString() });
                         settings.Add(DocsKeys.SolutionFiles, new string[] {  });
-                        settings.Add(DocsKeys.AssemblyFiles, new string[] { dllpath });
+                        settings.Add(DocsKeys.AssemblyFiles, new string[] { });
                     }
                 )
 
                 //.AddMappedInputPath(@$"{docsInput}", outputPath.Combine("docs"))
                 //.AddMappedInputPath("docs/",outputPath.Combine("docs"))
-                //.AddInputPath("docs")
+                //.AddInputPath("../docs")
+                //.AddInputPath("..//{!output/,/**/*.md}")                
                 //.AddMappedInputPath(inputPath, "docs")
                 //.AddInputPath(srcPath)
                 //.AddExcludedPath("/*docable*")
