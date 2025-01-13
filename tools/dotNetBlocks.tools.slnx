@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/build/">
+    <File Path="../build/global.Build.props" />
+    <File Path="../Directory.Build.props" />
+  </Folder>
+  <Project Path="dotNetBlocks.docs/src/dotNetBlocks.docs.csproj" />
+</Solution>

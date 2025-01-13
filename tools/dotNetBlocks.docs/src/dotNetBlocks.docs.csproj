@@ -3,7 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
+         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+    
+    <!-->
+    <ImplicitUsings>disable</ImplicitUsings>
+    -->
+    <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
 	<NuGetAudit>false</NuGetAudit>
@@ -17,46 +23,58 @@
         <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
         <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 
+        <DefaultItemExcludes>$(DefaultItemExcludes);*.git*</DefaultItemExcludes>
+        
   </PropertyGroup>
 
   <ItemGroup>
+      <Content Include="input\**\*.*" CopyToOutputDirectory="PreserveNewest" />
+      <Content Include="themes\**\*.*" CopyToOutputDirectory="PreserveNewest" />
+      <Compile Remove="themes\**\*.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="input\index.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\index.md" />
+    <None Remove="readme.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="readme.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="References.md" />
+  </ItemGroup>
 
 
-      <!-- Makes files and folders in docs visible in editor-->
-        <None Include="..\..\..\docs\*\*.md" />
 
+  <ItemGroup>
+	  <!-- <PackageReference Include="Statiq.Docs" Version="*-*" />
+	  <PackageReference Include="Statiq.Web" Version="*-*" />
+      -->
+	  <PackageReference Include="Statiq.Docs" Version="1.0.0-beta.17" />
 
   </ItemGroup>
 
 
   <ItemGroup>
-	  <PackageReference Include="Devlead.Statiq" Version="0.20.1" />
-	  <PackageReference Include="Statiq.Web" Version="1.0.0-beta.60" />
-
+    <None Update="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <PackageReference Update="FluentAssertions" Version="8.0.0-alpha.1" />
   </ItemGroup>
 
-	<Target Name="Build">
-		<ItemGroup>
-			<!-- Including all files breaks other projects -->
-			<!--
-			<Compile Remove="**" />
-			<Compile Include="/*.cs" />
-			-->
 
-			<!-- Remove the document site output -->
+  <ItemGroup>
+    <None Remove="input\index.md" />
+  </ItemGroup>
 
-			<Compile Remove="output\**" />
-				<EmbeddedResource Remove="output\**" />
-				<None Remove="output\**" />
 
-			
-		</ItemGroup>
-	</Target>
 
 
 

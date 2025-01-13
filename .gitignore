@@ -396,3 +396,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/tools/dotNetBlocks.docs/src/testing/theme/input
