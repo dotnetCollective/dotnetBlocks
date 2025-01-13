@@ -149,15 +149,12 @@ namespace dotNetBlocks.docs
                 //.AddExcludedPath(fileSystem.OutputPath)
                 //.AddInputPath(@"docs/{!output}")
                 .AddInputPath("docs")
-                //.AddInputPath(@"src")
 
                 .ConfigureFileSystem(
                     (fs, settings) =>
                         {
                             fs.TempPath = tempPath;
                             fs.CachePath = cachePath;
-                            //fs.InputPaths.Remove("input");
-                            //fs.InputPaths.Insert(0,"../docs/{!input,*}/{*.md,!*.html}");
                         }
                 )
                 //.AddSetting(nameof(CleanMode), CleanMode.Self) // This is the default mode.
@@ -175,18 +172,6 @@ namespace dotNetBlocks.docs
                     }
                 )
 
-                //.AddMappedInputPath(@$"{docsInput}", outputPath.Combine("docs"))
-                //.AddMappedInputPath("docs/",outputPath.Combine("docs"))
-                //.AddInputPath("../docs")
-                //.AddInputPath("..//{!output/,/**/*.md}")                
-                //.AddMappedInputPath(inputPath, "docs")
-                //.AddInputPath(srcPath)
-                //.AddExcludedPath("/*docable*")
-                //.AddSourceFiles(sourceFiles.Select(f =>f.FullPath).ToArray())
-
-                //.AddSourceFiles(sourceFiles.Cast<string>().ToArray())
-                //.AddSetting(Statiq.Markdown.MarkdownKeys.MarkdownExtensions, "bootstrap")
-                //.AddInputPath($@"{docsRoot}/**{{!output}}")
                 //
                 .AddDefaultLogging();
             //.SetFailureLogLevel(Microsoft.Extensions.Logging.LogLevel.Critical);
