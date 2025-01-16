@@ -39,8 +39,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: |
-            '/home/runner/work/dotnetBlocks/dotnetBlocks/docs_site'
-            '/home/runner/work/dotnetBlocks/dotnetBlocks/Images'
+            '/home/runner/work/dotnetBlocks/dotnetBlocks/docs_site/'
+            '/home/runner/work/dotnetBlocks/dotnetBlocks/Images/'
             
       - name: Deploy to GitHub Pages
         id: deployment
