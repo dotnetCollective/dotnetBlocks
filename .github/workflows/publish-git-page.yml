@@ -32,15 +32,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Get directory
-        run: ls /home/runner/work/dotnetBlocks
+        run: ls $GITHUB_WORKSPACE
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: |
-            '/home/runner/work/dotnetBlocks/docs_site/'
-            '/home/runner/work/dotnetBlocks/Images/'
+            '$GITHUB_WORKSPACE/docs_site/'
+            '$GITHUB_WORKSPACE/Images/'
             
       - name: Deploy to GitHub Pages
         id: deployment
