@@ -26,7 +26,7 @@
 
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
-        <PackageProjectUrl>https://github.com/dotnetCollective/dotnetBlocks</PackageProjectUrl>
+        <PackageProjectUrl>https://dotnetblocks.dotnetcollective.org/</PackageProjectUrl>
         <PackageTags>DotNetBlocks architecture, Microsoft.Extensions.DependencyInjection.</PackageTags>
         <PublicRepositoryUrl>https://github.com/dotnetCollective/dotnetBlocks</PublicRepositoryUrl>
         <RepositoryType>git</RepositoryType>
@@ -40,7 +40,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-  <None Include="readme.md" pack="true" PackagePath="." />
+  <!--<None Include="readme.md" pack="true" PackagePath="." /> -->
 </ItemGroup>
 
 </Project>

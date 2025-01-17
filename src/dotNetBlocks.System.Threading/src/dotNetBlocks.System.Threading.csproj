@@ -15,6 +15,9 @@ Commonly Used Types:
   </PropertyGroup>
 
   <ItemGroup>
+
+    <None Include="..\..\....\..\..\docs\System.IO\readme.md" Link="readme.md" CopyToOutputDirectory="PreserveNewest" Pack="True" PackagePath="."/>
+
     <Compile Remove="bin\**" />
     <EmbeddedResource Remove="bin\**" />
     <None Remove="bin\**" />
