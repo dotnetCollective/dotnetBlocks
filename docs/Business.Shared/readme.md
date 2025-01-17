@@ -1,4 +1,10 @@
-﻿#Overview
+﻿Title: Business.Shared
+ShowInNavigation: true
+ShowInSidebar: true
+NoSidebar: false
+
+---
+#Overview
 library contains all the contracts and models used or implemented by business classes libraries supporting the architecture.
 The library is referenced by any system following the business logic pattern.
 It forms the basis for the logic, operation business entity contracts.

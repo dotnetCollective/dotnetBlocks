@@ -1,4 +1,6 @@
-﻿# Business entities
+﻿Title: Business Entities
+---
+# Business entities
 
 Business entities are the basis for all business models. They can also be used in method parameters and serialized for transmission. Descending from business entities helps with discovery and for the cration of generic type closures to create a better experience for developers using the architecture.
 

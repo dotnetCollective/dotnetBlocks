@@ -27,7 +27,7 @@
 
         
 
-        <title>Documentation - Operations</title>
+        <title>dotNetBlocks - Design - Operations</title>
     </head>
     <body class="d-flex flex-column">
         <div class="flex-grow-1 d-flex flex-column">
@@ -37,7 +37,7 @@
                         <div class="offset-lg-2 col-12 col-lg-8 px-0">
                             <nav class="navbar navbar-expand-md navbar-light align-items-start">
     <a class="navbar-brand" href="/">
-                <span class="text-primary">Documentation</span>
+                <span class="text-primary">dotNetBlocks</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-topnav" aria-controls="collapse-topnav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,9 +48,6 @@
         </ul>
         <ul class="navbar-nav">
                     <li class="nav-item">
-            <a class="nav-link" href="/content">Testing document content</a>
-        </li>
-        <li class="nav-item">
             <a class="nav-link" href="/operations">Operations</a>
         </li>
         <li class="nav-item">
@@ -78,7 +75,7 @@
                                         </div>
                                         <div class="text-white m-0 text-break title">
 
-Operations
+Design - Operations
                                         </div>
                                     </div>
                                         <div class="navbar navbar-expand-md navbar-dark p-0">
@@ -133,6 +130,12 @@ servicebus.send(tellthem)
 myApi.notify(tellthem);
 
 </code></pre>
+<h1 id="identifiers">Identifiers</h1>
+<p>#Correlation id
+The first transaction in a process generates and sets the transaction id.
+the infrastructure and transports can promote and transplant this id to ensure final transaction diagnostics, correlation and transportation.</p>
+<h1 id="transaction-id">Transaction Id</h1>
+<p>Identifier for a group of operations to complete a specific transaction.</p>
 
                                         </div>
                                 <div class="col-lg-2 p-md-0 m-md-0 bg-body">
@@ -144,6 +147,8 @@ myApi.notify(tellthem);
                         <div class="sidebar-nav-children">
                                 <div class="sidebar-nav-item"><a href="#validations">validations</a></div>
                         </div>
+                    <div class="sidebar-nav-item"><a href="#identifiers">Identifiers</a></div>
+                    <div class="sidebar-nav-item"><a href="#transaction-id">Transaction Id</a></div>
             </div>
         </div>
                                     </div>

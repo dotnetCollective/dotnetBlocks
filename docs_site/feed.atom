@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>/</id>
-	<title>Documentation</title>
+	<title>dotNetBlocks</title>
 	<link rel="self" href="/" />
 	<rights>2025</rights>
-	<updated>2025-01-13T18:38:43Z</updated>
+	<updated>2025-01-17T18:59:33Z</updated>
 </feed>

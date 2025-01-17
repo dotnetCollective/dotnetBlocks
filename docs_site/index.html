@@ -27,7 +27,7 @@
 
         
 
-        <title>Documentation - Testing document content</title>
+        <title>dotNetBlocks - Welcome to DotNetBlocks (.NetBlocks)</title>
     </head>
     <body class="d-flex flex-column">
         <div class="flex-grow-1 d-flex flex-column">
@@ -37,7 +37,7 @@
                         <div class="offset-lg-2 col-12 col-lg-8 px-0">
                             <nav class="navbar navbar-expand-md navbar-light align-items-start">
     <a class="navbar-brand" href="/">
-                <span class="text-primary">Documentation</span>
+                <span class="text-primary">dotNetBlocks</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-topnav" aria-controls="collapse-topnav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,9 +48,6 @@
         </ul>
         <ul class="navbar-nav">
                     <li class="nav-item">
-            <a class="nav-link" href="/content">Testing document content</a>
-        </li>
-        <li class="nav-item">
             <a class="nav-link" href="/operations">Operations</a>
         </li>
         <li class="nav-item">
@@ -78,7 +75,7 @@
                                         </div>
                                         <div class="text-white m-0 text-break title">
 
-Testing document content
+Welcome to DotNetBlocks (.NetBlocks)
                                         </div>
                                     </div>
                                         <div class="navbar navbar-expand-md navbar-dark p-0">
@@ -109,8 +106,130 @@ Testing document content
                         <div class="container-xl flex-grow-1 d-flex flex-column">
                             <div class="row flex-grow-1 align-items-stretch">
                                         <div id="content" class="offset-lg-2 col-12 col-lg-8 p-4 pt-md-0 bg-white">
-<h1 id="we-saw-this-im-here">We saw this, I'm here.</h1>
-<p>Lookging for me?</p>
+<p><span style="display:block;text-align:center"><img src="Images/DotNetBuildingBlocks.jpg" class="img-fluid" width="400" height="400" alt="dotnetblocks" /></span></p>
+<h2 id="what-is-it">-  What is it?</h2>
+<p>Dot net blocks is ..</p>
+<ul>
+<li>a collection of Libraries to solved common problems</li>
+<li>An opinionated library, architecture and design ,  to accelerate development time for large scalable enterprise level systems</li>
+</ul>
+<h1 id="highlights">Highlights</h1>
+<h1 id="dotnetblocks.system.io">dotNetBlocks.System.IO</h1>
+<p>New Stream functionality.</p>
+<ul>
+<li>Stream Buffer - advanced concurrent reading and writing pass through</li>
+</ul>
+<h1 id="stream-buffer">Stream Buffer</h1>
+<p>A stream buffer wraps a source stream, allowing the consumer code to read the stream without pulling the entire stream into memory. Supports background process threading.</p>
+<h1 id="problem-solved">Problem solved</h1>
+<p>In the code pattern where a source wants to write into a sink stream and another process wants to read the stream to write it into another destination, developers often use a MemoryStream class.
+This causes temporary spikes in memory usage, especially if the streams are files of unknown size. A 2gb file for example can kill a server along with other side effects of memory starvation, especially in cloud environments.</p>
+<p>The stream buffer provides as destination stream that can be written to and read from at the same time, but limiting the amount of &quot;in flight data&quot; or buffer size.</p>
+<p><a href="https://learn.microsoft.com/en-us/dotnet/standard/io/pipelines#backpressure-and-flow-control">How it works: Understanding pipes, flow control and not dead-locking.</a></p>
+<h2 id="example-streaming-a-file-as-an-mvc-http-response">Example streaming a file as an MVC http response</h2>
+<pre><code class="language-c#">
+ // Using memory stream - this is the in memory problem
+
+        var blobClient = container.GetBlobClient(blobPath);
+        var resultStream = new MemoryStream();
+
+            await blobClient.DownloadToAsync(resultStream);
+            // Reset the stream.
+            resultStream.position = 0;
+
+            // Return the stream.
+        return new FileStreamResult(stream, &quot;application/pdf&quot;)
+ 
+</code></pre>
+<pre><code class="language-c#">
+ // Using buffer stream - eliminates memory issue
+
+        var blobClient = container.GetBlobClient(blobPath);
+        var resultStream = new StreamBuffer();
+
+            await blobClient.DownloadToAsync(resultStream.WriteStream);
+
+            // Return the stream.
+        return new FileStreamResult(resultStream.ReadStream, &quot;application/pdf&quot;)
+ 
+</code></pre>
+<p>This example is very basic and does not show other advantages including built in alternative threading models etc.</p>
+<ul>
+<li>Stream Extensions - New functions to copy between streams and to calculate CRC values for a stream.</li>
+</ul>
+<h1 id="stream-buffer-1">Stream Buffer</h1>
+<h1 id="problem-solved-1">Problem solved</h1>
+<p>Existing methods on the streams to copy from one stream to another expect to copy the entire stream and block until the process is complete. For streams like the StreamBuffer implementation that block until there is capacity, the applications can hang.</p>
+<p>These functions let you copy a subset of the stream from one stream to another and not the entire stream.</p>
+<p>When you are testing copy functionality and working with streams where the may be hidden data issues, CRC functions can detect issues and enssure there are no erros in the process.</p>
+<h1 id="example-copying-parts-of-a-a-stream"># Example copying parts of a a stream.</h1>
+<pre><code class="language-cs">
+using(var sourceStream = new FileStream(&quot;sourcefile&quot;, FileMode.Open))
+{
+// Copy 100 bytes from the source stream to the destination stream.
+using(var destinationStream = new FileStream(&quot;destinationfile&quot;, FileMode.Create))
+{
+sourceStream.CopyBytes(destinationStream, 100);
+}
+
+</code></pre>
+<h2 id="content">Content</h2>
+<div>        <h4 class="h-section mb-2">Child Pages</h4>
+            <div>
+                
+    <div class="p-3 mb-2 bg-light page-box">
+        <h4><a href="/api">API</a></h4>
+
+
+                <ul class="list-inline border-top mt-2 pt-2 small">
+                        <li class="list-inline-item">
+                            <a href="/api/System">System</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/dotNetBlocks.Extensions.DependencyInjection">dotNetBlocks.Extensions.DependencyInjection</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/dotNetBlocks">dotNetBlocks</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/dotNetBlocks.Extensions">dotNetBlocks.Extensions</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/dotNetBlocks.System.Threading.dll">dotNetBlocks.System.Threading.dll</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/System.Threading">System.Threading</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/dotNetBlocks.Business.Shared">dotNetBlocks.Business.Shared</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/System.Threading.Tasks">System.Threading.Tasks</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/dotNetBlocks.Business.Shared.dll">dotNetBlocks.Business.Shared.dll</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/dotNetBlocks.Business">dotNetBlocks.Business</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/dotNetBlocks.Extensions.dll">dotNetBlocks.Extensions.dll</a>
+                        </li>
+                </ul>
+    </div>
+
+            </div>
+            <div>
+                
+    <div class="p-3 mb-2 bg-light page-box">
+        <h4><a href="/operations">Operations</a></h4>
+
+            <div class="font-size-sm"><p>Operations are the basis of all processing in the architecture. An operation contains all the information required to complete a step or entire business process.</p></div>
+
+    </div>
+
+            </div>
+</div>
 
                                         </div>
                                 <div class="col-lg-2 p-md-0 m-md-0 bg-body">
@@ -118,7 +237,19 @@ Testing document content
         <div class=" mb-3 sidebar-root">
             <div class="sidebar-nav-item sidebar-header">On This Page</div>
             <div class="sidebar-nav-children">
-                    <div class="sidebar-nav-item"><a href="#we-saw-this-im-here">We saw this, I&#x27;m here.</a></div>
+                    <div class="sidebar-nav-item"><a href="#highlights">Highlights</a></div>
+                    <div class="sidebar-nav-item"><a href="#dotnetblocks.system.io">dotNetBlocks.System.IO</a></div>
+                    <div class="sidebar-nav-item"><a href="#stream-buffer">Stream Buffer</a></div>
+                    <div class="sidebar-nav-item"><a href="#problem-solved">Problem solved</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#example-streaming-a-file-as-an-mvc-http-response">Example streaming a file as an MVC http response</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#stream-buffer-1">Stream Buffer</a></div>
+                    <div class="sidebar-nav-item"><a href="#problem-solved-1">Problem solved</a></div>
+                    <div class="sidebar-nav-item"><a href="#example-copying-parts-of-a-a-stream"># Example copying parts of a a stream.</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#content">Content</a></div>
+                        </div>
             </div>
         </div>
                                     </div>

@@ -1,4 +1,6 @@
-﻿# dotNetBlocks.System.Threading
+﻿Title: dotNetBlocks.System.Threading
+---
+# dotNetBlocks.System.Threading
 
 ## problem description
 to have multiple tasks wait on the same token requires creation of a shared token source. classes and methods may not have access to that shared token source to create new linked tokens. These extensions and wait methods give access to token sources given only the token.
