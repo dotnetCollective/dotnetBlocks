@@ -19,7 +19,6 @@ dotNetBlocks.System.IO.StreamBufferExtensions
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\docs\system.IO\readme.md" Link="readme.md" CopyToOutputDirectory="PreserveNewest" Pack="True" PackagePath="."/>
 
     <Compile Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
     <Compile Remove="tests\**" />
@@ -28,6 +27,11 @@ dotNetBlocks.System.IO.StreamBufferExtensions
     <None Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
     <None Remove="tests\**" />
   </ItemGroup>
+
+
+  <ItemGroup>
+        <None Update="readme.md" Pack="True" PackagePath="." CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
 
 
   <ItemGroup>

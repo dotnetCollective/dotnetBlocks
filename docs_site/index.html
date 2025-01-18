@@ -51,6 +51,18 @@
             <a class="nav-link" href="/operations">Operations</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="/servicebus">Servicebus</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/servicebus.shared">Servicebus.Shared</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/system.io">System.IO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/system.threading">dotNetBlocks.System.Threading</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="/api">API</a>
         </li>
 
@@ -183,37 +195,37 @@ sourceStream.CopyBytes(destinationStream, 100);
 
                 <ul class="list-inline border-top mt-2 pt-2 small">
                         <li class="list-inline-item">
+                            <a href="/api/dotNetBlocks">dotNetBlocks</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/dotNetBlocks.Extensions.dll">dotNetBlocks.Extensions.dll</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/dotNetBlocks.Business">dotNetBlocks.Business</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/dotNetBlocks.System.Threading.dll">dotNetBlocks.System.Threading.dll</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/dotNetBlocks.Business.Shared.dll">dotNetBlocks.Business.Shared.dll</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/System.Threading">System.Threading</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="/api/System.Threading.Tasks">System.Threading.Tasks</a>
+                        </li>
+                        <li class="list-inline-item">
                             <a href="/api/System">System</a>
                         </li>
                         <li class="list-inline-item">
                             <a href="/api/dotNetBlocks.Extensions.DependencyInjection">dotNetBlocks.Extensions.DependencyInjection</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="/api/dotNetBlocks">dotNetBlocks</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="/api/dotNetBlocks.Extensions">dotNetBlocks.Extensions</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="/api/dotNetBlocks.System.Threading.dll">dotNetBlocks.System.Threading.dll</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="/api/System.Threading">System.Threading</a>
-                        </li>
-                        <li class="list-inline-item">
                             <a href="/api/dotNetBlocks.Business.Shared">dotNetBlocks.Business.Shared</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="/api/System.Threading.Tasks">System.Threading.Tasks</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="/api/dotNetBlocks.Business.Shared.dll">dotNetBlocks.Business.Shared.dll</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="/api/dotNetBlocks.Business">dotNetBlocks.Business</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="/api/dotNetBlocks.Extensions.dll">dotNetBlocks.Extensions.dll</a>
+                            <a href="/api/dotNetBlocks.Extensions">dotNetBlocks.Extensions</a>
                         </li>
                 </ul>
     </div>
@@ -225,6 +237,49 @@ sourceStream.CopyBytes(destinationStream, 100);
         <h4><a href="/operations">Operations</a></h4>
 
             <div class="font-size-sm"><p>Operations are the basis of all processing in the architecture. An operation contains all the information required to complete a step or entire business process.</p></div>
+
+    </div>
+
+            </div>
+            <div>
+                
+    <div class="p-3 mb-2 bg-light page-box">
+        <h4><a href="/servicebus">Servicebus</a></h4>
+
+            <div class="font-size-sm"><p>Mass transit messages a class and MT uses an envelope design pattern, wrapping every transmitted message in an envelope.
+In our service bus implementation, we also use an envelope design pattern, but we will hide it from the end consumer using extensions and generic types.
+. When a message is transmitted in mass transit, it is wrapped in an envelope - a standard pattern for service bus and messaging technologies.</p></div>
+
+    </div>
+
+            </div>
+            <div>
+                
+    <div class="p-3 mb-2 bg-light page-box">
+        <h4><a href="/servicebus.shared">Servicebus.Shared</a></h4>
+
+            <div class="font-size-sm"><p>This library contains all the models contracts and attributes used by message bus functionality.
+Creating a message base class is against recommendations by mass transit, but this is actually a common envelope for our business activities and is a different approach to MT which we are extending.</p></div>
+
+    </div>
+
+            </div>
+            <div>
+                
+    <div class="p-3 mb-2 bg-light page-box">
+        <h4><a href="/system.io">System.IO</a></h4>
+
+            <div class="font-size-sm"><p>New Stream functionality.</p></div>
+
+    </div>
+
+            </div>
+            <div>
+                
+    <div class="p-3 mb-2 bg-light page-box">
+        <h4><a href="/system.threading">dotNetBlocks.System.Threading</a></h4>
+
+            <div class="font-size-sm"><p>to have multiple tasks wait on the same token requires creation of a shared token source. classes and methods may not have access to that shared token source to create new linked tokens. These extensions and wait methods give access to token sources given only the token.</p></div>
 
     </div>
 

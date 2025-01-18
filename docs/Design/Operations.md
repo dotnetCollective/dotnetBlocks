@@ -1,4 +1,5 @@
 ﻿Title: Design - Operations
+SubTitle: test
 ---
 # Operations
 Operations are the basis of all processing in the architecture. An operation contains all the information required to complete a step or entire business process.

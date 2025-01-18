@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/build/">
+    <File Path="../Directory.Build.props" />
+    <File Path="../tests/directory.build.props" />
+    <File Path="directory.build.props" />
+  </Folder>
+  <Folder Name="/build/tests/">
+    <File Path="../tests/directory.build.props" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="dotNetBlocks.ServiceBus/tests/dotNetBlocks.ServiceBus.Tests/dotNetBlocks.ServiceBus.Tests.csproj" />
+  </Folder>
+  <Project Path="dotNetBlocks.Business.Shared/src/dotNetBlocks.Business.Shared.csproj" />
+  <Project Path="dotNetBlocks.ServiceBus.Shared/dotNetBlocks.ServiceBus.Shared.csproj" />
+  <Project Path="dotNetBlocks.ServiceBus/dotNetBlocks.ServiceBus.csproj" />
+</Solution>

@@ -29,8 +29,6 @@ Commonly Used Types:
 
   <ItemGroup>
 
-    <None Include="..\..\..\docs\Business.Shared\readme.md" Link="readme.md" CopyToOutputDirectory="PreserveNewest" Pack="True" PackagePath="." />
-
     <PackageReference Include="FluentValidation" Version="11.11.0" />
     <PackageReference Include="RT.Comb" Version="4.0.1" />
   </ItemGroup>

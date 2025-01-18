@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/build/">
+    <File Path="../Directory.Build.props" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="dotNetBlocks.Business.Shared/tests/dotNetBlocks.Business.Shared.Tests.csproj" />
+  </Folder>
+  <Project Path="dotNetBlocks.Business.Shared/src/dotNetBlocks.Business.Shared.csproj" />
+  <Project Path="DotNetBlocks.Business/DotNetBlocks.Business.csproj" />
+</Solution>

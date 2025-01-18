@@ -16,11 +16,13 @@ Commonly Used Types:
 
   <ItemGroup>
 
-    <None Include="..\..\....\..\..\docs\System.IO\readme.md" Link="readme.md" CopyToOutputDirectory="PreserveNewest" Pack="True" PackagePath="."/>
-
     <Compile Remove="bin\**" />
     <EmbeddedResource Remove="bin\**" />
     <None Remove="bin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="readme.md" Pack="True" PackagePath="." CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
