@@ -1,8 +1,21 @@
-﻿# dotNetBlocks.System.Threading
+﻿## dotnetBlocks.System.Threading
 
-## problem description
-to have multiple tasks wait on the same token requires creation of a shared token source. classes and methods may not have access to that shared token source to create new linked tokens. These extensions and wait methods give access to token sources given only the token.
+part of the [.netBlocks Project](https://dotnetblocks.dotnetcollective.org/) - https://dotnetblocks.dotnetcollective.org/
 
-New threading functionality for advanced waiting on token sources of existing cancellation tokens.
+### Description
+Additional functionality for cancellation tokens.
 
-* Task extensions for new token wait types that don't require a merged token source.
+[licensing, usages, design, other details](https://dotnetblocks.dotnetcollective.org/)
+
+# getting started
+
+* standard nuget package.
+
+
+# licensing, usages, design and other details.
+
+
+[main project site] (https://dotnetblocks.dotnetcollective.org/)
+
+
+

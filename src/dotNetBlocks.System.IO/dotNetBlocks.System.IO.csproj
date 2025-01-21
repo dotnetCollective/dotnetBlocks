@@ -19,6 +19,7 @@ dotNetBlocks.System.IO.StreamBufferExtensions
   </PropertyGroup>
 
   <ItemGroup>
+
     <Compile Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
     <Compile Remove="tests\**" />
     <EmbeddedResource Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
@@ -26,6 +27,12 @@ dotNetBlocks.System.IO.StreamBufferExtensions
     <None Remove="dotNetBlocks.System.IO.StreamBuffer\**" />
     <None Remove="tests\**" />
   </ItemGroup>
+
+
+  <ItemGroup>
+        <None Update="readme.md" Pack="True" PackagePath="." CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="System.IO.Hashing" Version="9.0.0" />

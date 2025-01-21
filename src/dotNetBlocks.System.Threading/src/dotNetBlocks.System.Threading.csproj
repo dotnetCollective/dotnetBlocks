@@ -15,9 +15,14 @@ Commonly Used Types:
   </PropertyGroup>
 
   <ItemGroup>
+
     <Compile Remove="bin\**" />
     <EmbeddedResource Remove="bin\**" />
     <None Remove="bin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="readme.md" Pack="True" PackagePath="." CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

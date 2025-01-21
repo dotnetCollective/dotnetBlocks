@@ -1,4 +1,14 @@
-﻿# Business entities
+﻿<!---
+Title: Design - Business Entities
+NavigationTitle: Design - Business Entities
+ShowInNavigation: false
+ShowInSidebar: true
+NoSidebar: false
+Excerpt: describes all design of the base classes, interfaces and patterns defining the domain models used in the architecture.
+
+--->
+
+# Business entities
 
 Business entities are the basis for all business models. They can also be used in method parameters and serialized for transmission. Descending from business entities helps with discovery and for the cration of generic type closures to create a better experience for developers using the architecture.
 

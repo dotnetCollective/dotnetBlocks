@@ -26,9 +26,9 @@ Commonly Used Types:
 
   </PropertyGroup>
 
-	
 
   <ItemGroup>
+
     <PackageReference Include="FluentValidation" Version="11.11.0" />
     <PackageReference Include="RT.Comb" Version="4.0.1" />
   </ItemGroup>

@@ -1,12 +1,21 @@
-﻿# Messages, Envelopes, the Design approach and architectural decisions.
+﻿## dotnetBlocks.ServicesBus
 
-# Message design approach.
+part of the [.netBlocks Project](https://dotnetblocks.dotnetcollective.org/) - https://dotnetblocks.dotnetcollective.org/
 
-Mass transit messages a class and MT uses an envelope design pattern, wrapping every transmitted message in an envelope.
-In our service bus implementation, we also use an envelope design pattern, but we will hide it from the end consumer using extensions and generic types.
-. When a message is transmitted in mass transit, it is wrapped in an envelope - a standard pattern for service bus and messaging technologies.
+### Description
+
+Makes implementing service bus functionality simple and easy at an enterprise level.
+
+[licensing, usages, design, other details](https://dotnetblocks.dotnetcollective.org/)
+
+# getting started
+
+* standard nuget package.
 
 
-# Handlers - handlers function as consumers in the MT world.
+# licensing, usages, design and other details.
 
-We are implementing the base handler so it case be used as is in straight inheritance or can be injected with a class and a delegate.
+
+[main project site] (https://dotnetblocks.dotnetcollective.org/)
+
+

@@ -28,6 +28,8 @@ using Microsoft.Extensions.FileSystemGlobbing.Abstractions;
 using Microsoft.Extensions.FileSystemGlobbing;
 using System.Text.RegularExpressions;
 using Microsoft.CodeAnalysis;
+using Lunr;
+using Statiq.Docs.Pipelines;
 
 namespace dotNetBlocks.docs
 {
@@ -62,7 +64,7 @@ namespace dotNetBlocks.docs
 
             //args = new string[] { "-- preview" };
             args = new string[] { "preview" };
-            //args = new string[] { "-l Debug", "-- preview" };
+            //args = new string[] { "preview" , "-l Debug" };
 
 
             // Set up the bootstrapper
@@ -130,11 +132,15 @@ namespace dotNetBlocks.docs
 
             // fileSystem.GetInputFiles("../{docs,src,!.git,}/{!output,*.md,*.txt}").Take(1000)
             
-            //.AddInputPath($@"{srcPath.Combine("**/*.md")}")
+            //.AddInputPath($@"{srcPath.Combine("**/*.md")}")            
             //NormalizedPath inputPath = rootPath.Combine("src");
 
 
             bootstrapper
+                .AddMappedInputPath(rootPath.Combine("Images"), "Images")
+                //.AddMappedInputPath(rootPath.Combine("src/**/**/**/readme.md"), "readme")
+                //.AddInputPath(rootPath.Combine("src/**/**/**/readme.md"))
+                .AddSourceFiles(@"C:\Code\Repos\dotNetCollective\dotNetBlocks\src\dotNetBlocks.Business.Shared\src\readme.md")
 
                 // Order of operations RunAsync, 1. Settings, 2. file system callback delegates.
 
@@ -149,6 +155,8 @@ namespace dotNetBlocks.docs
                 //.AddExcludedPath(fileSystem.OutputPath)
                 //.AddInputPath(@"docs/{!output}")
                 .AddInputPath("docs")
+                .AddMappedInputPath("docs/design/","design")
+                .AddMappedInputPath("docs/libraries/", "libraries")
 
                 .ConfigureFileSystem(
                     (fs, settings) =>
@@ -171,6 +179,7 @@ namespace dotNetBlocks.docs
                         settings.Add(DocsKeys.AssemblyFiles, new string[] { });
                     }
                 )
+                .AddSetting(Statiq.Markdown.MarkdownKeys.MarkdownExtensions, "bootstrap")
 
                 //
                 .AddDefaultLogging();

@@ -28,6 +28,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+      <Content Include="..\..\..\docs\**\*.*">
+  <Link>docs\%(RecursiveDir)%(Filename)%(Extension)</Link>
+</Content>
+    <Compile Remove="..\..\..\docs\**\*.*" />
+  </ItemGroup>
+
+  <ItemGroup>
       <Content Include="input\**\*.*" CopyToOutputDirectory="PreserveNewest" />
       <Content Include="themes\**\*.*" CopyToOutputDirectory="PreserveNewest" />
       <Compile Remove="themes\**\*.*" />
@@ -66,7 +73,7 @@
 
 
   <ItemGroup>
-    <PackageReference Update="FluentAssertions" Version="8.0.0-alpha.1" />
+    <PackageReference Update="FluentAssertions" Version="8.0.0" />
   </ItemGroup>
 
 
