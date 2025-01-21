@@ -155,6 +155,8 @@ namespace dotNetBlocks.docs
                 //.AddExcludedPath(fileSystem.OutputPath)
                 //.AddInputPath(@"docs/{!output}")
                 .AddInputPath("docs")
+                .AddMappedInputPath("docs/design/","design")
+                .AddMappedInputPath("docs/libraries/", "libraries")
 
                 .ConfigureFileSystem(
                     (fs, settings) =>

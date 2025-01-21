@@ -27,7 +27,7 @@
 
         
 
-        <title>dotNetBlocks - Readme</title>
+        <title>.NetBlocks - Get started</title>
     </head>
     <body class="d-flex flex-column">
         <div class="flex-grow-1 d-flex flex-column">
@@ -37,7 +37,7 @@
                         <div class="offset-lg-2 col-12 col-lg-8 px-0">
                             <nav class="navbar navbar-expand-md navbar-light align-items-start">
     <a class="navbar-brand" href="/">
-                <span class="text-primary">dotNetBlocks</span>
+                <span class="text-primary">.NetBlocks</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-topnav" aria-controls="collapse-topnav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,19 +48,13 @@
         </ul>
         <ul class="navbar-nav">
                     <li class="nav-item">
-            <a class="nav-link" href="/operations">Operations</a>
+            <a class="nav-link" href="/get.started">Get started</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/servicebus">Servicebus</a>
+            <a class="nav-link" href="/Libraries">Libraries</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/servicebus.shared">Servicebus.Shared</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/system.io">System.IO</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/system.threading">dotNetBlocks.System.Threading</a>
+            <a class="nav-link" href="/Design">The Design</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/api">API</a>
@@ -87,7 +81,7 @@
                                         </div>
                                         <div class="text-white m-0 text-break title">
 
-Readme
+Get started
                                         </div>
                                     </div>
                                         <div class="navbar navbar-expand-md navbar-dark p-0">
@@ -118,66 +112,19 @@ Readme
                         <div class="container-xl flex-grow-1 d-flex flex-column">
                             <div class="row flex-grow-1 align-items-stretch">
                                         <div id="content" class="offset-lg-2 col-12 col-lg-8 p-4 pt-md-0 bg-white">
-<h1 id="dotnetblocks.system.io">dotNetBlocks.System.IO</h1>
-<p>New Stream functionality.</p>
-<ul>
-<li>Stream Buffer - advanced concurrent reading and writing pass through</li>
-</ul>
-<h1 id="stream-buffer">Stream Buffer</h1>
-<p>A stream buffer wraps a source stream, allowing the consumer code to read the stream without pulling the entire stream into memory. Supports background process threading.</p>
-<h1 id="problem-solved">Problem solved</h1>
-<p>In the code pattern where a source wants to write into a sink stream and another process wants to read the stream to write it into another destination, developers often use a MemoryStream class.
-This causes temporary spikes in memory usage, especially if the streams are files of unknown size. A 2gb file for example can kill a server along with other side effects of memory starvation, especially in cloud environments.</p>
-<p>The stream buffer provides as destination stream that can be written to and read from at the same time, but limiting the amount of &quot;in flight data&quot; or buffer size.</p>
-<p><a href="https://learn.microsoft.com/en-us/dotnet/standard/io/pipelines#backpressure-and-flow-control">How it works: Understanding pipes, flow control and not dead-locking.</a></p>
-<h2 id="example-streaming-a-file-as-an-mvc-http-response">Example streaming a file as an MVC http response</h2>
-<pre><code class="language-c#">
- // Using memory stream - this is the in memory problem
-
-        var blobClient = container.GetBlobClient(blobPath);
-        var resultStream = new MemoryStream();
-
-            await blobClient.DownloadToAsync(resultStream);
-            // Reset the stream.
-            resultStream.position = 0;
-
-            // Return the stream.
-        return new FileStreamResult(stream, &quot;application/pdf&quot;)
- 
-</code></pre>
-<pre><code class="language-c#">
- // Using buffer stream - eliminates memory issue
-
-        var blobClient = container.GetBlobClient(blobPath);
-        var resultStream = new StreamBuffer();
-
-            await blobClient.DownloadToAsync(resultStream.WriteStream);
-
-            // Return the stream.
-        return new FileStreamResult(resultStream.ReadStream, &quot;application/pdf&quot;)
- 
-</code></pre>
-<p>This example is very basic and does not show other advantages including built in alternative threading models etc.</p>
-<ul>
-<li>Stream Extensions - New functions to copy between streams and to calculate CRC values for a stream.</li>
-</ul>
-<h1 id="stream-buffer-1">Stream Buffer</h1>
-<h1 id="problem-solved-1">Problem solved</h1>
-<p>Existing methods on the streams to copy from one stream to another expect to copy the entire stream and block until the process is complete. For streams like the StreamBuffer implementation that block until there is capacity, the applications can hang.</p>
-<p>These functions let you copy a subset of the stream from one stream to another and not the entire stream.</p>
-<p>When you are testing copy functionality and working with streams where the may be hidden data issues, CRC functions can detect issues and enssure there are no erros in the process.</p>
-<h1 id="example-copying-parts-of-a-a-stream"># Example copying parts of a a stream.</h1>
-<pre><code class="language-cs">
-using(var sourceStream = new FileStream(&quot;sourcefile&quot;, FileMode.Open))
-{
-// Copy 100 bytes from the source stream to the destination stream.
-using(var destinationStream = new FileStream(&quot;destinationfile&quot;, FileMode.Create))
-{
-sourceStream.CopyBytes(destinationStream, 100);
-}
-
-</code></pre>
-<p>}</p>
+<h2 id="lets-get-started">Let's Get started!</h2>
+<p>.Net blocks provides quick solutions to specific problems or it gives you an entire framework, design and philosophy to rapidly build scalable, maintainable and business solution focused software. The direction you choose is up to you and your needs.</p>
+<h2 id="point-solutions-libraries">Point solutions - <a href="/Libraries">Libraries</a></h2>
+<p>.NetBlocks contains point solutions you can use on their own to solve a particular problem without taking on the enterprise design and philosophy.
+Each library is available as a seperate nuget for your use so you don't bloat your existing code just to solve one problem.
+The <a href="/Libraries">Libraries section</a> has information to get you going.</p>
+<h2 id="enterprise-solution-design-and-libraries">Enterprise solution - <a href="/Design">Design</a> and <a href="/Libraries">Libraries</a></h2>
+<p>The enterprise solution is an opinoinated design philosophy and pattern to create an event based, highly scalable enterprise solution. It provides a quick and reliable way to build a solution that can self-heal, isolates business logic and is deployable in a variety of patterns. The <a href="/Design">design</a>section explains the enterprise pattern and how it works.</p>
+<p>You can use the individual .NetBlocks to solve your problems, just like any other library, or you can follow the overall philosophy and start creating enterprise level scalable code. Its your choice.</p>
+<h1 id="getting-the-code">#Getting the code</h1>
+<p>Each library is available via nuget and has documentation in the libraries section sinmilar to a standard component read me.</p>
+<h2 id="more-content">More Content</h2>
+<div></div>
 
                                         </div>
                                 <div class="col-lg-2 p-md-0 m-md-0 bg-body">
@@ -185,15 +132,10 @@ sourceStream.CopyBytes(destinationStream, 100);
         <div class=" mb-3 sidebar-root">
             <div class="sidebar-nav-item sidebar-header">On This Page</div>
             <div class="sidebar-nav-children">
-                    <div class="sidebar-nav-item"><a href="#dotnetblocks.system.io">dotNetBlocks.System.IO</a></div>
-                    <div class="sidebar-nav-item"><a href="#stream-buffer">Stream Buffer</a></div>
-                    <div class="sidebar-nav-item"><a href="#problem-solved">Problem solved</a></div>
+                    <div class="sidebar-nav-item"><a href="#getting-the-code">#Getting the code</a></div>
                         <div class="sidebar-nav-children">
-                                <div class="sidebar-nav-item"><a href="#example-streaming-a-file-as-an-mvc-http-response">Example streaming a file as an MVC http response</a></div>
+                                <div class="sidebar-nav-item"><a href="#more-content">More Content</a></div>
                         </div>
-                    <div class="sidebar-nav-item"><a href="#stream-buffer-1">Stream Buffer</a></div>
-                    <div class="sidebar-nav-item"><a href="#problem-solved-1">Problem solved</a></div>
-                    <div class="sidebar-nav-item"><a href="#example-copying-parts-of-a-a-stream"># Example copying parts of a a stream.</a></div>
             </div>
         </div>
                                     </div>

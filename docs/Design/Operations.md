@@ -1,6 +1,12 @@
-﻿Title: Design - Operations
-SubTitle: test
----
+﻿<!---
+Title: Operations
+NavigationTitle: Operations
+ShowInNavigation: true
+ShowInSidebar: true
+NoSidebar: false
+Excerpt: Describes operations, the basis for all signalling and processing in the architecture
+
+--->
 # Operations
 Operations are the basis of all processing in the architecture. An operation contains all the information required to complete a step or entire business process.
 ## validations
@@ -29,10 +35,3 @@ myApi.notify(tellthem);
 
  ```
 
- # Identifiers
-
- #Correlation id
- The first transaction in a process generates and sets the transaction id.
- the infrastructure and transports can promote and transplant this id to ensure final transaction diagnostics, correlation and transportation.
- # Transaction Id
- Identifier for a group of operations to complete a specific transaction.

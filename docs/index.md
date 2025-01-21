@@ -1,101 +1,56 @@
-Title: Welcome to DotNetBlocks (.NetBlocks)
+<!---
+Title: About .NetBlocks
+NavigationTitle: About
+ShowInNavigation: True
+ShowInSidebar: false
+NoSidebar: false
+Excerpt: About .Net Blocks.
+--->
 
----
+<span style="float: right">![dotnetblocks](./Images/DotNetBuildingBlocks.jpg){width=200 height=200}</span>
 
-<span style="display:block;text-align:center">![dotnetblocks](./Images/DotNetBuildingBlocks.jpg){width=400 height=400}</span>
+# What is it?
 
-## -  What is it?
-Dot net blocks is .. 
-- a collection of Libraries to solved common problems
-- An opinionated library, architecture and design ,  to accelerate development time for large scalable enterprise level systems
+.Net blocks is a one-stop solution and architecture to solve all your point problems and build large scalable event and api powered enterprise applications. It consists of an opinionated, ready to use design and archicture, and all the components needed to get your started.
 
+We accelerate you out of the gate.
 
-# Highlights
+- An opinionated library, architecture and design
+- accelerates development time for large scalable enterprise level systems
+- keeps you focused on solving business problems, not tech ones.
 
-# dotNetBlocks.System.IO
+## *Note from the originator.*
 
-New Stream functionality.
+_> "After years of developing large scalable enterprise systems, you notice that the same patterns keep repeating
+ and you are solving the same problems again and again and while everything appears to be new, its really history on repeat._
 
+_> When you build the same blocks again and again as you solve problems for others and make systems scalable, you realize someone needs to build blocks that set the patterns, architecture and help others build enterprise systems quickly._
 
-* Stream Buffer - advanced concurrent reading and writing pass through
-
-
-# Stream Buffer
-A stream buffer wraps a source stream, allowing the consumer code to read the stream without pulling the entire stream into memory. Supports background process threading.
-# Problem solved
-In the code pattern where a source wants to write into a sink stream and another process wants to read the stream to write it into another destination, developers often use a MemoryStream class.
-This causes temporary spikes in memory usage, especially if the streams are files of unknown size. A 2gb file for example can kill a server along with other side effects of memory starvation, especially in cloud environments.
-
-The stream buffer provides as destination stream that can be written to and read from at the same time, but limiting the amount of "in flight data" or buffer size.
-
-[How it works: Understanding pipes, flow control and not dead-locking.](https://learn.microsoft.com/en-us/dotnet/standard/io/pipelines#backpressure-and-flow-control)
-
-## Example streaming a file as an MVC http response
-
-```c#
-
- // Using memory stream - this is the in memory problem
-
-        var blobClient = container.GetBlobClient(blobPath);
-        var resultStream = new MemoryStream();
-
-            await blobClient.DownloadToAsync(resultStream);
-            // Reset the stream.
-            resultStream.position = 0;
-
-            // Return the stream.
-        return new FileStreamResult(stream, "application/pdf")
- 
- ```
-
-```c#
-
- // Using buffer stream - eliminates memory issue
-
-        var blobClient = container.GetBlobClient(blobPath);
-        var resultStream = new StreamBuffer();
-
-            await blobClient.DownloadToAsync(resultStream.WriteStream);
-
-            // Return the stream.
-        return new FileStreamResult(resultStream.ReadStream, "application/pdf")
- 
- ```
+>
+_> To help everyone, I founded the .NetCollective and started this project - .NetBlocks. Hope you join the movement. B."_
+>
+_> ... Brian Rogers founder_
 
 
- This example is very basic and does not show other advantages including built in alternative threading models etc.
+[Interested in the Design philosophy?](Design/Design.html)
+
+[Let's get started?](Get.started.html)
 
 
- * Stream Extensions - New functions to copy between streams and to calculate CRC values for a stream.
+### Terms, Licensing, Contributing, Open Source code, 
+
+### Additional Links
+
+Links to  source, licensing and the project.
+
+ [GitHub Src](https://github.com/dotnetCollective/dotnetBlocks)
 
 
+[Project root](http://dotnetblocks.dotnetcollective.org/)
 
 
-# Stream Buffer
-
-# Problem solved
-
-Existing methods on the streams to copy from one stream to another expect to copy the entire stream and block until the process is complete. For streams like the StreamBuffer implementation that block until there is capacity, the applications can hang.
-
-These functions let you copy a subset of the stream from one stream to another and not the entire stream.
-
-When you are testing copy functionality and working with streams where the may be hidden data issues, CRC functions can detect issues and enssure there are no erros in the process.
+[Licensing](https://github.com/dotnetCollective/dotnetBlocks#MS-PL-1-ov-file)
 
 
-# # Example copying parts of a a stream.
- ```cs
- 
- using(var sourceStream = new FileStream("sourcefile", FileMode.Open))
- {
- // Copy 100 bytes from the source stream to the destination stream.
- using(var destinationStream = new FileStream("destinationfile", FileMode.Create))
- {
- sourceStream.CopyBytes(destinationStream, 100);
- }
- 
- ```
- 
-
-
-## Content
+## More Content
 <div>\@Html.Partial("_ChildPages",Document)</div>

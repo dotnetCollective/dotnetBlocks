@@ -1,8 +1,22 @@
-﻿# dotNetBlocks.System.IO
+﻿Title: System.IO
+Excerpt: New stream functionality.
+---
+
+# dotNetBlocks.System.IO
+
+Adds new buffering and copy functionality to streams in the system.io namespace.
+
+### Getting started
+
+Get DotNetBlocks.system.IO from NUget.
+
+### Functionality
+
 
 New Stream functionality.
 
 * Stream Buffer - advanced concurrent reading and writing pass through
+* Stream Copy Extensions - let you calculate the CRC or copy parts of a stream.
 
 
 # Stream Buffer
@@ -15,7 +29,9 @@ The stream buffer provides as destination stream that can be written to and read
 
 [How it works: Understanding pipes, flow control and not dead-locking.](https://learn.microsoft.com/en-us/dotnet/standard/io/pipelines#backpressure-and-flow-control)
 
-## Example streaming a file as an MVC http response
+# # Examples
+
+1. streaming a file as an MVC http response
 
 ```c#
 
@@ -56,7 +72,7 @@ The stream buffer provides as destination stream that can be written to and read
 
 
 
-# Stream Buffer
+# Stream Copy extensions
 
 # Problem solved
 
@@ -64,10 +80,12 @@ Existing methods on the streams to copy from one stream to another expect to cop
 
 These functions let you copy a subset of the stream from one stream to another and not the entire stream.
 
-When you are testing copy functionality and working with streams where the may be hidden data issues, CRC functions can detect issues and enssure there are no erros in the process.
+When you are testing copy functionality and working with streams where the may be hidden data issues, CRC functions can detect issues and ensure there are no errors in the process.
 
 
-# # Example copying parts of a a stream.
+## Examples
+2. copying parts of a a stream.
+
  ```cs
  
  using(var sourceStream = new FileStream("sourcefile", FileMode.Open))

@@ -73,7 +73,7 @@
 
 
   <ItemGroup>
-    <PackageReference Update="FluentAssertions" Version="8.0.0-alpha.1" />
+    <PackageReference Update="FluentAssertions" Version="8.0.0" />
   </ItemGroup>
 
 

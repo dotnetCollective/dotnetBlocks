@@ -1,10 +1,13 @@
-﻿Title: Business.Shared
+﻿<!---
+Title: Business.Shared
+BreadcrumbTitle: Business.Shared
 ShowInNavigation: true
 ShowInSidebar: true
 NoSidebar: false
+Description: Shared objects defining all business components in the architecture and the basis for creating domain models.
+--->
+# Overview
 
----
-#Overview
 library contains all the contracts and models used or implemented by business classes libraries supporting the architecture.
 The library is referenced by any system following the business logic pattern.
 It forms the basis for the logic, operation business entity contracts.
