@@ -10,7 +10,7 @@ Excerpt: Implements Event Drive and Service Bus support for enterprise solutions
 
 This library extends the functionality of the [Mass Transit](https://github.com/MassTransit/MassTransit) project and implements a service bus designed for rapid use, patterned around business based handlers, events and operations.
 
-[ServiceBus Design details](.Design/servicebus.html)
+[ServiceBus Design details](/Design/servicebus.html)
 
 
 

@@ -10,7 +10,7 @@ Excerpt: Starting point to using DotNetBlocks.
 # Solution Libraries
 
 - [dotNetBlocks.System.IO](/Libraries/System.IO.html) - easily stream large content with minimum resources.
-- [dotNetBlocks.System.Threading](/Libraries/System.Treading.html) - solves cancellation token problems
+- [dotNetBlocks.System.Threading](/Libraries/System.Threading.html) - solves cancellation token problems
 - [DotNetBlocks.Extensions](/Libraries/Extensions.html) - adds Lazy<TService> functionality to Microsoft DI system.
 
 ## Enterprise Libraries

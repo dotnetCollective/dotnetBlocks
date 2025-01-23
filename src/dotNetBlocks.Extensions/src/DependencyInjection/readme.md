@@ -1,5 +1,9 @@
 ﻿
-# Dependency Injection Problem Solved.
+[README, licensing, more information]( https://dotnetblocks.dotnetcollective.org/Libraries/extensions#dependencyinjection)
+
+# Description
+
+Adds support to Microsoft.Extensions  for Lazy<T> in
 Microsoft DI is the simplest DI system available and does not support inferring Lazy<T> using already registered service types.
 The most effective solution to wasting resources when injecting Services via class constructor parameters is using a Lazy<Service pattern.
 This delays the construction of the resource until first use.

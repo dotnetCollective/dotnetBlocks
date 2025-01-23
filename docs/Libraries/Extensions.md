@@ -28,7 +28,6 @@ Microsoft DI does not support LAZY Service types. Options are to use a different
 ### Problems Solved
 
 Lack of support for lazy types in Microsoft.Extensions.DependencyInjection
-[DependencyInjection](DependencyInjection/Readme.md) - Adds Lazy class support to Microsoft DI.
 
 #Examples
 
