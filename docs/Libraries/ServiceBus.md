@@ -1,27 +1,28 @@
-﻿Title: Service Bus
-SubTitle: ServiceBus
-Order: 1
-BreadcrumbTitle: Guide1
-NavigationTitle: Guide2
-Level: 3
----
+﻿<!---
+Title: DotNetBlocks.ServiceBus
+ShowInSidebar: true
+Excerpt: Implements Event Drive and Service Bus support for enterprise solutions.
+--->
 
-# Messages, Envelopes, the Design approach and architectural decisions.
+# DotNetBlocks.ServiceBus
 
-# Message design approach.
+### Overview
 
-Mass transit messages a class and MT uses an envelope design pattern, wrapping every transmitted message in an envelope.
-In our service bus implementation, we also use an envelope design pattern, but we will hide it from the end consumer using extensions and generic types.
-. When a message is transmitted in mass transit, it is wrapped in an envelope - a standard pattern for service bus and messaging technologies.
+This library extends the functionality of the [Mass Transit](https://github.com/MassTransit/MassTransit) project and implements a service bus designed for rapid use, patterned around business based handlers, events and operations.
+
+[ServiceBus Design details](.Design/servicebus.html)
 
 
-# Handlers - handlers function as consumers in the MT world.
 
-We are implementing the base handler so it can be used as is in straight inheritance or can be injected with a class and a delegate.
+### Getting started
+[ NuGet : dotnetBlocks.ServiceBus.Shared](https://www.nuget.org/packages/DotNetBlocks.ServiceBus.Shared)
 
-### ServiceBus.Shared
+[Licensing and other information](/)
 
-This library contains all the models contracts and attributes used by message bus functionality.
-Creating a message base class is against recommendations by mass transit, but this is actually a common envelope for our business activities and is a different approach to MT which we are extending.
+### Functionality
 
-### ServiceBus.Shared
+# # Examples
+
+```c#
+
+```

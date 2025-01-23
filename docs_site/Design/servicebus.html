@@ -27,7 +27,7 @@
 
         
 
-        <title>.NetBlocks - DisposeAfter(Task, IDisposable, CancellationToken)</title>
+        <title>.NetBlocks - Service Bus</title>
     </head>
     <body class="d-flex flex-column">
         <div class="flex-grow-1 d-flex flex-column">
@@ -78,11 +78,11 @@
                                     <div class="flex-grow-1">
                                         <div class="breadcrumbs d-flex flex-column flex-md-row text-break">
 
-			<span><a href="/api/System.Threading.Tasks/TaskExtensions">TaskExtensions</a>.</span>
+        <span><a href="/Design">Design</a></span>
                                         </div>
                                         <div class="text-white m-0 text-break title">
 
-    <div>DisposeAfter<wbr>(Task, <wbr>IDisposable, <wbr>CancellationToken)<wbr> <small>Method</small></div>
+Service Bus
                                         </div>
                                     </div>
                                         <div class="navbar navbar-expand-md navbar-dark p-0">
@@ -115,138 +115,50 @@
                                         <div class="col-md-3 col-lg-2 p-md-0 m-md-0 bg-body">
                                             <div id="left-sidebar" class="sidebar collapse px-0 px-md-3 pt-3">
 
-	<div class="sidebar-root">
-		        <div class="sidebar-root bg-white mb-3 page-box font-size-sm">
-                <div class="sidebar-nav-item sidebar-header mb-0 pb-0">Assembly</div>
-                <div class="sidebar-nav-item font-weight-normal mt-0 pt-0"><a href="/api/dotNetBlocks.System.Threading.dll">dotNetBlocks<wbr>.System<wbr>.Threading<wbr>.dll</a></div>
-                <div class="sidebar-nav-item sidebar-header mb-0 pb-0">Namespace</div>
-                <div class="sidebar-nav-item  font-weight-normal mt-0 pt-0"><a href="/api/System.Threading.Tasks">System<wbr>.Threading<wbr>.Tasks</a></div>
-                <div class="sidebar-nav-item sidebar-header mb-0 pb-0">Type</div>
-                <div class="sidebar-nav-item font-weight-normal mt-0 pt-0"><a href="/api/System.Threading.Tasks/TaskExtensions">TaskExtensions</a></div>
-        </div>
-            <div class="sidebar-nav-item sidebar-header">Method Members</div>
-            <div class="sidebar-nav-children">
-                    <div class="sidebar-nav-item active"><a href="/api/System.Threading.Tasks/TaskExtensions/E11C948C">DisposeAfter<wbr>(Task, <wbr>IDisposable, <wbr>CancellationToken)<wbr></a></div>
-                    <div class="sidebar-nav-item"><a href="/api/System.Threading.Tasks/TaskExtensions/199649B9">DisposeAfterAsync<wbr>(Task, <wbr>IAsyncDisposable, <wbr>CancellationToken)<wbr></a></div>
-                    <div class="sidebar-nav-item"><a href="/api/System.Threading.Tasks/TaskExtensions/2CF63516">WaitAll<wbr>(Task, <wbr>TimeSpan, <wbr>CancellationToken, <wbr>Task[])<wbr></a></div>
-                    <div class="sidebar-nav-item"><a href="/api/System.Threading.Tasks/TaskExtensions/6E6EF6C8">WaitAllAsync<wbr>(Task[], <wbr>TimeSpan, <wbr>CancellationToken)<wbr></a></div>
-                    <div class="sidebar-nav-item"><a href="/api/System.Threading.Tasks/TaskExtensions/551F5BC1">WaitAllAsync<wbr>(IEnumerable<wbr>&lt;Task&gt;<wbr>, <wbr>TimeSpan, <wbr>CancellationToken)<wbr></a></div>
-                    <div class="sidebar-nav-item"><a href="/api/System.Threading.Tasks/TaskExtensions/BF0D00EE">WaitAnyAsync<wbr>(Task, <wbr>TimeSpan, <wbr>CancellationToken, <wbr>Task[])<wbr></a></div>
-                    <div class="sidebar-nav-item"><a href="/api/System.Threading.Tasks/TaskExtensions/15492CAF">WaitAnyAsync<wbr>(Task[], <wbr>TimeSpan, <wbr>CancellationToken)<wbr></a></div>
-                    <div class="sidebar-nav-item"><a href="/api/System.Threading.Tasks/TaskExtensions/CFE11A39">WaitAnyAsync<wbr>(IEnumerable<wbr>&lt;Task&gt;<wbr>, <wbr>TimeSpan, <wbr>CancellationToken)<wbr></a></div>
-            </div>
+<div class="sidebar-root">
 
-	</div>
-                                            </div>
+<div class="sidebar-nav-item">
+    <a href="/Design">The Design</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/Design/business.entities">Business Entities</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/Design/business.logic">Business Logic</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/Design/operations">Operations</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/Design/references">References</a>
+</div>
+<div class="sidebar-nav-item active">
+    <a href="/Design/servicebus">Service Bus</a>
+</div></div>                                            </div>
                                         </div>
                                         <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
-
-
-
-
-
-
-        <div class="lead mb-3">
-    Disposes resources after task completion.
-    </div>
-
-    <div class="p-3 bg-light page-box container small">
-        		<dl class="dl-horizontal">
-    		    <dt>Assembly</dt>
-    		    <dd><a href="/api/dotNetBlocks.System.Threading.dll">dotNetBlocks<wbr>.System<wbr>.Threading<wbr>.dll</a></dd>
-
-    		    <dt>Namespace</dt>
-    		    <dd><a href="/api/System.Threading.Tasks">System<wbr>.Threading<wbr>.Tasks</a></dd>
-
-				<dt>Containing Type</dt>
-				<dd><a href="/api/System.Threading.Tasks/TaskExtensions">TaskExtensions</a></dd>
-
-
-
-
-
-
-
-	    </dl>
-
-    </div>
-		<h1 id="Syntax">Syntax</h1>
-		<pre class="language-csharp"><code class="language-csharp">public static Task DisposeAfter(this Task taskusingdispoable, IDisposable disposable, CancellationToken cancelDispose = null)</code></pre>
-
-
-
-
-
-
-		<h1 id="Parameters">Parameters</h1>
-		<div class="table-responsive">
-			<table class="table table-api table-striped table-hover three-cols">
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-						<tr>
-							<td>taskusingdispoable</td>
-							<td>Task</td>
-							<td>The <code class="language-csharp">System.Threading.Tasks.Task</code>&gt; using the resource</td>
-						</tr>
-						<tr>
-							<td>disposable</td>
-							<td>IDisposable</td>
-							<td><code class="language-csharp">System.IDisposable</code> resource to dispose. </td>
-						</tr>
-						<tr>
-							<td>cancelDispose</td>
-							<td>CancellationToken</td>
-							<td><code class="language-csharp">System.Threading.CancellationToken</code> cancel the dispose process.</td>
-						</tr>
-				</tbody>
-			</table>
-		</div>
-
-
-		<h1 id="ReturnValue">Return Value</h1>
-		<div class="table-responsive">
-			<table class="table table-api table-striped table-hover two-cols">
-				<thead>
-					<tr>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Task</td>
-						<td></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-
-
-
-
-
-
+<h2 id="messages-envelopes-the-design-approach-and-architectural-decisions">Messages, Envelopes, the Design approach and architectural decisions.</h2>
+<h1 id="message-design-approach">Message design approach.</h1>
+<p>Mass transit messages a class and MT uses an envelope design pattern, wrapping every transmitted message in an envelope.
+In our service bus implementation, we also use an envelope design pattern, but we will hide it from the end consumer using extensions and generic types.
+. When a message is transmitted in mass transit, it is wrapped in an envelope - a standard pattern for service bus and messaging technologies.</p>
+<h1 id="handlers-handlers-function-as-consumers-in-the-mt-world">Handlers - handlers function as consumers in the MT world.</h1>
+<p>We are implementing the base handler so it can be used as is in straight inheritance or can be injected with a class and a delegate.</p>
+<h3 id="servicebus.shared"><a href="/Libraries/ServiceBus.html">ServiceBus.Shared</a></h3>
+<p>This library contains all the models contracts and attributes used by message bus functionality.
+Creating a message base class is against recommendations by mass transit, but this is actually a common envelope for our business activities and is a different approach to MT which we are extending.</p>
 
 
                                         </div>
                                 <div class="col-lg-2 p-md-0 m-md-0 bg-body">
                                     <div id="right-sidebar" class="sidebar px-0 px-md-3 pt-3">
-
-	        <div class="sidebar-root">
+        <div class=" mb-3 sidebar-root">
             <div class="sidebar-nav-item sidebar-header">On This Page</div>
             <div class="sidebar-nav-children">
-                    <div class="sidebar-nav-item"><a href="#Syntax">Syntax</a></div>
-                    <div class="sidebar-nav-item"><a href="#Parameters">Parameters</a></div>
-                    <div class="sidebar-nav-item"><a href="#ReturnValue">Return Value</a></div>
+                    <div class="sidebar-nav-item"><a href="#message-design-approach">Message design approach.</a></div>
+                    <div class="sidebar-nav-item"><a href="#handlers-handlers-function-as-consumers-in-the-mt-world">Handlers - handlers function as consumers in the MT world.</a></div>
             </div>
         </div>
-
                                     </div>
                                 </div>
                             </div>

@@ -27,7 +27,7 @@
 
         
 
-        <title>.NetBlocks - Service Bus</title>
+        <title>.NetBlocks - DotNetBlocks.ServiceBus</title>
     </head>
     <body class="d-flex flex-column">
         <div class="flex-grow-1 d-flex flex-column">
@@ -54,7 +54,7 @@
             <a class="nav-link" href="/Libraries">Libraries</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/Design">The Design</a>
+            <a class="nav-link" href="/Design">Design</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/api">API</a>
@@ -82,7 +82,7 @@
                                         </div>
                                         <div class="text-white m-0 text-break title">
 
-Service Bus
+DotNetBlocks.ServiceBus
                                         </div>
                                     </div>
                                         <div class="navbar navbar-expand-md navbar-dark p-0">
@@ -118,36 +118,36 @@ Service Bus
 <div class="sidebar-root">
 
 <div class="sidebar-nav-item">
-    <a href="/Libraries">Libraries</a>
-</div>
-<div class="sidebar-nav-item">
     <a href="/Libraries/business.shared">Business.Shared</a>
 </div>
 <div class="sidebar-nav-item">
-    <a href="/Libraries/system.io">System.IO</a>
+    <a href="/Libraries/extensions">DotNetBlocks.Extensions</a>
+</div>
+<div class="sidebar-nav-item active">
+    <a href="/Libraries/servicebus">DotNetBlocks.ServiceBus</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/Libraries/servicebus.shared">DotNetBlocks.ServiceBus.Shared</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/Libraries/system.io">DotNetBlocks.System.IO</a>
 </div>
 <div class="sidebar-nav-item">
     <a href="/Libraries/system.threading">dotNetBlocks.System.Threading</a>
-</div>
-<div class="sidebar-nav-item">
-    <a href="/Libraries/extensions">.Extensions - library</a>
-</div>
-<div class="sidebar-nav-item active">
-    <a href="/Libraries/servicebus">Service Bus</a>
 </div></div>                                            </div>
                                         </div>
                                         <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
-<h1 id="messages-envelopes-the-design-approach-and-architectural-decisions">Messages, Envelopes, the Design approach and architectural decisions.</h1>
-<h1 id="message-design-approach">Message design approach.</h1>
-<p>Mass transit messages a class and MT uses an envelope design pattern, wrapping every transmitted message in an envelope.
-In our service bus implementation, we also use an envelope design pattern, but we will hide it from the end consumer using extensions and generic types.
-. When a message is transmitted in mass transit, it is wrapped in an envelope - a standard pattern for service bus and messaging technologies.</p>
-<h1 id="handlers-handlers-function-as-consumers-in-the-mt-world">Handlers - handlers function as consumers in the MT world.</h1>
-<p>We are implementing the base handler so it can be used as is in straight inheritance or can be injected with a class and a delegate.</p>
-<h3 id="servicebus.shared">ServiceBus.Shared</h3>
-<p>This library contains all the models contracts and attributes used by message bus functionality.
-Creating a message base class is against recommendations by mass transit, but this is actually a common envelope for our business activities and is a different approach to MT which we are extending.</p>
-<h3 id="servicebus.shared-1">ServiceBus.Shared</h3>
+<h1 id="dotnetblocks.servicebus">DotNetBlocks.ServiceBus</h1>
+<h3 id="overview">Overview</h3>
+<p>This library extends the functionality of the <a href="https://github.com/MassTransit/MassTransit">Mass Transit</a> project and implements a service bus designed for rapid use, patterned around business based handlers, events and operations.</p>
+<p><a href=".Design/servicebus.html">ServiceBus Design details</a></p>
+<h3 id="getting-started">Getting started</h3>
+<p><a href="https://www.nuget.org/packages/DotNetBlocks.ServiceBus.Shared"> NuGet : dotnetBlocks.ServiceBus.Shared</a></p>
+<p><a href="/">Licensing and other information</a></p>
+<h3 id="functionality">Functionality</h3>
+<h1 id="examples"># Examples</h1>
+<pre><code class="language-c#">
+</code></pre>
 
 
                                         </div>
@@ -156,9 +156,8 @@ Creating a message base class is against recommendations by mass transit, but th
         <div class=" mb-3 sidebar-root">
             <div class="sidebar-nav-item sidebar-header">On This Page</div>
             <div class="sidebar-nav-children">
-                    <div class="sidebar-nav-item"><a href="#messages-envelopes-the-design-approach-and-architectural-decisions">Messages, Envelopes, the Design approach and architectural decisions.</a></div>
-                    <div class="sidebar-nav-item"><a href="#message-design-approach">Message design approach.</a></div>
-                    <div class="sidebar-nav-item"><a href="#handlers-handlers-function-as-consumers-in-the-mt-world">Handlers - handlers function as consumers in the MT world.</a></div>
+                    <div class="sidebar-nav-item"><a href="#dotnetblocks.servicebus">DotNetBlocks.ServiceBus</a></div>
+                    <div class="sidebar-nav-item"><a href="#examples"># Examples</a></div>
             </div>
         </div>
                                     </div>

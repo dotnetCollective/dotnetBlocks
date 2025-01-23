@@ -27,7 +27,7 @@
 
         
 
-        <title>.NetBlocks - .Extensions - library</title>
+        <title>.NetBlocks - DotNetBlocks.Extensions</title>
     </head>
     <body class="d-flex flex-column">
         <div class="flex-grow-1 d-flex flex-column">
@@ -54,7 +54,7 @@
             <a class="nav-link" href="/Libraries">Libraries</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/Design">The Design</a>
+            <a class="nav-link" href="/Design">Design</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/api">API</a>
@@ -82,7 +82,7 @@
                                         </div>
                                         <div class="text-white m-0 text-break title">
 
-.Extensions - library
+DotNetBlocks.Extensions
                                         </div>
                                     </div>
                                         <div class="navbar navbar-expand-md navbar-dark p-0">
@@ -118,31 +118,64 @@
 <div class="sidebar-root">
 
 <div class="sidebar-nav-item">
-    <a href="/Libraries">Libraries</a>
-</div>
-<div class="sidebar-nav-item">
     <a href="/Libraries/business.shared">Business.Shared</a>
 </div>
+<div class="sidebar-nav-item active">
+    <a href="/Libraries/extensions">DotNetBlocks.Extensions</a>
+</div>
 <div class="sidebar-nav-item">
-    <a href="/Libraries/system.io">System.IO</a>
+    <a href="/Libraries/servicebus">DotNetBlocks.ServiceBus</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/Libraries/servicebus.shared">DotNetBlocks.ServiceBus.Shared</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/Libraries/system.io">DotNetBlocks.System.IO</a>
 </div>
 <div class="sidebar-nav-item">
     <a href="/Libraries/system.threading">dotNetBlocks.System.Threading</a>
-</div>
-<div class="sidebar-nav-item active">
-    <a href="/Libraries/extensions">.Extensions - library</a>
-</div>
-<div class="sidebar-nav-item">
-    <a href="/Libraries/servicebus">Service Bus</a>
 </div></div>                                            </div>
                                         </div>
                                         <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
-<h1 id="description">Description</h1>
-<p>Adds functionality to the Microsoft.Extensions namespace to solve specific problems.</p>
+<h1 id="dotnetblocks.extensions.dependencyinjection">DotNetBlocks.Extensions.DependencyInjection</h1>
+<p>Adds functionality to the Microsoft.Extensions namespace to solve Lazy<T> DI and other missing functionality problems.</p>
+<h3 id="getting-started">Getting started</h3>
+<p><a href="https://www.nuget.org/packages/dotNetBlocks.Extensions.DependencyInjection"> NuGet : DotNetBlocks.Extensions.DependencyInjection</a></p>
+<p><a href="/">Licensing and other information</a></p>
+<h3 id="functionality">Functionality</h3>
 <h2 id="dependencyinjection">DependencyInjection</h2>
+<p>To improve performance, design patterns use the injection of Lazy<TService> in their constructors to delay the cost of initiation to JustInTime.
+Microsoft DI does not support LAZY Service types. Options are to use a different DI provider or use these extensions.</p>
 <h3 id="problems-solved">Problems Solved</h3>
 <p>Lack of support for lazy types in Microsoft.Extensions.DependencyInjection
 <a href="DependencyInjection/Readme.md">DependencyInjection</a> - Adds Lazy class support to Microsoft DI.</p>
+<p>#Examples</p>
+<h1 id="dependency-injection-problem-solved">Dependency Injection Problem Solved.</h1>
+<p>Microsoft DI is the simplest DI system available and does not support inferring Lazy<T> using already registered service types.
+The most effective solution to wasting resources when injecting Services via class constructor parameters is using a Lazy&lt;Service pattern.
+This delays the construction of the resource until first use.</p>
+<p>If you use MS DI, you have to registee the Lazy<T> for every class that may be lazy, and we want the DI container to generically support Lazy<T> for our constructors.</p>
+<p>We need to add the functionality to create any Lazy<T> class if the service is already registered.</p>
+<h1 id="alternatives">Alternatives</h1>
+<p>A better solution is to use AutoFac or other open source DI systems and leverage the more advanced functionality.</p>
+<h2 id="the-solution">The Solution</h2>
+<h2 id="references">References</h2>
+<p><a href="https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection">Microsoft DI</a>
+<a href="https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection-guidelines#default-service-container-replacement">Default Service Container Replacement</a></p>
+<h1 id="implementation-notes">Implementation notes</h1>
+<p>A first attempt was to use a lighter facade factory pattern using implicit type conventions, but issues with Di type conversion testing on implicit classes prevented its use.
+The final lazy implementation had to exactly match the lazy<T> signature, so extending the class with DI support became the easiest solution.
+You also can't use a generic factory method and a dynamic keyword because there is no way to add a parameter that can be used for dynamic type discovery.</p>
+<p>Solution inspiration is this discussion aboard
+<a href="https://stackoverflow.com/questions/44934511/does-net-core-dependency-injection-support-lazyt">Solution ideas discussion - for credit</a></p>
+<h2 id="details">details</h2>
+<p>This library implements two solutions internally. One uses a Lazy Implementation class that inherits from Lazy but with a constructor with DI support. This is a simple but effective solution to the problem
+and is the soution implementation when you &quot;add Lazy Support&quot; to the service collection. It registers this LazyService type for use in all lazy<T> requests.</p>
+<p>The second implementation is a &quot;true lazy&quot; implementation using a delegate constructor to create an true Lazy class with a dynamic costructor. This is the solution used when you use a Lazy registration for a type or the AsLazy registration extension method.
+The &quot;true&quot; implementation is modeled on the standard microsoft libraries, using copied and modified versions of the microsoft DI service registration and service descriptor static methods.</p>
+<p>The internal pattern is to create ServiceDescriptors using the &quot;describe&quot; pattern and add those to the service collection. The describe method creates the appropriate factories and lifetimes supporting the requeted lazy usage registration type.</p>
+<h2 id="factory-methods">Factory methods</h2>
+<p>The factory methods use methodInfo to close the types and invoke the factory method builder, but its important to note this does not have a performance impact, because the builder method is only called during registration to create an appropriate delegate that is passed to the dependency registration. This technique is faster than building the lambdas using code and more maintainable.</p>
 
 
                                         </div>
@@ -151,9 +184,20 @@
         <div class=" mb-3 sidebar-root">
             <div class="sidebar-nav-item sidebar-header">On This Page</div>
             <div class="sidebar-nav-children">
-                    <div class="sidebar-nav-item"><a href="#description">Description</a></div>
+                    <div class="sidebar-nav-item"><a href="#dotnetblocks.extensions.dependencyinjection">DotNetBlocks.Extensions.DependencyInjection</a></div>
                         <div class="sidebar-nav-children">
                                 <div class="sidebar-nav-item"><a href="#dependencyinjection">DependencyInjection</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#dependency-injection-problem-solved">Dependency Injection Problem Solved.</a></div>
+                    <div class="sidebar-nav-item"><a href="#alternatives">Alternatives</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#the-solution">The Solution</a></div>
+                                <div class="sidebar-nav-item"><a href="#references">References</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#implementation-notes">Implementation notes</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#details">details</a></div>
+                                <div class="sidebar-nav-item"><a href="#factory-methods">Factory methods</a></div>
                         </div>
             </div>
         </div>
