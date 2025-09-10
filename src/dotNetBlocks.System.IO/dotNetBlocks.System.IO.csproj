@@ -35,8 +35,8 @@ dotNetBlocks.System.IO.StreamBufferExtensions
 
 
   <ItemGroup>
-    <PackageReference Include="System.IO.Hashing" Version="9.0.0" />
-    <PackageReference Include="System.IO.Pipelines" Version="9.0.0" />
+    <PackageReference Include="System.IO.Hashing" Version="9.0.9" />
+    <PackageReference Include="System.IO.Pipelines" Version="9.0.9" />
     <PackageReference Include="System.IO.Pipes" Version="4.3.0" />
   </ItemGroup>
 
@@ -45,7 +45,7 @@ dotNetBlocks.System.IO.StreamBufferExtensions
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Update="FluentAssertions" Version="8.0.0-alpha.1" />
+    <PackageReference Update="FluentAssertions" Version="8.6.0" />
   </ItemGroup>
 
   
