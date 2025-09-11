@@ -1,14 +1,22 @@
-﻿Title: System.IO
-Excerpt: New stream functionality.
----
+﻿<!---
+Title: DotNetBlocks.System.IO
 
-# dotNetBlocks.System.IO
+ShowInSidebar: true
+Excerpt: New stream functionality.
+Level: 0
+Order: 0
+--->
+
+# DotNetBlocks.System.IO
+
+### Overview
 
 Adds new buffering and copy functionality to streams in the system.io namespace.
 
 ### Getting started
+[ NuGet : dotnetBlocks.System.IO](https://www.nuget.org/packages/dotNetBlocks.System.IO)
 
-Get DotNetBlocks.system.IO from NUget.
+[Licensing and other information](/)
 
 ### Functionality
 

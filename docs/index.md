@@ -9,6 +9,14 @@ Excerpt: About .Net Blocks.
 
 <span style="float: right">![dotnetblocks](./Images/DotNetBuildingBlocks.jpg){width=200 height=200}</span>
 
+> _.NetBlocks architecture - A Micro Subsystem Architecture pattern and a solution of solution building blocks -
+>the advantages of micro-services without the code-splaining_
+>
+>_Easy to use, easy to build, easy to scale and easy to maintain._
+
+### DotNetBlocks Architecture and Point Solutions
+
+
 # What is it?
 
 .Net blocks is a one-stop solution and architecture to solve all your point problems and build large scalable event and api powered enterprise applications. It consists of an opinionated, ready to use design and archicture, and all the components needed to get your started.
@@ -32,7 +40,7 @@ _> To help everyone, I founded the .NetCollective and started this project - .Ne
 _> ... Brian Rogers founder_
 
 
-[Interested in the Design philosophy?](Design/Design.html)
+[Interested in the Design philosophy?](/Design)
 
 [Let's get started?](Get.started.html)
 

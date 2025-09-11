@@ -23,8 +23,10 @@ The enterprise solution is an opinoinated design philosophy and pattern to creat
 
 You can use the individual .NetBlocks to solve your problems, just like any other library, or you can follow the overall philosophy and start creating enterprise level scalable code. Its your choice.
 
-# #Getting the code
-Each library is available via nuget and has documentation in the libraries section sinmilar to a standard component read me.
+## Getting to the good stuff (how to get the code)
+[Libraries](/Libraries/): Each library is available via nuget and has documentation in the libraries section sinmilar to a standard component read me.
+[Src](https://github.com/dotnetCollective/dotnetBlocks): The source code is available on [GitHub](https://github.com/dotnetCollective/dotnetBlocks)
+
 
 ## More Content
 <div>\@Html.Partial("_ChildPages",Document)</div>

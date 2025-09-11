@@ -25,4 +25,8 @@ Commonly Used Types:
     <None Update="readme.md" Pack="True" PackagePath="." CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Update="FluentAssertions" Version="8.6.0" />
+  </ItemGroup>
+
 </Project>

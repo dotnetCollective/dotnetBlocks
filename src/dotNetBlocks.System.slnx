@@ -6,9 +6,11 @@
   </Folder>
   <Folder Name="/Solution Items/" />
   <Folder Name="/Tests/">
+    <Project Path="../tests/dotNetBlocks.System.Collections.Tests/dotNetBlocks.System.Collections.Tests.csproj" Id="aaa16f77-4e5b-4a80-986e-2743527d9544" />
     <Project Path="dotNetBlocks.System.IO/tests/dotNetBlocks.System.IO.Tests.csproj" />
     <Project Path="dotNetBlocks.System.Threading/tests/dotNetBlocks.System.Threading.Tests.csproj" />
   </Folder>
+  <Project Path="dotNetBlocks.System.Collections/dotNetBlocks.System.Collections.csproj" Id="c6fc7b74-73e3-435e-ab55-ebe247613601" />
   <Project Path="dotNetBlocks.System.IO/dotNetBlocks.System.IO.csproj" />
   <Project Path="dotNetBlocks.System.Threading/src/dotNetBlocks.System.Threading.csproj" />
 </Solution>

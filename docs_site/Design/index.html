@@ -54,7 +54,7 @@
             <a class="nav-link" href="/Libraries">Libraries</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/Design">The Design</a>
+            <a class="nav-link" href="/Design">Design</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/api">API</a>
@@ -120,7 +120,10 @@ The Design
     <a href="/Design">The Design</a>
 </div>
 <div class="sidebar-nav-item">
-    <a href="/Design/business.entities">Design - Business Entities</a>
+    <a href="/Design/business.entities">Business Entities</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/Design/business.logic">Business Logic</a>
 </div>
 <div class="sidebar-nav-item">
     <a href="/Design/operations">Operations</a>
@@ -129,30 +132,45 @@ The Design
     <a href="/Design/references">References</a>
 </div>
 <div class="sidebar-nav-item">
-    <a href="/Design/design">The Design</a>
+    <a href="/Design/servicebus">Service Bus</a>
 </div></div>                                            </div>
                                         </div>
                                         <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
-<p>###Scalable Design approach</p>
-<h1 id="overview">Overview</h1>
+<blockquote class="blockquote">
+</blockquote>
+<p><em>&quot;A Scalable Design approach&quot; -
+Follow the patterns and deploy it any where, anyhow and it just works! Easy to upgrade and maintain without the code-splaining of micro-services.&quot;</em></p>
+<h1 id="summary">Summary</h1>
 <p>.NetBlocks is an opinionated design pattern and complementary architecture</p>
-<p>The objective of the .NetBlocks design is to create building blocks that form a pattern or recipe that is easy for any engineer to follow. This allows the engineer to focus on implementing the business logic to solve business problems in an architecture that &quot;just works&quot;.
-&quot;</p>
+<p>The objective of the .NetBlocks design is to create building blocks that form a pattern or recipe that is easy for any engineer to follow. This allows the engineer to focus on implementing the business logic to solve business problems in an architecture that &quot;just works&quot;. The unique isolation of business logic in an actor pattern and the strong contract programming methodology decouples the business logic from the architecture, allowing unlimited flexibility for transport methodologies and enterprise hosting locations, with minimal additional engineering work.&quot;</p>
 <h1 id="references">References</h1>
 <p>The design patterns in .NetBlocks rely heavily on existing an up and coming cloud and asynchronous processing technologies.</p>
-<h2 id="business-logic">Business Logic</h2>
+<h2 id="business-logic"><a href="Business.Logic.html">Business Logic</a></h2>
 <p>Engineers in large organizations and enterprises are focused on delivering value by solving the business problem, not playing with technology. The design patterns, practices and technologies they use should solve the technical problems without requiring deep thought so the focus is on the business problem.</p>
-<p><a href="/operations.html">## Operations</a></p>
-<p><a href="references.html">## References</a></p>
-
-
-        <h4 class="h-section mb-2">Child Pages</h4>
+<p>All business code is contained in business logic classes that implement an IBusiness Logic interface with methods that accept a business logic operation or event as parameters. This encapsulation of the logic forces the logic to remain in the class and not bleed out into the hosting or transport classes e.g. api host, handler host or function host. The design means that business logic becomes host and transport agnostic, but remains isolated because of the &quot;programming by strong contract design&quot;.</p>
+<h3 id="operations"><a href="operations.html">Operations</a></h3>
+<p>Operations and events are the implementations of a command parameter pattern, isolating the events and commands from the business logic and transport. Operations are self-validating increasing the probability of success prior to presentation for processing.</p>
+<h3 id="business-entities"><a href="Business.Entities.html">Business Entities</a></h3>
+<p>Business entities represent the domain model base building blocks. A business entity approach forces engineers to model the business using a domain model approach and allows the framework to expand generically, but extends the functionality gated to business entities or business entity based intefaces.</p>
+<h3 id="references-1"><a href="references.html">References</a></h3>
+<h2 id="more-content">More Content</h2>
+<div>        <h4 class="h-section mb-2">Child Pages</h4>
             <div>
                 
     <div class="p-3 mb-2 bg-light page-box">
-        <h4><a href="/Design/business.entities">Design - Business Entities</a></h4>
+        <h4><a href="/Design/business.entities">Business Entities</a></h4>
 
-            <div class="font-size-sm">describes all design of the base classes, interfaces and patterns defining the domain models used in the architecture.</div>
+            <div class="font-size-sm">describes design of all the base classes, interfaces and patterns defining the domain models used in the architecture.</div>
+
+    </div>
+
+            </div>
+            <div>
+                
+    <div class="p-3 mb-2 bg-light page-box">
+        <h4><a href="/Design/business.logic">Business Logic</a></h4>
+
+            <div class="font-size-sm">describes the roles of business logic classes and interfaces in the design</div>
 
     </div>
 
@@ -181,9 +199,68 @@ The Design
             <div>
                 
     <div class="p-3 mb-2 bg-light page-box">
-        <h4><a href="/Design/design">The Design</a></h4>
+        <h4><a href="/Design/servicebus">Service Bus</a></h4>
 
-            <div class="font-size-sm">Describes the design and philosophy for the architecture.</div>
+            <div class="font-size-sm"><p>Mass transit messages a class and MT uses an envelope design pattern, wrapping every transmitted message in an envelope.
+In our service bus implementation, we also use an envelope design pattern, but we will hide it from the end consumer using extensions and generic types.
+. When a message is transmitted in mass transit, it is wrapped in an envelope - a standard pattern for service bus and messaging technologies.</p></div>
+
+    </div>
+
+            </div>
+</div>
+
+
+        <h4 class="h-section mb-2">Child Pages</h4>
+            <div>
+                
+    <div class="p-3 mb-2 bg-light page-box">
+        <h4><a href="/Design/business.entities">Business Entities</a></h4>
+
+            <div class="font-size-sm">describes design of all the base classes, interfaces and patterns defining the domain models used in the architecture.</div>
+
+    </div>
+
+            </div>
+            <div>
+                
+    <div class="p-3 mb-2 bg-light page-box">
+        <h4><a href="/Design/business.logic">Business Logic</a></h4>
+
+            <div class="font-size-sm">describes the roles of business logic classes and interfaces in the design</div>
+
+    </div>
+
+            </div>
+            <div>
+                
+    <div class="p-3 mb-2 bg-light page-box">
+        <h4><a href="/Design/operations">Operations</a></h4>
+
+            <div class="font-size-sm">Describes operations, the basis for all signalling and processing in the architecture</div>
+
+    </div>
+
+            </div>
+            <div>
+                
+    <div class="p-3 mb-2 bg-light page-box">
+        <h4><a href="/Design/references">References</a></h4>
+
+            <div class="font-size-sm"><p>#Centrally managing properties in MS Build
+<a href="https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022">https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022</a></p></div>
+
+    </div>
+
+            </div>
+            <div>
+                
+    <div class="p-3 mb-2 bg-light page-box">
+        <h4><a href="/Design/servicebus">Service Bus</a></h4>
+
+            <div class="font-size-sm"><p>Mass transit messages a class and MT uses an envelope design pattern, wrapping every transmitted message in an envelope.
+In our service bus implementation, we also use an envelope design pattern, but we will hide it from the end consumer using extensions and generic types.
+. When a message is transmitted in mass transit, it is wrapped in an envelope - a standard pattern for service bus and messaging technologies.</p></div>
 
     </div>
 
@@ -194,10 +271,11 @@ The Design
         <div class=" mb-3 sidebar-root">
             <div class="sidebar-nav-item sidebar-header">On This Page</div>
             <div class="sidebar-nav-children">
-                    <div class="sidebar-nav-item"><a href="#overview">Overview</a></div>
+                    <div class="sidebar-nav-item"><a href="#summary">Summary</a></div>
                     <div class="sidebar-nav-item"><a href="#references">References</a></div>
                         <div class="sidebar-nav-children">
                                 <div class="sidebar-nav-item"><a href="#business-logic">Business Logic</a></div>
+                                <div class="sidebar-nav-item"><a href="#more-content">More Content</a></div>
                         </div>
             </div>
         </div>

@@ -54,7 +54,7 @@
             <a class="nav-link" href="/Libraries">Libraries</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/Design">The Design</a>
+            <a class="nav-link" href="/Design">Design</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/api">API</a>
@@ -118,32 +118,38 @@ dotNetBlocks.System.Threading
 <div class="sidebar-root">
 
 <div class="sidebar-nav-item">
-    <a href="/Libraries">Libraries</a>
-</div>
-<div class="sidebar-nav-item">
     <a href="/Libraries/business.shared">Business.Shared</a>
 </div>
 <div class="sidebar-nav-item">
-    <a href="/Libraries/system.io">System.IO</a>
+    <a href="/Libraries/extensions">DotNetBlocks.Extensions</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/Libraries/servicebus">DotNetBlocks.ServiceBus</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/Libraries/servicebus.shared">DotNetBlocks.ServiceBus.Shared</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/Libraries/system.io">DotNetBlocks.System.IO</a>
 </div>
 <div class="sidebar-nav-item active">
     <a href="/Libraries/system.threading">dotNetBlocks.System.Threading</a>
-</div>
-<div class="sidebar-nav-item">
-    <a href="/Libraries/extensions">.Extensions - library</a>
-</div>
-<div class="sidebar-nav-item">
-    <a href="/Libraries/servicebus">Service Bus</a>
 </div></div>                                            </div>
                                         </div>
                                         <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
 <h1 id="dotnetblocks.system.threading">dotNetBlocks.System.Threading</h1>
+<h3 id="getting-started">Getting started</h3>
+<p><a href="https://www.nuget.org/packages/dotNetBlocks.System.Threading"> NuGet : dotnetBlocks.System.IO</a></p>
+<p><a href="/">Licensing and other information</a></p>
 <h2 id="problem-description">problem description</h2>
 <p>to have multiple tasks wait on the same token requires creation of a shared token source. classes and methods may not have access to that shared token source to create new linked tokens. These extensions and wait methods give access to token sources given only the token.</p>
 <p>New threading functionality for advanced waiting on token sources of existing cancellation tokens.</p>
 <ul>
 <li>Task extensions for new token wait types that don't require a merged token source.</li>
 </ul>
+<h2 id="usage">Usage</h2>
+<pre><code class="language-c#">
+</code></pre>
 
 
                                         </div>
@@ -155,6 +161,7 @@ dotNetBlocks.System.Threading
                     <div class="sidebar-nav-item"><a href="#dotnetblocks.system.threading">dotNetBlocks.System.Threading</a></div>
                         <div class="sidebar-nav-children">
                                 <div class="sidebar-nav-item"><a href="#problem-description">problem description</a></div>
+                                <div class="sidebar-nav-item"><a href="#usage">Usage</a></div>
                         </div>
             </div>
         </div>

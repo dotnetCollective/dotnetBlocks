@@ -27,7 +27,7 @@
 
         
 
-        <title>.NetBlocks - The Design</title>
+        <title>.NetBlocks - Business Logic</title>
     </head>
     <body class="d-flex flex-column">
         <div class="flex-grow-1 d-flex flex-column">
@@ -54,7 +54,7 @@
             <a class="nav-link" href="/Libraries">Libraries</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/Design">The Design</a>
+            <a class="nav-link" href="/Design">Design</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/api">API</a>
@@ -78,11 +78,11 @@
                                     <div class="flex-grow-1">
                                         <div class="breadcrumbs d-flex flex-column flex-md-row text-break">
 
-        <span><a href="/Design">The Design</a></span>
+        <span><a href="/Design">Design</a></span>
                                         </div>
                                         <div class="text-white m-0 text-break title">
 
-The Design
+Business Logic
                                         </div>
                                     </div>
                                         <div class="navbar navbar-expand-md navbar-dark p-0">
@@ -121,7 +121,10 @@ The Design
     <a href="/Design">The Design</a>
 </div>
 <div class="sidebar-nav-item">
-    <a href="/Design/business.entities">Design - Business Entities</a>
+    <a href="/Design/business.entities">Business Entities</a>
+</div>
+<div class="sidebar-nav-item active">
+    <a href="/Design/business.logic">Business Logic</a>
 </div>
 <div class="sidebar-nav-item">
     <a href="/Design/operations">Operations</a>
@@ -129,22 +132,35 @@ The Design
 <div class="sidebar-nav-item">
     <a href="/Design/references">References</a>
 </div>
-<div class="sidebar-nav-item active">
-    <a href="/Design/design">The Design</a>
+<div class="sidebar-nav-item">
+    <a href="/Design/servicebus">Service Bus</a>
 </div></div>                                            </div>
                                         </div>
                                         <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
-<p>###Scalable Design approach</p>
-<h1 id="overview">Overview</h1>
-<p>.NetBlocks is an opinionated design pattern and complementary architecture</p>
-<p>The objective of the .NetBlocks design is to create building blocks that form a pattern or recipe that is easy for any engineer to follow. This allows the engineer to focus on implementing the business logic to solve business problems in an architecture that &quot;just works&quot;.
-&quot;</p>
-<h1 id="references">References</h1>
-<p>The design patterns in .NetBlocks rely heavily on existing an up and coming cloud and asynchronous processing technologies.</p>
-<h2 id="business-logic">Business Logic</h2>
+<h1 id="design-overview">Design Overview</h1>
 <p>Engineers in large organizations and enterprises are focused on delivering value by solving the business problem, not playing with technology. The design patterns, practices and technologies they use should solve the technical problems without requiring deep thought so the focus is on the business problem.</p>
-<p><a href="/operations.html">## Operations</a></p>
-<p><a href="references.html">## References</a></p>
+<p>To help engineers focus on the business problem, the architecture introduces:</p>
+<ol>
+<li>Business Logic Classes</li>
+<li>IBusiness Logic Interface</li>
+<li>Operations and Events</li>
+<li>Business Entitites</li>
+</ol>
+<h3 id="ibusinesslogic-interface">IBusinessLogic Interface</h3>
+<p>This is a common inteface shared by business logic classes allowing architecture expension areound the promises made by the business logic interface, its inheritors and implementors.</p>
+<h3 id="business-logic-classes">Business Logic Classes</h3>
+<p>These classes implement the solution to the business problem and can be hosted anywhere in the enterprise. They encapsulate the logic, similar to the &quot;actor&quot; pattern used by <a href="https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview">.NetAspire</a>. A business logic controller or implementor is similar to a grain used in the asire model.
+Because the class hides behind a IBusinessLogic Interface, it can be moved around in the organizations, abstracted from transport (e.g. web services, Event handlers, grpc, direct instantiation), hosted anywhere in the enterprise (containers, functions, on-permise, direct instance, in the cloud etc) and not allow the logic to bleed into the host or take on host dependencies.
+Its isolation also improves unit testing abilities.</p>
+<p>All business code is contained in business logic classes that implement an IBusiness Logic interface with methods that accept a business logic operation or event as parameters. This encapsulation of the logic forces the logic to remain in the class and not bleed out into the hosting or transport classes e.g. api host, handler host or function host. The design means that business logic becomes host and transport agnostic, but remains isolated because of the &quot;programming by strong contract design&quot;.</p>
+<p>Business logic classes take events and operations as their parameters, similar to a command pattern but without the dependency to the implementation. Operations and events can also be transported via message and event platforms or web transports. The operations take advantage of serializers to reduce the coupling, especially when using JSON and other forgiving serializers.</p>
+<h3 id="operations"><a href="/Design/operations.html">Operations</a></h3>
+<p>Operations often contain business entities, so the models is passed around the enterprise reducing the amount of object mapping required by the architecture.
+Operations and events are the implementations of a command parameter pattern, isolating the events and commands from the business logic and transport. Operations are self-validating increasing the probability of success prior to presentation for processing.</p>
+<h3 id="business-entities"><a href="/design/Business.Entities.html">Business Entities</a></h3>
+<p>Business entities represent the domain model base building blocks. A business entity approach forces engineers to model the business using a domain model approach and allows the framework to expand generically, but extends the functionality gated to business entities or business entity based intefaces.</p>
+<h2 id="more-content">More Content</h2>
+<div></div>
 
 
                                         </div>
@@ -153,10 +169,9 @@ The Design
         <div class=" mb-3 sidebar-root">
             <div class="sidebar-nav-item sidebar-header">On This Page</div>
             <div class="sidebar-nav-children">
-                    <div class="sidebar-nav-item"><a href="#overview">Overview</a></div>
-                    <div class="sidebar-nav-item"><a href="#references">References</a></div>
+                    <div class="sidebar-nav-item"><a href="#design-overview">Design Overview</a></div>
                         <div class="sidebar-nav-children">
-                                <div class="sidebar-nav-item"><a href="#business-logic">Business Logic</a></div>
+                                <div class="sidebar-nav-item"><a href="#more-content">More Content</a></div>
                         </div>
             </div>
         </div>
