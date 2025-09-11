@@ -22,6 +22,8 @@ That documentation explains the base models, id and globalID keying strategies a
 
 # Abstract base and Generic derived class problem
 This article explains the design pattern for derived classes.
+
+TODO: Locate this moved article or a replacement.
 https://www.devgem.io/posts/resolving-generic-type-conversion-issues-in-c-inheritance
 
 
