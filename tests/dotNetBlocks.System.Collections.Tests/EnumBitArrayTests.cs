@@ -3,16 +3,18 @@ using System.Collections;
 
 namespace dotNetBlocks.System.Collections.Tests
 {
+
+    public enum TestEnum
+    {
+        None = 0,
+        Bit1 = 1,
+        Bit2 = 2,
+        Bit3 = 4,
+    }
+
     [TestClass] [TestCategory("System.Collections.EnumBitArray")]
     public sealed class EnumBitArrayTests
     {
-        private enum TestEnum
-        {
-            None = 0,
-            Bit1 = 1,
-            bit2 = 2,
-            Bit3 = 4,
-        }
 
         [TestMethod]
         public void bit_array_none_only_has_no_flags_set()
@@ -59,14 +61,23 @@ namespace dotNetBlocks.System.Collections.Tests
         }
 
         [TestMethod]
-        public void _enum_to_and_from_bit_array()
+        public void convert_from_enum_sets_flag()
         {
             EnumBitArray<TestEnum> enumArray;
 
-            enumArray = TestEnum.None;
-            TestEnum testEnum = enumArray;
+            enumArray = TestEnum.None; // zero'th bit
+            enumArray.HasAnySet().ShouldBeTrue();
+            enumArray[TestEnum.None].ShouldBeTrue();
+            enumArray.ShouldBe(TestEnum.None);
 
-            testEnum.ShouldBe(TestEnum.None);
+
+            enumArray = TestEnum.Bit1;
+            enumArray.HasAnySet().ShouldBeTrue();
+            enumArray[TestEnum.Bit1].ShouldBeTrue();
+            enumArray[TestEnum.Bit2].ShouldBeFalse();
+            enumArray = TestEnum.Bit2;
+            enumArray[TestEnum.Bit2].ShouldBeTrue();
+            enumArray[TestEnum.Bit1].ShouldBeFalse();
         }
 
 

@@ -1,4 +1,7 @@
 ﻿
+using System.Dynamic;
+using System.Runtime.CompilerServices;
+
 namespace System.Collections
 {
     /// <summary>
@@ -7,6 +10,7 @@ namespace System.Collections
     /// <typeparam name="TEnum">The type of the enum.</typeparam>
     /// <remarks> Allowsmore flags per <typeparamref name="TEnum"/> than using c# [Flags] attribute.
     /// Removes the complexity of flags because each bit is a single enum flags. and bit management is eliminated.
+    /// Implementation considers zero as an independant flag, not equivalent to no flags set. TODO: - should it?
     /// </remarks>
     public class EnumBitArray<TEnum>
         where TEnum : struct, Enum
@@ -119,6 +123,8 @@ namespace System.Collections
         /// </returns>
         public static implicit operator EnumBitArray<TEnum>(TEnum enumValue) => new EnumBitArray<TEnum>(enumValue);
 
+        // Don't impliment convertion to TEnum because you don't know which flag you want represented.
+
         /// <summary>
         /// Performs an implicit conversion from <see cref="EnumBitArray{TEnum}"/> to <see cref="BitArray"/>.
         /// </summary>
@@ -126,7 +132,7 @@ namespace System.Collections
         /// <returns>
         /// Returns the internal <see cref="BitArray"/> representing the flags of the flags.
         /// </returns>
-        public static implicit operator BitArray(EnumBitArray<TEnum> value) => value.Flags;
+        public static explicit operator BitArray(EnumBitArray<TEnum> value) => value.Flags;
 
 
 
@@ -137,8 +143,9 @@ namespace System.Collections
         /// <returns>
         /// Creates a new <see cref="EnumBitArray{TEnum}"/> containing the source <see cref="BitArray"/>
         /// </returns>
-        public static implicit operator EnumBitArray<TEnum>(BitArray flags) => new EnumBitArray<TEnum>(flags);
+        public static explicit operator EnumBitArray<TEnum>(BitArray flags) => new EnumBitArray<TEnum>(flags);
 
+        
         #endregion Operators
 
         /// <summary>
