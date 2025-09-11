@@ -1,4 +1,4 @@
-﻿<!---
+<!---
 Title: Libraries
 NavigationTitle: Libraries
 ShowInNavigation: True
