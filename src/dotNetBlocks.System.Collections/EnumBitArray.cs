@@ -6,13 +6,13 @@ namespace System.Collections
     /// </summary>
     /// <typeparam name="TEnum">The type of the enum.</typeparam>
     /// <remarks> Allowsmore flags per <typeparamref name="TEnum"/> than using c# [Flags] attribute.
-    /// Removes the complexity of flags because each bit is a single enum value. and bit management is eliminated.
+    /// Removes the complexity of flags because each bit is a single enum flags. and bit management is eliminated.
     /// </remarks>
     public class EnumBitArray<TEnum>
         where TEnum : struct, Enum
     {
         /// <summary>
-        /// Maximum integer value defined in <see cref="TEnum"/>
+        /// Maximum integer flags defined in <see cref="TEnum"/>
         /// </summary>
         /// <remarks> This is also the maximum number of bits required and the size of the internal <see cref=" BitArray"/></remarks>
         static readonly int _maxValue = Enum.GetValues<TEnum>().Max(v => ToFlagIndex(v)+1); // Zero based and index >= count.
@@ -21,9 +21,9 @@ namespace System.Collections
         /// <summary>
         /// Accesses the <see cref="BitArray"/> flags backing the enum Flags ]
         /// </summary>
-        /// <value>
+        /// <flags>
         ///  <see cref="BitArray"/> of <see cref="TEnum"/>> mapped onto flags."/>
-        /// </value>
+        /// </flags>
         public BitArray Flags
         {
             get => _flags;
@@ -33,10 +33,18 @@ namespace System.Collections
 
         #region Constructors
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="EnumBitArray{TEnum}"/> class.
+        /// </summary>
+        /// <remarks> Default constructor creates <see cref="EnumBitArray{TEnum}"/> sized for enum but with no bits set. </remarks>
         public EnumBitArray()
         { // Flags are set up using default values and property accessors.
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="EnumBitArray{TEnum}"/> containing the <see cref=" BitArray"/>values passed in.
+        /// </summary>
+        /// <param name="flags">The flags.</param>
         public EnumBitArray(BitArray flags)
         {
             Flags = new BitArray(flags); // deep copy.
@@ -58,7 +66,7 @@ namespace System.Collections
         /// <summary>
         /// Converts EnumValue  to index.
         /// </summary>
-        /// <param name="enumValue">The enum value.</param>
+        /// <param name="enumValue">The enum flags.</param>
         /// <returns></returns>
         protected static int ToFlagIndex(TEnum enumValue) => Convert.ToInt32(enumValue);
 
@@ -67,9 +75,13 @@ namespace System.Collections
 
         #region Operators
 
+
+        // Equality operators
+
         public static bool operator ==(EnumBitArray<TEnum> bits, TEnum flag) => bits.Equals(flag);
         public static bool operator !=(EnumBitArray<TEnum> bits, TEnum flag) => !bits.Equals(flag);
 
+        // Logicical operators.
         public static EnumBitArray<TEnum>  operator |(EnumBitArray<TEnum> left, EnumBitArray<TEnum> right)
         {
             left.Flags.Or(right.Flags);
@@ -89,7 +101,6 @@ namespace System.Collections
             return result;
         }
 
-        public static implicit operator EnumBitArray<TEnum>(TEnum enumValue) => new EnumBitArray<TEnum>(enumValue);
 
         public static EnumBitArray<TEnum> operator !(EnumBitArray<TEnum> left) => ~left;
 
@@ -97,26 +108,54 @@ namespace System.Collections
 
         public static bool operator !=(EnumBitArray<TEnum> left, EnumBitArray<TEnum> right) => !left.Flags.Equals(right.Flags);
 
+        // Type conversions
+
+        /// <summary>
+        /// Performs an implicit conversion from <see cref="TEnum"/> to <see cref="EnumBitArray{TEnum}"/>.
+        /// </summary>
+        /// <param name="enumValue">The enum flags.</param>
+        /// <returns>
+        /// <see cref="EnumBitArray{TEnum}"/> with the flag for <paramref name="enumValue"/> set."/>
+        /// </returns>
+        public static implicit operator EnumBitArray<TEnum>(TEnum enumValue) => new EnumBitArray<TEnum>(enumValue);
+
+        /// <summary>
+        /// Performs an implicit conversion from <see cref="EnumBitArray{TEnum}"/> to <see cref="BitArray"/>.
+        /// </summary>
+        /// <param name="value">The flags.</param>
+        /// <returns>
+        /// Returns the internal <see cref="BitArray"/> representing the flags of the flags.
+        /// </returns>
         public static implicit operator BitArray(EnumBitArray<TEnum> value) => value.Flags;
-        public static implicit operator EnumBitArray<TEnum>(BitArray value) => new EnumBitArray<TEnum>(value);
+
+
+
+        /// <summary>
+        /// Performs an implicit conversion from <see cref="BitArray"/> to <see cref="EnumBitArray{TEnum}"/>.
+        /// </summary>
+        /// <param name="flags">The flags.</param>
+        /// <returns>
+        /// Creates a new <see cref="EnumBitArray{TEnum}"/> containing the source <see cref="BitArray"/>
+        /// </returns>
+        public static implicit operator EnumBitArray<TEnum>(BitArray flags) => new EnumBitArray<TEnum>(flags);
 
         #endregion Operators
 
         /// <summary>
         /// Gets the count of flags supported by the Enum.
         /// </summary>
-        /// <value>
+        /// <flags>
         /// The count.
-        /// </value>
+        /// </flags>
         public int Count => Flags.Count;
         public int Length { get => Flags.Length; set => Flags.Length = value; }
 
         /// <summary>
-        /// Gets or sets the <see cref="System.Boolean"/> with the specified bit flag. for a given enum value.
+        /// Gets or sets the <see cref="System.Boolean"/> with the specified bit flag. for a given enum flags.
         /// </summary>
-        /// <value>
+        /// <flags>
         /// The <see cref="System.Boolean"/>.
-        /// </value>
+        /// </flags>
         /// <param name="flag">The flag.</param>
         /// <returns></returns>
         public bool this[TEnum flag] { get => Flags[ToFlagIndex(flag)]; set => Flags[ToFlagIndex(flag)] = value; }
@@ -124,7 +163,7 @@ namespace System.Collections
         /// <summary>
         /// Ors current flags with the flag at position <paramref name="value"/>.
         /// </summary>
-        /// <param name="value">The value.</param>
+        /// <param name="value">The flags.</param>
         public void Or(TEnum value) 
         { 
             Or (new EnumBitArray<TEnum>(value));
@@ -134,7 +173,7 @@ namespace System.Collections
         /// <summary>
         /// Ors the current flags with the flags in <paramref name="value"/>.
         /// </summary>
-        /// <param name="value">The value.</param>
+        /// <param name="value">The flags.</param>
         /// <remarks seealso="bitArray.Or(BitArray)"/>
         public void Or(EnumBitArray<TEnum> value)
         {
@@ -144,7 +183,7 @@ namespace System.Collections
         /// <summary>
         /// Ands the bits with the current bit values.
         /// </summary>
-        /// <param name="value">The value.</param>
+        /// <param name="value">The flags.</param>
         /// <seealso cref="BitArray.And(BitArray)"/>
         public void And(EnumBitArray<TEnum> value)
         {
@@ -152,9 +191,9 @@ namespace System.Collections
         }
 
         /// <summary>
-        /// Ands the flag value at position <paramref name="value"/>. with the current flags.
+        /// Ands the flag flags at position <paramref name="value"/>. with the current flags.
         /// </summary>
-        /// <param name="value">The value.</param>
+        /// <param name="value">The flags.</param>
         public void And(TEnum value)
         {
             And(new EnumBitArray<TEnum>(value));
@@ -210,20 +249,20 @@ namespace System.Collections
         }
 
         /// <summary>
-        /// Gets a value indicating whether this instance has any flags set.
+        /// Gets a flags indicating whether this instance has any flags set.
         /// </summary>
-        /// <value>
+        /// <flags>
         ///   <c>true</c> if this instance hasflags  any set; otherwise, <c>false</c>.
         ///   <seealso cref="BitArray.HasAnySet"/>
-        /// </value>
+        /// </flags>
         public bool HasAnySet() => Flags.HasAnySet();
 
         /// <summary>
         /// Are all the bit flags set?
         /// </summary>
-        /// <value>
+        /// <flags>
         ///   <c>true</c> All the flags are set.<c>false</c>.
-        /// </value>
+        /// </flags>
         public bool HasAllSet() => Flags.HasAllSet();
 
         /// <summary>
@@ -266,7 +305,7 @@ namespace System.Collections
         {
             if (obj == null) return base.Equals(obj);
 
-            // If this is an enum, try get the value and check the flag.
+            // If this is an enum, try get the flags and check the flag.
             if (obj.GetType() == typeof(TEnum))
             {
                 TEnum enumValue = (TEnum)obj;

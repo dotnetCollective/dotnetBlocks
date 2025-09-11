@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace dotNetBlocks.System.Collections.Tests
 {
-    [TestClass]
+    [TestClass] [TestCategory("System.Collections.EnumBitArray")]
     public sealed class EnumBitArrayTests
     {
         private enum TestEnum
@@ -56,6 +56,17 @@ namespace dotNetBlocks.System.Collections.Tests
             enumArray[TestEnum.Bit1].ShouldBeTrue();
             // Only bit 1 is set.
             enumArray.HasOtherFlags(TestEnum.Bit1).ShouldBeFalse();
+        }
+
+        [TestMethod]
+        public void _enum_to_and_from_bit_array()
+        {
+            EnumBitArray<TestEnum> enumArray;
+
+            enumArray = TestEnum.None;
+            TestEnum testEnum = enumArray;
+
+            testEnum.ShouldBe(TestEnum.None);
         }
 
 
