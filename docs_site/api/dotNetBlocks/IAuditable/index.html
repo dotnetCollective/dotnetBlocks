@@ -160,8 +160,8 @@
     		    <dt>Implementing Types</dt>
     		    <dd>
     			    <ul class="list-unstyled">
-    					    <li><a href="/api/dotnetblocks.business.shared/auditproperties">AuditProperties</a></li>
     					    <li><a href="/api/dotnetblocks.business.shared/auditableglobalkeyedentity_1">Auditable<wbr>Global<wbr>Keyed<wbr>Entity</a><wbr>&lt;<a href="/api/dotnetblocks.business.shared/auditableglobalkeyedentity_1#typeparam-TId">TId</a>&gt;<wbr></li>
+    					    <li><a href="/api/dotnetblocks.business.shared/auditproperties">AuditProperties</a></li>
     			    </ul>
     		    </dd>
 
@@ -175,10 +175,10 @@
 	graph BT
 	Type["IAuditable"]
 class Type type-node
-	Implementing0["AuditProperties"]-.->Type
-	click Implementing0 "/api/dotnetblocks.business.shared/auditproperties"
-	Implementing1["AuditableGlobalKeyedEntity&lt;TId&gt;"]-.->Type
-	click Implementing1 "/api/dotnetblocks.business.shared/auditableglobalkeyedentity_1"
+	Implementing0["AuditableGlobalKeyedEntity&lt;TId&gt;"]-.->Type
+	click Implementing0 "/api/dotnetblocks.business.shared/auditableglobalkeyedentity_1"
+	Implementing1["AuditProperties"]-.->Type
+	click Implementing1 "/api/dotnetblocks.business.shared/auditproperties"
 
 </div>
 			    </div>
