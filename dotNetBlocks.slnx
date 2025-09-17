@@ -8,10 +8,12 @@
     <Project Path="src/dotNetBlocks.System.IO/tests/dotNetBlocks.System.IO.Tests.csproj" />
     <Project Path="src/dotNetBlocks.System.Threading/tests/dotNetBlocks.System.Threading.Tests.csproj" />
     <Project Path="tests/dotNetBlocks.System.Collections.Tests/dotNetBlocks.System.Collections.Tests.csproj" />
+    <Project Path="tests/dotNetBlocks.System.Tests/dotNetBlocks.System.Tests.csproj" Id="4010f1a3-4599-4186-8da2-26c77136d1bf" />
   </Folder>
   <Project Path="src/dotNetBlocks.Business.Shared/src/dotNetBlocks.Business.Shared.csproj" Id="5038afeb-3d93-c0ad-7899-c6c0a3a5b038" />
   <Project Path="src/DotNetBlocks.Business/DotNetBlocks.Business.csproj" />
   <Project Path="src/dotNetBlocks.System.Collections/dotNetBlocks.System.Collections.csproj" />
   <Project Path="src/dotNetBlocks.System.IO/dotNetBlocks.System.IO.csproj" />
   <Project Path="src/dotNetBlocks.System.Threading/src/dotNetBlocks.System.Threading.csproj" Id="7d8e59f4-3ee5-170f-81be-392e27934d18" />
+  <Project Path="src/dotNetBlocks.System/dotNetBlocks.System.csproj" Id="b87ccb4c-8ff5-431f-b7fa-9d918d0d26ae" />
 </Solution>
