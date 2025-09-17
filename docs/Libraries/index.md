@@ -9,9 +9,11 @@ Excerpt: Starting point to using DotNetBlocks.
 
 # Solution Libraries
 
-- [dotNetBlocks.System.IO](/Libraries/system.io.html) - easily stream large content with minimum resources.
+- [dotNetBlocks.System](/Libraries/system.html) - Extends functionality in the System namespace.
+- - [dotNetBlocks.System.IO](/Libraries/system.io.html) - easily stream large content with minimum resources.
 - [dotNetBlocks.System.Threading](/Libraries/system.threading.html) - solves cancellation token problems
 - [DotNetBlocks.Extensions](/Libraries/extensions.html) - adds Lazy<TService> functionality to Microsoft DI system.
+- [DotNetBlocks.System.Collectionns](/Libraries/system.collections.html) - Generic enumeration extensions to deal with null values in collections or to ensure a collection has at least one item.
 
 ## Enterprise Libraries
 - [DotNetBlocks.ServiceBus](/Libraries/servicebus.html) - Implements Service Bus functionality combining Mass Transit with an operation model to provide a rapid implementation event architecture.
