@@ -27,7 +27,7 @@ Commonly Used Types:
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\dotNetBlocks.System\dotNetBlocks.System.csproj" />
+    <ProjectReference Include="..\dotNetBlocks.System\dotNetBlocks.System.csproj" />
   </ItemGroup>
 
 </Project>

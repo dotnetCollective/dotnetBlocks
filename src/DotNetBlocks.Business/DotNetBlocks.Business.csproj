@@ -24,7 +24,7 @@ Commonly Used Types:
 	</PropertyGroup>
 	
 	<ItemGroup>
-	  <ProjectReference Include="..\dotNetBlocks.Business.Shared\src\dotNetBlocks.Business.Shared.csproj" />
+	  <ProjectReference Include="..\dotNetBlocks.ServiceBus.Shared\dotNetBlocks.ServiceBus.Shared.csproj" />
 	</ItemGroup>
 	
 

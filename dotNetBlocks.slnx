@@ -9,16 +9,21 @@
     <File Path="global.json" />
   </Folder>
   <Folder Name="/Tests/">
-    <Project Path="src/dotNetBlocks.Business.Shared/tests/dotNetBlocks.Business.Shared.Tests.csproj" />
-    <Project Path="src/dotNetBlocks.System.IO/tests/dotNetBlocks.System.IO.Tests.csproj" />
-    <Project Path="src/dotNetBlocks.System.Threading/tests/dotNetBlocks.System.Threading.Tests.csproj" />
+    <Project Path="tests/dotNetBlocks.Business.Shared.Tests/dotNetBlocks.Business.Shared.Tests.csproj" />
+    <Project Path="tests/dotNetBlocks.Extensions.Tests/dotNetBlocks.Extensions.Tests.csproj" />
+    <Project Path="tests/dotNetBlocks.ServiceBus.Tests/dotNetBlocks.ServiceBus.Tests.csproj" />
     <Project Path="tests/dotNetBlocks.System.Collections.Tests/dotNetBlocks.System.Collections.Tests.csproj" />
+    <Project Path="tests/dotNetBlocks.System.IO.Tests/dotNetBlocks.System.IO.Tests.csproj" />
     <Project Path="tests/dotNetBlocks.System.Tests/dotNetBlocks.System.Tests.csproj" Id="4010f1a3-4599-4186-8da2-26c77136d1bf" />
+    <Project Path="tests/dotNetBlocks.System.Threading.Tests/dotNetBlocks.System.Threading.Tests.csproj" />
   </Folder>
-  <Project Path="src/dotNetBlocks.Business.Shared/src/dotNetBlocks.Business.Shared.csproj" Id="5038afeb-3d93-c0ad-7899-c6c0a3a5b038" />
+  <Project Path="src/dotNetBlocks.Business.Shared/dotNetBlocks.Business.Shared.csproj" />
   <Project Path="src/DotNetBlocks.Business/DotNetBlocks.Business.csproj" />
+  <Project Path="src/dotNetBlocks.Extensions/dotNetBlocks.Extensions.csproj" />
+  <Project Path="src/dotNetBlocks.ServiceBus.Shared/dotNetBlocks.ServiceBus.Shared.csproj" />
+  <Project Path="src/dotNetBlocks.ServiceBus/dotNetBlocks.ServiceBus.csproj" />
   <Project Path="src/dotNetBlocks.System.Collections/dotNetBlocks.System.Collections.csproj" />
   <Project Path="src/dotNetBlocks.System.IO/dotNetBlocks.System.IO.csproj" />
-  <Project Path="src/dotNetBlocks.System.Threading/src/dotNetBlocks.System.Threading.csproj" Id="7d8e59f4-3ee5-170f-81be-392e27934d18" />
+  <Project Path="src/dotNetBlocks.System.Threading/dotNetBlocks.System.Threading.csproj" />
   <Project Path="src/dotNetBlocks.System/dotNetBlocks.System.csproj" Id="b87ccb4c-8ff5-431f-b7fa-9d918d0d26ae" />
 </Solution>

@@ -1,7 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
-using FluentAssertions;
 using System.Security.Cryptography.X509Certificates;
-using FluentAssertions.Common;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.CodeCoverage.Core.Reports.Coverage;
 using System.Runtime.CompilerServices;
@@ -31,11 +29,11 @@ namespace dotNetBlocks.Extensions.Tests.DependencyInjection
             {
                 provider.GetService<ServiceA>();
                 var serviceB = provider.GetService<ServiceB>();
-                serviceB.Should().NotBeNull();
+                serviceB.ShouldNotBeNull();
 
 
-                serviceB!.TrueMethod().Should().BeTrue();
-                serviceB.TrueProperty.Should().BeTrue();
+                serviceB!.TrueMethod().ShouldBeTrue();
+                serviceB.TrueProperty.ShouldBeTrue();
             }
 
         }
@@ -52,13 +50,13 @@ namespace dotNetBlocks.Extensions.Tests.DependencyInjection
             using (var provider = services.BuildServiceProvider())
             {
                 Action act = () => provider.GetRequiredService<ServiceA>();
-                act.Should().NotThrow();
+                Should.NotThrow(act);
 
                 act = () => provider.GetRequiredService<Lazy<ServiceA>>();
-                act.Should().Throw< InvalidOperationException>();
+                Should.Throw< InvalidOperationException>(act);
 
                 act = () => provider.GetRequiredService<ServiceB>();
-                act.Should().Throw<InvalidOperationException>();
+                Should.Throw<InvalidOperationException>(act);
 
 
             }
@@ -79,11 +77,11 @@ namespace dotNetBlocks.Extensions.Tests.DependencyInjection
             {
                 provider.GetService<ServiceA>();
                 var serviceB = provider.GetService<ServiceB>();
-                serviceB.Should().NotBeNull();
+                serviceB.ShouldNotBeNull();
 
 
-                serviceB!.TrueMethod().Should().BeTrue();
-                serviceB.TrueProperty.Should().BeTrue();
+                serviceB!.TrueMethod().ShouldBeTrue();
+                serviceB.TrueProperty.ShouldBeTrue();
             }
 
         }
@@ -103,11 +101,11 @@ namespace dotNetBlocks.Extensions.Tests.DependencyInjection
             {
                 provider.GetService<ServiceA>();
                 var serviceB = provider.GetService<ServiceB>();
-                serviceB.Should().NotBeNull();
+                serviceB.ShouldNotBeNull();
 
 
-                serviceB!.TrueMethod().Should().BeTrue();
-                serviceB.TrueProperty.Should().BeTrue();
+                serviceB!.TrueMethod().ShouldBeTrue();
+                serviceB.TrueProperty.ShouldBeTrue();
             }
 
         }
@@ -125,16 +123,16 @@ namespace dotNetBlocks.Extensions.Tests.DependencyInjection
 
                 // Get the lazy and make sure its functional
                 var lazyInstance = provider.GetRequiredService<Lazy<ServiceA>>();
-                lazyInstance.Should().NotBeNull();
+                lazyInstance.ShouldNotBeNull();
 
                 lazyInstance = provider.GetService<Lazy<ServiceA>>();
-                lazyInstance.Should().NotBeNull();
-                lazyInstance!.Value.Should().NotBeNull();
+                lazyInstance.ShouldNotBeNull();
+                lazyInstance!.Value.ShouldNotBeNull();
 
                 // Ensure the lazy is transient
-                provider.GetService<Lazy<ServiceA>>().Should().NotBe(lazyInstance);
+                provider.GetService<Lazy<ServiceA>>().ShouldNotBe(lazyInstance);
                 // The service must be transient
-                provider.GetService<Lazy<ServiceA>>()!.Value.Should().NotBe(lazyInstance.Value);
+                provider.GetService<Lazy<ServiceA>>()!.Value.ShouldNotBe(lazyInstance.Value);
 
             }
         }
