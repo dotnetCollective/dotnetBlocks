@@ -1,5 +1,4 @@
-﻿using RT.Comb;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,7 +29,7 @@ namespace dotNetBlocks.Business.Shared
         /// </value>
         public virtual Guid GlobalID { get; set; }
 
-        public virtual Guid NewGlobalId() => RT.Comb.Provider.Legacy.Create(); // Default implementation in Guid is the Comb Guid which creates sequential unique guids.
+        public virtual Guid NewGlobalId() => GuidExtensions.GenerateId()  ; // Default implementation in Guid is the Comb Guid which creates sequential unique guids.
 
 
     }

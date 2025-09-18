@@ -27,9 +27,5 @@ Commonly Used Types:
 	  <ProjectReference Include="..\dotNetBlocks.Business.Shared\src\dotNetBlocks.Business.Shared.csproj" />
 	</ItemGroup>
 	
-	<ItemGroup>
-	  <PackageReference Update="FluentAssertions" Version="8.6.0" />
-	</ItemGroup>
-		
 
 </Project>

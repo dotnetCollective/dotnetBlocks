@@ -1,5 +1,4 @@
 ﻿using dotNetBlocks.Business.Shared;
-using FluentAssertions;
 
 namespace dotNetBlocks.Business.Shared.Tests
 {
@@ -19,11 +18,11 @@ namespace dotNetBlocks.Business.Shared.Tests
             AuditProperties testAuditProperties = new AuditProperties().populateAuditProperties();
 
             // Validate the properties match.
-            testAuditProperties.CreatedAt.Should().Be(_auditProperties.CreatedAt);
-            testAuditProperties.CreatedBy.Should().Be(_auditProperties.CreatedBy);
+            testAuditProperties.CreatedAt.ShouldBe(_auditProperties.CreatedAt);
+            testAuditProperties.CreatedBy.ShouldBe(_auditProperties.CreatedBy);
 
-            testAuditProperties.UpdatedAt.Should().Be(_auditProperties.UpdatedAt);
-            testAuditProperties.UpdatedBy.Should().Be(_auditProperties.UpdatedBy);
+            testAuditProperties.UpdatedAt.ShouldBe(_auditProperties.UpdatedAt);
+            testAuditProperties.UpdatedBy.ShouldBe(_auditProperties.UpdatedBy);
         }
     };
 }

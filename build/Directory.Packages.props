@@ -1,0 +1,15 @@
+<Project>
+  <PropertyGroup>
+    <!-- Enable central package management, https://learn.microsoft.com/en-us/nuget/consume-packages/Central-Package-Management -->
+    <ManagePackageVersionsCentrally>true </ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="RT.Comb" Version="4.0.3" />
+    <PackageVersion Include="Shouldly" Version="4.3.0" />    
+
+    <PackageVersion Include="System.IO.Hashing" Version="9.0.9" />
+    <PackageVersion Include="System.IO.Pipelines" Version="9.0.9" />
+    <PackageVersion Include="System.IO.Pipes" Version="4.3.0" />
+
+  </ItemGroup>
+</Project>

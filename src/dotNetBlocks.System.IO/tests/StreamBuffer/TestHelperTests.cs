@@ -35,7 +35,7 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
                 crc.Append(usedSlice);
                 testStream.Position = testPosition;
 
-                testStream.CRC.GetCurrentHash().Should().BeEquivalentTo(crc.GetCurrentHash());
+                testStream.CRC.GetCurrentHash().ShouldBeEquivalentTo(crc.GetCurrentHash());
 
             }
         }
@@ -54,7 +54,7 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
                     source.CopyBytes(target, sliceSize);
                     source.Position = 0;
                     target.Position = 0;
-                    source.ToArray().Take(sliceSize).ToArray().Should().BeEquivalentTo(target.ToArray());
+                    source.ToArray().Take(sliceSize).ToArray().ShouldBeEquivalentTo(target.ToArray());
                 }
 
                 var halfslizesize = sliceSize / 2;
@@ -63,7 +63,7 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
                     source.CopyBytes(target, halfslizesize);
                     source.Position = 0;
                     target.Position = 0;
-                    source.ToArray().Take(halfslizesize).ToArray().Should().BeEquivalentTo(target.ToArray());
+                    source.ToArray().Take(halfslizesize).ToArray().ShouldBeEquivalentTo(target.ToArray());
                 }
 
             }
@@ -83,7 +83,7 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
                     await source.CopyBytesAsync(target, sliceSize);
                     source.Position = 0;
                     target.Position = 0;
-                    source.ToArray().Take(sliceSize).ToArray().Should().BeEquivalentTo(target.ToArray());
+                    source.ToArray().Take(sliceSize).ToArray().ShouldBeEquivalentTo(target.ToArray());
                 }
 
                 var halfslizesize = sliceSize / 2;
@@ -92,7 +92,7 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
                     await source.CopyBytesAsync(target, halfslizesize);
                     source.Position = 0;
                     target.Position = 0;
-                    source.ToArray().Take(halfslizesize).ToArray().Should().BeEquivalentTo(target.ToArray());
+                    source.ToArray().Take(halfslizesize).ToArray().ShouldBeEquivalentTo(target.ToArray());
                 }
 
             }
@@ -111,7 +111,7 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
                 testcrc.Reset();
                 source.Position = 0;
                     await source.ReadAndCalculateCRCAsync(testcrc, sliceSize);
-                testcrc.GetCurrentHash().ToArray().Should().BeEquivalentTo(source.CRC.GetCurrentHash());
+                testcrc.GetCurrentHash().ToArray().ShouldBeEquivalentTo(source.CRC.GetCurrentHash());
             }
         }
         [TestMethod()]
@@ -129,7 +129,7 @@ namespace dotNetBlocks.System.IO.Tests.StreamBuffer
                 testcrc.Reset();
                 source.Position = 0;
                 await source.ReadAndCalculateCRCAsync(testcrc, bufferSize);
-                testcrc.GetCurrentHash().ToArray().Should().BeEquivalentTo(source.CRC.GetCurrentHash());
+                testcrc.GetCurrentHash().ToArray().ShouldBeEquivalentTo(source.CRC.GetCurrentHash());
             }
         }
     }

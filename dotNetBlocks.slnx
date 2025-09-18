@@ -1,7 +1,12 @@
 <Solution>
   <Folder Name="/build/" Id="02ea681e-c7d8-13c7-8484-4ac65e1b71e8">
+    <File Path="build/Directory.Packages.props" />
     <File Path="build/global.Build.props" />
+    <File Path="build/test.build.props" />
     <File Path="Directory.Build.props" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="global.json" />
   </Folder>
   <Folder Name="/Tests/">
     <Project Path="src/dotNetBlocks.Business.Shared/tests/dotNetBlocks.Business.Shared.Tests.csproj" />

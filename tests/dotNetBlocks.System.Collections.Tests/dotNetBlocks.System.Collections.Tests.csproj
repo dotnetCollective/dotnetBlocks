@@ -1,4 +1,4 @@
-<Project Sdk="MSTest.Sdk/3.6.4">
+﻿<Project Sdk="MSTest.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -12,39 +12,10 @@
     <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Shouldly" Version="4.3.0" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\dotNetBlocks.System.Collections\dotNetBlocks.System.Collections.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="17.14.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="Microsoft.Testing.Extensions.CodeCoverage" Version="17.14.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="Microsoft.Testing.Extensions.TrxReport" Version="1.8.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="MSTest.Analyzers" Version="3.10.4">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="MSTest.TestAdapter" Version="3.10.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="MSTest.TestFramework" Version="3.10.4" />
-  </ItemGroup>
 
 </Project>

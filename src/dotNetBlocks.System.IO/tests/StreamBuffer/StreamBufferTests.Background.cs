@@ -1,12 +1,13 @@
 using dotNetBlocks.System.IO;
 using dotNetBlocks.System.IO.Tests.StreamBuffer;
-using FluentAssertions.Extensions;
 using Mono.Cecil.Cil;
 using System.Diagnostics;
 using System.IO.Hashing;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Sources;
+using Shouldly;
+using dotNetBlocks.System.IO.Tests;
 
 
 
@@ -22,6 +23,9 @@ namespace StreamBufferTests
         [TestCategory("Background"),TestMethod]
         public async Task Background_SyncWriter_TestAsync()
         {
+
+            await Task.CompletedTask;
+
             const int blockSize = 1024;
             const int testSize = blockSize*2;
             const int bufferSize = blockSize;
@@ -38,15 +42,16 @@ namespace StreamBufferTests
 
                 var write = async Task () => await buffer.backgroundWriteTask!;
 
-                await write.Should().NotCompleteWithinAsync(250.Milliseconds(), because:"Write blocks at size and does not complete until a read.");
+                write.ShouldNotCompleteIn(TimeSpan.FromMilliseconds(250), "Write blocks at size and does not complete until a read.");
 
                 // Read destination stream
                 var read = async Task() => await buffer.ReadStream.ReadAndCalculateCRCAsync(readHash, blockSize, default);
-                await read.Should().CompleteWithinAsync(250.Milliseconds(), because:" We read all the data..");
+                Should.CompleteIn(read, TimeSpan.FromMilliseconds(250), " We read all the data..");
 
                 // Compare checksum
                 CollectionAssert.AreEquivalent(sourceStream.CRC.GetCurrentHash(), readHash.GetCurrentHash());
             };
+
 
         }
 
@@ -61,6 +66,8 @@ namespace StreamBufferTests
             const int testSize = blockSize*2;
             StreamBuffer buffer = new(bufferSize);
 
+            await Task.CompletedTask;
+
             using (RandomStream sourceStream = new RandomStream(testSize))
             {
                 var readHash = new Crc32();
@@ -70,16 +77,16 @@ namespace StreamBufferTests
 
                 var  writeComplete = async Task() =>   await buffer.backgroundWriteTask!;
 
-                await writeComplete.Should().NotCompleteWithinAsync(250.Milliseconds(), because: "Full buffer blocks writer.");
+                writeComplete.ShouldNotCompleteIn(TimeSpan.FromMilliseconds(250), "Full buffer blocks writer.");
 
                 // Read destination stream
                 var read = async Task () =>  await buffer.ReadStream.ReadAndCalculateCRCAsync(readHash, blockSize, default);
 
-                await read.Should().CompleteWithinAsync(250.Milliseconds(), because:" Reading the buffer");
-                await writeComplete.Should().CompleteWithinAsync(250.Milliseconds(), because: "Buffer unlocked.");
+                Should.CompleteIn(read, TimeSpan.FromMilliseconds(250), " Reading the buffer");
+                Should.CompleteIn(writeComplete, TimeSpan.FromMilliseconds(250), "Buffer unlocked.");
 
                 // Compare checksum
-                readHash.GetCurrentHash().Should().BeEquivalentTo(sourceStream.CRC.GetCurrentHash(), because: "Read and write CRC match.");
+                readHash.GetCurrentHash().ShouldBeEquivalentTo(sourceStream.CRC.GetCurrentHash(), "Read and write CRC match.");
             }
         }
 
@@ -111,16 +118,16 @@ namespace StreamBufferTests
 
                 var writeTask = async Task() => await buffer.backgroundWriteTask!;
 
-                await writeTask.Should().NotCompleteWithinAsync(250.Milliseconds(), because:"Buffer is full and blocked until read.");
+                writeTask.ShouldNotCompleteIn(TimeSpan.FromMilliseconds( 250), "Buffer is full and blocked until read.");
 
 
                 await buffer.ReadStream.ReadAndCalculateCRCAsync(readHash, bufferSize, default);
 
                 // Now the write task shoudl be complete.
-                await writeTask.Should().CompleteWithinAsync(250.Milliseconds(), because: "Unblocked writer completes.");
+                Should.CompleteIn(writeTask, TimeSpan.FromMilliseconds(250), "Unblocked writer completes.");
 
                 // Compare checksum
-                readHash.GetCurrentHash().Should().BeEquivalentTo(sourceStream.CRC.GetCurrentHash());
+                readHash.GetCurrentHash().ShouldBeEquivalentTo(sourceStream.CRC.GetCurrentHash());
             }
         }
 
@@ -155,18 +162,18 @@ namespace StreamBufferTests
 
                 Func<Task> waitComplete = async () => await buffer.backgroundWriteTask!;
 
-                await waitComplete.Should().NotCompleteWithinAsync(250.Milliseconds(), because: "full buffer blocks writer");
+                waitComplete.ShouldNotCompleteIn(TimeSpan.FromMicroseconds(250), "full buffer blocks writer");
 
                 // Read destination stream and calculate the CRC.
                 // This releases the writer.
                 await buffer.ReadStream.ReadAndCalculateCRCAsync(readHash, testSize, default);
 
                 // Now the write should complete because of the read.
-                await waitComplete.Should().CompleteWithinAsync(250.Milliseconds());
-                buffer.backgroundWriteTask!.IsCompletedSuccessfully.Should().BeTrue();
+                Should.CompleteIn(waitComplete,TimeSpan.FromMilliseconds(250));
+                buffer.backgroundWriteTask!.IsCompletedSuccessfully.ShouldBeTrue();
 
                 // Compare checksum
-                sourceStream.CRC.GetCurrentHash().Should().BeEquivalentTo(readHash.GetCurrentHash(), because: "Write and read checksums must match.");
+                sourceStream.CRC.GetCurrentHash().ShouldBeEquivalentTo(readHash.GetCurrentHash(), "Write and read checksums must match.");
             }
         }
 
@@ -177,6 +184,7 @@ namespace StreamBufferTests
         [TestCategory("Background"), TestMethod]
         public async Task Background_async_Writer_background_async_Reader()
         {
+
             const int blockSize = 1024;
             const int testSize = blockSize * 4;
             const int bufferSize = blockSize;
@@ -192,7 +200,7 @@ namespace StreamBufferTests
 
                 var writeWait = async () => await buffer.StartBackgroundWrite(async (s, c) => await sourceStream.CopyToAsync(s, blockSize, c), default);
 
-                await writeWait.Should().NotCompleteWithinAsync(250.Milliseconds(), because: "full buffer blocks write.");
+                writeWait.ShouldNotCompleteIn(TimeSpan.FromMilliseconds(250), "full buffer blocks write.");
 
                 // Read destination stream
                 // This releases the writer.
@@ -201,14 +209,17 @@ namespace StreamBufferTests
 
                 var readWait = async () => await buffer.backgroundReadTask!;
 
-                await readWait.Should().CompleteWithinAsync(250.Milliseconds(), because: "Buffer ready to read.");
+                Should.CompleteIn(readWait, TimeSpan.FromMilliseconds(250), "Buffer ready to read.");
 
 
                 // Reset the source stream to calculate the correct CRC.
                 sourceStream.Position = blockSize;
                 // Compare checksum
-                readHash.GetCurrentHash().Should().BeEquivalentTo(sourceStream.CRC.GetCurrentHash());
+                readHash.GetCurrentHash().ShouldBeEquivalentTo(sourceStream.CRC.GetCurrentHash());
             }
+
+            await Task.CompletedTask;
+
         }
     }
 }

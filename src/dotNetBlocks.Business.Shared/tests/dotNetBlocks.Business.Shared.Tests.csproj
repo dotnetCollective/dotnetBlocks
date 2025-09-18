@@ -1,4 +1,4 @@
-﻿<Project Sdk="MSTest.Sdk/3.6.4">
+﻿<Project Sdk="MSTest.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net9.0</TargetFramework>
@@ -9,14 +9,6 @@
 		<IsTestProject>true</IsTestProject>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="coverlet.collector" Version="6.0.4">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="Shouldly" Version="4.3.0" />
-		<PackageReference Include="System.IO.Hashing" Version="9.0.9" />
-	</ItemGroup>
 
 	<ItemGroup>
 	  <ProjectReference Include="..\src\dotNetBlocks.Business.Shared.csproj" />

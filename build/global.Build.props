@@ -1,8 +1,16 @@
 <!-- Repo root build properties. -->
 <Project>
+
+
   <!-- Set the repository root into a variable -->
   <PropertyGroup>
      <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+      <!-- Configure NGet-->
+
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+
+
   </PropertyGroup>
 
   <!-- Set common properties regarding assembly information and nuget packages -->

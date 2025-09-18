@@ -1,6 +1,6 @@
 using dotNetBlocks.System.IO;
+using dotNetBlocks.System.IO.Tests;
 using dotNetBlocks.System.IO.Tests.StreamBuffer;
-using FluentAssertions.Extensions;
 using System.Diagnostics;
 using System.IO.Hashing;
 
@@ -65,28 +65,32 @@ namespace StreamBufferTests
 
                 // fill the buffer. less one byte so we can complete.
                 writeSize = bufferSize-1;
-                await write.Should().CompleteWithinAsync(250.Milliseconds(),because:"buffer is empty");
+                Should.CompleteIn(write, TimeSpan.FromMilliseconds(250),"buffer is empty");
 
 
                 // Test we are blocked until a read.
                 position = sourceStream.Position; // Store the source position..
-                await write.Should().NotCompleteWithinAsync(250.Milliseconds(), because: "buffer is full and writer is blocked.");
+                write.ShouldNotCompleteIn(TimeSpan.FromMilliseconds(250), "buffer is full and writer is blocked.");
                 sourceStream.Position = position; // restore the source position.
 
                 // Read the written data.
                 readSize = writeSize;
-                await read.Should().CompleteWithinAsync(250.Milliseconds(), because: "Read the written data");
+                Should.CompleteIn(read,TimeSpan.FromMilliseconds(250),"Read the written data");
 
                 // Validate we read what we wrote accurately.
-                sourceStream.CRC.GetCurrentHash().Should().BeEquivalentTo(readHash.GetCurrentHash(), because: "read and write checksums must match.");
+                sourceStream.CRC.GetCurrentHash().ShouldBeEquivalentTo(readHash.GetCurrentHash(), "read and write checksums must match.");
 
                 // need to read extra to unlock writing.
-                await read.Should().CompleteWithinAsync(250.Milliseconds(), because: "Read extra bytes");
+                Should.CompleteIn(read, TimeSpan.FromSeconds(250), "Read extra bytes");
 
                 // We can write again.
-                await write.Should().CompleteWithinAsync(250.Milliseconds(), because: "buffer is empty again");
+                Should.CompleteIn(write, TimeSpan.FromMilliseconds(250), "buffer is empty again");
 
             }
+
+            await Task.CompletedTask;
+
+
         }
 
     }

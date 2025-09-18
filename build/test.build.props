@@ -1,5 +1,6 @@
 <!--
 Test project build properties.
+Automatically Only included in build if marked or detected as test project.
 -->
 <Project>
 
@@ -33,8 +34,8 @@ Test project build properties.
     </ItemGroup>
 	-->
 	<ItemGroup >
-        <PackageReference Include="FluentAssertions" Version="*" />
-        <Using Include="FluentAssertions" />
+        <PackageReference Include="Shouldly" />
+        <Using Include="Shouldly" />
     </ItemGroup>
 
 
