@@ -3,16 +3,24 @@
 <Project>
       <!-- Set folder and file values -->
   <PropertyGroup>
-      <projectNameContainsTest>$(MSBuildProjectFile.Contains('Test')</projectNameContainsTest>
-      <!--
+
+      <!-- Defined Files and Folders -->
+      <projectNameContainsTest>$(MSBuildProjectFile.Contains('Test'))</projectNameContainsTest>
       <folder>$(MSBuildThisFileDirectory)</folder>
       <folder>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))</folder>
-      <buildpropsfolder>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', ))</buildpropsfolder>
-      -->
+
+      <buildpropsfolder>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props'))</buildpropsfolder>
       <thisfileFolder>$(MSBuildThisFileDirectory)</thisfileFolder>
       <propsFolder>$(MSBuildThisFileDirectory)build/</propsFolder>
       <GlobalPropsFile>$(propsFolder)global.Build.props</GlobalPropsFile>
       <TestPropsFile>$(propsFolder)test.Build.props</TestPropsFile>
+      <PackagesPropsFile>$(propsFolder)Directory.Packages.props</PackagesPropsFile>
+
+      <!-- Need to properly find the repo root and makes this relative. -->
+      <buildOutputFolder>$(MSBuildThisFileDirectory)/build_output</buildOutputFolder>
+
+      <!-- Relocatd the packages output so they can be easily uploaded to NuGet-->
+      <PackageOutputPath>$(buildOutputFolder)/packages/</PackageOutputPath>
   </PropertyGroup>
 
   <!-- Enable features - file nesting.-->
@@ -31,6 +39,8 @@
   </PropertyGroup>
 
   <Import Project="$(GlobalPropsFile)" />
+  <Import Project="$(PackagesPropsFile)" />
+   <!-- Include test props file for test projects -->
   <Import Condition="$(IsTestProject)" Project="$(TestPropsFile)"/>
 </Project>
 

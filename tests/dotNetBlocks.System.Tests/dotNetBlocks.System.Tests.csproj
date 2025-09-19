@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="MSTest.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -9,10 +9,6 @@
     <OutputType>Exe</OutputType>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="MSTest" Version="4.0.0-preview.25415.9" />
-    <PackageReference Include="Shouldly" Version="4.3.0" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\dotNetBlocks.System\dotNetBlocks.System.csproj" />

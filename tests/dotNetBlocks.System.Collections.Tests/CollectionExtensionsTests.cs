@@ -13,8 +13,8 @@ namespace dotNetBlocks.System.Collections.Tests
         {
             var items = new List<int?>() { 1, 2, null, 4, null, 6 };
 
-            items.IgnoreDefaultValues().Count().Should().Be(4);
-            items.IgnoreDefaultValues().Should().BeEquivalentTo(new List<int?>() { 1, 2, 4, 6 });
+            items.IgnoreDefaultValues().Count().ShouldBe(4);
+            items.IgnoreDefaultValues().ShouldBe(new List<int?>() { 1, 2, 4, 6 });
 
 
         }

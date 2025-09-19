@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\dotNetBlocks.Business.Shared\src\dotNetBlocks.Business.Shared.csproj" />
+    <ProjectReference Include="..\dotNetBlocks.Business.Shared\dotNetBlocks.Business.Shared.csproj" />
   </ItemGroup>
+
+
 
 </Project>

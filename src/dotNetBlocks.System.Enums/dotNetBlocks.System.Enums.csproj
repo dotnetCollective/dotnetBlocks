@@ -4,15 +4,8 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <RootNamespace>System</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-      <PackageReference Include="RT.Comb" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\dotNetBlocks.System.Enums\dotNetBlocks.System.Enums.csproj" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Update="readme.md">

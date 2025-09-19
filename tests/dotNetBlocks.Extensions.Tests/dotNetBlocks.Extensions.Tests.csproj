@@ -12,10 +12,12 @@
     <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
   </PropertyGroup>
 
-
   <ItemGroup>
-    <ProjectReference Include="..\..\src\dotNetBlocks.System.Collections\dotNetBlocks.System.Collections.csproj" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\dotNetBlocks.Extensions\dotNetBlocks.Extensions.csproj" />
+  </ItemGroup>
 
 </Project>
