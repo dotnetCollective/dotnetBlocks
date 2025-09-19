@@ -15,6 +15,12 @@
       <GlobalPropsFile>$(propsFolder)global.Build.props</GlobalPropsFile>
       <TestPropsFile>$(propsFolder)test.Build.props</TestPropsFile>
       <PackagesPropsFile>$(propsFolder)Directory.Packages.props</PackagesPropsFile>
+
+      <!-- Need to properly find the repo root and makes this relative. -->
+      <buildOutputFolder>$(MSBuildThisFileDirectory)/build_output</buildOutputFolder>
+
+      <!-- Relocatd the packages output so they can be easily uploaded to NuGet-->
+      <PackageOutputPath>$(buildOutputFolder)/packages/</PackageOutputPath>
   </PropertyGroup>
 
   <!-- Enable features - file nesting.-->

@@ -23,6 +23,7 @@
   <Project Path="src/dotNetBlocks.ServiceBus.Shared/dotNetBlocks.ServiceBus.Shared.csproj" />
   <Project Path="src/dotNetBlocks.ServiceBus/dotNetBlocks.ServiceBus.csproj" />
   <Project Path="src/dotNetBlocks.System.Collections/dotNetBlocks.System.Collections.csproj" />
+  <Project Path="src/dotNetBlocks.System.Enums/dotNetBlocks.System.Enums.csproj" />
   <Project Path="src/dotNetBlocks.System.IO/dotNetBlocks.System.IO.csproj" />
   <Project Path="src/dotNetBlocks.System.Threading/dotNetBlocks.System.Threading.csproj" />
   <Project Path="src/dotNetBlocks.System/dotNetBlocks.System.csproj" Id="b87ccb4c-8ff5-431f-b7fa-9d918d0d26ae" />
