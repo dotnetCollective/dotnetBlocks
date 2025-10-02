@@ -10,6 +10,7 @@ Automatically Only included in build if marked or detected as test project.
 		<WarningLevel>3</WarningLevel>
 		<AnalysisLevel>preview</AnalysisLevel>
 		<Features>strict</Features>
+		 <NoWarn>IDE1006</NoWarn> <!-- Ignore naming style warnings in test projects -->
 	</PropertyGroup>
 
 	<PropertyGroup>
