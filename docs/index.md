@@ -61,4 +61,5 @@ Links to  source, licensing and the project.
 
 
 ## More Content
-<div>\@Html.Partial("_ChildPages",Document)</div>
+<div>\@await Html.PartialAsync("_ChildPages",Document)</div>
+

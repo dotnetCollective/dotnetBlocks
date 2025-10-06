@@ -14,6 +14,8 @@ Excerpt: Starting point to using DotNetBlocks.
 - [dotNetBlocks.System.Threading](/Libraries/system.threading.html) - solves cancellation token problems
 - [DotNetBlocks.Extensions](/Libraries/extensions.html) - adds Lazy<TService> functionality to Microsoft DI system.
 - [DotNetBlocks.System.Collectionns](/Libraries/system.collections.html) - Generic enumeration extensions to deal with null values in collections or to ensure a collection has at least one item.
+- [dotNetBlocks.System.Linq](/Libraries/system.linq.html) - Wildcard search extensions for optimal wildcard searching
+
 
 ## Enterprise Libraries
 - [DotNetBlocks.ServiceBus](/Libraries/servicebus.html) - Implements Service Bus functionality combining Mass Transit with an operation model to provide a rapid implementation event architecture.

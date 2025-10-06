@@ -21,7 +21,7 @@
   <Project Path="src/dotNetBlocks.Business.Shared/dotNetBlocks.Business.Shared.csproj" />
   <Project Path="src/DotNetBlocks.Business/DotNetBlocks.Business.csproj" />
   <Project Path="src/dotNetBlocks.Extensions/dotNetBlocks.Extensions.csproj" />
-  <Project Path="src/dotNetBlocks.Linq/dotNetBlocks.Linq.csproj" />
+  <Project Path="src/dotNetBlocks.Linq/dotNetBlocks.System.Linq.csproj" />
   <Project Path="src/dotNetBlocks.ServiceBus.Shared/dotNetBlocks.ServiceBus.Shared.csproj" />
   <Project Path="src/dotNetBlocks.ServiceBus/dotNetBlocks.ServiceBus.csproj" />
   <Project Path="src/dotNetBlocks.System.Collections/dotNetBlocks.System.Collections.csproj" />

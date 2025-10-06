@@ -23,7 +23,7 @@ public class notifySomeone : Operation
 string email;
 }
 
-var tellthem = new NotifySomeone ("you@here.com");
+var tellthem = new NotifySomeone("you-at-here.com");
 
 // Validate before executing.
 tellthem .Validate();

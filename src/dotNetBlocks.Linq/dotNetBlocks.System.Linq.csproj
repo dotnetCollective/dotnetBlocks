@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 
             <IsPackable>True</IsPackable>
-<PackageDescription> Package extends Linq functionality.
+<PackageDescription> Package extends Linq functionality. Adds optimal wildcard search functionality to queries.
 
 Commonly Used Types:
 
@@ -15,7 +15,8 @@ LinqExtensions
 Commonly Used Namespaces:
 - dotNetBlocks.Linq
 using dotNetBlocks.Linq
-
+- - System.Linq
+using System.Linq
 
 
 

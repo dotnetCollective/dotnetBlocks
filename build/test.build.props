@@ -6,12 +6,20 @@ Automatically Only included in build if marked or detected as test project.
 
 
 	<PropertyGroup>
+		<IsPackable>False</IsPackable>
+
 		<NuGetAudit>false</NuGetAudit>
 		<WarningLevel>3</WarningLevel>
 		<AnalysisLevel>preview</AnalysisLevel>
 		<Features>strict</Features>
 		 <NoWarn>IDE1006</NoWarn> <!-- Ignore naming style warnings in test projects -->
 	</PropertyGroup>
+
+	<ItemGroup >
+		<PackageReference Include="Shouldly" />    
+
+        <Using Include="Shouldly" />
+    </ItemGroup>
 
 	<PropertyGroup>
 		<CompatibilityTargetFrameworks>netstandard2.0</CompatibilityTargetFrameworks>
@@ -20,24 +28,12 @@ Automatically Only included in build if marked or detected as test project.
 	</PropertyGroup>
 
 	<PropertyGroup>
-		<IsTestProject>True</IsTestProject>
-
-		<IsPackable>False</IsPackable>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 
 		<GenerateDocumentationFile>False</GenerateDocumentationFile>
 		<SourceLinkCreate>false</SourceLinkCreate>
 	</PropertyGroup>
-	<!--
-	<ItemGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
-        <PackageReference Include="FluentAssertions" Version="6.1.0" />
-        <Using Include="FluentAssertions" />
-    </ItemGroup>
-	-->
-	<ItemGroup >
-        <PackageReference Include="Shouldly" />
-        <Using Include="Shouldly" />
-    </ItemGroup>
+
 
 
 </Project>

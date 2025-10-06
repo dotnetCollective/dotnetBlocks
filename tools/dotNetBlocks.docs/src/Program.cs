@@ -63,8 +63,9 @@ namespace dotNetBlocks.docs
             //args = new string[] { @"glob eval"};
 
             //args = new string[] { "-- preview" };
-            args = new string[] { "preview" };
+            //args = new string[] { "preview" };
             //args = new string[] { "preview" , "-l Debug" };
+            args = new string[] { "preview", "-debug" };
 
 
             // Set up the bootstrapper

@@ -48,7 +48,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-  <!--<None Include="readme.md" pack="true" PackagePath="." /> -->
+
+  <!-- <None Include="readme.md" pack="true" PackagePath="." /> -->
 </ItemGroup>
 
 </Project>

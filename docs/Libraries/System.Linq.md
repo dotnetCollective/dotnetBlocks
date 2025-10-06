@@ -1,6 +1,32 @@
-﻿# Wildcard Search extensions
+﻿<!---
+Title: DotNetBlocks.System.Linq
+
+ShowInSidebar: true
+Excerpt: Linq extensions for enhancing search functionality - wildcard search.
+Level: 0
+Order: 0
+--->
+
+# DotNetBlocks.System.Linq
+
+### Overview
+
+Adds optimized wildcard search functionality to Linq providers
+
+### Getting started
+[ NuGet : dotnetBlocks.System.IO](https://www.nuget.org/packages/dotNetBlocks.System.Linq)
+
+[Licensing and other information](/)
+
+### Functionality
+
+
+
+# Wildcard Search extensions
 
 ## Objective
+
+Optimized search functions allowing users to enter wildcards in text searches and searching for them depending on wildcard structure without always using SQL "Like"
 
 ## Problem solved
 

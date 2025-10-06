@@ -38,3 +38,4 @@ Business entities represent the domain model base building blocks. A business en
 
 ## More Content
 <div>\@Html.Partial("_ChildPages",Document)</div>
+
