@@ -1,0 +1,805 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.System.IO.StreamExtensions
+  commentId: T:dotNetBlocks.System.IO.StreamExtensions
+  id: StreamExtensions
+  parent: dotNetBlocks.System.IO
+  children:
+  - dotNetBlocks.System.IO.StreamExtensions.CopyBytes(System.IO.Stream,System.IO.Stream,System.Int64,System.Threading.CancellationToken)
+  - dotNetBlocks.System.IO.StreamExtensions.CopyBytesAsync(System.IO.Stream,System.IO.Stream,System.Int64,System.Threading.CancellationToken)
+  - dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64)
+  - dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64,System.Nullable{System.Int32})
+  - dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRCAsync(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: StreamExtensions
+  nameWithType: StreamExtensions
+  fullName: dotNetBlocks.System.IO.StreamExtensions
+  type: Class
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: dotNetBlocks.System.IO
+  syntax:
+    content: public static class StreamExtensions
+    content.vb: Public Module StreamExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRCAsync(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64,System.Threading.CancellationToken)
+  commentId: M:dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRCAsync(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64,System.Threading.CancellationToken)
+  id: ReadAndCalculateCRCAsync(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: dotNetBlocks.System.IO.StreamExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadAndCalculateCRCAsync(Stream, Crc32, long, CancellationToken)
+  nameWithType: StreamExtensions.ReadAndCalculateCRCAsync(Stream, Crc32, long, CancellationToken)
+  fullName: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRCAsync(System.IO.Stream, System.IO.Hashing.Crc32, long, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: dotNetBlocks.System.IO
+  syntax:
+    content: public static ValueTask ReadAndCalculateCRCAsync(this Stream source, Crc32 crc, long byteCount, CancellationToken cancellation = default)
+    parameters:
+    - id: source
+      type: System.IO.Stream
+    - id: crc
+      type: System.IO.Hashing.Crc32
+    - id: byteCount
+      type: System.Int64
+    - id: cancellation
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Shared Function ReadAndCalculateCRCAsync(source As Stream, crc As Crc32, byteCount As Long, cancellation As CancellationToken = Nothing) As ValueTask
+  overload: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRCAsync*
+  nameWithType.vb: StreamExtensions.ReadAndCalculateCRCAsync(Stream, Crc32, Long, CancellationToken)
+  fullName.vb: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRCAsync(System.IO.Stream, System.IO.Hashing.Crc32, Long, System.Threading.CancellationToken)
+  name.vb: ReadAndCalculateCRCAsync(Stream, Crc32, Long, CancellationToken)
+- uid: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64)
+  commentId: M:dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64)
+  id: ReadAndCalculateCRC(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64)
+  isExtensionMethod: true
+  parent: dotNetBlocks.System.IO.StreamExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadAndCalculateCRC(Stream, Crc32, long)
+  nameWithType: StreamExtensions.ReadAndCalculateCRC(Stream, Crc32, long)
+  fullName: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC(System.IO.Stream, System.IO.Hashing.Crc32, long)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: dotNetBlocks.System.IO
+  syntax:
+    content: public static void ReadAndCalculateCRC(this Stream source, Crc32 crc, long byteCount)
+    parameters:
+    - id: source
+      type: System.IO.Stream
+    - id: crc
+      type: System.IO.Hashing.Crc32
+    - id: byteCount
+      type: System.Int64
+    content.vb: Public Shared Sub ReadAndCalculateCRC(source As Stream, crc As Crc32, byteCount As Long)
+  overload: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC*
+  nameWithType.vb: StreamExtensions.ReadAndCalculateCRC(Stream, Crc32, Long)
+  fullName.vb: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC(System.IO.Stream, System.IO.Hashing.Crc32, Long)
+  name.vb: ReadAndCalculateCRC(Stream, Crc32, Long)
+- uid: dotNetBlocks.System.IO.StreamExtensions.CopyBytesAsync(System.IO.Stream,System.IO.Stream,System.Int64,System.Threading.CancellationToken)
+  commentId: M:dotNetBlocks.System.IO.StreamExtensions.CopyBytesAsync(System.IO.Stream,System.IO.Stream,System.Int64,System.Threading.CancellationToken)
+  id: CopyBytesAsync(System.IO.Stream,System.IO.Stream,System.Int64,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: dotNetBlocks.System.IO.StreamExtensions
+  langs:
+  - csharp
+  - vb
+  name: CopyBytesAsync(Stream, Stream, long, CancellationToken)
+  nameWithType: StreamExtensions.CopyBytesAsync(Stream, Stream, long, CancellationToken)
+  fullName: dotNetBlocks.System.IO.StreamExtensions.CopyBytesAsync(System.IO.Stream, System.IO.Stream, long, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: dotNetBlocks.System.IO
+  syntax:
+    content: public static ValueTask<int> CopyBytesAsync(this Stream source, Stream target, long count, CancellationToken cancellationToken = default)
+    parameters:
+    - id: source
+      type: System.IO.Stream
+    - id: target
+      type: System.IO.Stream
+    - id: count
+      type: System.Int64
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Int32}
+    content.vb: Public Shared Function CopyBytesAsync(source As Stream, target As Stream, count As Long, cancellationToken As CancellationToken = Nothing) As ValueTask(Of Integer)
+  overload: dotNetBlocks.System.IO.StreamExtensions.CopyBytesAsync*
+  nameWithType.vb: StreamExtensions.CopyBytesAsync(Stream, Stream, Long, CancellationToken)
+  fullName.vb: dotNetBlocks.System.IO.StreamExtensions.CopyBytesAsync(System.IO.Stream, System.IO.Stream, Long, System.Threading.CancellationToken)
+  name.vb: CopyBytesAsync(Stream, Stream, Long, CancellationToken)
+- uid: dotNetBlocks.System.IO.StreamExtensions.CopyBytes(System.IO.Stream,System.IO.Stream,System.Int64,System.Threading.CancellationToken)
+  commentId: M:dotNetBlocks.System.IO.StreamExtensions.CopyBytes(System.IO.Stream,System.IO.Stream,System.Int64,System.Threading.CancellationToken)
+  id: CopyBytes(System.IO.Stream,System.IO.Stream,System.Int64,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: dotNetBlocks.System.IO.StreamExtensions
+  langs:
+  - csharp
+  - vb
+  name: CopyBytes(Stream, Stream, long, CancellationToken)
+  nameWithType: StreamExtensions.CopyBytes(Stream, Stream, long, CancellationToken)
+  fullName: dotNetBlocks.System.IO.StreamExtensions.CopyBytes(System.IO.Stream, System.IO.Stream, long, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: dotNetBlocks.System.IO
+  syntax:
+    content: public static int CopyBytes(this Stream source, Stream target, long count, CancellationToken cancellationToken = default)
+    parameters:
+    - id: source
+      type: System.IO.Stream
+    - id: target
+      type: System.IO.Stream
+    - id: count
+      type: System.Int64
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function CopyBytes(source As Stream, target As Stream, count As Long, cancellationToken As CancellationToken = Nothing) As Integer
+  overload: dotNetBlocks.System.IO.StreamExtensions.CopyBytes*
+  nameWithType.vb: StreamExtensions.CopyBytes(Stream, Stream, Long, CancellationToken)
+  fullName.vb: dotNetBlocks.System.IO.StreamExtensions.CopyBytes(System.IO.Stream, System.IO.Stream, Long, System.Threading.CancellationToken)
+  name.vb: CopyBytes(Stream, Stream, Long, CancellationToken)
+- uid: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64,System.Nullable{System.Int32})
+  commentId: M:dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64,System.Nullable{System.Int32})
+  id: ReadAndCalculateCRC(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64,System.Nullable{System.Int32})
+  isExtensionMethod: true
+  parent: dotNetBlocks.System.IO.StreamExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadAndCalculateCRC(Stream, Crc32, long, int?)
+  nameWithType: StreamExtensions.ReadAndCalculateCRC(Stream, Crc32, long, int?)
+  fullName: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC(System.IO.Stream, System.IO.Hashing.Crc32, long, int?)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: dotNetBlocks.System.IO
+  syntax:
+    content: public static void ReadAndCalculateCRC(this Stream source, Crc32 crc, long byteCount, int? bufferSize = null)
+    parameters:
+    - id: source
+      type: System.IO.Stream
+    - id: crc
+      type: System.IO.Hashing.Crc32
+    - id: byteCount
+      type: System.Int64
+    - id: bufferSize
+      type: System.Nullable{System.Int32}
+    content.vb: Public Shared Sub ReadAndCalculateCRC(source As Stream, crc As Crc32, byteCount As Long, bufferSize As Integer? = Nothing)
+  overload: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC*
+  nameWithType.vb: StreamExtensions.ReadAndCalculateCRC(Stream, Crc32, Long, Integer?)
+  fullName.vb: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC(System.IO.Stream, System.IO.Hashing.Crc32, Long, Integer?)
+  name.vb: ReadAndCalculateCRC(Stream, Crc32, Long, Integer?)
+references:
+- uid: dotNetBlocks.System.IO
+  commentId: N:dotNetBlocks.System.IO
+  isExternal: true
+  href: dotNetBlocks.html
+  name: dotNetBlocks.System.IO
+  nameWithType: dotNetBlocks.System.IO
+  fullName: dotNetBlocks.System.IO
+  spec.csharp:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.System
+    name: System
+    isExternal: true
+    href: dotNetBlocks.System.html
+  - name: .
+  - uid: dotNetBlocks.System.IO
+    name: IO
+    isExternal: true
+    href: dotNetBlocks.System.IO.html
+  spec.vb:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.System
+    name: System
+    isExternal: true
+    href: dotNetBlocks.System.html
+  - name: .
+  - uid: dotNetBlocks.System.IO
+    name: IO
+    isExternal: true
+    href: dotNetBlocks.System.IO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRCAsync*
+  commentId: Overload:dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRCAsync
+  isExternal: true
+  href: dotNetBlocks.System.IO.StreamExtensions.html#dotNetBlocks_System_IO_StreamExtensions_ReadAndCalculateCRCAsync_System_IO_Stream_System_IO_Hashing_Crc32_System_Int64_System_Threading_CancellationToken_
+  name: ReadAndCalculateCRCAsync
+  nameWithType: StreamExtensions.ReadAndCalculateCRCAsync
+  fullName: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRCAsync
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO.Hashing.Crc32
+  commentId: T:System.IO.Hashing.Crc32
+  parent: System.IO.Hashing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.hashing.crc32
+  name: Crc32
+  nameWithType: Crc32
+  fullName: System.IO.Hashing.Crc32
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: System.html
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+- uid: System.IO.Hashing
+  commentId: N:System.IO.Hashing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO.Hashing
+  nameWithType: System.IO.Hashing
+  fullName: System.IO.Hashing
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  - name: .
+  - uid: System.IO.Hashing
+    name: Hashing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.hashing
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  - name: .
+  - uid: System.IO.Hashing
+    name: Hashing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.hashing
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC*
+  commentId: Overload:dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC
+  isExternal: true
+  href: dotNetBlocks.System.IO.StreamExtensions.html#dotNetBlocks_System_IO_StreamExtensions_ReadAndCalculateCRC_System_IO_Stream_System_IO_Hashing_Crc32_System_Int64_
+  name: ReadAndCalculateCRC
+  nameWithType: StreamExtensions.ReadAndCalculateCRC
+  fullName: dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC
+- uid: dotNetBlocks.System.IO.StreamExtensions.CopyBytesAsync*
+  commentId: Overload:dotNetBlocks.System.IO.StreamExtensions.CopyBytesAsync
+  isExternal: true
+  href: dotNetBlocks.System.IO.StreamExtensions.html#dotNetBlocks_System_IO_StreamExtensions_CopyBytesAsync_System_IO_Stream_System_IO_Stream_System_Int64_System_Threading_CancellationToken_
+  name: CopyBytesAsync
+  nameWithType: StreamExtensions.CopyBytesAsync
+  fullName: dotNetBlocks.System.IO.StreamExtensions.CopyBytesAsync
+- uid: System.Threading.Tasks.ValueTask{System.Int32}
+  commentId: T:System.Threading.Tasks.ValueTask{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<int>
+  nameWithType: ValueTask<int>
+  fullName: System.Threading.Tasks.ValueTask<int>
+  nameWithType.vb: ValueTask(Of Integer)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Integer)
+  name.vb: ValueTask(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: dotNetBlocks.System.IO.StreamExtensions.CopyBytes*
+  commentId: Overload:dotNetBlocks.System.IO.StreamExtensions.CopyBytes
+  isExternal: true
+  href: dotNetBlocks.System.IO.StreamExtensions.html#dotNetBlocks_System_IO_StreamExtensions_CopyBytes_System_IO_Stream_System_IO_Stream_System_Int64_System_Threading_CancellationToken_
+  name: CopyBytes
+  nameWithType: StreamExtensions.CopyBytes
+  fullName: dotNetBlocks.System.IO.StreamExtensions.CopyBytes
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

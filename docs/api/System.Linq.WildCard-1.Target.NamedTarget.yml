@@ -1,0 +1,980 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Linq.WildCard`1.Target.NamedTarget
+  commentId: T:System.Linq.WildCard`1.Target.NamedTarget
+  id: WildCard`1.Target.NamedTarget
+  parent: System.Linq
+  children:
+  - System.Linq.WildCard`1.Target.NamedTarget.#ctor(System.Linq.WildCard{`0})
+  - System.Linq.WildCard`1.Target.NamedTarget.AddAll
+  - System.Linq.WildCard`1.Target.NamedTarget.AllProperties
+  - System.Linq.WildCard`1.Target.NamedTarget.ButNamed(System.String[])
+  - System.Linq.WildCard`1.Target.NamedTarget.ButNotNamed(System.String[])
+  - System.Linq.WildCard`1.Target.NamedTarget.For
+  - System.Linq.WildCard`1.Target.NamedTarget.Named(System.String[])
+  - System.Linq.WildCard`1.Target.NamedTarget.NotNamed(System.String[])
+  langs:
+  - csharp
+  - vb
+  name: WildCard<TSearch>.Target.NamedTarget
+  nameWithType: WildCard<TSearch>.Target.NamedTarget
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget
+  type: Class
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/4811c3f4e13f52d97130700e1215195620dfd6af/src/dotNetBlocks.Linq/WildcardSearch/WildCard.cs
+  assemblies:
+  - dotNetBlocks.Linq
+  namespace: System.Linq
+  syntax:
+    content: 'public class WildCard<TSearch>.Target.NamedTarget : WildCard<TSearch>.Term'
+    content.vb: Public Class WildCard(Of TSearch).Target.NamedTarget Inherits WildCard(Of TSearch).Term
+  inheritance:
+  - System.Object
+  - System.Linq.WildCard`1.Term
+  inheritedMembers:
+  - System.Linq.WildCard`1.Term.Search
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Linq.WildCard`1.Target.NamedTarget.System.Linq.WildCard.Search``1
+  - System.Linq.WildCard`1.Target.NamedTarget.System.Linq.WildCard.Search``1
+  - System.Linq.WildCard`1.Target.NamedTarget.System.SystemExtensions.AsLazy``1
+  - System.Linq.WildCard`1.Target.NamedTarget.System.SystemExtensions.AsLazy``1
+  - System.Linq.WildCard`1.Target.NamedTarget.System.SystemExtensions.AsLazy``1
+  - System.Linq.WildCard`1.Target.NamedTarget.System.SystemExtensions.AsLazy``1
+  - System.Linq.WildCard`1.Target.NamedTarget.System.SystemExtensions.AsLazy``1
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget
+  name.vb: WildCard(Of TSearch).Target.NamedTarget
+- uid: System.Linq.WildCard`1.Target.NamedTarget.#ctor(System.Linq.WildCard{`0})
+  commentId: M:System.Linq.WildCard`1.Target.NamedTarget.#ctor(System.Linq.WildCard{`0})
+  id: '#ctor(System.Linq.WildCard{`0})'
+  parent: System.Linq.WildCard`1.Target.NamedTarget
+  langs:
+  - csharp
+  - vb
+  name: NamedTarget(WildCard<TSearch>)
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.NamedTarget(WildCard<TSearch>)
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.NamedTarget(System.Linq.WildCard<TSearch>)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/4811c3f4e13f52d97130700e1215195620dfd6af/src/dotNetBlocks.Linq/WildcardSearch/WildCard.cs
+  assemblies:
+  - dotNetBlocks.Linq
+  namespace: System.Linq
+  syntax:
+    content: public NamedTarget(WildCard<TSearch> Search)
+    parameters:
+    - id: Search
+      type: System.Linq.WildCard`1
+    content.vb: Public Sub New(Search As WildCard(Of TSearch))
+  overload: System.Linq.WildCard`1.Target.NamedTarget.#ctor*
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.New(WildCard(Of TSearch))
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.New(System.Linq.WildCard(Of TSearch))
+  name.vb: New(WildCard(Of TSearch))
+- uid: System.Linq.WildCard`1.Target.NamedTarget.AddAll
+  commentId: M:System.Linq.WildCard`1.Target.NamedTarget.AddAll
+  id: AddAll
+  parent: System.Linq.WildCard`1.Target.NamedTarget
+  langs:
+  - csharp
+  - vb
+  name: AddAll()
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.AddAll()
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.AddAll()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/4811c3f4e13f52d97130700e1215195620dfd6af/src/dotNetBlocks.Linq/WildcardSearch/WildCard.cs
+  assemblies:
+  - dotNetBlocks.Linq
+  namespace: System.Linq
+  syntax:
+    content: public WildCard<TSearch>.Target.NamedTarget AddAll()
+    return:
+      type: System.Linq.WildCard`1.Target.NamedTarget
+    content.vb: Public Function AddAll() As WildCard(Of TSearch).Target.NamedTarget
+  overload: System.Linq.WildCard`1.Target.NamedTarget.AddAll*
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.AddAll()
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.AddAll()
+- uid: System.Linq.WildCard`1.Target.NamedTarget.Named(System.String[])
+  commentId: M:System.Linq.WildCard`1.Target.NamedTarget.Named(System.String[])
+  id: Named(System.String[])
+  parent: System.Linq.WildCard`1.Target.NamedTarget
+  langs:
+  - csharp
+  - vb
+  name: Named(params string[])
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.Named(params string[])
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.Named(params string[])
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/4811c3f4e13f52d97130700e1215195620dfd6af/src/dotNetBlocks.Linq/WildcardSearch/WildCard.cs
+  assemblies:
+  - dotNetBlocks.Linq
+  namespace: System.Linq
+  syntax:
+    content: public WildCard<TSearch>.Target.NamedTarget Named(params string[] names)
+    parameters:
+    - id: names
+      type: System.String[]
+    return:
+      type: System.Linq.WildCard`1.Target.NamedTarget
+    content.vb: Public Function Named(ParamArray names As String()) As WildCard(Of TSearch).Target.NamedTarget
+  overload: System.Linq.WildCard`1.Target.NamedTarget.Named*
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.Named(ParamArray String())
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.Named(ParamArray String())
+  name.vb: Named(ParamArray String())
+- uid: System.Linq.WildCard`1.Target.NamedTarget.ButNamed(System.String[])
+  commentId: M:System.Linq.WildCard`1.Target.NamedTarget.ButNamed(System.String[])
+  id: ButNamed(System.String[])
+  parent: System.Linq.WildCard`1.Target.NamedTarget
+  langs:
+  - csharp
+  - vb
+  name: ButNamed(params string[])
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.ButNamed(params string[])
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.ButNamed(params string[])
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/4811c3f4e13f52d97130700e1215195620dfd6af/src/dotNetBlocks.Linq/WildcardSearch/WildCard.cs
+  assemblies:
+  - dotNetBlocks.Linq
+  namespace: System.Linq
+  syntax:
+    content: public WildCard<TSearch>.Target.NamedTarget ButNamed(params string[] names)
+    parameters:
+    - id: names
+      type: System.String[]
+    return:
+      type: System.Linq.WildCard`1.Target.NamedTarget
+    content.vb: Public Function ButNamed(ParamArray names As String()) As WildCard(Of TSearch).Target.NamedTarget
+  overload: System.Linq.WildCard`1.Target.NamedTarget.ButNamed*
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.ButNamed(ParamArray String())
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.ButNamed(ParamArray String())
+  name.vb: ButNamed(ParamArray String())
+- uid: System.Linq.WildCard`1.Target.NamedTarget.NotNamed(System.String[])
+  commentId: M:System.Linq.WildCard`1.Target.NamedTarget.NotNamed(System.String[])
+  id: NotNamed(System.String[])
+  parent: System.Linq.WildCard`1.Target.NamedTarget
+  langs:
+  - csharp
+  - vb
+  name: NotNamed(params string[])
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.NotNamed(params string[])
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.NotNamed(params string[])
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/4811c3f4e13f52d97130700e1215195620dfd6af/src/dotNetBlocks.Linq/WildcardSearch/WildCard.cs
+  assemblies:
+  - dotNetBlocks.Linq
+  namespace: System.Linq
+  syntax:
+    content: public WildCard<TSearch>.Target.NamedTarget NotNamed(params string[] names)
+    parameters:
+    - id: names
+      type: System.String[]
+    return:
+      type: System.Linq.WildCard`1.Target.NamedTarget
+    content.vb: Public Function NotNamed(ParamArray names As String()) As WildCard(Of TSearch).Target.NamedTarget
+  overload: System.Linq.WildCard`1.Target.NamedTarget.NotNamed*
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.NotNamed(ParamArray String())
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.NotNamed(ParamArray String())
+  name.vb: NotNamed(ParamArray String())
+- uid: System.Linq.WildCard`1.Target.NamedTarget.ButNotNamed(System.String[])
+  commentId: M:System.Linq.WildCard`1.Target.NamedTarget.ButNotNamed(System.String[])
+  id: ButNotNamed(System.String[])
+  parent: System.Linq.WildCard`1.Target.NamedTarget
+  langs:
+  - csharp
+  - vb
+  name: ButNotNamed(params string[])
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.ButNotNamed(params string[])
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.ButNotNamed(params string[])
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/4811c3f4e13f52d97130700e1215195620dfd6af/src/dotNetBlocks.Linq/WildcardSearch/WildCard.cs
+  assemblies:
+  - dotNetBlocks.Linq
+  namespace: System.Linq
+  syntax:
+    content: public WildCard<TSearch>.Target.NamedTarget ButNotNamed(params string[] names)
+    parameters:
+    - id: names
+      type: System.String[]
+    return:
+      type: System.Linq.WildCard`1.Target.NamedTarget
+    content.vb: Public Function ButNotNamed(ParamArray names As String()) As WildCard(Of TSearch).Target.NamedTarget
+  overload: System.Linq.WildCard`1.Target.NamedTarget.ButNotNamed*
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.ButNotNamed(ParamArray String())
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.ButNotNamed(ParamArray String())
+  name.vb: ButNotNamed(ParamArray String())
+- uid: System.Linq.WildCard`1.Target.NamedTarget.AllProperties
+  commentId: P:System.Linq.WildCard`1.Target.NamedTarget.AllProperties
+  id: AllProperties
+  parent: System.Linq.WildCard`1.Target.NamedTarget
+  langs:
+  - csharp
+  - vb
+  name: AllProperties
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.AllProperties
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.AllProperties
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/4811c3f4e13f52d97130700e1215195620dfd6af/src/dotNetBlocks.Linq/WildcardSearch/WildCard.cs
+  assemblies:
+  - dotNetBlocks.Linq
+  namespace: System.Linq
+  syntax:
+    content: public WildCard<TSearch>.Target.NamedTarget AllProperties { get; }
+    parameters: []
+    return:
+      type: System.Linq.WildCard`1.Target.NamedTarget
+    content.vb: Public ReadOnly Property AllProperties As WildCard(Of TSearch).Target.NamedTarget
+  overload: System.Linq.WildCard`1.Target.NamedTarget.AllProperties*
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.AllProperties
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.AllProperties
+- uid: System.Linq.WildCard`1.Target.NamedTarget.For
+  commentId: P:System.Linq.WildCard`1.Target.NamedTarget.For
+  id: For
+  parent: System.Linq.WildCard`1.Target.NamedTarget
+  langs:
+  - csharp
+  - vb
+  name: For
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.For
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.For
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/4811c3f4e13f52d97130700e1215195620dfd6af/src/dotNetBlocks.Linq/WildcardSearch/WildCard.cs
+  assemblies:
+  - dotNetBlocks.Linq
+  namespace: System.Linq
+  syntax:
+    content: public WildCard<TSearch>.Target.SearchFor For { get; }
+    parameters: []
+    return:
+      type: System.Linq.WildCard`1.Target.SearchFor
+    content.vb: Public ReadOnly Property [For] As WildCard(Of TSearch).Target.SearchFor
+  overload: System.Linq.WildCard`1.Target.NamedTarget.For*
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.For
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.For
+references:
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: System.html
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Linq.WildCard`1.Term
+  commentId: T:System.Linq.WildCard`1.Term
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard-1.html
+  name: WildCard<TSearch>.Term
+  nameWithType: WildCard<TSearch>.Term
+  fullName: System.Linq.WildCard<TSearch>.Term
+  nameWithType.vb: WildCard(Of TSearch).Term
+  fullName.vb: System.Linq.WildCard(Of TSearch).Term
+  name.vb: WildCard(Of TSearch).Term
+  spec.csharp:
+  - uid: System.Linq.WildCard`1
+    name: WildCard
+    isExternal: true
+    href: System.Linq.WildCard-1.html
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: .
+  - uid: System.Linq.WildCard`1.Term
+    name: Term
+    isExternal: true
+    href: System.Linq.WildCard-1.Term.html
+  spec.vb:
+  - uid: System.Linq.WildCard`1
+    name: WildCard
+    isExternal: true
+    href: System.Linq.WildCard-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: .
+  - uid: System.Linq.WildCard`1.Term
+    name: Term
+    isExternal: true
+    href: System.Linq.WildCard-1.Term.html
+- uid: System.Linq.WildCard`1.Term.Search
+  commentId: P:System.Linq.WildCard`1.Term.Search
+  parent: System.Linq.WildCard`1.Term
+  isExternal: true
+  href: System.Linq.WildCard-1.Term.html#System_Linq_WildCard_1_Term_Search
+  name: Search
+  nameWithType: WildCard<TSearch>.Term.Search
+  fullName: System.Linq.WildCard<TSearch>.Term.Search
+  nameWithType.vb: WildCard(Of TSearch).Term.Search
+  fullName.vb: System.Linq.WildCard(Of TSearch).Term.Search
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Linq.WildCard`1.Target.NamedTarget.System.Linq.WildCard.Search``1
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  parent: System.Linq.WildCard
+  definition: System.Linq.WildCard.Search``1(``0)
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<NamedTarget>(NamedTarget)
+  nameWithType: WildCard.Search<WildCard<TSearch>.Target.NamedTarget>(WildCard<TSearch>.Target.NamedTarget)
+  fullName: System.Linq.WildCard.Search<System.Linq.WildCard<TSearch>.Target.NamedTarget>(System.Linq.WildCard<TSearch>.Target.NamedTarget)
+  nameWithType.vb: WildCard.Search(Of WildCard(Of TSearch).Target.NamedTarget)(WildCard(Of TSearch).Target.NamedTarget)
+  fullName.vb: System.Linq.WildCard.Search(Of System.Linq.WildCard(Of TSearch).Target.NamedTarget)(System.Linq.WildCard(Of TSearch).Target.NamedTarget)
+  name.vb: Search(Of NamedTarget)(NamedTarget)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(System.Linq.WildCard{`0}.Target.NamedTarget)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - uid: System.Linq.WildCard`1.Target.NamedTarget
+    name: NamedTarget
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.NamedTarget.html
+  - name: '>'
+  - name: (
+  - uid: System.Linq.WildCard`1.Target.NamedTarget
+    name: NamedTarget
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.NamedTarget.html
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(System.Linq.WildCard{`0}.Target.NamedTarget)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Linq.WildCard`1.Target.NamedTarget
+    name: NamedTarget
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.NamedTarget.html
+  - name: )
+  - name: (
+  - uid: System.Linq.WildCard`1.Target.NamedTarget
+    name: NamedTarget
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.NamedTarget.html
+  - name: )
+- uid: System.Linq.WildCard`1.Target.NamedTarget.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<NamedTarget>(NamedTarget)
+  nameWithType: SystemExtensions.AsLazy<WildCard<TSearch>.Target.NamedTarget>(WildCard<TSearch>.Target.NamedTarget)
+  fullName: System.SystemExtensions.AsLazy<System.Linq.WildCard<TSearch>.Target.NamedTarget>(System.Linq.WildCard<TSearch>.Target.NamedTarget)
+  nameWithType.vb: SystemExtensions.AsLazy(Of WildCard(Of TSearch).Target.NamedTarget)(WildCard(Of TSearch).Target.NamedTarget)
+  fullName.vb: System.SystemExtensions.AsLazy(Of System.Linq.WildCard(Of TSearch).Target.NamedTarget)(System.Linq.WildCard(Of TSearch).Target.NamedTarget)
+  name.vb: AsLazy(Of NamedTarget)(NamedTarget)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(System.Linq.WildCard{`0}.Target.NamedTarget)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: System.Linq.WildCard`1.Target.NamedTarget
+    name: NamedTarget
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.NamedTarget.html
+  - name: '>'
+  - name: (
+  - uid: System.Linq.WildCard`1.Target.NamedTarget
+    name: NamedTarget
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.NamedTarget.html
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(System.Linq.WildCard{`0}.Target.NamedTarget)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Linq.WildCard`1.Target.NamedTarget
+    name: NamedTarget
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.NamedTarget.html
+  - name: )
+  - name: (
+  - uid: System.Linq.WildCard`1.Target.NamedTarget
+    name: NamedTarget
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.NamedTarget.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Linq.WildCard.Search``1(``0)
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  isExternal: true
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<TSearch>(TSearch)
+  nameWithType: WildCard.Search<TSearch>(TSearch)
+  fullName: System.Linq.WildCard.Search<TSearch>(TSearch)
+  nameWithType.vb: WildCard.Search(Of TSearch)(TSearch)
+  fullName.vb: System.Linq.WildCard.Search(Of TSearch)(TSearch)
+  name.vb: Search(Of TSearch)(TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: (
+  - name: TSearch
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: (
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard
+  commentId: T:System.Linq.WildCard
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard.html
+  name: WildCard
+  nameWithType: WildCard
+  fullName: System.Linq.WildCard
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: System.Linq.WildCard`1.Target.NamedTarget.#ctor*
+  commentId: Overload:System.Linq.WildCard`1.Target.NamedTarget.#ctor
+  isExternal: true
+  href: System.Linq.WildCard-1.Target.NamedTarget.html#System_Linq_WildCard_1_Target_NamedTarget__ctor_System_Linq_WildCard__0__
+  name: NamedTarget
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.NamedTarget
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.NamedTarget
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.New
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.New
+  name.vb: New
+- uid: System.Linq.WildCard`1
+  commentId: T:System.Linq.WildCard`1
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard-1.html
+  name: WildCard<TSearch>
+  nameWithType: WildCard<TSearch>
+  fullName: System.Linq.WildCard<TSearch>
+  nameWithType.vb: WildCard(Of TSearch)
+  fullName.vb: System.Linq.WildCard(Of TSearch)
+  name.vb: WildCard(Of TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard`1
+    name: WildCard
+    isExternal: true
+    href: System.Linq.WildCard-1.html
+  - name: <
+  - name: TSearch
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.WildCard`1
+    name: WildCard
+    isExternal: true
+    href: System.Linq.WildCard-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard`1.Target.NamedTarget.AddAll*
+  commentId: Overload:System.Linq.WildCard`1.Target.NamedTarget.AddAll
+  isExternal: true
+  href: System.Linq.WildCard-1.Target.NamedTarget.html#System_Linq_WildCard_1_Target_NamedTarget_AddAll
+  name: AddAll
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.AddAll
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.AddAll
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.AddAll
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.AddAll
+- uid: System.Linq.WildCard`1.Target.NamedTarget
+  commentId: T:System.Linq.WildCard`1.Target.NamedTarget
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard-1.html
+  name: WildCard<TSearch>.Target.NamedTarget
+  nameWithType: WildCard<TSearch>.Target.NamedTarget
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget
+  name.vb: WildCard(Of TSearch).Target.NamedTarget
+  spec.csharp:
+  - uid: System.Linq.WildCard`1
+    name: WildCard
+    isExternal: true
+    href: System.Linq.WildCard-1.html
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: .
+  - uid: System.Linq.WildCard`1.Target
+    name: Target
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.html
+  - name: .
+  - uid: System.Linq.WildCard`1.Target.NamedTarget
+    name: NamedTarget
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.NamedTarget.html
+  spec.vb:
+  - uid: System.Linq.WildCard`1
+    name: WildCard
+    isExternal: true
+    href: System.Linq.WildCard-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: .
+  - uid: System.Linq.WildCard`1.Target
+    name: Target
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.html
+  - name: .
+  - uid: System.Linq.WildCard`1.Target.NamedTarget
+    name: NamedTarget
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.NamedTarget.html
+- uid: System.Linq.WildCard`1.Target.NamedTarget.Named*
+  commentId: Overload:System.Linq.WildCard`1.Target.NamedTarget.Named
+  isExternal: true
+  href: System.Linq.WildCard-1.Target.NamedTarget.html#System_Linq_WildCard_1_Target_NamedTarget_Named_System_String___
+  name: Named
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.Named
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.Named
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.Named
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.Named
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Linq.WildCard`1.Target.NamedTarget.ButNamed*
+  commentId: Overload:System.Linq.WildCard`1.Target.NamedTarget.ButNamed
+  isExternal: true
+  href: System.Linq.WildCard-1.Target.NamedTarget.html#System_Linq_WildCard_1_Target_NamedTarget_ButNamed_System_String___
+  name: ButNamed
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.ButNamed
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.ButNamed
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.ButNamed
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.ButNamed
+- uid: System.Linq.WildCard`1.Target.NamedTarget.NotNamed*
+  commentId: Overload:System.Linq.WildCard`1.Target.NamedTarget.NotNamed
+  isExternal: true
+  href: System.Linq.WildCard-1.Target.NamedTarget.html#System_Linq_WildCard_1_Target_NamedTarget_NotNamed_System_String___
+  name: NotNamed
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.NotNamed
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.NotNamed
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.NotNamed
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.NotNamed
+- uid: System.Linq.WildCard`1.Target.NamedTarget.ButNotNamed*
+  commentId: Overload:System.Linq.WildCard`1.Target.NamedTarget.ButNotNamed
+  isExternal: true
+  href: System.Linq.WildCard-1.Target.NamedTarget.html#System_Linq_WildCard_1_Target_NamedTarget_ButNotNamed_System_String___
+  name: ButNotNamed
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.ButNotNamed
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.ButNotNamed
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.ButNotNamed
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.ButNotNamed
+- uid: System.Linq.WildCard`1.Target.NamedTarget.AllProperties*
+  commentId: Overload:System.Linq.WildCard`1.Target.NamedTarget.AllProperties
+  isExternal: true
+  href: System.Linq.WildCard-1.Target.NamedTarget.html#System_Linq_WildCard_1_Target_NamedTarget_AllProperties
+  name: AllProperties
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.AllProperties
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.AllProperties
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.AllProperties
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.AllProperties
+- uid: System.Linq.WildCard`1.Target.NamedTarget.For*
+  commentId: Overload:System.Linq.WildCard`1.Target.NamedTarget.For
+  isExternal: true
+  href: System.Linq.WildCard-1.Target.NamedTarget.html#System_Linq_WildCard_1_Target_NamedTarget_For
+  name: For
+  nameWithType: WildCard<TSearch>.Target.NamedTarget.For
+  fullName: System.Linq.WildCard<TSearch>.Target.NamedTarget.For
+  nameWithType.vb: WildCard(Of TSearch).Target.NamedTarget.For
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.NamedTarget.For
+- uid: System.Linq.WildCard`1.Target.SearchFor
+  commentId: T:System.Linq.WildCard`1.Target.SearchFor
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard-1.html
+  name: WildCard<TSearch>.Target.SearchFor
+  nameWithType: WildCard<TSearch>.Target.SearchFor
+  fullName: System.Linq.WildCard<TSearch>.Target.SearchFor
+  nameWithType.vb: WildCard(Of TSearch).Target.SearchFor
+  fullName.vb: System.Linq.WildCard(Of TSearch).Target.SearchFor
+  name.vb: WildCard(Of TSearch).Target.SearchFor
+  spec.csharp:
+  - uid: System.Linq.WildCard`1
+    name: WildCard
+    isExternal: true
+    href: System.Linq.WildCard-1.html
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: .
+  - uid: System.Linq.WildCard`1.Target
+    name: Target
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.html
+  - name: .
+  - uid: System.Linq.WildCard`1.Target.SearchFor
+    name: SearchFor
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.SearchFor.html
+  spec.vb:
+  - uid: System.Linq.WildCard`1
+    name: WildCard
+    isExternal: true
+    href: System.Linq.WildCard-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: .
+  - uid: System.Linq.WildCard`1.Target
+    name: Target
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.html
+  - name: .
+  - uid: System.Linq.WildCard`1.Target.SearchFor
+    name: SearchFor
+    isExternal: true
+    href: System.Linq.WildCard-1.Target.SearchFor.html

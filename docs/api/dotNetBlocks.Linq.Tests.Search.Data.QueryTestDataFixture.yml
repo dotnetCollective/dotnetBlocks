@@ -1,0 +1,110 @@
+### YamlMime:ApiPage
+title: Class QueryTestDataFixture
+body:
+- api1: Class QueryTestDataFixture
+  id: dotNetBlocks_Linq_Tests_Search_Data_QueryTestDataFixture
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture
+    commentId: T:dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture
+- facts:
+  - name: Namespace
+    value:
+      text: dotNetBlocks.Linq.Tests.Search.Data
+      url: dotNetBlocks.Linq.Tests.Search.Data.html
+  - name: Assembly
+    value: dotNetBlocks.Linq.Tests.dll
+- code: 'public class QueryTestDataFixture : IDisposable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: QueryTestDataFixture
+    url: dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.html
+- h4: Implements
+- list:
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h4: Inherited Members
+- list:
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<QueryTestDataFixture>(QueryTestDataFixture)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryTestDataFixture>(QueryTestDataFixture)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryTestDataFixture>(QueryTestDataFixture)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryTestDataFixture>(QueryTestDataFixture)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryTestDataFixture>(QueryTestDataFixture)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryTestDataFixture>(QueryTestDataFixture)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryTestDataFixture>(QueryTestDataFixture)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryTestDataFixture>(QueryTestDataFixture)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: WildCard.Search<QueryTestDataFixture>(QueryTestDataFixture)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<QueryTestDataFixture>(QueryTestDataFixture)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<QueryTestDataFixture>(QueryTestDataFixture)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+- h2: Constructors
+- api3: QueryTestDataFixture()
+  id: dotNetBlocks_Linq_Tests_Search_Data_QueryTestDataFixture__ctor
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.#ctor
+    commentId: M:dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.#ctor
+- code: public QueryTestDataFixture()
+- h2: Properties
+- api3: Db
+  id: dotNetBlocks_Linq_Tests_Search_Data_QueryTestDataFixture_Db
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.Db
+    commentId: P:dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.Db
+- code: public SearchItemContext Db { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: SearchItemContext
+      url: SearchItemContext.html
+- api3: ThreadLock
+  id: dotNetBlocks_Linq_Tests_Search_Data_QueryTestDataFixture_ThreadLock
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.ThreadLock
+    commentId: P:dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.ThreadLock
+- code: public SemaphoreSlim ThreadLock { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: SemaphoreSlim
+      url: https://learn.microsoft.com/dotnet/api/system.threading.semaphoreslim
+- h2: Methods
+- api3: BuildDatabase()
+  id: dotNetBlocks_Linq_Tests_Search_Data_QueryTestDataFixture_BuildDatabase
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.BuildDatabase
+    commentId: M:dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.BuildDatabase
+- code: public void BuildDatabase()
+- api3: Dispose()
+  id: dotNetBlocks_Linq_Tests_Search_Data_QueryTestDataFixture_Dispose
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.Dispose
+    commentId: M:dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.Dispose
+- code: public void Dispose()
+languageId: csharp

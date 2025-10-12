@@ -1,0 +1,798 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.Business.Shared.AuditProperties
+  commentId: T:dotNetBlocks.Business.Shared.AuditProperties
+  id: AuditProperties
+  parent: dotNetBlocks.Business.Shared
+  children:
+  - dotNetBlocks.Business.Shared.AuditProperties.#ctor
+  - dotNetBlocks.Business.Shared.AuditProperties.CreatedAt
+  - dotNetBlocks.Business.Shared.AuditProperties.CreatedBy
+  - dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt
+  - dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy
+  langs:
+  - csharp
+  - vb
+  name: AuditProperties
+  nameWithType: AuditProperties
+  fullName: dotNetBlocks.Business.Shared.AuditProperties
+  type: Class
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditProperties.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  syntax:
+    content: 'public class AuditProperties : IAuditable'
+    content.vb: Public Class AuditProperties Implements IAuditable
+  inheritance:
+  - System.Object
+  implements:
+  - dotNetBlocks.IAuditable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - dotNetBlocks.Business.Shared.AuditProperties.System.Linq.WildCard.Search``1
+  - dotNetBlocks.Business.Shared.AuditProperties.System.Linq.WildCard.Search``1
+  - dotNetBlocks.Business.Shared.AuditProperties.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.Business.Shared.AuditProperties.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.Business.Shared.AuditProperties.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.Business.Shared.AuditProperties.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.Business.Shared.AuditProperties.System.SystemExtensions.AsLazy``1
+- uid: dotNetBlocks.Business.Shared.AuditProperties.#ctor
+  commentId: M:dotNetBlocks.Business.Shared.AuditProperties.#ctor
+  id: '#ctor'
+  parent: dotNetBlocks.Business.Shared.AuditProperties
+  langs:
+  - csharp
+  - vb
+  name: AuditProperties()
+  nameWithType: AuditProperties.AuditProperties()
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.AuditProperties()
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditProperties.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  syntax:
+    content: public AuditProperties()
+    content.vb: Public Sub New()
+  overload: dotNetBlocks.Business.Shared.AuditProperties.#ctor*
+  nameWithType.vb: AuditProperties.New()
+  fullName.vb: dotNetBlocks.Business.Shared.AuditProperties.New()
+  name.vb: New()
+- uid: dotNetBlocks.Business.Shared.AuditProperties.CreatedAt
+  commentId: P:dotNetBlocks.Business.Shared.AuditProperties.CreatedAt
+  id: CreatedAt
+  parent: dotNetBlocks.Business.Shared.AuditProperties
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: AuditProperties.CreatedAt
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.CreatedAt
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditProperties.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  example: []
+  syntax:
+    content: public DateTimeOffset? CreatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property CreatedAt As DateTimeOffset?
+  overload: dotNetBlocks.Business.Shared.AuditProperties.CreatedAt*
+  implements:
+  - dotNetBlocks.IAuditable.CreatedAt
+- uid: dotNetBlocks.Business.Shared.AuditProperties.CreatedBy
+  commentId: P:dotNetBlocks.Business.Shared.AuditProperties.CreatedBy
+  id: CreatedBy
+  parent: dotNetBlocks.Business.Shared.AuditProperties
+  langs:
+  - csharp
+  - vb
+  name: CreatedBy
+  nameWithType: AuditProperties.CreatedBy
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.CreatedBy
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditProperties.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  example: []
+  syntax:
+    content: public string? CreatedBy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CreatedBy As String
+  overload: dotNetBlocks.Business.Shared.AuditProperties.CreatedBy*
+  implements:
+  - dotNetBlocks.IAuditable.CreatedBy
+- uid: dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt
+  commentId: P:dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt
+  id: UpdatedAt
+  parent: dotNetBlocks.Business.Shared.AuditProperties
+  langs:
+  - csharp
+  - vb
+  name: UpdatedAt
+  nameWithType: AuditProperties.UpdatedAt
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditProperties.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  example: []
+  syntax:
+    content: public DateTimeOffset? UpdatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property UpdatedAt As DateTimeOffset?
+  overload: dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt*
+  implements:
+  - dotNetBlocks.IAuditable.UpdatedAt
+- uid: dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy
+  commentId: P:dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy
+  id: UpdatedBy
+  parent: dotNetBlocks.Business.Shared.AuditProperties
+  langs:
+  - csharp
+  - vb
+  name: UpdatedBy
+  nameWithType: AuditProperties.UpdatedBy
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditProperties.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  example: []
+  syntax:
+    content: public string? UpdatedBy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UpdatedBy As String
+  overload: dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy*
+  implements:
+  - dotNetBlocks.IAuditable.UpdatedBy
+references:
+- uid: dotNetBlocks.Business.Shared
+  commentId: N:dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.html
+  name: dotNetBlocks.Business.Shared
+  nameWithType: dotNetBlocks.Business.Shared
+  fullName: dotNetBlocks.Business.Shared
+  spec.csharp:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.Business
+    name: Business
+    isExternal: true
+    href: dotNetBlocks.Business.html
+  - name: .
+  - uid: dotNetBlocks.Business.Shared
+    name: Shared
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.html
+  spec.vb:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.Business
+    name: Business
+    isExternal: true
+    href: dotNetBlocks.Business.html
+  - name: .
+  - uid: dotNetBlocks.Business.Shared
+    name: Shared
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: dotNetBlocks.IAuditable
+  commentId: T:dotNetBlocks.IAuditable
+  parent: dotNetBlocks
+  isExternal: true
+  href: dotNetBlocks.IAuditable.html
+  name: IAuditable
+  nameWithType: IAuditable
+  fullName: dotNetBlocks.IAuditable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: dotNetBlocks.Business.Shared.AuditProperties.System.Linq.WildCard.Search``1
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  parent: System.Linq.WildCard
+  definition: System.Linq.WildCard.Search``1(``0)
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<AuditProperties>(AuditProperties)
+  nameWithType: WildCard.Search<AuditProperties>(AuditProperties)
+  fullName: System.Linq.WildCard.Search<dotNetBlocks.Business.Shared.AuditProperties>(dotNetBlocks.Business.Shared.AuditProperties)
+  nameWithType.vb: WildCard.Search(Of AuditProperties)(AuditProperties)
+  fullName.vb: System.Linq.WildCard.Search(Of dotNetBlocks.Business.Shared.AuditProperties)(dotNetBlocks.Business.Shared.AuditProperties)
+  name.vb: Search(Of AuditProperties)(AuditProperties)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(dotNetBlocks.Business.Shared.AuditProperties)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - uid: dotNetBlocks.Business.Shared.AuditProperties
+    name: AuditProperties
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.AuditProperties.html
+  - name: '>'
+  - name: (
+  - uid: dotNetBlocks.Business.Shared.AuditProperties
+    name: AuditProperties
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.AuditProperties.html
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(dotNetBlocks.Business.Shared.AuditProperties)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: dotNetBlocks.Business.Shared.AuditProperties
+    name: AuditProperties
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.AuditProperties.html
+  - name: )
+  - name: (
+  - uid: dotNetBlocks.Business.Shared.AuditProperties
+    name: AuditProperties
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.AuditProperties.html
+  - name: )
+- uid: dotNetBlocks.Business.Shared.AuditProperties.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<AuditProperties>(AuditProperties)
+  nameWithType: SystemExtensions.AsLazy<AuditProperties>(AuditProperties)
+  fullName: System.SystemExtensions.AsLazy<dotNetBlocks.Business.Shared.AuditProperties>(dotNetBlocks.Business.Shared.AuditProperties)
+  nameWithType.vb: SystemExtensions.AsLazy(Of AuditProperties)(AuditProperties)
+  fullName.vb: System.SystemExtensions.AsLazy(Of dotNetBlocks.Business.Shared.AuditProperties)(dotNetBlocks.Business.Shared.AuditProperties)
+  name.vb: AsLazy(Of AuditProperties)(AuditProperties)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(dotNetBlocks.Business.Shared.AuditProperties)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: dotNetBlocks.Business.Shared.AuditProperties
+    name: AuditProperties
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.AuditProperties.html
+  - name: '>'
+  - name: (
+  - uid: dotNetBlocks.Business.Shared.AuditProperties
+    name: AuditProperties
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.AuditProperties.html
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(dotNetBlocks.Business.Shared.AuditProperties)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: dotNetBlocks.Business.Shared.AuditProperties
+    name: AuditProperties
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.AuditProperties.html
+  - name: )
+  - name: (
+  - uid: dotNetBlocks.Business.Shared.AuditProperties
+    name: AuditProperties
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.AuditProperties.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: dotNetBlocks
+  commentId: N:dotNetBlocks
+  isExternal: true
+  href: dotNetBlocks.html
+  name: dotNetBlocks
+  nameWithType: dotNetBlocks
+  fullName: dotNetBlocks
+- uid: System.Linq.WildCard.Search``1(``0)
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  isExternal: true
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<TSearch>(TSearch)
+  nameWithType: WildCard.Search<TSearch>(TSearch)
+  fullName: System.Linq.WildCard.Search<TSearch>(TSearch)
+  nameWithType.vb: WildCard.Search(Of TSearch)(TSearch)
+  fullName.vb: System.Linq.WildCard.Search(Of TSearch)(TSearch)
+  name.vb: Search(Of TSearch)(TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: (
+  - name: TSearch
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: (
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard
+  commentId: T:System.Linq.WildCard
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard.html
+  name: WildCard
+  nameWithType: WildCard
+  fullName: System.Linq.WildCard
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: System.html
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+- uid: dotNetBlocks.Business.Shared.AuditProperties.#ctor*
+  commentId: Overload:dotNetBlocks.Business.Shared.AuditProperties.#ctor
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.AuditProperties.html#dotNetBlocks_Business_Shared_AuditProperties__ctor
+  name: AuditProperties
+  nameWithType: AuditProperties.AuditProperties
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.AuditProperties
+  nameWithType.vb: AuditProperties.New
+  fullName.vb: dotNetBlocks.Business.Shared.AuditProperties.New
+  name.vb: New
+- uid: dotNetBlocks.Business.Shared.AuditProperties.CreatedAt*
+  commentId: Overload:dotNetBlocks.Business.Shared.AuditProperties.CreatedAt
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.AuditProperties.html#dotNetBlocks_Business_Shared_AuditProperties_CreatedAt
+  name: CreatedAt
+  nameWithType: AuditProperties.CreatedAt
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.CreatedAt
+- uid: dotNetBlocks.IAuditable.CreatedAt
+  commentId: P:dotNetBlocks.IAuditable.CreatedAt
+  parent: dotNetBlocks.IAuditable
+  isExternal: true
+  href: dotNetBlocks.IAuditable.html#dotNetBlocks_IAuditable_CreatedAt
+  name: CreatedAt
+  nameWithType: IAuditable.CreatedAt
+  fullName: dotNetBlocks.IAuditable.CreatedAt
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset?
+  nameWithType: DateTimeOffset?
+  fullName: System.DateTimeOffset?
+  spec.csharp:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: dotNetBlocks.Business.Shared.AuditProperties.CreatedBy*
+  commentId: Overload:dotNetBlocks.Business.Shared.AuditProperties.CreatedBy
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.AuditProperties.html#dotNetBlocks_Business_Shared_AuditProperties_CreatedBy
+  name: CreatedBy
+  nameWithType: AuditProperties.CreatedBy
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.CreatedBy
+- uid: dotNetBlocks.IAuditable.CreatedBy
+  commentId: P:dotNetBlocks.IAuditable.CreatedBy
+  parent: dotNetBlocks.IAuditable
+  isExternal: true
+  href: dotNetBlocks.IAuditable.html#dotNetBlocks_IAuditable_CreatedBy
+  name: CreatedBy
+  nameWithType: IAuditable.CreatedBy
+  fullName: dotNetBlocks.IAuditable.CreatedBy
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt*
+  commentId: Overload:dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.AuditProperties.html#dotNetBlocks_Business_Shared_AuditProperties_UpdatedAt
+  name: UpdatedAt
+  nameWithType: AuditProperties.UpdatedAt
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt
+- uid: dotNetBlocks.IAuditable.UpdatedAt
+  commentId: P:dotNetBlocks.IAuditable.UpdatedAt
+  parent: dotNetBlocks.IAuditable
+  isExternal: true
+  href: dotNetBlocks.IAuditable.html#dotNetBlocks_IAuditable_UpdatedAt
+  name: UpdatedAt
+  nameWithType: IAuditable.UpdatedAt
+  fullName: dotNetBlocks.IAuditable.UpdatedAt
+- uid: dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy*
+  commentId: Overload:dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.AuditProperties.html#dotNetBlocks_Business_Shared_AuditProperties_UpdatedBy
+  name: UpdatedBy
+  nameWithType: AuditProperties.UpdatedBy
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy
+- uid: dotNetBlocks.IAuditable.UpdatedBy
+  commentId: P:dotNetBlocks.IAuditable.UpdatedBy
+  parent: dotNetBlocks.IAuditable
+  isExternal: true
+  href: dotNetBlocks.IAuditable.html#dotNetBlocks_IAuditable_UpdatedBy
+  name: UpdatedBy
+  nameWithType: IAuditable.UpdatedBy
+  fullName: dotNetBlocks.IAuditable.UpdatedBy

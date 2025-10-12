@@ -13,6 +13,10 @@ Automatically Only included in build if marked or detected as test project.
 		<AnalysisLevel>preview</AnalysisLevel>
 		<Features>strict</Features>
 		 <NoWarn>IDE1006</NoWarn> <!-- Ignore naming style warnings in test projects -->
+
+		<!-- No xml documentation-->
+    <GenerateDocumentationFile> False </GenerateDocumentationFile>
+
 	</PropertyGroup>
 
 	<ItemGroup >

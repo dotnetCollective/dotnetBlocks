@@ -1,0 +1,501 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.IO.StreamBuffer.BufferActionWithCancel
+  commentId: T:System.IO.StreamBuffer.BufferActionWithCancel
+  id: StreamBuffer.BufferActionWithCancel
+  parent: System.IO
+  children:
+  - System.IO.StreamBuffer.BufferActionWithCancel.#ctor(System.Object,System.IntPtr)
+  - System.IO.StreamBuffer.BufferActionWithCancel.BeginInvoke(System.IO.Stream,System.Threading.CancellationToken,System.AsyncCallback,System.Object)
+  - System.IO.StreamBuffer.BufferActionWithCancel.EndInvoke(System.IAsyncResult)
+  - System.IO.StreamBuffer.BufferActionWithCancel.Invoke(System.IO.Stream,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: StreamBuffer.BufferActionWithCancel
+  nameWithType: StreamBuffer.BufferActionWithCancel
+  fullName: System.IO.StreamBuffer.BufferActionWithCancel
+  type: Delegate
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public delegate void StreamBuffer.BufferActionWithCancel(Stream stream, CancellationToken cancellationToken)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    content.vb: Public Delegate Sub StreamBuffer.BufferActionWithCancel(stream As Stream, cancellationToken As CancellationToken)
+  extensionMethods:
+  - System.IO.StreamBuffer.BufferActionWithCancel.System.Linq.WildCard.Search``1
+  - System.IO.StreamBuffer.BufferActionWithCancel.System.Linq.WildCard.Search``1
+  - System.IO.StreamBuffer.BufferActionWithCancel.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.BufferActionWithCancel.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.BufferActionWithCancel.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.BufferActionWithCancel.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.BufferActionWithCancel.System.SystemExtensions.AsLazy``1
+- uid: System.IO.StreamBuffer.BufferActionWithCancel.#ctor(System.Object,System.IntPtr)
+  commentId: M:System.IO.StreamBuffer.BufferActionWithCancel.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: System.IO.StreamBuffer.BufferActionWithCancel
+  langs:
+  - csharp
+  - vb
+  name: BufferActionWithCancel(object, nint)
+  nameWithType: StreamBuffer.BufferActionWithCancel.BufferActionWithCancel(object, nint)
+  fullName: System.IO.StreamBuffer.BufferActionWithCancel.BufferActionWithCancel(object, nint)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public BufferActionWithCancel(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: System.IO.StreamBuffer.BufferActionWithCancel.#ctor*
+  nameWithType.vb: StreamBuffer.BufferActionWithCancel.New(Object, IntPtr)
+  fullName.vb: System.IO.StreamBuffer.BufferActionWithCancel.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: System.IO.StreamBuffer.BufferActionWithCancel.Invoke(System.IO.Stream,System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.BufferActionWithCancel.Invoke(System.IO.Stream,System.Threading.CancellationToken)
+  id: Invoke(System.IO.Stream,System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer.BufferActionWithCancel
+  langs:
+  - csharp
+  - vb
+  name: Invoke(Stream, CancellationToken)
+  nameWithType: StreamBuffer.BufferActionWithCancel.Invoke(Stream, CancellationToken)
+  fullName: System.IO.StreamBuffer.BufferActionWithCancel.Invoke(System.IO.Stream, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public virtual void Invoke(Stream stream, CancellationToken cancellationToken)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    content.vb: Public Overridable Sub Invoke(stream As Stream, cancellationToken As CancellationToken)
+  overload: System.IO.StreamBuffer.BufferActionWithCancel.Invoke*
+- uid: System.IO.StreamBuffer.BufferActionWithCancel.BeginInvoke(System.IO.Stream,System.Threading.CancellationToken,System.AsyncCallback,System.Object)
+  commentId: M:System.IO.StreamBuffer.BufferActionWithCancel.BeginInvoke(System.IO.Stream,System.Threading.CancellationToken,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.IO.Stream,System.Threading.CancellationToken,System.AsyncCallback,System.Object)
+  parent: System.IO.StreamBuffer.BufferActionWithCancel
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(Stream, CancellationToken, AsyncCallback, object)
+  nameWithType: StreamBuffer.BufferActionWithCancel.BeginInvoke(Stream, CancellationToken, AsyncCallback, object)
+  fullName: System.IO.StreamBuffer.BufferActionWithCancel.BeginInvoke(System.IO.Stream, System.Threading.CancellationToken, System.AsyncCallback, object)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(Stream stream, CancellationToken cancellationToken, AsyncCallback callback, object @object)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(stream As Stream, cancellationToken As CancellationToken, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: System.IO.StreamBuffer.BufferActionWithCancel.BeginInvoke*
+  nameWithType.vb: StreamBuffer.BufferActionWithCancel.BeginInvoke(Stream, CancellationToken, AsyncCallback, Object)
+  fullName.vb: System.IO.StreamBuffer.BufferActionWithCancel.BeginInvoke(System.IO.Stream, System.Threading.CancellationToken, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(Stream, CancellationToken, AsyncCallback, Object)
+- uid: System.IO.StreamBuffer.BufferActionWithCancel.EndInvoke(System.IAsyncResult)
+  commentId: M:System.IO.StreamBuffer.BufferActionWithCancel.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: System.IO.StreamBuffer.BufferActionWithCancel
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: StreamBuffer.BufferActionWithCancel.EndInvoke(IAsyncResult)
+  fullName: System.IO.StreamBuffer.BufferActionWithCancel.EndInvoke(System.IAsyncResult)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: System.IO.StreamBuffer.BufferActionWithCancel.EndInvoke*
+references:
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: System.html
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+- uid: System.IO.StreamBuffer.BufferActionWithCancel.System.Linq.WildCard.Search``1
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  parent: System.Linq.WildCard
+  definition: System.Linq.WildCard.Search``1(``0)
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<BufferActionWithCancel>(BufferActionWithCancel)
+  nameWithType: WildCard.Search<StreamBuffer.BufferActionWithCancel>(StreamBuffer.BufferActionWithCancel)
+  fullName: System.Linq.WildCard.Search<System.IO.StreamBuffer.BufferActionWithCancel>(System.IO.StreamBuffer.BufferActionWithCancel)
+  nameWithType.vb: WildCard.Search(Of StreamBuffer.BufferActionWithCancel)(StreamBuffer.BufferActionWithCancel)
+  fullName.vb: System.Linq.WildCard.Search(Of System.IO.StreamBuffer.BufferActionWithCancel)(System.IO.StreamBuffer.BufferActionWithCancel)
+  name.vb: Search(Of BufferActionWithCancel)(BufferActionWithCancel)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(System.IO.StreamBuffer.BufferActionWithCancel)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - uid: System.IO.StreamBuffer.BufferActionWithCancel
+    name: BufferActionWithCancel
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferActionWithCancel.html
+  - name: '>'
+  - name: (
+  - uid: System.IO.StreamBuffer.BufferActionWithCancel
+    name: BufferActionWithCancel
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferActionWithCancel.html
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(System.IO.StreamBuffer.BufferActionWithCancel)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.StreamBuffer.BufferActionWithCancel
+    name: BufferActionWithCancel
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferActionWithCancel.html
+  - name: )
+  - name: (
+  - uid: System.IO.StreamBuffer.BufferActionWithCancel
+    name: BufferActionWithCancel
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferActionWithCancel.html
+  - name: )
+- uid: System.IO.StreamBuffer.BufferActionWithCancel.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<BufferActionWithCancel>(BufferActionWithCancel)
+  nameWithType: SystemExtensions.AsLazy<StreamBuffer.BufferActionWithCancel>(StreamBuffer.BufferActionWithCancel)
+  fullName: System.SystemExtensions.AsLazy<System.IO.StreamBuffer.BufferActionWithCancel>(System.IO.StreamBuffer.BufferActionWithCancel)
+  nameWithType.vb: SystemExtensions.AsLazy(Of StreamBuffer.BufferActionWithCancel)(StreamBuffer.BufferActionWithCancel)
+  fullName.vb: System.SystemExtensions.AsLazy(Of System.IO.StreamBuffer.BufferActionWithCancel)(System.IO.StreamBuffer.BufferActionWithCancel)
+  name.vb: AsLazy(Of BufferActionWithCancel)(BufferActionWithCancel)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(System.IO.StreamBuffer.BufferActionWithCancel)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: System.IO.StreamBuffer.BufferActionWithCancel
+    name: BufferActionWithCancel
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferActionWithCancel.html
+  - name: '>'
+  - name: (
+  - uid: System.IO.StreamBuffer.BufferActionWithCancel
+    name: BufferActionWithCancel
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferActionWithCancel.html
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(System.IO.StreamBuffer.BufferActionWithCancel)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.StreamBuffer.BufferActionWithCancel
+    name: BufferActionWithCancel
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferActionWithCancel.html
+  - name: )
+  - name: (
+  - uid: System.IO.StreamBuffer.BufferActionWithCancel
+    name: BufferActionWithCancel
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferActionWithCancel.html
+  - name: )
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Linq.WildCard.Search``1(``0)
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  isExternal: true
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<TSearch>(TSearch)
+  nameWithType: WildCard.Search<TSearch>(TSearch)
+  fullName: System.Linq.WildCard.Search<TSearch>(TSearch)
+  nameWithType.vb: WildCard.Search(Of TSearch)(TSearch)
+  fullName.vb: System.Linq.WildCard.Search(Of TSearch)(TSearch)
+  name.vb: Search(Of TSearch)(TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: (
+  - name: TSearch
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: (
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard
+  commentId: T:System.Linq.WildCard
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard.html
+  name: WildCard
+  nameWithType: WildCard
+  fullName: System.Linq.WildCard
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: System.html
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IO.StreamBuffer.BufferActionWithCancel.#ctor*
+  commentId: Overload:System.IO.StreamBuffer.BufferActionWithCancel.#ctor
+  isExternal: true
+  href: System.IO.StreamBuffer.BufferActionWithCancel.html#System_IO_StreamBuffer_BufferActionWithCancel__ctor_System_Object_System_IntPtr_
+  name: BufferActionWithCancel
+  nameWithType: StreamBuffer.BufferActionWithCancel.BufferActionWithCancel
+  fullName: System.IO.StreamBuffer.BufferActionWithCancel.BufferActionWithCancel
+  nameWithType.vb: StreamBuffer.BufferActionWithCancel.New
+  fullName.vb: System.IO.StreamBuffer.BufferActionWithCancel.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: System.IO.StreamBuffer.BufferActionWithCancel.Invoke*
+  commentId: Overload:System.IO.StreamBuffer.BufferActionWithCancel.Invoke
+  isExternal: true
+  href: System.IO.StreamBuffer.BufferActionWithCancel.html#System_IO_StreamBuffer_BufferActionWithCancel_Invoke_System_IO_Stream_System_Threading_CancellationToken_
+  name: Invoke
+  nameWithType: StreamBuffer.BufferActionWithCancel.Invoke
+  fullName: System.IO.StreamBuffer.BufferActionWithCancel.Invoke
+- uid: System.IO.StreamBuffer.BufferActionWithCancel.BeginInvoke*
+  commentId: Overload:System.IO.StreamBuffer.BufferActionWithCancel.BeginInvoke
+  isExternal: true
+  href: System.IO.StreamBuffer.BufferActionWithCancel.html#System_IO_StreamBuffer_BufferActionWithCancel_BeginInvoke_System_IO_Stream_System_Threading_CancellationToken_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: StreamBuffer.BufferActionWithCancel.BeginInvoke
+  fullName: System.IO.StreamBuffer.BufferActionWithCancel.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: System.IO.StreamBuffer.BufferActionWithCancel.EndInvoke*
+  commentId: Overload:System.IO.StreamBuffer.BufferActionWithCancel.EndInvoke
+  isExternal: true
+  href: System.IO.StreamBuffer.BufferActionWithCancel.html#System_IO_StreamBuffer_BufferActionWithCancel_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: StreamBuffer.BufferActionWithCancel.EndInvoke
+  fullName: System.IO.StreamBuffer.BufferActionWithCancel.EndInvoke

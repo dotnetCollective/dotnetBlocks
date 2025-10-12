@@ -1,0 +1,14 @@
+### YamlMime:ApiPage
+title: Namespace dotNetBlocks.ServiceBus.Tests
+body:
+- api1: Namespace dotNetBlocks.ServiceBus.Tests
+  id: dotNetBlocks_ServiceBus_Tests
+  metadata:
+    uid: dotNetBlocks.ServiceBus.Tests
+    commentId: N:dotNetBlocks.ServiceBus.Tests
+- h3: Classes
+- parameters:
+  - type:
+      text: BasicInMemoryTests
+      url: dotNetBlocks.ServiceBus.Tests.BasicInMemoryTests.html
+languageId: csharp

@@ -10,6 +10,10 @@
 
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 
+    <ImplicitUsings> enable </ImplicitUsings>
+
+    <!-- Generate xml documentation-->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
   </PropertyGroup>
 

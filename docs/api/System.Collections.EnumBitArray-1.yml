@@ -1,0 +1,2239 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Collections.EnumBitArray`1
+  commentId: T:System.Collections.EnumBitArray`1
+  id: EnumBitArray`1
+  parent: System.Collections
+  children:
+  - System.Collections.EnumBitArray`1.#ctor
+  - System.Collections.EnumBitArray`1.#ctor(System.Collections.BitArray)
+  - System.Collections.EnumBitArray`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.EnumBitArray`1.#ctor(`0)
+  - System.Collections.EnumBitArray`1.And(System.Collections.EnumBitArray{`0})
+  - System.Collections.EnumBitArray`1.And(`0)
+  - System.Collections.EnumBitArray`1.Count
+  - System.Collections.EnumBitArray`1.Equals(System.Collections.BitArray,System.Collections.BitArray)
+  - System.Collections.EnumBitArray`1.Equals(System.Collections.EnumBitArray{`0})
+  - System.Collections.EnumBitArray`1.Equals(System.Object)
+  - System.Collections.EnumBitArray`1.Equals(`0)
+  - System.Collections.EnumBitArray`1.Flags
+  - System.Collections.EnumBitArray`1.GetFlags
+  - System.Collections.EnumBitArray`1.GetHashCode
+  - System.Collections.EnumBitArray`1.GetSetEnums
+  - System.Collections.EnumBitArray`1.HasAllSet
+  - System.Collections.EnumBitArray`1.HasAnySet
+  - System.Collections.EnumBitArray`1.HasFlag(`0)
+  - System.Collections.EnumBitArray`1.HasOtherFlags(`0)
+  - System.Collections.EnumBitArray`1.IsSet(`0)
+  - System.Collections.EnumBitArray`1.Item(`0)
+  - System.Collections.EnumBitArray`1.Length
+  - System.Collections.EnumBitArray`1.Not
+  - System.Collections.EnumBitArray`1.Or(System.Collections.EnumBitArray{`0})
+  - System.Collections.EnumBitArray`1.Or(`0)
+  - System.Collections.EnumBitArray`1.Set(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.EnumBitArray`1.Set(`0)
+  - System.Collections.EnumBitArray`1.ToFlagIndex(`0)
+  - System.Collections.EnumBitArray`1.ToString
+  - System.Collections.EnumBitArray`1.UnSet(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.EnumBitArray`1.UnSet(`0)
+  - System.Collections.EnumBitArray`1.Zero
+  - System.Collections.EnumBitArray`1.op_BitwiseOr(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})
+  - System.Collections.EnumBitArray`1.op_BitwiseOr(System.Collections.EnumBitArray{`0},`0)
+  - System.Collections.EnumBitArray`1.op_Equality(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})
+  - System.Collections.EnumBitArray`1.op_Equality(System.Collections.EnumBitArray{`0},`0)
+  - System.Collections.EnumBitArray`1.op_Explicit(System.Collections.BitArray)~System.Collections.EnumBitArray{`0}
+  - System.Collections.EnumBitArray`1.op_Explicit(System.Collections.EnumBitArray{`0})~System.Collections.BitArray
+  - System.Collections.EnumBitArray`1.op_Implicit(`0)~System.Collections.EnumBitArray{`0}
+  - System.Collections.EnumBitArray`1.op_Inequality(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})
+  - System.Collections.EnumBitArray`1.op_Inequality(System.Collections.EnumBitArray{`0},`0)
+  - System.Collections.EnumBitArray`1.op_LogicalNot(System.Collections.EnumBitArray{`0})
+  - System.Collections.EnumBitArray`1.op_OnesComplement(System.Collections.EnumBitArray{`0})
+  langs:
+  - csharp
+  - vb
+  name: EnumBitArray<TEnum>
+  nameWithType: EnumBitArray<TEnum>
+  fullName: System.Collections.EnumBitArray<TEnum>
+  type: Class
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: 'public class EnumBitArray<TEnum> where TEnum : struct, Enum'
+    typeParameters:
+    - id: TEnum
+    content.vb: Public Class EnumBitArray(Of TEnum As {Structure, [Enum]})
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - System.Collections.EnumBitArray`1.System.Linq.WildCard.Search``1
+  - System.Collections.EnumBitArray`1.System.Linq.WildCard.Search``1
+  - System.Collections.EnumBitArray`1.System.SystemExtensions.AsLazy``1
+  - System.Collections.EnumBitArray`1.System.SystemExtensions.AsLazy``1
+  - System.Collections.EnumBitArray`1.System.SystemExtensions.AsLazy``1
+  - System.Collections.EnumBitArray`1.System.SystemExtensions.AsLazy``1
+  - System.Collections.EnumBitArray`1.System.SystemExtensions.AsLazy``1
+  nameWithType.vb: EnumBitArray(Of TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum)
+  name.vb: EnumBitArray(Of TEnum)
+- uid: System.Collections.EnumBitArray`1.Zero
+  commentId: F:System.Collections.EnumBitArray`1.Zero
+  id: Zero
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: EnumBitArray<TEnum>.Zero
+  fullName: System.Collections.EnumBitArray<TEnum>.Zero
+  type: Field
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public static EnumBitArray<TEnum> Zero
+    return:
+      type: System.Collections.EnumBitArray`1
+    content.vb: Public Shared Zero As EnumBitArray(Of TEnum)
+  nameWithType.vb: EnumBitArray(Of TEnum).Zero
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Zero
+- uid: System.Collections.EnumBitArray`1.#ctor
+  commentId: M:System.Collections.EnumBitArray`1.#ctor
+  id: '#ctor'
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: EnumBitArray()
+  nameWithType: EnumBitArray<TEnum>.EnumBitArray()
+  fullName: System.Collections.EnumBitArray<TEnum>.EnumBitArray()
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public EnumBitArray()
+    content.vb: Public Sub New()
+  overload: System.Collections.EnumBitArray`1.#ctor*
+  nameWithType.vb: EnumBitArray(Of TEnum).New()
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).New()
+  name.vb: New()
+- uid: System.Collections.EnumBitArray`1.#ctor(System.Collections.BitArray)
+  commentId: M:System.Collections.EnumBitArray`1.#ctor(System.Collections.BitArray)
+  id: '#ctor(System.Collections.BitArray)'
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: EnumBitArray(BitArray)
+  nameWithType: EnumBitArray<TEnum>.EnumBitArray(BitArray)
+  fullName: System.Collections.EnumBitArray<TEnum>.EnumBitArray(System.Collections.BitArray)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public EnumBitArray(BitArray flags)
+    parameters:
+    - id: flags
+      type: System.Collections.BitArray
+    content.vb: Public Sub New(flags As BitArray)
+  overload: System.Collections.EnumBitArray`1.#ctor*
+  nameWithType.vb: EnumBitArray(Of TEnum).New(BitArray)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).New(System.Collections.BitArray)
+  name.vb: New(BitArray)
+- uid: System.Collections.EnumBitArray`1.#ctor(`0)
+  commentId: M:System.Collections.EnumBitArray`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: EnumBitArray(TEnum)
+  nameWithType: EnumBitArray<TEnum>.EnumBitArray(TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.EnumBitArray(TEnum)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public EnumBitArray(TEnum flag)
+    parameters:
+    - id: flag
+      type: '{TEnum}'
+    content.vb: Public Sub New(flag As TEnum)
+  overload: System.Collections.EnumBitArray`1.#ctor*
+  nameWithType.vb: EnumBitArray(Of TEnum).New(TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).New(TEnum)
+  name.vb: New(TEnum)
+- uid: System.Collections.EnumBitArray`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:System.Collections.EnumBitArray`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  id: '#ctor(System.Collections.Generic.IEnumerable{`0})'
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: EnumBitArray(IEnumerable<TEnum>)
+  nameWithType: EnumBitArray<TEnum>.EnumBitArray(IEnumerable<TEnum>)
+  fullName: System.Collections.EnumBitArray<TEnum>.EnumBitArray(System.Collections.Generic.IEnumerable<TEnum>)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: protected EnumBitArray(IEnumerable<TEnum> flags)
+    parameters:
+    - id: flags
+      type: System.Collections.Generic.IEnumerable{{TEnum}}
+    content.vb: Protected Sub New(flags As IEnumerable(Of TEnum))
+  overload: System.Collections.EnumBitArray`1.#ctor*
+  nameWithType.vb: EnumBitArray(Of TEnum).New(IEnumerable(Of TEnum))
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).New(System.Collections.Generic.IEnumerable(Of TEnum))
+  name.vb: New(IEnumerable(Of TEnum))
+- uid: System.Collections.EnumBitArray`1.ToFlagIndex(`0)
+  commentId: M:System.Collections.EnumBitArray`1.ToFlagIndex(`0)
+  id: ToFlagIndex(`0)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: ToFlagIndex(TEnum)
+  nameWithType: EnumBitArray<TEnum>.ToFlagIndex(TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.ToFlagIndex(TEnum)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: protected static int ToFlagIndex(TEnum enumValue)
+    parameters:
+    - id: enumValue
+      type: '{TEnum}'
+    return:
+      type: System.Int32
+    content.vb: Protected Shared Function ToFlagIndex(enumValue As TEnum) As Integer
+  overload: System.Collections.EnumBitArray`1.ToFlagIndex*
+  nameWithType.vb: EnumBitArray(Of TEnum).ToFlagIndex(TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).ToFlagIndex(TEnum)
+- uid: System.Collections.EnumBitArray`1.op_Equality(System.Collections.EnumBitArray{`0},`0)
+  commentId: M:System.Collections.EnumBitArray`1.op_Equality(System.Collections.EnumBitArray{`0},`0)
+  id: op_Equality(System.Collections.EnumBitArray{`0},`0)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: operator ==(EnumBitArray<TEnum>, TEnum)
+  nameWithType: EnumBitArray<TEnum>.operator ==(EnumBitArray<TEnum>, TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.operator ==(System.Collections.EnumBitArray<TEnum>, TEnum)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public static bool operator ==(EnumBitArray<TEnum> bits, TEnum flag)
+    parameters:
+    - id: bits
+      type: System.Collections.EnumBitArray`1
+    - id: flag
+      type: '{TEnum}'
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(bits As EnumBitArray(Of TEnum), flag As TEnum) As Boolean
+  overload: System.Collections.EnumBitArray`1.op_Equality*
+  nameWithType.vb: EnumBitArray(Of TEnum).=(EnumBitArray(Of TEnum), TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).=(System.Collections.EnumBitArray(Of TEnum), TEnum)
+  name.vb: =(EnumBitArray(Of TEnum), TEnum)
+- uid: System.Collections.EnumBitArray`1.op_Inequality(System.Collections.EnumBitArray{`0},`0)
+  commentId: M:System.Collections.EnumBitArray`1.op_Inequality(System.Collections.EnumBitArray{`0},`0)
+  id: op_Inequality(System.Collections.EnumBitArray{`0},`0)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: operator !=(EnumBitArray<TEnum>, TEnum)
+  nameWithType: EnumBitArray<TEnum>.operator !=(EnumBitArray<TEnum>, TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.operator !=(System.Collections.EnumBitArray<TEnum>, TEnum)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public static bool operator !=(EnumBitArray<TEnum> bits, TEnum flag)
+    parameters:
+    - id: bits
+      type: System.Collections.EnumBitArray`1
+    - id: flag
+      type: '{TEnum}'
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(bits As EnumBitArray(Of TEnum), flag As TEnum) As Boolean
+  overload: System.Collections.EnumBitArray`1.op_Inequality*
+  nameWithType.vb: EnumBitArray(Of TEnum).<>(EnumBitArray(Of TEnum), TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).<>(System.Collections.EnumBitArray(Of TEnum), TEnum)
+  name.vb: <>(EnumBitArray(Of TEnum), TEnum)
+- uid: System.Collections.EnumBitArray`1.op_BitwiseOr(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})
+  commentId: M:System.Collections.EnumBitArray`1.op_BitwiseOr(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})
+  id: op_BitwiseOr(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: operator |(EnumBitArray<TEnum>, EnumBitArray<TEnum>)
+  nameWithType: EnumBitArray<TEnum>.operator |(EnumBitArray<TEnum>, EnumBitArray<TEnum>)
+  fullName: System.Collections.EnumBitArray<TEnum>.operator |(System.Collections.EnumBitArray<TEnum>, System.Collections.EnumBitArray<TEnum>)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public static EnumBitArray<TEnum> operator |(EnumBitArray<TEnum> left, EnumBitArray<TEnum> right)
+    parameters:
+    - id: left
+      type: System.Collections.EnumBitArray`1
+    - id: right
+      type: System.Collections.EnumBitArray`1
+    return:
+      type: System.Collections.EnumBitArray`1
+    content.vb: Public Shared Operator Or(left As EnumBitArray(Of TEnum), right As EnumBitArray(Of TEnum)) As EnumBitArray(Of TEnum)
+  overload: System.Collections.EnumBitArray`1.op_BitwiseOr*
+  nameWithType.vb: EnumBitArray(Of TEnum).Or(EnumBitArray(Of TEnum), EnumBitArray(Of TEnum))
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Or(System.Collections.EnumBitArray(Of TEnum), System.Collections.EnumBitArray(Of TEnum))
+  name.vb: Or(EnumBitArray(Of TEnum), EnumBitArray(Of TEnum))
+- uid: System.Collections.EnumBitArray`1.op_BitwiseOr(System.Collections.EnumBitArray{`0},`0)
+  commentId: M:System.Collections.EnumBitArray`1.op_BitwiseOr(System.Collections.EnumBitArray{`0},`0)
+  id: op_BitwiseOr(System.Collections.EnumBitArray{`0},`0)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: operator |(EnumBitArray<TEnum>, TEnum)
+  nameWithType: EnumBitArray<TEnum>.operator |(EnumBitArray<TEnum>, TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.operator |(System.Collections.EnumBitArray<TEnum>, TEnum)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public static EnumBitArray<TEnum> operator |(EnumBitArray<TEnum> left, TEnum flag)
+    parameters:
+    - id: left
+      type: System.Collections.EnumBitArray`1
+    - id: flag
+      type: '{TEnum}'
+    return:
+      type: System.Collections.EnumBitArray`1
+    content.vb: Public Shared Operator Or(left As EnumBitArray(Of TEnum), flag As TEnum) As EnumBitArray(Of TEnum)
+  overload: System.Collections.EnumBitArray`1.op_BitwiseOr*
+  nameWithType.vb: EnumBitArray(Of TEnum).Or(EnumBitArray(Of TEnum), TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Or(System.Collections.EnumBitArray(Of TEnum), TEnum)
+  name.vb: Or(EnumBitArray(Of TEnum), TEnum)
+- uid: System.Collections.EnumBitArray`1.op_OnesComplement(System.Collections.EnumBitArray{`0})
+  commentId: M:System.Collections.EnumBitArray`1.op_OnesComplement(System.Collections.EnumBitArray{`0})
+  id: op_OnesComplement(System.Collections.EnumBitArray{`0})
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: operator ~(EnumBitArray<TEnum>)
+  nameWithType: EnumBitArray<TEnum>.operator ~(EnumBitArray<TEnum>)
+  fullName: System.Collections.EnumBitArray<TEnum>.operator ~(System.Collections.EnumBitArray<TEnum>)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public static EnumBitArray<TEnum> operator ~(EnumBitArray<TEnum> operand)
+    parameters:
+    - id: operand
+      type: System.Collections.EnumBitArray`1
+    return:
+      type: System.Collections.EnumBitArray`1
+    content.vb: Public Shared Operator Not(operand As EnumBitArray(Of TEnum)) As EnumBitArray(Of TEnum)
+  overload: System.Collections.EnumBitArray`1.op_OnesComplement*
+  nameWithType.vb: EnumBitArray(Of TEnum).Not(EnumBitArray(Of TEnum))
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Not(System.Collections.EnumBitArray(Of TEnum))
+  name.vb: Not(EnumBitArray(Of TEnum))
+- uid: System.Collections.EnumBitArray`1.op_LogicalNot(System.Collections.EnumBitArray{`0})
+  commentId: M:System.Collections.EnumBitArray`1.op_LogicalNot(System.Collections.EnumBitArray{`0})
+  id: op_LogicalNot(System.Collections.EnumBitArray{`0})
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: operator !(EnumBitArray<TEnum>)
+  nameWithType: EnumBitArray<TEnum>.operator !(EnumBitArray<TEnum>)
+  fullName: System.Collections.EnumBitArray<TEnum>.operator !(System.Collections.EnumBitArray<TEnum>)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public static EnumBitArray<TEnum> operator !(EnumBitArray<TEnum> left)
+    parameters:
+    - id: left
+      type: System.Collections.EnumBitArray`1
+    return:
+      type: System.Collections.EnumBitArray`1
+    content.vb: Public Shared Operator Not(left As EnumBitArray(Of TEnum)) As EnumBitArray(Of TEnum)
+  overload: System.Collections.EnumBitArray`1.op_LogicalNot*
+  nameWithType.vb: EnumBitArray(Of TEnum).Not(EnumBitArray(Of TEnum))
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Not(System.Collections.EnumBitArray(Of TEnum))
+  name.vb: Not(EnumBitArray(Of TEnum))
+- uid: System.Collections.EnumBitArray`1.op_Equality(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})
+  commentId: M:System.Collections.EnumBitArray`1.op_Equality(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})
+  id: op_Equality(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: operator ==(EnumBitArray<TEnum>, EnumBitArray<TEnum>)
+  nameWithType: EnumBitArray<TEnum>.operator ==(EnumBitArray<TEnum>, EnumBitArray<TEnum>)
+  fullName: System.Collections.EnumBitArray<TEnum>.operator ==(System.Collections.EnumBitArray<TEnum>, System.Collections.EnumBitArray<TEnum>)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public static bool operator ==(EnumBitArray<TEnum> left, EnumBitArray<TEnum> right)
+    parameters:
+    - id: left
+      type: System.Collections.EnumBitArray`1
+    - id: right
+      type: System.Collections.EnumBitArray`1
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As EnumBitArray(Of TEnum), right As EnumBitArray(Of TEnum)) As Boolean
+  overload: System.Collections.EnumBitArray`1.op_Equality*
+  nameWithType.vb: EnumBitArray(Of TEnum).=(EnumBitArray(Of TEnum), EnumBitArray(Of TEnum))
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).=(System.Collections.EnumBitArray(Of TEnum), System.Collections.EnumBitArray(Of TEnum))
+  name.vb: =(EnumBitArray(Of TEnum), EnumBitArray(Of TEnum))
+- uid: System.Collections.EnumBitArray`1.op_Inequality(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})
+  commentId: M:System.Collections.EnumBitArray`1.op_Inequality(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})
+  id: op_Inequality(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: operator !=(EnumBitArray<TEnum>, EnumBitArray<TEnum>)
+  nameWithType: EnumBitArray<TEnum>.operator !=(EnumBitArray<TEnum>, EnumBitArray<TEnum>)
+  fullName: System.Collections.EnumBitArray<TEnum>.operator !=(System.Collections.EnumBitArray<TEnum>, System.Collections.EnumBitArray<TEnum>)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public static bool operator !=(EnumBitArray<TEnum> left, EnumBitArray<TEnum> right)
+    parameters:
+    - id: left
+      type: System.Collections.EnumBitArray`1
+    - id: right
+      type: System.Collections.EnumBitArray`1
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As EnumBitArray(Of TEnum), right As EnumBitArray(Of TEnum)) As Boolean
+  overload: System.Collections.EnumBitArray`1.op_Inequality*
+  nameWithType.vb: EnumBitArray(Of TEnum).<>(EnumBitArray(Of TEnum), EnumBitArray(Of TEnum))
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).<>(System.Collections.EnumBitArray(Of TEnum), System.Collections.EnumBitArray(Of TEnum))
+  name.vb: <>(EnumBitArray(Of TEnum), EnumBitArray(Of TEnum))
+- uid: System.Collections.EnumBitArray`1.op_Implicit(`0)~System.Collections.EnumBitArray{`0}
+  commentId: M:System.Collections.EnumBitArray`1.op_Implicit(`0)~System.Collections.EnumBitArray{`0}
+  id: op_Implicit(`0)~System.Collections.EnumBitArray{`0}
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: implicit operator EnumBitArray<TEnum>(TEnum)
+  nameWithType: EnumBitArray<TEnum>.implicit operator EnumBitArray<TEnum>(TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.implicit operator System.Collections.EnumBitArray<TEnum>(TEnum)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public static implicit operator EnumBitArray<TEnum>(TEnum enumValue)
+    parameters:
+    - id: enumValue
+      type: '{TEnum}'
+    return:
+      type: System.Collections.EnumBitArray`1
+    content.vb: Public Shared Widening Operator CType(enumValue As TEnum) As EnumBitArray(Of TEnum)
+  overload: System.Collections.EnumBitArray`1.op_Implicit*
+  nameWithType.vb: EnumBitArray(Of TEnum).CType(TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).CType(TEnum)
+  name.vb: CType(TEnum)
+- uid: System.Collections.EnumBitArray`1.op_Explicit(System.Collections.EnumBitArray{`0})~System.Collections.BitArray
+  commentId: M:System.Collections.EnumBitArray`1.op_Explicit(System.Collections.EnumBitArray{`0})~System.Collections.BitArray
+  id: op_Explicit(System.Collections.EnumBitArray{`0})~System.Collections.BitArray
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: explicit operator BitArray(EnumBitArray<TEnum>)
+  nameWithType: EnumBitArray<TEnum>.explicit operator BitArray(EnumBitArray<TEnum>)
+  fullName: System.Collections.EnumBitArray<TEnum>.explicit operator System.Collections.BitArray(System.Collections.EnumBitArray<TEnum>)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public static explicit operator BitArray(EnumBitArray<TEnum> value)
+    parameters:
+    - id: value
+      type: System.Collections.EnumBitArray`1
+    return:
+      type: System.Collections.BitArray
+    content.vb: Public Shared Narrowing Operator CType(value As EnumBitArray(Of TEnum)) As BitArray
+  overload: System.Collections.EnumBitArray`1.op_Explicit*
+  nameWithType.vb: EnumBitArray(Of TEnum).CType(EnumBitArray(Of TEnum))
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).CType(System.Collections.EnumBitArray(Of TEnum))
+  name.vb: CType(EnumBitArray(Of TEnum))
+- uid: System.Collections.EnumBitArray`1.op_Explicit(System.Collections.BitArray)~System.Collections.EnumBitArray{`0}
+  commentId: M:System.Collections.EnumBitArray`1.op_Explicit(System.Collections.BitArray)~System.Collections.EnumBitArray{`0}
+  id: op_Explicit(System.Collections.BitArray)~System.Collections.EnumBitArray{`0}
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: explicit operator EnumBitArray<TEnum>(BitArray)
+  nameWithType: EnumBitArray<TEnum>.explicit operator EnumBitArray<TEnum>(BitArray)
+  fullName: System.Collections.EnumBitArray<TEnum>.explicit operator System.Collections.EnumBitArray<TEnum>(System.Collections.BitArray)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public static explicit operator EnumBitArray<TEnum>(BitArray flags)
+    parameters:
+    - id: flags
+      type: System.Collections.BitArray
+    return:
+      type: System.Collections.EnumBitArray`1
+    content.vb: Public Shared Narrowing Operator CType(flags As BitArray) As EnumBitArray(Of TEnum)
+  overload: System.Collections.EnumBitArray`1.op_Explicit*
+  nameWithType.vb: EnumBitArray(Of TEnum).CType(BitArray)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).CType(System.Collections.BitArray)
+  name.vb: CType(BitArray)
+- uid: System.Collections.EnumBitArray`1.Or(`0)
+  commentId: M:System.Collections.EnumBitArray`1.Or(`0)
+  id: Or(`0)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: Or(TEnum)
+  nameWithType: EnumBitArray<TEnum>.Or(TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.Or(TEnum)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public void Or(TEnum value)
+    parameters:
+    - id: value
+      type: '{TEnum}'
+    content.vb: Public Sub [Or](value As TEnum)
+  overload: System.Collections.EnumBitArray`1.Or*
+  nameWithType.vb: EnumBitArray(Of TEnum).Or(TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Or(TEnum)
+- uid: System.Collections.EnumBitArray`1.Or(System.Collections.EnumBitArray{`0})
+  commentId: M:System.Collections.EnumBitArray`1.Or(System.Collections.EnumBitArray{`0})
+  id: Or(System.Collections.EnumBitArray{`0})
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: Or(EnumBitArray<TEnum>)
+  nameWithType: EnumBitArray<TEnum>.Or(EnumBitArray<TEnum>)
+  fullName: System.Collections.EnumBitArray<TEnum>.Or(System.Collections.EnumBitArray<TEnum>)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public void Or(EnumBitArray<TEnum> value)
+    parameters:
+    - id: value
+      type: System.Collections.EnumBitArray`1
+    content.vb: Public Sub [Or](value As EnumBitArray(Of TEnum))
+  overload: System.Collections.EnumBitArray`1.Or*
+  nameWithType.vb: EnumBitArray(Of TEnum).Or(EnumBitArray(Of TEnum))
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Or(System.Collections.EnumBitArray(Of TEnum))
+  name.vb: Or(EnumBitArray(Of TEnum))
+- uid: System.Collections.EnumBitArray`1.And(System.Collections.EnumBitArray{`0})
+  commentId: M:System.Collections.EnumBitArray`1.And(System.Collections.EnumBitArray{`0})
+  id: And(System.Collections.EnumBitArray{`0})
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: And(EnumBitArray<TEnum>)
+  nameWithType: EnumBitArray<TEnum>.And(EnumBitArray<TEnum>)
+  fullName: System.Collections.EnumBitArray<TEnum>.And(System.Collections.EnumBitArray<TEnum>)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public void And(EnumBitArray<TEnum> value)
+    parameters:
+    - id: value
+      type: System.Collections.EnumBitArray`1
+    content.vb: Public Sub [And](value As EnumBitArray(Of TEnum))
+  overload: System.Collections.EnumBitArray`1.And*
+  nameWithType.vb: EnumBitArray(Of TEnum).And(EnumBitArray(Of TEnum))
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).And(System.Collections.EnumBitArray(Of TEnum))
+  name.vb: And(EnumBitArray(Of TEnum))
+- uid: System.Collections.EnumBitArray`1.And(`0)
+  commentId: M:System.Collections.EnumBitArray`1.And(`0)
+  id: And(`0)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: And(TEnum)
+  nameWithType: EnumBitArray<TEnum>.And(TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.And(TEnum)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public void And(TEnum value)
+    parameters:
+    - id: value
+      type: '{TEnum}'
+    content.vb: Public Sub [And](value As TEnum)
+  overload: System.Collections.EnumBitArray`1.And*
+  nameWithType.vb: EnumBitArray(Of TEnum).And(TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).And(TEnum)
+- uid: System.Collections.EnumBitArray`1.Not
+  commentId: M:System.Collections.EnumBitArray`1.Not
+  id: Not
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: Not()
+  nameWithType: EnumBitArray<TEnum>.Not()
+  fullName: System.Collections.EnumBitArray<TEnum>.Not()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public void Not()
+    content.vb: Public Sub [Not]()
+  overload: System.Collections.EnumBitArray`1.Not*
+  nameWithType.vb: EnumBitArray(Of TEnum).Not()
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Not()
+- uid: System.Collections.EnumBitArray`1.Set(`0)
+  commentId: M:System.Collections.EnumBitArray`1.Set(`0)
+  id: Set(`0)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: Set(TEnum)
+  nameWithType: EnumBitArray<TEnum>.Set(TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.Set(TEnum)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public void Set(TEnum value)
+    parameters:
+    - id: value
+      type: '{TEnum}'
+    content.vb: Public Sub [Set](value As TEnum)
+  overload: System.Collections.EnumBitArray`1.Set*
+  nameWithType.vb: EnumBitArray(Of TEnum).Set(TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Set(TEnum)
+- uid: System.Collections.EnumBitArray`1.Set(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:System.Collections.EnumBitArray`1.Set(System.Collections.Generic.IEnumerable{`0})
+  id: Set(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: Set(IEnumerable<TEnum>)
+  nameWithType: EnumBitArray<TEnum>.Set(IEnumerable<TEnum>)
+  fullName: System.Collections.EnumBitArray<TEnum>.Set(System.Collections.Generic.IEnumerable<TEnum>)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public void Set(IEnumerable<TEnum> flags)
+    parameters:
+    - id: flags
+      type: System.Collections.Generic.IEnumerable{{TEnum}}
+    content.vb: Public Sub [Set](flags As IEnumerable(Of TEnum))
+  overload: System.Collections.EnumBitArray`1.Set*
+  nameWithType.vb: EnumBitArray(Of TEnum).Set(IEnumerable(Of TEnum))
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Set(System.Collections.Generic.IEnumerable(Of TEnum))
+  name.vb: Set(IEnumerable(Of TEnum))
+- uid: System.Collections.EnumBitArray`1.UnSet(`0)
+  commentId: M:System.Collections.EnumBitArray`1.UnSet(`0)
+  id: UnSet(`0)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: UnSet(TEnum)
+  nameWithType: EnumBitArray<TEnum>.UnSet(TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.UnSet(TEnum)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public void UnSet(TEnum flag)
+    parameters:
+    - id: flag
+      type: '{TEnum}'
+    content.vb: Public Sub UnSet(flag As TEnum)
+  overload: System.Collections.EnumBitArray`1.UnSet*
+  nameWithType.vb: EnumBitArray(Of TEnum).UnSet(TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).UnSet(TEnum)
+- uid: System.Collections.EnumBitArray`1.UnSet(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:System.Collections.EnumBitArray`1.UnSet(System.Collections.Generic.IEnumerable{`0})
+  id: UnSet(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: UnSet(IEnumerable<TEnum>)
+  nameWithType: EnumBitArray<TEnum>.UnSet(IEnumerable<TEnum>)
+  fullName: System.Collections.EnumBitArray<TEnum>.UnSet(System.Collections.Generic.IEnumerable<TEnum>)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public void UnSet(IEnumerable<TEnum> flags)
+    parameters:
+    - id: flags
+      type: System.Collections.Generic.IEnumerable{{TEnum}}
+    content.vb: Public Sub UnSet(flags As IEnumerable(Of TEnum))
+  overload: System.Collections.EnumBitArray`1.UnSet*
+  nameWithType.vb: EnumBitArray(Of TEnum).UnSet(IEnumerable(Of TEnum))
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).UnSet(System.Collections.Generic.IEnumerable(Of TEnum))
+  name.vb: UnSet(IEnumerable(Of TEnum))
+- uid: System.Collections.EnumBitArray`1.HasAnySet
+  commentId: M:System.Collections.EnumBitArray`1.HasAnySet
+  id: HasAnySet
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: HasAnySet()
+  nameWithType: EnumBitArray<TEnum>.HasAnySet()
+  fullName: System.Collections.EnumBitArray<TEnum>.HasAnySet()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public bool HasAnySet()
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasAnySet() As Boolean
+  overload: System.Collections.EnumBitArray`1.HasAnySet*
+  nameWithType.vb: EnumBitArray(Of TEnum).HasAnySet()
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).HasAnySet()
+- uid: System.Collections.EnumBitArray`1.HasAllSet
+  commentId: M:System.Collections.EnumBitArray`1.HasAllSet
+  id: HasAllSet
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: HasAllSet()
+  nameWithType: EnumBitArray<TEnum>.HasAllSet()
+  fullName: System.Collections.EnumBitArray<TEnum>.HasAllSet()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public bool HasAllSet()
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasAllSet() As Boolean
+  overload: System.Collections.EnumBitArray`1.HasAllSet*
+  nameWithType.vb: EnumBitArray(Of TEnum).HasAllSet()
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).HasAllSet()
+- uid: System.Collections.EnumBitArray`1.HasFlag(`0)
+  commentId: M:System.Collections.EnumBitArray`1.HasFlag(`0)
+  id: HasFlag(`0)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: HasFlag(TEnum)
+  nameWithType: EnumBitArray<TEnum>.HasFlag(TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.HasFlag(TEnum)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public bool HasFlag(TEnum flag)
+    parameters:
+    - id: flag
+      type: '{TEnum}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasFlag(flag As TEnum) As Boolean
+  overload: System.Collections.EnumBitArray`1.HasFlag*
+  nameWithType.vb: EnumBitArray(Of TEnum).HasFlag(TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).HasFlag(TEnum)
+- uid: System.Collections.EnumBitArray`1.HasOtherFlags(`0)
+  commentId: M:System.Collections.EnumBitArray`1.HasOtherFlags(`0)
+  id: HasOtherFlags(`0)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: HasOtherFlags(TEnum)
+  nameWithType: EnumBitArray<TEnum>.HasOtherFlags(TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.HasOtherFlags(TEnum)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public bool HasOtherFlags(TEnum flag)
+    parameters:
+    - id: flag
+      type: '{TEnum}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasOtherFlags(flag As TEnum) As Boolean
+  overload: System.Collections.EnumBitArray`1.HasOtherFlags*
+  nameWithType.vb: EnumBitArray(Of TEnum).HasOtherFlags(TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).HasOtherFlags(TEnum)
+- uid: System.Collections.EnumBitArray`1.IsSet(`0)
+  commentId: M:System.Collections.EnumBitArray`1.IsSet(`0)
+  id: IsSet(`0)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: IsSet(TEnum)
+  nameWithType: EnumBitArray<TEnum>.IsSet(TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.IsSet(TEnum)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public bool IsSet(TEnum flag)
+    parameters:
+    - id: flag
+      type: '{TEnum}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsSet(flag As TEnum) As Boolean
+  overload: System.Collections.EnumBitArray`1.IsSet*
+  nameWithType.vb: EnumBitArray(Of TEnum).IsSet(TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).IsSet(TEnum)
+- uid: System.Collections.EnumBitArray`1.ToString
+  commentId: M:System.Collections.EnumBitArray`1.ToString
+  id: ToString
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: EnumBitArray<TEnum>.ToString()
+  fullName: System.Collections.EnumBitArray<TEnum>.ToString()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: System.Collections.EnumBitArray`1.ToString*
+  nameWithType.vb: EnumBitArray(Of TEnum).ToString()
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).ToString()
+- uid: System.Collections.EnumBitArray`1.Equals(System.Object)
+  commentId: M:System.Collections.EnumBitArray`1.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: EnumBitArray<TEnum>.Equals(object?)
+  fullName: System.Collections.EnumBitArray<TEnum>.Equals(object?)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: System.Collections.EnumBitArray`1.Equals*
+  nameWithType.vb: EnumBitArray(Of TEnum).Equals(Object)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Equals(Object)
+  name.vb: Equals(Object)
+- uid: System.Collections.EnumBitArray`1.Equals(System.Collections.EnumBitArray{`0})
+  commentId: M:System.Collections.EnumBitArray`1.Equals(System.Collections.EnumBitArray{`0})
+  id: Equals(System.Collections.EnumBitArray{`0})
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(EnumBitArray<TEnum>?)
+  nameWithType: EnumBitArray<TEnum>.Equals(EnumBitArray<TEnum>?)
+  fullName: System.Collections.EnumBitArray<TEnum>.Equals(System.Collections.EnumBitArray<TEnum>?)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public bool Equals(EnumBitArray<TEnum>? obj)
+    parameters:
+    - id: obj
+      type: System.Collections.EnumBitArray`1
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(obj As EnumBitArray(Of TEnum)) As Boolean
+  overload: System.Collections.EnumBitArray`1.Equals*
+  nameWithType.vb: EnumBitArray(Of TEnum).Equals(EnumBitArray(Of TEnum))
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Equals(System.Collections.EnumBitArray(Of TEnum))
+  name.vb: Equals(EnumBitArray(Of TEnum))
+- uid: System.Collections.EnumBitArray`1.Equals(`0)
+  commentId: M:System.Collections.EnumBitArray`1.Equals(`0)
+  id: Equals(`0)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(TEnum)
+  nameWithType: EnumBitArray<TEnum>.Equals(TEnum)
+  fullName: System.Collections.EnumBitArray<TEnum>.Equals(TEnum)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public virtual bool Equals(TEnum enumFlag)
+    parameters:
+    - id: enumFlag
+      type: '{TEnum}'
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function Equals(enumFlag As TEnum) As Boolean
+  overload: System.Collections.EnumBitArray`1.Equals*
+  nameWithType.vb: EnumBitArray(Of TEnum).Equals(TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Equals(TEnum)
+- uid: System.Collections.EnumBitArray`1.GetSetEnums
+  commentId: M:System.Collections.EnumBitArray`1.GetSetEnums
+  id: GetSetEnums
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: GetSetEnums()
+  nameWithType: EnumBitArray<TEnum>.GetSetEnums()
+  fullName: System.Collections.EnumBitArray<TEnum>.GetSetEnums()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public IEnumerable<TEnum> GetSetEnums()
+    return:
+      type: System.Collections.Generic.IEnumerable{{TEnum}}
+    content.vb: Public Function GetSetEnums() As IEnumerable(Of TEnum)
+  overload: System.Collections.EnumBitArray`1.GetSetEnums*
+  nameWithType.vb: EnumBitArray(Of TEnum).GetSetEnums()
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).GetSetEnums()
+- uid: System.Collections.EnumBitArray`1.Equals(System.Collections.BitArray,System.Collections.BitArray)
+  commentId: M:System.Collections.EnumBitArray`1.Equals(System.Collections.BitArray,System.Collections.BitArray)
+  id: Equals(System.Collections.BitArray,System.Collections.BitArray)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(BitArray, BitArray)
+  nameWithType: EnumBitArray<TEnum>.Equals(BitArray, BitArray)
+  fullName: System.Collections.EnumBitArray<TEnum>.Equals(System.Collections.BitArray, System.Collections.BitArray)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: protected bool Equals(BitArray compare, BitArray compareTo)
+    parameters:
+    - id: compare
+      type: System.Collections.BitArray
+    - id: compareTo
+      type: System.Collections.BitArray
+    return:
+      type: System.Boolean
+    content.vb: Protected Function Equals(compare As BitArray, compareTo As BitArray) As Boolean
+  overload: System.Collections.EnumBitArray`1.Equals*
+  nameWithType.vb: EnumBitArray(Of TEnum).Equals(BitArray, BitArray)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Equals(System.Collections.BitArray, System.Collections.BitArray)
+- uid: System.Collections.EnumBitArray`1.GetFlags
+  commentId: M:System.Collections.EnumBitArray`1.GetFlags
+  id: GetFlags
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: GetFlags()
+  nameWithType: EnumBitArray<TEnum>.GetFlags()
+  fullName: System.Collections.EnumBitArray<TEnum>.GetFlags()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public IEnumerable<bool> GetFlags()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Boolean}
+    content.vb: Public Function GetFlags() As IEnumerable(Of Boolean)
+  overload: System.Collections.EnumBitArray`1.GetFlags*
+  nameWithType.vb: EnumBitArray(Of TEnum).GetFlags()
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).GetFlags()
+- uid: System.Collections.EnumBitArray`1.GetHashCode
+  commentId: M:System.Collections.EnumBitArray`1.GetHashCode
+  id: GetHashCode
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: EnumBitArray<TEnum>.GetHashCode()
+  fullName: System.Collections.EnumBitArray<TEnum>.GetHashCode()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: System.Collections.EnumBitArray`1.GetHashCode*
+  nameWithType.vb: EnumBitArray(Of TEnum).GetHashCode()
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).GetHashCode()
+- uid: System.Collections.EnumBitArray`1.Flags
+  commentId: P:System.Collections.EnumBitArray`1.Flags
+  id: Flags
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: Flags
+  nameWithType: EnumBitArray<TEnum>.Flags
+  fullName: System.Collections.EnumBitArray<TEnum>.Flags
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public BitArray Flags { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.BitArray
+    content.vb: Public Property Flags As BitArray
+  overload: System.Collections.EnumBitArray`1.Flags*
+  nameWithType.vb: EnumBitArray(Of TEnum).Flags
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Flags
+- uid: System.Collections.EnumBitArray`1.Count
+  commentId: P:System.Collections.EnumBitArray`1.Count
+  id: Count
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: EnumBitArray<TEnum>.Count
+  fullName: System.Collections.EnumBitArray<TEnum>.Count
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: System.Collections.EnumBitArray`1.Count*
+  nameWithType.vb: EnumBitArray(Of TEnum).Count
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Count
+- uid: System.Collections.EnumBitArray`1.Length
+  commentId: P:System.Collections.EnumBitArray`1.Length
+  id: Length
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: EnumBitArray<TEnum>.Length
+  fullName: System.Collections.EnumBitArray<TEnum>.Length
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public int Length { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Length As Integer
+  overload: System.Collections.EnumBitArray`1.Length*
+  nameWithType.vb: EnumBitArray(Of TEnum).Length
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Length
+- uid: System.Collections.EnumBitArray`1.Item(`0)
+  commentId: P:System.Collections.EnumBitArray`1.Item(`0)
+  id: Item(`0)
+  parent: System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: this[TEnum]
+  nameWithType: EnumBitArray<TEnum>.this[TEnum]
+  fullName: System.Collections.EnumBitArray<TEnum>.this[TEnum]
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+  assemblies:
+  - dotNetBlocks.System.Collections
+  namespace: System.Collections
+  syntax:
+    content: public bool this[TEnum flag] { get; set; }
+    parameters:
+    - id: flag
+      type: '{TEnum}'
+    return:
+      type: System.Boolean
+    content.vb: Public Default Property this[](flag As TEnum) As Boolean
+  overload: System.Collections.EnumBitArray`1.Item*
+  nameWithType.vb: EnumBitArray(Of TEnum).this[](TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).this[](TEnum)
+  name.vb: this[](TEnum)
+references:
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: System.html
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: System.Collections.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: System.Collections.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.EnumBitArray`1.System.Linq.WildCard.Search``1
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  parent: System.Linq.WildCard
+  definition: System.Linq.WildCard.Search``1(``0)
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<EnumBitArray<TEnum>>(EnumBitArray<TEnum>)
+  nameWithType: WildCard.Search<EnumBitArray<TEnum>>(EnumBitArray<TEnum>)
+  fullName: System.Linq.WildCard.Search<System.Collections.EnumBitArray<TEnum>>(System.Collections.EnumBitArray<TEnum>)
+  nameWithType.vb: WildCard.Search(Of EnumBitArray(Of TEnum))(EnumBitArray(Of TEnum))
+  fullName.vb: System.Linq.WildCard.Search(Of System.Collections.EnumBitArray(Of TEnum))(System.Collections.EnumBitArray(Of TEnum))
+  name.vb: Search(Of EnumBitArray(Of TEnum))(EnumBitArray(Of TEnum))
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(System.Collections.EnumBitArray{`0})
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - uid: System.Collections.EnumBitArray`1
+    name: EnumBitArray
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html
+  - name: <
+  - name: TEnum
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: System.Collections.EnumBitArray`1
+    name: EnumBitArray
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html
+  - name: <
+  - name: TEnum
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(System.Collections.EnumBitArray{`0})
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.EnumBitArray`1
+    name: EnumBitArray
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEnum
+  - name: )
+  - name: )
+  - name: (
+  - uid: System.Collections.EnumBitArray`1
+    name: EnumBitArray
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEnum
+  - name: )
+  - name: )
+- uid: System.Collections.EnumBitArray`1.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<EnumBitArray<TEnum>>(EnumBitArray<TEnum>)
+  nameWithType: SystemExtensions.AsLazy<EnumBitArray<TEnum>>(EnumBitArray<TEnum>)
+  fullName: System.SystemExtensions.AsLazy<System.Collections.EnumBitArray<TEnum>>(System.Collections.EnumBitArray<TEnum>)
+  nameWithType.vb: SystemExtensions.AsLazy(Of EnumBitArray(Of TEnum))(EnumBitArray(Of TEnum))
+  fullName.vb: System.SystemExtensions.AsLazy(Of System.Collections.EnumBitArray(Of TEnum))(System.Collections.EnumBitArray(Of TEnum))
+  name.vb: AsLazy(Of EnumBitArray(Of TEnum))(EnumBitArray(Of TEnum))
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(System.Collections.EnumBitArray{`0})
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: System.Collections.EnumBitArray`1
+    name: EnumBitArray
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html
+  - name: <
+  - name: TEnum
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: System.Collections.EnumBitArray`1
+    name: EnumBitArray
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html
+  - name: <
+  - name: TEnum
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(System.Collections.EnumBitArray{`0})
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.EnumBitArray`1
+    name: EnumBitArray
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEnum
+  - name: )
+  - name: )
+  - name: (
+  - uid: System.Collections.EnumBitArray`1
+    name: EnumBitArray
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEnum
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Linq.WildCard.Search``1(``0)
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  isExternal: true
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<TSearch>(TSearch)
+  nameWithType: WildCard.Search<TSearch>(TSearch)
+  fullName: System.Linq.WildCard.Search<TSearch>(TSearch)
+  nameWithType.vb: WildCard.Search(Of TSearch)(TSearch)
+  fullName.vb: System.Linq.WildCard.Search(Of TSearch)(TSearch)
+  name.vb: Search(Of TSearch)(TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: (
+  - name: TSearch
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: (
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard
+  commentId: T:System.Linq.WildCard
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard.html
+  name: WildCard
+  nameWithType: WildCard
+  fullName: System.Linq.WildCard
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: System.html
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+- uid: System.Collections.EnumBitArray`1
+  commentId: T:System.Collections.EnumBitArray`1
+  parent: System.Collections
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html
+  name: EnumBitArray<TEnum>
+  nameWithType: EnumBitArray<TEnum>
+  fullName: System.Collections.EnumBitArray<TEnum>
+  nameWithType.vb: EnumBitArray(Of TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum)
+  name.vb: EnumBitArray(Of TEnum)
+  spec.csharp:
+  - uid: System.Collections.EnumBitArray`1
+    name: EnumBitArray
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html
+  - name: <
+  - name: TEnum
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.EnumBitArray`1
+    name: EnumBitArray
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEnum
+  - name: )
+- uid: System.Collections.EnumBitArray`1.#ctor*
+  commentId: Overload:System.Collections.EnumBitArray`1.#ctor
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1__ctor
+  name: EnumBitArray
+  nameWithType: EnumBitArray<TEnum>.EnumBitArray
+  fullName: System.Collections.EnumBitArray<TEnum>.EnumBitArray
+  nameWithType.vb: EnumBitArray(Of TEnum).New
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).New
+  name.vb: New
+- uid: System.Collections.BitArray
+  commentId: T:System.Collections.BitArray
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray
+  name: BitArray
+  nameWithType: BitArray
+  fullName: System.Collections.BitArray
+- uid: '{TEnum}'
+  commentId: '!:TEnum'
+  definition: TEnum
+  name: TEnum
+  nameWithType: TEnum
+  fullName: TEnum
+- uid: TEnum
+  name: TEnum
+  nameWithType: TEnum
+  fullName: TEnum
+- uid: System.Collections.Generic.IEnumerable{{TEnum}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TEnum>
+  nameWithType: IEnumerable<TEnum>
+  fullName: System.Collections.Generic.IEnumerable<TEnum>
+  nameWithType.vb: IEnumerable(Of TEnum)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TEnum)
+  name.vb: IEnumerable(Of TEnum)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TEnum
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEnum
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.EnumBitArray`1.ToFlagIndex*
+  commentId: Overload:System.Collections.EnumBitArray`1.ToFlagIndex
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_ToFlagIndex__0_
+  name: ToFlagIndex
+  nameWithType: EnumBitArray<TEnum>.ToFlagIndex
+  fullName: System.Collections.EnumBitArray<TEnum>.ToFlagIndex
+  nameWithType.vb: EnumBitArray(Of TEnum).ToFlagIndex
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).ToFlagIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.EnumBitArray`1.op_Equality*
+  commentId: Overload:System.Collections.EnumBitArray`1.op_Equality
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_op_Equality_System_Collections_EnumBitArray__0___0_
+  name: operator ==
+  nameWithType: EnumBitArray<TEnum>.operator ==
+  fullName: System.Collections.EnumBitArray<TEnum>.operator ==
+  nameWithType.vb: EnumBitArray(Of TEnum).=
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Collections.EnumBitArray`1.op_Equality*
+    name: ==
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_op_Equality_System_Collections_EnumBitArray__0___0_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.EnumBitArray`1.op_Inequality*
+  commentId: Overload:System.Collections.EnumBitArray`1.op_Inequality
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_op_Inequality_System_Collections_EnumBitArray__0___0_
+  name: operator !=
+  nameWithType: EnumBitArray<TEnum>.operator !=
+  fullName: System.Collections.EnumBitArray<TEnum>.operator !=
+  nameWithType.vb: EnumBitArray(Of TEnum).<>
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Collections.EnumBitArray`1.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_op_Inequality_System_Collections_EnumBitArray__0___0_
+- uid: System.Collections.EnumBitArray`1.op_BitwiseOr*
+  commentId: Overload:System.Collections.EnumBitArray`1.op_BitwiseOr
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_op_BitwiseOr_System_Collections_EnumBitArray__0__System_Collections_EnumBitArray__0__
+  name: operator |
+  nameWithType: EnumBitArray<TEnum>.operator |
+  fullName: System.Collections.EnumBitArray<TEnum>.operator |
+  nameWithType.vb: EnumBitArray(Of TEnum).Or
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Or
+  name.vb: Or
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Collections.EnumBitArray`1.op_BitwiseOr*
+    name: '|'
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_op_BitwiseOr_System_Collections_EnumBitArray__0__System_Collections_EnumBitArray__0__
+- uid: System.Collections.EnumBitArray`1.op_OnesComplement*
+  commentId: Overload:System.Collections.EnumBitArray`1.op_OnesComplement
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_op_OnesComplement_System_Collections_EnumBitArray__0__
+  name: operator ~
+  nameWithType: EnumBitArray<TEnum>.operator ~
+  fullName: System.Collections.EnumBitArray<TEnum>.operator ~
+  nameWithType.vb: EnumBitArray(Of TEnum).Not
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Not
+  name.vb: Not
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Collections.EnumBitArray`1.op_OnesComplement*
+    name: "~"
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_op_OnesComplement_System_Collections_EnumBitArray__0__
+- uid: System.Collections.EnumBitArray`1.op_LogicalNot*
+  commentId: Overload:System.Collections.EnumBitArray`1.op_LogicalNot
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_op_LogicalNot_System_Collections_EnumBitArray__0__
+  name: operator !
+  nameWithType: EnumBitArray<TEnum>.operator !
+  fullName: System.Collections.EnumBitArray<TEnum>.operator !
+  nameWithType.vb: EnumBitArray(Of TEnum).Not
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Not
+  name.vb: Not
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Collections.EnumBitArray`1.op_LogicalNot*
+    name: '!'
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_op_LogicalNot_System_Collections_EnumBitArray__0__
+- uid: System.Collections.EnumBitArray`1.op_Implicit*
+  commentId: Overload:System.Collections.EnumBitArray`1.op_Implicit
+  name: implicit operator
+  nameWithType: EnumBitArray<TEnum>.implicit operator
+  fullName: System.Collections.EnumBitArray<TEnum>.implicit operator
+  nameWithType.vb: EnumBitArray(Of TEnum).CType
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: System.Collections.EnumBitArray`1.op_Explicit*
+  commentId: Overload:System.Collections.EnumBitArray`1.op_Explicit
+  name: explicit operator
+  nameWithType: EnumBitArray<TEnum>.explicit operator
+  fullName: System.Collections.EnumBitArray<TEnum>.explicit operator
+  nameWithType.vb: EnumBitArray(Of TEnum).CType
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).CType
+  name.vb: CType
+  spec.csharp:
+  - name: explicit
+  - name: " "
+  - name: operator
+- uid: System.Collections.EnumBitArray`1.Or*
+  commentId: Overload:System.Collections.EnumBitArray`1.Or
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_Or__0_
+  name: Or
+  nameWithType: EnumBitArray<TEnum>.Or
+  fullName: System.Collections.EnumBitArray<TEnum>.Or
+  nameWithType.vb: EnumBitArray(Of TEnum).Or
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Or
+- uid: System.Collections.EnumBitArray`1.And*
+  commentId: Overload:System.Collections.EnumBitArray`1.And
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_And_System_Collections_EnumBitArray__0__
+  name: And
+  nameWithType: EnumBitArray<TEnum>.And
+  fullName: System.Collections.EnumBitArray<TEnum>.And
+  nameWithType.vb: EnumBitArray(Of TEnum).And
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).And
+- uid: System.Collections.EnumBitArray`1.Not*
+  commentId: Overload:System.Collections.EnumBitArray`1.Not
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_Not
+  name: Not
+  nameWithType: EnumBitArray<TEnum>.Not
+  fullName: System.Collections.EnumBitArray<TEnum>.Not
+  nameWithType.vb: EnumBitArray(Of TEnum).Not
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Not
+- uid: System.Collections.EnumBitArray`1.Set*
+  commentId: Overload:System.Collections.EnumBitArray`1.Set
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_Set__0_
+  name: Set
+  nameWithType: EnumBitArray<TEnum>.Set
+  fullName: System.Collections.EnumBitArray<TEnum>.Set
+  nameWithType.vb: EnumBitArray(Of TEnum).Set
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Set
+- uid: System.Collections.EnumBitArray`1.UnSet*
+  commentId: Overload:System.Collections.EnumBitArray`1.UnSet
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_UnSet__0_
+  name: UnSet
+  nameWithType: EnumBitArray<TEnum>.UnSet
+  fullName: System.Collections.EnumBitArray<TEnum>.UnSet
+  nameWithType.vb: EnumBitArray(Of TEnum).UnSet
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).UnSet
+- uid: System.Collections.EnumBitArray`1.HasAnySet*
+  commentId: Overload:System.Collections.EnumBitArray`1.HasAnySet
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_HasAnySet
+  name: HasAnySet
+  nameWithType: EnumBitArray<TEnum>.HasAnySet
+  fullName: System.Collections.EnumBitArray<TEnum>.HasAnySet
+  nameWithType.vb: EnumBitArray(Of TEnum).HasAnySet
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).HasAnySet
+- uid: System.Collections.EnumBitArray`1.HasAllSet*
+  commentId: Overload:System.Collections.EnumBitArray`1.HasAllSet
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_HasAllSet
+  name: HasAllSet
+  nameWithType: EnumBitArray<TEnum>.HasAllSet
+  fullName: System.Collections.EnumBitArray<TEnum>.HasAllSet
+  nameWithType.vb: EnumBitArray(Of TEnum).HasAllSet
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).HasAllSet
+- uid: System.Collections.EnumBitArray`1.HasFlag*
+  commentId: Overload:System.Collections.EnumBitArray`1.HasFlag
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_HasFlag__0_
+  name: HasFlag
+  nameWithType: EnumBitArray<TEnum>.HasFlag
+  fullName: System.Collections.EnumBitArray<TEnum>.HasFlag
+  nameWithType.vb: EnumBitArray(Of TEnum).HasFlag
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).HasFlag
+- uid: System.Collections.EnumBitArray`1.HasOtherFlags*
+  commentId: Overload:System.Collections.EnumBitArray`1.HasOtherFlags
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_HasOtherFlags__0_
+  name: HasOtherFlags
+  nameWithType: EnumBitArray<TEnum>.HasOtherFlags
+  fullName: System.Collections.EnumBitArray<TEnum>.HasOtherFlags
+  nameWithType.vb: EnumBitArray(Of TEnum).HasOtherFlags
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).HasOtherFlags
+- uid: System.Collections.EnumBitArray`1.IsSet*
+  commentId: Overload:System.Collections.EnumBitArray`1.IsSet
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_IsSet__0_
+  name: IsSet
+  nameWithType: EnumBitArray<TEnum>.IsSet
+  fullName: System.Collections.EnumBitArray<TEnum>.IsSet
+  nameWithType.vb: EnumBitArray(Of TEnum).IsSet
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).IsSet
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Collections.EnumBitArray`1.ToString*
+  commentId: Overload:System.Collections.EnumBitArray`1.ToString
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_ToString
+  name: ToString
+  nameWithType: EnumBitArray<TEnum>.ToString
+  fullName: System.Collections.EnumBitArray<TEnum>.ToString
+  nameWithType.vb: EnumBitArray(Of TEnum).ToString
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.EnumBitArray`1.Equals*
+  commentId: Overload:System.Collections.EnumBitArray`1.Equals
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_Equals_System_Object_
+  name: Equals
+  nameWithType: EnumBitArray<TEnum>.Equals
+  fullName: System.Collections.EnumBitArray<TEnum>.Equals
+  nameWithType.vb: EnumBitArray(Of TEnum).Equals
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Equals
+- uid: System.Collections.EnumBitArray`1.GetSetEnums*
+  commentId: Overload:System.Collections.EnumBitArray`1.GetSetEnums
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_GetSetEnums
+  name: GetSetEnums
+  nameWithType: EnumBitArray<TEnum>.GetSetEnums
+  fullName: System.Collections.EnumBitArray<TEnum>.GetSetEnums
+  nameWithType.vb: EnumBitArray(Of TEnum).GetSetEnums
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).GetSetEnums
+- uid: System.Collections.EnumBitArray`1.GetFlags*
+  commentId: Overload:System.Collections.EnumBitArray`1.GetFlags
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_GetFlags
+  name: GetFlags
+  nameWithType: EnumBitArray<TEnum>.GetFlags
+  fullName: System.Collections.EnumBitArray<TEnum>.GetFlags
+  nameWithType.vb: EnumBitArray(Of TEnum).GetFlags
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).GetFlags
+- uid: System.Collections.Generic.IEnumerable{System.Boolean}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Boolean}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<bool>
+  nameWithType: IEnumerable<bool>
+  fullName: System.Collections.Generic.IEnumerable<bool>
+  nameWithType.vb: IEnumerable(Of Boolean)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Boolean)
+  name.vb: IEnumerable(Of Boolean)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Collections.EnumBitArray`1.GetHashCode*
+  commentId: Overload:System.Collections.EnumBitArray`1.GetHashCode
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_GetHashCode
+  name: GetHashCode
+  nameWithType: EnumBitArray<TEnum>.GetHashCode
+  fullName: System.Collections.EnumBitArray<TEnum>.GetHashCode
+  nameWithType.vb: EnumBitArray(Of TEnum).GetHashCode
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).GetHashCode
+- uid: System.Collections.EnumBitArray`1.Flags*
+  commentId: Overload:System.Collections.EnumBitArray`1.Flags
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_Flags
+  name: Flags
+  nameWithType: EnumBitArray<TEnum>.Flags
+  fullName: System.Collections.EnumBitArray<TEnum>.Flags
+  nameWithType.vb: EnumBitArray(Of TEnum).Flags
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Flags
+- uid: System.Collections.EnumBitArray`1.Count*
+  commentId: Overload:System.Collections.EnumBitArray`1.Count
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_Count
+  name: Count
+  nameWithType: EnumBitArray<TEnum>.Count
+  fullName: System.Collections.EnumBitArray<TEnum>.Count
+  nameWithType.vb: EnumBitArray(Of TEnum).Count
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Count
+- uid: System.Collections.EnumBitArray`1.Length*
+  commentId: Overload:System.Collections.EnumBitArray`1.Length
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_Length
+  name: Length
+  nameWithType: EnumBitArray<TEnum>.Length
+  fullName: System.Collections.EnumBitArray<TEnum>.Length
+  nameWithType.vb: EnumBitArray(Of TEnum).Length
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).Length
+- uid: System.Collections.EnumBitArray`1.Item*
+  commentId: Overload:System.Collections.EnumBitArray`1.Item
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_Item__0_
+  name: this
+  nameWithType: EnumBitArray<TEnum>.this
+  fullName: System.Collections.EnumBitArray<TEnum>.this
+  nameWithType.vb: EnumBitArray(Of TEnum).this[]
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).this[]
+  name.vb: this[]

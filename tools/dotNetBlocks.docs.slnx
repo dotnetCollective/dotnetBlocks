@@ -10,5 +10,5 @@
     <File Path="../docs/Operations.md" />
     <File Path="dotNetBlocks.docs/.gitignore" />
   </Folder>
-  <Project Path="dotNetBlocks.docs/src/dotNetBlocks.docs.csproj" />
+  <Project Path="dotNetBlocks.docs/src/dotNetBlocks.docs.csproj" DisplayName="dotNetBlocks.Docs" />
 </Solution>

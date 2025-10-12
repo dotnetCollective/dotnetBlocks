@@ -1,0 +1,652 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+  commentId: T:dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+  id: HandleMessageAsync`2
+  parent: dotNetBlocks.ServiceBus.Handlers
+  children:
+  - dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.#ctor(System.Object,System.IntPtr)
+  - dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.BeginInvoke(`0,`1,System.Threading.CancellationToken,System.AsyncCallback,System.Object)
+  - dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.EndInvoke(System.IAsyncResult)
+  - dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.Invoke(`0,`1,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: HandleMessageAsync<TImplementation, TMessage>
+  nameWithType: HandleMessageAsync<TImplementation, TMessage>
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>
+  type: Delegate
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus/Handlers/Delegates.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus
+  namespace: dotNetBlocks.ServiceBus.Handlers
+  syntax:
+    content: 'public delegate Task HandleMessageAsync<in TImplementation, in TMessage>(TImplementation implementation, TMessage message, CancellationToken cancellation = default) where TImplementation : class where TMessage : class'
+    parameters:
+    - id: implementation
+      type: '{TImplementation}'
+    - id: message
+      type: '{TMessage}'
+    - id: cancellation
+      type: System.Threading.CancellationToken
+    typeParameters:
+    - id: TImplementation
+    - id: TMessage
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Delegate Function HandleMessageAsync(Of In TImplementation As Class, In TMessage As Class)(implementation As TImplementation, message As TMessage, cancellation As CancellationToken = Nothing) As Task
+  extensionMethods:
+  - dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.System.Linq.WildCard.Search``1
+  - dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.System.Linq.WildCard.Search``1
+  - dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.System.SystemExtensions.AsLazy``1
+  nameWithType.vb: HandleMessageAsync(Of TImplementation, TMessage)
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage)
+  name.vb: HandleMessageAsync(Of TImplementation, TMessage)
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.#ctor(System.Object,System.IntPtr)
+  commentId: M:dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+  langs:
+  - csharp
+  - vb
+  name: HandleMessageAsync(object, nint)
+  nameWithType: HandleMessageAsync<TImplementation, TMessage>.HandleMessageAsync(object, nint)
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>.HandleMessageAsync(object, nint)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus/Handlers/Delegates.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus
+  namespace: dotNetBlocks.ServiceBus.Handlers
+  syntax:
+    content: public HandleMessageAsync(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.#ctor*
+  nameWithType.vb: HandleMessageAsync(Of TImplementation, TMessage).New(Object, IntPtr)
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage).New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.Invoke(`0,`1,System.Threading.CancellationToken)
+  commentId: M:dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.Invoke(`0,`1,System.Threading.CancellationToken)
+  id: Invoke(`0,`1,System.Threading.CancellationToken)
+  parent: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+  langs:
+  - csharp
+  - vb
+  name: Invoke(TImplementation, TMessage, CancellationToken)
+  nameWithType: HandleMessageAsync<TImplementation, TMessage>.Invoke(TImplementation, TMessage, CancellationToken)
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>.Invoke(TImplementation, TMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus/Handlers/Delegates.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus
+  namespace: dotNetBlocks.ServiceBus.Handlers
+  syntax:
+    content: public virtual Task Invoke(TImplementation implementation, TMessage message, CancellationToken cancellation = default)
+    parameters:
+    - id: implementation
+      type: '{TImplementation}'
+    - id: message
+      type: '{TMessage}'
+    - id: cancellation
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function Invoke(implementation As TImplementation, message As TMessage, cancellation As CancellationToken = Nothing) As Task
+  overload: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.Invoke*
+  nameWithType.vb: HandleMessageAsync(Of TImplementation, TMessage).Invoke(TImplementation, TMessage, CancellationToken)
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage).Invoke(TImplementation, TMessage, System.Threading.CancellationToken)
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.BeginInvoke(`0,`1,System.Threading.CancellationToken,System.AsyncCallback,System.Object)
+  commentId: M:dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.BeginInvoke(`0,`1,System.Threading.CancellationToken,System.AsyncCallback,System.Object)
+  id: BeginInvoke(`0,`1,System.Threading.CancellationToken,System.AsyncCallback,System.Object)
+  parent: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(TImplementation, TMessage, CancellationToken, AsyncCallback, object)
+  nameWithType: HandleMessageAsync<TImplementation, TMessage>.BeginInvoke(TImplementation, TMessage, CancellationToken, AsyncCallback, object)
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>.BeginInvoke(TImplementation, TMessage, System.Threading.CancellationToken, System.AsyncCallback, object)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus/Handlers/Delegates.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus
+  namespace: dotNetBlocks.ServiceBus.Handlers
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(TImplementation implementation, TMessage message, CancellationToken cancellation, AsyncCallback callback, object @object)
+    parameters:
+    - id: implementation
+      type: '{TImplementation}'
+    - id: message
+      type: '{TMessage}'
+    - id: cancellation
+      type: System.Threading.CancellationToken
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(implementation As TImplementation, message As TMessage, cancellation As CancellationToken, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.BeginInvoke*
+  nameWithType.vb: HandleMessageAsync(Of TImplementation, TMessage).BeginInvoke(TImplementation, TMessage, CancellationToken, AsyncCallback, Object)
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage).BeginInvoke(TImplementation, TMessage, System.Threading.CancellationToken, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(TImplementation, TMessage, CancellationToken, AsyncCallback, Object)
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.EndInvoke(System.IAsyncResult)
+  commentId: M:dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: HandleMessageAsync<TImplementation, TMessage>.EndInvoke(IAsyncResult)
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>.EndInvoke(System.IAsyncResult)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus/Handlers/Delegates.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus
+  namespace: dotNetBlocks.ServiceBus.Handlers
+  syntax:
+    content: public virtual Task EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function EndInvoke(result As IAsyncResult) As Task
+  overload: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.EndInvoke*
+  nameWithType.vb: HandleMessageAsync(Of TImplementation, TMessage).EndInvoke(IAsyncResult)
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage).EndInvoke(System.IAsyncResult)
+references:
+- uid: dotNetBlocks.ServiceBus.Handlers
+  commentId: N:dotNetBlocks.ServiceBus.Handlers
+  isExternal: true
+  href: dotNetBlocks.html
+  name: dotNetBlocks.ServiceBus.Handlers
+  nameWithType: dotNetBlocks.ServiceBus.Handlers
+  fullName: dotNetBlocks.ServiceBus.Handlers
+  spec.csharp:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus
+    name: ServiceBus
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus.Handlers
+    name: Handlers
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.html
+  spec.vb:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus
+    name: ServiceBus
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus.Handlers
+    name: Handlers
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.html
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.System.Linq.WildCard.Search``1
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  parent: System.Linq.WildCard
+  definition: System.Linq.WildCard.Search``1(``0)
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<HandleMessageAsync<TImplementation, TMessage>>(HandleMessageAsync<TImplementation, TMessage>)
+  nameWithType: WildCard.Search<HandleMessageAsync<TImplementation, TMessage>>(HandleMessageAsync<TImplementation, TMessage>)
+  fullName: System.Linq.WildCard.Search<dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>>(dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>)
+  nameWithType.vb: WildCard.Search(Of HandleMessageAsync(Of TImplementation, TMessage))(HandleMessageAsync(Of TImplementation, TMessage))
+  fullName.vb: System.Linq.WildCard.Search(Of dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage))(dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage))
+  name.vb: Search(Of HandleMessageAsync(Of TImplementation, TMessage))(HandleMessageAsync(Of TImplementation, TMessage))
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync{`0,`1})
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+    name: HandleMessageAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html
+  - name: <
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+    name: HandleMessageAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html
+  - name: <
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync{`0,`1})
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+    name: HandleMessageAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: )
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+    name: HandleMessageAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: )
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<HandleMessageAsync<TImplementation, TMessage>>(HandleMessageAsync<TImplementation, TMessage>)
+  nameWithType: SystemExtensions.AsLazy<HandleMessageAsync<TImplementation, TMessage>>(HandleMessageAsync<TImplementation, TMessage>)
+  fullName: System.SystemExtensions.AsLazy<dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>>(dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>)
+  nameWithType.vb: SystemExtensions.AsLazy(Of HandleMessageAsync(Of TImplementation, TMessage))(HandleMessageAsync(Of TImplementation, TMessage))
+  fullName.vb: System.SystemExtensions.AsLazy(Of dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage))(dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage))
+  name.vb: AsLazy(Of HandleMessageAsync(Of TImplementation, TMessage))(HandleMessageAsync(Of TImplementation, TMessage))
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync{`0,`1})
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+    name: HandleMessageAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html
+  - name: <
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+    name: HandleMessageAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html
+  - name: <
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync{`0,`1})
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+    name: HandleMessageAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: )
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+    name: HandleMessageAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: )
+- uid: '{TImplementation}'
+  commentId: '!:TImplementation'
+  definition: TImplementation
+  name: TImplementation
+  nameWithType: TImplementation
+  fullName: TImplementation
+- uid: '{TMessage}'
+  commentId: '!:TMessage'
+  definition: TMessage
+  name: TMessage
+  nameWithType: TMessage
+  fullName: TMessage
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Linq.WildCard.Search``1(``0)
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  isExternal: true
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<TSearch>(TSearch)
+  nameWithType: WildCard.Search<TSearch>(TSearch)
+  fullName: System.Linq.WildCard.Search<TSearch>(TSearch)
+  nameWithType.vb: WildCard.Search(Of TSearch)(TSearch)
+  fullName.vb: System.Linq.WildCard.Search(Of TSearch)(TSearch)
+  name.vb: Search(Of TSearch)(TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: (
+  - name: TSearch
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: (
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard
+  commentId: T:System.Linq.WildCard
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard.html
+  name: WildCard
+  nameWithType: WildCard
+  fullName: System.Linq.WildCard
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: TImplementation
+  name: TImplementation
+  nameWithType: TImplementation
+  fullName: TImplementation
+- uid: TMessage
+  name: TMessage
+  nameWithType: TMessage
+  fullName: TMessage
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: System.html
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.#ctor*
+  commentId: Overload:dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.#ctor
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html#dotNetBlocks_ServiceBus_Handlers_HandleMessageAsync_2__ctor_System_Object_System_IntPtr_
+  name: HandleMessageAsync
+  nameWithType: HandleMessageAsync<TImplementation, TMessage>.HandleMessageAsync
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>.HandleMessageAsync
+  nameWithType.vb: HandleMessageAsync(Of TImplementation, TMessage).New
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage).New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.Invoke*
+  commentId: Overload:dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.Invoke
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html#dotNetBlocks_ServiceBus_Handlers_HandleMessageAsync_2_Invoke__0__1_System_Threading_CancellationToken_
+  name: Invoke
+  nameWithType: HandleMessageAsync<TImplementation, TMessage>.Invoke
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>.Invoke
+  nameWithType.vb: HandleMessageAsync(Of TImplementation, TMessage).Invoke
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage).Invoke
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.BeginInvoke*
+  commentId: Overload:dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.BeginInvoke
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html#dotNetBlocks_ServiceBus_Handlers_HandleMessageAsync_2_BeginInvoke__0__1_System_Threading_CancellationToken_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: HandleMessageAsync<TImplementation, TMessage>.BeginInvoke
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>.BeginInvoke
+  nameWithType.vb: HandleMessageAsync(Of TImplementation, TMessage).BeginInvoke
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage).BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.EndInvoke*
+  commentId: Overload:dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2.EndInvoke
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html#dotNetBlocks_ServiceBus_Handlers_HandleMessageAsync_2_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: HandleMessageAsync<TImplementation, TMessage>.EndInvoke
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>.EndInvoke
+  nameWithType.vb: HandleMessageAsync(Of TImplementation, TMessage).EndInvoke
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage).EndInvoke

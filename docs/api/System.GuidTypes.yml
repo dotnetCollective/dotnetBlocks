@@ -1,0 +1,259 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.GuidTypes
+  commentId: T:System.GuidTypes
+  id: GuidTypes
+  parent: System
+  children:
+  - System.GuidTypes.CombGuid
+  - System.GuidTypes.Oracle
+  - System.GuidTypes.PosGreSQL
+  - System.GuidTypes.SqlLite
+  - System.GuidTypes.SqlServer
+  - System.GuidTypes.Unix
+  langs:
+  - csharp
+  - vb
+  name: GuidTypes
+  nameWithType: GuidTypes
+  fullName: System.GuidTypes
+  type: Enum
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+  assemblies:
+  - dotNetBlocks.System
+  namespace: System
+  syntax:
+    content: public enum GuidTypes
+    content.vb: Public Enum GuidTypes
+  extensionMethods:
+  - System.GuidTypes.System.SystemExtensions.AsLazy``1
+  - System.GuidTypes.System.SystemExtensions.AsLazy``1
+  - System.GuidTypes.System.SystemExtensions.AsLazy``1
+  - System.GuidTypes.System.SystemExtensions.AsLazy``1
+  - System.GuidTypes.System.SystemExtensions.AsLazy``1
+- uid: System.GuidTypes.CombGuid
+  commentId: F:System.GuidTypes.CombGuid
+  id: CombGuid
+  parent: System.GuidTypes
+  langs:
+  - csharp
+  - vb
+  name: CombGuid
+  nameWithType: GuidTypes.CombGuid
+  fullName: System.GuidTypes.CombGuid
+  type: Field
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+  assemblies:
+  - dotNetBlocks.System
+  namespace: System
+  syntax:
+    content: CombGuid = 0
+    return:
+      type: System.GuidTypes
+- uid: System.GuidTypes.SqlServer
+  commentId: F:System.GuidTypes.SqlServer
+  id: SqlServer
+  parent: System.GuidTypes
+  langs:
+  - csharp
+  - vb
+  name: SqlServer
+  nameWithType: GuidTypes.SqlServer
+  fullName: System.GuidTypes.SqlServer
+  type: Field
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+  assemblies:
+  - dotNetBlocks.System
+  namespace: System
+  syntax:
+    content: SqlServer = 1
+    return:
+      type: System.GuidTypes
+- uid: System.GuidTypes.SqlLite
+  commentId: F:System.GuidTypes.SqlLite
+  id: SqlLite
+  parent: System.GuidTypes
+  langs:
+  - csharp
+  - vb
+  name: SqlLite
+  nameWithType: GuidTypes.SqlLite
+  fullName: System.GuidTypes.SqlLite
+  type: Field
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+  assemblies:
+  - dotNetBlocks.System
+  namespace: System
+  syntax:
+    content: SqlLite = 2
+    return:
+      type: System.GuidTypes
+- uid: System.GuidTypes.Oracle
+  commentId: F:System.GuidTypes.Oracle
+  id: Oracle
+  parent: System.GuidTypes
+  langs:
+  - csharp
+  - vb
+  name: Oracle
+  nameWithType: GuidTypes.Oracle
+  fullName: System.GuidTypes.Oracle
+  type: Field
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+  assemblies:
+  - dotNetBlocks.System
+  namespace: System
+  syntax:
+    content: Oracle = 3
+    return:
+      type: System.GuidTypes
+- uid: System.GuidTypes.PosGreSQL
+  commentId: F:System.GuidTypes.PosGreSQL
+  id: PosGreSQL
+  parent: System.GuidTypes
+  langs:
+  - csharp
+  - vb
+  name: PosGreSQL
+  nameWithType: GuidTypes.PosGreSQL
+  fullName: System.GuidTypes.PosGreSQL
+  type: Field
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+  assemblies:
+  - dotNetBlocks.System
+  namespace: System
+  syntax:
+    content: PosGreSQL = 4
+    return:
+      type: System.GuidTypes
+- uid: System.GuidTypes.Unix
+  commentId: F:System.GuidTypes.Unix
+  id: Unix
+  parent: System.GuidTypes
+  langs:
+  - csharp
+  - vb
+  name: Unix
+  nameWithType: GuidTypes.Unix
+  fullName: System.GuidTypes.Unix
+  type: Field
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+  assemblies:
+  - dotNetBlocks.System
+  namespace: System
+  syntax:
+    content: Unix = 5
+    return:
+      type: System.GuidTypes
+references:
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.GuidTypes.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<GuidTypes>(GuidTypes)
+  nameWithType: SystemExtensions.AsLazy<GuidTypes>(GuidTypes)
+  fullName: System.SystemExtensions.AsLazy<System.GuidTypes>(System.GuidTypes)
+  nameWithType.vb: SystemExtensions.AsLazy(Of GuidTypes)(GuidTypes)
+  fullName.vb: System.SystemExtensions.AsLazy(Of System.GuidTypes)(System.GuidTypes)
+  name.vb: AsLazy(Of GuidTypes)(GuidTypes)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(System.GuidTypes)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: System.GuidTypes
+    name: GuidTypes
+    isExternal: true
+    href: System.GuidTypes.html
+  - name: '>'
+  - name: (
+  - uid: System.GuidTypes
+    name: GuidTypes
+    isExternal: true
+    href: System.GuidTypes.html
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(System.GuidTypes)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.GuidTypes
+    name: GuidTypes
+    isExternal: true
+    href: System.GuidTypes.html
+  - name: )
+  - name: (
+  - uid: System.GuidTypes
+    name: GuidTypes
+    isExternal: true
+    href: System.GuidTypes.html
+  - name: )
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: System.GuidTypes
+  commentId: T:System.GuidTypes
+  parent: System
+  isExternal: true
+  href: System.GuidTypes.html
+  name: GuidTypes
+  nameWithType: GuidTypes
+  fullName: System.GuidTypes

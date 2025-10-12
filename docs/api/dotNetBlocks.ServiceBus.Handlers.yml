@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.ServiceBus.Handlers
+  commentId: N:dotNetBlocks.ServiceBus.Handlers
+  id: dotNetBlocks.ServiceBus.Handlers
+  children:
+  - dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+  - dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+  langs:
+  - csharp
+  - vb
+  name: dotNetBlocks.ServiceBus.Handlers
+  nameWithType: dotNetBlocks.ServiceBus.Handlers
+  fullName: dotNetBlocks.ServiceBus.Handlers
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.ServiceBus
+references:
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+  commentId: T:dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html
+  name: HandleMessageAsync<TImplementation, TMessage>
+  nameWithType: HandleMessageAsync<TImplementation, TMessage>
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>
+  nameWithType.vb: HandleMessageAsync(Of TImplementation, TMessage)
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync(Of TImplementation, TMessage)
+  name.vb: HandleMessageAsync(Of TImplementation, TMessage)
+  spec.csharp:
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+    name: HandleMessageAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html
+  - name: <
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+    name: HandleMessageAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: )
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+  commentId: T:dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html
+  name: HandleConsumeAsync<TImplementation, TMessage>
+  nameWithType: HandleConsumeAsync<TImplementation, TMessage>
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>
+  nameWithType.vb: HandleConsumeAsync(Of TImplementation, TMessage)
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage)
+  name.vb: HandleConsumeAsync(Of TImplementation, TMessage)
+  spec.csharp:
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+    name: HandleConsumeAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html
+  - name: <
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+    name: HandleConsumeAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: )

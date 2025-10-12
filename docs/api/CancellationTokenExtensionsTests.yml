@@ -1,0 +1,14 @@
+### YamlMime:ApiPage
+title: Namespace CancellationTokenExtensionsTests
+body:
+- api1: Namespace CancellationTokenExtensionsTests
+  id: CancellationTokenExtensionsTests
+  metadata:
+    uid: CancellationTokenExtensionsTests
+    commentId: N:CancellationTokenExtensionsTests
+- h3: Classes
+- parameters:
+  - type:
+      text: CancellationTokenExtensionsTests
+      url: CancellationTokenExtensionsTests.CancellationTokenExtensionsTests.html
+languageId: csharp

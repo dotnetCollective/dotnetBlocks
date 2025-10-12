@@ -2,9 +2,9 @@
   <PropertyGroup>
 
       <!-- Enable central package management, https://learn.microsoft.com/en-us/nuget/consume-packages/Central-Package-Management -->
-    <ManagePackageVersionsCentrally>true </ManagePackageVersionsCentrally>
 
     <CentralPackageFloatingVersionsEnabled>true</CentralPackageFloatingVersionsEnabled>
+    <CentralPackageVersionOverrideEnabled>True</CentralPackageVersionOverrideEnabled>
 
   </PropertyGroup>
   <ItemGroup>
@@ -21,22 +21,9 @@
     <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.9"/>
     <PackageVersion Include="LinqKit.Core" Version="1.2.8"/>
+    <PackageVersion Include="Microsoft.Extensions.FileSystemGlobbing" Version="9.0.9" />
 
-    <!--Documentation generator Statiq-->
 
-<!--
-    Working
-    <PackageVersion Include="Statiq.Web" Version="1.0.0-beta.60"  />
-	<PackageVersion Include="Statiq.Docs" Version="1.0.0-beta.17" />
-
-     Floating
-    <Packageversion Include="Statiq.Docs"   Version="*-*" />
-	<PackageVersion Include="Statiq.Web" Version="*-*" />
-
-    -->
-
-    <Packageversion Include="Statiq.Docs"   Version="1.0.0-beta.17"  />
-    <Packageversion Include="Statiq.Web"   Version="1.0.0-beta.60"  />
 
 
   </ItemGroup>

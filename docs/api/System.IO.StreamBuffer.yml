@@ -1,0 +1,3109 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.IO.StreamBuffer
+  commentId: T:System.IO.StreamBuffer
+  id: StreamBuffer
+  parent: System.IO
+  children:
+  - System.IO.StreamBuffer.#ctor(System.IO.Pipelines.PipeOptions)
+  - System.IO.StreamBuffer.#ctor(System.IO.StreamBufferOptions)
+  - System.IO.StreamBuffer.#ctor(System.Int32)
+  - System.IO.StreamBuffer.CancelAllBackgroundTasksTokenSource
+  - System.IO.StreamBuffer.CancelBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.CancelBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.CancelBackgroundReadTokenSource
+  - System.IO.StreamBuffer.CancelBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.CancelBackgroundWriteTokenSource
+  - System.IO.StreamBuffer.DefaultMaxTimeToWaitForTaskComplete
+  - System.IO.StreamBuffer.Dispose
+  - System.IO.StreamBuffer.Dispose(System.Boolean)
+  - System.IO.StreamBuffer.DisposeAsync
+  - System.IO.StreamBuffer.DisposeAsyncCore
+  - System.IO.StreamBuffer.IsBackgroundReadTaskAssigned
+  - System.IO.StreamBuffer.IsBackgroundWriteTaskAssigned
+  - System.IO.StreamBuffer.ReadStream
+  - System.IO.StreamBuffer.RunAction(System.IO.StreamBuffer.RunActionParameters,System.Threading.CancellationToken[])
+  - System.IO.StreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.StartBackgroundRead(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.StartBackgroundRead(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.StartBackgroundWrite(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.WaitForBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.WaitForBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.WaitForBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  - System.IO.StreamBuffer.WriteStream
+  - System.IO.StreamBuffer.backgroundReadTask
+  - System.IO.StreamBuffer.backgroundWriteTask
+  langs:
+  - csharp
+  - vb
+  name: StreamBuffer
+  nameWithType: StreamBuffer
+  fullName: System.IO.StreamBuffer
+  type: Class
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: 'public class StreamBuffer : IAsyncDisposable, IDisposable, IStreamBuffer'
+    content.vb: Public Class StreamBuffer Implements IAsyncDisposable, IDisposable, IStreamBuffer
+  inheritance:
+  - System.Object
+  implements:
+  - System.IAsyncDisposable
+  - System.IDisposable
+  - System.IO.IStreamBuffer
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.IO.StreamBuffer.System.Linq.WildCard.Search``1
+  - System.IO.StreamBuffer.System.Linq.WildCard.Search``1
+  - System.IO.StreamBuffer.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.System.SystemExtensions.AsLazy``1
+- uid: System.IO.StreamBuffer.DefaultMaxTimeToWaitForTaskComplete
+  commentId: F:System.IO.StreamBuffer.DefaultMaxTimeToWaitForTaskComplete
+  id: DefaultMaxTimeToWaitForTaskComplete
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: DefaultMaxTimeToWaitForTaskComplete
+  nameWithType: StreamBuffer.DefaultMaxTimeToWaitForTaskComplete
+  fullName: System.IO.StreamBuffer.DefaultMaxTimeToWaitForTaskComplete
+  type: Field
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public readonly TimeSpan DefaultMaxTimeToWaitForTaskComplete
+    return:
+      type: System.TimeSpan
+    content.vb: Public ReadOnly DefaultMaxTimeToWaitForTaskComplete As TimeSpan
+- uid: System.IO.StreamBuffer.CancelAllBackgroundTasksTokenSource
+  commentId: F:System.IO.StreamBuffer.CancelAllBackgroundTasksTokenSource
+  id: CancelAllBackgroundTasksTokenSource
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: CancelAllBackgroundTasksTokenSource
+  nameWithType: StreamBuffer.CancelAllBackgroundTasksTokenSource
+  fullName: System.IO.StreamBuffer.CancelAllBackgroundTasksTokenSource
+  type: Field
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: protected readonly CancellationTokenSource CancelAllBackgroundTasksTokenSource
+    return:
+      type: System.Threading.CancellationTokenSource
+    content.vb: Protected ReadOnly CancelAllBackgroundTasksTokenSource As CancellationTokenSource
+- uid: System.IO.StreamBuffer.CancelBackgroundWriteTokenSource
+  commentId: F:System.IO.StreamBuffer.CancelBackgroundWriteTokenSource
+  id: CancelBackgroundWriteTokenSource
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: CancelBackgroundWriteTokenSource
+  nameWithType: StreamBuffer.CancelBackgroundWriteTokenSource
+  fullName: System.IO.StreamBuffer.CancelBackgroundWriteTokenSource
+  type: Field
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: protected readonly CancellationTokenSource CancelBackgroundWriteTokenSource
+    return:
+      type: System.Threading.CancellationTokenSource
+    content.vb: Protected ReadOnly CancelBackgroundWriteTokenSource As CancellationTokenSource
+- uid: System.IO.StreamBuffer.CancelBackgroundReadTokenSource
+  commentId: F:System.IO.StreamBuffer.CancelBackgroundReadTokenSource
+  id: CancelBackgroundReadTokenSource
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: CancelBackgroundReadTokenSource
+  nameWithType: StreamBuffer.CancelBackgroundReadTokenSource
+  fullName: System.IO.StreamBuffer.CancelBackgroundReadTokenSource
+  type: Field
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: protected readonly CancellationTokenSource CancelBackgroundReadTokenSource
+    return:
+      type: System.Threading.CancellationTokenSource
+    content.vb: Protected ReadOnly CancelBackgroundReadTokenSource As CancellationTokenSource
+- uid: System.IO.StreamBuffer.CancelBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.CancelBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  id: CancelBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: CancelBackgroundAsync(TimeSpan?, CancellationToken)
+  nameWithType: StreamBuffer.CancelBackgroundAsync(TimeSpan?, CancellationToken)
+  fullName: System.IO.StreamBuffer.CancelBackgroundAsync(System.TimeSpan?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task CancelBackgroundAsync(TimeSpan? waitTime = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: waitTime
+      type: System.Nullable{System.TimeSpan}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function CancelBackgroundAsync(waitTime As TimeSpan? = Nothing, cancellationToken As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.CancelBackgroundAsync*
+  implements:
+  - System.IO.IStreamBuffer.CancelBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+- uid: System.IO.StreamBuffer.WaitForBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.WaitForBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  id: WaitForBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: WaitForBackgroundAsync(TimeSpan?, CancellationToken)
+  nameWithType: StreamBuffer.WaitForBackgroundAsync(TimeSpan?, CancellationToken)
+  fullName: System.IO.StreamBuffer.WaitForBackgroundAsync(System.TimeSpan?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task WaitForBackgroundAsync(TimeSpan? waitTime = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: waitTime
+      type: System.Nullable{System.TimeSpan}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WaitForBackgroundAsync(waitTime As TimeSpan? = Nothing, cancellationToken As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.WaitForBackgroundAsync*
+  implements:
+  - System.IO.IStreamBuffer.WaitForBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+- uid: System.IO.StreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  id: StartBackgroundWrite(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: StartBackgroundWrite(Action<Stream, CancellationToken>, CancellationToken)
+  nameWithType: StreamBuffer.StartBackgroundWrite(Action<Stream, CancellationToken>, CancellationToken)
+  fullName: System.IO.StreamBuffer.StartBackgroundWrite(System.Action<System.IO.Stream, System.Threading.CancellationToken>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task StartBackgroundWrite(Action<Stream, CancellationToken> action, CancellationToken cancellationToken = default)
+    parameters:
+    - id: action
+      type: System.Action{System.IO.Stream,System.Threading.CancellationToken}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function StartBackgroundWrite(action As Action(Of Stream, CancellationToken), cancellationToken As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.StartBackgroundWrite*
+  implements:
+  - System.IO.IStreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  nameWithType.vb: StreamBuffer.StartBackgroundWrite(Action(Of Stream, CancellationToken), CancellationToken)
+  fullName.vb: System.IO.StreamBuffer.StartBackgroundWrite(System.Action(Of System.IO.Stream, System.Threading.CancellationToken), System.Threading.CancellationToken)
+  name.vb: StartBackgroundWrite(Action(Of Stream, CancellationToken), CancellationToken)
+- uid: System.IO.StreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  id: StartBackgroundWrite(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: StartBackgroundWrite(Action<Stream>, CancellationToken)
+  nameWithType: StreamBuffer.StartBackgroundWrite(Action<Stream>, CancellationToken)
+  fullName: System.IO.StreamBuffer.StartBackgroundWrite(System.Action<System.IO.Stream>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task StartBackgroundWrite(Action<Stream> action, CancellationToken cancellationToken = default)
+    parameters:
+    - id: action
+      type: System.Action{System.IO.Stream}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function StartBackgroundWrite(action As Action(Of Stream), cancellationToken As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.StartBackgroundWrite*
+  implements:
+  - System.IO.IStreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  nameWithType.vb: StreamBuffer.StartBackgroundWrite(Action(Of Stream), CancellationToken)
+  fullName.vb: System.IO.StreamBuffer.StartBackgroundWrite(System.Action(Of System.IO.Stream), System.Threading.CancellationToken)
+  name.vb: StartBackgroundWrite(Action(Of Stream), CancellationToken)
+- uid: System.IO.StreamBuffer.StartBackgroundWrite(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.StartBackgroundWrite(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  id: StartBackgroundWrite(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: StartBackgroundWrite(Func<Stream, CancellationToken, Task>, CancellationToken)
+  nameWithType: StreamBuffer.StartBackgroundWrite(Func<Stream, CancellationToken, Task>, CancellationToken)
+  fullName: System.IO.StreamBuffer.StartBackgroundWrite(System.Func<System.IO.Stream, System.Threading.CancellationToken, System.Threading.Tasks.Task>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task StartBackgroundWrite(Func<Stream, CancellationToken, Task> func, CancellationToken cancellationToken = default)
+    parameters:
+    - id: func
+      type: System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function StartBackgroundWrite(func As Func(Of Stream, CancellationToken, Task), cancellationToken As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.StartBackgroundWrite*
+  implements:
+  - System.IO.IStreamBuffer.StartBackgroundWrite(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  nameWithType.vb: StreamBuffer.StartBackgroundWrite(Func(Of Stream, CancellationToken, Task), CancellationToken)
+  fullName.vb: System.IO.StreamBuffer.StartBackgroundWrite(System.Func(Of System.IO.Stream, System.Threading.CancellationToken, System.Threading.Tasks.Task), System.Threading.CancellationToken)
+  name.vb: StartBackgroundWrite(Func(Of Stream, CancellationToken, Task), CancellationToken)
+- uid: System.IO.StreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+  id: StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: StartBackgroundWrite(BackgroundAction, TaskCreationOptions?, CancellationToken)
+  nameWithType: StreamBuffer.StartBackgroundWrite(StreamBuffer.BackgroundAction, TaskCreationOptions?, CancellationToken)
+  fullName: System.IO.StreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction, System.Threading.Tasks.TaskCreationOptions?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task StartBackgroundWrite(StreamBuffer.BackgroundAction action, TaskCreationOptions? options = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: action
+      type: System.IO.StreamBuffer.BackgroundAction
+    - id: options
+      type: System.Nullable{System.Threading.Tasks.TaskCreationOptions}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function StartBackgroundWrite(action As StreamBuffer.BackgroundAction, options As TaskCreationOptions? = Nothing, cancellationToken As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.StartBackgroundWrite*
+  implements:
+  - System.IO.IStreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+- uid: System.IO.StreamBuffer.CancelBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.CancelBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  id: CancelBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: CancelBackgroundWriteAsync(TimeSpan?, CancellationToken)
+  nameWithType: StreamBuffer.CancelBackgroundWriteAsync(TimeSpan?, CancellationToken)
+  fullName: System.IO.StreamBuffer.CancelBackgroundWriteAsync(System.TimeSpan?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task CancelBackgroundWriteAsync(TimeSpan? timeout = null, CancellationToken cancelWait = default)
+    parameters:
+    - id: timeout
+      type: System.Nullable{System.TimeSpan}
+    - id: cancelWait
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function CancelBackgroundWriteAsync(timeout As TimeSpan? = Nothing, cancelWait As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.CancelBackgroundWriteAsync*
+  implements:
+  - System.IO.IStreamBuffer.CancelBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+- uid: System.IO.StreamBuffer.WaitForBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.WaitForBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  id: WaitForBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: WaitForBackgroundWriteAsync(TimeSpan?, CancellationToken)
+  nameWithType: StreamBuffer.WaitForBackgroundWriteAsync(TimeSpan?, CancellationToken)
+  fullName: System.IO.StreamBuffer.WaitForBackgroundWriteAsync(System.TimeSpan?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task WaitForBackgroundWriteAsync(TimeSpan? timeout = null, CancellationToken cancelWait = default)
+    parameters:
+    - id: timeout
+      type: System.Nullable{System.TimeSpan}
+    - id: cancelWait
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WaitForBackgroundWriteAsync(timeout As TimeSpan? = Nothing, cancelWait As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.WaitForBackgroundWriteAsync*
+  implements:
+  - System.IO.IStreamBuffer.WaitForBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+- uid: System.IO.StreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  id: StartBackgroundRead(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: StartBackgroundRead(Action<Stream, CancellationToken>, CancellationToken)
+  nameWithType: StreamBuffer.StartBackgroundRead(Action<Stream, CancellationToken>, CancellationToken)
+  fullName: System.IO.StreamBuffer.StartBackgroundRead(System.Action<System.IO.Stream, System.Threading.CancellationToken>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task StartBackgroundRead(Action<Stream, CancellationToken> action, CancellationToken cancellationToken = default)
+    parameters:
+    - id: action
+      type: System.Action{System.IO.Stream,System.Threading.CancellationToken}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function StartBackgroundRead(action As Action(Of Stream, CancellationToken), cancellationToken As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.StartBackgroundRead*
+  implements:
+  - System.IO.IStreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  nameWithType.vb: StreamBuffer.StartBackgroundRead(Action(Of Stream, CancellationToken), CancellationToken)
+  fullName.vb: System.IO.StreamBuffer.StartBackgroundRead(System.Action(Of System.IO.Stream, System.Threading.CancellationToken), System.Threading.CancellationToken)
+  name.vb: StartBackgroundRead(Action(Of Stream, CancellationToken), CancellationToken)
+- uid: System.IO.StreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  id: StartBackgroundRead(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: StartBackgroundRead(Action<Stream>, CancellationToken)
+  nameWithType: StreamBuffer.StartBackgroundRead(Action<Stream>, CancellationToken)
+  fullName: System.IO.StreamBuffer.StartBackgroundRead(System.Action<System.IO.Stream>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task StartBackgroundRead(Action<Stream> action, CancellationToken cancellationToken = default)
+    parameters:
+    - id: action
+      type: System.Action{System.IO.Stream}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function StartBackgroundRead(action As Action(Of Stream), cancellationToken As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.StartBackgroundRead*
+  implements:
+  - System.IO.IStreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  nameWithType.vb: StreamBuffer.StartBackgroundRead(Action(Of Stream), CancellationToken)
+  fullName.vb: System.IO.StreamBuffer.StartBackgroundRead(System.Action(Of System.IO.Stream), System.Threading.CancellationToken)
+  name.vb: StartBackgroundRead(Action(Of Stream), CancellationToken)
+- uid: System.IO.StreamBuffer.StartBackgroundRead(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.StartBackgroundRead(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  id: StartBackgroundRead(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: StartBackgroundRead(Func<Stream, CancellationToken, Task>, CancellationToken)
+  nameWithType: StreamBuffer.StartBackgroundRead(Func<Stream, CancellationToken, Task>, CancellationToken)
+  fullName: System.IO.StreamBuffer.StartBackgroundRead(System.Func<System.IO.Stream, System.Threading.CancellationToken, System.Threading.Tasks.Task>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task StartBackgroundRead(Func<Stream, CancellationToken, Task> func, CancellationToken cancellationToken = default)
+    parameters:
+    - id: func
+      type: System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function StartBackgroundRead(func As Func(Of Stream, CancellationToken, Task), cancellationToken As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.StartBackgroundRead*
+  implements:
+  - System.IO.IStreamBuffer.StartBackgroundRead(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  nameWithType.vb: StreamBuffer.StartBackgroundRead(Func(Of Stream, CancellationToken, Task), CancellationToken)
+  fullName.vb: System.IO.StreamBuffer.StartBackgroundRead(System.Func(Of System.IO.Stream, System.Threading.CancellationToken, System.Threading.Tasks.Task), System.Threading.CancellationToken)
+  name.vb: StartBackgroundRead(Func(Of Stream, CancellationToken, Task), CancellationToken)
+- uid: System.IO.StreamBuffer.StartBackgroundRead(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.StartBackgroundRead(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+  id: StartBackgroundRead(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: StartBackgroundRead(BackgroundAction, TaskCreationOptions?, CancellationToken)
+  nameWithType: StreamBuffer.StartBackgroundRead(StreamBuffer.BackgroundAction, TaskCreationOptions?, CancellationToken)
+  fullName: System.IO.StreamBuffer.StartBackgroundRead(System.IO.StreamBuffer.BackgroundAction, System.Threading.Tasks.TaskCreationOptions?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task StartBackgroundRead(StreamBuffer.BackgroundAction action, TaskCreationOptions? options = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: action
+      type: System.IO.StreamBuffer.BackgroundAction
+    - id: options
+      type: System.Nullable{System.Threading.Tasks.TaskCreationOptions}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function StartBackgroundRead(action As StreamBuffer.BackgroundAction, options As TaskCreationOptions? = Nothing, cancellationToken As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.StartBackgroundRead*
+  implements:
+  - System.IO.IStreamBuffer.StartBackgroundRead(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+- uid: System.IO.StreamBuffer.CancelBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.CancelBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  id: CancelBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: CancelBackgroundReadAsync(TimeSpan?, CancellationToken)
+  nameWithType: StreamBuffer.CancelBackgroundReadAsync(TimeSpan?, CancellationToken)
+  fullName: System.IO.StreamBuffer.CancelBackgroundReadAsync(System.TimeSpan?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task CancelBackgroundReadAsync(TimeSpan? timeout = null, CancellationToken cancelWait = default)
+    parameters:
+    - id: timeout
+      type: System.Nullable{System.TimeSpan}
+    - id: cancelWait
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function CancelBackgroundReadAsync(timeout As TimeSpan? = Nothing, cancelWait As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.CancelBackgroundReadAsync*
+  implements:
+  - System.IO.IStreamBuffer.CancelBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+- uid: System.IO.StreamBuffer.WaitForBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  commentId: M:System.IO.StreamBuffer.WaitForBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  id: WaitForBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: WaitForBackgroundReadAsync(TimeSpan?, CancellationToken)
+  nameWithType: StreamBuffer.WaitForBackgroundReadAsync(TimeSpan?, CancellationToken)
+  fullName: System.IO.StreamBuffer.WaitForBackgroundReadAsync(System.TimeSpan?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task WaitForBackgroundReadAsync(TimeSpan? timeout = null, CancellationToken cancelWait = default)
+    parameters:
+    - id: timeout
+      type: System.Nullable{System.TimeSpan}
+    - id: cancelWait
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WaitForBackgroundReadAsync(timeout As TimeSpan? = Nothing, cancelWait As CancellationToken = Nothing) As Task
+  overload: System.IO.StreamBuffer.WaitForBackgroundReadAsync*
+  implements:
+  - System.IO.IStreamBuffer.WaitForBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+- uid: System.IO.StreamBuffer.RunAction(System.IO.StreamBuffer.RunActionParameters,System.Threading.CancellationToken[])
+  commentId: M:System.IO.StreamBuffer.RunAction(System.IO.StreamBuffer.RunActionParameters,System.Threading.CancellationToken[])
+  id: RunAction(System.IO.StreamBuffer.RunActionParameters,System.Threading.CancellationToken[])
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: RunAction(RunActionParameters, params CancellationToken[])
+  nameWithType: StreamBuffer.RunAction(StreamBuffer.RunActionParameters, params CancellationToken[])
+  fullName: System.IO.StreamBuffer.RunAction(System.IO.StreamBuffer.RunActionParameters, params System.Threading.CancellationToken[])
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: protected static Task RunAction(StreamBuffer.RunActionParameters actionParameters, params CancellationToken[] cancellationTokens)
+    parameters:
+    - id: actionParameters
+      type: System.IO.StreamBuffer.RunActionParameters
+    - id: cancellationTokens
+      type: System.Threading.CancellationToken[]
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Shared Function RunAction(actionParameters As StreamBuffer.RunActionParameters, ParamArray cancellationTokens As CancellationToken()) As Task
+  overload: System.IO.StreamBuffer.RunAction*
+  nameWithType.vb: StreamBuffer.RunAction(StreamBuffer.RunActionParameters, ParamArray CancellationToken())
+  fullName.vb: System.IO.StreamBuffer.RunAction(System.IO.StreamBuffer.RunActionParameters, ParamArray System.Threading.CancellationToken())
+  name.vb: RunAction(RunActionParameters, ParamArray CancellationToken())
+- uid: System.IO.StreamBuffer.#ctor(System.IO.Pipelines.PipeOptions)
+  commentId: M:System.IO.StreamBuffer.#ctor(System.IO.Pipelines.PipeOptions)
+  id: '#ctor(System.IO.Pipelines.PipeOptions)'
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: StreamBuffer(PipeOptions)
+  nameWithType: StreamBuffer.StreamBuffer(PipeOptions)
+  fullName: System.IO.StreamBuffer.StreamBuffer(System.IO.Pipelines.PipeOptions)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public StreamBuffer(PipeOptions pipeOptions)
+    parameters:
+    - id: pipeOptions
+      type: System.IO.Pipelines.PipeOptions
+    content.vb: Public Sub New(pipeOptions As PipeOptions)
+  overload: System.IO.StreamBuffer.#ctor*
+  nameWithType.vb: StreamBuffer.New(PipeOptions)
+  fullName.vb: System.IO.StreamBuffer.New(System.IO.Pipelines.PipeOptions)
+  name.vb: New(PipeOptions)
+- uid: System.IO.StreamBuffer.#ctor(System.Int32)
+  commentId: M:System.IO.StreamBuffer.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: StreamBuffer(int)
+  nameWithType: StreamBuffer.StreamBuffer(int)
+  fullName: System.IO.StreamBuffer.StreamBuffer(int)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public StreamBuffer(int bufferSize)
+    parameters:
+    - id: bufferSize
+      type: System.Int32
+    content.vb: Public Sub New(bufferSize As Integer)
+  overload: System.IO.StreamBuffer.#ctor*
+  nameWithType.vb: StreamBuffer.New(Integer)
+  fullName.vb: System.IO.StreamBuffer.New(Integer)
+  name.vb: New(Integer)
+- uid: System.IO.StreamBuffer.#ctor(System.IO.StreamBufferOptions)
+  commentId: M:System.IO.StreamBuffer.#ctor(System.IO.StreamBufferOptions)
+  id: '#ctor(System.IO.StreamBufferOptions)'
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: StreamBuffer(StreamBufferOptions)
+  nameWithType: StreamBuffer.StreamBuffer(StreamBufferOptions)
+  fullName: System.IO.StreamBuffer.StreamBuffer(System.IO.StreamBufferOptions)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public StreamBuffer(StreamBufferOptions bufferOptions)
+    parameters:
+    - id: bufferOptions
+      type: System.IO.StreamBufferOptions
+    content.vb: Public Sub New(bufferOptions As StreamBufferOptions)
+  overload: System.IO.StreamBuffer.#ctor*
+  nameWithType.vb: StreamBuffer.New(StreamBufferOptions)
+  fullName.vb: System.IO.StreamBuffer.New(System.IO.StreamBufferOptions)
+  name.vb: New(StreamBufferOptions)
+- uid: System.IO.StreamBuffer.DisposeAsync
+  commentId: M:System.IO.StreamBuffer.DisposeAsync
+  id: DisposeAsync
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: StreamBuffer.DisposeAsync()
+  fullName: System.IO.StreamBuffer.DisposeAsync()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: System.IO.StreamBuffer.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+  - System.IO.IStreamBuffer.DisposeAsync
+- uid: System.IO.StreamBuffer.DisposeAsyncCore
+  commentId: M:System.IO.StreamBuffer.DisposeAsyncCore
+  id: DisposeAsyncCore
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsyncCore()
+  nameWithType: StreamBuffer.DisposeAsyncCore()
+  fullName: System.IO.StreamBuffer.DisposeAsyncCore()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: protected virtual ValueTask DisposeAsyncCore()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Protected Overridable Function DisposeAsyncCore() As ValueTask
+  overload: System.IO.StreamBuffer.DisposeAsyncCore*
+- uid: System.IO.StreamBuffer.Dispose(System.Boolean)
+  commentId: M:System.IO.StreamBuffer.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: StreamBuffer.Dispose(bool)
+  fullName: System.IO.StreamBuffer.Dispose(bool)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: System.IO.StreamBuffer.Dispose*
+  nameWithType.vb: StreamBuffer.Dispose(Boolean)
+  fullName.vb: System.IO.StreamBuffer.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: System.IO.StreamBuffer.Dispose
+  commentId: M:System.IO.StreamBuffer.Dispose
+  id: Dispose
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: StreamBuffer.Dispose()
+  fullName: System.IO.StreamBuffer.Dispose()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: System.IO.StreamBuffer.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  - System.IO.IStreamBuffer.Dispose
+- uid: System.IO.StreamBuffer.backgroundWriteTask
+  commentId: P:System.IO.StreamBuffer.backgroundWriteTask
+  id: backgroundWriteTask
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: backgroundWriteTask
+  nameWithType: StreamBuffer.backgroundWriteTask
+  fullName: System.IO.StreamBuffer.backgroundWriteTask
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task? backgroundWriteTask { get; protected set; }
+    parameters: []
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Property backgroundWriteTask As Task
+  overload: System.IO.StreamBuffer.backgroundWriteTask*
+  implements:
+  - System.IO.IStreamBuffer.backgroundWriteTask
+- uid: System.IO.StreamBuffer.IsBackgroundWriteTaskAssigned
+  commentId: P:System.IO.StreamBuffer.IsBackgroundWriteTaskAssigned
+  id: IsBackgroundWriteTaskAssigned
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: IsBackgroundWriteTaskAssigned
+  nameWithType: StreamBuffer.IsBackgroundWriteTaskAssigned
+  fullName: System.IO.StreamBuffer.IsBackgroundWriteTaskAssigned
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public bool IsBackgroundWriteTaskAssigned { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsBackgroundWriteTaskAssigned As Boolean
+  overload: System.IO.StreamBuffer.IsBackgroundWriteTaskAssigned*
+  implements:
+  - System.IO.IStreamBuffer.IsBackgroundWriteTaskAssigned
+- uid: System.IO.StreamBuffer.backgroundReadTask
+  commentId: P:System.IO.StreamBuffer.backgroundReadTask
+  id: backgroundReadTask
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: backgroundReadTask
+  nameWithType: StreamBuffer.backgroundReadTask
+  fullName: System.IO.StreamBuffer.backgroundReadTask
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Task? backgroundReadTask { get; protected set; }
+    parameters: []
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Property backgroundReadTask As Task
+  overload: System.IO.StreamBuffer.backgroundReadTask*
+  implements:
+  - System.IO.IStreamBuffer.backgroundReadTask
+- uid: System.IO.StreamBuffer.IsBackgroundReadTaskAssigned
+  commentId: P:System.IO.StreamBuffer.IsBackgroundReadTaskAssigned
+  id: IsBackgroundReadTaskAssigned
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: IsBackgroundReadTaskAssigned
+  nameWithType: StreamBuffer.IsBackgroundReadTaskAssigned
+  fullName: System.IO.StreamBuffer.IsBackgroundReadTaskAssigned
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public bool IsBackgroundReadTaskAssigned { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsBackgroundReadTaskAssigned As Boolean
+  overload: System.IO.StreamBuffer.IsBackgroundReadTaskAssigned*
+  implements:
+  - System.IO.IStreamBuffer.IsBackgroundReadTaskAssigned
+- uid: System.IO.StreamBuffer.ReadStream
+  commentId: P:System.IO.StreamBuffer.ReadStream
+  id: ReadStream
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: ReadStream
+  nameWithType: StreamBuffer.ReadStream
+  fullName: System.IO.StreamBuffer.ReadStream
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Stream ReadStream { get; }
+    parameters: []
+    return:
+      type: System.IO.Stream
+    content.vb: Public ReadOnly Property ReadStream As Stream
+  overload: System.IO.StreamBuffer.ReadStream*
+  implements:
+  - System.IO.IStreamBuffer.ReadStream
+- uid: System.IO.StreamBuffer.WriteStream
+  commentId: P:System.IO.StreamBuffer.WriteStream
+  id: WriteStream
+  parent: System.IO.StreamBuffer
+  langs:
+  - csharp
+  - vb
+  name: WriteStream
+  nameWithType: StreamBuffer.WriteStream
+  fullName: System.IO.StreamBuffer.WriteStream
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public Stream WriteStream { get; }
+    parameters: []
+    return:
+      type: System.IO.Stream
+    content.vb: Public ReadOnly Property WriteStream As Stream
+  overload: System.IO.StreamBuffer.WriteStream*
+  implements:
+  - System.IO.IStreamBuffer.WriteStream
+references:
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: System.html
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IO.IStreamBuffer
+  commentId: T:System.IO.IStreamBuffer
+  parent: System.IO
+  isExternal: true
+  href: System.IO.IStreamBuffer.html
+  name: IStreamBuffer
+  nameWithType: IStreamBuffer
+  fullName: System.IO.IStreamBuffer
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.IO.StreamBuffer.System.Linq.WildCard.Search``1
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  parent: System.Linq.WildCard
+  definition: System.Linq.WildCard.Search``1(``0)
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<StreamBuffer>(StreamBuffer)
+  nameWithType: WildCard.Search<StreamBuffer>(StreamBuffer)
+  fullName: System.Linq.WildCard.Search<System.IO.StreamBuffer>(System.IO.StreamBuffer)
+  nameWithType.vb: WildCard.Search(Of StreamBuffer)(StreamBuffer)
+  fullName.vb: System.Linq.WildCard.Search(Of System.IO.StreamBuffer)(System.IO.StreamBuffer)
+  name.vb: Search(Of StreamBuffer)(StreamBuffer)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(System.IO.StreamBuffer)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: '>'
+  - name: (
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(System.IO.StreamBuffer)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: )
+  - name: (
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: )
+- uid: System.IO.StreamBuffer.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<StreamBuffer>(StreamBuffer)
+  nameWithType: SystemExtensions.AsLazy<StreamBuffer>(StreamBuffer)
+  fullName: System.SystemExtensions.AsLazy<System.IO.StreamBuffer>(System.IO.StreamBuffer)
+  nameWithType.vb: SystemExtensions.AsLazy(Of StreamBuffer)(StreamBuffer)
+  fullName.vb: System.SystemExtensions.AsLazy(Of System.IO.StreamBuffer)(System.IO.StreamBuffer)
+  name.vb: AsLazy(Of StreamBuffer)(StreamBuffer)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(System.IO.StreamBuffer)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: '>'
+  - name: (
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(System.IO.StreamBuffer)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: )
+  - name: (
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Linq.WildCard.Search``1(``0)
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  isExternal: true
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<TSearch>(TSearch)
+  nameWithType: WildCard.Search<TSearch>(TSearch)
+  fullName: System.Linq.WildCard.Search<TSearch>(TSearch)
+  nameWithType.vb: WildCard.Search(Of TSearch)(TSearch)
+  fullName.vb: System.Linq.WildCard.Search(Of TSearch)(TSearch)
+  name.vb: Search(Of TSearch)(TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: (
+  - name: TSearch
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: (
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard
+  commentId: T:System.Linq.WildCard
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard.html
+  name: WildCard
+  nameWithType: WildCard
+  fullName: System.Linq.WildCard
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: System.html
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.IO.StreamBuffer.CancelBackgroundAsync*
+  commentId: Overload:System.IO.StreamBuffer.CancelBackgroundAsync
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_CancelBackgroundAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  name: CancelBackgroundAsync
+  nameWithType: StreamBuffer.CancelBackgroundAsync
+  fullName: System.IO.StreamBuffer.CancelBackgroundAsync
+- uid: System.IO.IStreamBuffer.CancelBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.CancelBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_CancelBackgroundAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  name: CancelBackgroundAsync(TimeSpan?, CancellationToken)
+  nameWithType: IStreamBuffer.CancelBackgroundAsync(TimeSpan?, CancellationToken)
+  fullName: System.IO.IStreamBuffer.CancelBackgroundAsync(System.TimeSpan?, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.CancelBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+    name: CancelBackgroundAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_CancelBackgroundAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.CancelBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+    name: CancelBackgroundAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_CancelBackgroundAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan?
+  nameWithType: TimeSpan?
+  fullName: System.TimeSpan?
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.IO.StreamBuffer.WaitForBackgroundAsync*
+  commentId: Overload:System.IO.StreamBuffer.WaitForBackgroundAsync
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_WaitForBackgroundAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  name: WaitForBackgroundAsync
+  nameWithType: StreamBuffer.WaitForBackgroundAsync
+  fullName: System.IO.StreamBuffer.WaitForBackgroundAsync
+- uid: System.IO.IStreamBuffer.WaitForBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.WaitForBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_WaitForBackgroundAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  name: WaitForBackgroundAsync(TimeSpan?, CancellationToken)
+  nameWithType: IStreamBuffer.WaitForBackgroundAsync(TimeSpan?, CancellationToken)
+  fullName: System.IO.IStreamBuffer.WaitForBackgroundAsync(System.TimeSpan?, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.WaitForBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+    name: WaitForBackgroundAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_WaitForBackgroundAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.WaitForBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+    name: WaitForBackgroundAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_WaitForBackgroundAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.StreamBuffer.StartBackgroundWrite*
+  commentId: Overload:System.IO.StreamBuffer.StartBackgroundWrite
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_StartBackgroundWrite_System_Action_System_IO_Stream_System_Threading_CancellationToken__System_Threading_CancellationToken_
+  name: StartBackgroundWrite
+  nameWithType: StreamBuffer.StartBackgroundWrite
+  fullName: System.IO.StreamBuffer.StartBackgroundWrite
+- uid: System.IO.IStreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundWrite_System_Action_System_IO_Stream_System_Threading_CancellationToken__System_Threading_CancellationToken_
+  name: StartBackgroundWrite(Action<Stream, CancellationToken>, CancellationToken)
+  nameWithType: IStreamBuffer.StartBackgroundWrite(Action<Stream, CancellationToken>, CancellationToken)
+  fullName: System.IO.IStreamBuffer.StartBackgroundWrite(System.Action<System.IO.Stream, System.Threading.CancellationToken>, System.Threading.CancellationToken)
+  nameWithType.vb: IStreamBuffer.StartBackgroundWrite(Action(Of Stream, CancellationToken), CancellationToken)
+  fullName.vb: System.IO.IStreamBuffer.StartBackgroundWrite(System.Action(Of System.IO.Stream, System.Threading.CancellationToken), System.Threading.CancellationToken)
+  name.vb: StartBackgroundWrite(Action(Of Stream, CancellationToken), CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+    name: StartBackgroundWrite
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundWrite_System_Action_System_IO_Stream_System_Threading_CancellationToken__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+    name: StartBackgroundWrite
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundWrite_System_Action_System_IO_Stream_System_Threading_CancellationToken__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Action{System.IO.Stream,System.Threading.CancellationToken}
+  commentId: T:System.Action{System.IO.Stream,System.Threading.CancellationToken}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<Stream, CancellationToken>
+  nameWithType: Action<Stream, CancellationToken>
+  fullName: System.Action<System.IO.Stream, System.Threading.CancellationToken>
+  nameWithType.vb: Action(Of Stream, CancellationToken)
+  fullName.vb: System.Action(Of System.IO.Stream, System.Threading.CancellationToken)
+  name.vb: Action(Of Stream, CancellationToken)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System.IO.IStreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundWrite_System_Action_System_IO_Stream__System_Threading_CancellationToken_
+  name: StartBackgroundWrite(Action<Stream>, CancellationToken)
+  nameWithType: IStreamBuffer.StartBackgroundWrite(Action<Stream>, CancellationToken)
+  fullName: System.IO.IStreamBuffer.StartBackgroundWrite(System.Action<System.IO.Stream>, System.Threading.CancellationToken)
+  nameWithType.vb: IStreamBuffer.StartBackgroundWrite(Action(Of Stream), CancellationToken)
+  fullName.vb: System.IO.IStreamBuffer.StartBackgroundWrite(System.Action(Of System.IO.Stream), System.Threading.CancellationToken)
+  name.vb: StartBackgroundWrite(Action(Of Stream), CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+    name: StartBackgroundWrite
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundWrite_System_Action_System_IO_Stream__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+    name: StartBackgroundWrite
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundWrite_System_Action_System_IO_Stream__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Action{System.IO.Stream}
+  commentId: T:System.Action{System.IO.Stream}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<Stream>
+  nameWithType: Action<Stream>
+  fullName: System.Action<System.IO.Stream>
+  nameWithType.vb: Action(Of Stream)
+  fullName.vb: System.Action(Of System.IO.Stream)
+  name.vb: Action(Of Stream)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IO.IStreamBuffer.StartBackgroundWrite(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.StartBackgroundWrite(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundWrite_System_Func_System_IO_Stream_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_
+  name: StartBackgroundWrite(Func<Stream, CancellationToken, Task>, CancellationToken)
+  nameWithType: IStreamBuffer.StartBackgroundWrite(Func<Stream, CancellationToken, Task>, CancellationToken)
+  fullName: System.IO.IStreamBuffer.StartBackgroundWrite(System.Func<System.IO.Stream, System.Threading.CancellationToken, System.Threading.Tasks.Task>, System.Threading.CancellationToken)
+  nameWithType.vb: IStreamBuffer.StartBackgroundWrite(Func(Of Stream, CancellationToken, Task), CancellationToken)
+  fullName.vb: System.IO.IStreamBuffer.StartBackgroundWrite(System.Func(Of System.IO.Stream, System.Threading.CancellationToken, System.Threading.Tasks.Task), System.Threading.CancellationToken)
+  name.vb: StartBackgroundWrite(Func(Of Stream, CancellationToken, Task), CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.StartBackgroundWrite(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+    name: StartBackgroundWrite
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundWrite_System_Func_System_IO_Stream_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.StartBackgroundWrite(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+    name: StartBackgroundWrite
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundWrite_System_Func_System_IO_Stream_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<Stream, CancellationToken, Task>
+  nameWithType: Func<Stream, CancellationToken, Task>
+  fullName: System.Func<System.IO.Stream, System.Threading.CancellationToken, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of Stream, CancellationToken, Task)
+  fullName.vb: System.Func(Of System.IO.Stream, System.Threading.CancellationToken, System.Threading.Tasks.Task)
+  name.vb: Func(Of Stream, CancellationToken, Task)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.IO.IStreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundWrite_System_IO_StreamBuffer_BackgroundAction_System_Nullable_System_Threading_Tasks_TaskCreationOptions__System_Threading_CancellationToken_
+  name: StartBackgroundWrite(BackgroundAction, TaskCreationOptions?, CancellationToken)
+  nameWithType: IStreamBuffer.StartBackgroundWrite(StreamBuffer.BackgroundAction, TaskCreationOptions?, CancellationToken)
+  fullName: System.IO.IStreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction, System.Threading.Tasks.TaskCreationOptions?, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+    name: StartBackgroundWrite
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundWrite_System_IO_StreamBuffer_BackgroundAction_System_Nullable_System_Threading_Tasks_TaskCreationOptions__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.IO.StreamBuffer.BackgroundAction
+    name: BackgroundAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BackgroundAction.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.TaskCreationOptions
+    name: TaskCreationOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcreationoptions
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+    name: StartBackgroundWrite
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundWrite_System_IO_StreamBuffer_BackgroundAction_System_Nullable_System_Threading_Tasks_TaskCreationOptions__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.IO.StreamBuffer.BackgroundAction
+    name: BackgroundAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BackgroundAction.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.TaskCreationOptions
+    name: TaskCreationOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcreationoptions
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.StreamBuffer.BackgroundAction
+  commentId: T:System.IO.StreamBuffer.BackgroundAction
+  parent: System.IO
+  isExternal: true
+  href: System.IO.StreamBuffer.html
+  name: StreamBuffer.BackgroundAction
+  nameWithType: StreamBuffer.BackgroundAction
+  fullName: System.IO.StreamBuffer.BackgroundAction
+  spec.csharp:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.BackgroundAction
+    name: BackgroundAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BackgroundAction.html
+  spec.vb:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.BackgroundAction
+    name: BackgroundAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BackgroundAction.html
+- uid: System.Nullable{System.Threading.Tasks.TaskCreationOptions}
+  commentId: T:System.Nullable{System.Threading.Tasks.TaskCreationOptions}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcreationoptions
+  name: TaskCreationOptions?
+  nameWithType: TaskCreationOptions?
+  fullName: System.Threading.Tasks.TaskCreationOptions?
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskCreationOptions
+    name: TaskCreationOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcreationoptions
+  - name: '?'
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskCreationOptions
+    name: TaskCreationOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcreationoptions
+  - name: '?'
+- uid: System.IO.StreamBuffer.CancelBackgroundWriteAsync*
+  commentId: Overload:System.IO.StreamBuffer.CancelBackgroundWriteAsync
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_CancelBackgroundWriteAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  name: CancelBackgroundWriteAsync
+  nameWithType: StreamBuffer.CancelBackgroundWriteAsync
+  fullName: System.IO.StreamBuffer.CancelBackgroundWriteAsync
+- uid: System.IO.IStreamBuffer.CancelBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.CancelBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_CancelBackgroundWriteAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  name: CancelBackgroundWriteAsync(TimeSpan?, CancellationToken)
+  nameWithType: IStreamBuffer.CancelBackgroundWriteAsync(TimeSpan?, CancellationToken)
+  fullName: System.IO.IStreamBuffer.CancelBackgroundWriteAsync(System.TimeSpan?, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.CancelBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+    name: CancelBackgroundWriteAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_CancelBackgroundWriteAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.CancelBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+    name: CancelBackgroundWriteAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_CancelBackgroundWriteAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.StreamBuffer.WaitForBackgroundWriteAsync*
+  commentId: Overload:System.IO.StreamBuffer.WaitForBackgroundWriteAsync
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_WaitForBackgroundWriteAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  name: WaitForBackgroundWriteAsync
+  nameWithType: StreamBuffer.WaitForBackgroundWriteAsync
+  fullName: System.IO.StreamBuffer.WaitForBackgroundWriteAsync
+- uid: System.IO.IStreamBuffer.WaitForBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.WaitForBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_WaitForBackgroundWriteAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  name: WaitForBackgroundWriteAsync(TimeSpan?, CancellationToken)
+  nameWithType: IStreamBuffer.WaitForBackgroundWriteAsync(TimeSpan?, CancellationToken)
+  fullName: System.IO.IStreamBuffer.WaitForBackgroundWriteAsync(System.TimeSpan?, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.WaitForBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+    name: WaitForBackgroundWriteAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_WaitForBackgroundWriteAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.WaitForBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+    name: WaitForBackgroundWriteAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_WaitForBackgroundWriteAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.StreamBuffer.StartBackgroundRead*
+  commentId: Overload:System.IO.StreamBuffer.StartBackgroundRead
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_StartBackgroundRead_System_Action_System_IO_Stream_System_Threading_CancellationToken__System_Threading_CancellationToken_
+  name: StartBackgroundRead
+  nameWithType: StreamBuffer.StartBackgroundRead
+  fullName: System.IO.StreamBuffer.StartBackgroundRead
+- uid: System.IO.IStreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundRead_System_Action_System_IO_Stream_System_Threading_CancellationToken__System_Threading_CancellationToken_
+  name: StartBackgroundRead(Action<Stream, CancellationToken>, CancellationToken)
+  nameWithType: IStreamBuffer.StartBackgroundRead(Action<Stream, CancellationToken>, CancellationToken)
+  fullName: System.IO.IStreamBuffer.StartBackgroundRead(System.Action<System.IO.Stream, System.Threading.CancellationToken>, System.Threading.CancellationToken)
+  nameWithType.vb: IStreamBuffer.StartBackgroundRead(Action(Of Stream, CancellationToken), CancellationToken)
+  fullName.vb: System.IO.IStreamBuffer.StartBackgroundRead(System.Action(Of System.IO.Stream, System.Threading.CancellationToken), System.Threading.CancellationToken)
+  name.vb: StartBackgroundRead(Action(Of Stream, CancellationToken), CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+    name: StartBackgroundRead
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundRead_System_Action_System_IO_Stream_System_Threading_CancellationToken__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)
+    name: StartBackgroundRead
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundRead_System_Action_System_IO_Stream_System_Threading_CancellationToken__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.IStreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundRead_System_Action_System_IO_Stream__System_Threading_CancellationToken_
+  name: StartBackgroundRead(Action<Stream>, CancellationToken)
+  nameWithType: IStreamBuffer.StartBackgroundRead(Action<Stream>, CancellationToken)
+  fullName: System.IO.IStreamBuffer.StartBackgroundRead(System.Action<System.IO.Stream>, System.Threading.CancellationToken)
+  nameWithType.vb: IStreamBuffer.StartBackgroundRead(Action(Of Stream), CancellationToken)
+  fullName.vb: System.IO.IStreamBuffer.StartBackgroundRead(System.Action(Of System.IO.Stream), System.Threading.CancellationToken)
+  name.vb: StartBackgroundRead(Action(Of Stream), CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+    name: StartBackgroundRead
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundRead_System_Action_System_IO_Stream__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream},System.Threading.CancellationToken)
+    name: StartBackgroundRead
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundRead_System_Action_System_IO_Stream__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.IStreamBuffer.StartBackgroundRead(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.StartBackgroundRead(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundRead_System_Func_System_IO_Stream_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_
+  name: StartBackgroundRead(Func<Stream, CancellationToken, Task>, CancellationToken)
+  nameWithType: IStreamBuffer.StartBackgroundRead(Func<Stream, CancellationToken, Task>, CancellationToken)
+  fullName: System.IO.IStreamBuffer.StartBackgroundRead(System.Func<System.IO.Stream, System.Threading.CancellationToken, System.Threading.Tasks.Task>, System.Threading.CancellationToken)
+  nameWithType.vb: IStreamBuffer.StartBackgroundRead(Func(Of Stream, CancellationToken, Task), CancellationToken)
+  fullName.vb: System.IO.IStreamBuffer.StartBackgroundRead(System.Func(Of System.IO.Stream, System.Threading.CancellationToken, System.Threading.Tasks.Task), System.Threading.CancellationToken)
+  name.vb: StartBackgroundRead(Func(Of Stream, CancellationToken, Task), CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.StartBackgroundRead(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+    name: StartBackgroundRead
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundRead_System_Func_System_IO_Stream_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.StartBackgroundRead(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+    name: StartBackgroundRead
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundRead_System_Func_System_IO_Stream_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.IStreamBuffer.StartBackgroundRead(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.StartBackgroundRead(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundRead_System_IO_StreamBuffer_BackgroundAction_System_Nullable_System_Threading_Tasks_TaskCreationOptions__System_Threading_CancellationToken_
+  name: StartBackgroundRead(BackgroundAction, TaskCreationOptions?, CancellationToken)
+  nameWithType: IStreamBuffer.StartBackgroundRead(StreamBuffer.BackgroundAction, TaskCreationOptions?, CancellationToken)
+  fullName: System.IO.IStreamBuffer.StartBackgroundRead(System.IO.StreamBuffer.BackgroundAction, System.Threading.Tasks.TaskCreationOptions?, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.StartBackgroundRead(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+    name: StartBackgroundRead
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundRead_System_IO_StreamBuffer_BackgroundAction_System_Nullable_System_Threading_Tasks_TaskCreationOptions__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.IO.StreamBuffer.BackgroundAction
+    name: BackgroundAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BackgroundAction.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.TaskCreationOptions
+    name: TaskCreationOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcreationoptions
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.StartBackgroundRead(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
+    name: StartBackgroundRead
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_StartBackgroundRead_System_IO_StreamBuffer_BackgroundAction_System_Nullable_System_Threading_Tasks_TaskCreationOptions__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.IO.StreamBuffer.BackgroundAction
+    name: BackgroundAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BackgroundAction.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.TaskCreationOptions
+    name: TaskCreationOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcreationoptions
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.StreamBuffer.CancelBackgroundReadAsync*
+  commentId: Overload:System.IO.StreamBuffer.CancelBackgroundReadAsync
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_CancelBackgroundReadAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  name: CancelBackgroundReadAsync
+  nameWithType: StreamBuffer.CancelBackgroundReadAsync
+  fullName: System.IO.StreamBuffer.CancelBackgroundReadAsync
+- uid: System.IO.IStreamBuffer.CancelBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.CancelBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_CancelBackgroundReadAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  name: CancelBackgroundReadAsync(TimeSpan?, CancellationToken)
+  nameWithType: IStreamBuffer.CancelBackgroundReadAsync(TimeSpan?, CancellationToken)
+  fullName: System.IO.IStreamBuffer.CancelBackgroundReadAsync(System.TimeSpan?, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.CancelBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+    name: CancelBackgroundReadAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_CancelBackgroundReadAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.CancelBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+    name: CancelBackgroundReadAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_CancelBackgroundReadAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.StreamBuffer.WaitForBackgroundReadAsync*
+  commentId: Overload:System.IO.StreamBuffer.WaitForBackgroundReadAsync
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_WaitForBackgroundReadAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  name: WaitForBackgroundReadAsync
+  nameWithType: StreamBuffer.WaitForBackgroundReadAsync
+  fullName: System.IO.StreamBuffer.WaitForBackgroundReadAsync
+- uid: System.IO.IStreamBuffer.WaitForBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  commentId: M:System.IO.IStreamBuffer.WaitForBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_WaitForBackgroundReadAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  name: WaitForBackgroundReadAsync(TimeSpan?, CancellationToken)
+  nameWithType: IStreamBuffer.WaitForBackgroundReadAsync(TimeSpan?, CancellationToken)
+  fullName: System.IO.IStreamBuffer.WaitForBackgroundReadAsync(System.TimeSpan?, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.WaitForBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+    name: WaitForBackgroundReadAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_WaitForBackgroundReadAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.WaitForBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+    name: WaitForBackgroundReadAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_WaitForBackgroundReadAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.IO.StreamBuffer.RunAction*
+  commentId: Overload:System.IO.StreamBuffer.RunAction
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_RunAction_System_IO_StreamBuffer_RunActionParameters_System_Threading_CancellationToken___
+  name: RunAction
+  nameWithType: StreamBuffer.RunAction
+  fullName: System.IO.StreamBuffer.RunAction
+- uid: System.IO.StreamBuffer.RunActionParameters
+  commentId: T:System.IO.StreamBuffer.RunActionParameters
+  parent: System.IO
+  isExternal: true
+  href: System.IO.StreamBuffer.html
+  name: StreamBuffer.RunActionParameters
+  nameWithType: StreamBuffer.RunActionParameters
+  fullName: System.IO.StreamBuffer.RunActionParameters
+  spec.csharp:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  spec.vb:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+- uid: System.Threading.CancellationToken[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken[]
+  nameWithType: CancellationToken[]
+  fullName: System.Threading.CancellationToken[]
+  nameWithType.vb: CancellationToken()
+  fullName.vb: System.Threading.CancellationToken()
+  name.vb: CancellationToken()
+  spec.csharp:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: (
+  - name: )
+- uid: System.IO.StreamBuffer.#ctor*
+  commentId: Overload:System.IO.StreamBuffer.#ctor
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer__ctor_System_IO_Pipelines_PipeOptions_
+  name: StreamBuffer
+  nameWithType: StreamBuffer.StreamBuffer
+  fullName: System.IO.StreamBuffer.StreamBuffer
+  nameWithType.vb: StreamBuffer.New
+  fullName.vb: System.IO.StreamBuffer.New
+  name.vb: New
+- uid: System.IO.Pipelines.PipeOptions
+  commentId: T:System.IO.Pipelines.PipeOptions
+  parent: System.IO.Pipelines
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.pipelines.pipeoptions
+  name: PipeOptions
+  nameWithType: PipeOptions
+  fullName: System.IO.Pipelines.PipeOptions
+- uid: System.IO.Pipelines
+  commentId: N:System.IO.Pipelines
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO.Pipelines
+  nameWithType: System.IO.Pipelines
+  fullName: System.IO.Pipelines
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  - name: .
+  - uid: System.IO.Pipelines
+    name: Pipelines
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.pipelines
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  - name: .
+  - uid: System.IO.Pipelines
+    name: Pipelines
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.pipelines
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.IO.StreamBufferOptions
+  commentId: T:System.IO.StreamBufferOptions
+  parent: System.IO
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html
+  name: StreamBufferOptions
+  nameWithType: StreamBufferOptions
+  fullName: System.IO.StreamBufferOptions
+- uid: System.IO.StreamBuffer.DisposeAsync*
+  commentId: Overload:System.IO.StreamBuffer.DisposeAsync
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_DisposeAsync
+  name: DisposeAsync
+  nameWithType: StreamBuffer.DisposeAsync
+  fullName: System.IO.StreamBuffer.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.IO.IStreamBuffer.DisposeAsync
+  commentId: M:System.IO.IStreamBuffer.DisposeAsync
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: IStreamBuffer.DisposeAsync()
+  fullName: System.IO.IStreamBuffer.DisposeAsync()
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_DisposeAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.IO.StreamBuffer.DisposeAsyncCore*
+  commentId: Overload:System.IO.StreamBuffer.DisposeAsyncCore
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_DisposeAsyncCore
+  name: DisposeAsyncCore
+  nameWithType: StreamBuffer.DisposeAsyncCore
+  fullName: System.IO.StreamBuffer.DisposeAsyncCore
+- uid: System.IO.StreamBuffer.Dispose*
+  commentId: Overload:System.IO.StreamBuffer.Dispose
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_Dispose_System_Boolean_
+  name: Dispose
+  nameWithType: StreamBuffer.Dispose
+  fullName: System.IO.StreamBuffer.Dispose
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IO.IStreamBuffer.Dispose
+  commentId: M:System.IO.IStreamBuffer.Dispose
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_Dispose
+  name: Dispose()
+  nameWithType: IStreamBuffer.Dispose()
+  fullName: System.IO.IStreamBuffer.Dispose()
+  spec.csharp:
+  - uid: System.IO.IStreamBuffer.Dispose
+    name: Dispose
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IO.IStreamBuffer.Dispose
+    name: Dispose
+    isExternal: true
+    href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_Dispose
+  - name: (
+  - name: )
+- uid: System.IO.StreamBuffer.backgroundWriteTask*
+  commentId: Overload:System.IO.StreamBuffer.backgroundWriteTask
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_backgroundWriteTask
+  name: backgroundWriteTask
+  nameWithType: StreamBuffer.backgroundWriteTask
+  fullName: System.IO.StreamBuffer.backgroundWriteTask
+- uid: System.IO.IStreamBuffer.backgroundWriteTask
+  commentId: P:System.IO.IStreamBuffer.backgroundWriteTask
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_backgroundWriteTask
+  name: backgroundWriteTask
+  nameWithType: IStreamBuffer.backgroundWriteTask
+  fullName: System.IO.IStreamBuffer.backgroundWriteTask
+- uid: System.IO.StreamBuffer.IsBackgroundWriteTaskAssigned*
+  commentId: Overload:System.IO.StreamBuffer.IsBackgroundWriteTaskAssigned
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_IsBackgroundWriteTaskAssigned
+  name: IsBackgroundWriteTaskAssigned
+  nameWithType: StreamBuffer.IsBackgroundWriteTaskAssigned
+  fullName: System.IO.StreamBuffer.IsBackgroundWriteTaskAssigned
+- uid: System.IO.IStreamBuffer.IsBackgroundWriteTaskAssigned
+  commentId: P:System.IO.IStreamBuffer.IsBackgroundWriteTaskAssigned
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_IsBackgroundWriteTaskAssigned
+  name: IsBackgroundWriteTaskAssigned
+  nameWithType: IStreamBuffer.IsBackgroundWriteTaskAssigned
+  fullName: System.IO.IStreamBuffer.IsBackgroundWriteTaskAssigned
+- uid: System.IO.StreamBuffer.backgroundReadTask*
+  commentId: Overload:System.IO.StreamBuffer.backgroundReadTask
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_backgroundReadTask
+  name: backgroundReadTask
+  nameWithType: StreamBuffer.backgroundReadTask
+  fullName: System.IO.StreamBuffer.backgroundReadTask
+- uid: System.IO.IStreamBuffer.backgroundReadTask
+  commentId: P:System.IO.IStreamBuffer.backgroundReadTask
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_backgroundReadTask
+  name: backgroundReadTask
+  nameWithType: IStreamBuffer.backgroundReadTask
+  fullName: System.IO.IStreamBuffer.backgroundReadTask
+- uid: System.IO.StreamBuffer.IsBackgroundReadTaskAssigned*
+  commentId: Overload:System.IO.StreamBuffer.IsBackgroundReadTaskAssigned
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_IsBackgroundReadTaskAssigned
+  name: IsBackgroundReadTaskAssigned
+  nameWithType: StreamBuffer.IsBackgroundReadTaskAssigned
+  fullName: System.IO.StreamBuffer.IsBackgroundReadTaskAssigned
+- uid: System.IO.IStreamBuffer.IsBackgroundReadTaskAssigned
+  commentId: P:System.IO.IStreamBuffer.IsBackgroundReadTaskAssigned
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_IsBackgroundReadTaskAssigned
+  name: IsBackgroundReadTaskAssigned
+  nameWithType: IStreamBuffer.IsBackgroundReadTaskAssigned
+  fullName: System.IO.IStreamBuffer.IsBackgroundReadTaskAssigned
+- uid: System.IO.StreamBuffer.ReadStream*
+  commentId: Overload:System.IO.StreamBuffer.ReadStream
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_ReadStream
+  name: ReadStream
+  nameWithType: StreamBuffer.ReadStream
+  fullName: System.IO.StreamBuffer.ReadStream
+- uid: System.IO.IStreamBuffer.ReadStream
+  commentId: P:System.IO.IStreamBuffer.ReadStream
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_ReadStream
+  name: ReadStream
+  nameWithType: IStreamBuffer.ReadStream
+  fullName: System.IO.IStreamBuffer.ReadStream
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO.StreamBuffer.WriteStream*
+  commentId: Overload:System.IO.StreamBuffer.WriteStream
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_WriteStream
+  name: WriteStream
+  nameWithType: StreamBuffer.WriteStream
+  fullName: System.IO.StreamBuffer.WriteStream
+- uid: System.IO.IStreamBuffer.WriteStream
+  commentId: P:System.IO.IStreamBuffer.WriteStream
+  parent: System.IO.IStreamBuffer
+  isExternal: true
+  href: System.IO.IStreamBuffer.html#System_IO_IStreamBuffer_WriteStream
+  name: WriteStream
+  nameWithType: IStreamBuffer.WriteStream
+  fullName: System.IO.IStreamBuffer.WriteStream

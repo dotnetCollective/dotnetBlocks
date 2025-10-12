@@ -1,0 +1,119 @@
+### YamlMime:ApiPage
+title: Class EnumBitArrayTests
+body:
+- api1: Class EnumBitArrayTests
+  id: dotNetBlocks_System_Collections_Tests_EnumBitArrayTests
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.EnumBitArrayTests
+    commentId: T:dotNetBlocks.System.Collections.Tests.EnumBitArrayTests
+- facts:
+  - name: Namespace
+    value:
+      text: dotNetBlocks.System.Collections.Tests
+      url: dotNetBlocks.System.Collections.Tests.html
+  - name: Assembly
+    value: dotNetBlocks.System.Collections.Tests.dll
+- code: >-
+    [TestClass]
+
+    [TestCategory("System.Collections.EnumBitArray")]
+
+    public sealed class EnumBitArrayTests
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: EnumBitArrayTests
+    url: dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.html
+- h4: Inherited Members
+- list:
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<EnumBitArrayTests>(EnumBitArrayTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumBitArrayTests>(EnumBitArrayTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumBitArrayTests>(EnumBitArrayTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumBitArrayTests>(EnumBitArrayTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumBitArrayTests>(EnumBitArrayTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumBitArrayTests>(EnumBitArrayTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumBitArrayTests>(EnumBitArrayTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumBitArrayTests>(EnumBitArrayTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: WildCard.Search<EnumBitArrayTests>(EnumBitArrayTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<EnumBitArrayTests>(EnumBitArrayTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<EnumBitArrayTests>(EnumBitArrayTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+- h2: Constructors
+- api3: EnumBitArrayTests()
+  id: dotNetBlocks_System_Collections_Tests_EnumBitArrayTests__ctor
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.#ctor
+    commentId: M:dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.#ctor
+- code: public EnumBitArrayTests()
+- h2: Methods
+- api3: bit_array_none_only_has_no_flags_set()
+  id: dotNetBlocks_System_Collections_Tests_EnumBitArrayTests_bit_array_none_only_has_no_flags_set
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.bit_array_none_only_has_no_flags_set
+    commentId: M:dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.bit_array_none_only_has_no_flags_set
+- code: >-
+    [TestMethod]
+
+    public void bit_array_none_only_has_no_flags_set()
+- api3: convert_from_enum_sets_flag()
+  id: dotNetBlocks_System_Collections_Tests_EnumBitArrayTests_convert_from_enum_sets_flag
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.convert_from_enum_sets_flag
+    commentId: M:dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.convert_from_enum_sets_flag
+- code: >-
+    [TestMethod]
+
+    public void convert_from_enum_sets_flag()
+- api3: set_bit_and_validate_only_sets_one_bit()
+  id: dotNetBlocks_System_Collections_Tests_EnumBitArrayTests_set_bit_and_validate_only_sets_one_bit
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.set_bit_and_validate_only_sets_one_bit
+    commentId: M:dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.set_bit_and_validate_only_sets_one_bit
+- code: >-
+    [TestMethod]
+
+    public void set_bit_and_validate_only_sets_one_bit()
+- api3: set_bit_using_indexer_and_verify()
+  id: dotNetBlocks_System_Collections_Tests_EnumBitArrayTests_set_bit_using_indexer_and_verify
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.set_bit_using_indexer_and_verify
+    commentId: M:dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.set_bit_using_indexer_and_verify
+- code: >-
+    [TestMethod]
+
+    public void set_bit_using_indexer_and_verify()
+- api3: set_bit_using_method_and_verify()
+  id: dotNetBlocks_System_Collections_Tests_EnumBitArrayTests_set_bit_using_method_and_verify
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.set_bit_using_method_and_verify
+    commentId: M:dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.set_bit_using_method_and_verify
+- code: >-
+    [TestMethod]
+
+    public void set_bit_using_method_and_verify()
+languageId: csharp

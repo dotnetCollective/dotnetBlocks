@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.IO
+  commentId: N:System.IO
+  id: System.IO
+  children:
+  - System.IO.IStreamBuffer
+  - System.IO.StreamBuffer
+  - System.IO.StreamBuffer.BackgroundAction
+  - System.IO.StreamBuffer.BufferAction
+  - System.IO.StreamBuffer.BufferActionWithCancel
+  - System.IO.StreamBuffer.BufferFunction
+  - System.IO.StreamBuffer.RunActionParameters
+  - System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.System.IO
+references:
+- uid: System.IO.IStreamBuffer
+  commentId: T:System.IO.IStreamBuffer
+  parent: System.IO
+  isExternal: true
+  href: System.IO.IStreamBuffer.html
+  name: IStreamBuffer
+  nameWithType: IStreamBuffer
+  fullName: System.IO.IStreamBuffer
+- uid: System.IO.StreamBuffer
+  commentId: T:System.IO.StreamBuffer
+  isExternal: true
+  href: System.IO.StreamBuffer.html
+  name: StreamBuffer
+  nameWithType: StreamBuffer
+  fullName: System.IO.StreamBuffer
+- uid: System.IO.StreamBuffer.BufferFunction
+  commentId: T:System.IO.StreamBuffer.BufferFunction
+  parent: System.IO
+  isExternal: true
+  href: System.IO.StreamBuffer.html
+  name: StreamBuffer.BufferFunction
+  nameWithType: StreamBuffer.BufferFunction
+  fullName: System.IO.StreamBuffer.BufferFunction
+  spec.csharp:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.BufferFunction
+    name: BufferFunction
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferFunction.html
+  spec.vb:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.BufferFunction
+    name: BufferFunction
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferFunction.html
+- uid: System.IO.StreamBuffer.BufferAction
+  commentId: T:System.IO.StreamBuffer.BufferAction
+  parent: System.IO
+  isExternal: true
+  href: System.IO.StreamBuffer.html
+  name: StreamBuffer.BufferAction
+  nameWithType: StreamBuffer.BufferAction
+  fullName: System.IO.StreamBuffer.BufferAction
+  spec.csharp:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.BufferAction
+    name: BufferAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferAction.html
+  spec.vb:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.BufferAction
+    name: BufferAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferAction.html
+- uid: System.IO.StreamBuffer.BufferActionWithCancel
+  commentId: T:System.IO.StreamBuffer.BufferActionWithCancel
+  parent: System.IO
+  isExternal: true
+  href: System.IO.StreamBuffer.html
+  name: StreamBuffer.BufferActionWithCancel
+  nameWithType: StreamBuffer.BufferActionWithCancel
+  fullName: System.IO.StreamBuffer.BufferActionWithCancel
+  spec.csharp:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.BufferActionWithCancel
+    name: BufferActionWithCancel
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferActionWithCancel.html
+  spec.vb:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.BufferActionWithCancel
+    name: BufferActionWithCancel
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferActionWithCancel.html
+- uid: System.IO.StreamBuffer.BackgroundAction
+  commentId: T:System.IO.StreamBuffer.BackgroundAction
+  parent: System.IO
+  isExternal: true
+  href: System.IO.StreamBuffer.html
+  name: StreamBuffer.BackgroundAction
+  nameWithType: StreamBuffer.BackgroundAction
+  fullName: System.IO.StreamBuffer.BackgroundAction
+  spec.csharp:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.BackgroundAction
+    name: BackgroundAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BackgroundAction.html
+  spec.vb:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.BackgroundAction
+    name: BackgroundAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BackgroundAction.html
+- uid: System.IO.StreamBuffer.RunActionParameters
+  commentId: T:System.IO.StreamBuffer.RunActionParameters
+  parent: System.IO
+  isExternal: true
+  href: System.IO.StreamBuffer.html
+  name: StreamBuffer.RunActionParameters
+  nameWithType: StreamBuffer.RunActionParameters
+  fullName: System.IO.StreamBuffer.RunActionParameters
+  spec.csharp:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  spec.vb:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+- uid: System.IO.StreamBufferOptions
+  commentId: T:System.IO.StreamBufferOptions
+  parent: System.IO
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html
+  name: StreamBufferOptions
+  nameWithType: StreamBufferOptions
+  fullName: System.IO.StreamBufferOptions
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: System.html
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html

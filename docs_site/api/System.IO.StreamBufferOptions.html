@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class StreamBufferOptions | DotNetBlocks </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StreamBufferOptions | DotNetBlocks ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../Images/DotNetBlocks.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="System.IO.StreamBufferOptions">
+
+
+
+  <h1 id="System_IO_StreamBufferOptions" data-uid="System.IO.StreamBufferOptions" class="text-break">
+Class StreamBufferOptions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="System.html">System</a>.<a class="xref" href="System.IO.html">IO</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>dotNetBlocks.System.IO.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public record StreamBufferOptions : IEquatable&lt;StreamBufferOptions&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">StreamBufferOptions</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="System.IO.StreamBufferOptions.html">StreamBufferOptions</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_">WildCard.Search&lt;TSearch&gt;(TSearch)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_">WildCard.Search&lt;TSearch&gt;(TSearch)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_">SystemExtensions.AsLazy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_">SystemExtensions.AsLazy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_">SystemExtensions.AsLazy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_">SystemExtensions.AsLazy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_">SystemExtensions.AsLazy&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="System_IO_StreamBufferOptions__ctor_" data-uid="System.IO.StreamBufferOptions.#ctor*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions__ctor_System_IO_StreamBufferOptions_" data-uid="System.IO.StreamBufferOptions.#ctor(System.IO.StreamBufferOptions)">
+  StreamBufferOptions(StreamBufferOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected StreamBufferOptions(StreamBufferOptions original)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>original</code> <a class="xref" href="System.IO.StreamBufferOptions.html">StreamBufferOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_IO_StreamBufferOptions__ctor_" data-uid="System.IO.StreamBufferOptions.#ctor*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions__ctor_System_Int64_System_Nullable_System_Double__" data-uid="System.IO.StreamBufferOptions.#ctor(System.Int64,System.Nullable{System.Double})">
+  StreamBufferOptions(long, double?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StreamBufferOptions(long BufferSize = 65536, double? ResumePercentBufferUsed = 0.75)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>BufferSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>ResumePercentBufferUsed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="System_IO_StreamBufferOptions_DefaultBufferSize" data-uid="System.IO.StreamBufferOptions.DefaultBufferSize">
+  DefaultBufferSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long DefaultBufferSize = 65536</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="System_IO_StreamBufferOptions_DefaultResumePercentBufferUsed" data-uid="System.IO.StreamBufferOptions.DefaultResumePercentBufferUsed">
+  DefaultResumePercentBufferUsed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double DefaultResumePercentBufferUsed = 0.75</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="System_IO_StreamBufferOptions_BufferSize_" data-uid="System.IO.StreamBufferOptions.BufferSize*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions_BufferSize" data-uid="System.IO.StreamBufferOptions.BufferSize">
+  BufferSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long BufferSize { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_IO_StreamBufferOptions_EqualityContract_" data-uid="System.IO.StreamBufferOptions.EqualityContract*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions_EqualityContract" data-uid="System.IO.StreamBufferOptions.EqualityContract">
+  EqualityContract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Type EqualityContract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_IO_StreamBufferOptions_PipeOptions_" data-uid="System.IO.StreamBufferOptions.PipeOptions*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions_PipeOptions" data-uid="System.IO.StreamBufferOptions.PipeOptions">
+  PipeOptions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PipeOptions? PipeOptions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.pipelines.pipeoptions">PipeOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_IO_StreamBufferOptions_ResumePercentBufferUsed_" data-uid="System.IO.StreamBufferOptions.ResumePercentBufferUsed*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions_ResumePercentBufferUsed" data-uid="System.IO.StreamBufferOptions.ResumePercentBufferUsed">
+  ResumePercentBufferUsed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? ResumePercentBufferUsed { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="System_IO_StreamBufferOptions_Deconstruct_" data-uid="System.IO.StreamBufferOptions.Deconstruct*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions_Deconstruct_System_Int64__System_Nullable_System_Double___" data-uid="System.IO.StreamBufferOptions.Deconstruct(System.Int64@,System.Nullable{System.Double}@)">
+  Deconstruct(out long, out double?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Deconstruct(out long BufferSize, out double? ResumePercentBufferUsed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>BufferSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>ResumePercentBufferUsed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_IO_StreamBufferOptions_Equals_" data-uid="System.IO.StreamBufferOptions.Equals*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions_Equals_System_IO_StreamBufferOptions_" data-uid="System.IO.StreamBufferOptions.Equals(System.IO.StreamBufferOptions)">
+  Equals(StreamBufferOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Equals(StreamBufferOptions? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="System.IO.StreamBufferOptions.html">StreamBufferOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_IO_StreamBufferOptions_Equals_" data-uid="System.IO.StreamBufferOptions.Equals*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions_Equals_System_Object_" data-uid="System.IO.StreamBufferOptions.Equals(System.Object)">
+  Equals(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_IO_StreamBufferOptions_GetHashCode_" data-uid="System.IO.StreamBufferOptions.GetHashCode*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions_GetHashCode" data-uid="System.IO.StreamBufferOptions.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_IO_StreamBufferOptions_PrintMembers_" data-uid="System.IO.StreamBufferOptions.PrintMembers*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions_PrintMembers_System_Text_StringBuilder_" data-uid="System.IO.StreamBufferOptions.PrintMembers(System.Text.StringBuilder)">
+  PrintMembers(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool PrintMembers(StringBuilder builder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>builder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_IO_StreamBufferOptions_ToString_" data-uid="System.IO.StreamBufferOptions.ToString*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions_ToString" data-uid="System.IO.StreamBufferOptions.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="System_IO_StreamBufferOptions_op_Equality_" data-uid="System.IO.StreamBufferOptions.op_Equality*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions_op_Equality_System_IO_StreamBufferOptions_System_IO_StreamBufferOptions_" data-uid="System.IO.StreamBufferOptions.op_Equality(System.IO.StreamBufferOptions,System.IO.StreamBufferOptions)">
+  operator ==(StreamBufferOptions?, StreamBufferOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(StreamBufferOptions? left, StreamBufferOptions? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="System.IO.StreamBufferOptions.html">StreamBufferOptions</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="System.IO.StreamBufferOptions.html">StreamBufferOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_IO_StreamBufferOptions_op_Inequality_" data-uid="System.IO.StreamBufferOptions.op_Inequality*"></a>
+
+  <h3 id="System_IO_StreamBufferOptions_op_Inequality_System_IO_StreamBufferOptions_System_IO_StreamBufferOptions_" data-uid="System.IO.StreamBufferOptions.op_Inequality(System.IO.StreamBufferOptions,System.IO.StreamBufferOptions)">
+  operator !=(StreamBufferOptions?, StreamBufferOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(StreamBufferOptions? left, StreamBufferOptions? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="System.IO.StreamBufferOptions.html">StreamBufferOptions</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="System.IO.StreamBufferOptions.html">StreamBufferOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright © Brian Rogers - DotNetBlocks.<br>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

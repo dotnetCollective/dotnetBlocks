@@ -1,0 +1,1406 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.IO.StreamBuffer.RunActionParameters
+  commentId: T:System.IO.StreamBuffer.RunActionParameters
+  id: StreamBuffer.RunActionParameters
+  parent: System.IO
+  children:
+  - System.IO.StreamBuffer.RunActionParameters.#ctor(System.IO.StreamBuffer.RunActionParameters)
+  - System.IO.StreamBuffer.RunActionParameters.#ctor(System.Nullable{System.Threading.Tasks.TaskCreationOptions})
+  - System.IO.StreamBuffer.RunActionParameters.Action
+  - System.IO.StreamBuffer.RunActionParameters.Deconstruct(System.Nullable{System.Threading.Tasks.TaskCreationOptions}@)
+  - System.IO.StreamBuffer.RunActionParameters.EqualityContract
+  - System.IO.StreamBuffer.RunActionParameters.Equals(System.IO.StreamBuffer.RunActionParameters)
+  - System.IO.StreamBuffer.RunActionParameters.Equals(System.Object)
+  - System.IO.StreamBuffer.RunActionParameters.GetHashCode
+  - System.IO.StreamBuffer.RunActionParameters.MasterCancel
+  - System.IO.StreamBuffer.RunActionParameters.PrintMembers(System.Text.StringBuilder)
+  - System.IO.StreamBuffer.RunActionParameters.Stream
+  - System.IO.StreamBuffer.RunActionParameters.TaskOptions
+  - System.IO.StreamBuffer.RunActionParameters.ToString
+  - System.IO.StreamBuffer.RunActionParameters.Validate
+  - System.IO.StreamBuffer.RunActionParameters.op_Equality(System.IO.StreamBuffer.RunActionParameters,System.IO.StreamBuffer.RunActionParameters)
+  - System.IO.StreamBuffer.RunActionParameters.op_Inequality(System.IO.StreamBuffer.RunActionParameters,System.IO.StreamBuffer.RunActionParameters)
+  langs:
+  - csharp
+  - vb
+  name: StreamBuffer.RunActionParameters
+  nameWithType: StreamBuffer.RunActionParameters
+  fullName: System.IO.StreamBuffer.RunActionParameters
+  type: Class
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: 'public record StreamBuffer.RunActionParameters : IEquatable<StreamBuffer.RunActionParameters>'
+    content.vb: Public Class StreamBuffer.RunActionParameters Implements IEquatable(Of StreamBuffer.RunActionParameters)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{System.IO.StreamBuffer.RunActionParameters}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - System.IO.StreamBuffer.RunActionParameters.System.Linq.WildCard.Search``1
+  - System.IO.StreamBuffer.RunActionParameters.System.Linq.WildCard.Search``1
+  - System.IO.StreamBuffer.RunActionParameters.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.RunActionParameters.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.RunActionParameters.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.RunActionParameters.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.RunActionParameters.System.SystemExtensions.AsLazy``1
+- uid: System.IO.StreamBuffer.RunActionParameters.#ctor(System.Nullable{System.Threading.Tasks.TaskCreationOptions})
+  commentId: M:System.IO.StreamBuffer.RunActionParameters.#ctor(System.Nullable{System.Threading.Tasks.TaskCreationOptions})
+  id: '#ctor(System.Nullable{System.Threading.Tasks.TaskCreationOptions})'
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: RunActionParameters(TaskCreationOptions?)
+  nameWithType: StreamBuffer.RunActionParameters.RunActionParameters(TaskCreationOptions?)
+  fullName: System.IO.StreamBuffer.RunActionParameters.RunActionParameters(System.Threading.Tasks.TaskCreationOptions?)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public RunActionParameters(TaskCreationOptions? TaskOptions = null)
+    parameters:
+    - id: TaskOptions
+      type: System.Nullable{System.Threading.Tasks.TaskCreationOptions}
+    content.vb: Public Sub New(TaskOptions As TaskCreationOptions? = Nothing)
+  overload: System.IO.StreamBuffer.RunActionParameters.#ctor*
+  nameWithType.vb: StreamBuffer.RunActionParameters.New(TaskCreationOptions?)
+  fullName.vb: System.IO.StreamBuffer.RunActionParameters.New(System.Threading.Tasks.TaskCreationOptions?)
+  name.vb: New(TaskCreationOptions?)
+- uid: System.IO.StreamBuffer.RunActionParameters.Validate
+  commentId: M:System.IO.StreamBuffer.RunActionParameters.Validate
+  id: Validate
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: Validate()
+  nameWithType: StreamBuffer.RunActionParameters.Validate()
+  fullName: System.IO.StreamBuffer.RunActionParameters.Validate()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public void Validate()
+    content.vb: Public Sub Validate()
+  overload: System.IO.StreamBuffer.RunActionParameters.Validate*
+- uid: System.IO.StreamBuffer.RunActionParameters.ToString
+  commentId: M:System.IO.StreamBuffer.RunActionParameters.ToString
+  id: ToString
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: StreamBuffer.RunActionParameters.ToString()
+  fullName: System.IO.StreamBuffer.RunActionParameters.ToString()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: System.IO.StreamBuffer.RunActionParameters.ToString*
+- uid: System.IO.StreamBuffer.RunActionParameters.PrintMembers(System.Text.StringBuilder)
+  commentId: M:System.IO.StreamBuffer.RunActionParameters.PrintMembers(System.Text.StringBuilder)
+  id: PrintMembers(System.Text.StringBuilder)
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: PrintMembers(StringBuilder)
+  nameWithType: StreamBuffer.RunActionParameters.PrintMembers(StringBuilder)
+  fullName: System.IO.StreamBuffer.RunActionParameters.PrintMembers(System.Text.StringBuilder)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: protected virtual bool PrintMembers(StringBuilder builder)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function PrintMembers(builder As StringBuilder) As Boolean
+  overload: System.IO.StreamBuffer.RunActionParameters.PrintMembers*
+- uid: System.IO.StreamBuffer.RunActionParameters.op_Inequality(System.IO.StreamBuffer.RunActionParameters,System.IO.StreamBuffer.RunActionParameters)
+  commentId: M:System.IO.StreamBuffer.RunActionParameters.op_Inequality(System.IO.StreamBuffer.RunActionParameters,System.IO.StreamBuffer.RunActionParameters)
+  id: op_Inequality(System.IO.StreamBuffer.RunActionParameters,System.IO.StreamBuffer.RunActionParameters)
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: operator !=(RunActionParameters?, RunActionParameters?)
+  nameWithType: StreamBuffer.RunActionParameters.operator !=(StreamBuffer.RunActionParameters?, StreamBuffer.RunActionParameters?)
+  fullName: System.IO.StreamBuffer.RunActionParameters.operator !=(System.IO.StreamBuffer.RunActionParameters?, System.IO.StreamBuffer.RunActionParameters?)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public static bool operator !=(StreamBuffer.RunActionParameters? left, StreamBuffer.RunActionParameters? right)
+    parameters:
+    - id: left
+      type: System.IO.StreamBuffer.RunActionParameters
+    - id: right
+      type: System.IO.StreamBuffer.RunActionParameters
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As StreamBuffer.RunActionParameters, right As StreamBuffer.RunActionParameters) As Boolean
+  overload: System.IO.StreamBuffer.RunActionParameters.op_Inequality*
+  nameWithType.vb: StreamBuffer.RunActionParameters.<>(StreamBuffer.RunActionParameters, StreamBuffer.RunActionParameters)
+  fullName.vb: System.IO.StreamBuffer.RunActionParameters.<>(System.IO.StreamBuffer.RunActionParameters, System.IO.StreamBuffer.RunActionParameters)
+  name.vb: <>(RunActionParameters, RunActionParameters)
+- uid: System.IO.StreamBuffer.RunActionParameters.op_Equality(System.IO.StreamBuffer.RunActionParameters,System.IO.StreamBuffer.RunActionParameters)
+  commentId: M:System.IO.StreamBuffer.RunActionParameters.op_Equality(System.IO.StreamBuffer.RunActionParameters,System.IO.StreamBuffer.RunActionParameters)
+  id: op_Equality(System.IO.StreamBuffer.RunActionParameters,System.IO.StreamBuffer.RunActionParameters)
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: operator ==(RunActionParameters?, RunActionParameters?)
+  nameWithType: StreamBuffer.RunActionParameters.operator ==(StreamBuffer.RunActionParameters?, StreamBuffer.RunActionParameters?)
+  fullName: System.IO.StreamBuffer.RunActionParameters.operator ==(System.IO.StreamBuffer.RunActionParameters?, System.IO.StreamBuffer.RunActionParameters?)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public static bool operator ==(StreamBuffer.RunActionParameters? left, StreamBuffer.RunActionParameters? right)
+    parameters:
+    - id: left
+      type: System.IO.StreamBuffer.RunActionParameters
+    - id: right
+      type: System.IO.StreamBuffer.RunActionParameters
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As StreamBuffer.RunActionParameters, right As StreamBuffer.RunActionParameters) As Boolean
+  overload: System.IO.StreamBuffer.RunActionParameters.op_Equality*
+  nameWithType.vb: StreamBuffer.RunActionParameters.=(StreamBuffer.RunActionParameters, StreamBuffer.RunActionParameters)
+  fullName.vb: System.IO.StreamBuffer.RunActionParameters.=(System.IO.StreamBuffer.RunActionParameters, System.IO.StreamBuffer.RunActionParameters)
+  name.vb: =(RunActionParameters, RunActionParameters)
+- uid: System.IO.StreamBuffer.RunActionParameters.GetHashCode
+  commentId: M:System.IO.StreamBuffer.RunActionParameters.GetHashCode
+  id: GetHashCode
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: StreamBuffer.RunActionParameters.GetHashCode()
+  fullName: System.IO.StreamBuffer.RunActionParameters.GetHashCode()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: System.IO.StreamBuffer.RunActionParameters.GetHashCode*
+- uid: System.IO.StreamBuffer.RunActionParameters.Equals(System.Object)
+  commentId: M:System.IO.StreamBuffer.RunActionParameters.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: StreamBuffer.RunActionParameters.Equals(object?)
+  fullName: System.IO.StreamBuffer.RunActionParameters.Equals(object?)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: System.IO.StreamBuffer.RunActionParameters.Equals*
+  nameWithType.vb: StreamBuffer.RunActionParameters.Equals(Object)
+  fullName.vb: System.IO.StreamBuffer.RunActionParameters.Equals(Object)
+  name.vb: Equals(Object)
+- uid: System.IO.StreamBuffer.RunActionParameters.Equals(System.IO.StreamBuffer.RunActionParameters)
+  commentId: M:System.IO.StreamBuffer.RunActionParameters.Equals(System.IO.StreamBuffer.RunActionParameters)
+  id: Equals(System.IO.StreamBuffer.RunActionParameters)
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: Equals(RunActionParameters?)
+  nameWithType: StreamBuffer.RunActionParameters.Equals(StreamBuffer.RunActionParameters?)
+  fullName: System.IO.StreamBuffer.RunActionParameters.Equals(System.IO.StreamBuffer.RunActionParameters?)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public virtual bool Equals(StreamBuffer.RunActionParameters? other)
+    parameters:
+    - id: other
+      type: System.IO.StreamBuffer.RunActionParameters
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function Equals(other As StreamBuffer.RunActionParameters) As Boolean
+  overload: System.IO.StreamBuffer.RunActionParameters.Equals*
+  implements:
+  - System.IEquatable{System.IO.StreamBuffer.RunActionParameters}.Equals(System.IO.StreamBuffer.RunActionParameters)
+  nameWithType.vb: StreamBuffer.RunActionParameters.Equals(StreamBuffer.RunActionParameters)
+  fullName.vb: System.IO.StreamBuffer.RunActionParameters.Equals(System.IO.StreamBuffer.RunActionParameters)
+  name.vb: Equals(RunActionParameters)
+- uid: System.IO.StreamBuffer.RunActionParameters.#ctor(System.IO.StreamBuffer.RunActionParameters)
+  commentId: M:System.IO.StreamBuffer.RunActionParameters.#ctor(System.IO.StreamBuffer.RunActionParameters)
+  id: '#ctor(System.IO.StreamBuffer.RunActionParameters)'
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: RunActionParameters(RunActionParameters)
+  nameWithType: StreamBuffer.RunActionParameters.RunActionParameters(StreamBuffer.RunActionParameters)
+  fullName: System.IO.StreamBuffer.RunActionParameters.RunActionParameters(System.IO.StreamBuffer.RunActionParameters)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: protected RunActionParameters(StreamBuffer.RunActionParameters original)
+    parameters:
+    - id: original
+      type: System.IO.StreamBuffer.RunActionParameters
+    content.vb: Protected Sub New(original As StreamBuffer.RunActionParameters)
+  overload: System.IO.StreamBuffer.RunActionParameters.#ctor*
+  nameWithType.vb: StreamBuffer.RunActionParameters.New(StreamBuffer.RunActionParameters)
+  fullName.vb: System.IO.StreamBuffer.RunActionParameters.New(System.IO.StreamBuffer.RunActionParameters)
+  name.vb: New(RunActionParameters)
+- uid: System.IO.StreamBuffer.RunActionParameters.Deconstruct(System.Nullable{System.Threading.Tasks.TaskCreationOptions}@)
+  commentId: M:System.IO.StreamBuffer.RunActionParameters.Deconstruct(System.Nullable{System.Threading.Tasks.TaskCreationOptions}@)
+  id: Deconstruct(System.Nullable{System.Threading.Tasks.TaskCreationOptions}@)
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: Deconstruct(out TaskCreationOptions?)
+  nameWithType: StreamBuffer.RunActionParameters.Deconstruct(out TaskCreationOptions?)
+  fullName: System.IO.StreamBuffer.RunActionParameters.Deconstruct(out System.Threading.Tasks.TaskCreationOptions?)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public void Deconstruct(out TaskCreationOptions? TaskOptions)
+    parameters:
+    - id: TaskOptions
+      type: System.Nullable{System.Threading.Tasks.TaskCreationOptions}
+    content.vb: Public Sub Deconstruct(TaskOptions As TaskCreationOptions?)
+  overload: System.IO.StreamBuffer.RunActionParameters.Deconstruct*
+  nameWithType.vb: StreamBuffer.RunActionParameters.Deconstruct(TaskCreationOptions?)
+  fullName.vb: System.IO.StreamBuffer.RunActionParameters.Deconstruct(System.Threading.Tasks.TaskCreationOptions?)
+  name.vb: Deconstruct(TaskCreationOptions?)
+- uid: System.IO.StreamBuffer.RunActionParameters.EqualityContract
+  commentId: P:System.IO.StreamBuffer.RunActionParameters.EqualityContract
+  id: EqualityContract
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: EqualityContract
+  nameWithType: StreamBuffer.RunActionParameters.EqualityContract
+  fullName: System.IO.StreamBuffer.RunActionParameters.EqualityContract
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: protected virtual Type EqualityContract { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Protected Overridable ReadOnly Property EqualityContract As Type
+  overload: System.IO.StreamBuffer.RunActionParameters.EqualityContract*
+- uid: System.IO.StreamBuffer.RunActionParameters.TaskOptions
+  commentId: P:System.IO.StreamBuffer.RunActionParameters.TaskOptions
+  id: TaskOptions
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: TaskOptions
+  nameWithType: StreamBuffer.RunActionParameters.TaskOptions
+  fullName: System.IO.StreamBuffer.RunActionParameters.TaskOptions
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public TaskCreationOptions? TaskOptions { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Threading.Tasks.TaskCreationOptions}
+    content.vb: Public Property TaskOptions As TaskCreationOptions?
+  overload: System.IO.StreamBuffer.RunActionParameters.TaskOptions*
+- uid: System.IO.StreamBuffer.RunActionParameters.Action
+  commentId: P:System.IO.StreamBuffer.RunActionParameters.Action
+  id: Action
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: Action
+  nameWithType: StreamBuffer.RunActionParameters.Action
+  fullName: System.IO.StreamBuffer.RunActionParameters.Action
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public required StreamBuffer.BackgroundAction Action { get; init; }
+    parameters: []
+    return:
+      type: System.IO.StreamBuffer.BackgroundAction
+    content.vb: Public Property Action As StreamBuffer.BackgroundAction
+  overload: System.IO.StreamBuffer.RunActionParameters.Action*
+- uid: System.IO.StreamBuffer.RunActionParameters.Stream
+  commentId: P:System.IO.StreamBuffer.RunActionParameters.Stream
+  id: Stream
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: Stream
+  nameWithType: StreamBuffer.RunActionParameters.Stream
+  fullName: System.IO.StreamBuffer.RunActionParameters.Stream
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public required Stream Stream { get; init; }
+    parameters: []
+    return:
+      type: System.IO.Stream
+    content.vb: Public Property Stream As Stream
+  overload: System.IO.StreamBuffer.RunActionParameters.Stream*
+- uid: System.IO.StreamBuffer.RunActionParameters.MasterCancel
+  commentId: P:System.IO.StreamBuffer.RunActionParameters.MasterCancel
+  id: MasterCancel
+  parent: System.IO.StreamBuffer.RunActionParameters
+  langs:
+  - csharp
+  - vb
+  name: MasterCancel
+  nameWithType: StreamBuffer.RunActionParameters.MasterCancel
+  fullName: System.IO.StreamBuffer.RunActionParameters.MasterCancel
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public required CancellationToken MasterCancel { get; init; }
+    parameters: []
+    return:
+      type: System.Threading.CancellationToken
+    content.vb: Public Property MasterCancel As CancellationToken
+  overload: System.IO.StreamBuffer.RunActionParameters.MasterCancel*
+references:
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: System.html
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{System.IO.StreamBuffer.RunActionParameters}
+  commentId: T:System.IEquatable{System.IO.StreamBuffer.RunActionParameters}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<StreamBuffer.RunActionParameters>
+  nameWithType: IEquatable<StreamBuffer.RunActionParameters>
+  fullName: System.IEquatable<System.IO.StreamBuffer.RunActionParameters>
+  nameWithType.vb: IEquatable(Of StreamBuffer.RunActionParameters)
+  fullName.vb: System.IEquatable(Of System.IO.StreamBuffer.RunActionParameters)
+  name.vb: IEquatable(Of StreamBuffer.RunActionParameters)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IO.StreamBuffer.RunActionParameters.System.Linq.WildCard.Search``1
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  parent: System.Linq.WildCard
+  definition: System.Linq.WildCard.Search``1(``0)
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<RunActionParameters>(RunActionParameters)
+  nameWithType: WildCard.Search<StreamBuffer.RunActionParameters>(StreamBuffer.RunActionParameters)
+  fullName: System.Linq.WildCard.Search<System.IO.StreamBuffer.RunActionParameters>(System.IO.StreamBuffer.RunActionParameters)
+  nameWithType.vb: WildCard.Search(Of StreamBuffer.RunActionParameters)(StreamBuffer.RunActionParameters)
+  fullName.vb: System.Linq.WildCard.Search(Of System.IO.StreamBuffer.RunActionParameters)(System.IO.StreamBuffer.RunActionParameters)
+  name.vb: Search(Of RunActionParameters)(RunActionParameters)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(System.IO.StreamBuffer.RunActionParameters)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  - name: '>'
+  - name: (
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(System.IO.StreamBuffer.RunActionParameters)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  - name: )
+  - name: (
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  - name: )
+- uid: System.IO.StreamBuffer.RunActionParameters.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<RunActionParameters>(RunActionParameters)
+  nameWithType: SystemExtensions.AsLazy<StreamBuffer.RunActionParameters>(StreamBuffer.RunActionParameters)
+  fullName: System.SystemExtensions.AsLazy<System.IO.StreamBuffer.RunActionParameters>(System.IO.StreamBuffer.RunActionParameters)
+  nameWithType.vb: SystemExtensions.AsLazy(Of StreamBuffer.RunActionParameters)(StreamBuffer.RunActionParameters)
+  fullName.vb: System.SystemExtensions.AsLazy(Of System.IO.StreamBuffer.RunActionParameters)(System.IO.StreamBuffer.RunActionParameters)
+  name.vb: AsLazy(Of RunActionParameters)(RunActionParameters)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(System.IO.StreamBuffer.RunActionParameters)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  - name: '>'
+  - name: (
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(System.IO.StreamBuffer.RunActionParameters)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  - name: )
+  - name: (
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Linq.WildCard.Search``1(``0)
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  isExternal: true
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<TSearch>(TSearch)
+  nameWithType: WildCard.Search<TSearch>(TSearch)
+  fullName: System.Linq.WildCard.Search<TSearch>(TSearch)
+  nameWithType.vb: WildCard.Search(Of TSearch)(TSearch)
+  fullName.vb: System.Linq.WildCard.Search(Of TSearch)(TSearch)
+  name.vb: Search(Of TSearch)(TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: (
+  - name: TSearch
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: (
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard
+  commentId: T:System.Linq.WildCard
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard.html
+  name: WildCard
+  nameWithType: WildCard
+  fullName: System.Linq.WildCard
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: System.html
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+- uid: System.IO.StreamBuffer.RunActionParameters.#ctor*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.#ctor
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters__ctor_System_Nullable_System_Threading_Tasks_TaskCreationOptions__
+  name: RunActionParameters
+  nameWithType: StreamBuffer.RunActionParameters.RunActionParameters
+  fullName: System.IO.StreamBuffer.RunActionParameters.RunActionParameters
+  nameWithType.vb: StreamBuffer.RunActionParameters.New
+  fullName.vb: System.IO.StreamBuffer.RunActionParameters.New
+  name.vb: New
+- uid: System.Nullable{System.Threading.Tasks.TaskCreationOptions}
+  commentId: T:System.Nullable{System.Threading.Tasks.TaskCreationOptions}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcreationoptions
+  name: TaskCreationOptions?
+  nameWithType: TaskCreationOptions?
+  fullName: System.Threading.Tasks.TaskCreationOptions?
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskCreationOptions
+    name: TaskCreationOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcreationoptions
+  - name: '?'
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskCreationOptions
+    name: TaskCreationOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcreationoptions
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IO.StreamBuffer.RunActionParameters.Validate*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.Validate
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_Validate
+  name: Validate
+  nameWithType: StreamBuffer.RunActionParameters.Validate
+  fullName: System.IO.StreamBuffer.RunActionParameters.Validate
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.IO.StreamBuffer.RunActionParameters.ToString*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.ToString
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_ToString
+  name: ToString
+  nameWithType: StreamBuffer.RunActionParameters.ToString
+  fullName: System.IO.StreamBuffer.RunActionParameters.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IO.StreamBuffer.RunActionParameters.PrintMembers*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.PrintMembers
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_PrintMembers_System_Text_StringBuilder_
+  name: PrintMembers
+  nameWithType: StreamBuffer.RunActionParameters.PrintMembers
+  fullName: System.IO.StreamBuffer.RunActionParameters.PrintMembers
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: System.IO.StreamBuffer.RunActionParameters.op_Inequality*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.op_Inequality
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_op_Inequality_System_IO_StreamBuffer_RunActionParameters_System_IO_StreamBuffer_RunActionParameters_
+  name: operator !=
+  nameWithType: StreamBuffer.RunActionParameters.operator !=
+  fullName: System.IO.StreamBuffer.RunActionParameters.operator !=
+  nameWithType.vb: StreamBuffer.RunActionParameters.<>
+  fullName.vb: System.IO.StreamBuffer.RunActionParameters.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.IO.StreamBuffer.RunActionParameters.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_op_Inequality_System_IO_StreamBuffer_RunActionParameters_System_IO_StreamBuffer_RunActionParameters_
+- uid: System.IO.StreamBuffer.RunActionParameters
+  commentId: T:System.IO.StreamBuffer.RunActionParameters
+  parent: System.IO
+  isExternal: true
+  href: System.IO.StreamBuffer.html
+  name: StreamBuffer.RunActionParameters
+  nameWithType: StreamBuffer.RunActionParameters
+  fullName: System.IO.StreamBuffer.RunActionParameters
+  spec.csharp:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  spec.vb:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+- uid: System.IO.StreamBuffer.RunActionParameters.op_Equality*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.op_Equality
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_op_Equality_System_IO_StreamBuffer_RunActionParameters_System_IO_StreamBuffer_RunActionParameters_
+  name: operator ==
+  nameWithType: StreamBuffer.RunActionParameters.operator ==
+  fullName: System.IO.StreamBuffer.RunActionParameters.operator ==
+  nameWithType.vb: StreamBuffer.RunActionParameters.=
+  fullName.vb: System.IO.StreamBuffer.RunActionParameters.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.IO.StreamBuffer.RunActionParameters.op_Equality*
+    name: ==
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_op_Equality_System_IO_StreamBuffer_RunActionParameters_System_IO_StreamBuffer_RunActionParameters_
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.IO.StreamBuffer.RunActionParameters.GetHashCode*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.GetHashCode
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_GetHashCode
+  name: GetHashCode
+  nameWithType: StreamBuffer.RunActionParameters.GetHashCode
+  fullName: System.IO.StreamBuffer.RunActionParameters.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IO.StreamBuffer.RunActionParameters.Equals*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.Equals
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_Equals_System_Object_
+  name: Equals
+  nameWithType: StreamBuffer.RunActionParameters.Equals
+  fullName: System.IO.StreamBuffer.RunActionParameters.Equals
+- uid: System.IEquatable{System.IO.StreamBuffer.RunActionParameters}.Equals(System.IO.StreamBuffer.RunActionParameters)
+  commentId: M:System.IEquatable{System.IO.StreamBuffer.RunActionParameters}.Equals(System.IO.StreamBuffer.RunActionParameters)
+  parent: System.IEquatable{System.IO.StreamBuffer.RunActionParameters}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(RunActionParameters)
+  nameWithType: IEquatable<StreamBuffer.RunActionParameters>.Equals(StreamBuffer.RunActionParameters)
+  fullName: System.IEquatable<System.IO.StreamBuffer.RunActionParameters>.Equals(System.IO.StreamBuffer.RunActionParameters)
+  nameWithType.vb: IEquatable(Of StreamBuffer.RunActionParameters).Equals(StreamBuffer.RunActionParameters)
+  fullName.vb: System.IEquatable(Of System.IO.StreamBuffer.RunActionParameters).Equals(System.IO.StreamBuffer.RunActionParameters)
+  spec.csharp:
+  - uid: System.IEquatable{System.IO.StreamBuffer.RunActionParameters}.Equals(System.IO.StreamBuffer.RunActionParameters)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.IO.StreamBuffer.RunActionParameters}.Equals(System.IO.StreamBuffer.RunActionParameters)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: RunActionParameters
+    isExternal: true
+    href: System.IO.StreamBuffer.RunActionParameters.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IO.StreamBuffer.RunActionParameters.Deconstruct*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.Deconstruct
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_Deconstruct_System_Nullable_System_Threading_Tasks_TaskCreationOptions___
+  name: Deconstruct
+  nameWithType: StreamBuffer.RunActionParameters.Deconstruct
+  fullName: System.IO.StreamBuffer.RunActionParameters.Deconstruct
+- uid: System.IO.StreamBuffer.RunActionParameters.EqualityContract*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.EqualityContract
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_EqualityContract
+  name: EqualityContract
+  nameWithType: StreamBuffer.RunActionParameters.EqualityContract
+  fullName: System.IO.StreamBuffer.RunActionParameters.EqualityContract
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.IO.StreamBuffer.RunActionParameters.TaskOptions*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.TaskOptions
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_TaskOptions
+  name: TaskOptions
+  nameWithType: StreamBuffer.RunActionParameters.TaskOptions
+  fullName: System.IO.StreamBuffer.RunActionParameters.TaskOptions
+- uid: System.IO.StreamBuffer.RunActionParameters.Action*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.Action
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_Action
+  name: Action
+  nameWithType: StreamBuffer.RunActionParameters.Action
+  fullName: System.IO.StreamBuffer.RunActionParameters.Action
+- uid: System.IO.StreamBuffer.BackgroundAction
+  commentId: T:System.IO.StreamBuffer.BackgroundAction
+  parent: System.IO
+  isExternal: true
+  href: System.IO.StreamBuffer.html
+  name: StreamBuffer.BackgroundAction
+  nameWithType: StreamBuffer.BackgroundAction
+  fullName: System.IO.StreamBuffer.BackgroundAction
+  spec.csharp:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.BackgroundAction
+    name: BackgroundAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BackgroundAction.html
+  spec.vb:
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    isExternal: true
+    href: System.IO.StreamBuffer.html
+  - name: .
+  - uid: System.IO.StreamBuffer.BackgroundAction
+    name: BackgroundAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BackgroundAction.html
+- uid: System.IO.StreamBuffer.RunActionParameters.Stream*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.Stream
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_Stream
+  name: Stream
+  nameWithType: StreamBuffer.RunActionParameters.Stream
+  fullName: System.IO.StreamBuffer.RunActionParameters.Stream
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO.StreamBuffer.RunActionParameters.MasterCancel*
+  commentId: Overload:System.IO.StreamBuffer.RunActionParameters.MasterCancel
+  isExternal: true
+  href: System.IO.StreamBuffer.RunActionParameters.html#System_IO_StreamBuffer_RunActionParameters_MasterCancel
+  name: MasterCancel
+  nameWithType: StreamBuffer.RunActionParameters.MasterCancel
+  fullName: System.IO.StreamBuffer.RunActionParameters.MasterCancel
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading

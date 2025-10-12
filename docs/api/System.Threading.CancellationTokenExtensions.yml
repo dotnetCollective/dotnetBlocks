@@ -1,0 +1,868 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Threading.CancellationTokenExtensions
+  commentId: T:System.Threading.CancellationTokenExtensions
+  id: CancellationTokenExtensions
+  parent: System.Threading
+  children:
+  - System.Threading.CancellationTokenExtensions.Cancel(System.Threading.CancellationToken)
+  - System.Threading.CancellationTokenExtensions.CancelAfter(System.Threading.CancellationToken,System.Int32)
+  - System.Threading.CancellationTokenExtensions.CancelAfter(System.Threading.CancellationToken,System.TimeSpan)
+  - System.Threading.CancellationTokenExtensions.CancelAsync(System.Threading.CancellationToken)
+  - System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  - System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  - System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Threading.CancellationToken,System.Threading.CancellationToken[])
+  - System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  - System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  - System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Threading.CancellationToken,System.Threading.CancellationToken[])
+  - System.Threading.CancellationTokenExtensions.GetSetCanInternalTokenSource(System.Threading.CancellationToken@)
+  langs:
+  - csharp
+  - vb
+  name: CancellationTokenExtensions
+  nameWithType: CancellationTokenExtensions
+  fullName: System.Threading.CancellationTokenExtensions
+  type: Class
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.Threading
+  namespace: System.Threading
+  syntax:
+    content: public static class CancellationTokenExtensions
+    content.vb: Public Module CancellationTokenExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: System.Threading.CancellationTokenExtensions.GetSetCanInternalTokenSource(System.Threading.CancellationToken@)
+  commentId: M:System.Threading.CancellationTokenExtensions.GetSetCanInternalTokenSource(System.Threading.CancellationToken@)
+  id: GetSetCanInternalTokenSource(System.Threading.CancellationToken@)
+  parent: System.Threading.CancellationTokenExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSetCanInternalTokenSource(ref CancellationToken)
+  nameWithType: CancellationTokenExtensions.GetSetCanInternalTokenSource(ref CancellationToken)
+  fullName: System.Threading.CancellationTokenExtensions.GetSetCanInternalTokenSource(ref System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.Threading
+  namespace: System.Threading
+  syntax:
+    content: public static ref CancellationTokenSource GetSetCanInternalTokenSource(ref CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.CancellationTokenSource
+    content.vb: Public Shared ByRef Function GetSetCanInternalTokenSource(cancellationToken As CancellationToken) As CancellationTokenSource
+  overload: System.Threading.CancellationTokenExtensions.GetSetCanInternalTokenSource*
+  nameWithType.vb: CancellationTokenExtensions.GetSetCanInternalTokenSource(CancellationToken)
+  fullName.vb: System.Threading.CancellationTokenExtensions.GetSetCanInternalTokenSource(System.Threading.CancellationToken)
+  name.vb: GetSetCanInternalTokenSource(CancellationToken)
+- uid: System.Threading.CancellationTokenExtensions.Cancel(System.Threading.CancellationToken)
+  commentId: M:System.Threading.CancellationTokenExtensions.Cancel(System.Threading.CancellationToken)
+  id: Cancel(System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: System.Threading.CancellationTokenExtensions
+  langs:
+  - csharp
+  - vb
+  name: Cancel(CancellationToken)
+  nameWithType: CancellationTokenExtensions.Cancel(CancellationToken)
+  fullName: System.Threading.CancellationTokenExtensions.Cancel(System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.Threading
+  namespace: System.Threading
+  syntax:
+    content: public static void Cancel(this CancellationToken token)
+    parameters:
+    - id: token
+      type: System.Threading.CancellationToken
+    content.vb: Public Shared Sub Cancel(token As CancellationToken)
+  overload: System.Threading.CancellationTokenExtensions.Cancel*
+- uid: System.Threading.CancellationTokenExtensions.CancelAsync(System.Threading.CancellationToken)
+  commentId: M:System.Threading.CancellationTokenExtensions.CancelAsync(System.Threading.CancellationToken)
+  id: CancelAsync(System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: System.Threading.CancellationTokenExtensions
+  langs:
+  - csharp
+  - vb
+  name: CancelAsync(CancellationToken)
+  nameWithType: CancellationTokenExtensions.CancelAsync(CancellationToken)
+  fullName: System.Threading.CancellationTokenExtensions.CancelAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.Threading
+  namespace: System.Threading
+  syntax:
+    content: public static Task CancelAsync(this CancellationToken token)
+    parameters:
+    - id: token
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function CancelAsync(token As CancellationToken) As Task
+  overload: System.Threading.CancellationTokenExtensions.CancelAsync*
+- uid: System.Threading.CancellationTokenExtensions.CancelAfter(System.Threading.CancellationToken,System.Int32)
+  commentId: M:System.Threading.CancellationTokenExtensions.CancelAfter(System.Threading.CancellationToken,System.Int32)
+  id: CancelAfter(System.Threading.CancellationToken,System.Int32)
+  isExtensionMethod: true
+  parent: System.Threading.CancellationTokenExtensions
+  langs:
+  - csharp
+  - vb
+  name: CancelAfter(CancellationToken, int)
+  nameWithType: CancellationTokenExtensions.CancelAfter(CancellationToken, int)
+  fullName: System.Threading.CancellationTokenExtensions.CancelAfter(System.Threading.CancellationToken, int)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.Threading
+  namespace: System.Threading
+  syntax:
+    content: public static void CancelAfter(this CancellationToken token, int millisecondsDelay)
+    parameters:
+    - id: token
+      type: System.Threading.CancellationToken
+    - id: millisecondsDelay
+      type: System.Int32
+    content.vb: Public Shared Sub CancelAfter(token As CancellationToken, millisecondsDelay As Integer)
+  overload: System.Threading.CancellationTokenExtensions.CancelAfter*
+  nameWithType.vb: CancellationTokenExtensions.CancelAfter(CancellationToken, Integer)
+  fullName.vb: System.Threading.CancellationTokenExtensions.CancelAfter(System.Threading.CancellationToken, Integer)
+  name.vb: CancelAfter(CancellationToken, Integer)
+- uid: System.Threading.CancellationTokenExtensions.CancelAfter(System.Threading.CancellationToken,System.TimeSpan)
+  commentId: M:System.Threading.CancellationTokenExtensions.CancelAfter(System.Threading.CancellationToken,System.TimeSpan)
+  id: CancelAfter(System.Threading.CancellationToken,System.TimeSpan)
+  isExtensionMethod: true
+  parent: System.Threading.CancellationTokenExtensions
+  langs:
+  - csharp
+  - vb
+  name: CancelAfter(CancellationToken, TimeSpan)
+  nameWithType: CancellationTokenExtensions.CancelAfter(CancellationToken, TimeSpan)
+  fullName: System.Threading.CancellationTokenExtensions.CancelAfter(System.Threading.CancellationToken, System.TimeSpan)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.Threading
+  namespace: System.Threading
+  syntax:
+    content: public static void CancelAfter(this CancellationToken token, TimeSpan delay)
+    parameters:
+    - id: token
+      type: System.Threading.CancellationToken
+    - id: delay
+      type: System.TimeSpan
+    content.vb: Public Shared Sub CancelAfter(token As CancellationToken, delay As TimeSpan)
+  overload: System.Threading.CancellationTokenExtensions.CancelAfter*
+- uid: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  commentId: M:System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  id: CreateLinkedTokenSource(System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  isExtensionMethod: true
+  parent: System.Threading.CancellationTokenExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateLinkedTokenSource(IEnumerable<CancellationToken>)
+  nameWithType: CancellationTokenExtensions.CreateLinkedTokenSource(IEnumerable<CancellationToken>)
+  fullName: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Collections.Generic.IEnumerable<System.Threading.CancellationToken>)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.Threading
+  namespace: System.Threading
+  syntax:
+    content: public static CancellationTokenSource CreateLinkedTokenSource(this IEnumerable<CancellationToken> tokens)
+    parameters:
+    - id: tokens
+      type: System.Collections.Generic.IEnumerable{System.Threading.CancellationToken}
+    return:
+      type: System.Threading.CancellationTokenSource
+    content.vb: Public Shared Function CreateLinkedTokenSource(tokens As IEnumerable(Of CancellationToken)) As CancellationTokenSource
+  overload: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource*
+  nameWithType.vb: CancellationTokenExtensions.CreateLinkedTokenSource(IEnumerable(Of CancellationToken))
+  fullName.vb: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Collections.Generic.IEnumerable(Of System.Threading.CancellationToken))
+  name.vb: CreateLinkedTokenSource(IEnumerable(Of CancellationToken))
+- uid: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  commentId: M:System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  id: CreateLinkedTokenSource(System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  isExtensionMethod: true
+  parent: System.Threading.CancellationTokenExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateLinkedTokenSource(CancellationToken, IEnumerable<CancellationToken>)
+  nameWithType: CancellationTokenExtensions.CreateLinkedTokenSource(CancellationToken, IEnumerable<CancellationToken>)
+  fullName: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Threading.CancellationToken, System.Collections.Generic.IEnumerable<System.Threading.CancellationToken>)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.Threading
+  namespace: System.Threading
+  syntax:
+    content: public static CancellationTokenSource CreateLinkedTokenSource(this CancellationToken cancellationToken, IEnumerable<CancellationToken> tokens)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    - id: tokens
+      type: System.Collections.Generic.IEnumerable{System.Threading.CancellationToken}
+    return:
+      type: System.Threading.CancellationTokenSource
+    content.vb: Public Shared Function CreateLinkedTokenSource(cancellationToken As CancellationToken, tokens As IEnumerable(Of CancellationToken)) As CancellationTokenSource
+  overload: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource*
+  nameWithType.vb: CancellationTokenExtensions.CreateLinkedTokenSource(CancellationToken, IEnumerable(Of CancellationToken))
+  fullName.vb: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Threading.CancellationToken, System.Collections.Generic.IEnumerable(Of System.Threading.CancellationToken))
+  name.vb: CreateLinkedTokenSource(CancellationToken, IEnumerable(Of CancellationToken))
+- uid: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Threading.CancellationToken,System.Threading.CancellationToken[])
+  commentId: M:System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Threading.CancellationToken,System.Threading.CancellationToken[])
+  id: CreateLinkedTokenSource(System.Threading.CancellationToken,System.Threading.CancellationToken[])
+  isExtensionMethod: true
+  parent: System.Threading.CancellationTokenExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateLinkedTokenSource(CancellationToken, params CancellationToken[])
+  nameWithType: CancellationTokenExtensions.CreateLinkedTokenSource(CancellationToken, params CancellationToken[])
+  fullName: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Threading.CancellationToken, params System.Threading.CancellationToken[])
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.Threading
+  namespace: System.Threading
+  syntax:
+    content: public static CancellationTokenSource CreateLinkedTokenSource(this CancellationToken cancellationToken, params CancellationToken[] tokens)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    - id: tokens
+      type: System.Threading.CancellationToken[]
+    return:
+      type: System.Threading.CancellationTokenSource
+    content.vb: Public Shared Function CreateLinkedTokenSource(cancellationToken As CancellationToken, ParamArray tokens As CancellationToken()) As CancellationTokenSource
+  overload: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource*
+  nameWithType.vb: CancellationTokenExtensions.CreateLinkedTokenSource(CancellationToken, ParamArray CancellationToken())
+  fullName.vb: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Threading.CancellationToken, ParamArray System.Threading.CancellationToken())
+  name.vb: CreateLinkedTokenSource(CancellationToken, ParamArray CancellationToken())
+- uid: System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  commentId: M:System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  id: CreateLinkedToken(System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  isExtensionMethod: true
+  parent: System.Threading.CancellationTokenExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateLinkedToken(IEnumerable<CancellationToken>)
+  nameWithType: CancellationTokenExtensions.CreateLinkedToken(IEnumerable<CancellationToken>)
+  fullName: System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Collections.Generic.IEnumerable<System.Threading.CancellationToken>)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.Threading
+  namespace: System.Threading
+  syntax:
+    content: public static CancellationToken CreateLinkedToken(this IEnumerable<CancellationToken> tokens)
+    parameters:
+    - id: tokens
+      type: System.Collections.Generic.IEnumerable{System.Threading.CancellationToken}
+    return:
+      type: System.Threading.CancellationToken
+    content.vb: Public Shared Function CreateLinkedToken(tokens As IEnumerable(Of CancellationToken)) As CancellationToken
+  overload: System.Threading.CancellationTokenExtensions.CreateLinkedToken*
+  nameWithType.vb: CancellationTokenExtensions.CreateLinkedToken(IEnumerable(Of CancellationToken))
+  fullName.vb: System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Collections.Generic.IEnumerable(Of System.Threading.CancellationToken))
+  name.vb: CreateLinkedToken(IEnumerable(Of CancellationToken))
+- uid: System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  commentId: M:System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  id: CreateLinkedToken(System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})
+  isExtensionMethod: true
+  parent: System.Threading.CancellationTokenExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateLinkedToken(CancellationToken, IEnumerable<CancellationToken>)
+  nameWithType: CancellationTokenExtensions.CreateLinkedToken(CancellationToken, IEnumerable<CancellationToken>)
+  fullName: System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Threading.CancellationToken, System.Collections.Generic.IEnumerable<System.Threading.CancellationToken>)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.Threading
+  namespace: System.Threading
+  syntax:
+    content: public static CancellationToken CreateLinkedToken(this CancellationToken cancellationToken, IEnumerable<CancellationToken> tokens)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    - id: tokens
+      type: System.Collections.Generic.IEnumerable{System.Threading.CancellationToken}
+    return:
+      type: System.Threading.CancellationToken
+    content.vb: Public Shared Function CreateLinkedToken(cancellationToken As CancellationToken, tokens As IEnumerable(Of CancellationToken)) As CancellationToken
+  overload: System.Threading.CancellationTokenExtensions.CreateLinkedToken*
+  nameWithType.vb: CancellationTokenExtensions.CreateLinkedToken(CancellationToken, IEnumerable(Of CancellationToken))
+  fullName.vb: System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Threading.CancellationToken, System.Collections.Generic.IEnumerable(Of System.Threading.CancellationToken))
+  name.vb: CreateLinkedToken(CancellationToken, IEnumerable(Of CancellationToken))
+- uid: System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Threading.CancellationToken,System.Threading.CancellationToken[])
+  commentId: M:System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Threading.CancellationToken,System.Threading.CancellationToken[])
+  id: CreateLinkedToken(System.Threading.CancellationToken,System.Threading.CancellationToken[])
+  isExtensionMethod: true
+  parent: System.Threading.CancellationTokenExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateLinkedToken(CancellationToken, params CancellationToken[])
+  nameWithType: CancellationTokenExtensions.CreateLinkedToken(CancellationToken, params CancellationToken[])
+  fullName: System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Threading.CancellationToken, params System.Threading.CancellationToken[])
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs
+  assemblies:
+  - dotNetBlocks.System.Threading
+  namespace: System.Threading
+  syntax:
+    content: public static CancellationToken CreateLinkedToken(this CancellationToken cancellationToken, params CancellationToken[] tokens)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    - id: tokens
+      type: System.Threading.CancellationToken[]
+    return:
+      type: System.Threading.CancellationToken
+    content.vb: Public Shared Function CreateLinkedToken(cancellationToken As CancellationToken, ParamArray tokens As CancellationToken()) As CancellationToken
+  overload: System.Threading.CancellationTokenExtensions.CreateLinkedToken*
+  nameWithType.vb: CancellationTokenExtensions.CreateLinkedToken(CancellationToken, ParamArray CancellationToken())
+  fullName.vb: System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Threading.CancellationToken, ParamArray System.Threading.CancellationToken())
+  name.vb: CreateLinkedToken(CancellationToken, ParamArray CancellationToken())
+references:
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.CancellationTokenExtensions.GetSetCanInternalTokenSource*
+  commentId: Overload:System.Threading.CancellationTokenExtensions.GetSetCanInternalTokenSource
+  isExternal: true
+  href: System.Threading.CancellationTokenExtensions.html#System_Threading_CancellationTokenExtensions_GetSetCanInternalTokenSource_System_Threading_CancellationToken__
+  name: GetSetCanInternalTokenSource
+  nameWithType: CancellationTokenExtensions.GetSetCanInternalTokenSource
+  fullName: System.Threading.CancellationTokenExtensions.GetSetCanInternalTokenSource
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+- uid: System.Threading.CancellationTokenExtensions.Cancel*
+  commentId: Overload:System.Threading.CancellationTokenExtensions.Cancel
+  isExternal: true
+  href: System.Threading.CancellationTokenExtensions.html#System_Threading_CancellationTokenExtensions_Cancel_System_Threading_CancellationToken_
+  name: Cancel
+  nameWithType: CancellationTokenExtensions.Cancel
+  fullName: System.Threading.CancellationTokenExtensions.Cancel
+- uid: System.Threading.CancellationTokenExtensions.CancelAsync*
+  commentId: Overload:System.Threading.CancellationTokenExtensions.CancelAsync
+  isExternal: true
+  href: System.Threading.CancellationTokenExtensions.html#System_Threading_CancellationTokenExtensions_CancelAsync_System_Threading_CancellationToken_
+  name: CancelAsync
+  nameWithType: CancellationTokenExtensions.CancelAsync
+  fullName: System.Threading.CancellationTokenExtensions.CancelAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Threading.CancellationTokenExtensions.CancelAfter*
+  commentId: Overload:System.Threading.CancellationTokenExtensions.CancelAfter
+  isExternal: true
+  href: System.Threading.CancellationTokenExtensions.html#System_Threading_CancellationTokenExtensions_CancelAfter_System_Threading_CancellationToken_System_Int32_
+  name: CancelAfter
+  nameWithType: CancellationTokenExtensions.CancelAfter
+  fullName: System.Threading.CancellationTokenExtensions.CancelAfter
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource*
+  commentId: Overload:System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource
+  isExternal: true
+  href: System.Threading.CancellationTokenExtensions.html#System_Threading_CancellationTokenExtensions_CreateLinkedTokenSource_System_Collections_Generic_IEnumerable_System_Threading_CancellationToken__
+  name: CreateLinkedTokenSource
+  nameWithType: CancellationTokenExtensions.CreateLinkedTokenSource
+  fullName: System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource
+- uid: System.Collections.Generic.IEnumerable{System.Threading.CancellationToken}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Threading.CancellationToken}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<CancellationToken>
+  nameWithType: IEnumerable<CancellationToken>
+  fullName: System.Collections.Generic.IEnumerable<System.Threading.CancellationToken>
+  nameWithType.vb: IEnumerable(Of CancellationToken)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Threading.CancellationToken)
+  name.vb: IEnumerable(Of CancellationToken)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Threading.CancellationToken[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken[]
+  nameWithType: CancellationToken[]
+  fullName: System.Threading.CancellationToken[]
+  nameWithType.vb: CancellationToken()
+  fullName.vb: System.Threading.CancellationToken()
+  name.vb: CancellationToken()
+  spec.csharp:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: (
+  - name: )
+- uid: System.Threading.CancellationTokenExtensions.CreateLinkedToken*
+  commentId: Overload:System.Threading.CancellationTokenExtensions.CreateLinkedToken
+  isExternal: true
+  href: System.Threading.CancellationTokenExtensions.html#System_Threading_CancellationTokenExtensions_CreateLinkedToken_System_Collections_Generic_IEnumerable_System_Threading_CancellationToken__
+  name: CreateLinkedToken
+  nameWithType: CancellationTokenExtensions.CreateLinkedToken
+  fullName: System.Threading.CancellationTokenExtensions.CreateLinkedToken

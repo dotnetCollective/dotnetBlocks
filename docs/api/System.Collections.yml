@@ -1,0 +1,73 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Collections
+  commentId: N:System.Collections
+  id: System.Collections
+  children:
+  - System.Collections.EnumBitArray`1
+  langs:
+  - csharp
+  - vb
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.System.Collections
+references:
+- uid: System.Collections.EnumBitArray`1
+  commentId: T:System.Collections.EnumBitArray`1
+  parent: System.Collections
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html
+  name: EnumBitArray<TEnum>
+  nameWithType: EnumBitArray<TEnum>
+  fullName: System.Collections.EnumBitArray<TEnum>
+  nameWithType.vb: EnumBitArray(Of TEnum)
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum)
+  name.vb: EnumBitArray(Of TEnum)
+  spec.csharp:
+  - uid: System.Collections.EnumBitArray`1
+    name: EnumBitArray
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html
+  - name: <
+  - name: TEnum
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.EnumBitArray`1
+    name: EnumBitArray
+    isExternal: true
+    href: System.Collections.EnumBitArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEnum
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: System.html
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: System.Collections.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: System.Collections.html

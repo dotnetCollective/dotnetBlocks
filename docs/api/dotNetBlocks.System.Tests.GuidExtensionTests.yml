@@ -1,0 +1,81 @@
+### YamlMime:ApiPage
+title: Class GuidExtensionTests
+body:
+- api1: Class GuidExtensionTests
+  id: dotNetBlocks_System_Tests_GuidExtensionTests
+  metadata:
+    uid: dotNetBlocks.System.Tests.GuidExtensionTests
+    commentId: T:dotNetBlocks.System.Tests.GuidExtensionTests
+- facts:
+  - name: Namespace
+    value:
+      text: dotNetBlocks.System.Tests
+      url: dotNetBlocks.System.Tests.html
+  - name: Assembly
+    value: dotNetBlocks.System.Tests.dll
+- code: >-
+    [TestClass]
+
+    public sealed class GuidExtensionTests
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: GuidExtensionTests
+    url: dotNetBlocks.System.Tests.GuidExtensionTests.html
+- h4: Inherited Members
+- list:
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<GuidExtensionTests>(GuidExtensionTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<GuidExtensionTests>(GuidExtensionTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<GuidExtensionTests>(GuidExtensionTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<GuidExtensionTests>(GuidExtensionTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<GuidExtensionTests>(GuidExtensionTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<GuidExtensionTests>(GuidExtensionTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<GuidExtensionTests>(GuidExtensionTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<GuidExtensionTests>(GuidExtensionTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: WildCard.Search<GuidExtensionTests>(GuidExtensionTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<GuidExtensionTests>(GuidExtensionTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<GuidExtensionTests>(GuidExtensionTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+- h2: Constructors
+- api3: GuidExtensionTests()
+  id: dotNetBlocks_System_Tests_GuidExtensionTests__ctor
+  metadata:
+    uid: dotNetBlocks.System.Tests.GuidExtensionTests.#ctor
+    commentId: M:dotNetBlocks.System.Tests.GuidExtensionTests.#ctor
+- code: public GuidExtensionTests()
+- h2: Methods
+- api3: initialize_with_comb_guid()
+  id: dotNetBlocks_System_Tests_GuidExtensionTests_initialize_with_comb_guid
+  metadata:
+    uid: dotNetBlocks.System.Tests.GuidExtensionTests.initialize_with_comb_guid
+    commentId: M:dotNetBlocks.System.Tests.GuidExtensionTests.initialize_with_comb_guid
+- code: >-
+    [TestMethod]
+
+    public void initialize_with_comb_guid()
+languageId: csharp

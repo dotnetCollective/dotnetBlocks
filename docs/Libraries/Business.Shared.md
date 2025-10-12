@@ -5,6 +5,7 @@ ShowInNavigation: true
 ShowInSidebar: true
 NoSidebar: false
 Description: Shared objects defining all business components in the architecture and the basis for creating domain models.
+
 --->
 # Overview
 

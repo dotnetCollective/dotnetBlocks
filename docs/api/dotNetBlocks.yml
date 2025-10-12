@@ -1,0 +1,32 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks
+  commentId: N:dotNetBlocks
+  id: dotNetBlocks
+  children:
+  - dotNetBlocks.IAuditable
+  langs:
+  - csharp
+  - vb
+  name: dotNetBlocks
+  nameWithType: dotNetBlocks
+  fullName: dotNetBlocks
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.Business.Shared
+references:
+- uid: dotNetBlocks.IAuditable
+  commentId: T:dotNetBlocks.IAuditable
+  parent: dotNetBlocks
+  isExternal: true
+  href: dotNetBlocks.IAuditable.html
+  name: IAuditable
+  nameWithType: IAuditable
+  fullName: dotNetBlocks.IAuditable
+- uid: dotNetBlocks
+  commentId: N:dotNetBlocks
+  isExternal: true
+  href: dotNetBlocks.html
+  name: dotNetBlocks
+  nameWithType: dotNetBlocks
+  fullName: dotNetBlocks

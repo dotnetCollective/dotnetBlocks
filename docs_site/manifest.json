@@ -1,0 +1,1640 @@
+{
+  "source_base_path": "C:/Code/Repos/dotNetCollective/dotNetBlocks/Docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/CancellationTokenExtensionsTests.CancellationTokenExtensionsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CancellationTokenExtensionsTests.CancellationTokenExtensionsTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/CancellationTokenExtensionsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CancellationTokenExtensionsTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity<TId>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.AuditProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.AuditProperties.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.AuditProperties",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.BusinessActivity-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.BusinessActivity-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.BusinessActivity<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.BusinessActivity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.BusinessActivity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.BusinessActivity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.BusinessEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.BusinessEntity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.BusinessEntity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.Event-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.Event-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.Event<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.Event.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.Event",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.GlobalKeyedEntity-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.GlobalKeyedEntity-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.GlobalKeyedEntity<TId>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.IBusinessLogic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.IBusinessLogic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.IBusinessLogic",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.KeyedEntity-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.KeyedEntity-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.KeyedEntity<TId>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.KeyedEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.KeyedEntity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.KeyedEntity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.Operation-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.Operation-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.Operation<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.Operation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.Operation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.Operation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.Result-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.Result-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.Result<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.Result.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.Result.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared.Result",
+      "Summary": null
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.Tests.KeyedEntityTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.Tests.KeyedEntityTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.Tests.SharedTestHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.Tests.SharedTestHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.Tests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Business.Shared.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Business.Shared.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Business.Shared",
+      "Summary": null
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.docs.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.docs.Program.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.docs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.docs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Extensions.DependencyInjection.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Extensions.DependencyInjection.DependencyInjection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Extensions.DependencyInjection.DependencyInjection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Extensions.DependencyInjection.LazyService-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Extensions.DependencyInjection.LazyService-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Extensions.DependencyInjection.LazyService<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Extensions.DependencyInjection.ServiceCollectionLazyExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Extensions.DependencyInjection.ServiceCollectionLazyExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Extensions.DependencyInjection.ServiceCollectionLazyExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Extensions.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Extensions.DependencyInjection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Extensions.DependencyInjection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Extensions.ServiceDescriptorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Extensions.ServiceDescriptorExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Extensions.ServiceDescriptorExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.Extensions.Tests.DependencyInjection.DependencyInjectionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Extensions.Tests.DependencyInjection.DependencyInjectionTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceA.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceB.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.Extensions.Tests.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Extensions.Tests.DependencyInjection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.IAuditable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.IAuditable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.IAuditable",
+      "Summary": null
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.Linq.Tests.Search.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Linq.Tests.Search.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.Linq.Tests.Search.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.Linq.Tests.Search.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync<TImplementation, TMessage>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.ServiceBus.Handlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.ServiceBus.Handlers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.ServiceBus.Handlers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.ServiceBus.ServiceBusExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.ServiceBus.ServiceBusExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.ServiceBus.ServiceBusExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.ServiceBus.Shared.Message-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.ServiceBus.Shared.Message-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.ServiceBus.Shared.Message<TActivity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.ServiceBus.Shared.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.ServiceBus.Shared.Message.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.ServiceBus.Shared.Message",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.ServiceBus.Shared.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.ServiceBus.Shared.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.ServiceBus.Shared",
+      "Summary": null
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.ServiceBus.Tests.BasicInMemoryTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.ServiceBus.Tests.BasicInMemoryTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.ServiceBus.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.ServiceBus.Tests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.ServiceBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.ServiceBus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.ServiceBus",
+      "Summary": null
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.Collections.Tests.TestEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.Collections.Tests.TestEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.Collections.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.Collections.Tests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.EnumMetaTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.EnumMetaTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.EnumValueTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.EnumValueTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.System.IO.StreamExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.IO.StreamExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.System.IO.StreamExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.IO.Tests.ShouldlyExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.IO.Tests.ShouldlyExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.IO.Tests.ShouldNotCompleteInException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.IO.Tests.ShouldNotCompleteInException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.IO.Tests.StreamBuffer.TestHelperTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.IO.Tests.StreamBuffer.TestHelperTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.IO.Tests.StreamBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.IO.Tests.StreamBuffer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.IO.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.IO.Tests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.System.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.IO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks.System.IO",
+      "Summary": null
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.Tests.ExtensionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.Tests.ExtensionTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.Tests.GuidExtensionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.Tests.GuidExtensionTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.Tests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/dotNetBlocks.System.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.System.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNetBlocks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNetBlocks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "dotNetBlocks",
+      "Summary": null
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/StreamBufferTests.Background_AsyncWriter_TestAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StreamBufferTests.Background_AsyncWriter_TestAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
+      "source_relative_path": "api/StreamBufferTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StreamBufferTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Collections.EnumBitArray-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Collections.EnumBitArray-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Collections.EnumBitArray<TEnum>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Collections.Generic.CollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Collections.Generic.CollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Collections.Generic.CollectionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Collections.Generic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Collections.Generic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Collections.Generic",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Collections.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Collections.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Collections",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.EnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.EnumExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.EnumExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.EnumMeta-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.EnumMeta-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.EnumMeta<TEnum>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.EnumMetaAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.EnumMetaAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.EnumMetaAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.EnumMetaManager-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.EnumMetaManager-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.EnumMetaManager<TEnum>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.GuidExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.GuidExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.GuidExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.GuidTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.GuidTypes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.GuidTypes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.IO.IStreamBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.IO.IStreamBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.IO.IStreamBuffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.IO.StreamBuffer.BackgroundAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.IO.StreamBuffer.BackgroundAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.IO.StreamBuffer.BackgroundAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.IO.StreamBuffer.BufferAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.IO.StreamBuffer.BufferAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.IO.StreamBuffer.BufferAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.IO.StreamBuffer.BufferActionWithCancel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.IO.StreamBuffer.BufferActionWithCancel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.IO.StreamBuffer.BufferActionWithCancel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.IO.StreamBuffer.BufferFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.IO.StreamBuffer.BufferFunction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.IO.StreamBuffer.BufferFunction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.IO.StreamBuffer.RunActionParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.IO.StreamBuffer.RunActionParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.IO.StreamBuffer.RunActionParameters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.IO.StreamBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.IO.StreamBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.IO.StreamBuffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.IO.StreamBufferOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.IO.StreamBufferOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.IO.StreamBufferOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.IO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.IO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Linq.WildCard-1.PropertyAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Linq.WildCard-1.PropertyAccessor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Linq.WildCard<TSearch>.PropertyAccessor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Linq.WildCard-1.Target.NamedTarget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Linq.WildCard-1.Target.NamedTarget.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Linq.WildCard<TSearch>.Target.NamedTarget",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Linq.WildCard-1.Target.SearchFor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Linq.WildCard-1.Target.SearchFor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Linq.WildCard<TSearch>.Target.SearchFor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Linq.WildCard-1.Target.SearchWhere.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Linq.WildCard-1.Target.SearchWhere.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Linq.WildCard<TSearch>.Target.SearchWhere",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Linq.WildCard-1.Target.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Linq.WildCard-1.Target.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Linq.WildCard<TSearch>.Target",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Linq.WildCard-1.Term.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Linq.WildCard-1.Term.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Linq.WildCard<TSearch>.Term",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Linq.WildCard-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Linq.WildCard-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Linq.WildCard<TSearch>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Linq.WildCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Linq.WildCard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Linq.WildCard",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Linq.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Linq.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Linq",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.SystemExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.SystemExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.SystemExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Threading.CancellationTokenExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Threading.CancellationTokenExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Threading.CancellationTokenExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Threading.Tasks.TaskExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Threading.Tasks.TaskExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Threading.Tasks.TaskExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Threading.Tasks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Threading.Tasks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Threading.Tasks",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Threading.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Threading.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System.Threading",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "System",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Design/Business.Entities.md",
+      "output": {
+        ".html": {
+          "relative_path": "Design/Business.Entities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Design/Business.Logic.md",
+      "output": {
+        ".html": {
+          "relative_path": "Design/Business.Logic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Design/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Design/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Design/Operations.md",
+      "output": {
+        ".html": {
+          "relative_path": "Design/Operations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Design/References.md",
+      "output": {
+        ".html": {
+          "relative_path": "Design/References.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Design/ServiceBus.md",
+      "output": {
+        ".html": {
+          "relative_path": "Design/ServiceBus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Design/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Design/toc.html"
+        },
+        ".json": {
+          "relative_path": "Design/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Get.started.md",
+      "output": {
+        ".html": {
+          "relative_path": "Get.started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Images/DotNetBlocks.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Images/DotNetBlocks.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Images/DotNetBlocks.svg",
+      "output": {
+        "resource": {
+          "relative_path": "Images/DotNetBlocks.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "Images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Images/favicon.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Images/favicon.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Libraries/Business.Shared.md",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/Business.Shared.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Libraries/Extensions.md",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Libraries/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Libraries/ServiceBus.md",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/ServiceBus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Libraries/ServiceBus.Shared.md",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/ServiceBus.Shared.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Libraries/System.Collections.md",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/System.Collections.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Libraries/System.Enums.md",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/System.Enums.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Libraries/System.IO.md",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/System.IO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Libraries/System.Linq.md",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/System.Linq.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Libraries/System.md",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/System.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Libraries/System.Threading.md",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/System.Threading.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Libraries/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/toc.html"
+        },
+        ".json": {
+          "relative_path": "Libraries/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Process/build.md",
+      "output": {
+        ".html": {
+          "relative_path": "Process/build.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Process/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Process/toc.html"
+        },
+        ".json": {
+          "relative_path": "Process/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

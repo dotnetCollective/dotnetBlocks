@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.Extensions
+  commentId: N:dotNetBlocks.Extensions
+  id: dotNetBlocks.Extensions
+  children:
+  - dotNetBlocks.Extensions.ServiceDescriptorExtensions
+  langs:
+  - csharp
+  - vb
+  name: dotNetBlocks.Extensions
+  nameWithType: dotNetBlocks.Extensions
+  fullName: dotNetBlocks.Extensions
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.Extensions
+references:
+- uid: dotNetBlocks.Extensions.ServiceDescriptorExtensions
+  commentId: T:dotNetBlocks.Extensions.ServiceDescriptorExtensions
+  isExternal: true
+  href: dotNetBlocks.Extensions.ServiceDescriptorExtensions.html
+  name: ServiceDescriptorExtensions
+  nameWithType: ServiceDescriptorExtensions
+  fullName: dotNetBlocks.Extensions.ServiceDescriptorExtensions

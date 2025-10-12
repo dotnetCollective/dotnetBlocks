@@ -1,0 +1,25 @@
+### YamlMime:ApiPage
+title: Namespace dotNetBlocks.System
+body:
+- api1: Namespace dotNetBlocks.System
+  id: dotNetBlocks_System
+  metadata:
+    uid: dotNetBlocks.System
+    commentId: N:dotNetBlocks.System
+- h3: Namespaces
+- parameters:
+  - type:
+      text: dotNetBlocks.System.IO
+      url: dotNetBlocks.System.IO.html
+  - type:
+      text: dotNetBlocks.System.Tests
+      url: dotNetBlocks.System.Tests.html
+- h3: Classes
+- parameters:
+  - type:
+      text: EnumMetaTests
+      url: dotNetBlocks.System.EnumMetaTests.html
+  - type:
+      text: EnumValueTests
+      url: dotNetBlocks.System.EnumValueTests.html
+languageId: csharp

@@ -1,0 +1,14 @@
+### YamlMime:ApiPage
+title: Namespace StreamBufferTests
+body:
+- api1: Namespace StreamBufferTests
+  id: StreamBufferTests
+  metadata:
+    uid: StreamBufferTests
+    commentId: N:StreamBufferTests
+- h3: Classes
+- parameters:
+  - type:
+      text: Background_AsyncWriter_TestAsync
+      url: StreamBufferTests.Background_AsyncWriter_TestAsync.html
+languageId: csharp

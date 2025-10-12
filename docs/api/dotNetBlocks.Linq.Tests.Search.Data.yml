@@ -1,0 +1,14 @@
+### YamlMime:ApiPage
+title: Namespace dotNetBlocks.Linq.Tests.Search.Data
+body:
+- api1: Namespace dotNetBlocks.Linq.Tests.Search.Data
+  id: dotNetBlocks_Linq_Tests_Search_Data
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.Data
+    commentId: N:dotNetBlocks.Linq.Tests.Search.Data
+- h3: Classes
+- parameters:
+  - type:
+      text: QueryTestDataFixture
+      url: dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.html
+languageId: csharp

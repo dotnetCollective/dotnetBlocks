@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EnumBitArray&lt;TEnum&gt; | DotNetBlocks </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EnumBitArray&lt;TEnum&gt; | DotNetBlocks ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../Images/DotNetBlocks.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="System.Collections.EnumBitArray`1">
+
+
+
+  <h1 id="System_Collections_EnumBitArray_1" data-uid="System.Collections.EnumBitArray`1" class="text-break">
+Class EnumBitArray&lt;TEnum&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="System.html">System</a>.<a class="xref" href="System.Collections.html">Collections</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>dotNetBlocks.System.Collections.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EnumBitArray&lt;TEnum&gt; where TEnum : struct, Enum</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnum</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">EnumBitArray&lt;TEnum&gt;</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_">WildCard.Search&lt;TSearch&gt;(TSearch)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_">WildCard.Search&lt;TSearch&gt;(TSearch)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_">SystemExtensions.AsLazy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_">SystemExtensions.AsLazy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_">SystemExtensions.AsLazy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_">SystemExtensions.AsLazy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_">SystemExtensions.AsLazy&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="System_Collections_EnumBitArray_1__ctor_" data-uid="System.Collections.EnumBitArray`1.#ctor*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1__ctor" data-uid="System.Collections.EnumBitArray`1.#ctor">
+  EnumBitArray()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnumBitArray()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1__ctor_" data-uid="System.Collections.EnumBitArray`1.#ctor*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1__ctor_System_Collections_BitArray_" data-uid="System.Collections.EnumBitArray`1.#ctor(System.Collections.BitArray)">
+  EnumBitArray(BitArray)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnumBitArray(BitArray flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.bitarray">BitArray</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1__ctor_" data-uid="System.Collections.EnumBitArray`1.#ctor*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1__ctor_System_Collections_Generic_IEnumerable__0__" data-uid="System.Collections.EnumBitArray`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+  EnumBitArray(IEnumerable&lt;TEnum&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EnumBitArray(IEnumerable&lt;TEnum&gt; flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1__ctor_" data-uid="System.Collections.EnumBitArray`1.#ctor*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1__ctor__0_" data-uid="System.Collections.EnumBitArray`1.#ctor(`0)">
+  EnumBitArray(TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnumBitArray(TEnum flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flag</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="System_Collections_EnumBitArray_1_Zero" data-uid="System.Collections.EnumBitArray`1.Zero">
+  Zero
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EnumBitArray&lt;TEnum&gt; Zero</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="System_Collections_EnumBitArray_1_Count_" data-uid="System.Collections.EnumBitArray`1.Count*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_Count" data-uid="System.Collections.EnumBitArray`1.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_Flags_" data-uid="System.Collections.EnumBitArray`1.Flags*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_Flags" data-uid="System.Collections.EnumBitArray`1.Flags">
+  Flags
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BitArray Flags { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.bitarray">BitArray</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_Item_" data-uid="System.Collections.EnumBitArray`1.Item*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_Item__0_" data-uid="System.Collections.EnumBitArray`1.Item(`0)">
+  this[TEnum]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool this[TEnum flag] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flag</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_Length_" data-uid="System.Collections.EnumBitArray`1.Length*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_Length" data-uid="System.Collections.EnumBitArray`1.Length">
+  Length
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Length { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="System_Collections_EnumBitArray_1_And_" data-uid="System.Collections.EnumBitArray`1.And*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_And_System_Collections_EnumBitArray__0__" data-uid="System.Collections.EnumBitArray`1.And(System.Collections.EnumBitArray{`0})">
+  And(EnumBitArray&lt;TEnum&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void And(EnumBitArray&lt;TEnum&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_And_" data-uid="System.Collections.EnumBitArray`1.And*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_And__0_" data-uid="System.Collections.EnumBitArray`1.And(`0)">
+  And(TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void And(TEnum value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_Equals_" data-uid="System.Collections.EnumBitArray`1.Equals*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_Equals_System_Collections_BitArray_System_Collections_BitArray_" data-uid="System.Collections.EnumBitArray`1.Equals(System.Collections.BitArray,System.Collections.BitArray)">
+  Equals(BitArray, BitArray)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool Equals(BitArray compare, BitArray compareTo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compare</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.bitarray">BitArray</a></dt>
+    <dd></dd>
+    <dt><code>compareTo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.bitarray">BitArray</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_Equals_" data-uid="System.Collections.EnumBitArray`1.Equals*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_Equals_System_Collections_EnumBitArray__0__" data-uid="System.Collections.EnumBitArray`1.Equals(System.Collections.EnumBitArray{`0})">
+  Equals(EnumBitArray&lt;TEnum&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(EnumBitArray&lt;TEnum&gt;? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_Equals_" data-uid="System.Collections.EnumBitArray`1.Equals*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_Equals_System_Object_" data-uid="System.Collections.EnumBitArray`1.Equals(System.Object)">
+  Equals(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_Equals_" data-uid="System.Collections.EnumBitArray`1.Equals*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_Equals__0_" data-uid="System.Collections.EnumBitArray`1.Equals(`0)">
+  Equals(TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Equals(TEnum enumFlag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumFlag</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_GetFlags_" data-uid="System.Collections.EnumBitArray`1.GetFlags*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_GetFlags" data-uid="System.Collections.EnumBitArray`1.GetFlags">
+  GetFlags()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;bool&gt; GetFlags()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_GetHashCode_" data-uid="System.Collections.EnumBitArray`1.GetHashCode*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_GetHashCode" data-uid="System.Collections.EnumBitArray`1.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_GetSetEnums_" data-uid="System.Collections.EnumBitArray`1.GetSetEnums*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_GetSetEnums" data-uid="System.Collections.EnumBitArray`1.GetSetEnums">
+  GetSetEnums()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TEnum&gt; GetSetEnums()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_HasAllSet_" data-uid="System.Collections.EnumBitArray`1.HasAllSet*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_HasAllSet" data-uid="System.Collections.EnumBitArray`1.HasAllSet">
+  HasAllSet()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAllSet()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_HasAnySet_" data-uid="System.Collections.EnumBitArray`1.HasAnySet*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_HasAnySet" data-uid="System.Collections.EnumBitArray`1.HasAnySet">
+  HasAnySet()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAnySet()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_HasFlag_" data-uid="System.Collections.EnumBitArray`1.HasFlag*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_HasFlag__0_" data-uid="System.Collections.EnumBitArray`1.HasFlag(`0)">
+  HasFlag(TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasFlag(TEnum flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flag</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_HasOtherFlags_" data-uid="System.Collections.EnumBitArray`1.HasOtherFlags*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_HasOtherFlags__0_" data-uid="System.Collections.EnumBitArray`1.HasOtherFlags(`0)">
+  HasOtherFlags(TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasOtherFlags(TEnum flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flag</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_IsSet_" data-uid="System.Collections.EnumBitArray`1.IsSet*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_IsSet__0_" data-uid="System.Collections.EnumBitArray`1.IsSet(`0)">
+  IsSet(TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSet(TEnum flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flag</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_Not_" data-uid="System.Collections.EnumBitArray`1.Not*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_Not" data-uid="System.Collections.EnumBitArray`1.Not">
+  Not()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Not()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_Or_" data-uid="System.Collections.EnumBitArray`1.Or*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_Or_System_Collections_EnumBitArray__0__" data-uid="System.Collections.EnumBitArray`1.Or(System.Collections.EnumBitArray{`0})">
+  Or(EnumBitArray&lt;TEnum&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Or(EnumBitArray&lt;TEnum&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_Or_" data-uid="System.Collections.EnumBitArray`1.Or*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_Or__0_" data-uid="System.Collections.EnumBitArray`1.Or(`0)">
+  Or(TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Or(TEnum value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_Set_" data-uid="System.Collections.EnumBitArray`1.Set*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_Set_System_Collections_Generic_IEnumerable__0__" data-uid="System.Collections.EnumBitArray`1.Set(System.Collections.Generic.IEnumerable{`0})">
+  Set(IEnumerable&lt;TEnum&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(IEnumerable&lt;TEnum&gt; flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_Set_" data-uid="System.Collections.EnumBitArray`1.Set*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_Set__0_" data-uid="System.Collections.EnumBitArray`1.Set(`0)">
+  Set(TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(TEnum value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_ToFlagIndex_" data-uid="System.Collections.EnumBitArray`1.ToFlagIndex*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_ToFlagIndex__0_" data-uid="System.Collections.EnumBitArray`1.ToFlagIndex(`0)">
+  ToFlagIndex(TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int ToFlagIndex(TEnum enumValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumValue</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_ToString_" data-uid="System.Collections.EnumBitArray`1.ToString*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_ToString" data-uid="System.Collections.EnumBitArray`1.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_UnSet_" data-uid="System.Collections.EnumBitArray`1.UnSet*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_UnSet_System_Collections_Generic_IEnumerable__0__" data-uid="System.Collections.EnumBitArray`1.UnSet(System.Collections.Generic.IEnumerable{`0})">
+  UnSet(IEnumerable&lt;TEnum&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnSet(IEnumerable&lt;TEnum&gt; flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_UnSet_" data-uid="System.Collections.EnumBitArray`1.UnSet*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_UnSet__0_" data-uid="System.Collections.EnumBitArray`1.UnSet(`0)">
+  UnSet(TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnSet(TEnum flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flag</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="System_Collections_EnumBitArray_1_op_BitwiseOr_" data-uid="System.Collections.EnumBitArray`1.op_BitwiseOr*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_op_BitwiseOr_System_Collections_EnumBitArray__0__System_Collections_EnumBitArray__0__" data-uid="System.Collections.EnumBitArray`1.op_BitwiseOr(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})">
+  operator |(EnumBitArray&lt;TEnum&gt;, EnumBitArray&lt;TEnum&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EnumBitArray&lt;TEnum&gt; operator |(EnumBitArray&lt;TEnum&gt; left, EnumBitArray&lt;TEnum&gt; right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_op_BitwiseOr_" data-uid="System.Collections.EnumBitArray`1.op_BitwiseOr*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_op_BitwiseOr_System_Collections_EnumBitArray__0___0_" data-uid="System.Collections.EnumBitArray`1.op_BitwiseOr(System.Collections.EnumBitArray{`0},`0)">
+  operator |(EnumBitArray&lt;TEnum&gt;, TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EnumBitArray&lt;TEnum&gt; operator |(EnumBitArray&lt;TEnum&gt; left, TEnum flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+    <dt><code>flag</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_op_Equality_" data-uid="System.Collections.EnumBitArray`1.op_Equality*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_op_Equality_System_Collections_EnumBitArray__0__System_Collections_EnumBitArray__0__" data-uid="System.Collections.EnumBitArray`1.op_Equality(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})">
+  operator ==(EnumBitArray&lt;TEnum&gt;, EnumBitArray&lt;TEnum&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(EnumBitArray&lt;TEnum&gt; left, EnumBitArray&lt;TEnum&gt; right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_op_Equality_" data-uid="System.Collections.EnumBitArray`1.op_Equality*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_op_Equality_System_Collections_EnumBitArray__0___0_" data-uid="System.Collections.EnumBitArray`1.op_Equality(System.Collections.EnumBitArray{`0},`0)">
+  operator ==(EnumBitArray&lt;TEnum&gt;, TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(EnumBitArray&lt;TEnum&gt; bits, TEnum flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bits</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+    <dt><code>flag</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_op_Explicit_" data-uid="System.Collections.EnumBitArray`1.op_Explicit*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_op_Explicit_System_Collections_BitArray__System_Collections_EnumBitArray__0_" data-uid="System.Collections.EnumBitArray`1.op_Explicit(System.Collections.BitArray)~System.Collections.EnumBitArray{`0}">
+  explicit operator EnumBitArray&lt;TEnum&gt;(BitArray)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator EnumBitArray&lt;TEnum&gt;(BitArray flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.bitarray">BitArray</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_op_Explicit_" data-uid="System.Collections.EnumBitArray`1.op_Explicit*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_op_Explicit_System_Collections_EnumBitArray__0___System_Collections_BitArray" data-uid="System.Collections.EnumBitArray`1.op_Explicit(System.Collections.EnumBitArray{`0})~System.Collections.BitArray">
+  explicit operator BitArray(EnumBitArray&lt;TEnum&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator BitArray(EnumBitArray&lt;TEnum&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.bitarray">BitArray</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_op_Implicit_" data-uid="System.Collections.EnumBitArray`1.op_Implicit*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_op_Implicit__0__System_Collections_EnumBitArray__0_" data-uid="System.Collections.EnumBitArray`1.op_Implicit(`0)~System.Collections.EnumBitArray{`0}">
+  implicit operator EnumBitArray&lt;TEnum&gt;(TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator EnumBitArray&lt;TEnum&gt;(TEnum enumValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumValue</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_op_Inequality_" data-uid="System.Collections.EnumBitArray`1.op_Inequality*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_op_Inequality_System_Collections_EnumBitArray__0__System_Collections_EnumBitArray__0__" data-uid="System.Collections.EnumBitArray`1.op_Inequality(System.Collections.EnumBitArray{`0},System.Collections.EnumBitArray{`0})">
+  operator !=(EnumBitArray&lt;TEnum&gt;, EnumBitArray&lt;TEnum&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(EnumBitArray&lt;TEnum&gt; left, EnumBitArray&lt;TEnum&gt; right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_op_Inequality_" data-uid="System.Collections.EnumBitArray`1.op_Inequality*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_op_Inequality_System_Collections_EnumBitArray__0___0_" data-uid="System.Collections.EnumBitArray`1.op_Inequality(System.Collections.EnumBitArray{`0},`0)">
+  operator !=(EnumBitArray&lt;TEnum&gt;, TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(EnumBitArray&lt;TEnum&gt; bits, TEnum flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bits</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+    <dt><code>flag</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_op_LogicalNot_" data-uid="System.Collections.EnumBitArray`1.op_LogicalNot*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_op_LogicalNot_System_Collections_EnumBitArray__0__" data-uid="System.Collections.EnumBitArray`1.op_LogicalNot(System.Collections.EnumBitArray{`0})">
+  operator !(EnumBitArray&lt;TEnum&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EnumBitArray&lt;TEnum&gt; operator !(EnumBitArray&lt;TEnum&gt; left)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Collections_EnumBitArray_1_op_OnesComplement_" data-uid="System.Collections.EnumBitArray`1.op_OnesComplement*"></a>
+
+  <h3 id="System_Collections_EnumBitArray_1_op_OnesComplement_System_Collections_EnumBitArray__0__" data-uid="System.Collections.EnumBitArray`1.op_OnesComplement(System.Collections.EnumBitArray{`0})">
+  operator ~(EnumBitArray&lt;TEnum&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EnumBitArray&lt;TEnum&gt; operator ~(EnumBitArray&lt;TEnum&gt; operand)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>operand</code> <a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Collections.EnumBitArray-1.html">EnumBitArray</a>&lt;TEnum&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright © Brian Rogers - DotNetBlocks.<br>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

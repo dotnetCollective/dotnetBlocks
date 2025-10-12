@@ -1,0 +1,14 @@
+### YamlMime:ApiPage
+title: Namespace dotNetBlocks.docs
+body:
+- api1: Namespace dotNetBlocks.docs
+  id: dotNetBlocks_docs
+  metadata:
+    uid: dotNetBlocks.docs
+    commentId: N:dotNetBlocks.docs
+- h3: Classes
+- parameters:
+  - type:
+      text: Program
+      url: dotNetBlocks.docs.Program.html
+languageId: csharp

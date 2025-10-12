@@ -1,0 +1,117 @@
+### YamlMime:ApiPage
+title: Class ShouldNotCompleteInException
+body:
+- api1: Class ShouldNotCompleteInException
+  id: dotNetBlocks_System_IO_Tests_ShouldNotCompleteInException
+  metadata:
+    uid: dotNetBlocks.System.IO.Tests.ShouldNotCompleteInException
+    commentId: T:dotNetBlocks.System.IO.Tests.ShouldNotCompleteInException
+- facts:
+  - name: Namespace
+    value:
+      text: dotNetBlocks.System.IO.Tests
+      url: dotNetBlocks.System.IO.Tests.html
+  - name: Assembly
+    value: dotNetBlocks.System.IO.Tests.dll
+- code: 'public class ShouldNotCompleteInException : ShouldlyTimeoutException, ISerializable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Exception
+    url: https://learn.microsoft.com/dotnet/api/system.exception
+  - text: SystemException
+    url: https://learn.microsoft.com/dotnet/api/system.systemexception
+  - text: TimeoutException
+    url: https://learn.microsoft.com/dotnet/api/system.timeoutexception
+  - ShouldlyTimeoutException
+  - text: ShouldNotCompleteInException
+    url: dotNetBlocks.System.IO.Tests.ShouldNotCompleteInException.html
+- h4: Implements
+- list:
+  - text: ISerializable
+    url: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+- h4: Inherited Members
+- list:
+  - ShouldlyTimeoutException.StackTrace
+  - text: Exception.GetBaseException()
+    url: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - text: Exception.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - text: Exception.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - text: Exception.TargetSite
+    url: https://learn.microsoft.com/dotnet/api/system.exception.targetsite
+  - text: Exception.Message
+    url: https://learn.microsoft.com/dotnet/api/system.exception.message
+  - text: Exception.Data
+    url: https://learn.microsoft.com/dotnet/api/system.exception.data
+  - text: Exception.InnerException
+    url: https://learn.microsoft.com/dotnet/api/system.exception.innerexception
+  - text: Exception.HelpLink
+    url: https://learn.microsoft.com/dotnet/api/system.exception.helplink
+  - text: Exception.Source
+    url: https://learn.microsoft.com/dotnet/api/system.exception.source
+  - text: Exception.HResult
+    url: https://learn.microsoft.com/dotnet/api/system.exception.hresult
+  - text: Exception.StackTrace
+    url: https://learn.microsoft.com/dotnet/api/system.exception.stacktrace
+  - text: Exception.SerializeObjectState
+    url: https://learn.microsoft.com/dotnet/api/system.exception.serializeobjectstate
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<ShouldNotCompleteInException>(ShouldNotCompleteInException)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ShouldNotCompleteInException>(ShouldNotCompleteInException)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ShouldNotCompleteInException>(ShouldNotCompleteInException)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ShouldNotCompleteInException>(ShouldNotCompleteInException)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ShouldNotCompleteInException>(ShouldNotCompleteInException)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ShouldNotCompleteInException>(ShouldNotCompleteInException)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ShouldNotCompleteInException>(ShouldNotCompleteInException)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ShouldNotCompleteInException>(ShouldNotCompleteInException)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: WildCard.Search<ShouldNotCompleteInException>(ShouldNotCompleteInException)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<ShouldNotCompleteInException>(ShouldNotCompleteInException)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<ShouldNotCompleteInException>(ShouldNotCompleteInException)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+- h2: Constructors
+- api3: ShouldNotCompleteInException(string?, ShouldlyTimeoutException?)
+  id: dotNetBlocks_System_IO_Tests_ShouldNotCompleteInException__ctor_System_String_Shouldly_ShouldlyTimeoutException_
+  metadata:
+    uid: dotNetBlocks.System.IO.Tests.ShouldNotCompleteInException.#ctor(System.String,Shouldly.ShouldlyTimeoutException)
+    commentId: M:dotNetBlocks.System.IO.Tests.ShouldNotCompleteInException.#ctor(System.String,Shouldly.ShouldlyTimeoutException)
+- code: public ShouldNotCompleteInException(string? message, ShouldlyTimeoutException? inner)
+- h4: Parameters
+- parameters:
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - '?'
+  - name: inner
+    type:
+    - ShouldlyTimeoutException
+    - '?'
+languageId: csharp

@@ -1,0 +1,107 @@
+### YamlMime:ApiPage
+title: Class CollectionExtensionsTests
+body:
+- api1: Class CollectionExtensionsTests
+  id: dotNetBlocks_System_Collections_Tests_CollectionExtensionsTests
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests
+    commentId: T:dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests
+- facts:
+  - name: Namespace
+    value:
+      text: dotNetBlocks.System.Collections.Tests
+      url: dotNetBlocks.System.Collections.Tests.html
+  - name: Assembly
+    value: dotNetBlocks.System.Collections.Tests.dll
+- code: >-
+    [TestClass]
+
+    public class CollectionExtensionsTests
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: CollectionExtensionsTests
+    url: dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.html
+- h4: Inherited Members
+- list:
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<CollectionExtensionsTests>(CollectionExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CollectionExtensionsTests>(CollectionExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CollectionExtensionsTests>(CollectionExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CollectionExtensionsTests>(CollectionExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CollectionExtensionsTests>(CollectionExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CollectionExtensionsTests>(CollectionExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CollectionExtensionsTests>(CollectionExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CollectionExtensionsTests>(CollectionExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: WildCard.Search<CollectionExtensionsTests>(CollectionExtensionsTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<CollectionExtensionsTests>(CollectionExtensionsTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<CollectionExtensionsTests>(CollectionExtensionsTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+- h2: Constructors
+- api3: CollectionExtensionsTests()
+  id: dotNetBlocks_System_Collections_Tests_CollectionExtensionsTests__ctor
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.#ctor
+    commentId: M:dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.#ctor
+- code: public CollectionExtensionsTests()
+- h2: Methods
+- api3: ignore_default_values_should_filter_nulls()
+  id: dotNetBlocks_System_Collections_Tests_CollectionExtensionsTests_ignore_default_values_should_filter_nulls
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.ignore_default_values_should_filter_nulls
+    commentId: M:dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.ignore_default_values_should_filter_nulls
+- code: >-
+    [TestMethod]
+
+    public void ignore_default_values_should_filter_nulls()
+- api3: must_have_one_or_more_throws_when_enumeration_is_empty()
+  id: dotNetBlocks_System_Collections_Tests_CollectionExtensionsTests_must_have_one_or_more_throws_when_enumeration_is_empty
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.must_have_one_or_more_throws_when_enumeration_is_empty
+    commentId: M:dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.must_have_one_or_more_throws_when_enumeration_is_empty
+- code: >-
+    [TestMethod]
+
+    public void must_have_one_or_more_throws_when_enumeration_is_empty()
+- api3: must_have_one_or_more_throws_when_queryable_is_empty()
+  id: dotNetBlocks_System_Collections_Tests_CollectionExtensionsTests_must_have_one_or_more_throws_when_queryable_is_empty
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.must_have_one_or_more_throws_when_queryable_is_empty
+    commentId: M:dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.must_have_one_or_more_throws_when_queryable_is_empty
+- code: public void must_have_one_or_more_throws_when_queryable_is_empty()
+- api3: throw_if_default_value_should_throw_when_list_contains_default_values()
+  id: dotNetBlocks_System_Collections_Tests_CollectionExtensionsTests_throw_if_default_value_should_throw_when_list_contains_default_values
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.throw_if_default_value_should_throw_when_list_contains_default_values
+    commentId: M:dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.throw_if_default_value_should_throw_when_list_contains_default_values
+- code: >-
+    [TestMethod]
+
+    public void throw_if_default_value_should_throw_when_list_contains_default_values()
+languageId: csharp

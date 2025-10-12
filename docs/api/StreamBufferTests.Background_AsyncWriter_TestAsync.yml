@@ -1,0 +1,185 @@
+### YamlMime:ApiPage
+title: Class Background_AsyncWriter_TestAsync
+body:
+- api1: Class Background_AsyncWriter_TestAsync
+  id: StreamBufferTests_Background_AsyncWriter_TestAsync
+  metadata:
+    uid: StreamBufferTests.Background_AsyncWriter_TestAsync
+    commentId: T:StreamBufferTests.Background_AsyncWriter_TestAsync
+- facts:
+  - name: Namespace
+    value:
+      text: StreamBufferTests
+      url: StreamBufferTests.html
+  - name: Assembly
+    value: dotNetBlocks.System.IO.Tests.dll
+- code: >-
+    [TestClass]
+
+    public class Background_AsyncWriter_TestAsync
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Background_AsyncWriter_TestAsync
+    url: StreamBufferTests.Background_AsyncWriter_TestAsync.html
+- h4: Inherited Members
+- list:
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<Background_AsyncWriter_TestAsync>(Background_AsyncWriter_TestAsync)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<Background_AsyncWriter_TestAsync>(Background_AsyncWriter_TestAsync)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<Background_AsyncWriter_TestAsync>(Background_AsyncWriter_TestAsync)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<Background_AsyncWriter_TestAsync>(Background_AsyncWriter_TestAsync)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<Background_AsyncWriter_TestAsync>(Background_AsyncWriter_TestAsync)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<Background_AsyncWriter_TestAsync>(Background_AsyncWriter_TestAsync)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<Background_AsyncWriter_TestAsync>(Background_AsyncWriter_TestAsync)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<Background_AsyncWriter_TestAsync>(Background_AsyncWriter_TestAsync)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: WildCard.Search<Background_AsyncWriter_TestAsync>(Background_AsyncWriter_TestAsync)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<Background_AsyncWriter_TestAsync>(Background_AsyncWriter_TestAsync)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<Background_AsyncWriter_TestAsync>(Background_AsyncWriter_TestAsync)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+- h2: Constructors
+- api3: Background_AsyncWriter_TestAsync()
+  id: StreamBufferTests_Background_AsyncWriter_TestAsync__ctor
+  metadata:
+    uid: StreamBufferTests.Background_AsyncWriter_TestAsync.#ctor
+    commentId: M:StreamBufferTests.Background_AsyncWriter_TestAsync.#ctor
+- code: public Background_AsyncWriter_TestAsync()
+- h2: Methods
+- api3: Background_async_Writer_background_async_Reader()
+  id: StreamBufferTests_Background_AsyncWriter_TestAsync_Background_async_Writer_background_async_Reader
+  metadata:
+    uid: StreamBufferTests.Background_AsyncWriter_TestAsync.Background_async_Writer_background_async_Reader
+    commentId: M:StreamBufferTests.Background_AsyncWriter_TestAsync.Background_async_Writer_background_async_Reader
+- code: >-
+    [TestCategory("Background")]
+
+    [TestMethod]
+
+    public Task Background_async_Writer_background_async_Reader()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- api3: Background_Async_Writer_blocked_until_read_async()
+  id: StreamBufferTests_Background_AsyncWriter_TestAsync_Background_Async_Writer_blocked_until_read_async
+  metadata:
+    uid: StreamBufferTests.Background_AsyncWriter_TestAsync.Background_Async_Writer_blocked_until_read_async
+    commentId: M:StreamBufferTests.Background_AsyncWriter_TestAsync.Background_Async_Writer_blocked_until_read_async
+- code: >-
+    [TestCategory("Background")]
+
+    [TestCategory("Blocking")]
+
+    [TestMethod]
+
+    public Task Background_Async_Writer_blocked_until_read_async()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- api3: Background_AsyncWriter_Test_Async()
+  id: StreamBufferTests_Background_AsyncWriter_TestAsync_Background_AsyncWriter_Test_Async
+  metadata:
+    uid: StreamBufferTests.Background_AsyncWriter_TestAsync.Background_AsyncWriter_Test_Async
+    commentId: M:StreamBufferTests.Background_AsyncWriter_TestAsync.Background_AsyncWriter_Test_Async
+- code: >-
+    [TestCategory("Background")]
+
+    [TestMethod]
+
+    public Task Background_AsyncWriter_Test_Async()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- api3: Background_sync_Writer_blocked_until_read_async()
+  id: StreamBufferTests_Background_AsyncWriter_TestAsync_Background_sync_Writer_blocked_until_read_async
+  metadata:
+    uid: StreamBufferTests.Background_AsyncWriter_TestAsync.Background_sync_Writer_blocked_until_read_async
+    commentId: M:StreamBufferTests.Background_AsyncWriter_TestAsync.Background_sync_Writer_blocked_until_read_async
+- code: >-
+    [TestCategory("Background")]
+
+    [TestCategory("Blocking")]
+
+    [TestMethod]
+
+    public Task Background_sync_Writer_blocked_until_read_async()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- api3: Background_SyncWriter_TestAsync()
+  id: StreamBufferTests_Background_AsyncWriter_TestAsync_Background_SyncWriter_TestAsync
+  metadata:
+    uid: StreamBufferTests.Background_AsyncWriter_TestAsync.Background_SyncWriter_TestAsync
+    commentId: M:StreamBufferTests.Background_AsyncWriter_TestAsync.Background_SyncWriter_TestAsync
+- code: >-
+    [TestCategory("Background")]
+
+    [TestMethod]
+
+    public Task Background_SyncWriter_TestAsync()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- api3: BasicPassThroughTest()
+  id: StreamBufferTests_Background_AsyncWriter_TestAsync_BasicPassThroughTest
+  metadata:
+    uid: StreamBufferTests.Background_AsyncWriter_TestAsync.BasicPassThroughTest
+    commentId: M:StreamBufferTests.Background_AsyncWriter_TestAsync.BasicPassThroughTest
+- code: >-
+    [TestCategory("pass through")]
+
+    [TestMethod]
+
+    public void BasicPassThroughTest()
+- api3: FullBufferBlocksWriteUntilReadAsync()
+  id: StreamBufferTests_Background_AsyncWriter_TestAsync_FullBufferBlocksWriteUntilReadAsync
+  metadata:
+    uid: StreamBufferTests.Background_AsyncWriter_TestAsync.FullBufferBlocksWriteUntilReadAsync
+    commentId: M:StreamBufferTests.Background_AsyncWriter_TestAsync.FullBufferBlocksWriteUntilReadAsync
+- code: >-
+    [TestCategory("Buffer Blocking")]
+
+    [TestMethod]
+
+    public Task FullBufferBlocksWriteUntilReadAsync()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+languageId: csharp

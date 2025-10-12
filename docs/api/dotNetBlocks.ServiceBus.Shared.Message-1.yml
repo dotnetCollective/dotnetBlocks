@@ -1,0 +1,1219 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1
+  commentId: T:dotNetBlocks.ServiceBus.Shared.Message`1
+  id: Message`1
+  parent: dotNetBlocks.ServiceBus.Shared
+  children:
+  - dotNetBlocks.ServiceBus.Shared.Message`1.#ctor(`0)
+  - dotNetBlocks.ServiceBus.Shared.Message`1.#ctor(dotNetBlocks.ServiceBus.Shared.Message{`0})
+  - dotNetBlocks.ServiceBus.Shared.Message`1.Activity
+  - dotNetBlocks.ServiceBus.Shared.Message`1.EqualityContract
+  - dotNetBlocks.ServiceBus.Shared.Message`1.Equals(System.Object)
+  - dotNetBlocks.ServiceBus.Shared.Message`1.Equals(dotNetBlocks.ServiceBus.Shared.Message{`0})
+  - dotNetBlocks.ServiceBus.Shared.Message`1.GetHashCode
+  - dotNetBlocks.ServiceBus.Shared.Message`1.PrintMembers(System.Text.StringBuilder)
+  - dotNetBlocks.ServiceBus.Shared.Message`1.ToString
+  - dotNetBlocks.ServiceBus.Shared.Message`1.op_Equality(dotNetBlocks.ServiceBus.Shared.Message{`0},dotNetBlocks.ServiceBus.Shared.Message{`0})
+  - dotNetBlocks.ServiceBus.Shared.Message`1.op_Inequality(dotNetBlocks.ServiceBus.Shared.Message{`0},dotNetBlocks.ServiceBus.Shared.Message{`0})
+  langs:
+  - csharp
+  - vb
+  name: Message<TActivity>
+  nameWithType: Message<TActivity>
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>
+  type: Class
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus.Shared
+  namespace: dotNetBlocks.ServiceBus.Shared
+  syntax:
+    content: 'public record Message<TActivity> : IEquatable<Message<TActivity>> where TActivity : BusinessActivity'
+    typeParameters:
+    - id: TActivity
+    content.vb: Public Class Message(Of TActivity As BusinessActivity) Implements IEquatable(Of Message(Of TActivity))
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{dotNetBlocks.ServiceBus.Shared.Message`1}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - dotNetBlocks.ServiceBus.Shared.Message`1.System.Linq.WildCard.Search``1
+  - dotNetBlocks.ServiceBus.Shared.Message`1.System.Linq.WildCard.Search``1
+  - dotNetBlocks.ServiceBus.Shared.Message`1.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.ServiceBus.Shared.Message`1.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.ServiceBus.Shared.Message`1.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.ServiceBus.Shared.Message`1.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.ServiceBus.Shared.Message`1.System.SystemExtensions.AsLazy``1
+  nameWithType.vb: Message(Of TActivity)
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity)
+  name.vb: Message(Of TActivity)
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.#ctor(`0)
+  commentId: M:dotNetBlocks.ServiceBus.Shared.Message`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: dotNetBlocks.ServiceBus.Shared.Message`1
+  langs:
+  - csharp
+  - vb
+  name: Message(TActivity?)
+  nameWithType: Message<TActivity>.Message(TActivity?)
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.Message(TActivity?)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus.Shared
+  namespace: dotNetBlocks.ServiceBus.Shared
+  syntax:
+    content: public Message(TActivity? activity = null)
+    parameters:
+    - id: activity
+      type: '{TActivity}'
+    content.vb: Public Sub New(activity As TActivity = Nothing)
+  overload: dotNetBlocks.ServiceBus.Shared.Message`1.#ctor*
+  nameWithType.vb: Message(Of TActivity).New(TActivity)
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).New(TActivity)
+  name.vb: New(TActivity)
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.ToString
+  commentId: M:dotNetBlocks.ServiceBus.Shared.Message`1.ToString
+  id: ToString
+  parent: dotNetBlocks.ServiceBus.Shared.Message`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Message<TActivity>.ToString()
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.ToString()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus.Shared
+  namespace: dotNetBlocks.ServiceBus.Shared
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: dotNetBlocks.ServiceBus.Shared.Message`1.ToString*
+  nameWithType.vb: Message(Of TActivity).ToString()
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).ToString()
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.PrintMembers(System.Text.StringBuilder)
+  commentId: M:dotNetBlocks.ServiceBus.Shared.Message`1.PrintMembers(System.Text.StringBuilder)
+  id: PrintMembers(System.Text.StringBuilder)
+  parent: dotNetBlocks.ServiceBus.Shared.Message`1
+  langs:
+  - csharp
+  - vb
+  name: PrintMembers(StringBuilder)
+  nameWithType: Message<TActivity>.PrintMembers(StringBuilder)
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.PrintMembers(System.Text.StringBuilder)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus.Shared
+  namespace: dotNetBlocks.ServiceBus.Shared
+  syntax:
+    content: protected virtual bool PrintMembers(StringBuilder builder)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function PrintMembers(builder As StringBuilder) As Boolean
+  overload: dotNetBlocks.ServiceBus.Shared.Message`1.PrintMembers*
+  nameWithType.vb: Message(Of TActivity).PrintMembers(StringBuilder)
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).PrintMembers(System.Text.StringBuilder)
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.op_Inequality(dotNetBlocks.ServiceBus.Shared.Message{`0},dotNetBlocks.ServiceBus.Shared.Message{`0})
+  commentId: M:dotNetBlocks.ServiceBus.Shared.Message`1.op_Inequality(dotNetBlocks.ServiceBus.Shared.Message{`0},dotNetBlocks.ServiceBus.Shared.Message{`0})
+  id: op_Inequality(dotNetBlocks.ServiceBus.Shared.Message{`0},dotNetBlocks.ServiceBus.Shared.Message{`0})
+  parent: dotNetBlocks.ServiceBus.Shared.Message`1
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Message<TActivity>?, Message<TActivity>?)
+  nameWithType: Message<TActivity>.operator !=(Message<TActivity>?, Message<TActivity>?)
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.operator !=(dotNetBlocks.ServiceBus.Shared.Message<TActivity>?, dotNetBlocks.ServiceBus.Shared.Message<TActivity>?)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus.Shared
+  namespace: dotNetBlocks.ServiceBus.Shared
+  syntax:
+    content: public static bool operator !=(Message<TActivity>? left, Message<TActivity>? right)
+    parameters:
+    - id: left
+      type: dotNetBlocks.ServiceBus.Shared.Message`1
+    - id: right
+      type: dotNetBlocks.ServiceBus.Shared.Message`1
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Message(Of TActivity), right As Message(Of TActivity)) As Boolean
+  overload: dotNetBlocks.ServiceBus.Shared.Message`1.op_Inequality*
+  nameWithType.vb: Message(Of TActivity).<>(Message(Of TActivity), Message(Of TActivity))
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).<>(dotNetBlocks.ServiceBus.Shared.Message(Of TActivity), dotNetBlocks.ServiceBus.Shared.Message(Of TActivity))
+  name.vb: <>(Message(Of TActivity), Message(Of TActivity))
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.op_Equality(dotNetBlocks.ServiceBus.Shared.Message{`0},dotNetBlocks.ServiceBus.Shared.Message{`0})
+  commentId: M:dotNetBlocks.ServiceBus.Shared.Message`1.op_Equality(dotNetBlocks.ServiceBus.Shared.Message{`0},dotNetBlocks.ServiceBus.Shared.Message{`0})
+  id: op_Equality(dotNetBlocks.ServiceBus.Shared.Message{`0},dotNetBlocks.ServiceBus.Shared.Message{`0})
+  parent: dotNetBlocks.ServiceBus.Shared.Message`1
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Message<TActivity>?, Message<TActivity>?)
+  nameWithType: Message<TActivity>.operator ==(Message<TActivity>?, Message<TActivity>?)
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.operator ==(dotNetBlocks.ServiceBus.Shared.Message<TActivity>?, dotNetBlocks.ServiceBus.Shared.Message<TActivity>?)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus.Shared
+  namespace: dotNetBlocks.ServiceBus.Shared
+  syntax:
+    content: public static bool operator ==(Message<TActivity>? left, Message<TActivity>? right)
+    parameters:
+    - id: left
+      type: dotNetBlocks.ServiceBus.Shared.Message`1
+    - id: right
+      type: dotNetBlocks.ServiceBus.Shared.Message`1
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Message(Of TActivity), right As Message(Of TActivity)) As Boolean
+  overload: dotNetBlocks.ServiceBus.Shared.Message`1.op_Equality*
+  nameWithType.vb: Message(Of TActivity).=(Message(Of TActivity), Message(Of TActivity))
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).=(dotNetBlocks.ServiceBus.Shared.Message(Of TActivity), dotNetBlocks.ServiceBus.Shared.Message(Of TActivity))
+  name.vb: =(Message(Of TActivity), Message(Of TActivity))
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.GetHashCode
+  commentId: M:dotNetBlocks.ServiceBus.Shared.Message`1.GetHashCode
+  id: GetHashCode
+  parent: dotNetBlocks.ServiceBus.Shared.Message`1
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Message<TActivity>.GetHashCode()
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.GetHashCode()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus.Shared
+  namespace: dotNetBlocks.ServiceBus.Shared
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: dotNetBlocks.ServiceBus.Shared.Message`1.GetHashCode*
+  nameWithType.vb: Message(Of TActivity).GetHashCode()
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).GetHashCode()
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.Equals(System.Object)
+  commentId: M:dotNetBlocks.ServiceBus.Shared.Message`1.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: dotNetBlocks.ServiceBus.Shared.Message`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Message<TActivity>.Equals(object?)
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.Equals(object?)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus.Shared
+  namespace: dotNetBlocks.ServiceBus.Shared
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: dotNetBlocks.ServiceBus.Shared.Message`1.Equals*
+  nameWithType.vb: Message(Of TActivity).Equals(Object)
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).Equals(Object)
+  name.vb: Equals(Object)
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.Equals(dotNetBlocks.ServiceBus.Shared.Message{`0})
+  commentId: M:dotNetBlocks.ServiceBus.Shared.Message`1.Equals(dotNetBlocks.ServiceBus.Shared.Message{`0})
+  id: Equals(dotNetBlocks.ServiceBus.Shared.Message{`0})
+  parent: dotNetBlocks.ServiceBus.Shared.Message`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(Message<TActivity>?)
+  nameWithType: Message<TActivity>.Equals(Message<TActivity>?)
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.Equals(dotNetBlocks.ServiceBus.Shared.Message<TActivity>?)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus.Shared
+  namespace: dotNetBlocks.ServiceBus.Shared
+  example: []
+  syntax:
+    content: public virtual bool Equals(Message<TActivity>? other)
+    parameters:
+    - id: other
+      type: dotNetBlocks.ServiceBus.Shared.Message`1
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function Equals(other As Message(Of TActivity)) As Boolean
+  overload: dotNetBlocks.ServiceBus.Shared.Message`1.Equals*
+  implements:
+  - System.IEquatable{dotNetBlocks.ServiceBus.Shared.Message`1}.Equals(dotNetBlocks.ServiceBus.Shared.Message{{TActivity}})
+  nameWithType.vb: Message(Of TActivity).Equals(Message(Of TActivity))
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).Equals(dotNetBlocks.ServiceBus.Shared.Message(Of TActivity))
+  name.vb: Equals(Message(Of TActivity))
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.#ctor(dotNetBlocks.ServiceBus.Shared.Message{`0})
+  commentId: M:dotNetBlocks.ServiceBus.Shared.Message`1.#ctor(dotNetBlocks.ServiceBus.Shared.Message{`0})
+  id: '#ctor(dotNetBlocks.ServiceBus.Shared.Message{`0})'
+  parent: dotNetBlocks.ServiceBus.Shared.Message`1
+  langs:
+  - csharp
+  - vb
+  name: Message(Message<TActivity>)
+  nameWithType: Message<TActivity>.Message(Message<TActivity>)
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.Message(dotNetBlocks.ServiceBus.Shared.Message<TActivity>)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus.Shared
+  namespace: dotNetBlocks.ServiceBus.Shared
+  syntax:
+    content: protected Message(Message<TActivity> original)
+    parameters:
+    - id: original
+      type: dotNetBlocks.ServiceBus.Shared.Message`1
+    content.vb: Protected Sub New(original As Message(Of TActivity))
+  overload: dotNetBlocks.ServiceBus.Shared.Message`1.#ctor*
+  nameWithType.vb: Message(Of TActivity).New(Message(Of TActivity))
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).New(dotNetBlocks.ServiceBus.Shared.Message(Of TActivity))
+  name.vb: New(Message(Of TActivity))
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.EqualityContract
+  commentId: P:dotNetBlocks.ServiceBus.Shared.Message`1.EqualityContract
+  id: EqualityContract
+  parent: dotNetBlocks.ServiceBus.Shared.Message`1
+  langs:
+  - csharp
+  - vb
+  name: EqualityContract
+  nameWithType: Message<TActivity>.EqualityContract
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.EqualityContract
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus.Shared
+  namespace: dotNetBlocks.ServiceBus.Shared
+  syntax:
+    content: protected virtual Type EqualityContract { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Protected Overridable ReadOnly Property EqualityContract As Type
+  overload: dotNetBlocks.ServiceBus.Shared.Message`1.EqualityContract*
+  nameWithType.vb: Message(Of TActivity).EqualityContract
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).EqualityContract
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.Activity
+  commentId: P:dotNetBlocks.ServiceBus.Shared.Message`1.Activity
+  id: Activity
+  parent: dotNetBlocks.ServiceBus.Shared.Message`1
+  langs:
+  - csharp
+  - vb
+  name: Activity
+  nameWithType: Message<TActivity>.Activity
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.Activity
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus.Shared
+  namespace: dotNetBlocks.ServiceBus.Shared
+  syntax:
+    content: public TActivity? Activity { get; set; }
+    parameters: []
+    return:
+      type: '{TActivity}'
+    content.vb: Public Property Activity As TActivity
+  overload: dotNetBlocks.ServiceBus.Shared.Message`1.Activity*
+  nameWithType.vb: Message(Of TActivity).Activity
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).Activity
+references:
+- uid: dotNetBlocks.ServiceBus.Shared
+  commentId: N:dotNetBlocks.ServiceBus.Shared
+  isExternal: true
+  href: dotNetBlocks.html
+  name: dotNetBlocks.ServiceBus.Shared
+  nameWithType: dotNetBlocks.ServiceBus.Shared
+  fullName: dotNetBlocks.ServiceBus.Shared
+  spec.csharp:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus
+    name: ServiceBus
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus.Shared
+    name: Shared
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.html
+  spec.vb:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus
+    name: ServiceBus
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus.Shared
+    name: Shared
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{dotNetBlocks.ServiceBus.Shared.Message`1}
+  commentId: T:System.IEquatable{dotNetBlocks.ServiceBus.Shared.Message`1}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Message<TActivity>>
+  nameWithType: IEquatable<Message<TActivity>>
+  fullName: System.IEquatable<dotNetBlocks.ServiceBus.Shared.Message<TActivity>>
+  nameWithType.vb: IEquatable(Of Message(Of TActivity))
+  fullName.vb: System.IEquatable(Of dotNetBlocks.ServiceBus.Shared.Message(Of TActivity))
+  name.vb: IEquatable(Of Message(Of TActivity))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: <
+  - name: TActivity
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TActivity
+  - name: )
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.System.Linq.WildCard.Search``1
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  parent: System.Linq.WildCard
+  definition: System.Linq.WildCard.Search``1(``0)
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<Message<TActivity>>(Message<TActivity>)
+  nameWithType: WildCard.Search<Message<TActivity>>(Message<TActivity>)
+  fullName: System.Linq.WildCard.Search<dotNetBlocks.ServiceBus.Shared.Message<TActivity>>(dotNetBlocks.ServiceBus.Shared.Message<TActivity>)
+  nameWithType.vb: WildCard.Search(Of Message(Of TActivity))(Message(Of TActivity))
+  fullName.vb: System.Linq.WildCard.Search(Of dotNetBlocks.ServiceBus.Shared.Message(Of TActivity))(dotNetBlocks.ServiceBus.Shared.Message(Of TActivity))
+  name.vb: Search(Of Message(Of TActivity))(Message(Of TActivity))
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(dotNetBlocks.ServiceBus.Shared.Message{`0})
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: <
+  - name: TActivity
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: <
+  - name: TActivity
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(dotNetBlocks.ServiceBus.Shared.Message{`0})
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TActivity
+  - name: )
+  - name: )
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TActivity
+  - name: )
+  - name: )
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<Message<TActivity>>(Message<TActivity>)
+  nameWithType: SystemExtensions.AsLazy<Message<TActivity>>(Message<TActivity>)
+  fullName: System.SystemExtensions.AsLazy<dotNetBlocks.ServiceBus.Shared.Message<TActivity>>(dotNetBlocks.ServiceBus.Shared.Message<TActivity>)
+  nameWithType.vb: SystemExtensions.AsLazy(Of Message(Of TActivity))(Message(Of TActivity))
+  fullName.vb: System.SystemExtensions.AsLazy(Of dotNetBlocks.ServiceBus.Shared.Message(Of TActivity))(dotNetBlocks.ServiceBus.Shared.Message(Of TActivity))
+  name.vb: AsLazy(Of Message(Of TActivity))(Message(Of TActivity))
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(dotNetBlocks.ServiceBus.Shared.Message{`0})
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: <
+  - name: TActivity
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: <
+  - name: TActivity
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(dotNetBlocks.ServiceBus.Shared.Message{`0})
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TActivity
+  - name: )
+  - name: )
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TActivity
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Linq.WildCard.Search``1(``0)
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  isExternal: true
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<TSearch>(TSearch)
+  nameWithType: WildCard.Search<TSearch>(TSearch)
+  fullName: System.Linq.WildCard.Search<TSearch>(TSearch)
+  nameWithType.vb: WildCard.Search(Of TSearch)(TSearch)
+  fullName.vb: System.Linq.WildCard.Search(Of TSearch)(TSearch)
+  name.vb: Search(Of TSearch)(TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: (
+  - name: TSearch
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: (
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard
+  commentId: T:System.Linq.WildCard
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard.html
+  name: WildCard
+  nameWithType: WildCard
+  fullName: System.Linq.WildCard
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: System.html
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.#ctor*
+  commentId: Overload:dotNetBlocks.ServiceBus.Shared.Message`1.#ctor
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Shared.Message-1.html#dotNetBlocks_ServiceBus_Shared_Message_1__ctor__0_
+  name: Message
+  nameWithType: Message<TActivity>.Message
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.Message
+  nameWithType.vb: Message(Of TActivity).New
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).New
+  name.vb: New
+- uid: '{TActivity}'
+  commentId: '!:TActivity'
+  definition: TActivity
+  name: TActivity
+  nameWithType: TActivity
+  fullName: TActivity
+- uid: TActivity
+  name: TActivity
+  nameWithType: TActivity
+  fullName: TActivity
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.ToString*
+  commentId: Overload:dotNetBlocks.ServiceBus.Shared.Message`1.ToString
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Shared.Message-1.html#dotNetBlocks_ServiceBus_Shared_Message_1_ToString
+  name: ToString
+  nameWithType: Message<TActivity>.ToString
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.ToString
+  nameWithType.vb: Message(Of TActivity).ToString
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.PrintMembers*
+  commentId: Overload:dotNetBlocks.ServiceBus.Shared.Message`1.PrintMembers
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Shared.Message-1.html#dotNetBlocks_ServiceBus_Shared_Message_1_PrintMembers_System_Text_StringBuilder_
+  name: PrintMembers
+  nameWithType: Message<TActivity>.PrintMembers
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.PrintMembers
+  nameWithType.vb: Message(Of TActivity).PrintMembers
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).PrintMembers
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.op_Inequality*
+  commentId: Overload:dotNetBlocks.ServiceBus.Shared.Message`1.op_Inequality
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Shared.Message-1.html#dotNetBlocks_ServiceBus_Shared_Message_1_op_Inequality_dotNetBlocks_ServiceBus_Shared_Message__0__dotNetBlocks_ServiceBus_Shared_Message__0__
+  name: operator !=
+  nameWithType: Message<TActivity>.operator !=
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.operator !=
+  nameWithType.vb: Message(Of TActivity).<>
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html#dotNetBlocks_ServiceBus_Shared_Message_1_op_Inequality_dotNetBlocks_ServiceBus_Shared_Message__0__dotNetBlocks_ServiceBus_Shared_Message__0__
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1
+  commentId: T:dotNetBlocks.ServiceBus.Shared.Message`1
+  parent: dotNetBlocks.ServiceBus.Shared
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  name: Message<TActivity>
+  nameWithType: Message<TActivity>
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>
+  nameWithType.vb: Message(Of TActivity)
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity)
+  name.vb: Message(Of TActivity)
+  spec.csharp:
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: <
+  - name: TActivity
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TActivity
+  - name: )
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.op_Equality*
+  commentId: Overload:dotNetBlocks.ServiceBus.Shared.Message`1.op_Equality
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Shared.Message-1.html#dotNetBlocks_ServiceBus_Shared_Message_1_op_Equality_dotNetBlocks_ServiceBus_Shared_Message__0__dotNetBlocks_ServiceBus_Shared_Message__0__
+  name: operator ==
+  nameWithType: Message<TActivity>.operator ==
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.operator ==
+  nameWithType.vb: Message(Of TActivity).=
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1.op_Equality*
+    name: ==
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html#dotNetBlocks_ServiceBus_Shared_Message_1_op_Equality_dotNetBlocks_ServiceBus_Shared_Message__0__dotNetBlocks_ServiceBus_Shared_Message__0__
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.GetHashCode*
+  commentId: Overload:dotNetBlocks.ServiceBus.Shared.Message`1.GetHashCode
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Shared.Message-1.html#dotNetBlocks_ServiceBus_Shared_Message_1_GetHashCode
+  name: GetHashCode
+  nameWithType: Message<TActivity>.GetHashCode
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.GetHashCode
+  nameWithType.vb: Message(Of TActivity).GetHashCode
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.Equals*
+  commentId: Overload:dotNetBlocks.ServiceBus.Shared.Message`1.Equals
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Shared.Message-1.html#dotNetBlocks_ServiceBus_Shared_Message_1_Equals_System_Object_
+  name: Equals
+  nameWithType: Message<TActivity>.Equals
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.Equals
+  nameWithType.vb: Message(Of TActivity).Equals
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).Equals
+- uid: System.IEquatable{dotNetBlocks.ServiceBus.Shared.Message`1}.Equals(dotNetBlocks.ServiceBus.Shared.Message{{TActivity}})
+  commentId: M:System.IEquatable{dotNetBlocks.ServiceBus.Shared.Message`1}.Equals(dotNetBlocks.ServiceBus.Shared.Message{`0})
+  parent: System.IEquatable{dotNetBlocks.ServiceBus.Shared.Message`1}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Message<TActivity>)
+  nameWithType: IEquatable<Message<TActivity>>.Equals(Message<TActivity>)
+  fullName: System.IEquatable<dotNetBlocks.ServiceBus.Shared.Message<TActivity>>.Equals(dotNetBlocks.ServiceBus.Shared.Message<TActivity>)
+  nameWithType.vb: IEquatable(Of Message(Of TActivity)).Equals(Message(Of TActivity))
+  fullName.vb: System.IEquatable(Of dotNetBlocks.ServiceBus.Shared.Message(Of TActivity)).Equals(dotNetBlocks.ServiceBus.Shared.Message(Of TActivity))
+  name.vb: Equals(Message(Of TActivity))
+  spec.csharp:
+  - uid: System.IEquatable{dotNetBlocks.ServiceBus.Shared.Message`1}.Equals(dotNetBlocks.ServiceBus.Shared.Message{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: <
+  - name: TActivity
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{dotNetBlocks.ServiceBus.Shared.Message`1}.Equals(dotNetBlocks.ServiceBus.Shared.Message{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TActivity
+  - name: )
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.EqualityContract*
+  commentId: Overload:dotNetBlocks.ServiceBus.Shared.Message`1.EqualityContract
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Shared.Message-1.html#dotNetBlocks_ServiceBus_Shared_Message_1_EqualityContract
+  name: EqualityContract
+  nameWithType: Message<TActivity>.EqualityContract
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.EqualityContract
+  nameWithType.vb: Message(Of TActivity).EqualityContract
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).EqualityContract
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1.Activity*
+  commentId: Overload:dotNetBlocks.ServiceBus.Shared.Message`1.Activity
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Shared.Message-1.html#dotNetBlocks_ServiceBus_Shared_Message_1_Activity
+  name: Activity
+  nameWithType: Message<TActivity>.Activity
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.Activity
+  nameWithType.vb: Message(Of TActivity).Activity
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity).Activity

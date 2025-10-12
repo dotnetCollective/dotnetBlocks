@@ -1,0 +1,22 @@
+### YamlMime:ApiPage
+title: Namespace dotNetBlocks.System.Collections.Tests
+body:
+- api1: Namespace dotNetBlocks.System.Collections.Tests
+  id: dotNetBlocks_System_Collections_Tests
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests
+    commentId: N:dotNetBlocks.System.Collections.Tests
+- h3: Classes
+- parameters:
+  - type:
+      text: CollectionExtensionsTests
+      url: dotNetBlocks.System.Collections.Tests.CollectionExtensionsTests.html
+  - type:
+      text: EnumBitArrayTests
+      url: dotNetBlocks.System.Collections.Tests.EnumBitArrayTests.html
+- h3: Enums
+- parameters:
+  - type:
+      text: TestEnum
+      url: dotNetBlocks.System.Collections.Tests.TestEnum.html
+languageId: csharp

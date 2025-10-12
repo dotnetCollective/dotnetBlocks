@@ -1,0 +1,460 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.IO.StreamBuffer.BufferAction
+  commentId: T:System.IO.StreamBuffer.BufferAction
+  id: StreamBuffer.BufferAction
+  parent: System.IO
+  children:
+  - System.IO.StreamBuffer.BufferAction.#ctor(System.Object,System.IntPtr)
+  - System.IO.StreamBuffer.BufferAction.BeginInvoke(System.IO.Stream,System.AsyncCallback,System.Object)
+  - System.IO.StreamBuffer.BufferAction.EndInvoke(System.IAsyncResult)
+  - System.IO.StreamBuffer.BufferAction.Invoke(System.IO.Stream)
+  langs:
+  - csharp
+  - vb
+  name: StreamBuffer.BufferAction
+  nameWithType: StreamBuffer.BufferAction
+  fullName: System.IO.StreamBuffer.BufferAction
+  type: Delegate
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public delegate void StreamBuffer.BufferAction(Stream stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+    content.vb: Public Delegate Sub StreamBuffer.BufferAction(stream As Stream)
+  extensionMethods:
+  - System.IO.StreamBuffer.BufferAction.System.Linq.WildCard.Search``1
+  - System.IO.StreamBuffer.BufferAction.System.Linq.WildCard.Search``1
+  - System.IO.StreamBuffer.BufferAction.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.BufferAction.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.BufferAction.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.BufferAction.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBuffer.BufferAction.System.SystemExtensions.AsLazy``1
+- uid: System.IO.StreamBuffer.BufferAction.#ctor(System.Object,System.IntPtr)
+  commentId: M:System.IO.StreamBuffer.BufferAction.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: System.IO.StreamBuffer.BufferAction
+  langs:
+  - csharp
+  - vb
+  name: BufferAction(object, nint)
+  nameWithType: StreamBuffer.BufferAction.BufferAction(object, nint)
+  fullName: System.IO.StreamBuffer.BufferAction.BufferAction(object, nint)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public BufferAction(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: System.IO.StreamBuffer.BufferAction.#ctor*
+  nameWithType.vb: StreamBuffer.BufferAction.New(Object, IntPtr)
+  fullName.vb: System.IO.StreamBuffer.BufferAction.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: System.IO.StreamBuffer.BufferAction.Invoke(System.IO.Stream)
+  commentId: M:System.IO.StreamBuffer.BufferAction.Invoke(System.IO.Stream)
+  id: Invoke(System.IO.Stream)
+  parent: System.IO.StreamBuffer.BufferAction
+  langs:
+  - csharp
+  - vb
+  name: Invoke(Stream)
+  nameWithType: StreamBuffer.BufferAction.Invoke(Stream)
+  fullName: System.IO.StreamBuffer.BufferAction.Invoke(System.IO.Stream)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public virtual void Invoke(Stream stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+    content.vb: Public Overridable Sub Invoke(stream As Stream)
+  overload: System.IO.StreamBuffer.BufferAction.Invoke*
+- uid: System.IO.StreamBuffer.BufferAction.BeginInvoke(System.IO.Stream,System.AsyncCallback,System.Object)
+  commentId: M:System.IO.StreamBuffer.BufferAction.BeginInvoke(System.IO.Stream,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.IO.Stream,System.AsyncCallback,System.Object)
+  parent: System.IO.StreamBuffer.BufferAction
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(Stream, AsyncCallback, object)
+  nameWithType: StreamBuffer.BufferAction.BeginInvoke(Stream, AsyncCallback, object)
+  fullName: System.IO.StreamBuffer.BufferAction.BeginInvoke(System.IO.Stream, System.AsyncCallback, object)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(Stream stream, AsyncCallback callback, object @object)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(stream As Stream, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: System.IO.StreamBuffer.BufferAction.BeginInvoke*
+  nameWithType.vb: StreamBuffer.BufferAction.BeginInvoke(Stream, AsyncCallback, Object)
+  fullName.vb: System.IO.StreamBuffer.BufferAction.BeginInvoke(System.IO.Stream, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(Stream, AsyncCallback, Object)
+- uid: System.IO.StreamBuffer.BufferAction.EndInvoke(System.IAsyncResult)
+  commentId: M:System.IO.StreamBuffer.BufferAction.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: System.IO.StreamBuffer.BufferAction
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: StreamBuffer.BufferAction.EndInvoke(IAsyncResult)
+  fullName: System.IO.StreamBuffer.BufferAction.EndInvoke(System.IAsyncResult)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: System.IO.StreamBuffer.BufferAction.EndInvoke*
+references:
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: System.html
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+- uid: System.IO.StreamBuffer.BufferAction.System.Linq.WildCard.Search``1
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  parent: System.Linq.WildCard
+  definition: System.Linq.WildCard.Search``1(``0)
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<BufferAction>(BufferAction)
+  nameWithType: WildCard.Search<StreamBuffer.BufferAction>(StreamBuffer.BufferAction)
+  fullName: System.Linq.WildCard.Search<System.IO.StreamBuffer.BufferAction>(System.IO.StreamBuffer.BufferAction)
+  nameWithType.vb: WildCard.Search(Of StreamBuffer.BufferAction)(StreamBuffer.BufferAction)
+  fullName.vb: System.Linq.WildCard.Search(Of System.IO.StreamBuffer.BufferAction)(System.IO.StreamBuffer.BufferAction)
+  name.vb: Search(Of BufferAction)(BufferAction)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(System.IO.StreamBuffer.BufferAction)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - uid: System.IO.StreamBuffer.BufferAction
+    name: BufferAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferAction.html
+  - name: '>'
+  - name: (
+  - uid: System.IO.StreamBuffer.BufferAction
+    name: BufferAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferAction.html
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(System.IO.StreamBuffer.BufferAction)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.StreamBuffer.BufferAction
+    name: BufferAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferAction.html
+  - name: )
+  - name: (
+  - uid: System.IO.StreamBuffer.BufferAction
+    name: BufferAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferAction.html
+  - name: )
+- uid: System.IO.StreamBuffer.BufferAction.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<BufferAction>(BufferAction)
+  nameWithType: SystemExtensions.AsLazy<StreamBuffer.BufferAction>(StreamBuffer.BufferAction)
+  fullName: System.SystemExtensions.AsLazy<System.IO.StreamBuffer.BufferAction>(System.IO.StreamBuffer.BufferAction)
+  nameWithType.vb: SystemExtensions.AsLazy(Of StreamBuffer.BufferAction)(StreamBuffer.BufferAction)
+  fullName.vb: System.SystemExtensions.AsLazy(Of System.IO.StreamBuffer.BufferAction)(System.IO.StreamBuffer.BufferAction)
+  name.vb: AsLazy(Of BufferAction)(BufferAction)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(System.IO.StreamBuffer.BufferAction)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: System.IO.StreamBuffer.BufferAction
+    name: BufferAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferAction.html
+  - name: '>'
+  - name: (
+  - uid: System.IO.StreamBuffer.BufferAction
+    name: BufferAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferAction.html
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(System.IO.StreamBuffer.BufferAction)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.StreamBuffer.BufferAction
+    name: BufferAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferAction.html
+  - name: )
+  - name: (
+  - uid: System.IO.StreamBuffer.BufferAction
+    name: BufferAction
+    isExternal: true
+    href: System.IO.StreamBuffer.BufferAction.html
+  - name: )
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.Linq.WildCard.Search``1(``0)
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  isExternal: true
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<TSearch>(TSearch)
+  nameWithType: WildCard.Search<TSearch>(TSearch)
+  fullName: System.Linq.WildCard.Search<TSearch>(TSearch)
+  nameWithType.vb: WildCard.Search(Of TSearch)(TSearch)
+  fullName.vb: System.Linq.WildCard.Search(Of TSearch)(TSearch)
+  name.vb: Search(Of TSearch)(TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: (
+  - name: TSearch
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: (
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard
+  commentId: T:System.Linq.WildCard
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard.html
+  name: WildCard
+  nameWithType: WildCard
+  fullName: System.Linq.WildCard
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: System.html
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IO.StreamBuffer.BufferAction.#ctor*
+  commentId: Overload:System.IO.StreamBuffer.BufferAction.#ctor
+  isExternal: true
+  href: System.IO.StreamBuffer.BufferAction.html#System_IO_StreamBuffer_BufferAction__ctor_System_Object_System_IntPtr_
+  name: BufferAction
+  nameWithType: StreamBuffer.BufferAction.BufferAction
+  fullName: System.IO.StreamBuffer.BufferAction.BufferAction
+  nameWithType.vb: StreamBuffer.BufferAction.New
+  fullName.vb: System.IO.StreamBuffer.BufferAction.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: System.IO.StreamBuffer.BufferAction.Invoke*
+  commentId: Overload:System.IO.StreamBuffer.BufferAction.Invoke
+  isExternal: true
+  href: System.IO.StreamBuffer.BufferAction.html#System_IO_StreamBuffer_BufferAction_Invoke_System_IO_Stream_
+  name: Invoke
+  nameWithType: StreamBuffer.BufferAction.Invoke
+  fullName: System.IO.StreamBuffer.BufferAction.Invoke
+- uid: System.IO.StreamBuffer.BufferAction.BeginInvoke*
+  commentId: Overload:System.IO.StreamBuffer.BufferAction.BeginInvoke
+  isExternal: true
+  href: System.IO.StreamBuffer.BufferAction.html#System_IO_StreamBuffer_BufferAction_BeginInvoke_System_IO_Stream_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: StreamBuffer.BufferAction.BeginInvoke
+  fullName: System.IO.StreamBuffer.BufferAction.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: System.IO.StreamBuffer.BufferAction.EndInvoke*
+  commentId: Overload:System.IO.StreamBuffer.BufferAction.EndInvoke
+  isExternal: true
+  href: System.IO.StreamBuffer.BufferAction.html#System_IO_StreamBuffer_BufferAction_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: StreamBuffer.BufferAction.EndInvoke
+  fullName: System.IO.StreamBuffer.BufferAction.EndInvoke
