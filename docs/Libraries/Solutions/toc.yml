@@ -1,0 +1,23 @@
+items:
+  - name: DotNetBlocks.Extensions
+    href: Extensions.md
+    order: 0
+  - name: Solution Libraries
+    href: index.md
+  - name: DotNetBlocks.System.Collections
+    href: System.Collections.md
+    order: 0
+  - name: DotNetBlocks.System.Enums
+    href: System.Enums.md
+    order: 0
+  - name: DotNetBlocks.System.IO
+    href: System.IO.md
+    order: 0
+  - name: DotNetBlocks.System.Linq
+    href: System.Linq.md
+    order: 0
+  - name: DotNetBlocks.System
+    href: System.md
+    order: 0
+  - name: dotNetBlocks.System.Threading
+    href: System.Threading.md

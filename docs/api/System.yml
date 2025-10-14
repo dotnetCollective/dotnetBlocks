@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: System
+  commentId: N:System
+  id: System
+  children:
+  - System.EnumExtensions
+  - System.EnumMetaAttribute
+  - System.EnumMetaManager`1
+  - System.EnumMeta`1
+  - System.GuidExtensions
+  - System.GuidTypes
+  - System.SystemExtensions
+  langs:
+  - csharp
+  - vb
+  name: System
+  nameWithType: System
+  fullName: System
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.System
+references:
+- uid: System.GuidTypes
+  commentId: T:System.GuidTypes
+  parent: System
+  isExternal: true
+  href: System.GuidTypes.html
+  name: GuidTypes
+  nameWithType: GuidTypes
+  fullName: System.GuidTypes
+- uid: System.GuidExtensions
+  commentId: T:System.GuidExtensions
+  isExternal: true
+  href: System.GuidExtensions.html
+  name: GuidExtensions
+  nameWithType: GuidExtensions
+  fullName: System.GuidExtensions
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: System.EnumExtensions
+  commentId: T:System.EnumExtensions
+  isExternal: true
+  href: System.EnumExtensions.html
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: System.EnumExtensions
+- uid: System.EnumMeta`1
+  commentId: T:System.EnumMeta`1
+  isExternal: true
+  href: System.EnumMeta-1.html
+  name: EnumMeta<TEnum>
+  nameWithType: EnumMeta<TEnum>
+  fullName: System.EnumMeta<TEnum>
+  nameWithType.vb: EnumMeta(Of TEnum)
+  fullName.vb: System.EnumMeta(Of TEnum)
+  name.vb: EnumMeta(Of TEnum)
+  spec.csharp:
+  - uid: System.EnumMeta`1
+    name: EnumMeta
+    isExternal: true
+    href: System.EnumMeta-1.html
+  - name: <
+  - name: TEnum
+  - name: '>'
+  spec.vb:
+  - uid: System.EnumMeta`1
+    name: EnumMeta
+    isExternal: true
+    href: System.EnumMeta-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEnum
+  - name: )
+- uid: System.EnumMetaAttribute
+  commentId: T:System.EnumMetaAttribute
+  isExternal: true
+  href: System.EnumMetaAttribute.html
+  name: EnumMetaAttribute
+  nameWithType: EnumMetaAttribute
+  fullName: System.EnumMetaAttribute
+- uid: System.EnumMetaManager`1
+  commentId: T:System.EnumMetaManager`1
+  isExternal: true
+  href: System.EnumMetaManager-1.html
+  name: EnumMetaManager<TEnum>
+  nameWithType: EnumMetaManager<TEnum>
+  fullName: System.EnumMetaManager<TEnum>
+  nameWithType.vb: EnumMetaManager(Of TEnum)
+  fullName.vb: System.EnumMetaManager(Of TEnum)
+  name.vb: EnumMetaManager(Of TEnum)
+  spec.csharp:
+  - uid: System.EnumMetaManager`1
+    name: EnumMetaManager
+    isExternal: true
+    href: System.EnumMetaManager-1.html
+  - name: <
+  - name: TEnum
+  - name: '>'
+  spec.vb:
+  - uid: System.EnumMetaManager`1
+    name: EnumMetaManager
+    isExternal: true
+    href: System.EnumMetaManager-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEnum
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System

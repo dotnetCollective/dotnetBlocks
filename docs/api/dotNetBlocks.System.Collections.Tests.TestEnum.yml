@@ -1,0 +1,45 @@
+### YamlMime:ApiPage
+title: Enum TestEnum
+body:
+- api1: Enum TestEnum
+  id: dotNetBlocks_System_Collections_Tests_TestEnum
+  metadata:
+    uid: dotNetBlocks.System.Collections.Tests.TestEnum
+    commentId: T:dotNetBlocks.System.Collections.Tests.TestEnum
+- facts:
+  - name: Namespace
+    value:
+      text: dotNetBlocks.System.Collections.Tests
+      url: dotNetBlocks.System.Collections.Tests.html
+  - name: Assembly
+    value: dotNetBlocks.System.Collections.Tests.dll
+- code: public enum TestEnum
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<TestEnum>(TestEnum)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<TestEnum>(TestEnum)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<TestEnum>(TestEnum)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<TestEnum>(TestEnum)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<TestEnum>(TestEnum)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<TestEnum>(TestEnum)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<TestEnum>(TestEnum)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<TestEnum>(TestEnum)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+- h2: Fields
+- parameters:
+  - name: Bit1
+    default: "1"
+  - name: Bit2
+    default: "2"
+  - name: Bit3
+    default: "4"
+  - name: None
+    default: "0"
+languageId: csharp

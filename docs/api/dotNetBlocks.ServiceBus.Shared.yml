@@ -1,0 +1,92 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.ServiceBus.Shared
+  commentId: N:dotNetBlocks.ServiceBus.Shared
+  id: dotNetBlocks.ServiceBus.Shared
+  children:
+  - dotNetBlocks.ServiceBus.Shared.Message
+  - dotNetBlocks.ServiceBus.Shared.Message`1
+  langs:
+  - csharp
+  - vb
+  name: dotNetBlocks.ServiceBus.Shared
+  nameWithType: dotNetBlocks.ServiceBus.Shared
+  fullName: dotNetBlocks.ServiceBus.Shared
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.ServiceBus.Shared
+references:
+- uid: dotNetBlocks.ServiceBus.Shared.Message
+  commentId: T:dotNetBlocks.ServiceBus.Shared.Message
+  parent: dotNetBlocks.ServiceBus.Shared
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Shared.Message.html
+  name: Message
+  nameWithType: Message
+  fullName: dotNetBlocks.ServiceBus.Shared.Message
+- uid: dotNetBlocks.ServiceBus.Shared.Message`1
+  commentId: T:dotNetBlocks.ServiceBus.Shared.Message`1
+  parent: dotNetBlocks.ServiceBus.Shared
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  name: Message<TActivity>
+  nameWithType: Message<TActivity>
+  fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>
+  nameWithType.vb: Message(Of TActivity)
+  fullName.vb: dotNetBlocks.ServiceBus.Shared.Message(Of TActivity)
+  name.vb: Message(Of TActivity)
+  spec.csharp:
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: <
+  - name: TActivity
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.Message-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TActivity
+  - name: )
+- uid: dotNetBlocks.ServiceBus.Shared
+  commentId: N:dotNetBlocks.ServiceBus.Shared
+  isExternal: true
+  href: dotNetBlocks.html
+  name: dotNetBlocks.ServiceBus.Shared
+  nameWithType: dotNetBlocks.ServiceBus.Shared
+  fullName: dotNetBlocks.ServiceBus.Shared
+  spec.csharp:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus
+    name: ServiceBus
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus.Shared
+    name: Shared
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.html
+  spec.vb:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus
+    name: ServiceBus
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus.Shared
+    name: Shared
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Shared.html

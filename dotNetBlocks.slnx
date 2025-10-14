@@ -11,6 +11,7 @@
   <Folder Name="/Tests/">
     <Project Path="tests/dotNetBlocks.Business.Shared.Tests/dotNetBlocks.Business.Shared.Tests.csproj" />
     <Project Path="tests/dotNetBlocks.Extensions.Tests/dotNetBlocks.Extensions.Tests.csproj" />
+    <Project Path="tests/dotNetBlocks.Linq.Tests/dotNetBlocks.Linq.Tests.csproj" />
     <Project Path="tests/dotNetBlocks.ServiceBus.Tests/dotNetBlocks.ServiceBus.Tests.csproj" />
     <Project Path="tests/dotNetBlocks.System.Collections.Tests/dotNetBlocks.System.Collections.Tests.csproj" />
     <Project Path="tests/dotNetBlocks.System.IO.Tests/dotNetBlocks.System.IO.Tests.csproj" />
@@ -20,6 +21,7 @@
   <Project Path="src/dotNetBlocks.Business.Shared/dotNetBlocks.Business.Shared.csproj" />
   <Project Path="src/DotNetBlocks.Business/DotNetBlocks.Business.csproj" />
   <Project Path="src/dotNetBlocks.Extensions/dotNetBlocks.Extensions.csproj" />
+  <Project Path="src/dotNetBlocks.Linq/dotNetBlocks.System.Linq.csproj" />
   <Project Path="src/dotNetBlocks.ServiceBus.Shared/dotNetBlocks.ServiceBus.Shared.csproj" />
   <Project Path="src/dotNetBlocks.ServiceBus/dotNetBlocks.ServiceBus.csproj" />
   <Project Path="src/dotNetBlocks.System.Collections/dotNetBlocks.System.Collections.csproj" />

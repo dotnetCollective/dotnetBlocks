@@ -1,0 +1,81 @@
+### YamlMime:ApiPage
+title: Class BasicInMemoryTests
+body:
+- api1: Class BasicInMemoryTests
+  id: dotNetBlocks_ServiceBus_Tests_BasicInMemoryTests
+  metadata:
+    uid: dotNetBlocks.ServiceBus.Tests.BasicInMemoryTests
+    commentId: T:dotNetBlocks.ServiceBus.Tests.BasicInMemoryTests
+- facts:
+  - name: Namespace
+    value:
+      text: dotNetBlocks.ServiceBus.Tests
+      url: dotNetBlocks.ServiceBus.Tests.html
+  - name: Assembly
+    value: dotNetBlocks.ServiceBus.Tests.dll
+- code: >-
+    [TestClass]
+
+    public sealed class BasicInMemoryTests
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: BasicInMemoryTests
+    url: dotNetBlocks.ServiceBus.Tests.BasicInMemoryTests.html
+- h4: Inherited Members
+- list:
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<BasicInMemoryTests>(BasicInMemoryTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<BasicInMemoryTests>(BasicInMemoryTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<BasicInMemoryTests>(BasicInMemoryTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<BasicInMemoryTests>(BasicInMemoryTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<BasicInMemoryTests>(BasicInMemoryTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<BasicInMemoryTests>(BasicInMemoryTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<BasicInMemoryTests>(BasicInMemoryTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<BasicInMemoryTests>(BasicInMemoryTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: WildCard.Search<BasicInMemoryTests>(BasicInMemoryTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<BasicInMemoryTests>(BasicInMemoryTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<BasicInMemoryTests>(BasicInMemoryTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+- h2: Constructors
+- api3: BasicInMemoryTests()
+  id: dotNetBlocks_ServiceBus_Tests_BasicInMemoryTests__ctor
+  metadata:
+    uid: dotNetBlocks.ServiceBus.Tests.BasicInMemoryTests.#ctor
+    commentId: M:dotNetBlocks.ServiceBus.Tests.BasicInMemoryTests.#ctor
+- code: public BasicInMemoryTests()
+- h2: Methods
+- api3: TestMethod1()
+  id: dotNetBlocks_ServiceBus_Tests_BasicInMemoryTests_TestMethod1
+  metadata:
+    uid: dotNetBlocks.ServiceBus.Tests.BasicInMemoryTests.TestMethod1
+    commentId: M:dotNetBlocks.ServiceBus.Tests.BasicInMemoryTests.TestMethod1
+- code: >-
+    [TestMethod]
+
+    public void TestMethod1()
+languageId: csharp

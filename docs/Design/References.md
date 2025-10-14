@@ -1,4 +1,15 @@
-﻿# Building projects
+﻿<!---
+Title: References
+NavigationTitle: References
+BreadcrumbTitle: References
+ShowInNavigation: false
+ShowInSidebar: true
+NoSidebar: false
+Excerpt: References used in the design.
+
+--->
+# Building projects
+
 #Centrally managing properties in MS Build
 https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022
 

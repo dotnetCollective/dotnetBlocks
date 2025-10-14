@@ -1,0 +1,22 @@
+### YamlMime:ApiPage
+title: Namespace dotNetBlocks.System.IO.Tests
+body:
+- api1: Namespace dotNetBlocks.System.IO.Tests
+  id: dotNetBlocks_System_IO_Tests
+  metadata:
+    uid: dotNetBlocks.System.IO.Tests
+    commentId: N:dotNetBlocks.System.IO.Tests
+- h3: Namespaces
+- parameters:
+  - type:
+      text: dotNetBlocks.System.IO.Tests.StreamBuffer
+      url: dotNetBlocks.System.IO.Tests.StreamBuffer.html
+- h3: Classes
+- parameters:
+  - type:
+      text: ShouldlyExtensions
+      url: dotNetBlocks.System.IO.Tests.ShouldlyExtensions.html
+  - type:
+      text: ShouldNotCompleteInException
+      url: dotNetBlocks.System.IO.Tests.ShouldNotCompleteInException.html
+languageId: csharp

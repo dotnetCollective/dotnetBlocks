@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.System.IO
+  commentId: N:dotNetBlocks.System.IO
+  id: dotNetBlocks.System.IO
+  children:
+  - dotNetBlocks.System.IO.StreamExtensions
+  langs:
+  - csharp
+  - vb
+  name: dotNetBlocks.System.IO
+  nameWithType: dotNetBlocks.System.IO
+  fullName: dotNetBlocks.System.IO
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.System.IO
+references:
+- uid: dotNetBlocks.System.IO.StreamExtensions
+  commentId: T:dotNetBlocks.System.IO.StreamExtensions
+  isExternal: true
+  href: dotNetBlocks.System.IO.StreamExtensions.html
+  name: StreamExtensions
+  nameWithType: StreamExtensions
+  fullName: dotNetBlocks.System.IO.StreamExtensions

@@ -1,9 +1,10 @@
 <!-- Repo root build properties. -->
 <!-- Reference https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022 -->
-<Project>
-      <!-- Set folder and file values -->
-  <PropertyGroup>
 
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+      <!-- Set folder and file values -->
+    <PropertyGroup>
       <!-- Defined Files and Folders -->
       <projectNameContainsTest>$(MSBuildProjectFile.Contains('Test'))</projectNameContainsTest>
       <folder>$(MSBuildThisFileDirectory)</folder>
@@ -21,26 +22,38 @@
 
       <!-- Relocatd the packages output so they can be easily uploaded to NuGet-->
       <PackageOutputPath>$(buildOutputFolder)/packages/</PackageOutputPath>
-  </PropertyGroup>
+    </PropertyGroup> 
+
+        <!-- Nuget management -->
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true </ManagePackageVersionsCentrally>
+        <CentralPackageFloatingVersionsEnabled>true</CentralPackageFloatingVersionsEnabled>
+          <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+
+    </PropertyGroup>
+
 
   <!-- Enable features - file nesting.-->
-<ItemGroup>
-  <ProjectCapability Include="ConfigurableFileNesting" />
-  <ProjectCapability Include="ConfigurableFileNestingFeatureEnabled" />
-</ItemGroup>
+    <ItemGroup>
+    <ProjectCapability Include="ConfigurableFileNesting" />
+    <ProjectCapability Include="ConfigurableFileNestingFeatureEnabled" />
+    </ItemGroup>
 
-  <PropertyGroup>
-      <!-- Set test project if not set and the project name contains ".Test"-->
-      <IsTestProject Condition="'$IsTestProject'!='True' Or '$projectNameContainsTest' == 'True' ">True</IsTestProject>
-      <!-- Project Name overrides current test project value -->
-      <IsTestProject Condition="'$(IsTestProject)'!='True' And '$(projectNameContainsTest)' == 'True' ">True</IsTestProject>
-
-
-  </PropertyGroup>
+    <!-- Imports other build file pieces-->
+    <Choose>
+        <When Condition="'$(IsTestProject)'==''">
+    <PropertyGroup>
+        <IsTestProject>false</IsTestProject>
+        <IsTestProject Condition="'$(projectNameContainsTest)'=='true'">true</IsTestProject>
+    </PropertyGroup>
+        </When>
+    </Choose>
 
   <Import Project="$(GlobalPropsFile)" />
   <Import Project="$(PackagesPropsFile)" />
    <!-- Include test props file for test projects -->
-  <Import Condition="$(IsTestProject)" Project="$(TestPropsFile)"/>
+
+        <Import Condition="'$(IsTestProject)'=='true'" Project="$(TestPropsFile)"/>
+
 </Project>
 

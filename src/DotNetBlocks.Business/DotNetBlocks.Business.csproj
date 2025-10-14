@@ -25,6 +25,8 @@ Commonly Used Types:
 	
 	<ItemGroup>
 	  <ProjectReference Include="..\dotNetBlocks.ServiceBus.Shared\dotNetBlocks.ServiceBus.Shared.csproj" />
+
+	  <None Include="readme.md" pack="true" PackagePath="." />
 	</ItemGroup>
 	
 

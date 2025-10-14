@@ -1,0 +1,448 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.IAuditable
+  commentId: T:dotNetBlocks.IAuditable
+  id: IAuditable
+  parent: dotNetBlocks
+  children:
+  - dotNetBlocks.IAuditable.CreatedAt
+  - dotNetBlocks.IAuditable.CreatedBy
+  - dotNetBlocks.IAuditable.UpdatedAt
+  - dotNetBlocks.IAuditable.UpdatedBy
+  langs:
+  - csharp
+  - vb
+  name: IAuditable
+  nameWithType: IAuditable
+  fullName: dotNetBlocks.IAuditable
+  type: Interface
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/IAuditable.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks
+  summary: Interface for _auditProperties objects and entities.
+  remarks: Standard Properties for tracking item CRUD behaviors.
+  example: []
+  syntax:
+    content: public interface IAuditable
+    content.vb: Public Interface IAuditable
+  extensionMethods:
+  - dotNetBlocks.IAuditable.System.Linq.WildCard.Search``1
+  - dotNetBlocks.IAuditable.System.Linq.WildCard.Search``1
+  - dotNetBlocks.IAuditable.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.IAuditable.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.IAuditable.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.IAuditable.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.IAuditable.System.SystemExtensions.AsLazy``1
+- uid: dotNetBlocks.IAuditable.CreatedAt
+  commentId: P:dotNetBlocks.IAuditable.CreatedAt
+  id: CreatedAt
+  parent: dotNetBlocks.IAuditable
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: IAuditable.CreatedAt
+  fullName: dotNetBlocks.IAuditable.CreatedAt
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/IAuditable.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks
+  summary: Date time created;
+  example: []
+  syntax:
+    content: DateTimeOffset? CreatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: time created
+    content.vb: Property CreatedAt As DateTimeOffset?
+  overload: dotNetBlocks.IAuditable.CreatedAt*
+- uid: dotNetBlocks.IAuditable.CreatedBy
+  commentId: P:dotNetBlocks.IAuditable.CreatedBy
+  id: CreatedBy
+  parent: dotNetBlocks.IAuditable
+  langs:
+  - csharp
+  - vb
+  name: CreatedBy
+  nameWithType: IAuditable.CreatedBy
+  fullName: dotNetBlocks.IAuditable.CreatedBy
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/IAuditable.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks
+  summary: creator
+  example: []
+  syntax:
+    content: string? CreatedBy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: Creator.
+    content.vb: Property CreatedBy As String
+  overload: dotNetBlocks.IAuditable.CreatedBy*
+- uid: dotNetBlocks.IAuditable.UpdatedAt
+  commentId: P:dotNetBlocks.IAuditable.UpdatedAt
+  id: UpdatedAt
+  parent: dotNetBlocks.IAuditable
+  langs:
+  - csharp
+  - vb
+  name: UpdatedAt
+  nameWithType: IAuditable.UpdatedAt
+  fullName: dotNetBlocks.IAuditable.UpdatedAt
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/IAuditable.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks
+  summary: date time updated.
+  example: []
+  syntax:
+    content: DateTimeOffset? UpdatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: Date time of the last update.
+    content.vb: Property UpdatedAt As DateTimeOffset?
+  overload: dotNetBlocks.IAuditable.UpdatedAt*
+- uid: dotNetBlocks.IAuditable.UpdatedBy
+  commentId: P:dotNetBlocks.IAuditable.UpdatedBy
+  id: UpdatedBy
+  parent: dotNetBlocks.IAuditable
+  langs:
+  - csharp
+  - vb
+  name: UpdatedBy
+  nameWithType: IAuditable.UpdatedBy
+  fullName: dotNetBlocks.IAuditable.UpdatedBy
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/IAuditable.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks
+  summary: Gets or sets the updated by.
+  example: []
+  syntax:
+    content: string? UpdatedBy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: Update actor.
+    content.vb: Property UpdatedBy As String
+  overload: dotNetBlocks.IAuditable.UpdatedBy*
+references:
+- uid: dotNetBlocks
+  commentId: N:dotNetBlocks
+  isExternal: true
+  href: dotNetBlocks.html
+  name: dotNetBlocks
+  nameWithType: dotNetBlocks
+  fullName: dotNetBlocks
+- uid: dotNetBlocks.IAuditable.System.Linq.WildCard.Search``1
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  parent: System.Linq.WildCard
+  definition: System.Linq.WildCard.Search``1(``0)
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<IAuditable>(IAuditable)
+  nameWithType: WildCard.Search<IAuditable>(IAuditable)
+  fullName: System.Linq.WildCard.Search<dotNetBlocks.IAuditable>(dotNetBlocks.IAuditable)
+  nameWithType.vb: WildCard.Search(Of IAuditable)(IAuditable)
+  fullName.vb: System.Linq.WildCard.Search(Of dotNetBlocks.IAuditable)(dotNetBlocks.IAuditable)
+  name.vb: Search(Of IAuditable)(IAuditable)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(dotNetBlocks.IAuditable)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - uid: dotNetBlocks.IAuditable
+    name: IAuditable
+    isExternal: true
+    href: dotNetBlocks.IAuditable.html
+  - name: '>'
+  - name: (
+  - uid: dotNetBlocks.IAuditable
+    name: IAuditable
+    isExternal: true
+    href: dotNetBlocks.IAuditable.html
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(dotNetBlocks.IAuditable)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: dotNetBlocks.IAuditable
+    name: IAuditable
+    isExternal: true
+    href: dotNetBlocks.IAuditable.html
+  - name: )
+  - name: (
+  - uid: dotNetBlocks.IAuditable
+    name: IAuditable
+    isExternal: true
+    href: dotNetBlocks.IAuditable.html
+  - name: )
+- uid: dotNetBlocks.IAuditable.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<IAuditable>(IAuditable)
+  nameWithType: SystemExtensions.AsLazy<IAuditable>(IAuditable)
+  fullName: System.SystemExtensions.AsLazy<dotNetBlocks.IAuditable>(dotNetBlocks.IAuditable)
+  nameWithType.vb: SystemExtensions.AsLazy(Of IAuditable)(IAuditable)
+  fullName.vb: System.SystemExtensions.AsLazy(Of dotNetBlocks.IAuditable)(dotNetBlocks.IAuditable)
+  name.vb: AsLazy(Of IAuditable)(IAuditable)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(dotNetBlocks.IAuditable)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: dotNetBlocks.IAuditable
+    name: IAuditable
+    isExternal: true
+    href: dotNetBlocks.IAuditable.html
+  - name: '>'
+  - name: (
+  - uid: dotNetBlocks.IAuditable
+    name: IAuditable
+    isExternal: true
+    href: dotNetBlocks.IAuditable.html
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(dotNetBlocks.IAuditable)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: dotNetBlocks.IAuditable
+    name: IAuditable
+    isExternal: true
+    href: dotNetBlocks.IAuditable.html
+  - name: )
+  - name: (
+  - uid: dotNetBlocks.IAuditable
+    name: IAuditable
+    isExternal: true
+    href: dotNetBlocks.IAuditable.html
+  - name: )
+- uid: System.Linq.WildCard.Search``1(``0)
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  isExternal: true
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<TSearch>(TSearch)
+  nameWithType: WildCard.Search<TSearch>(TSearch)
+  fullName: System.Linq.WildCard.Search<TSearch>(TSearch)
+  nameWithType.vb: WildCard.Search(Of TSearch)(TSearch)
+  fullName.vb: System.Linq.WildCard.Search(Of TSearch)(TSearch)
+  name.vb: Search(Of TSearch)(TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: (
+  - name: TSearch
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: (
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard
+  commentId: T:System.Linq.WildCard
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard.html
+  name: WildCard
+  nameWithType: WildCard
+  fullName: System.Linq.WildCard
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: System.html
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: dotNetBlocks.IAuditable.CreatedAt*
+  commentId: Overload:dotNetBlocks.IAuditable.CreatedAt
+  isExternal: true
+  href: dotNetBlocks.IAuditable.html#dotNetBlocks_IAuditable_CreatedAt
+  name: CreatedAt
+  nameWithType: IAuditable.CreatedAt
+  fullName: dotNetBlocks.IAuditable.CreatedAt
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset?
+  nameWithType: DateTimeOffset?
+  fullName: System.DateTimeOffset?
+  spec.csharp:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: dotNetBlocks.IAuditable.CreatedBy*
+  commentId: Overload:dotNetBlocks.IAuditable.CreatedBy
+  isExternal: true
+  href: dotNetBlocks.IAuditable.html#dotNetBlocks_IAuditable_CreatedBy
+  name: CreatedBy
+  nameWithType: IAuditable.CreatedBy
+  fullName: dotNetBlocks.IAuditable.CreatedBy
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: dotNetBlocks.IAuditable.UpdatedAt*
+  commentId: Overload:dotNetBlocks.IAuditable.UpdatedAt
+  isExternal: true
+  href: dotNetBlocks.IAuditable.html#dotNetBlocks_IAuditable_UpdatedAt
+  name: UpdatedAt
+  nameWithType: IAuditable.UpdatedAt
+  fullName: dotNetBlocks.IAuditable.UpdatedAt
+- uid: dotNetBlocks.IAuditable.UpdatedBy*
+  commentId: Overload:dotNetBlocks.IAuditable.UpdatedBy
+  isExternal: true
+  href: dotNetBlocks.IAuditable.html#dotNetBlocks_IAuditable_UpdatedBy
+  name: UpdatedBy
+  nameWithType: IAuditable.UpdatedBy
+  fullName: dotNetBlocks.IAuditable.UpdatedBy

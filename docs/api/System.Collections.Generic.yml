@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  id: System.Collections.Generic
+  children:
+  - System.Collections.Generic.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.System.Collections
+references:
+- uid: System.Collections.Generic.CollectionExtensions
+  commentId: T:System.Collections.Generic.CollectionExtensions
+  isExternal: true
+  href: System.Collections.Generic.CollectionExtensions.html
+  name: CollectionExtensions
+  nameWithType: CollectionExtensions
+  fullName: System.Collections.Generic.CollectionExtensions

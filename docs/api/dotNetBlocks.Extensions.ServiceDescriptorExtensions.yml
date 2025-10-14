@@ -1,0 +1,534 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.Extensions.ServiceDescriptorExtensions
+  commentId: T:dotNetBlocks.Extensions.ServiceDescriptorExtensions
+  id: ServiceDescriptorExtensions
+  parent: dotNetBlocks.Extensions
+  children:
+  - dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy(Microsoft.Extensions.DependencyInjection.ServiceDescriptor,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime})
+  - dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.ServiceDescriptor,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime},System.Object,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: ServiceDescriptorExtensions
+  nameWithType: ServiceDescriptorExtensions
+  fullName: dotNetBlocks.Extensions.ServiceDescriptorExtensions
+  type: Class
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs
+  assemblies:
+  - dotNetBlocks.Extensions
+  namespace: dotNetBlocks.Extensions
+  summary: Service Description Lazy extensions.
+  example: []
+  syntax:
+    content: public static class ServiceDescriptorExtensions
+    content.vb: Public Module ServiceDescriptorExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy(Microsoft.Extensions.DependencyInjection.ServiceDescriptor,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime})
+  commentId: M:dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy(Microsoft.Extensions.DependencyInjection.ServiceDescriptor,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime})
+  id: AsLazy(Microsoft.Extensions.DependencyInjection.ServiceDescriptor,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime})
+  isExtensionMethod: true
+  parent: dotNetBlocks.Extensions.ServiceDescriptorExtensions
+  langs:
+  - csharp
+  - vb
+  name: AsLazy(ServiceDescriptor, ServiceLifetime?)
+  nameWithType: ServiceDescriptorExtensions.AsLazy(ServiceDescriptor, ServiceLifetime?)
+  fullName: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy(Microsoft.Extensions.DependencyInjection.ServiceDescriptor, Microsoft.Extensions.DependencyInjection.ServiceLifetime?)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs
+  assemblies:
+  - dotNetBlocks.Extensions
+  namespace: dotNetBlocks.Extensions
+  summary: Creates a <xref href="System.Lazy%601" data-throw-if-not-resolved="false"></xref> <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref> for the descriptor provided.
+  example: []
+  syntax:
+    content: public static ServiceDescriptor AsLazy(this ServiceDescriptor sourceDescriptor, ServiceLifetime? serviceLifetime = null)
+    parameters:
+    - id: sourceDescriptor
+      type: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+      description: The source <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref>  &gt; for the new service descriptor.
+    - id: serviceLifetime
+      type: System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime}
+      description: The <xref href="Microsoft.Extensions.DependencyInjection.ServiceLifetime" data-throw-if-not-resolved="false"></xref>&gt; for the lazy class. Uses the source lifetime if none provided.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+      description: New <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref> defining a lazy version of the source descriptor.
+    content.vb: Public Shared Function AsLazy(sourceDescriptor As ServiceDescriptor, serviceLifetime As ServiceLifetime? = Nothing) As ServiceDescriptor
+  overload: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: instance object is not {lazyServiceType.FullName} - lazyInstance
+- uid: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.ServiceDescriptor,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime},System.Object,System.Object)
+  commentId: M:dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.ServiceDescriptor,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime},System.Object,System.Object)
+  id: AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.ServiceDescriptor,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime},System.Object,System.Object)
+  isExtensionMethod: true
+  parent: dotNetBlocks.Extensions.ServiceDescriptorExtensions
+  langs:
+  - csharp
+  - vb
+  name: AsLazyAdvanced(ServiceDescriptor, ServiceLifetime?, object?, object?)
+  nameWithType: ServiceDescriptorExtensions.AsLazyAdvanced(ServiceDescriptor, ServiceLifetime?, object?, object?)
+  fullName: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.ServiceDescriptor, Microsoft.Extensions.DependencyInjection.ServiceLifetime?, object?, object?)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs
+  assemblies:
+  - dotNetBlocks.Extensions
+  namespace: dotNetBlocks.Extensions
+  summary: Creates a <xref href="System.Lazy%601" data-throw-if-not-resolved="false"></xref> <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref> for the descriptor provided.
+  example: []
+  syntax:
+    content: public static ServiceDescriptor AsLazyAdvanced(this ServiceDescriptor sourceDescriptor, ServiceLifetime? serviceLifetime = null, object? valueInstance = null, object? lazyInstance = null)
+    parameters:
+    - id: sourceDescriptor
+      type: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+      description: The source <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref>  &gt; for the new service descriptor.
+    - id: serviceLifetime
+      type: System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime}
+      description: The <xref href="Microsoft.Extensions.DependencyInjection.ServiceLifetime" data-throw-if-not-resolved="false"></xref>&gt; for the lazy class. Uses the source lifetime if none provided.
+    - id: valueInstance
+      type: System.Object
+      description: Instance value to use in the lazy class instead of resolving the value.
+    - id: lazyInstance
+      type: System.Object
+      description: The lazy instance to register.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+      description: New <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref> defining a lazy version of the source descriptor.
+    content.vb: Public Shared Function AsLazyAdvanced(sourceDescriptor As ServiceDescriptor, serviceLifetime As ServiceLifetime? = Nothing, valueInstance As Object = Nothing, lazyInstance As Object = Nothing) As ServiceDescriptor
+  overload: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: instance object is not {lazyServiceType.FullName} - lazyInstance
+  nameWithType.vb: ServiceDescriptorExtensions.AsLazyAdvanced(ServiceDescriptor, ServiceLifetime?, Object, Object)
+  fullName.vb: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.ServiceDescriptor, Microsoft.Extensions.DependencyInjection.ServiceLifetime?, Object, Object)
+  name.vb: AsLazyAdvanced(ServiceDescriptor, ServiceLifetime?, Object, Object)
+references:
+- uid: dotNetBlocks.Extensions
+  commentId: N:dotNetBlocks.Extensions
+  isExternal: true
+  href: dotNetBlocks.html
+  name: dotNetBlocks.Extensions
+  nameWithType: dotNetBlocks.Extensions
+  fullName: dotNetBlocks.Extensions
+  spec.csharp:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.Extensions
+    name: Extensions
+    isExternal: true
+    href: dotNetBlocks.Extensions.html
+  spec.vb:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.Extensions
+    name: Extensions
+    isExternal: true
+    href: dotNetBlocks.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Lazy`1
+  commentId: T:System.Lazy`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.lazy-1
+  name: Lazy<T>
+  nameWithType: Lazy<T>
+  fullName: System.Lazy<T>
+  nameWithType.vb: Lazy(Of T)
+  fullName.vb: System.Lazy(Of T)
+  name.vb: Lazy(Of T)
+  spec.csharp:
+  - uid: System.Lazy`1
+    name: Lazy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.lazy-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Lazy`1
+    name: Lazy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.lazy-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+  commentId: T:Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor
+  name: ServiceDescriptor
+  nameWithType: ServiceDescriptor
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+- uid: Microsoft.Extensions.DependencyInjection.ServiceLifetime
+  commentId: T:Microsoft.Extensions.DependencyInjection.ServiceLifetime
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime
+  name: ServiceLifetime
+  nameWithType: ServiceLifetime
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceLifetime
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy*
+  commentId: Overload:dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy
+  isExternal: true
+  href: dotNetBlocks.Extensions.ServiceDescriptorExtensions.html#dotNetBlocks_Extensions_ServiceDescriptorExtensions_AsLazy_Microsoft_Extensions_DependencyInjection_ServiceDescriptor_System_Nullable_Microsoft_Extensions_DependencyInjection_ServiceLifetime__
+  name: AsLazy
+  nameWithType: ServiceDescriptorExtensions.AsLazy
+  fullName: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy
+- uid: System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime}
+  commentId: T:System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime
+  name: ServiceLifetime?
+  nameWithType: ServiceLifetime?
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceLifetime?
+  spec.csharp:
+  - uid: Microsoft.Extensions.DependencyInjection.ServiceLifetime
+    name: ServiceLifetime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime
+  - name: '?'
+  spec.vb:
+  - uid: Microsoft.Extensions.DependencyInjection.ServiceLifetime
+    name: ServiceLifetime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime
+  - name: '?'
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced*
+  commentId: Overload:dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced
+  isExternal: true
+  href: dotNetBlocks.Extensions.ServiceDescriptorExtensions.html#dotNetBlocks_Extensions_ServiceDescriptorExtensions_AsLazyAdvanced_Microsoft_Extensions_DependencyInjection_ServiceDescriptor_System_Nullable_Microsoft_Extensions_DependencyInjection_ServiceLifetime__System_Object_System_Object_
+  name: AsLazyAdvanced
+  nameWithType: ServiceDescriptorExtensions.AsLazyAdvanced
+  fullName: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced

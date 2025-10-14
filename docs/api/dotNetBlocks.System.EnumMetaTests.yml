@@ -1,0 +1,101 @@
+### YamlMime:ApiPage
+title: Class EnumMetaTests
+body:
+- api1: Class EnumMetaTests
+  id: dotNetBlocks_System_EnumMetaTests
+  metadata:
+    uid: dotNetBlocks.System.EnumMetaTests
+    commentId: T:dotNetBlocks.System.EnumMetaTests
+- facts:
+  - name: Namespace
+    value:
+      text: dotNetBlocks.System
+      url: dotNetBlocks.System.html
+  - name: Assembly
+    value: dotNetBlocks.System.Tests.dll
+- code: >-
+    [TestClass]
+
+    public class EnumMetaTests
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: EnumMetaTests
+    url: dotNetBlocks.System.EnumMetaTests.html
+- h4: Inherited Members
+- list:
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<EnumMetaTests>(EnumMetaTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumMetaTests>(EnumMetaTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumMetaTests>(EnumMetaTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumMetaTests>(EnumMetaTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumMetaTests>(EnumMetaTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumMetaTests>(EnumMetaTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumMetaTests>(EnumMetaTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumMetaTests>(EnumMetaTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: WildCard.Search<EnumMetaTests>(EnumMetaTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<EnumMetaTests>(EnumMetaTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<EnumMetaTests>(EnumMetaTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+- h2: Constructors
+- api3: EnumMetaTests()
+  id: dotNetBlocks_System_EnumMetaTests__ctor
+  metadata:
+    uid: dotNetBlocks.System.EnumMetaTests.#ctor
+    commentId: M:dotNetBlocks.System.EnumMetaTests.#ctor
+- code: public EnumMetaTests()
+- h2: Methods
+- api3: attribute_indexer_tests()
+  id: dotNetBlocks_System_EnumMetaTests_attribute_indexer_tests
+  metadata:
+    uid: dotNetBlocks.System.EnumMetaTests.attribute_indexer_tests
+    commentId: M:dotNetBlocks.System.EnumMetaTests.attribute_indexer_tests
+- code: >-
+    [TestMethod]
+
+    public void attribute_indexer_tests()
+- api3: extension_meta_description_tests()
+  id: dotNetBlocks_System_EnumMetaTests_extension_meta_description_tests
+  metadata:
+    uid: dotNetBlocks.System.EnumMetaTests.extension_meta_description_tests
+    commentId: M:dotNetBlocks.System.EnumMetaTests.extension_meta_description_tests
+- code: >-
+    [TestMethod]
+
+    public void extension_meta_description_tests()
+- api3: meta_manager_meta_description_tests()
+  id: dotNetBlocks_System_EnumMetaTests_meta_manager_meta_description_tests
+  metadata:
+    uid: dotNetBlocks.System.EnumMetaTests.meta_manager_meta_description_tests
+    commentId: M:dotNetBlocks.System.EnumMetaTests.meta_manager_meta_description_tests
+- code: >-
+    [TestMethod]
+
+    public void meta_manager_meta_description_tests()
+languageId: csharp

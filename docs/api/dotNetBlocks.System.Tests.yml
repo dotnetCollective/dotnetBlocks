@@ -1,0 +1,17 @@
+### YamlMime:ApiPage
+title: Namespace dotNetBlocks.System.Tests
+body:
+- api1: Namespace dotNetBlocks.System.Tests
+  id: dotNetBlocks_System_Tests
+  metadata:
+    uid: dotNetBlocks.System.Tests
+    commentId: N:dotNetBlocks.System.Tests
+- h3: Classes
+- parameters:
+  - type:
+      text: ExtensionTests
+      url: dotNetBlocks.System.Tests.ExtensionTests.html
+  - type:
+      text: GuidExtensionTests
+      url: dotNetBlocks.System.Tests.GuidExtensionTests.html
+languageId: csharp

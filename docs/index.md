@@ -1,13 +1,14 @@
 <!---
 Title: About .NetBlocks
 NavigationTitle: About
+Order: -1
 ShowInNavigation: True
 ShowInSidebar: false
 NoSidebar: false
 Excerpt: About .Net Blocks.
 --->
 
-<span style="float: right">![dotnetblocks](./Images/DotNetBuildingBlocks.jpg){width=200 height=200}</span>
+<span style="float: right">![dotnetblocks](./Images/DotNetBlocks.jpg){width=200 height=200}</span>
 
 > _.NetBlocks architecture - A Micro Subsystem Architecture pattern and a solution of solution building blocks -
 >the advantages of micro-services without the code-splaining_
@@ -42,7 +43,7 @@ _> ... Brian Rogers founder_
 
 [Interested in the Design philosophy?](/Design)
 
-[Let's get started?](Get.started.html)
+[Let's get started?](Get.Started.md)
 
 
 ### Terms, Licensing, Contributing, Open Source code, 
@@ -59,6 +60,3 @@ Links to  source, licensing and the project.
 
 [Licensing](https://github.com/dotnetCollective/dotnetBlocks#MS-PL-1-ov-file)
 
-
-## More Content
-<div>\@Html.Partial("_ChildPages",Document)</div>

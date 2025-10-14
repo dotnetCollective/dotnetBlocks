@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.Extensions.DependencyInjection
+  commentId: N:dotNetBlocks.Extensions.DependencyInjection
+  id: dotNetBlocks.Extensions.DependencyInjection
+  children:
+  - dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions
+  - dotNetBlocks.Extensions.DependencyInjection.LazyService`1
+  - dotNetBlocks.Extensions.DependencyInjection.ServiceCollectionLazyExtensions
+  langs:
+  - csharp
+  - vb
+  name: dotNetBlocks.Extensions.DependencyInjection
+  nameWithType: dotNetBlocks.Extensions.DependencyInjection
+  fullName: dotNetBlocks.Extensions.DependencyInjection
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.Extensions
+references:
+- uid: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions
+  commentId: T:dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions
+  isExternal: true
+  href: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.html
+  name: DependencyInjectionExtensions
+  nameWithType: DependencyInjectionExtensions
+  fullName: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions
+- uid: dotNetBlocks.Extensions.DependencyInjection.LazyService`1
+  commentId: T:dotNetBlocks.Extensions.DependencyInjection.LazyService`1
+  isExternal: true
+  href: dotNetBlocks.Extensions.DependencyInjection.LazyService-1.html
+  name: LazyService<T>
+  nameWithType: LazyService<T>
+  fullName: dotNetBlocks.Extensions.DependencyInjection.LazyService<T>
+  nameWithType.vb: LazyService(Of T)
+  fullName.vb: dotNetBlocks.Extensions.DependencyInjection.LazyService(Of T)
+  name.vb: LazyService(Of T)
+  spec.csharp:
+  - uid: dotNetBlocks.Extensions.DependencyInjection.LazyService`1
+    name: LazyService
+    isExternal: true
+    href: dotNetBlocks.Extensions.DependencyInjection.LazyService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.Extensions.DependencyInjection.LazyService`1
+    name: LazyService
+    isExternal: true
+    href: dotNetBlocks.Extensions.DependencyInjection.LazyService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: dotNetBlocks.Extensions.DependencyInjection.ServiceCollectionLazyExtensions
+  commentId: T:dotNetBlocks.Extensions.DependencyInjection.ServiceCollectionLazyExtensions
+  isExternal: true
+  href: dotNetBlocks.Extensions.DependencyInjection.ServiceCollectionLazyExtensions.html
+  name: ServiceCollectionLazyExtensions
+  nameWithType: ServiceCollectionLazyExtensions
+  fullName: dotNetBlocks.Extensions.DependencyInjection.ServiceCollectionLazyExtensions

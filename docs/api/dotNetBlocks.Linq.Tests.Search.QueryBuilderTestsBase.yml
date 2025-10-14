@@ -1,0 +1,147 @@
+### YamlMime:ApiPage
+title: Class QueryBuilderTestsBase
+body:
+- api1: Class QueryBuilderTestsBase
+  id: dotNetBlocks_Linq_Tests_Search_QueryBuilderTestsBase
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase
+    commentId: T:dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase
+- facts:
+  - name: Namespace
+    value:
+      text: dotNetBlocks.Linq.Tests.Search
+      url: dotNetBlocks.Linq.Tests.Search.html
+  - name: Assembly
+    value: dotNetBlocks.Linq.Tests.dll
+- code: >-
+    [TestCategory("WildcardSearch")]
+
+    [TestClass]
+
+    public class QueryBuilderTestsBase
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: QueryBuilderTestsBase
+    url: dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.html
+- h4: Inherited Members
+- list:
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<QueryBuilderTestsBase>(QueryBuilderTestsBase)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryBuilderTestsBase>(QueryBuilderTestsBase)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryBuilderTestsBase>(QueryBuilderTestsBase)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryBuilderTestsBase>(QueryBuilderTestsBase)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryBuilderTestsBase>(QueryBuilderTestsBase)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryBuilderTestsBase>(QueryBuilderTestsBase)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryBuilderTestsBase>(QueryBuilderTestsBase)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<QueryBuilderTestsBase>(QueryBuilderTestsBase)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: WildCard.Search<QueryBuilderTestsBase>(QueryBuilderTestsBase)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<QueryBuilderTestsBase>(QueryBuilderTestsBase)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<QueryBuilderTestsBase>(QueryBuilderTestsBase)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+- h2: Constructors
+- api3: QueryBuilderTestsBase()
+  id: dotNetBlocks_Linq_Tests_Search_QueryBuilderTestsBase__ctor
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.#ctor
+    commentId: M:dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.#ctor
+- code: public QueryBuilderTestsBase()
+- h2: Properties
+- api3: Fixture
+  id: dotNetBlocks_Linq_Tests_Search_QueryBuilderTestsBase_Fixture
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.Fixture
+    commentId: P:dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.Fixture
+- code: public QueryTestDataFixture Fixture { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: QueryTestDataFixture
+      url: dotNetBlocks.Linq.Tests.Search.Data.QueryTestDataFixture.html
+- h2: Methods
+- api3: Setup(TestContext)
+  id: dotNetBlocks_Linq_Tests_Search_QueryBuilderTestsBase_Setup_Microsoft_VisualStudio_TestTools_UnitTesting_TestContext_
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.Setup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext)
+    commentId: M:dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.Setup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext)
+- code: >-
+    [AssemblyInitialize]
+
+    public static void Setup(TestContext context)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: TestContext
+      url: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.testcontext
+- api3: TearDown()
+  id: dotNetBlocks_Linq_Tests_Search_QueryBuilderTestsBase_TearDown
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.TearDown
+    commentId: M:dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.TearDown
+- code: >-
+    [AssemblyCleanup]
+
+    public static void TearDown()
+- api3: TestCleanup(TestContext)
+  id: dotNetBlocks_Linq_Tests_Search_QueryBuilderTestsBase_TestCleanup_Microsoft_VisualStudio_TestTools_UnitTesting_TestContext_
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.TestCleanup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext)
+    commentId: M:dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.TestCleanup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext)
+- code: >-
+    [GlobalTestCleanup]
+
+    public static void TestCleanup(TestContext context)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: TestContext
+      url: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.testcontext
+- api3: TestInitialize(TestContext)
+  id: dotNetBlocks_Linq_Tests_Search_QueryBuilderTestsBase_TestInitialize_Microsoft_VisualStudio_TestTools_UnitTesting_TestContext_
+  metadata:
+    uid: dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.TestInitialize(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext)
+    commentId: M:dotNetBlocks.Linq.Tests.Search.QueryBuilderTestsBase.TestInitialize(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext)
+- code: >-
+    [GlobalTestInitialize]
+
+    public static Task TestInitialize(TestContext context)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: TestContext
+      url: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.testcontext
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+languageId: csharp

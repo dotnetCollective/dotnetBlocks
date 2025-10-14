@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+            <IsPackable>True</IsPackable>
+<PackageDescription> Package extends Linq functionality. Adds optimal wildcard search functionality to queries.
+
+Commonly Used Types:
+
+LinqExtensions
+
+Commonly Used Namespaces:
+- dotNetBlocks.Linq
+using dotNetBlocks.Linq
+- - System.Linq
+using System.Linq
+
+
+
+</PackageDescription>
+<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="IQueryableExtensions.cs" />
+    <Compile Remove="PredicateBuilder.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+    <PackageReference Include="LinqKit.Core" />
+  </ItemGroup>
+
+
+    <ItemGroup>
+    <None Update="readme.md">
+      <PackagePath>.</PackagePath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>True</Pack>
+    </None>
+  </ItemGroup>
+
+
+</Project>

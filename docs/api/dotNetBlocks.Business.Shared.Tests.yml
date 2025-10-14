@@ -1,0 +1,17 @@
+### YamlMime:ApiPage
+title: Namespace dotNetBlocks.Business.Shared.Tests
+body:
+- api1: Namespace dotNetBlocks.Business.Shared.Tests
+  id: dotNetBlocks_Business_Shared_Tests
+  metadata:
+    uid: dotNetBlocks.Business.Shared.Tests
+    commentId: N:dotNetBlocks.Business.Shared.Tests
+- h3: Classes
+- parameters:
+  - type:
+      text: KeyedEntityTests
+      url: dotNetBlocks.Business.Shared.Tests.KeyedEntityTests.html
+  - type:
+      text: SharedTestHelper
+      url: dotNetBlocks.Business.Shared.Tests.SharedTestHelper.html
+languageId: csharp

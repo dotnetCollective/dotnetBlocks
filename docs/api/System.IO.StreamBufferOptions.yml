@@ -1,0 +1,1364 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.IO.StreamBufferOptions
+  commentId: T:System.IO.StreamBufferOptions
+  id: StreamBufferOptions
+  parent: System.IO
+  children:
+  - System.IO.StreamBufferOptions.#ctor(System.IO.StreamBufferOptions)
+  - System.IO.StreamBufferOptions.#ctor(System.Int64,System.Nullable{System.Double})
+  - System.IO.StreamBufferOptions.BufferSize
+  - System.IO.StreamBufferOptions.Deconstruct(System.Int64@,System.Nullable{System.Double}@)
+  - System.IO.StreamBufferOptions.DefaultBufferSize
+  - System.IO.StreamBufferOptions.DefaultResumePercentBufferUsed
+  - System.IO.StreamBufferOptions.EqualityContract
+  - System.IO.StreamBufferOptions.Equals(System.IO.StreamBufferOptions)
+  - System.IO.StreamBufferOptions.Equals(System.Object)
+  - System.IO.StreamBufferOptions.GetHashCode
+  - System.IO.StreamBufferOptions.PipeOptions
+  - System.IO.StreamBufferOptions.PrintMembers(System.Text.StringBuilder)
+  - System.IO.StreamBufferOptions.ResumePercentBufferUsed
+  - System.IO.StreamBufferOptions.ToString
+  - System.IO.StreamBufferOptions.op_Equality(System.IO.StreamBufferOptions,System.IO.StreamBufferOptions)
+  - System.IO.StreamBufferOptions.op_Inequality(System.IO.StreamBufferOptions,System.IO.StreamBufferOptions)
+  langs:
+  - csharp
+  - vb
+  name: StreamBufferOptions
+  nameWithType: StreamBufferOptions
+  fullName: System.IO.StreamBufferOptions
+  type: Class
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: 'public record StreamBufferOptions : IEquatable<StreamBufferOptions>'
+    content.vb: Public Class StreamBufferOptions Implements IEquatable(Of StreamBufferOptions)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{System.IO.StreamBufferOptions}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - System.IO.StreamBufferOptions.System.Linq.WildCard.Search``1
+  - System.IO.StreamBufferOptions.System.Linq.WildCard.Search``1
+  - System.IO.StreamBufferOptions.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBufferOptions.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBufferOptions.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBufferOptions.System.SystemExtensions.AsLazy``1
+  - System.IO.StreamBufferOptions.System.SystemExtensions.AsLazy``1
+- uid: System.IO.StreamBufferOptions.DefaultBufferSize
+  commentId: F:System.IO.StreamBufferOptions.DefaultBufferSize
+  id: DefaultBufferSize
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultBufferSize
+  nameWithType: StreamBufferOptions.DefaultBufferSize
+  fullName: System.IO.StreamBufferOptions.DefaultBufferSize
+  type: Field
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public const long DefaultBufferSize = 65536
+    return:
+      type: System.Int64
+    content.vb: Public Const DefaultBufferSize As Long = 65536
+- uid: System.IO.StreamBufferOptions.DefaultResumePercentBufferUsed
+  commentId: F:System.IO.StreamBufferOptions.DefaultResumePercentBufferUsed
+  id: DefaultResumePercentBufferUsed
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultResumePercentBufferUsed
+  nameWithType: StreamBufferOptions.DefaultResumePercentBufferUsed
+  fullName: System.IO.StreamBufferOptions.DefaultResumePercentBufferUsed
+  type: Field
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public const double DefaultResumePercentBufferUsed = 0.75
+    return:
+      type: System.Double
+    content.vb: Public Const DefaultResumePercentBufferUsed As Double = 0.75
+- uid: System.IO.StreamBufferOptions.#ctor(System.Int64,System.Nullable{System.Double})
+  commentId: M:System.IO.StreamBufferOptions.#ctor(System.Int64,System.Nullable{System.Double})
+  id: '#ctor(System.Int64,System.Nullable{System.Double})'
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: StreamBufferOptions(long, double?)
+  nameWithType: StreamBufferOptions.StreamBufferOptions(long, double?)
+  fullName: System.IO.StreamBufferOptions.StreamBufferOptions(long, double?)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public StreamBufferOptions(long BufferSize = 65536, double? ResumePercentBufferUsed = 0.75)
+    parameters:
+    - id: BufferSize
+      type: System.Int64
+    - id: ResumePercentBufferUsed
+      type: System.Nullable{System.Double}
+    content.vb: Public Sub New(BufferSize As Long = 65536, ResumePercentBufferUsed As Double? = 0.75)
+  overload: System.IO.StreamBufferOptions.#ctor*
+  nameWithType.vb: StreamBufferOptions.New(Long, Double?)
+  fullName.vb: System.IO.StreamBufferOptions.New(Long, Double?)
+  name.vb: New(Long, Double?)
+- uid: System.IO.StreamBufferOptions.ToString
+  commentId: M:System.IO.StreamBufferOptions.ToString
+  id: ToString
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: StreamBufferOptions.ToString()
+  fullName: System.IO.StreamBufferOptions.ToString()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: System.IO.StreamBufferOptions.ToString*
+- uid: System.IO.StreamBufferOptions.PrintMembers(System.Text.StringBuilder)
+  commentId: M:System.IO.StreamBufferOptions.PrintMembers(System.Text.StringBuilder)
+  id: PrintMembers(System.Text.StringBuilder)
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: PrintMembers(StringBuilder)
+  nameWithType: StreamBufferOptions.PrintMembers(StringBuilder)
+  fullName: System.IO.StreamBufferOptions.PrintMembers(System.Text.StringBuilder)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: protected virtual bool PrintMembers(StringBuilder builder)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function PrintMembers(builder As StringBuilder) As Boolean
+  overload: System.IO.StreamBufferOptions.PrintMembers*
+- uid: System.IO.StreamBufferOptions.op_Inequality(System.IO.StreamBufferOptions,System.IO.StreamBufferOptions)
+  commentId: M:System.IO.StreamBufferOptions.op_Inequality(System.IO.StreamBufferOptions,System.IO.StreamBufferOptions)
+  id: op_Inequality(System.IO.StreamBufferOptions,System.IO.StreamBufferOptions)
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: operator !=(StreamBufferOptions?, StreamBufferOptions?)
+  nameWithType: StreamBufferOptions.operator !=(StreamBufferOptions?, StreamBufferOptions?)
+  fullName: System.IO.StreamBufferOptions.operator !=(System.IO.StreamBufferOptions?, System.IO.StreamBufferOptions?)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public static bool operator !=(StreamBufferOptions? left, StreamBufferOptions? right)
+    parameters:
+    - id: left
+      type: System.IO.StreamBufferOptions
+    - id: right
+      type: System.IO.StreamBufferOptions
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As StreamBufferOptions, right As StreamBufferOptions) As Boolean
+  overload: System.IO.StreamBufferOptions.op_Inequality*
+  nameWithType.vb: StreamBufferOptions.<>(StreamBufferOptions, StreamBufferOptions)
+  fullName.vb: System.IO.StreamBufferOptions.<>(System.IO.StreamBufferOptions, System.IO.StreamBufferOptions)
+  name.vb: <>(StreamBufferOptions, StreamBufferOptions)
+- uid: System.IO.StreamBufferOptions.op_Equality(System.IO.StreamBufferOptions,System.IO.StreamBufferOptions)
+  commentId: M:System.IO.StreamBufferOptions.op_Equality(System.IO.StreamBufferOptions,System.IO.StreamBufferOptions)
+  id: op_Equality(System.IO.StreamBufferOptions,System.IO.StreamBufferOptions)
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: operator ==(StreamBufferOptions?, StreamBufferOptions?)
+  nameWithType: StreamBufferOptions.operator ==(StreamBufferOptions?, StreamBufferOptions?)
+  fullName: System.IO.StreamBufferOptions.operator ==(System.IO.StreamBufferOptions?, System.IO.StreamBufferOptions?)
+  type: Operator
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public static bool operator ==(StreamBufferOptions? left, StreamBufferOptions? right)
+    parameters:
+    - id: left
+      type: System.IO.StreamBufferOptions
+    - id: right
+      type: System.IO.StreamBufferOptions
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As StreamBufferOptions, right As StreamBufferOptions) As Boolean
+  overload: System.IO.StreamBufferOptions.op_Equality*
+  nameWithType.vb: StreamBufferOptions.=(StreamBufferOptions, StreamBufferOptions)
+  fullName.vb: System.IO.StreamBufferOptions.=(System.IO.StreamBufferOptions, System.IO.StreamBufferOptions)
+  name.vb: =(StreamBufferOptions, StreamBufferOptions)
+- uid: System.IO.StreamBufferOptions.GetHashCode
+  commentId: M:System.IO.StreamBufferOptions.GetHashCode
+  id: GetHashCode
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: StreamBufferOptions.GetHashCode()
+  fullName: System.IO.StreamBufferOptions.GetHashCode()
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: System.IO.StreamBufferOptions.GetHashCode*
+- uid: System.IO.StreamBufferOptions.Equals(System.Object)
+  commentId: M:System.IO.StreamBufferOptions.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: StreamBufferOptions.Equals(object?)
+  fullName: System.IO.StreamBufferOptions.Equals(object?)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: System.IO.StreamBufferOptions.Equals*
+  nameWithType.vb: StreamBufferOptions.Equals(Object)
+  fullName.vb: System.IO.StreamBufferOptions.Equals(Object)
+  name.vb: Equals(Object)
+- uid: System.IO.StreamBufferOptions.Equals(System.IO.StreamBufferOptions)
+  commentId: M:System.IO.StreamBufferOptions.Equals(System.IO.StreamBufferOptions)
+  id: Equals(System.IO.StreamBufferOptions)
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: Equals(StreamBufferOptions?)
+  nameWithType: StreamBufferOptions.Equals(StreamBufferOptions?)
+  fullName: System.IO.StreamBufferOptions.Equals(System.IO.StreamBufferOptions?)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  example: []
+  syntax:
+    content: public virtual bool Equals(StreamBufferOptions? other)
+    parameters:
+    - id: other
+      type: System.IO.StreamBufferOptions
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function Equals(other As StreamBufferOptions) As Boolean
+  overload: System.IO.StreamBufferOptions.Equals*
+  implements:
+  - System.IEquatable{System.IO.StreamBufferOptions}.Equals(System.IO.StreamBufferOptions)
+  nameWithType.vb: StreamBufferOptions.Equals(StreamBufferOptions)
+  fullName.vb: System.IO.StreamBufferOptions.Equals(System.IO.StreamBufferOptions)
+  name.vb: Equals(StreamBufferOptions)
+- uid: System.IO.StreamBufferOptions.#ctor(System.IO.StreamBufferOptions)
+  commentId: M:System.IO.StreamBufferOptions.#ctor(System.IO.StreamBufferOptions)
+  id: '#ctor(System.IO.StreamBufferOptions)'
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: StreamBufferOptions(StreamBufferOptions)
+  nameWithType: StreamBufferOptions.StreamBufferOptions(StreamBufferOptions)
+  fullName: System.IO.StreamBufferOptions.StreamBufferOptions(System.IO.StreamBufferOptions)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: protected StreamBufferOptions(StreamBufferOptions original)
+    parameters:
+    - id: original
+      type: System.IO.StreamBufferOptions
+    content.vb: Protected Sub New(original As StreamBufferOptions)
+  overload: System.IO.StreamBufferOptions.#ctor*
+  nameWithType.vb: StreamBufferOptions.New(StreamBufferOptions)
+  fullName.vb: System.IO.StreamBufferOptions.New(System.IO.StreamBufferOptions)
+  name.vb: New(StreamBufferOptions)
+- uid: System.IO.StreamBufferOptions.Deconstruct(System.Int64@,System.Nullable{System.Double}@)
+  commentId: M:System.IO.StreamBufferOptions.Deconstruct(System.Int64@,System.Nullable{System.Double}@)
+  id: Deconstruct(System.Int64@,System.Nullable{System.Double}@)
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: Deconstruct(out long, out double?)
+  nameWithType: StreamBufferOptions.Deconstruct(out long, out double?)
+  fullName: System.IO.StreamBufferOptions.Deconstruct(out long, out double?)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public void Deconstruct(out long BufferSize, out double? ResumePercentBufferUsed)
+    parameters:
+    - id: BufferSize
+      type: System.Int64
+    - id: ResumePercentBufferUsed
+      type: System.Nullable{System.Double}
+    content.vb: Public Sub Deconstruct(BufferSize As Long, ResumePercentBufferUsed As Double?)
+  overload: System.IO.StreamBufferOptions.Deconstruct*
+  nameWithType.vb: StreamBufferOptions.Deconstruct(Long, Double?)
+  fullName.vb: System.IO.StreamBufferOptions.Deconstruct(Long, Double?)
+  name.vb: Deconstruct(Long, Double?)
+- uid: System.IO.StreamBufferOptions.EqualityContract
+  commentId: P:System.IO.StreamBufferOptions.EqualityContract
+  id: EqualityContract
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: EqualityContract
+  nameWithType: StreamBufferOptions.EqualityContract
+  fullName: System.IO.StreamBufferOptions.EqualityContract
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: protected virtual Type EqualityContract { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Protected Overridable ReadOnly Property EqualityContract As Type
+  overload: System.IO.StreamBufferOptions.EqualityContract*
+- uid: System.IO.StreamBufferOptions.BufferSize
+  commentId: P:System.IO.StreamBufferOptions.BufferSize
+  id: BufferSize
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: BufferSize
+  nameWithType: StreamBufferOptions.BufferSize
+  fullName: System.IO.StreamBufferOptions.BufferSize
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public long BufferSize { get; init; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property BufferSize As Long
+  overload: System.IO.StreamBufferOptions.BufferSize*
+- uid: System.IO.StreamBufferOptions.ResumePercentBufferUsed
+  commentId: P:System.IO.StreamBufferOptions.ResumePercentBufferUsed
+  id: ResumePercentBufferUsed
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: ResumePercentBufferUsed
+  nameWithType: StreamBufferOptions.ResumePercentBufferUsed
+  fullName: System.IO.StreamBufferOptions.ResumePercentBufferUsed
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public double? ResumePercentBufferUsed { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property ResumePercentBufferUsed As Double?
+  overload: System.IO.StreamBufferOptions.ResumePercentBufferUsed*
+- uid: System.IO.StreamBufferOptions.PipeOptions
+  commentId: P:System.IO.StreamBufferOptions.PipeOptions
+  id: PipeOptions
+  parent: System.IO.StreamBufferOptions
+  langs:
+  - csharp
+  - vb
+  name: PipeOptions
+  nameWithType: StreamBufferOptions.PipeOptions
+  fullName: System.IO.StreamBufferOptions.PipeOptions
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBufferOptions.cs
+  assemblies:
+  - dotNetBlocks.System.IO
+  namespace: System.IO
+  syntax:
+    content: public PipeOptions? PipeOptions { get; set; }
+    parameters: []
+    return:
+      type: System.IO.Pipelines.PipeOptions
+    content.vb: Public Property PipeOptions As PipeOptions
+  overload: System.IO.StreamBufferOptions.PipeOptions*
+references:
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: System.html
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{System.IO.StreamBufferOptions}
+  commentId: T:System.IEquatable{System.IO.StreamBufferOptions}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<StreamBufferOptions>
+  nameWithType: IEquatable<StreamBufferOptions>
+  fullName: System.IEquatable<System.IO.StreamBufferOptions>
+  nameWithType.vb: IEquatable(Of StreamBufferOptions)
+  fullName.vb: System.IEquatable(Of System.IO.StreamBufferOptions)
+  name.vb: IEquatable(Of StreamBufferOptions)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.IO.StreamBufferOptions
+    name: StreamBufferOptions
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.StreamBufferOptions
+    name: StreamBufferOptions
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IO.StreamBufferOptions.System.Linq.WildCard.Search``1
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  parent: System.Linq.WildCard
+  definition: System.Linq.WildCard.Search``1(``0)
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<StreamBufferOptions>(StreamBufferOptions)
+  nameWithType: WildCard.Search<StreamBufferOptions>(StreamBufferOptions)
+  fullName: System.Linq.WildCard.Search<System.IO.StreamBufferOptions>(System.IO.StreamBufferOptions)
+  nameWithType.vb: WildCard.Search(Of StreamBufferOptions)(StreamBufferOptions)
+  fullName.vb: System.Linq.WildCard.Search(Of System.IO.StreamBufferOptions)(System.IO.StreamBufferOptions)
+  name.vb: Search(Of StreamBufferOptions)(StreamBufferOptions)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(System.IO.StreamBufferOptions)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - uid: System.IO.StreamBufferOptions
+    name: StreamBufferOptions
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html
+  - name: '>'
+  - name: (
+  - uid: System.IO.StreamBufferOptions
+    name: StreamBufferOptions
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(System.IO.StreamBufferOptions)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.StreamBufferOptions
+    name: StreamBufferOptions
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html
+  - name: )
+  - name: (
+  - uid: System.IO.StreamBufferOptions
+    name: StreamBufferOptions
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html
+  - name: )
+- uid: System.IO.StreamBufferOptions.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<StreamBufferOptions>(StreamBufferOptions)
+  nameWithType: SystemExtensions.AsLazy<StreamBufferOptions>(StreamBufferOptions)
+  fullName: System.SystemExtensions.AsLazy<System.IO.StreamBufferOptions>(System.IO.StreamBufferOptions)
+  nameWithType.vb: SystemExtensions.AsLazy(Of StreamBufferOptions)(StreamBufferOptions)
+  fullName.vb: System.SystemExtensions.AsLazy(Of System.IO.StreamBufferOptions)(System.IO.StreamBufferOptions)
+  name.vb: AsLazy(Of StreamBufferOptions)(StreamBufferOptions)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(System.IO.StreamBufferOptions)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: System.IO.StreamBufferOptions
+    name: StreamBufferOptions
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html
+  - name: '>'
+  - name: (
+  - uid: System.IO.StreamBufferOptions
+    name: StreamBufferOptions
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(System.IO.StreamBufferOptions)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.StreamBufferOptions
+    name: StreamBufferOptions
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html
+  - name: )
+  - name: (
+  - uid: System.IO.StreamBufferOptions
+    name: StreamBufferOptions
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Linq.WildCard.Search``1(``0)
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  isExternal: true
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<TSearch>(TSearch)
+  nameWithType: WildCard.Search<TSearch>(TSearch)
+  fullName: System.Linq.WildCard.Search<TSearch>(TSearch)
+  nameWithType.vb: WildCard.Search(Of TSearch)(TSearch)
+  fullName.vb: System.Linq.WildCard.Search(Of TSearch)(TSearch)
+  name.vb: Search(Of TSearch)(TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: (
+  - name: TSearch
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: (
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard
+  commentId: T:System.Linq.WildCard
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard.html
+  name: WildCard
+  nameWithType: WildCard
+  fullName: System.Linq.WildCard
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: System.html
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.IO.StreamBufferOptions.#ctor*
+  commentId: Overload:System.IO.StreamBufferOptions.#ctor
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions__ctor_System_Int64_System_Nullable_System_Double__
+  name: StreamBufferOptions
+  nameWithType: StreamBufferOptions.StreamBufferOptions
+  fullName: System.IO.StreamBufferOptions.StreamBufferOptions
+  nameWithType.vb: StreamBufferOptions.New
+  fullName.vb: System.IO.StreamBufferOptions.New
+  name.vb: New
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.IO.StreamBufferOptions.ToString*
+  commentId: Overload:System.IO.StreamBufferOptions.ToString
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions_ToString
+  name: ToString
+  nameWithType: StreamBufferOptions.ToString
+  fullName: System.IO.StreamBufferOptions.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IO.StreamBufferOptions.PrintMembers*
+  commentId: Overload:System.IO.StreamBufferOptions.PrintMembers
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions_PrintMembers_System_Text_StringBuilder_
+  name: PrintMembers
+  nameWithType: StreamBufferOptions.PrintMembers
+  fullName: System.IO.StreamBufferOptions.PrintMembers
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: System.IO.StreamBufferOptions.op_Inequality*
+  commentId: Overload:System.IO.StreamBufferOptions.op_Inequality
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions_op_Inequality_System_IO_StreamBufferOptions_System_IO_StreamBufferOptions_
+  name: operator !=
+  nameWithType: StreamBufferOptions.operator !=
+  fullName: System.IO.StreamBufferOptions.operator !=
+  nameWithType.vb: StreamBufferOptions.<>
+  fullName.vb: System.IO.StreamBufferOptions.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.IO.StreamBufferOptions.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions_op_Inequality_System_IO_StreamBufferOptions_System_IO_StreamBufferOptions_
+- uid: System.IO.StreamBufferOptions
+  commentId: T:System.IO.StreamBufferOptions
+  parent: System.IO
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html
+  name: StreamBufferOptions
+  nameWithType: StreamBufferOptions
+  fullName: System.IO.StreamBufferOptions
+- uid: System.IO.StreamBufferOptions.op_Equality*
+  commentId: Overload:System.IO.StreamBufferOptions.op_Equality
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions_op_Equality_System_IO_StreamBufferOptions_System_IO_StreamBufferOptions_
+  name: operator ==
+  nameWithType: StreamBufferOptions.operator ==
+  fullName: System.IO.StreamBufferOptions.operator ==
+  nameWithType.vb: StreamBufferOptions.=
+  fullName.vb: System.IO.StreamBufferOptions.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.IO.StreamBufferOptions.op_Equality*
+    name: ==
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions_op_Equality_System_IO_StreamBufferOptions_System_IO_StreamBufferOptions_
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.IO.StreamBufferOptions.GetHashCode*
+  commentId: Overload:System.IO.StreamBufferOptions.GetHashCode
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions_GetHashCode
+  name: GetHashCode
+  nameWithType: StreamBufferOptions.GetHashCode
+  fullName: System.IO.StreamBufferOptions.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IO.StreamBufferOptions.Equals*
+  commentId: Overload:System.IO.StreamBufferOptions.Equals
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions_Equals_System_Object_
+  name: Equals
+  nameWithType: StreamBufferOptions.Equals
+  fullName: System.IO.StreamBufferOptions.Equals
+- uid: System.IEquatable{System.IO.StreamBufferOptions}.Equals(System.IO.StreamBufferOptions)
+  commentId: M:System.IEquatable{System.IO.StreamBufferOptions}.Equals(System.IO.StreamBufferOptions)
+  parent: System.IEquatable{System.IO.StreamBufferOptions}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(StreamBufferOptions)
+  nameWithType: IEquatable<StreamBufferOptions>.Equals(StreamBufferOptions)
+  fullName: System.IEquatable<System.IO.StreamBufferOptions>.Equals(System.IO.StreamBufferOptions)
+  nameWithType.vb: IEquatable(Of StreamBufferOptions).Equals(StreamBufferOptions)
+  fullName.vb: System.IEquatable(Of System.IO.StreamBufferOptions).Equals(System.IO.StreamBufferOptions)
+  spec.csharp:
+  - uid: System.IEquatable{System.IO.StreamBufferOptions}.Equals(System.IO.StreamBufferOptions)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.IO.StreamBufferOptions
+    name: StreamBufferOptions
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.IO.StreamBufferOptions}.Equals(System.IO.StreamBufferOptions)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.IO.StreamBufferOptions
+    name: StreamBufferOptions
+    isExternal: true
+    href: System.IO.StreamBufferOptions.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IO.StreamBufferOptions.Deconstruct*
+  commentId: Overload:System.IO.StreamBufferOptions.Deconstruct
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions_Deconstruct_System_Int64__System_Nullable_System_Double___
+  name: Deconstruct
+  nameWithType: StreamBufferOptions.Deconstruct
+  fullName: System.IO.StreamBufferOptions.Deconstruct
+- uid: System.IO.StreamBufferOptions.EqualityContract*
+  commentId: Overload:System.IO.StreamBufferOptions.EqualityContract
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions_EqualityContract
+  name: EqualityContract
+  nameWithType: StreamBufferOptions.EqualityContract
+  fullName: System.IO.StreamBufferOptions.EqualityContract
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.IO.StreamBufferOptions.BufferSize*
+  commentId: Overload:System.IO.StreamBufferOptions.BufferSize
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions_BufferSize
+  name: BufferSize
+  nameWithType: StreamBufferOptions.BufferSize
+  fullName: System.IO.StreamBufferOptions.BufferSize
+- uid: System.IO.StreamBufferOptions.ResumePercentBufferUsed*
+  commentId: Overload:System.IO.StreamBufferOptions.ResumePercentBufferUsed
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions_ResumePercentBufferUsed
+  name: ResumePercentBufferUsed
+  nameWithType: StreamBufferOptions.ResumePercentBufferUsed
+  fullName: System.IO.StreamBufferOptions.ResumePercentBufferUsed
+- uid: System.IO.StreamBufferOptions.PipeOptions*
+  commentId: Overload:System.IO.StreamBufferOptions.PipeOptions
+  isExternal: true
+  href: System.IO.StreamBufferOptions.html#System_IO_StreamBufferOptions_PipeOptions
+  name: PipeOptions
+  nameWithType: StreamBufferOptions.PipeOptions
+  fullName: System.IO.StreamBufferOptions.PipeOptions
+- uid: System.IO.Pipelines.PipeOptions
+  commentId: T:System.IO.Pipelines.PipeOptions
+  parent: System.IO.Pipelines
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.pipelines.pipeoptions
+  name: PipeOptions
+  nameWithType: PipeOptions
+  fullName: System.IO.Pipelines.PipeOptions
+- uid: System.IO.Pipelines
+  commentId: N:System.IO.Pipelines
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO.Pipelines
+  nameWithType: System.IO.Pipelines
+  fullName: System.IO.Pipelines
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  - name: .
+  - uid: System.IO.Pipelines
+    name: Pipelines
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.pipelines
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  - name: .
+  - uid: System.IO.Pipelines
+    name: Pipelines
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.pipelines

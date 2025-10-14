@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Threading
+  commentId: N:System.Threading
+  id: System.Threading
+  children:
+  - System.Threading.CancellationTokenExtensions
+  langs:
+  - csharp
+  - vb
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.System.Threading
+references:
+- uid: System.Threading.CancellationTokenExtensions
+  commentId: T:System.Threading.CancellationTokenExtensions
+  isExternal: true
+  href: System.Threading.CancellationTokenExtensions.html
+  name: CancellationTokenExtensions
+  nameWithType: CancellationTokenExtensions
+  fullName: System.Threading.CancellationTokenExtensions

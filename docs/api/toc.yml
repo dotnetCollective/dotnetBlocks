@@ -1,0 +1,222 @@
+### YamlMime:TableOfContent
+items:
+- uid: dotNetBlocks
+  name: dotNetBlocks
+  type: Namespace
+  items:
+  - uid: dotNetBlocks.IAuditable
+    name: IAuditable
+    type: Interface
+- uid: dotNetBlocks.Business.Shared
+  name: dotNetBlocks.Business.Shared
+  type: Namespace
+  items:
+  - uid: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity`1
+    name: AuditableGlobalKeyedEntity<TId>
+    type: Class
+  - uid: dotNetBlocks.Business.Shared.AuditProperties
+    name: AuditProperties
+    type: Class
+  - uid: dotNetBlocks.Business.Shared.BusinessActivity
+    name: BusinessActivity
+    type: Class
+  - uid: dotNetBlocks.Business.Shared.BusinessActivity`1
+    name: BusinessActivity<TEntity>
+    type: Class
+  - uid: dotNetBlocks.Business.Shared.BusinessEntity
+    name: BusinessEntity
+    type: Class
+  - uid: dotNetBlocks.Business.Shared.Event
+    name: Event
+    type: Class
+  - uid: dotNetBlocks.Business.Shared.Event`1
+    name: Event<TEntity>
+    type: Class
+  - uid: dotNetBlocks.Business.Shared.GlobalKeyedEntity`1
+    name: GlobalKeyedEntity<TId>
+    type: Class
+  - uid: dotNetBlocks.Business.Shared.IBusinessLogic
+    name: IBusinessLogic
+    type: Interface
+  - uid: dotNetBlocks.Business.Shared.KeyedEntity
+    name: KeyedEntity
+    type: Class
+  - uid: dotNetBlocks.Business.Shared.KeyedEntity`1
+    name: KeyedEntity<TId>
+    type: Class
+  - uid: dotNetBlocks.Business.Shared.Operation
+    name: Operation
+    type: Class
+  - uid: dotNetBlocks.Business.Shared.Operation`1
+    name: Operation<TEntity>
+    type: Class
+  - uid: dotNetBlocks.Business.Shared.Result
+    name: Result
+    type: Class
+  - uid: dotNetBlocks.Business.Shared.Result`1
+    name: Result<TEntity>
+    type: Class
+- uid: dotNetBlocks.Extensions
+  name: dotNetBlocks.Extensions
+  type: Namespace
+  items:
+  - uid: dotNetBlocks.Extensions.ServiceDescriptorExtensions
+    name: ServiceDescriptorExtensions
+    type: Class
+- uid: dotNetBlocks.Extensions.DependencyInjection
+  name: dotNetBlocks.Extensions.DependencyInjection
+  type: Namespace
+  items:
+  - uid: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions
+    name: DependencyInjectionExtensions
+    type: Class
+  - uid: dotNetBlocks.Extensions.DependencyInjection.LazyService`1
+    name: LazyService<T>
+    type: Class
+  - uid: dotNetBlocks.Extensions.DependencyInjection.ServiceCollectionLazyExtensions
+    name: ServiceCollectionLazyExtensions
+    type: Class
+- uid: dotNetBlocks.ServiceBus
+  name: dotNetBlocks.ServiceBus
+  type: Namespace
+  items:
+  - uid: dotNetBlocks.ServiceBus.ServiceBusExtensions
+    name: ServiceBusExtensions
+    type: Class
+- uid: dotNetBlocks.ServiceBus.Handlers
+  name: dotNetBlocks.ServiceBus.Handlers
+  type: Namespace
+  items:
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+    name: HandleConsumeAsync<TImplementation, TMessage>
+    type: Delegate
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleMessageAsync`2
+    name: HandleMessageAsync<TImplementation, TMessage>
+    type: Delegate
+- uid: dotNetBlocks.ServiceBus.Shared
+  name: dotNetBlocks.ServiceBus.Shared
+  type: Namespace
+  items:
+  - uid: dotNetBlocks.ServiceBus.Shared.Message
+    name: Message
+    type: Class
+  - uid: dotNetBlocks.ServiceBus.Shared.Message`1
+    name: Message<TActivity>
+    type: Class
+- uid: dotNetBlocks.System.IO
+  name: dotNetBlocks.System.IO
+  type: Namespace
+  items:
+  - uid: dotNetBlocks.System.IO.StreamExtensions
+    name: StreamExtensions
+    type: Class
+- uid: System
+  name: System
+  type: Namespace
+  items:
+  - uid: System.EnumExtensions
+    name: EnumExtensions
+    type: Class
+  - uid: System.EnumMeta`1
+    name: EnumMeta<TEnum>
+    type: Class
+  - uid: System.EnumMetaAttribute
+    name: EnumMetaAttribute
+    type: Class
+  - uid: System.EnumMetaManager`1
+    name: EnumMetaManager<TEnum>
+    type: Class
+  - uid: System.GuidExtensions
+    name: GuidExtensions
+    type: Class
+  - uid: System.GuidTypes
+    name: GuidTypes
+    type: Enum
+  - uid: System.SystemExtensions
+    name: SystemExtensions
+    type: Class
+- uid: System.Collections
+  name: System.Collections
+  type: Namespace
+  items:
+  - uid: System.Collections.EnumBitArray`1
+    name: EnumBitArray<TEnum>
+    type: Class
+- uid: System.Collections.Generic
+  name: System.Collections.Generic
+  type: Namespace
+  items:
+  - uid: System.Collections.Generic.CollectionExtensions
+    name: CollectionExtensions
+    type: Class
+- uid: System.IO
+  name: System.IO
+  type: Namespace
+  items:
+  - uid: System.IO.IStreamBuffer
+    name: IStreamBuffer
+    type: Interface
+  - uid: System.IO.StreamBuffer
+    name: StreamBuffer
+    type: Class
+  - uid: System.IO.StreamBuffer.BackgroundAction
+    name: StreamBuffer.BackgroundAction
+    type: Class
+  - uid: System.IO.StreamBuffer.BufferAction
+    name: StreamBuffer.BufferAction
+    type: Delegate
+  - uid: System.IO.StreamBuffer.BufferActionWithCancel
+    name: StreamBuffer.BufferActionWithCancel
+    type: Delegate
+  - uid: System.IO.StreamBuffer.BufferFunction
+    name: StreamBuffer.BufferFunction
+    type: Delegate
+  - uid: System.IO.StreamBuffer.RunActionParameters
+    name: StreamBuffer.RunActionParameters
+    type: Class
+  - uid: System.IO.StreamBufferOptions
+    name: StreamBufferOptions
+    type: Class
+- uid: System.Linq
+  name: System.Linq
+  type: Namespace
+  items:
+  - uid: System.Linq.WildCard
+    name: WildCard
+    type: Class
+  - uid: System.Linq.WildCard`1
+    name: WildCard<TSearch>
+    type: Class
+  - uid: System.Linq.WildCard`1.PropertyAccessor
+    name: WildCard<TSearch>.PropertyAccessor
+    type: Struct
+  - uid: System.Linq.WildCard`1.Target
+    name: WildCard<TSearch>.Target
+    type: Class
+  - uid: System.Linq.WildCard`1.Target.NamedTarget
+    name: WildCard<TSearch>.Target.NamedTarget
+    type: Class
+  - uid: System.Linq.WildCard`1.Target.SearchFor
+    name: WildCard<TSearch>.Target.SearchFor
+    type: Class
+  - uid: System.Linq.WildCard`1.Target.SearchWhere
+    name: WildCard<TSearch>.Target.SearchWhere
+    type: Class
+  - uid: System.Linq.WildCard`1.Term
+    name: WildCard<TSearch>.Term
+    type: Class
+- uid: System.Threading
+  name: System.Threading
+  type: Namespace
+  items:
+  - uid: System.Threading.CancellationTokenExtensions
+    name: CancellationTokenExtensions
+    type: Class
+- uid: System.Threading.Tasks
+  name: System.Threading.Tasks
+  type: Namespace
+  items:
+  - uid: System.Threading.Tasks.TaskExtensions
+    name: TaskExtensions
+    type: Class
+memberLayout: SamePage

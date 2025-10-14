@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  id: System.Threading.Tasks
+  children:
+  - System.Threading.Tasks.TaskExtensions
+  langs:
+  - csharp
+  - vb
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.System.Threading
+references:
+- uid: System.Threading.Tasks.TaskExtensions
+  commentId: T:System.Threading.Tasks.TaskExtensions
+  isExternal: true
+  href: System.Threading.Tasks.TaskExtensions.html
+  name: TaskExtensions
+  nameWithType: TaskExtensions
+  fullName: System.Threading.Tasks.TaskExtensions

@@ -1,0 +1,14 @@
+### YamlMime:ApiPage
+title: Namespace dotNetBlocks.System.IO.Tests.StreamBuffer
+body:
+- api1: Namespace dotNetBlocks.System.IO.Tests.StreamBuffer
+  id: dotNetBlocks_System_IO_Tests_StreamBuffer
+  metadata:
+    uid: dotNetBlocks.System.IO.Tests.StreamBuffer
+    commentId: N:dotNetBlocks.System.IO.Tests.StreamBuffer
+- h3: Classes
+- parameters:
+  - type:
+      text: TestHelperTests
+      url: dotNetBlocks.System.IO.Tests.StreamBuffer.TestHelperTests.html
+languageId: csharp

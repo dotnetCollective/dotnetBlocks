@@ -1,0 +1,700 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+  commentId: T:dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+  id: HandleConsumeAsync`2
+  parent: dotNetBlocks.ServiceBus.Handlers
+  children:
+  - dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.#ctor(System.Object,System.IntPtr)
+  - dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.BeginInvoke(`0,MassTransit.ConsumeContext{`1},System.Threading.CancellationToken,System.AsyncCallback,System.Object)
+  - dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.EndInvoke(System.IAsyncResult)
+  - dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.Invoke(`0,MassTransit.ConsumeContext{`1},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: HandleConsumeAsync<TImplementation, TMessage>
+  nameWithType: HandleConsumeAsync<TImplementation, TMessage>
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>
+  type: Delegate
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus/Handlers/Delegates.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus
+  namespace: dotNetBlocks.ServiceBus.Handlers
+  syntax:
+    content: 'public delegate Task HandleConsumeAsync<in TImplementation, in TMessage>(TImplementation implementation, ConsumeContext<in TMessage> context, CancellationToken cancellation = default) where TImplementation : class where TMessage : class'
+    parameters:
+    - id: implementation
+      type: '{TImplementation}'
+    - id: context
+      type: MassTransit.ConsumeContext{{TMessage}}
+    - id: cancellation
+      type: System.Threading.CancellationToken
+    typeParameters:
+    - id: TImplementation
+    - id: TMessage
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Delegate Function HandleConsumeAsync(Of In TImplementation As Class, In TMessage As Class)(implementation As TImplementation, context As ConsumeContext(Of In TMessage), cancellation As CancellationToken = Nothing) As Task
+  extensionMethods:
+  - dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.System.Linq.WildCard.Search``1
+  - dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.System.Linq.WildCard.Search``1
+  - dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.System.SystemExtensions.AsLazy``1
+  nameWithType.vb: HandleConsumeAsync(Of TImplementation, TMessage)
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage)
+  name.vb: HandleConsumeAsync(Of TImplementation, TMessage)
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.#ctor(System.Object,System.IntPtr)
+  commentId: M:dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+  langs:
+  - csharp
+  - vb
+  name: HandleConsumeAsync(object, nint)
+  nameWithType: HandleConsumeAsync<TImplementation, TMessage>.HandleConsumeAsync(object, nint)
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>.HandleConsumeAsync(object, nint)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus/Handlers/Delegates.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus
+  namespace: dotNetBlocks.ServiceBus.Handlers
+  syntax:
+    content: public HandleConsumeAsync(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.#ctor*
+  nameWithType.vb: HandleConsumeAsync(Of TImplementation, TMessage).New(Object, IntPtr)
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage).New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.Invoke(`0,MassTransit.ConsumeContext{`1},System.Threading.CancellationToken)
+  commentId: M:dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.Invoke(`0,MassTransit.ConsumeContext{`1},System.Threading.CancellationToken)
+  id: Invoke(`0,MassTransit.ConsumeContext{`1},System.Threading.CancellationToken)
+  parent: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+  langs:
+  - csharp
+  - vb
+  name: Invoke(TImplementation, ConsumeContext<TMessage>, CancellationToken)
+  nameWithType: HandleConsumeAsync<TImplementation, TMessage>.Invoke(TImplementation, ConsumeContext<TMessage>, CancellationToken)
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>.Invoke(TImplementation, MassTransit.ConsumeContext<TMessage>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus/Handlers/Delegates.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus
+  namespace: dotNetBlocks.ServiceBus.Handlers
+  syntax:
+    content: public virtual Task Invoke(TImplementation implementation, ConsumeContext<in TMessage> context, CancellationToken cancellation = default)
+    parameters:
+    - id: implementation
+      type: '{TImplementation}'
+    - id: context
+      type: MassTransit.ConsumeContext{{TMessage}}
+    - id: cancellation
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function Invoke(implementation As TImplementation, context As ConsumeContext(Of In TMessage), cancellation As CancellationToken = Nothing) As Task
+  overload: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.Invoke*
+  nameWithType.vb: HandleConsumeAsync(Of TImplementation, TMessage).Invoke(TImplementation, ConsumeContext(Of TMessage), CancellationToken)
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage).Invoke(TImplementation, MassTransit.ConsumeContext(Of TMessage), System.Threading.CancellationToken)
+  name.vb: Invoke(TImplementation, ConsumeContext(Of TMessage), CancellationToken)
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.BeginInvoke(`0,MassTransit.ConsumeContext{`1},System.Threading.CancellationToken,System.AsyncCallback,System.Object)
+  commentId: M:dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.BeginInvoke(`0,MassTransit.ConsumeContext{`1},System.Threading.CancellationToken,System.AsyncCallback,System.Object)
+  id: BeginInvoke(`0,MassTransit.ConsumeContext{`1},System.Threading.CancellationToken,System.AsyncCallback,System.Object)
+  parent: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(TImplementation, ConsumeContext<TMessage>, CancellationToken, AsyncCallback, object)
+  nameWithType: HandleConsumeAsync<TImplementation, TMessage>.BeginInvoke(TImplementation, ConsumeContext<TMessage>, CancellationToken, AsyncCallback, object)
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>.BeginInvoke(TImplementation, MassTransit.ConsumeContext<TMessage>, System.Threading.CancellationToken, System.AsyncCallback, object)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus/Handlers/Delegates.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus
+  namespace: dotNetBlocks.ServiceBus.Handlers
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(TImplementation implementation, ConsumeContext<in TMessage> context, CancellationToken cancellation, AsyncCallback callback, object @object)
+    parameters:
+    - id: implementation
+      type: '{TImplementation}'
+    - id: context
+      type: MassTransit.ConsumeContext{{TMessage}}
+    - id: cancellation
+      type: System.Threading.CancellationToken
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(implementation As TImplementation, context As ConsumeContext(Of In TMessage), cancellation As CancellationToken, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.BeginInvoke*
+  nameWithType.vb: HandleConsumeAsync(Of TImplementation, TMessage).BeginInvoke(TImplementation, ConsumeContext(Of TMessage), CancellationToken, AsyncCallback, Object)
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage).BeginInvoke(TImplementation, MassTransit.ConsumeContext(Of TMessage), System.Threading.CancellationToken, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(TImplementation, ConsumeContext(Of TMessage), CancellationToken, AsyncCallback, Object)
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.EndInvoke(System.IAsyncResult)
+  commentId: M:dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: HandleConsumeAsync<TImplementation, TMessage>.EndInvoke(IAsyncResult)
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>.EndInvoke(System.IAsyncResult)
+  type: Method
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus/Handlers/Delegates.cs
+  assemblies:
+  - dotNetBlocks.ServiceBus
+  namespace: dotNetBlocks.ServiceBus.Handlers
+  syntax:
+    content: public virtual Task EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function EndInvoke(result As IAsyncResult) As Task
+  overload: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.EndInvoke*
+  nameWithType.vb: HandleConsumeAsync(Of TImplementation, TMessage).EndInvoke(IAsyncResult)
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage).EndInvoke(System.IAsyncResult)
+references:
+- uid: dotNetBlocks.ServiceBus.Handlers
+  commentId: N:dotNetBlocks.ServiceBus.Handlers
+  isExternal: true
+  href: dotNetBlocks.html
+  name: dotNetBlocks.ServiceBus.Handlers
+  nameWithType: dotNetBlocks.ServiceBus.Handlers
+  fullName: dotNetBlocks.ServiceBus.Handlers
+  spec.csharp:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus
+    name: ServiceBus
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus.Handlers
+    name: Handlers
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.html
+  spec.vb:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus
+    name: ServiceBus
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.html
+  - name: .
+  - uid: dotNetBlocks.ServiceBus.Handlers
+    name: Handlers
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.html
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.System.Linq.WildCard.Search``1
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  parent: System.Linq.WildCard
+  definition: System.Linq.WildCard.Search``1(``0)
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<HandleConsumeAsync<TImplementation, TMessage>>(HandleConsumeAsync<TImplementation, TMessage>)
+  nameWithType: WildCard.Search<HandleConsumeAsync<TImplementation, TMessage>>(HandleConsumeAsync<TImplementation, TMessage>)
+  fullName: System.Linq.WildCard.Search<dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>>(dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>)
+  nameWithType.vb: WildCard.Search(Of HandleConsumeAsync(Of TImplementation, TMessage))(HandleConsumeAsync(Of TImplementation, TMessage))
+  fullName.vb: System.Linq.WildCard.Search(Of dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage))(dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage))
+  name.vb: Search(Of HandleConsumeAsync(Of TImplementation, TMessage))(HandleConsumeAsync(Of TImplementation, TMessage))
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync{`0,`1})
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+    name: HandleConsumeAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html
+  - name: <
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+    name: HandleConsumeAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html
+  - name: <
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync{`0,`1})
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+    name: HandleConsumeAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: )
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+    name: HandleConsumeAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: )
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<HandleConsumeAsync<TImplementation, TMessage>>(HandleConsumeAsync<TImplementation, TMessage>)
+  nameWithType: SystemExtensions.AsLazy<HandleConsumeAsync<TImplementation, TMessage>>(HandleConsumeAsync<TImplementation, TMessage>)
+  fullName: System.SystemExtensions.AsLazy<dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>>(dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>)
+  nameWithType.vb: SystemExtensions.AsLazy(Of HandleConsumeAsync(Of TImplementation, TMessage))(HandleConsumeAsync(Of TImplementation, TMessage))
+  fullName.vb: System.SystemExtensions.AsLazy(Of dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage))(dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage))
+  name.vb: AsLazy(Of HandleConsumeAsync(Of TImplementation, TMessage))(HandleConsumeAsync(Of TImplementation, TMessage))
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync{`0,`1})
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+    name: HandleConsumeAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html
+  - name: <
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+    name: HandleConsumeAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html
+  - name: <
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync{`0,`1})
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+    name: HandleConsumeAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: )
+  - name: (
+  - uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2
+    name: HandleConsumeAsync
+    isExternal: true
+    href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TImplementation
+  - name: ','
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: )
+- uid: '{TImplementation}'
+  commentId: '!:TImplementation'
+  definition: TImplementation
+  name: TImplementation
+  nameWithType: TImplementation
+  fullName: TImplementation
+- uid: MassTransit.ConsumeContext{{TMessage}}
+  commentId: T:MassTransit.ConsumeContext{`1}
+  parent: MassTransit
+  definition: MassTransit.ConsumeContext`1
+  name: ConsumeContext<TMessage>
+  nameWithType: ConsumeContext<TMessage>
+  fullName: MassTransit.ConsumeContext<TMessage>
+  nameWithType.vb: ConsumeContext(Of TMessage)
+  fullName.vb: MassTransit.ConsumeContext(Of TMessage)
+  name.vb: ConsumeContext(Of TMessage)
+  spec.csharp:
+  - uid: MassTransit.ConsumeContext`1
+    name: ConsumeContext
+    isExternal: true
+  - name: <
+  - name: TMessage
+  - name: '>'
+  spec.vb:
+  - uid: MassTransit.ConsumeContext`1
+    name: ConsumeContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Linq.WildCard.Search``1(``0)
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  isExternal: true
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<TSearch>(TSearch)
+  nameWithType: WildCard.Search<TSearch>(TSearch)
+  fullName: System.Linq.WildCard.Search<TSearch>(TSearch)
+  nameWithType.vb: WildCard.Search(Of TSearch)(TSearch)
+  fullName.vb: System.Linq.WildCard.Search(Of TSearch)(TSearch)
+  name.vb: Search(Of TSearch)(TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: (
+  - name: TSearch
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: (
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard
+  commentId: T:System.Linq.WildCard
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard.html
+  name: WildCard
+  nameWithType: WildCard
+  fullName: System.Linq.WildCard
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: TImplementation
+  name: TImplementation
+  nameWithType: TImplementation
+  fullName: TImplementation
+- uid: MassTransit.ConsumeContext`1
+  commentId: T:MassTransit.ConsumeContext`1
+  isExternal: true
+  name: ConsumeContext<T>
+  nameWithType: ConsumeContext<T>
+  fullName: MassTransit.ConsumeContext<T>
+  nameWithType.vb: ConsumeContext(Of T)
+  fullName.vb: MassTransit.ConsumeContext(Of T)
+  name.vb: ConsumeContext(Of T)
+  spec.csharp:
+  - uid: MassTransit.ConsumeContext`1
+    name: ConsumeContext
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MassTransit.ConsumeContext`1
+    name: ConsumeContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MassTransit
+  commentId: N:MassTransit
+  isExternal: true
+  name: MassTransit
+  nameWithType: MassTransit
+  fullName: MassTransit
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: System.html
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.#ctor*
+  commentId: Overload:dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.#ctor
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html#dotNetBlocks_ServiceBus_Handlers_HandleConsumeAsync_2__ctor_System_Object_System_IntPtr_
+  name: HandleConsumeAsync
+  nameWithType: HandleConsumeAsync<TImplementation, TMessage>.HandleConsumeAsync
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>.HandleConsumeAsync
+  nameWithType.vb: HandleConsumeAsync(Of TImplementation, TMessage).New
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage).New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.Invoke*
+  commentId: Overload:dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.Invoke
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html#dotNetBlocks_ServiceBus_Handlers_HandleConsumeAsync_2_Invoke__0_MassTransit_ConsumeContext__1__System_Threading_CancellationToken_
+  name: Invoke
+  nameWithType: HandleConsumeAsync<TImplementation, TMessage>.Invoke
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>.Invoke
+  nameWithType.vb: HandleConsumeAsync(Of TImplementation, TMessage).Invoke
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage).Invoke
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.BeginInvoke*
+  commentId: Overload:dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.BeginInvoke
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html#dotNetBlocks_ServiceBus_Handlers_HandleConsumeAsync_2_BeginInvoke__0_MassTransit_ConsumeContext__1__System_Threading_CancellationToken_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: HandleConsumeAsync<TImplementation, TMessage>.BeginInvoke
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>.BeginInvoke
+  nameWithType.vb: HandleConsumeAsync(Of TImplementation, TMessage).BeginInvoke
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage).BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.EndInvoke*
+  commentId: Overload:dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync`2.EndInvoke
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync-2.html#dotNetBlocks_ServiceBus_Handlers_HandleConsumeAsync_2_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: HandleConsumeAsync<TImplementation, TMessage>.EndInvoke
+  fullName: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync<TImplementation, TMessage>.EndInvoke
+  nameWithType.vb: HandleConsumeAsync(Of TImplementation, TMessage).EndInvoke
+  fullName.vb: dotNetBlocks.ServiceBus.Handlers.HandleConsumeAsync(Of TImplementation, TMessage).EndInvoke

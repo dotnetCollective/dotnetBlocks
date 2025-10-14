@@ -1,0 +1,17 @@
+### YamlMime:ApiPage
+title: Namespace dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices
+body:
+- api1: Namespace dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices
+  id: dotNetBlocks_Extensions_Tests_DependencyInjection_TestServices
+  metadata:
+    uid: dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices
+    commentId: N:dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices
+- h3: Classes
+- parameters:
+  - type:
+      text: ServiceA
+      url: dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceA.html
+  - type:
+      text: ServiceB
+      url: dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceB.html
+languageId: csharp

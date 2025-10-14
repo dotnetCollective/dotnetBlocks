@@ -4,18 +4,13 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net9.0</TargetFramework>
          <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-
     
-    <!-->
-    <ImplicitUsings>disable</ImplicitUsings>
-    -->
-    <ImplicitUsings>disable</ImplicitUsings>
+    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
 	<NuGetAudit>false</NuGetAudit>
 
 			<RunWorkingDirectory>$(MSBuildProjectDirectory)</RunWorkingDirectory>
-
 
 		<!-- disable NuGet package auditing -->
         <NuGetAudit>false</NuGetAudit>
@@ -24,28 +19,68 @@
         <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 
         <DefaultItemExcludes>$(DefaultItemExcludes);*.git*</DefaultItemExcludes>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
         
   </PropertyGroup>
+
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+
+
+        <PackageReference Include="Microsoft.Extensions.FileSystemGlobbing" Version="9.0.9" />
+
+        <PackageVersion Include="Markdig" Version="0.42.0" />
+
+    <!--DocFX-->
+
+    <PackageReference Include="Docfx.App" Version="2.78.3" />
+<!-- the versions of Microsoft.CodeAnalysis.* must match exactly what Docfx.App was built against, not the latest stable version -->
+    <v Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="4.12.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="4.12.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.12.0" />
+
+
+        <!-- the versions of Microsoft.CodeAnalysis.* must match exactly what Docfx.App was built against, not the latest stable version 
+            <PackageVersion Include="Docfx.App" Version="2.77.0" />
+            <PackageVersion Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" version ="4.10.0" />
+            <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Workspaces" version ="4.10.0" />
+        -->
+
+
+<!--
+
+<PackageReference Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" VersionOverride="4.10.0" />
+<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" VersionOverride="4.10.0" />
+
+-->
+
+  </ItemGroup>
 
   <ItemGroup>
       <Content Include="..\..\..\docs\**\*.*">
   <Link>docs\%(RecursiveDir)%(Filename)%(Extension)</Link>
 </Content>
     <Compile Remove="..\..\..\docs\**\*.*" />
+
+
   </ItemGroup>
 
   <ItemGroup>
-      <Content Include="input\**\*.*" CopyToOutputDirectory="PreserveNewest" />
-      <Content Include="themes\**\*.*" CopyToOutputDirectory="PreserveNewest" />
-      <Compile Remove="themes\**\*.*" />
+    <Content Remove="..\..\..\docs\Libraries\toc.yml" />
+    <Content Remove="..\..\..\docs\templates\material\public\toc.yml" />
+    <Content Remove="..\..\..\docs\templates\material\toc.yml" />
+    <Content Remove="..\..\..\docs\templates\toc.yml" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="input\index.md" />
-  </ItemGroup>
+  <Content Update="$(NuGetPackageRoot)\microsoft.codeanalysis.workspaces.msbuild\**\**" Visible="false" />
+</ItemGroup>
+
+
 
   <ItemGroup>
-    <None Remove="input\index.md" />
     <None Remove="readme.md" />
   </ItemGroup>
 
@@ -58,29 +93,24 @@
 
 
 
-  <ItemGroup>
-	  <!-- <PackageReference Include="Statiq.Docs" Version="*-*" />
-	  <PackageReference Include="Statiq.Web" Version="*-*" />
-      -->
-	  <PackageReference Include="Statiq.Docs" Version="1.0.0-beta.17" />
-
-  </ItemGroup>
-
 
   <ItemGroup>
     <None Update="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 
-  <ItemGroup>
-    <PackageReference Update="FluentAssertions" Version="8.0.0" />
-  </ItemGroup>
 
 
   <ItemGroup>
     <None Remove="input\index.md" />
   </ItemGroup>
 
+
+
+
+  <ItemGroup>
+    <Content Update="..\..\..\docs\docfx.json" Link="docfx.json" />
+  </ItemGroup>
 
 
 

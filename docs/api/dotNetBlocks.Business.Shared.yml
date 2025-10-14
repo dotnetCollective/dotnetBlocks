@@ -1,0 +1,326 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.Business.Shared
+  commentId: N:dotNetBlocks.Business.Shared
+  id: dotNetBlocks.Business.Shared
+  children:
+  - dotNetBlocks.Business.Shared.AuditProperties
+  - dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity`1
+  - dotNetBlocks.Business.Shared.BusinessActivity
+  - dotNetBlocks.Business.Shared.BusinessActivity`1
+  - dotNetBlocks.Business.Shared.BusinessEntity
+  - dotNetBlocks.Business.Shared.Event
+  - dotNetBlocks.Business.Shared.Event`1
+  - dotNetBlocks.Business.Shared.GlobalKeyedEntity`1
+  - dotNetBlocks.Business.Shared.IBusinessLogic
+  - dotNetBlocks.Business.Shared.KeyedEntity
+  - dotNetBlocks.Business.Shared.KeyedEntity`1
+  - dotNetBlocks.Business.Shared.Operation
+  - dotNetBlocks.Business.Shared.Operation`1
+  - dotNetBlocks.Business.Shared.Result
+  - dotNetBlocks.Business.Shared.Result`1
+  langs:
+  - csharp
+  - vb
+  name: dotNetBlocks.Business.Shared
+  nameWithType: dotNetBlocks.Business.Shared
+  fullName: dotNetBlocks.Business.Shared
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.Business.Shared
+references:
+- uid: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity`1
+  commentId: T:dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity`1
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity-1.html
+  name: AuditableGlobalKeyedEntity<TId>
+  nameWithType: AuditableGlobalKeyedEntity<TId>
+  fullName: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity<TId>
+  nameWithType.vb: AuditableGlobalKeyedEntity(Of TId)
+  fullName.vb: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity(Of TId)
+  name.vb: AuditableGlobalKeyedEntity(Of TId)
+  spec.csharp:
+  - uid: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity`1
+    name: AuditableGlobalKeyedEntity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity`1
+    name: AuditableGlobalKeyedEntity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: dotNetBlocks.Business.Shared.AuditProperties
+  commentId: T:dotNetBlocks.Business.Shared.AuditProperties
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.AuditProperties.html
+  name: AuditProperties
+  nameWithType: AuditProperties
+  fullName: dotNetBlocks.Business.Shared.AuditProperties
+- uid: dotNetBlocks.Business.Shared.BusinessActivity
+  commentId: T:dotNetBlocks.Business.Shared.BusinessActivity
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessActivity.html
+  name: BusinessActivity
+  nameWithType: BusinessActivity
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity
+- uid: dotNetBlocks.Business.Shared.BusinessActivity`1
+  commentId: T:dotNetBlocks.Business.Shared.BusinessActivity`1
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessActivity-1.html
+  name: BusinessActivity<TEntity>
+  nameWithType: BusinessActivity<TEntity>
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity<TEntity>
+  nameWithType.vb: BusinessActivity(Of TEntity)
+  fullName.vb: dotNetBlocks.Business.Shared.BusinessActivity(Of TEntity)
+  name.vb: BusinessActivity(Of TEntity)
+  spec.csharp:
+  - uid: dotNetBlocks.Business.Shared.BusinessActivity`1
+    name: BusinessActivity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.BusinessActivity-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.Business.Shared.BusinessActivity`1
+    name: BusinessActivity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.BusinessActivity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: dotNetBlocks.Business.Shared.BusinessEntity
+  commentId: T:dotNetBlocks.Business.Shared.BusinessEntity
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessEntity.html
+  name: BusinessEntity
+  nameWithType: BusinessEntity
+  fullName: dotNetBlocks.Business.Shared.BusinessEntity
+- uid: dotNetBlocks.Business.Shared.Event
+  commentId: T:dotNetBlocks.Business.Shared.Event
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.Event.html
+  name: Event
+  nameWithType: Event
+  fullName: dotNetBlocks.Business.Shared.Event
+- uid: dotNetBlocks.Business.Shared.Event`1
+  commentId: T:dotNetBlocks.Business.Shared.Event`1
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.Event-1.html
+  name: Event<TEntity>
+  nameWithType: Event<TEntity>
+  fullName: dotNetBlocks.Business.Shared.Event<TEntity>
+  nameWithType.vb: Event(Of TEntity)
+  fullName.vb: dotNetBlocks.Business.Shared.Event(Of TEntity)
+  name.vb: Event(Of TEntity)
+  spec.csharp:
+  - uid: dotNetBlocks.Business.Shared.Event`1
+    name: Event
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.Event-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.Business.Shared.Event`1
+    name: Event
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.Event-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: dotNetBlocks.Business.Shared.GlobalKeyedEntity`1
+  commentId: T:dotNetBlocks.Business.Shared.GlobalKeyedEntity`1
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.GlobalKeyedEntity-1.html
+  name: GlobalKeyedEntity<TId>
+  nameWithType: GlobalKeyedEntity<TId>
+  fullName: dotNetBlocks.Business.Shared.GlobalKeyedEntity<TId>
+  nameWithType.vb: GlobalKeyedEntity(Of TId)
+  fullName.vb: dotNetBlocks.Business.Shared.GlobalKeyedEntity(Of TId)
+  name.vb: GlobalKeyedEntity(Of TId)
+  spec.csharp:
+  - uid: dotNetBlocks.Business.Shared.GlobalKeyedEntity`1
+    name: GlobalKeyedEntity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.GlobalKeyedEntity-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.Business.Shared.GlobalKeyedEntity`1
+    name: GlobalKeyedEntity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.GlobalKeyedEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: dotNetBlocks.Business.Shared.IBusinessLogic
+  commentId: T:dotNetBlocks.Business.Shared.IBusinessLogic
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.IBusinessLogic.html
+  name: IBusinessLogic
+  nameWithType: IBusinessLogic
+  fullName: dotNetBlocks.Business.Shared.IBusinessLogic
+- uid: dotNetBlocks.Business.Shared.KeyedEntity
+  commentId: T:dotNetBlocks.Business.Shared.KeyedEntity
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.KeyedEntity.html
+  name: KeyedEntity
+  nameWithType: KeyedEntity
+  fullName: dotNetBlocks.Business.Shared.KeyedEntity
+- uid: dotNetBlocks.Business.Shared.KeyedEntity`1
+  commentId: T:dotNetBlocks.Business.Shared.KeyedEntity`1
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.KeyedEntity-1.html
+  name: KeyedEntity<TId>
+  nameWithType: KeyedEntity<TId>
+  fullName: dotNetBlocks.Business.Shared.KeyedEntity<TId>
+  nameWithType.vb: KeyedEntity(Of TId)
+  fullName.vb: dotNetBlocks.Business.Shared.KeyedEntity(Of TId)
+  name.vb: KeyedEntity(Of TId)
+  spec.csharp:
+  - uid: dotNetBlocks.Business.Shared.KeyedEntity`1
+    name: KeyedEntity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.KeyedEntity-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.Business.Shared.KeyedEntity`1
+    name: KeyedEntity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.KeyedEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: dotNetBlocks.Business.Shared.Operation
+  commentId: T:dotNetBlocks.Business.Shared.Operation
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.Operation.html
+  name: Operation
+  nameWithType: Operation
+  fullName: dotNetBlocks.Business.Shared.Operation
+- uid: dotNetBlocks.Business.Shared.Operation`1
+  commentId: T:dotNetBlocks.Business.Shared.Operation`1
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.Operation-1.html
+  name: Operation<TEntity>
+  nameWithType: Operation<TEntity>
+  fullName: dotNetBlocks.Business.Shared.Operation<TEntity>
+  nameWithType.vb: Operation(Of TEntity)
+  fullName.vb: dotNetBlocks.Business.Shared.Operation(Of TEntity)
+  name.vb: Operation(Of TEntity)
+  spec.csharp:
+  - uid: dotNetBlocks.Business.Shared.Operation`1
+    name: Operation
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.Operation-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.Business.Shared.Operation`1
+    name: Operation
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.Operation-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: dotNetBlocks.Business.Shared.Result
+  commentId: T:dotNetBlocks.Business.Shared.Result
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.Result.html
+  name: Result
+  nameWithType: Result
+  fullName: dotNetBlocks.Business.Shared.Result
+- uid: dotNetBlocks.Business.Shared.Result`1
+  commentId: T:dotNetBlocks.Business.Shared.Result`1
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.Result-1.html
+  name: Result<TEntity>
+  nameWithType: Result<TEntity>
+  fullName: dotNetBlocks.Business.Shared.Result<TEntity>
+  nameWithType.vb: Result(Of TEntity)
+  fullName.vb: dotNetBlocks.Business.Shared.Result(Of TEntity)
+  name.vb: Result(Of TEntity)
+  spec.csharp:
+  - uid: dotNetBlocks.Business.Shared.Result`1
+    name: Result
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.Result-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.Business.Shared.Result`1
+    name: Result
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: dotNetBlocks.Business.Shared
+  commentId: N:dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.html
+  name: dotNetBlocks.Business.Shared
+  nameWithType: dotNetBlocks.Business.Shared
+  fullName: dotNetBlocks.Business.Shared
+  spec.csharp:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.Business
+    name: Business
+    isExternal: true
+    href: dotNetBlocks.Business.html
+  - name: .
+  - uid: dotNetBlocks.Business.Shared
+    name: Shared
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.html
+  spec.vb:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.Business
+    name: Business
+    isExternal: true
+    href: dotNetBlocks.Business.html
+  - name: .
+  - uid: dotNetBlocks.Business.Shared
+    name: Shared
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.html

@@ -1,0 +1,799 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.Business.Shared.BusinessActivity
+  commentId: T:dotNetBlocks.Business.Shared.BusinessActivity
+  id: BusinessActivity
+  parent: dotNetBlocks.Business.Shared
+  children:
+  - dotNetBlocks.Business.Shared.BusinessActivity.#ctor
+  - dotNetBlocks.Business.Shared.BusinessActivity.#ctor(dotNetBlocks.Business.Shared.BusinessActivity)
+  - dotNetBlocks.Business.Shared.BusinessActivity.CorrelationId
+  - dotNetBlocks.Business.Shared.BusinessActivity.CreatedAt
+  - dotNetBlocks.Business.Shared.BusinessActivity.Id
+  - dotNetBlocks.Business.Shared.BusinessActivity.RelatedToId
+  - dotNetBlocks.Business.Shared.BusinessActivity.TransactionId
+  langs:
+  - csharp
+  - vb
+  name: BusinessActivity
+  nameWithType: BusinessActivity
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity
+  type: Class
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  summary: Represents all business activities in the system.
+  remarks: >-
+    common activities:
+
+    <xref href="dotNetBlocks.Business.Shared.Operation" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public class BusinessActivity
+    content.vb: Public Class BusinessActivity
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - dotNetBlocks.Business.Shared.BusinessActivity`1
+  - dotNetBlocks.Business.Shared.Event
+  - dotNetBlocks.Business.Shared.Operation
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - dotNetBlocks.Business.Shared.BusinessActivity.System.Linq.WildCard.Search``1
+  - dotNetBlocks.Business.Shared.BusinessActivity.System.Linq.WildCard.Search``1
+  - dotNetBlocks.Business.Shared.BusinessActivity.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.Business.Shared.BusinessActivity.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.Business.Shared.BusinessActivity.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.Business.Shared.BusinessActivity.System.SystemExtensions.AsLazy``1
+  - dotNetBlocks.Business.Shared.BusinessActivity.System.SystemExtensions.AsLazy``1
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.#ctor
+  commentId: M:dotNetBlocks.Business.Shared.BusinessActivity.#ctor
+  id: '#ctor'
+  parent: dotNetBlocks.Business.Shared.BusinessActivity
+  langs:
+  - csharp
+  - vb
+  name: BusinessActivity()
+  nameWithType: BusinessActivity.BusinessActivity()
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity.BusinessActivity()
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  summary: >-
+    Default constructor for <xref href="dotNetBlocks.Business.Shared.BusinessActivity" data-throw-if-not-resolved="false"></xref> class with default values.
+
+    Initializes a new instance of the <xref href="dotNetBlocks.Business.Shared.BusinessActivity" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public BusinessActivity()
+    content.vb: Public Sub New()
+  overload: dotNetBlocks.Business.Shared.BusinessActivity.#ctor*
+  nameWithType.vb: BusinessActivity.New()
+  fullName.vb: dotNetBlocks.Business.Shared.BusinessActivity.New()
+  name.vb: New()
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.#ctor(dotNetBlocks.Business.Shared.BusinessActivity)
+  commentId: M:dotNetBlocks.Business.Shared.BusinessActivity.#ctor(dotNetBlocks.Business.Shared.BusinessActivity)
+  id: '#ctor(dotNetBlocks.Business.Shared.BusinessActivity)'
+  parent: dotNetBlocks.Business.Shared.BusinessActivity
+  langs:
+  - csharp
+  - vb
+  name: BusinessActivity(BusinessActivity)
+  nameWithType: BusinessActivity.BusinessActivity(BusinessActivity)
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity.BusinessActivity(dotNetBlocks.Business.Shared.BusinessActivity)
+  type: Constructor
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  summary: Initializes a new instance of the <xref href="dotNetBlocks.Business.Shared.BusinessActivity" data-throw-if-not-resolved="false"></xref> class.with values transferred from <code class="paramref">relatedTo</code> object provided.
+  example: []
+  syntax:
+    content: public BusinessActivity(BusinessActivity relatedTo)
+    parameters:
+    - id: relatedTo
+      type: dotNetBlocks.Business.Shared.BusinessActivity
+      description: The related to.
+    content.vb: Public Sub New(relatedTo As BusinessActivity)
+  overload: dotNetBlocks.Business.Shared.BusinessActivity.#ctor*
+  nameWithType.vb: BusinessActivity.New(BusinessActivity)
+  fullName.vb: dotNetBlocks.Business.Shared.BusinessActivity.New(dotNetBlocks.Business.Shared.BusinessActivity)
+  name.vb: New(BusinessActivity)
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.Id
+  commentId: P:dotNetBlocks.Business.Shared.BusinessActivity.Id
+  id: Id
+  parent: dotNetBlocks.Business.Shared.BusinessActivity
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: BusinessActivity.Id
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity.Id
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  summary: Unique id for the business activity.
+  example: []
+  syntax:
+    content: public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+      description: The identifier.
+    content.vb: Public Property Id As Guid
+  overload: dotNetBlocks.Business.Shared.BusinessActivity.Id*
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.CorrelationId
+  commentId: P:dotNetBlocks.Business.Shared.BusinessActivity.CorrelationId
+  id: CorrelationId
+  parent: dotNetBlocks.Business.Shared.BusinessActivity
+  langs:
+  - csharp
+  - vb
+  name: CorrelationId
+  nameWithType: BusinessActivity.CorrelationId
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity.CorrelationId
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  summary: Gets or sets the correlation identifier.
+  remarks: Set at the initiation of a multiple event process to connect diagnostics and reporting for an entire process chain.
+  example: []
+  syntax:
+    content: public Guid CorrelationId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+      description: The correlation identifier.
+    content.vb: Public Property CorrelationId As Guid
+  overload: dotNetBlocks.Business.Shared.BusinessActivity.CorrelationId*
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.TransactionId
+  commentId: P:dotNetBlocks.Business.Shared.BusinessActivity.TransactionId
+  id: TransactionId
+  parent: dotNetBlocks.Business.Shared.BusinessActivity
+  langs:
+  - csharp
+  - vb
+  name: TransactionId
+  nameWithType: BusinessActivity.TransactionId
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity.TransactionId
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  summary: Gets or sets the transaction identifier.
+  example: []
+  syntax:
+    content: public Guid TransactionId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+      description: The transaction identifier.
+    content.vb: Public Property TransactionId As Guid
+  overload: dotNetBlocks.Business.Shared.BusinessActivity.TransactionId*
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.RelatedToId
+  commentId: P:dotNetBlocks.Business.Shared.BusinessActivity.RelatedToId
+  id: RelatedToId
+  parent: dotNetBlocks.Business.Shared.BusinessActivity
+  langs:
+  - csharp
+  - vb
+  name: RelatedToId
+  nameWithType: BusinessActivity.RelatedToId
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity.RelatedToId
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  summary: Gets or sets the related to identifier.
+  example: []
+  syntax:
+    content: public Guid RelatedToId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+      description: The related to identifier.
+    content.vb: Public Property RelatedToId As Guid
+  overload: dotNetBlocks.Business.Shared.BusinessActivity.RelatedToId*
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.CreatedAt
+  commentId: P:dotNetBlocks.Business.Shared.BusinessActivity.CreatedAt
+  id: CreatedAt
+  parent: dotNetBlocks.Business.Shared.BusinessActivity
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: BusinessActivity.CreatedAt
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity.CreatedAt
+  type: Property
+  source:
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+  assemblies:
+  - dotNetBlocks.Business.Shared
+  namespace: dotNetBlocks.Business.Shared
+  syntax:
+    content: public DateTimeOffset CreatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property CreatedAt As DateTimeOffset
+  overload: dotNetBlocks.Business.Shared.BusinessActivity.CreatedAt*
+references:
+- uid: dotNetBlocks.Business.Shared.Operation
+  commentId: T:dotNetBlocks.Business.Shared.Operation
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.Operation.html
+  name: Operation
+  nameWithType: Operation
+  fullName: dotNetBlocks.Business.Shared.Operation
+- uid: dotNetBlocks.Business.Shared
+  commentId: N:dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.html
+  name: dotNetBlocks.Business.Shared
+  nameWithType: dotNetBlocks.Business.Shared
+  fullName: dotNetBlocks.Business.Shared
+  spec.csharp:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.Business
+    name: Business
+    isExternal: true
+    href: dotNetBlocks.Business.html
+  - name: .
+  - uid: dotNetBlocks.Business.Shared
+    name: Shared
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.html
+  spec.vb:
+  - uid: dotNetBlocks
+    name: dotNetBlocks
+    isExternal: true
+    href: dotNetBlocks.html
+  - name: .
+  - uid: dotNetBlocks.Business
+    name: Business
+    isExternal: true
+    href: dotNetBlocks.Business.html
+  - name: .
+  - uid: dotNetBlocks.Business.Shared
+    name: Shared
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.System.Linq.WildCard.Search``1
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  parent: System.Linq.WildCard
+  definition: System.Linq.WildCard.Search``1(``0)
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<BusinessActivity>(BusinessActivity)
+  nameWithType: WildCard.Search<BusinessActivity>(BusinessActivity)
+  fullName: System.Linq.WildCard.Search<dotNetBlocks.Business.Shared.BusinessActivity>(dotNetBlocks.Business.Shared.BusinessActivity)
+  nameWithType.vb: WildCard.Search(Of BusinessActivity)(BusinessActivity)
+  fullName.vb: System.Linq.WildCard.Search(Of dotNetBlocks.Business.Shared.BusinessActivity)(dotNetBlocks.Business.Shared.BusinessActivity)
+  name.vb: Search(Of BusinessActivity)(BusinessActivity)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(dotNetBlocks.Business.Shared.BusinessActivity)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - uid: dotNetBlocks.Business.Shared.BusinessActivity
+    name: BusinessActivity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.BusinessActivity.html
+  - name: '>'
+  - name: (
+  - uid: dotNetBlocks.Business.Shared.BusinessActivity
+    name: BusinessActivity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.BusinessActivity.html
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(dotNetBlocks.Business.Shared.BusinessActivity)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: dotNetBlocks.Business.Shared.BusinessActivity
+    name: BusinessActivity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.BusinessActivity.html
+  - name: )
+  - name: (
+  - uid: dotNetBlocks.Business.Shared.BusinessActivity
+    name: BusinessActivity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.BusinessActivity.html
+  - name: )
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.System.SystemExtensions.AsLazy``1
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  parent: System.SystemExtensions
+  definition: System.SystemExtensions.AsLazy``1(``0)
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<BusinessActivity>(BusinessActivity)
+  nameWithType: SystemExtensions.AsLazy<BusinessActivity>(BusinessActivity)
+  fullName: System.SystemExtensions.AsLazy<dotNetBlocks.Business.Shared.BusinessActivity>(dotNetBlocks.Business.Shared.BusinessActivity)
+  nameWithType.vb: SystemExtensions.AsLazy(Of BusinessActivity)(BusinessActivity)
+  fullName.vb: System.SystemExtensions.AsLazy(Of dotNetBlocks.Business.Shared.BusinessActivity)(dotNetBlocks.Business.Shared.BusinessActivity)
+  name.vb: AsLazy(Of BusinessActivity)(BusinessActivity)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(dotNetBlocks.Business.Shared.BusinessActivity)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - uid: dotNetBlocks.Business.Shared.BusinessActivity
+    name: BusinessActivity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.BusinessActivity.html
+  - name: '>'
+  - name: (
+  - uid: dotNetBlocks.Business.Shared.BusinessActivity
+    name: BusinessActivity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.BusinessActivity.html
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(dotNetBlocks.Business.Shared.BusinessActivity)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: dotNetBlocks.Business.Shared.BusinessActivity
+    name: BusinessActivity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.BusinessActivity.html
+  - name: )
+  - name: (
+  - uid: dotNetBlocks.Business.Shared.BusinessActivity
+    name: BusinessActivity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.BusinessActivity.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Linq.WildCard.Search``1(``0)
+  commentId: M:System.Linq.WildCard.Search``1(``0)
+  isExternal: true
+  href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  name: Search<TSearch>(TSearch)
+  nameWithType: WildCard.Search<TSearch>(TSearch)
+  fullName: System.Linq.WildCard.Search<TSearch>(TSearch)
+  nameWithType.vb: WildCard.Search(Of TSearch)(TSearch)
+  fullName.vb: System.Linq.WildCard.Search(Of TSearch)(TSearch)
+  name.vb: Search(Of TSearch)(TSearch)
+  spec.csharp:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: <
+  - name: TSearch
+  - name: '>'
+  - name: (
+  - name: TSearch
+  - name: )
+  spec.vb:
+  - uid: System.Linq.WildCard.Search``1(``0)
+    name: Search
+    isExternal: true
+    href: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSearch
+  - name: )
+  - name: (
+  - name: TSearch
+  - name: )
+- uid: System.Linq.WildCard
+  commentId: T:System.Linq.WildCard
+  parent: System.Linq
+  isExternal: true
+  href: System.Linq.WildCard.html
+  name: WildCard
+  nameWithType: WildCard
+  fullName: System.Linq.WildCard
+- uid: System.SystemExtensions.AsLazy``1(``0)
+  commentId: M:System.SystemExtensions.AsLazy``1(``0)
+  isExternal: true
+  href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  name: AsLazy<T>(T)
+  nameWithType: SystemExtensions.AsLazy<T>(T)
+  fullName: System.SystemExtensions.AsLazy<T>(T)
+  nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)
+  fullName.vb: System.SystemExtensions.AsLazy(Of T)(T)
+  name.vb: AsLazy(Of T)(T)
+  spec.csharp:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.SystemExtensions.AsLazy``1(``0)
+    name: AsLazy
+    isExternal: true
+    href: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: System.SystemExtensions
+  commentId: T:System.SystemExtensions
+  parent: System
+  isExternal: true
+  href: System.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: System.SystemExtensions
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: System.html
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: System.Linq.html
+- uid: dotNetBlocks.Business.Shared.BusinessActivity
+  commentId: T:dotNetBlocks.Business.Shared.BusinessActivity
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessActivity.html
+  name: BusinessActivity
+  nameWithType: BusinessActivity
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.#ctor*
+  commentId: Overload:dotNetBlocks.Business.Shared.BusinessActivity.#ctor
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessActivity.html#dotNetBlocks_Business_Shared_BusinessActivity__ctor
+  name: BusinessActivity
+  nameWithType: BusinessActivity.BusinessActivity
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity.BusinessActivity
+  nameWithType.vb: BusinessActivity.New
+  fullName.vb: dotNetBlocks.Business.Shared.BusinessActivity.New
+  name.vb: New
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.Id*
+  commentId: Overload:dotNetBlocks.Business.Shared.BusinessActivity.Id
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessActivity.html#dotNetBlocks_Business_Shared_BusinessActivity_Id
+  name: Id
+  nameWithType: BusinessActivity.Id
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.CorrelationId*
+  commentId: Overload:dotNetBlocks.Business.Shared.BusinessActivity.CorrelationId
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessActivity.html#dotNetBlocks_Business_Shared_BusinessActivity_CorrelationId
+  name: CorrelationId
+  nameWithType: BusinessActivity.CorrelationId
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity.CorrelationId
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.TransactionId*
+  commentId: Overload:dotNetBlocks.Business.Shared.BusinessActivity.TransactionId
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessActivity.html#dotNetBlocks_Business_Shared_BusinessActivity_TransactionId
+  name: TransactionId
+  nameWithType: BusinessActivity.TransactionId
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity.TransactionId
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.RelatedToId*
+  commentId: Overload:dotNetBlocks.Business.Shared.BusinessActivity.RelatedToId
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessActivity.html#dotNetBlocks_Business_Shared_BusinessActivity_RelatedToId
+  name: RelatedToId
+  nameWithType: BusinessActivity.RelatedToId
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity.RelatedToId
+- uid: dotNetBlocks.Business.Shared.BusinessActivity.CreatedAt*
+  commentId: Overload:dotNetBlocks.Business.Shared.BusinessActivity.CreatedAt
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessActivity.html#dotNetBlocks_Business_Shared_BusinessActivity_CreatedAt
+  name: CreatedAt
+  nameWithType: BusinessActivity.CreatedAt
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity.CreatedAt
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset

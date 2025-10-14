@@ -1,0 +1,101 @@
+### YamlMime:ApiPage
+title: Class EnumValueTests
+body:
+- api1: Class EnumValueTests
+  id: dotNetBlocks_System_EnumValueTests
+  metadata:
+    uid: dotNetBlocks.System.EnumValueTests
+    commentId: T:dotNetBlocks.System.EnumValueTests
+- facts:
+  - name: Namespace
+    value:
+      text: dotNetBlocks.System
+      url: dotNetBlocks.System.html
+  - name: Assembly
+    value: dotNetBlocks.System.Tests.dll
+- code: >-
+    [TestClass]
+
+    public class EnumValueTests
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: EnumValueTests
+    url: dotNetBlocks.System.EnumValueTests.html
+- h4: Inherited Members
+- list:
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<EnumValueTests>(EnumValueTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumValueTests>(EnumValueTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumValueTests>(EnumValueTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumValueTests>(EnumValueTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumValueTests>(EnumValueTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumValueTests>(EnumValueTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumValueTests>(EnumValueTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<EnumValueTests>(EnumValueTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: WildCard.Search<EnumValueTests>(EnumValueTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<EnumValueTests>(EnumValueTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<EnumValueTests>(EnumValueTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+- h2: Constructors
+- api3: EnumValueTests()
+  id: dotNetBlocks_System_EnumValueTests__ctor
+  metadata:
+    uid: dotNetBlocks.System.EnumValueTests.#ctor
+    commentId: M:dotNetBlocks.System.EnumValueTests.#ctor
+- code: public EnumValueTests()
+- h2: Methods
+- api3: min_max_extension_tests()
+  id: dotNetBlocks_System_EnumValueTests_min_max_extension_tests
+  metadata:
+    uid: dotNetBlocks.System.EnumValueTests.min_max_extension_tests
+    commentId: M:dotNetBlocks.System.EnumValueTests.min_max_extension_tests
+- code: >-
+    [TestMethod]
+
+    public void min_max_extension_tests()
+- api3: min_max_tests()
+  id: dotNetBlocks_System_EnumValueTests_min_max_tests
+  metadata:
+    uid: dotNetBlocks.System.EnumValueTests.min_max_tests
+    commentId: M:dotNetBlocks.System.EnumValueTests.min_max_tests
+- code: >-
+    [TestMethod]
+
+    public void min_max_tests()
+- api3: test_default_meta()
+  id: dotNetBlocks_System_EnumValueTests_test_default_meta
+  metadata:
+    uid: dotNetBlocks.System.EnumValueTests.test_default_meta
+    commentId: M:dotNetBlocks.System.EnumValueTests.test_default_meta
+- code: >-
+    [TestMethod]
+
+    public void test_default_meta()
+languageId: csharp

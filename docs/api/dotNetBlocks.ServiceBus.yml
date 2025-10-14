@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: dotNetBlocks.ServiceBus
+  commentId: N:dotNetBlocks.ServiceBus
+  id: dotNetBlocks.ServiceBus
+  children:
+  - dotNetBlocks.ServiceBus.ServiceBusExtensions
+  langs:
+  - csharp
+  - vb
+  name: dotNetBlocks.ServiceBus
+  nameWithType: dotNetBlocks.ServiceBus
+  fullName: dotNetBlocks.ServiceBus
+  type: Namespace
+  assemblies:
+  - dotNetBlocks.ServiceBus
+references:
+- uid: dotNetBlocks.ServiceBus.ServiceBusExtensions
+  commentId: T:dotNetBlocks.ServiceBus.ServiceBusExtensions
+  isExternal: true
+  href: dotNetBlocks.ServiceBus.ServiceBusExtensions.html
+  name: ServiceBusExtensions
+  nameWithType: ServiceBusExtensions
+  fullName: dotNetBlocks.ServiceBus.ServiceBusExtensions

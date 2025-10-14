@@ -1,0 +1,92 @@
+### YamlMime:ApiPage
+title: Class CancellationTokenExtensionsTests
+body:
+- api1: Class CancellationTokenExtensionsTests
+  id: CancellationTokenExtensionsTests_CancellationTokenExtensionsTests
+  metadata:
+    uid: CancellationTokenExtensionsTests.CancellationTokenExtensionsTests
+    commentId: T:CancellationTokenExtensionsTests.CancellationTokenExtensionsTests
+- facts:
+  - name: Namespace
+    value:
+      text: CancellationTokenExtensionsTests
+      url: CancellationTokenExtensionsTests.html
+  - name: Assembly
+    value: dotNetBlocks.System.Threading.Tests.dll
+- code: >-
+    [TestClass]
+
+    public class CancellationTokenExtensionsTests
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: CancellationTokenExtensionsTests
+    url: CancellationTokenExtensionsTests.CancellationTokenExtensionsTests.html
+- h4: Inherited Members
+- list:
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<CancellationTokenExtensionsTests>(CancellationTokenExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CancellationTokenExtensionsTests>(CancellationTokenExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CancellationTokenExtensionsTests>(CancellationTokenExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CancellationTokenExtensionsTests>(CancellationTokenExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CancellationTokenExtensionsTests>(CancellationTokenExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CancellationTokenExtensionsTests>(CancellationTokenExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CancellationTokenExtensionsTests>(CancellationTokenExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<CancellationTokenExtensionsTests>(CancellationTokenExtensionsTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: WildCard.Search<CancellationTokenExtensionsTests>(CancellationTokenExtensionsTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<CancellationTokenExtensionsTests>(CancellationTokenExtensionsTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<CancellationTokenExtensionsTests>(CancellationTokenExtensionsTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+- h2: Constructors
+- api3: CancellationTokenExtensionsTests()
+  id: CancellationTokenExtensionsTests_CancellationTokenExtensionsTests__ctor
+  metadata:
+    uid: CancellationTokenExtensionsTests.CancellationTokenExtensionsTests.#ctor
+    commentId: M:CancellationTokenExtensionsTests.CancellationTokenExtensionsTests.#ctor
+- code: public CancellationTokenExtensionsTests()
+- h2: Methods
+- api3: Can_we_access_the_internal_token_Source()
+  id: CancellationTokenExtensionsTests_CancellationTokenExtensionsTests_Can_we_access_the_internal_token_Source
+  metadata:
+    uid: CancellationTokenExtensionsTests.CancellationTokenExtensionsTests.Can_we_access_the_internal_token_Source
+    commentId: M:CancellationTokenExtensionsTests.CancellationTokenExtensionsTests.Can_we_access_the_internal_token_Source
+- code: >-
+    [TestMethod]
+
+    public void Can_we_access_the_internal_token_Source()
+- api3: token_source_dispose_does_not_cancel_the_token()
+  id: CancellationTokenExtensionsTests_CancellationTokenExtensionsTests_token_source_dispose_does_not_cancel_the_token
+  metadata:
+    uid: CancellationTokenExtensionsTests.CancellationTokenExtensionsTests.token_source_dispose_does_not_cancel_the_token
+    commentId: M:CancellationTokenExtensionsTests.CancellationTokenExtensionsTests.token_source_dispose_does_not_cancel_the_token
+- code: >-
+    [TestMethod]
+
+    public void token_source_dispose_does_not_cancel_the_token()
+languageId: csharp

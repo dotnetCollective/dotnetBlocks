@@ -1,0 +1,94 @@
+### YamlMime:ApiPage
+title: Class ServiceA
+body:
+- api1: Class ServiceA
+  id: dotNetBlocks_Extensions_Tests_DependencyInjection_TestServices_ServiceA
+  metadata:
+    uid: dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceA
+    commentId: T:dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceA
+- facts:
+  - name: Namespace
+    value:
+      text: dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices
+      url: dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.html
+  - name: Assembly
+    value: dotNetBlocks.Extensions.Tests.dll
+- code: public class ServiceA
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: ServiceA
+    url: dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceA.html
+- h4: Inherited Members
+- list:
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<ServiceA>(ServiceA)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ServiceA>(ServiceA)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ServiceA>(ServiceA)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ServiceA>(ServiceA)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ServiceA>(ServiceA)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ServiceA>(ServiceA)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ServiceA>(ServiceA)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<ServiceA>(ServiceA)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: WildCard.Search<ServiceA>(ServiceA)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<ServiceA>(ServiceA)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<ServiceA>(ServiceA)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+- h2: Constructors
+- api3: ServiceA()
+  id: dotNetBlocks_Extensions_Tests_DependencyInjection_TestServices_ServiceA__ctor
+  metadata:
+    uid: dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceA.#ctor
+    commentId: M:dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceA.#ctor
+- code: public ServiceA()
+- h2: Properties
+- api3: TrueProperty
+  id: dotNetBlocks_Extensions_Tests_DependencyInjection_TestServices_ServiceA_TrueProperty
+  metadata:
+    uid: dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceA.TrueProperty
+    commentId: P:dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceA.TrueProperty
+- code: public bool TrueProperty { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- h2: Methods
+- api3: TrueMethod()
+  id: dotNetBlocks_Extensions_Tests_DependencyInjection_TestServices_ServiceA_TrueMethod
+  metadata:
+    uid: dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceA.TrueMethod
+    commentId: M:dotNetBlocks.Extensions.Tests.DependencyInjection.TestServices.ServiceA.TrueMethod
+- code: public bool TrueMethod()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+languageId: csharp

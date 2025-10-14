@@ -12,6 +12,9 @@ using System.Threading.Tasks;
 
 namespace dotNetBlocks.Extensions.DependencyInjection
 {
+    /// <summary>
+    /// Extends dependency injection with Lazy support.
+    /// </summary>
     public static class DependencyInjectionExtensions
     {
 
@@ -32,6 +35,7 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         /// /// Adds a <see cref="Lazy{T}"/> definition to lookup the last registration and add a lazy class to.
         /// </summary>
         /// <param name="services"><see cref="IServiceCollection"/>containing the registration to add a lazy functionality for.</param>
+        /// <param name="serviceLifetime"> <see cref="ServiceLifetime"/> of class.</param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentNullException">service collection is null.</exception>
         /// <remarks>Looks up the last class and adds a lazy registration.</remarks>

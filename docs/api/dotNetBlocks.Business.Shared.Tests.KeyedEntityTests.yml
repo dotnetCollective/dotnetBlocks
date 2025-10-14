@@ -1,0 +1,83 @@
+### YamlMime:ApiPage
+title: Class KeyedEntityTests
+body:
+- api1: Class KeyedEntityTests
+  id: dotNetBlocks_Business_Shared_Tests_KeyedEntityTests
+  metadata:
+    uid: dotNetBlocks.Business.Shared.Tests.KeyedEntityTests
+    commentId: T:dotNetBlocks.Business.Shared.Tests.KeyedEntityTests
+- facts:
+  - name: Namespace
+    value:
+      text: dotNetBlocks.Business.Shared.Tests
+      url: dotNetBlocks.Business.Shared.Tests.html
+  - name: Assembly
+    value: dotNetBlocks.Business.Shared.Tests.dll
+- code: >-
+    [TestClass]
+
+    public class KeyedEntityTests
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: KeyedEntityTests
+    url: dotNetBlocks.Business.Shared.Tests.KeyedEntityTests.html
+- h4: Inherited Members
+- list:
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- h4: Extension Methods
+- list:
+  - text: SystemExtensions.AsLazy<KeyedEntityTests>(KeyedEntityTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<KeyedEntityTests>(KeyedEntityTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<KeyedEntityTests>(KeyedEntityTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<KeyedEntityTests>(KeyedEntityTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<KeyedEntityTests>(KeyedEntityTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<KeyedEntityTests>(KeyedEntityTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<KeyedEntityTests>(KeyedEntityTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: SystemExtensions.AsLazy<KeyedEntityTests>(KeyedEntityTests)
+    url: System.SystemExtensions.html#System_SystemExtensions_AsLazy__1___0_
+  - text: WildCard.Search<KeyedEntityTests>(KeyedEntityTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<KeyedEntityTests>(KeyedEntityTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+  - text: WildCard.Search<KeyedEntityTests>(KeyedEntityTests)
+    url: System.Linq.WildCard.html#System_Linq_WildCard_Search__1___0_
+- h2: Constructors
+- api3: KeyedEntityTests()
+  id: dotNetBlocks_Business_Shared_Tests_KeyedEntityTests__ctor
+  metadata:
+    uid: dotNetBlocks.Business.Shared.Tests.KeyedEntityTests.#ctor
+    commentId: M:dotNetBlocks.Business.Shared.Tests.KeyedEntityTests.#ctor
+- code: public KeyedEntityTests()
+- h2: Methods
+- api3: TestAuditProperties()
+  id: dotNetBlocks_Business_Shared_Tests_KeyedEntityTests_TestAuditProperties
+  metadata:
+    uid: dotNetBlocks.Business.Shared.Tests.KeyedEntityTests.TestAuditProperties
+    commentId: M:dotNetBlocks.Business.Shared.Tests.KeyedEntityTests.TestAuditProperties
+- code: >-
+    [TestMethod]
+
+    public void TestAuditProperties()
+languageId: csharp
