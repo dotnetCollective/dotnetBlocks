@@ -15,10 +15,12 @@ items:
   fullName: dotNetBlocks.Extensions.ServiceDescriptorExtensions
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs
   assemblies:
   - dotNetBlocks.Extensions
   namespace: dotNetBlocks.Extensions
+  summary: Service Description Lazy extensions.
+  example: []
   syntax:
     content: public static class ServiceDescriptorExtensions
     content.vb: Public Module ServiceDescriptorExtensions
@@ -45,21 +47,30 @@ items:
   fullName: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy(Microsoft.Extensions.DependencyInjection.ServiceDescriptor, Microsoft.Extensions.DependencyInjection.ServiceLifetime?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs
   assemblies:
   - dotNetBlocks.Extensions
   namespace: dotNetBlocks.Extensions
+  summary: Creates a <xref href="System.Lazy%601" data-throw-if-not-resolved="false"></xref> <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref> for the descriptor provided.
+  example: []
   syntax:
     content: public static ServiceDescriptor AsLazy(this ServiceDescriptor sourceDescriptor, ServiceLifetime? serviceLifetime = null)
     parameters:
     - id: sourceDescriptor
       type: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+      description: The source <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref>  &gt; for the new service descriptor.
     - id: serviceLifetime
       type: System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime}
+      description: The <xref href="Microsoft.Extensions.DependencyInjection.ServiceLifetime" data-throw-if-not-resolved="false"></xref>&gt; for the lazy class. Uses the source lifetime if none provided.
     return:
       type: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+      description: New <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref> defining a lazy version of the source descriptor.
     content.vb: Public Shared Function AsLazy(sourceDescriptor As ServiceDescriptor, serviceLifetime As ServiceLifetime? = Nothing) As ServiceDescriptor
   overload: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: instance object is not {lazyServiceType.FullName} - lazyInstance
 - uid: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.ServiceDescriptor,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime},System.Object,System.Object)
   commentId: M:dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.ServiceDescriptor,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime},System.Object,System.Object)
   id: AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.ServiceDescriptor,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime},System.Object,System.Object)
@@ -73,25 +84,36 @@ items:
   fullName: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.ServiceDescriptor, Microsoft.Extensions.DependencyInjection.ServiceLifetime?, object?, object?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs
   assemblies:
   - dotNetBlocks.Extensions
   namespace: dotNetBlocks.Extensions
+  summary: Creates a <xref href="System.Lazy%601" data-throw-if-not-resolved="false"></xref> <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref> for the descriptor provided.
+  example: []
   syntax:
     content: public static ServiceDescriptor AsLazyAdvanced(this ServiceDescriptor sourceDescriptor, ServiceLifetime? serviceLifetime = null, object? valueInstance = null, object? lazyInstance = null)
     parameters:
     - id: sourceDescriptor
       type: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+      description: The source <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref>  &gt; for the new service descriptor.
     - id: serviceLifetime
       type: System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime}
+      description: The <xref href="Microsoft.Extensions.DependencyInjection.ServiceLifetime" data-throw-if-not-resolved="false"></xref>&gt; for the lazy class. Uses the source lifetime if none provided.
     - id: valueInstance
       type: System.Object
+      description: Instance value to use in the lazy class instead of resolving the value.
     - id: lazyInstance
       type: System.Object
+      description: The lazy instance to register.
     return:
       type: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+      description: New <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref> defining a lazy version of the source descriptor.
     content.vb: Public Shared Function AsLazyAdvanced(sourceDescriptor As ServiceDescriptor, serviceLifetime As ServiceLifetime? = Nothing, valueInstance As Object = Nothing, lazyInstance As Object = Nothing) As ServiceDescriptor
   overload: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: instance object is not {lazyServiceType.FullName} - lazyInstance
   nameWithType.vb: ServiceDescriptorExtensions.AsLazyAdvanced(ServiceDescriptor, ServiceLifetime?, Object, Object)
   fullName.vb: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.ServiceDescriptor, Microsoft.Extensions.DependencyInjection.ServiceLifetime?, Object, Object)
   name.vb: AsLazyAdvanced(ServiceDescriptor, ServiceLifetime?, Object, Object)
@@ -360,13 +382,34 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy*
-  commentId: Overload:dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy
+- uid: System.Lazy`1
+  commentId: T:System.Lazy`1
   isExternal: true
-  href: dotNetBlocks.Extensions.ServiceDescriptorExtensions.html#dotNetBlocks_Extensions_ServiceDescriptorExtensions_AsLazy_Microsoft_Extensions_DependencyInjection_ServiceDescriptor_System_Nullable_Microsoft_Extensions_DependencyInjection_ServiceLifetime__
-  name: AsLazy
-  nameWithType: ServiceDescriptorExtensions.AsLazy
-  fullName: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy
+  href: https://learn.microsoft.com/dotnet/api/system.lazy-1
+  name: Lazy<T>
+  nameWithType: Lazy<T>
+  fullName: System.Lazy<T>
+  nameWithType.vb: Lazy(Of T)
+  fullName.vb: System.Lazy(Of T)
+  name.vb: Lazy(Of T)
+  spec.csharp:
+  - uid: System.Lazy`1
+    name: Lazy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.lazy-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Lazy`1
+    name: Lazy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.lazy-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
   commentId: T:Microsoft.Extensions.DependencyInjection.ServiceDescriptor
   parent: Microsoft.Extensions.DependencyInjection
@@ -375,6 +418,28 @@ references:
   name: ServiceDescriptor
   nameWithType: ServiceDescriptor
   fullName: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+- uid: Microsoft.Extensions.DependencyInjection.ServiceLifetime
+  commentId: T:Microsoft.Extensions.DependencyInjection.ServiceLifetime
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime
+  name: ServiceLifetime
+  nameWithType: ServiceLifetime
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceLifetime
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy*
+  commentId: Overload:dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy
+  isExternal: true
+  href: dotNetBlocks.Extensions.ServiceDescriptorExtensions.html#dotNetBlocks_Extensions_ServiceDescriptorExtensions_AsLazy_Microsoft_Extensions_DependencyInjection_ServiceDescriptor_System_Nullable_Microsoft_Extensions_DependencyInjection_ServiceLifetime__
+  name: AsLazy
+  nameWithType: ServiceDescriptorExtensions.AsLazy
+  fullName: dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy
 - uid: System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime}
   commentId: T:System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime}
   parent: System

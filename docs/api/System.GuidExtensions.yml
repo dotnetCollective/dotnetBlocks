@@ -21,10 +21,21 @@ items:
   fullName: System.GuidExtensions
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
+  summary: >-
+    Extends Guid
+
+    Adds semi-sequential CombGuid generation methods.
+
+    Use Case: Generating new ComGuid <xref href="System.Guid" data-throw-if-not-resolved="false"></xref> with time component for minimal database impact.
+  remarks: >-
+    Uses the https://github.com/richardtallent/RT.Comb library to generate CombGuids for performance purposes.
+                Implemented the most common types as extensions.
+                User can look at the library for other use cases and additional functionality.
+  example: []
   syntax:
     content: public static class GuidExtensions
     content.vb: Public Module GuidExtensions
@@ -51,17 +62,21 @@ items:
   fullName: System.GuidExtensions.Initialize(ref System.Guid)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
+  summary: Initializes the extended unique identifier.
+  example: []
   syntax:
     content: public static Guid Initialize(this ref Guid guid)
     parameters:
     - id: guid
       type: System.Guid
+      description: Guid&gt; Value to extend and initialize.
     return:
       type: System.Guid
+      description: New <xref href="System.Guid" data-throw-if-not-resolved="false"></xref> generated and stored.
     content.vb: Public Shared Function Initialize(guid As Guid) As Guid
   overload: System.GuidExtensions.Initialize*
   nameWithType.vb: GuidExtensions.Initialize(Guid)
@@ -80,7 +95,7 @@ items:
   fullName: System.GuidExtensions.Initialize(ref System.Guid, System.GuidTypes?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
@@ -111,7 +126,7 @@ items:
   fullName: System.GuidExtensions.NewId(System.Guid, System.GuidTypes?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
@@ -139,7 +154,7 @@ items:
   fullName: System.GuidExtensions.NewId(System.Guid)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
@@ -164,7 +179,7 @@ items:
   fullName: System.GuidExtensions.NewId()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
@@ -187,7 +202,7 @@ items:
   fullName: System.GuidExtensions.GenerateId(System.Guid)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
@@ -213,19 +228,24 @@ items:
   fullName: System.GuidExtensions.GenerateId(System.Guid, System.GuidTypes?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
+  summary: Generates a new <xref href="System.Guid" data-throw-if-not-resolved="false"></xref> using one of the CombGuid algorithms.
+  example: []
   syntax:
     content: public static Guid GenerateId(this Guid _, GuidTypes? guidType = null)
     parameters:
     - id: _
       type: System.Guid
+      description: Discarded extension parameter
     - id: guidType
       type: System.Nullable{System.GuidTypes}
+      description: optional <xref href="System.GuidTypes" data-throw-if-not-resolved="false"></xref> type of guid to generate
     return:
       type: System.Guid
+      description: ''
     content.vb: Public Shared Function GenerateId(_ As Guid, guidType As GuidTypes? = Nothing) As Guid
   overload: System.GuidExtensions.GenerateId*
 - uid: System.GuidExtensions.GenerateId(System.Nullable{System.GuidTypes})
@@ -240,7 +260,7 @@ items:
   fullName: System.GuidExtensions.GenerateId(System.GuidTypes?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
@@ -254,6 +274,14 @@ items:
     content.vb: Public Shared Function GenerateId(guidType As GuidTypes? = GuidTypes.CombGuid) As Guid
   overload: System.GuidExtensions.GenerateId*
 references:
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
 - uid: System
   commentId: N:System
   isExternal: true
@@ -498,14 +526,6 @@ references:
   name: Initialize
   nameWithType: GuidExtensions.Initialize
   fullName: System.GuidExtensions.Initialize
-- uid: System.Guid
-  commentId: T:System.Guid
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.guid
-  name: Guid
-  nameWithType: Guid
-  fullName: System.Guid
 - uid: System.Nullable{System.GuidTypes}
   commentId: T:System.Nullable{System.GuidTypes}
   parent: System
@@ -568,3 +588,42 @@ references:
   name: GenerateId
   nameWithType: GuidExtensions.GenerateId
   fullName: System.GuidExtensions.GenerateId
+- uid: System.GuidTypes
+  commentId: T:System.GuidTypes
+  parent: System
+  isExternal: true
+  href: System.GuidTypes.html
+  name: GuidTypes
+  nameWithType: GuidTypes
+  fullName: System.GuidTypes
+- uid: System.GuidExtensions.GenerateId(System.Nullable{System.GuidTypes})
+  commentId: M:System.GuidExtensions.GenerateId(System.Nullable{System.GuidTypes})
+  isExternal: true
+  href: System.GuidExtensions.html#System_GuidExtensions_GenerateId_System_Nullable_System_GuidTypes__
+  name: GenerateId(GuidTypes?)
+  nameWithType: GuidExtensions.GenerateId(GuidTypes?)
+  fullName: System.GuidExtensions.GenerateId(System.GuidTypes?)
+  spec.csharp:
+  - uid: System.GuidExtensions.GenerateId(System.Nullable{System.GuidTypes})
+    name: GenerateId
+    isExternal: true
+    href: System.GuidExtensions.html#System_GuidExtensions_GenerateId_System_Nullable_System_GuidTypes__
+  - name: (
+  - uid: System.GuidTypes
+    name: GuidTypes
+    isExternal: true
+    href: System.GuidTypes.html
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: System.GuidExtensions.GenerateId(System.Nullable{System.GuidTypes})
+    name: GenerateId
+    isExternal: true
+    href: System.GuidExtensions.html#System_GuidExtensions_GenerateId_System_Nullable_System_GuidTypes__
+  - name: (
+  - uid: System.GuidTypes
+    name: GuidTypes
+    isExternal: true
+    href: System.GuidTypes.html
+  - name: '?'
+  - name: )

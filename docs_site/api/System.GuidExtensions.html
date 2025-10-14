@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class GuidExtensions | DotNetBlocks ">
       
-      
+      <meta name="description" content="Extends Guid Adds semi-sequential CombGuid generation methods. Use Case: Generating new ComGuid  with time component for minimal database impact.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="System_GuidExtensions" data-uid="System.GuidExtensions" class="text-break">
-Class GuidExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class GuidExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,10 @@ Class GuidExtensions  <a class="header-action link-secondary" title="View source
   <dl><dt>Assembly</dt><dd>dotNetBlocks.System.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Extends Guid
+Adds semi-sequential CombGuid generation methods.
+Use Case: Generating new ComGuid <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> with time component for minimal database impact.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -146,6 +149,11 @@ Class GuidExtensions  <a class="header-action link-secondary" title="View source
 
 
 
+  <h2 id="System_GuidExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Uses the <a href="https://github.com/richardtallent/RT.Comb">https://github.com/richardtallent/RT.Comb</a> library to generate CombGuids for performance purposes.
+Implemented the most common types as extensions.
+User can look at the library for other use cases and additional functionality.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,7 +164,7 @@ Class GuidExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_GuidExtensions_GenerateId_System_Guid_" data-uid="System.GuidExtensions.GenerateId(System.Guid)">
   GenerateId(Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -192,10 +200,11 @@ Class GuidExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_GuidExtensions_GenerateId_System_Guid_System_Nullable_System_GuidTypes__" data-uid="System.GuidExtensions.GenerateId(System.Guid,System.Nullable{System.GuidTypes})">
   GenerateId(Guid, GuidTypes?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> using one of the CombGuid algorithms.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,9 +214,11 @@ Class GuidExtensions  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>_</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-    <dd></dd>
+    <dd><p>Discarded extension parameter</p>
+</dd>
     <dt><code>guidType</code> <a class="xref" href="System.GuidTypes.html">GuidTypes</a>?</dt>
-    <dd></dd>
+    <dd><p>optional <a class="xref" href="System.GuidTypes.html">GuidTypes</a> type of guid to generate</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -230,7 +241,7 @@ Class GuidExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_GuidExtensions_GenerateId_System_Nullable_System_GuidTypes__" data-uid="System.GuidExtensions.GenerateId(System.Nullable{System.GuidTypes})">
   GenerateId(GuidTypes?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -266,10 +277,11 @@ Class GuidExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_GuidExtensions_Initialize_System_Guid__" data-uid="System.GuidExtensions.Initialize(System.Guid@)">
   Initialize(ref Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes the extended unique identifier.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -279,13 +291,15 @@ Class GuidExtensions  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>guid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-    <dd></dd>
+    <dd><p>Guid&gt; Value to extend and initialize.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-    <dd></dd>
+    <dd><p>New <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> generated and stored.</p>
+</dd>
   </dl>
 
 
@@ -302,7 +316,7 @@ Class GuidExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_GuidExtensions_Initialize_System_Guid__System_Nullable_System_GuidTypes__" data-uid="System.GuidExtensions.Initialize(System.Guid@,System.Nullable{System.GuidTypes})">
   Initialize(ref Guid, GuidTypes?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -340,7 +354,7 @@ Class GuidExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_GuidExtensions_NewId" data-uid="System.GuidExtensions.NewId">
   NewId()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -371,7 +385,7 @@ Class GuidExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_GuidExtensions_NewId_System_Guid_" data-uid="System.GuidExtensions.NewId(System.Guid)">
   NewId(Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -407,7 +421,7 @@ Class GuidExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_GuidExtensions_NewId_System_Guid_System_Nullable_System_GuidTypes__" data-uid="System.GuidExtensions.NewId(System.Guid,System.Nullable{System.GuidTypes})">
   NewId(Guid, GuidTypes?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -445,7 +459,7 @@ Class GuidExtensions  <a class="header-action link-secondary" title="View source
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs" class="edit-link">Edit this page</a>
         </div>
 
 

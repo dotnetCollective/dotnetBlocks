@@ -19,10 +19,12 @@ items:
   fullName: System.GuidTypes
   type: Enum
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
+  summary: Types of Comb Guid providers available.
+  example: []
   syntax:
     content: public enum GuidTypes
     content.vb: Public Enum GuidTypes
@@ -44,10 +46,12 @@ items:
   fullName: System.GuidTypes.CombGuid
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
+  summary: Legacy CombGuid
+  example: []
   syntax:
     content: CombGuid = 0
     return:
@@ -64,10 +68,12 @@ items:
   fullName: System.GuidTypes.SqlServer
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
+  summary: SQL server optimized (Legacy)
+  example: []
   syntax:
     content: SqlServer = 1
     return:
@@ -84,10 +90,12 @@ items:
   fullName: System.GuidTypes.SqlLite
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
+  summary: SQLlite optimized (unix)
+  example: []
   syntax:
     content: SqlLite = 2
     return:
@@ -104,10 +112,12 @@ items:
   fullName: System.GuidTypes.Oracle
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
+  summary: Oracle optimized (unix)
+  example: []
   syntax:
     content: Oracle = 3
     return:
@@ -124,10 +134,12 @@ items:
   fullName: System.GuidTypes.PosGreSQL
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
+  summary: PosGreSQL optimized
+  example: []
   syntax:
     content: PosGreSQL = 4
     return:
@@ -144,10 +156,12 @@ items:
   fullName: System.GuidTypes.Unix
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/GuidExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/GuidExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
+  summary: Unix optimized
+  example: []
   syntax:
     content: Unix = 5
     return:

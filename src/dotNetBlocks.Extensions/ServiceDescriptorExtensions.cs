@@ -10,6 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace dotNetBlocks.Extensions
 {
+    /// <summary>
+    /// Service Description Lazy extensions.
+    /// </summary>
     public static class ServiceDescriptorExtensions
     {
 

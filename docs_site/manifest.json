@@ -56,7 +56,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Business.Shared.AuditProperties",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Business.Shared.AuditProperties.yml\" sourcestartlinenumber=\"1\">Tracks the audit properties for a class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -84,7 +84,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Business.Shared.BusinessActivity",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Business.Shared.BusinessActivity.yml\" sourcestartlinenumber=\"1\">Represents all business activities in the system.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -98,7 +98,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Business.Shared.BusinessEntity",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Business.Shared.BusinessEntity.yml\" sourcestartlinenumber=\"1\">Base class for all business entities in a dotnet blocks system.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -112,7 +112,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Business.Shared.Event<TEntity>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Business.Shared.Event-1.yml\" sourcestartlinenumber=\"1\">operation containing <xref href=\"dotNetBlocks.Business.Shared.BusinessEntity\" data-throw-if-not-resolved=\"false\"></xref> required to execute the business operation.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -126,7 +126,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Business.Shared.Event",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Business.Shared.Event.yml\" sourcestartlinenumber=\"1\">operation contains all the information required to execute a business operation in the framework.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -140,7 +140,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Business.Shared.GlobalKeyedEntity<TId>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Business.Shared.GlobalKeyedEntity-1.yml\" sourcestartlinenumber=\"1\">Keyed entity with GlobalId <xref href=\"System.Guid\" data-throw-if-not-resolved=\"false\"></xref> for a dual key strategy.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -154,7 +154,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Business.Shared.IBusinessLogic",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Business.Shared.IBusinessLogic.yml\" sourcestartlinenumber=\"1\">Shared interface implemented by any class providing business logic functionality using the dotnetblocks architecture.\nThe class is also used for closures and extensions.\n///</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -168,7 +168,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Business.Shared.KeyedEntity<TId>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Business.Shared.KeyedEntity-1.yml\" sourcestartlinenumber=\"1\"><xref href=\"dotNetBlocks.Business.Shared.KeyedEntity\" data-throw-if-not-resolved=\"false\"></xref> implementing an Id of type <code class=\"typeparamref\">TId</code></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -182,7 +182,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Business.Shared.KeyedEntity",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Business.Shared.KeyedEntity.yml\" sourcestartlinenumber=\"1\">class represents a <xref href=\"dotNetBlocks.Business.Shared.BusinessEntity\" data-throw-if-not-resolved=\"false\"></xref> with unique identifier.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -196,7 +196,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Business.Shared.Operation<TEntity>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Business.Shared.Operation-1.yml\" sourcestartlinenumber=\"1\">operation containing <xref href=\"dotNetBlocks.Business.Shared.BusinessEntity\" data-throw-if-not-resolved=\"false\"></xref> required to execute the business operation.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -210,7 +210,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Business.Shared.Operation",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Business.Shared.Operation.yml\" sourcestartlinenumber=\"1\">operation contains all the information required to execute a business operation in the framework.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -224,7 +224,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Business.Shared.Result<TEntity>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Business.Shared.Result-1.yml\" sourcestartlinenumber=\"1\">operation containing <xref href=\"dotNetBlocks.Business.Shared.BusinessEntity\" data-throw-if-not-resolved=\"false\"></xref> required to execute the business operation.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -238,7 +238,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Business.Shared.Result",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Business.Shared.Result.yml\" sourcestartlinenumber=\"1\">operation contains all the information required to execute a business operation in the framework.</p>\n"
     },
     {
       "type": "ApiPage",
@@ -330,7 +330,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.yml\" sourcestartlinenumber=\"1\">Extends dependency injection with Lazy support.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -344,7 +344,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Extensions.DependencyInjection.LazyService<T>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Extensions.DependencyInjection.LazyService-1.yml\" sourcestartlinenumber=\"1\">Extends the <xref href=\"System.Lazy%601\" data-throw-if-not-resolved=\"false\"></xref> class with SI constructor support;</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -358,7 +358,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Extensions.DependencyInjection.ServiceCollectionLazyExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Extensions.DependencyInjection.ServiceCollectionLazyExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for adding services to an <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -386,7 +386,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.Extensions.ServiceDescriptorExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.Extensions.ServiceDescriptorExtensions.yml\" sourcestartlinenumber=\"1\">Service Description Lazy extensions.</p>\n"
     },
     {
       "type": "ApiPage",
@@ -464,7 +464,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.IAuditable",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.IAuditable.yml\" sourcestartlinenumber=\"1\">Interface for _auditProperties objects and entities.</p>\n"
     },
     {
       "type": "ApiPage",
@@ -588,7 +588,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "dotNetBlocks.ServiceBus.Shared.Message",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/dotNetBlocks.ServiceBus.Shared.Message.yml\" sourcestartlinenumber=\"1\">Wrapper for all activities transported on the service bus.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -862,7 +862,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.Collections.EnumBitArray<TEnum>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.Collections.EnumBitArray-1.yml\" sourcestartlinenumber=\"1\">BitArray addressable by enum values.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -876,7 +876,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.Collections.Generic.CollectionExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.Collections.Generic.CollectionExtensions.yml\" sourcestartlinenumber=\"1\">Extends functionality of existing items types in the System.Collections.Generic namespace.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -960,7 +960,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.EnumMetaManager<TEnum>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.EnumMetaManager-1.yml\" sourcestartlinenumber=\"1\">Provides meta data information about Enums classes.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -974,7 +974,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.GuidExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.GuidExtensions.yml\" sourcestartlinenumber=\"1\">Extends Guid\nAdds semi-sequential CombGuid generation methods.\nUse Case: Generating new ComGuid <xref href=\"System.Guid\" data-throw-if-not-resolved=\"false\"></xref> with time component for minimal database impact.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -988,7 +988,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.GuidTypes",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.GuidTypes.yml\" sourcestartlinenumber=\"1\">Types of Comb Guid providers available.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1016,7 +1016,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.IO.StreamBuffer.BackgroundAction",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.IO.StreamBuffer.BackgroundAction.yml\" sourcestartlinenumber=\"1\">Parameter object for different background methods.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1030,7 +1030,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.IO.StreamBuffer.BufferAction",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.IO.StreamBuffer.BufferAction.yml\" sourcestartlinenumber=\"1\">Buffer action signature for Background work of void (Stream).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1044,7 +1044,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.IO.StreamBuffer.BufferActionWithCancel",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.IO.StreamBuffer.BufferActionWithCancel.yml\" sourcestartlinenumber=\"1\">Buffer action signature for Background work that is cancellable void(Stream, Cancellation Token);</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1086,7 +1086,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.IO.StreamBuffer",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.IO.StreamBuffer.yml\" sourcestartlinenumber=\"1\">Buffer class controlling flow of data between reader and writer stream, limiting the amount of data in the buffer.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1254,7 +1254,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.SystemExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.SystemExtensions.yml\" sourcestartlinenumber=\"1\">Extension classes extending functionality of existing types in the System namespace.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1268,7 +1268,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "System.Threading.CancellationTokenExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/System.Threading.CancellationTokenExtensions.yml\" sourcestartlinenumber=\"1\">Adds functionality to cancelation tokens.\nSpecifically helps for scenarios where you have the token but may not have access to the source.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1341,20 +1341,33 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Design/Business.Entities.md",
+      "source_relative_path": "Design/Business/Business.Entities.md",
       "output": {
         ".html": {
-          "relative_path": "Design/Business.Entities.html"
+          "relative_path": "Design/Business/Business.Entities.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Design/Business.Logic.md",
+      "source_relative_path": "Design/Business/Business.Logic.md",
       "output": {
         ".html": {
-          "relative_path": "Design/Business.Logic.html"
+          "relative_path": "Design/Business/Business.Logic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Design/Business/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Design/Business/toc.html"
+        },
+        ".json": {
+          "relative_path": "Design/Business/toc.json"
         }
       },
       "version": ""
@@ -1391,10 +1404,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Design/ServiceBus.md",
+      "source_relative_path": "Design/ServiceBus/ServiceBus.md",
       "output": {
         ".html": {
-          "relative_path": "Design/ServiceBus.html"
+          "relative_path": "Design/ServiceBus/ServiceBus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Design/ServiceBus/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Design/ServiceBus/toc.html"
+        },
+        ".json": {
+          "relative_path": "Design/ServiceBus/toc.json"
         }
       },
       "version": ""
@@ -1474,20 +1500,53 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Libraries/Business.Shared.md",
+      "source_relative_path": "Libraries/Blocks/Business.Shared.md",
       "output": {
         ".html": {
-          "relative_path": "Libraries/Business.Shared.html"
+          "relative_path": "Libraries/Blocks/Business.Shared.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Libraries/Extensions.md",
+      "source_relative_path": "Libraries/Blocks/index.md",
       "output": {
         ".html": {
-          "relative_path": "Libraries/Extensions.html"
+          "relative_path": "Libraries/Blocks/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Libraries/Blocks/ServiceBus.md",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/Blocks/ServiceBus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Libraries/Blocks/ServiceBus.Shared.md",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/Blocks/ServiceBus.Shared.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Libraries/Blocks/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/Blocks/toc.html"
+        },
+        ".json": {
+          "relative_path": "Libraries/Blocks/toc.json"
         }
       },
       "version": ""
@@ -1504,80 +1563,93 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Libraries/ServiceBus.md",
+      "source_relative_path": "Libraries/Solutions/Extensions.md",
       "output": {
         ".html": {
-          "relative_path": "Libraries/ServiceBus.html"
+          "relative_path": "Libraries/Solutions/Extensions.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Libraries/ServiceBus.Shared.md",
+      "source_relative_path": "Libraries/Solutions/index.md",
       "output": {
         ".html": {
-          "relative_path": "Libraries/ServiceBus.Shared.html"
+          "relative_path": "Libraries/Solutions/index.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Libraries/System.Collections.md",
+      "source_relative_path": "Libraries/Solutions/System.Collections.md",
       "output": {
         ".html": {
-          "relative_path": "Libraries/System.Collections.html"
+          "relative_path": "Libraries/Solutions/System.Collections.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Libraries/System.Enums.md",
+      "source_relative_path": "Libraries/Solutions/System.Enums.md",
       "output": {
         ".html": {
-          "relative_path": "Libraries/System.Enums.html"
+          "relative_path": "Libraries/Solutions/System.Enums.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Libraries/System.IO.md",
+      "source_relative_path": "Libraries/Solutions/System.IO.md",
       "output": {
         ".html": {
-          "relative_path": "Libraries/System.IO.html"
+          "relative_path": "Libraries/Solutions/System.IO.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Libraries/System.Linq.md",
+      "source_relative_path": "Libraries/Solutions/System.Linq.md",
       "output": {
         ".html": {
-          "relative_path": "Libraries/System.Linq.html"
+          "relative_path": "Libraries/Solutions/System.Linq.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Libraries/System.md",
+      "source_relative_path": "Libraries/Solutions/System.md",
       "output": {
         ".html": {
-          "relative_path": "Libraries/System.html"
+          "relative_path": "Libraries/Solutions/System.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Libraries/System.Threading.md",
+      "source_relative_path": "Libraries/Solutions/System.Threading.md",
       "output": {
         ".html": {
-          "relative_path": "Libraries/System.Threading.html"
+          "relative_path": "Libraries/Solutions/System.Threading.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Libraries/Solutions/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Libraries/Solutions/toc.html"
+        },
+        ".json": {
+          "relative_path": "Libraries/Solutions/toc.json"
         }
       },
       "version": ""
@@ -1614,6 +1686,45 @@
         },
         ".json": {
           "relative_path": "Process/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "templates/material/public/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "templates/material/public/toc.html"
+        },
+        ".json": {
+          "relative_path": "templates/material/public/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "templates/material/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "templates/material/toc.html"
+        },
+        ".json": {
+          "relative_path": "templates/material/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "templates/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "templates/toc.html"
+        },
+        ".json": {
+          "relative_path": "templates/toc.json"
         }
       },
       "version": ""

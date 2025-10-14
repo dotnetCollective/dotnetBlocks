@@ -17,17 +17,21 @@ items:
   fullName: System.IO.StreamBuffer.BufferActionWithCancel
   type: Delegate
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
+  summary: Buffer action signature for Background work that is cancellable void(Stream, Cancellation Token);
+  example: []
   syntax:
     content: public delegate void StreamBuffer.BufferActionWithCancel(Stream stream, CancellationToken cancellationToken)
     parameters:
     - id: stream
       type: System.IO.Stream
+      description: The Stream&gt;
     - id: cancellationToken
       type: System.Threading.CancellationToken
+      description: The <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref>
     content.vb: Public Delegate Sub StreamBuffer.BufferActionWithCancel(stream As Stream, cancellationToken As CancellationToken)
   extensionMethods:
   - System.IO.StreamBuffer.BufferActionWithCancel.System.Linq.WildCard.Search``1
@@ -49,7 +53,7 @@ items:
   fullName: System.IO.StreamBuffer.BufferActionWithCancel.BufferActionWithCancel(object, nint)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -77,7 +81,7 @@ items:
   fullName: System.IO.StreamBuffer.BufferActionWithCancel.Invoke(System.IO.Stream, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -102,7 +106,7 @@ items:
   fullName: System.IO.StreamBuffer.BufferActionWithCancel.BeginInvoke(System.IO.Stream, System.Threading.CancellationToken, System.AsyncCallback, object)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -136,7 +140,7 @@ items:
   fullName: System.IO.StreamBuffer.BufferActionWithCancel.EndInvoke(System.IAsyncResult)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -148,6 +152,14 @@ items:
     content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
   overload: System.IO.StreamBuffer.BufferActionWithCancel.EndInvoke*
 references:
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
 - uid: System.IO
   commentId: N:System.IO
   isExternal: true
@@ -277,14 +289,33 @@ references:
   name: Stream
   nameWithType: Stream
   fullName: System.IO.Stream
-- uid: System.Threading.CancellationToken
-  commentId: T:System.Threading.CancellationToken
-  parent: System.Threading
+- uid: System.Threading
+  commentId: N:System.Threading
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
-  name: CancellationToken
-  nameWithType: CancellationToken
-  fullName: System.Threading.CancellationToken
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
 - uid: System.Linq.WildCard.Search``1(``0)
   commentId: M:System.Linq.WildCard.Search``1(``0)
   isExternal: true
@@ -369,33 +400,6 @@ references:
   name: SystemExtensions
   nameWithType: SystemExtensions
   fullName: System.SystemExtensions
-- uid: System.Threading
-  commentId: N:System.Threading
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Threading
-  nameWithType: System.Threading
-  fullName: System.Threading
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
 - uid: System.Linq
   commentId: N:System.Linq
   isExternal: true

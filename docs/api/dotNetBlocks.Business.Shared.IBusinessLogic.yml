@@ -13,10 +13,17 @@ items:
   fullName: dotNetBlocks.Business.Shared.IBusinessLogic
   type: Interface
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/IBusinessLogic.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/IBusinessLogic.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: >-
+    Shared interface implemented by any class providing business logic functionality using the dotnetblocks architecture.
+
+    The class is also used for closures and extensions.
+        ///
+  remarks: This interface represents the implementation of an actor or grain in other paradigms.
+  example: []
   syntax:
     content: public interface IBusinessLogic
     content.vb: Public Interface IBusinessLogic

@@ -14,10 +14,12 @@ items:
   fullName: dotNetBlocks.Business.Shared.BusinessEntity
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/BusinessEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Base class for all business entities in a dotnet blocks system.
+  example: []
   syntax:
     content: public class BusinessEntity
     content.vb: Public Class BusinessEntity
@@ -53,7 +55,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.BusinessEntity.BusinessEntity()
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/BusinessEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared

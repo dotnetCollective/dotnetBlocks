@@ -15,13 +15,18 @@ items:
   fullName: dotNetBlocks.Business.Shared.KeyedEntity
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: class represents a <xref href="dotNetBlocks.Business.Shared.BusinessEntity" data-throw-if-not-resolved="false"></xref> with unique identifier.
+  example: []
   syntax:
     content: 'public abstract class KeyedEntity : BusinessEntity'
     content.vb: Public MustInherit Class KeyedEntity Inherits BusinessEntity
+  seealso:
+  - linkId: dotNetBlocks.Business.Shared.BusinessEntity
+    commentId: T:dotNetBlocks.Business.Shared.BusinessEntity
   inheritance:
   - System.Object
   - dotNetBlocks.Business.Shared.BusinessEntity
@@ -55,7 +60,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.KeyedEntity.KeyedEntity()
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -78,18 +83,29 @@ items:
   fullName: dotNetBlocks.Business.Shared.KeyedEntity.IsNew
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Gets a value indicating whether this instance is new.
+  example: []
   syntax:
     content: public abstract bool IsNew { get; }
     parameters: []
     return:
       type: System.Boolean
+      description: <code>true</code> if this instance is new; otherwise, <code>false</code>.
     content.vb: Public MustOverride ReadOnly Property IsNew As Boolean
   overload: dotNetBlocks.Business.Shared.KeyedEntity.IsNew*
 references:
+- uid: dotNetBlocks.Business.Shared.BusinessEntity
+  commentId: T:dotNetBlocks.Business.Shared.BusinessEntity
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessEntity.html
+  name: BusinessEntity
+  nameWithType: BusinessEntity
+  fullName: dotNetBlocks.Business.Shared.BusinessEntity
 - uid: dotNetBlocks.Business.Shared
   commentId: N:dotNetBlocks.Business.Shared
   isExternal: true
@@ -138,14 +154,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: dotNetBlocks.Business.Shared.BusinessEntity
-  commentId: T:dotNetBlocks.Business.Shared.BusinessEntity
-  parent: dotNetBlocks.Business.Shared
-  isExternal: true
-  href: dotNetBlocks.Business.Shared.BusinessEntity.html
-  name: BusinessEntity
-  nameWithType: BusinessEntity
-  fullName: dotNetBlocks.Business.Shared.BusinessEntity
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object

@@ -3,6 +3,7 @@ using dotNetBlocks.Docs.Markdown;
 using Microsoft.AspNetCore.Builder;
 using System;
 using System.Diagnostics.CodeAnalysis;
+using System.Security.Cryptography;
 using YamlDotNet.Serialization;
 
 namespace dotNetBlocks.Docs.Toc;
@@ -25,7 +26,7 @@ public class TocGenerator
     /// </summary>
     /// <remarks>This property provides a default delegate that determines how TOC folders are processed. It
     /// can be used as a fallback when no specific folder decision logic is supplied by the caller.</remarks>
-    public static TocFolderDecision DefaultTocDecision { get; } = (string? folderName, out string? title) => { title = default; return TocActions.Process; };
+    public static TocFolderDecision DefaultTocDecision { get; } = (string? folderName, out string? title) => { title = default; return TocActions.Ignore; }; // Do nothing.
 
     private const string TOC_FILE_NAME = "toc.yml";
     private const string INDEX_FILE_NAME = "index.md";
@@ -33,7 +34,6 @@ public class TocGenerator
 
     private Lazy<tocNodeService> _nodeService = new Lazy<tocNodeService>();
     private tocNodeService NodeService => _nodeService.Value;
-
 
 
     /// <summary>
@@ -44,6 +44,11 @@ public class TocGenerator
     /// logic is used.</param>
     /// <returns> <see cref="TocNode"/> root node and all the nodes in the generated TOC tree.
     /// .</returns>
+    /// <remarks>
+    /// Builds the toc structures as referenced in this docfx doc (https://dotnet.github.io/docfx/docs/table-of-contents.html)
+    /// </remarks>
+    /// 
+
     public async Task<TocNode> BuildTocAsync(string rootFolder, TocFolderDecision? folderDecision = default)
     {
         folderDecision ??= DefaultTocDecision;
@@ -52,7 +57,19 @@ public class TocGenerator
         return await BuildFolderTocAsync(rootFolder, default, folderDecision);
     }
 
-    
+
+    /// <summary>
+    /// Builds Table of Contents for a folder.
+    /// </summary>
+    /// <param name="folderName">Name of the folder.</param>
+    /// <param name="relativeFolderName">Name of the relative folder.</param>
+    /// <param name="folderDecision">The folder decision.</param>
+    /// <returns></returns>
+    /// <exception cref="System.InvalidOperationException"></exception>
+    /// <remarks>
+    /// Documents the files in the folder and every folder.
+    /// Builds the toc for the folder and returns the node as a child to the parent.
+    /// </remarks>
     public async Task<TocNode> BuildFolderTocAsync([NotNull] string? folderName, string? relativeFolderName, TocFolderDecision? folderDecision = default)
     {
         // Set default value if not set.
@@ -62,6 +79,8 @@ public class TocGenerator
 
         // Get a decision for this folder.
         var action = folderDecision(folderName, out var newTitle);
+
+        if (action.HasFlag(TocActions.ReferencedToc) && action.HasFlag(TocActions.NestedToc)) throw new InvalidOperationException($"Action cannot specify referenced and nested TOC flags.");
 
         // Parent should not call this method if the action is ignore.
         if (action == TocActions.Ignore) throw new InvalidOperationException($"{nameof(BuildFolderTocAsync)} should not be called with {nameof(TocActions.Ignore)} action.");
@@ -77,6 +96,7 @@ public class TocGenerator
 
         // Prepare the items list for sub folder processing.
         var tocItems = toc.Items as List<TocNode> ?? new List<TocNode>();
+
         toc.Items = tocItems;
 
         // Get a node for each child subFolderName.
@@ -94,9 +114,14 @@ public class TocGenerator
                     );
         }
 
+        // TODO: Add sorting rules based on natural sort, sort order and special files like index.md and toc.yml.
+
+
         // We have all our file content and our sub-folder content.
         // Write the toc as the parent referring to all the items.
-        if (action == TocActions.WriteToc)
+
+        // The TOC content is all items.
+        if (action.HasFlag(TocActions.WriteToc))
         {
             if (!tocExists || action.HasFlag(TocActions.Overwrite))
             {
@@ -108,6 +133,9 @@ public class TocGenerator
         }
 
         // Prepare the results for the parent - populate the root node info relative to the parent.
+        // Out children are only important to get our index file and populate out display information.
+
+        // 
 
         // Get the href rooted properly.
         if (!string.IsNullOrWhiteSpace(relativeFolderName))
@@ -115,11 +143,18 @@ public class TocGenerator
 
         toc.Name ??= newTitle;
 
+
         // Re-read the index file if it exists.
-        // We could try find the index but may get the wrong one.
         if (indexFileExists)
         {
-            var indexFileNode = await NodeService.GetFileTocNodeAsync(indexFileName);
+            // Find the index file node.
+            var indexFileNode =
+                (from i in toc.Items
+                 where i.Href?.Contains("index.md", StringComparison.OrdinalIgnoreCase) ?? false
+                 select i).FirstOrDefault() ?? // If there is no match, read the file.
+                await NodeService.GetFileTocNodeAsync(indexFileName);
+
+            if (indexFileNode is null) throw new NullReferenceException(nameof(indexFileNode));
 
             // Update the node info.
             toc.Name = newTitle ?? indexFileNode.Name ?? relativeFolderName?.ToUpper(); // Decision file name or fallback on index file;
@@ -128,12 +163,26 @@ public class TocGenerator
 
         // Href is good, now point to toc or index file.
         if (tocExists)
-            toc.Href += TOC_FILE_NAME;
-        else if (indexFileExists)
+        {
+            if (action.HasFlag(TocActions.NestedToc))
+            {
+                // Nested TOC point to sub folder TOC.
+                // href=folder/toc.yml.
+                toc.Href += TOC_FILE_NAME;
+            }
+            else
+            { 
+                // Default is referenced href=folder/
+            }
+        }
+        else // TOC file does not exist, so point to content.
+        if (indexFileExists)
         {
             toc.Href += INDEX_FILE_NAME;
         }
 
+        // Clear out the children before returning this node.
+        toc.Items = null;
 
             // Return this full node to the parent.
             return toc;

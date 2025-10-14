@@ -57,6 +57,7 @@ namespace dotNetBlocks.Docs
             if (updateToc)
             {
                 var tocGenerator = new TocGenerator();
+                const TocActions basicActions = TocActions.Process | TocActions.WriteToc | TocActions.Overwrite;
 
 
                 var rootToc = await tocGenerator.BuildTocAsync(
@@ -64,22 +65,32 @@ namespace dotNetBlocks.Docs
                     ( string? folderName, out string? title) =>
                     {
                         title = null;
-                        var action = TocActions.Process | TocActions.WriteToc | TocActions.Overwrite;
+                        var action = TocActions.Process | TocActions.WriteToc | TocActions.Overwrite | TocActions.ReferencedToc;
 
                         if (folderName!.EndsWith("docs", StringComparison.OrdinalIgnoreCase))
                         {
                             title = "Documentation";
-                            return TocActions.Process;
                         }
-                        if (folderName.EndsWith("api", StringComparison.OrdinalIgnoreCase))
+                        if (folderName.Contains(@"\api", StringComparison.OrdinalIgnoreCase))
                         {
                             title = "API";
-                            return TocActions.Process;
+                            action = TocActions.Process | TocActions.ReferencedToc;
                         }
-                        if (folderName.EndsWith("images", StringComparison.OrdinalIgnoreCase))
-                            return TocActions.Ignore;
-                        if (folderName.EndsWith("templates", StringComparison.OrdinalIgnoreCase))
-                            return TocActions.Ignore;
+                        if (folderName.Contains(@"\images", StringComparison.OrdinalIgnoreCase))
+                            action = TocActions.Ignore;
+
+                        if (folderName.Contains(@"\templates", StringComparison.OrdinalIgnoreCase))
+                            action = TocActions.Ignore;
+                        if (folderName.Contains(@"\libraries\blocks", StringComparison.OrdinalIgnoreCase))
+                            action = basicActions | TocActions.NestedToc;
+                        if (folderName.Contains(@"\libraries\solutions", StringComparison.OrdinalIgnoreCase))
+                            action =  basicActions | TocActions.NestedToc;
+                        if (folderName.EndsWith(@"\Design", StringComparison.OrdinalIgnoreCase))
+                            action = basicActions;
+                        if (folderName.Contains(@"\Design\Business", StringComparison.OrdinalIgnoreCase))
+                            action = basicActions | TocActions.NestedToc;
+                        if (folderName.Contains(@"\Design\ServiceBus", StringComparison.OrdinalIgnoreCase))
+                            action = basicActions | TocActions.NestedToc;
 
 
                         return action;
@@ -113,12 +124,17 @@ namespace dotNetBlocks.Docs
 
             if (generate)
             {
-                // Have to include the options otherwise we get a null exception.
-                await Docfx.Dotnet.DotnetApiCatalog.GenerateManagedReferenceYamlFiles(configFile, new Docfx.Dotnet.DotnetApiOptions()
+                try
                 {
-                    IncludeApi = (symb) => SymbolIncludeState.Include,
+                    // Have to include the options otherwise we get a null exception.
+                    await Docfx.Dotnet.DotnetApiCatalog.GenerateManagedReferenceYamlFiles(configFile, new Docfx.Dotnet.DotnetApiOptions()
+                    {
+                        IncludeApi = (symb) => SymbolIncludeState.Include,
+                    }
+                    );
                 }
-                );
+                catch // Swallow exceptions for code generation.
+                { }
             }
 
             if (build)

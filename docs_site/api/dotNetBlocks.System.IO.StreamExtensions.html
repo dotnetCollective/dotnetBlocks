@@ -89,7 +89,7 @@
 
 
   <h1 id="dotNetBlocks_System_IO_StreamExtensions" data-uid="dotNetBlocks.System.IO.StreamExtensions" class="text-break">
-Class StreamExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class StreamExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -156,10 +156,11 @@ Class StreamExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="dotNetBlocks_System_IO_StreamExtensions_CopyBytes_System_IO_Stream_System_IO_Stream_System_Int64_System_Threading_CancellationToken_" data-uid="dotNetBlocks.System.IO.StreamExtensions.CopyBytes(System.IO.Stream,System.IO.Stream,System.Int64,System.Threading.CancellationToken)">
   CopyBytes(Stream, Stream, long, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies the content of the source source to the target source synchronously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,19 +170,24 @@ Class StreamExtensions  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
-    <dd></dd>
+    <dd><p>The source source.</p>
+</dd>
     <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
-    <dd></dd>
+    <dd><p>The target source.</p>
+</dd>
     <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd></dd>
+    <dd><p>The number of bytes to copy.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token to observe.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The number of bytes copied.</p>
+</dd>
   </dl>
 
 
@@ -198,10 +204,11 @@ Class StreamExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="dotNetBlocks_System_IO_StreamExtensions_CopyBytesAsync_System_IO_Stream_System_IO_Stream_System_Int64_System_Threading_CancellationToken_" data-uid="dotNetBlocks.System.IO.StreamExtensions.CopyBytesAsync(System.IO.Stream,System.IO.Stream,System.Int64,System.Threading.CancellationToken)">
   CopyBytesAsync(Stream, Stream, long, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies the content of the source source to the target source synchronously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -211,19 +218,24 @@ Class StreamExtensions  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
-    <dd></dd>
+    <dd><p>The source source.</p>
+</dd>
     <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
-    <dd></dd>
+    <dd><p>The target source.</p>
+</dd>
     <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd></dd>
+    <dd><p>The number of bytes to copy.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token to observe.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The number of bytes copied.</p>
+</dd>
   </dl>
 
 
@@ -240,10 +252,11 @@ Class StreamExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="dotNetBlocks_System_IO_StreamExtensions_ReadAndCalculateCRC_System_IO_Stream_System_IO_Hashing_Crc32_System_Int64_" data-uid="dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64)">
   ReadAndCalculateCRC(Stream, Crc32, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads the source and calculates the CRC32 hash.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -253,9 +266,11 @@ Class StreamExtensions  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
-    <dd></dd>
+    <dd><p>The source to read from.</p>
+</dd>
     <dt><code>crc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.hashing.crc32">Crc32</a></dt>
-    <dd></dd>
+    <dd><p>The CRC32 instance to calculate the hash.</p>
+</dd>
     <dt><code>byteCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
   </dl>
@@ -275,10 +290,11 @@ Class StreamExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="dotNetBlocks_System_IO_StreamExtensions_ReadAndCalculateCRC_System_IO_Stream_System_IO_Hashing_Crc32_System_Int64_System_Nullable_System_Int32__" data-uid="dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRC(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64,System.Nullable{System.Int32})">
   ReadAndCalculateCRC(Stream, Crc32, long, int?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads the source and calculates the CRC32 hash.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -288,13 +304,16 @@ Class StreamExtensions  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
-    <dd></dd>
+    <dd><p>The source to read from.</p>
+</dd>
     <dt><code>crc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.hashing.crc32">Crc32</a></dt>
-    <dd></dd>
+    <dd><p>The CRC32 instance to calculate the hash.</p>
+</dd>
     <dt><code>byteCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
     <dt><code>bufferSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
-    <dd></dd>
+    <dd><p>The size of the buffer to use for reading. Default is 81920 bytes.</p>
+</dd>
   </dl>
 
 
@@ -312,10 +331,11 @@ Class StreamExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="dotNetBlocks_System_IO_StreamExtensions_ReadAndCalculateCRCAsync_System_IO_Stream_System_IO_Hashing_Crc32_System_Int64_System_Threading_CancellationToken_" data-uid="dotNetBlocks.System.IO.StreamExtensions.ReadAndCalculateCRCAsync(System.IO.Stream,System.IO.Hashing.Crc32,System.Int64,System.Threading.CancellationToken)">
   ReadAndCalculateCRCAsync(Stream, Crc32, long, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads the source and calculates the CRC32 hash.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -325,9 +345,11 @@ Class StreamExtensions  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
-    <dd></dd>
+    <dd><p>The source to read from.</p>
+</dd>
     <dt><code>crc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.hashing.crc32">Crc32</a></dt>
-    <dd></dd>
+    <dd><p>The CRC32 instance to calculate the hash.</p>
+</dd>
     <dt><code>byteCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
     <dt><code>cancellation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
@@ -337,7 +359,8 @@ Class StreamExtensions  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
-    <dd></dd>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
   </dl>
 
 
@@ -354,7 +377,7 @@ Class StreamExtensions  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamExtensions.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamExtensions.cs" class="edit-link">Edit this page</a>
         </div>
 
 

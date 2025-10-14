@@ -1,8 +1,4 @@
 items:
-  - name: Business Entities
-    href: Business.Entities.md
-  - name: Business Logic
-    href: Business.Logic.md
   - name: The Design
     href: index.md
     order: 1
@@ -10,5 +6,5 @@ items:
     href: Operations.md
   - name: References
     href: References.md
-  - name: Service Bus
-    href: ServiceBus.md
+  - href: Business/toc.yml
+  - href: ServiceBus/toc.yml

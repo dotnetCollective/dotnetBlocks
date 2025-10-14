@@ -21,7 +21,7 @@ items:
   fullName: System.Threading.Tasks.TaskExtensions
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs
   assemblies:
   - dotNetBlocks.System.Threading
   namespace: System.Threading.Tasks
@@ -51,23 +51,33 @@ items:
   fullName: System.Threading.Tasks.TaskExtensions.DisposeAfter(System.Threading.Tasks.Task, System.IDisposable, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs
   assemblies:
   - dotNetBlocks.System.Threading
   namespace: System.Threading.Tasks
+  summary: Disposes resources after task completion.
+  example: []
   syntax:
     content: public static Task DisposeAfter(this Task taskusingdispoable, IDisposable disposable, CancellationToken cancelDispose = default)
     parameters:
     - id: taskusingdispoable
       type: System.Threading.Tasks.Task
+      description: The <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref>&gt; using the resource
     - id: disposable
       type: System.IDisposable
+      description: <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref> resource to dispose.
     - id: cancelDispose
       type: System.Threading.CancellationToken
+      description: <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> cancel the dispose process.
     return:
       type: System.Threading.Tasks.Task
+      description: ''
     content.vb: Public Shared Function DisposeAfter(taskusingdispoable As Task, disposable As IDisposable, cancelDispose As CancellationToken = Nothing) As Task
   overload: System.Threading.Tasks.TaskExtensions.DisposeAfter*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
 - uid: System.Threading.Tasks.TaskExtensions.DisposeAfterAsync(System.Threading.Tasks.Task,System.IAsyncDisposable,System.Threading.CancellationToken)
   commentId: M:System.Threading.Tasks.TaskExtensions.DisposeAfterAsync(System.Threading.Tasks.Task,System.IAsyncDisposable,System.Threading.CancellationToken)
   id: DisposeAfterAsync(System.Threading.Tasks.Task,System.IAsyncDisposable,System.Threading.CancellationToken)
@@ -81,23 +91,33 @@ items:
   fullName: System.Threading.Tasks.TaskExtensions.DisposeAfterAsync(System.Threading.Tasks.Task, System.IAsyncDisposable, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs
   assemblies:
   - dotNetBlocks.System.Threading
   namespace: System.Threading.Tasks
+  summary: Disposes resources after task completion.
+  example: []
   syntax:
     content: public static Task DisposeAfterAsync(this Task taskusingdisposable, IAsyncDisposable disposable, CancellationToken cancelDispose = default)
     parameters:
     - id: taskusingdisposable
       type: System.Threading.Tasks.Task
+      description: The <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref>&gt; using the resource
     - id: disposable
       type: System.IAsyncDisposable
+      description: <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref> resource to dispose./&gt;
     - id: cancelDispose
       type: System.Threading.CancellationToken
+      description: <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> cancel the dispose process.
     return:
       type: System.Threading.Tasks.Task
+      description: ''
     content.vb: Public Shared Function DisposeAfterAsync(taskusingdisposable As Task, disposable As IAsyncDisposable, cancelDispose As CancellationToken = Nothing) As Task
   overload: System.Threading.Tasks.TaskExtensions.DisposeAfterAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
 - uid: System.Threading.Tasks.TaskExtensions.WaitAll(System.Threading.Tasks.Task,System.TimeSpan,System.Threading.CancellationToken,System.Threading.Tasks.Task[])
   commentId: M:System.Threading.Tasks.TaskExtensions.WaitAll(System.Threading.Tasks.Task,System.TimeSpan,System.Threading.CancellationToken,System.Threading.Tasks.Task[])
   id: WaitAll(System.Threading.Tasks.Task,System.TimeSpan,System.Threading.CancellationToken,System.Threading.Tasks.Task[])
@@ -111,23 +131,30 @@ items:
   fullName: System.Threading.Tasks.TaskExtensions.WaitAll(System.Threading.Tasks.Task, System.TimeSpan, System.Threading.CancellationToken, params System.Threading.Tasks.Task[])
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs
   assemblies:
   - dotNetBlocks.System.Threading
   namespace: System.Threading.Tasks
+  summary: Waits asynchronously for all tasks to complete
+  example: []
   syntax:
     content: public static Task<bool> WaitAll(this Task task, TimeSpan waitTime, CancellationToken cancellationToken = default, params Task[] tasks)
     parameters:
     - id: task
       type: System.Threading.Tasks.Task
+      description: The task.
     - id: waitTime
       type: System.TimeSpan
+      description: The wait time.
     - id: cancellationToken
       type: System.Threading.CancellationToken
+      description: The cancellation token.
     - id: tasks
       type: System.Threading.Tasks.Task[]
+      description: The tasks.
     return:
       type: System.Threading.Tasks.Task{System.Boolean}
+      description: ''
     content.vb: Public Shared Function WaitAll(task As Task, waitTime As TimeSpan, cancellationToken As CancellationToken = Nothing, ParamArray tasks As Task()) As Task(Of Boolean)
   overload: System.Threading.Tasks.TaskExtensions.WaitAll*
   nameWithType.vb: TaskExtensions.WaitAll(Task, TimeSpan, CancellationToken, ParamArray Task())
@@ -146,21 +173,27 @@ items:
   fullName: System.Threading.Tasks.TaskExtensions.WaitAllAsync(System.Threading.Tasks.Task[], System.TimeSpan, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs
   assemblies:
   - dotNetBlocks.System.Threading
   namespace: System.Threading.Tasks
+  summary: Waits asynchronously for all tasks to complete
+  example: []
   syntax:
     content: public static Task<bool> WaitAllAsync(this Task[] tasks, TimeSpan waitTime, CancellationToken cancellationToken = default)
     parameters:
     - id: tasks
       type: System.Threading.Tasks.Task[]
+      description: The tasks.
     - id: waitTime
       type: System.TimeSpan
+      description: The wait time.
     - id: cancellationToken
       type: System.Threading.CancellationToken
+      description: The cancellation token.
     return:
       type: System.Threading.Tasks.Task{System.Boolean}
+      description: ''
     content.vb: Public Shared Function WaitAllAsync(tasks As Task(), waitTime As TimeSpan, cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
   overload: System.Threading.Tasks.TaskExtensions.WaitAllAsync*
   nameWithType.vb: TaskExtensions.WaitAllAsync(Task(), TimeSpan, CancellationToken)
@@ -179,21 +212,27 @@ items:
   fullName: System.Threading.Tasks.TaskExtensions.WaitAllAsync(System.Collections.Generic.IEnumerable<System.Threading.Tasks.Task>, System.TimeSpan, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs
   assemblies:
   - dotNetBlocks.System.Threading
   namespace: System.Threading.Tasks
+  summary: Waits asynchronously for all tasks to complete
+  example: []
   syntax:
     content: public static Task<bool> WaitAllAsync(this IEnumerable<Task> tasks, TimeSpan waitTime, CancellationToken cancellationToken = default)
     parameters:
     - id: tasks
       type: System.Collections.Generic.IEnumerable{System.Threading.Tasks.Task}
+      description: The tasks.
     - id: waitTime
       type: System.TimeSpan
+      description: The wait time.
     - id: cancellationToken
       type: System.Threading.CancellationToken
+      description: The cancellation token.
     return:
       type: System.Threading.Tasks.Task{System.Boolean}
+      description: ''
     content.vb: Public Shared Function WaitAllAsync(tasks As IEnumerable(Of Task), waitTime As TimeSpan, cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
   overload: System.Threading.Tasks.TaskExtensions.WaitAllAsync*
   nameWithType.vb: TaskExtensions.WaitAllAsync(IEnumerable(Of Task), TimeSpan, CancellationToken)
@@ -212,23 +251,30 @@ items:
   fullName: System.Threading.Tasks.TaskExtensions.WaitAnyAsync(System.Threading.Tasks.Task, System.TimeSpan, System.Threading.CancellationToken, params System.Threading.Tasks.Task[])
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs
   assemblies:
   - dotNetBlocks.System.Threading
   namespace: System.Threading.Tasks
+  summary: Waits asynchronously for any tasks to complete
+  example: []
   syntax:
     content: public static Task<int> WaitAnyAsync(this Task task, TimeSpan waitTime, CancellationToken cancellationToken = default, params Task[] tasks)
     parameters:
     - id: task
       type: System.Threading.Tasks.Task
+      description: The task.
     - id: waitTime
       type: System.TimeSpan
+      description: The wait time.
     - id: cancellationToken
       type: System.Threading.CancellationToken
+      description: The cancellation token.
     - id: tasks
       type: System.Threading.Tasks.Task[]
+      description: The tasks.
     return:
       type: System.Threading.Tasks.Task{System.Int32}
+      description: ''
     content.vb: Public Shared Function WaitAnyAsync(task As Task, waitTime As TimeSpan, cancellationToken As CancellationToken = Nothing, ParamArray tasks As Task()) As Task(Of Integer)
   overload: System.Threading.Tasks.TaskExtensions.WaitAnyAsync*
   nameWithType.vb: TaskExtensions.WaitAnyAsync(Task, TimeSpan, CancellationToken, ParamArray Task())
@@ -247,21 +293,27 @@ items:
   fullName: System.Threading.Tasks.TaskExtensions.WaitAnyAsync(System.Threading.Tasks.Task[], System.TimeSpan, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs
   assemblies:
   - dotNetBlocks.System.Threading
   namespace: System.Threading.Tasks
+  summary: Waits asynchronously for any tasks to complete
+  example: []
   syntax:
     content: public static Task<int> WaitAnyAsync(this Task[] tasks, TimeSpan waitTime, CancellationToken cancellationToken = default)
     parameters:
     - id: tasks
       type: System.Threading.Tasks.Task[]
+      description: The tasks.
     - id: waitTime
       type: System.TimeSpan
+      description: The wait time.
     - id: cancellationToken
       type: System.Threading.CancellationToken
+      description: The cancellation token.
     return:
       type: System.Threading.Tasks.Task{System.Int32}
+      description: ''
     content.vb: Public Shared Function WaitAnyAsync(tasks As Task(), waitTime As TimeSpan, cancellationToken As CancellationToken = Nothing) As Task(Of Integer)
   overload: System.Threading.Tasks.TaskExtensions.WaitAnyAsync*
   nameWithType.vb: TaskExtensions.WaitAnyAsync(Task(), TimeSpan, CancellationToken)
@@ -280,21 +332,27 @@ items:
   fullName: System.Threading.Tasks.TaskExtensions.WaitAnyAsync(System.Collections.Generic.IEnumerable<System.Threading.Tasks.Task>, System.TimeSpan, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs
   assemblies:
   - dotNetBlocks.System.Threading
   namespace: System.Threading.Tasks
+  summary: Waits asynchronously for all tasks to complete
+  example: []
   syntax:
     content: public static Task<int> WaitAnyAsync(this IEnumerable<Task> tasks, TimeSpan waitTime, CancellationToken cancellationToken = default)
     parameters:
     - id: tasks
       type: System.Collections.Generic.IEnumerable{System.Threading.Tasks.Task}
+      description: The tasks.
     - id: waitTime
       type: System.TimeSpan
+      description: The wait time.
     - id: cancellationToken
       type: System.Threading.CancellationToken
+      description: The cancellation token.
     return:
       type: System.Threading.Tasks.Task{System.Int32}
+      description: ''
     content.vb: Public Shared Function WaitAnyAsync(tasks As IEnumerable(Of Task), waitTime As TimeSpan, cancellationToken As CancellationToken = Nothing) As Task(Of Integer)
   overload: System.Threading.Tasks.TaskExtensions.WaitAnyAsync*
   nameWithType.vb: TaskExtensions.WaitAnyAsync(IEnumerable(Of Task), TimeSpan, CancellationToken)
@@ -575,13 +633,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Threading.Tasks.TaskExtensions.DisposeAfter*
-  commentId: Overload:System.Threading.Tasks.TaskExtensions.DisposeAfter
-  isExternal: true
-  href: System.Threading.Tasks.TaskExtensions.html#System_Threading_Tasks_TaskExtensions_DisposeAfter_System_Threading_Tasks_Task_System_IDisposable_System_Threading_CancellationToken_
-  name: DisposeAfter
-  nameWithType: TaskExtensions.DisposeAfter
-  fullName: System.Threading.Tasks.TaskExtensions.DisposeAfter
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
   parent: System.Threading.Tasks
@@ -606,6 +657,20 @@ references:
   name: CancellationToken
   nameWithType: CancellationToken
   fullName: System.Threading.CancellationToken
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Threading.Tasks.TaskExtensions.DisposeAfter*
+  commentId: Overload:System.Threading.Tasks.TaskExtensions.DisposeAfter
+  isExternal: true
+  href: System.Threading.Tasks.TaskExtensions.html#System_Threading_Tasks_TaskExtensions_DisposeAfter_System_Threading_Tasks_Task_System_IDisposable_System_Threading_CancellationToken_
+  name: DisposeAfter
+  nameWithType: TaskExtensions.DisposeAfter
+  fullName: System.Threading.Tasks.TaskExtensions.DisposeAfter
 - uid: System.Threading
   commentId: N:System.Threading
   isExternal: true

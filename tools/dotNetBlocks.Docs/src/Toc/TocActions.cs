@@ -31,5 +31,8 @@ namespace dotNetBlocks.Docs.Toc
         /// Overwrite toc.yaml file if it exists
         /// </summary>
         Overwrite = 0x04,
+        NestedToc = 0x10,
+        ReferencedToc = 0x20,
+
     }
 }

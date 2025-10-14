@@ -45,10 +45,13 @@ items:
   fullName: System.IO.StreamBuffer
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
+  summary: Buffer class controlling flow of data between reader and writer stream, limiting the amount of data in the buffer.
+  remarks: This class uses the <xref href="System.IO.StreamBuffer._pipe" data-throw-if-not-resolved="false"></xref> class as the underlying implementation and wraps helper methods for asynchronous functionality.
+  example: []
   syntax:
     content: 'public class StreamBuffer : IAsyncDisposable, IDisposable, IStreamBuffer'
     content.vb: Public Class StreamBuffer Implements IAsyncDisposable, IDisposable, IStreamBuffer
@@ -86,7 +89,7 @@ items:
   fullName: System.IO.StreamBuffer.DefaultMaxTimeToWaitForTaskComplete
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -107,7 +110,7 @@ items:
   fullName: System.IO.StreamBuffer.CancelAllBackgroundTasksTokenSource
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -128,7 +131,7 @@ items:
   fullName: System.IO.StreamBuffer.CancelBackgroundWriteTokenSource
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -149,7 +152,7 @@ items:
   fullName: System.IO.StreamBuffer.CancelBackgroundReadTokenSource
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -170,7 +173,7 @@ items:
   fullName: System.IO.StreamBuffer.CancelBackgroundAsync(System.TimeSpan?, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -200,18 +203,21 @@ items:
   fullName: System.IO.StreamBuffer.WaitForBackgroundAsync(System.TimeSpan?, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
+  summary: Waits aynchronously for the background tasks to complete.
   example: []
   syntax:
     content: public Task WaitForBackgroundAsync(TimeSpan? waitTime = null, CancellationToken cancellationToken = default)
     parameters:
     - id: waitTime
       type: System.Nullable{System.TimeSpan}
+      description: <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> to wait for completion.
     - id: cancellationToken
       type: System.Threading.CancellationToken
+      description: <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to cancel the wait.
     return:
       type: System.Threading.Tasks.Task
     content.vb: Public Function WaitForBackgroundAsync(waitTime As TimeSpan? = Nothing, cancellationToken As CancellationToken = Nothing) As Task
@@ -230,7 +236,7 @@ items:
   fullName: System.IO.StreamBuffer.StartBackgroundWrite(System.Action<System.IO.Stream, System.Threading.CancellationToken>, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -263,7 +269,7 @@ items:
   fullName: System.IO.StreamBuffer.StartBackgroundWrite(System.Action<System.IO.Stream>, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -296,7 +302,7 @@ items:
   fullName: System.IO.StreamBuffer.StartBackgroundWrite(System.Func<System.IO.Stream, System.Threading.CancellationToken, System.Threading.Tasks.Task>, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -329,10 +335,11 @@ items:
   fullName: System.IO.StreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction, System.Threading.Tasks.TaskCreationOptions?, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
+  summary: Starts the writing process in a background task.
   example: []
   syntax:
     content: public Task StartBackgroundWrite(StreamBuffer.BackgroundAction action, TaskCreationOptions? options = null, CancellationToken cancellationToken = default)
@@ -341,12 +348,22 @@ items:
       type: System.IO.StreamBuffer.BackgroundAction
     - id: options
       type: System.Nullable{System.Threading.Tasks.TaskCreationOptions}
+      description: <xref href="System.Threading.Tasks.TaskCreationOptions" data-throw-if-not-resolved="false"></xref> for finer control of the background task creation.
     - id: cancellationToken
       type: System.Threading.CancellationToken
+      description: <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref>
     return:
       type: System.Threading.Tasks.Task
+      description: <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> proxy to the process and stored in the <xref href="System.IO.StreamBuffer.backgroundWriteTask" data-throw-if-not-resolved="false"></xref>
     content.vb: Public Function StartBackgroundWrite(action As StreamBuffer.BackgroundAction, options As TaskCreationOptions? = Nothing, cancellationToken As CancellationToken = Nothing) As Task
   overload: System.IO.StreamBuffer.StartBackgroundWrite*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Beackground write already started.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Beackground write already started.
   implements:
   - System.IO.IStreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
 - uid: System.IO.StreamBuffer.CancelBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
@@ -361,7 +378,7 @@ items:
   fullName: System.IO.StreamBuffer.CancelBackgroundWriteAsync(System.TimeSpan?, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -391,7 +408,7 @@ items:
   fullName: System.IO.StreamBuffer.WaitForBackgroundWriteAsync(System.TimeSpan?, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -421,7 +438,7 @@ items:
   fullName: System.IO.StreamBuffer.StartBackgroundRead(System.Action<System.IO.Stream, System.Threading.CancellationToken>, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -454,7 +471,7 @@ items:
   fullName: System.IO.StreamBuffer.StartBackgroundRead(System.Action<System.IO.Stream>, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -487,7 +504,7 @@ items:
   fullName: System.IO.StreamBuffer.StartBackgroundRead(System.Func<System.IO.Stream, System.Threading.CancellationToken, System.Threading.Tasks.Task>, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -520,7 +537,7 @@ items:
   fullName: System.IO.StreamBuffer.StartBackgroundRead(System.IO.StreamBuffer.BackgroundAction, System.Threading.Tasks.TaskCreationOptions?, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -552,7 +569,7 @@ items:
   fullName: System.IO.StreamBuffer.CancelBackgroundReadAsync(System.TimeSpan?, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -582,18 +599,21 @@ items:
   fullName: System.IO.StreamBuffer.WaitForBackgroundReadAsync(System.TimeSpan?, System.Threading.CancellationToken)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
+  summary: asynchronously wait for background read to complete.
   example: []
   syntax:
     content: public Task WaitForBackgroundReadAsync(TimeSpan? timeout = null, CancellationToken cancelWait = default)
     parameters:
     - id: timeout
       type: System.Nullable{System.TimeSpan}
+      description: The <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref>&gt; to wait to complete.
     - id: cancelWait
       type: System.Threading.CancellationToken
+      description: <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to cancel the wait.
     return:
       type: System.Threading.Tasks.Task
     content.vb: Public Function WaitForBackgroundReadAsync(timeout As TimeSpan? = Nothing, cancelWait As CancellationToken = Nothing) As Task
@@ -612,19 +632,24 @@ items:
   fullName: System.IO.StreamBuffer.RunAction(System.IO.StreamBuffer.RunActionParameters, params System.Threading.CancellationToken[])
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
+  summary: /// Internal background task factory method.
+  example: []
   syntax:
     content: protected static Task RunAction(StreamBuffer.RunActionParameters actionParameters, params CancellationToken[] cancellationTokens)
     parameters:
     - id: actionParameters
       type: System.IO.StreamBuffer.RunActionParameters
+      description: <xref href="System.IO.StreamBuffer.RunActionParameters" data-throw-if-not-resolved="false"></xref>The Parameters controlling the background task creation.
     - id: cancellationTokens
       type: System.Threading.CancellationToken[]
+      description: The cancellation tokens.
     return:
       type: System.Threading.Tasks.Task
+      description: <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the action running in the background.
     content.vb: Protected Shared Function RunAction(actionParameters As StreamBuffer.RunActionParameters, ParamArray cancellationTokens As CancellationToken()) As Task
   overload: System.IO.StreamBuffer.RunAction*
   nameWithType.vb: StreamBuffer.RunAction(StreamBuffer.RunActionParameters, ParamArray CancellationToken())
@@ -642,10 +667,12 @@ items:
   fullName: System.IO.StreamBuffer.StreamBuffer(System.IO.Pipelines.PipeOptions)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
+  summary: Initializes a new instance of the <xref href="System.IO.StreamBuffer" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public StreamBuffer(PipeOptions pipeOptions)
     parameters:
@@ -668,7 +695,7 @@ items:
   fullName: System.IO.StreamBuffer.StreamBuffer(int)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -694,7 +721,7 @@ items:
   fullName: System.IO.StreamBuffer.StreamBuffer(System.IO.StreamBufferOptions)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -720,7 +747,7 @@ items:
   fullName: System.IO.StreamBuffer.DisposeAsync()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -746,14 +773,17 @@ items:
   fullName: System.IO.StreamBuffer.DisposeAsyncCore()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
+  summary: Over-ridable implemention for async dispose by implementors.
+  example: []
   syntax:
     content: protected virtual ValueTask DisposeAsyncCore()
     return:
       type: System.Threading.Tasks.ValueTask
+      description: ''
     content.vb: Protected Overridable Function DisposeAsyncCore() As ValueTask
   overload: System.IO.StreamBuffer.DisposeAsyncCore*
 - uid: System.IO.StreamBuffer.Dispose(System.Boolean)
@@ -768,7 +798,7 @@ items:
   fullName: System.IO.StreamBuffer.Dispose(bool)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -794,7 +824,7 @@ items:
   fullName: System.IO.StreamBuffer.Dispose()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -818,7 +848,7 @@ items:
   fullName: System.IO.StreamBuffer.backgroundWriteTask
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -844,7 +874,7 @@ items:
   fullName: System.IO.StreamBuffer.IsBackgroundWriteTaskAssigned
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -870,7 +900,7 @@ items:
   fullName: System.IO.StreamBuffer.backgroundReadTask
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -896,7 +926,7 @@ items:
   fullName: System.IO.StreamBuffer.IsBackgroundReadTaskAssigned
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -922,7 +952,7 @@ items:
   fullName: System.IO.StreamBuffer.ReadStream
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -948,7 +978,7 @@ items:
   fullName: System.IO.StreamBuffer.WriteStream
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -963,6 +993,9 @@ items:
   implements:
   - System.IO.IStreamBuffer.WriteStream
 references:
+- uid: System.IO.StreamBuffer._pipe
+  commentId: F:System.IO.StreamBuffer._pipe
+  isExternal: true
 - uid: System.IO
   commentId: N:System.IO
   isExternal: true
@@ -2165,6 +2198,27 @@ references:
   - name: " "
   - name: TResult
   - name: )
+- uid: System.Threading.Tasks.TaskCreationOptions
+  commentId: T:System.Threading.Tasks.TaskCreationOptions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcreationoptions
+  name: TaskCreationOptions
+  nameWithType: TaskCreationOptions
+  fullName: System.Threading.Tasks.TaskCreationOptions
+- uid: System.IO.StreamBuffer.backgroundWriteTask
+  commentId: P:System.IO.StreamBuffer.backgroundWriteTask
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_backgroundWriteTask
+  name: backgroundWriteTask
+  nameWithType: StreamBuffer.backgroundWriteTask
+  fullName: System.IO.StreamBuffer.backgroundWriteTask
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
 - uid: System.IO.IStreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
   commentId: M:System.IO.IStreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)
   parent: System.IO.IStreamBuffer
@@ -2749,13 +2803,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
   - name: )
-- uid: System.IO.StreamBuffer.RunAction*
-  commentId: Overload:System.IO.StreamBuffer.RunAction
-  isExternal: true
-  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_RunAction_System_IO_StreamBuffer_RunActionParameters_System_Threading_CancellationToken___
-  name: RunAction
-  nameWithType: StreamBuffer.RunAction
-  fullName: System.IO.StreamBuffer.RunAction
 - uid: System.IO.StreamBuffer.RunActionParameters
   commentId: T:System.IO.StreamBuffer.RunActionParameters
   parent: System.IO
@@ -2784,6 +2831,13 @@ references:
     name: RunActionParameters
     isExternal: true
     href: System.IO.StreamBuffer.RunActionParameters.html
+- uid: System.IO.StreamBuffer.RunAction*
+  commentId: Overload:System.IO.StreamBuffer.RunAction
+  isExternal: true
+  href: System.IO.StreamBuffer.html#System_IO_StreamBuffer_RunAction_System_IO_StreamBuffer_RunActionParameters_System_Threading_CancellationToken___
+  name: RunAction
+  nameWithType: StreamBuffer.RunAction
+  fullName: System.IO.StreamBuffer.RunAction
 - uid: System.Threading.CancellationToken[]
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
@@ -2807,6 +2861,13 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
   - name: (
   - name: )
+- uid: System.IO.StreamBuffer
+  commentId: T:System.IO.StreamBuffer
+  isExternal: true
+  href: System.IO.StreamBuffer.html
+  name: StreamBuffer
+  nameWithType: StreamBuffer
+  fullName: System.IO.StreamBuffer
 - uid: System.IO.StreamBuffer.#ctor*
   commentId: Overload:System.IO.StreamBuffer.#ctor
   isExternal: true

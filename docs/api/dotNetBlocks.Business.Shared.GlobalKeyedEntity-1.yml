@@ -16,15 +16,20 @@ items:
   fullName: dotNetBlocks.Business.Shared.GlobalKeyedEntity<TId>
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/GlobalKeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/GlobalKeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Keyed entity with GlobalId <xref href="System.Guid" data-throw-if-not-resolved="false"></xref> for a dual key strategy.
+  example: []
   syntax:
     content: 'public class GlobalKeyedEntity<TId> : KeyedEntity<TId> where TId : struct, IEquatable<TId>'
     typeParameters:
     - id: TId
     content.vb: Public Class GlobalKeyedEntity(Of TId As {Structure, IEquatable(Of TId)}) Inherits KeyedEntity(Of TId)
+  seealso:
+  - linkId: dotNetBlocks.Business.Shared.KeyedEntity`1
+    commentId: T:dotNetBlocks.Business.Shared.KeyedEntity`1
   inheritance:
   - System.Object
   - dotNetBlocks.Business.Shared.BusinessEntity
@@ -66,7 +71,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.GlobalKeyedEntity<TId>.GlobalKeyedEntity(System.Guid, TId)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/GlobalKeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/GlobalKeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -94,7 +99,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.GlobalKeyedEntity<TId>.NewGlobalId()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/GlobalKeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/GlobalKeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -118,20 +123,59 @@ items:
   fullName: dotNetBlocks.Business.Shared.GlobalKeyedEntity<TId>.GlobalID
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/GlobalKeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/GlobalKeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: GlobalId Guid Identifier for this business object.
+  example: []
   syntax:
     content: public virtual Guid GlobalID { get; set; }
     parameters: []
     return:
       type: System.Guid
+      description: The global identifier.
     content.vb: Public Overridable Property GlobalID As Guid
   overload: dotNetBlocks.Business.Shared.GlobalKeyedEntity`1.GlobalID*
   nameWithType.vb: GlobalKeyedEntity(Of TId).GlobalID
   fullName.vb: dotNetBlocks.Business.Shared.GlobalKeyedEntity(Of TId).GlobalID
 references:
+- uid: dotNetBlocks.Business.Shared.KeyedEntity`1
+  commentId: T:dotNetBlocks.Business.Shared.KeyedEntity`1
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.KeyedEntity-1.html
+  name: KeyedEntity<TId>
+  nameWithType: KeyedEntity<TId>
+  fullName: dotNetBlocks.Business.Shared.KeyedEntity<TId>
+  nameWithType.vb: KeyedEntity(Of TId)
+  fullName.vb: dotNetBlocks.Business.Shared.KeyedEntity(Of TId)
+  name.vb: KeyedEntity(Of TId)
+  spec.csharp:
+  - uid: dotNetBlocks.Business.Shared.KeyedEntity`1
+    name: KeyedEntity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.KeyedEntity-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.Business.Shared.KeyedEntity`1
+    name: KeyedEntity
+    isExternal: true
+    href: dotNetBlocks.Business.Shared.KeyedEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
 - uid: dotNetBlocks.Business.Shared
   commentId: N:dotNetBlocks.Business.Shared
   isExternal: true
@@ -607,34 +651,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: dotNetBlocks.Business.Shared.KeyedEntity`1
-  commentId: T:dotNetBlocks.Business.Shared.KeyedEntity`1
-  isExternal: true
-  href: dotNetBlocks.Business.Shared.KeyedEntity-1.html
-  name: KeyedEntity<TId>
-  nameWithType: KeyedEntity<TId>
-  fullName: dotNetBlocks.Business.Shared.KeyedEntity<TId>
-  nameWithType.vb: KeyedEntity(Of TId)
-  fullName.vb: dotNetBlocks.Business.Shared.KeyedEntity(Of TId)
-  name.vb: KeyedEntity(Of TId)
-  spec.csharp:
-  - uid: dotNetBlocks.Business.Shared.KeyedEntity`1
-    name: KeyedEntity
-    isExternal: true
-    href: dotNetBlocks.Business.Shared.KeyedEntity-1.html
-  - name: <
-  - name: TId
-  - name: '>'
-  spec.vb:
-  - uid: dotNetBlocks.Business.Shared.KeyedEntity`1
-    name: KeyedEntity
-    isExternal: true
-    href: dotNetBlocks.Business.Shared.KeyedEntity-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TId
-  - name: )
 - uid: dotNetBlocks.Business.Shared.KeyedEntity`1.Id
   commentId: P:dotNetBlocks.Business.Shared.KeyedEntity`1.Id
   isExternal: true
@@ -783,14 +799,6 @@ references:
   nameWithType.vb: GlobalKeyedEntity(Of TId).New
   fullName.vb: dotNetBlocks.Business.Shared.GlobalKeyedEntity(Of TId).New
   name.vb: New
-- uid: System.Guid
-  commentId: T:System.Guid
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.guid
-  name: Guid
-  nameWithType: Guid
-  fullName: System.Guid
 - uid: '{TId}'
   commentId: '!:TId'
   definition: TId

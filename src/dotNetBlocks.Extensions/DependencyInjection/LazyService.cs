@@ -31,6 +31,10 @@ namespace dotNetBlocks.Extensions.DependencyInjection
         { 
             // capture scope lifetime for delayed construction of lazy value.
             _scope = scope; }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LazyService{T}"/> class. with a specific <see cref="IServiceScopeFactory"/>
+        /// </summary>
+        /// <param name="scopeFactory">The scope factory.</param>
         public LazyService(IServiceScopeFactory scopeFactory) : this(scopeFactory.CreateScope())
         { }
 

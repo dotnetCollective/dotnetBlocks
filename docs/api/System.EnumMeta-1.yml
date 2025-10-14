@@ -18,7 +18,7 @@ items:
   fullName: System.EnumMeta<TEnum>
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMeta.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMeta.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -60,7 +60,7 @@ items:
   fullName: System.EnumMeta<TEnum>.Value
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMeta.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMeta.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -83,7 +83,7 @@ items:
   fullName: System.EnumMeta<TEnum>.Name
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMeta.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMeta.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -106,7 +106,7 @@ items:
   fullName: System.EnumMeta<TEnum>.Description
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMeta.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMeta.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -129,7 +129,7 @@ items:
   fullName: System.EnumMeta<TEnum>.FieldInfo
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMeta.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMeta.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -152,7 +152,7 @@ items:
   fullName: System.EnumMeta<TEnum>.EnumMeta()
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMeta.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMeta.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class StreamBuffer | DotNetBlocks ">
       
-      
+      <meta name="description" content="Buffer class controlling flow of data between reader and writer stream, limiting the amount of data in the buffer.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="System_IO_StreamBuffer" data-uid="System.IO.StreamBuffer" class="text-break">
-Class StreamBuffer  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+Class StreamBuffer  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
   <dl><dt>Assembly</dt><dd>dotNetBlocks.System.IO.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Buffer class controlling flow of data between reader and writer stream, limiting the amount of data in the buffer.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -179,6 +180,9 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h2 id="System_IO_StreamBuffer_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class uses the <span class="xref">System.IO.StreamBuffer._pipe</span> class as the underlying implementation and wraps helper methods for asynchronous functionality.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -189,10 +193,11 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer__ctor_System_IO_Pipelines_PipeOptions_" data-uid="System.IO.StreamBuffer.#ctor(System.IO.Pipelines.PipeOptions)">
   StreamBuffer(PipeOptions)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="System.IO.StreamBuffer.html">StreamBuffer</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -220,7 +225,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer__ctor_System_IO_StreamBufferOptions_" data-uid="System.IO.StreamBuffer.#ctor(System.IO.StreamBufferOptions)">
   StreamBuffer(StreamBufferOptions)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -251,7 +256,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer__ctor_System_Int32_" data-uid="System.IO.StreamBuffer.#ctor(System.Int32)">
   StreamBuffer(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -285,7 +290,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_CancelAllBackgroundTasksTokenSource" data-uid="System.IO.StreamBuffer.CancelAllBackgroundTasksTokenSource">
   CancelAllBackgroundTasksTokenSource
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -315,7 +320,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_CancelBackgroundReadTokenSource" data-uid="System.IO.StreamBuffer.CancelBackgroundReadTokenSource">
   CancelBackgroundReadTokenSource
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -345,7 +350,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_CancelBackgroundWriteTokenSource" data-uid="System.IO.StreamBuffer.CancelBackgroundWriteTokenSource">
   CancelBackgroundWriteTokenSource
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -375,7 +380,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_DefaultMaxTimeToWaitForTaskComplete" data-uid="System.IO.StreamBuffer.DefaultMaxTimeToWaitForTaskComplete">
   DefaultMaxTimeToWaitForTaskComplete
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -410,7 +415,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_IsBackgroundReadTaskAssigned" data-uid="System.IO.StreamBuffer.IsBackgroundReadTaskAssigned">
   IsBackgroundReadTaskAssigned
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -441,7 +446,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_IsBackgroundWriteTaskAssigned" data-uid="System.IO.StreamBuffer.IsBackgroundWriteTaskAssigned">
   IsBackgroundWriteTaskAssigned
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -472,7 +477,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_ReadStream" data-uid="System.IO.StreamBuffer.ReadStream">
   ReadStream
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -503,7 +508,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_WriteStream" data-uid="System.IO.StreamBuffer.WriteStream">
   WriteStream
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -534,7 +539,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_backgroundReadTask" data-uid="System.IO.StreamBuffer.backgroundReadTask">
   backgroundReadTask
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -565,7 +570,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_backgroundWriteTask" data-uid="System.IO.StreamBuffer.backgroundWriteTask">
   backgroundWriteTask
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -600,7 +605,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_CancelBackgroundAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.CancelBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">
   CancelBackgroundAsync(TimeSpan?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -638,7 +643,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_CancelBackgroundReadAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.CancelBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">
   CancelBackgroundReadAsync(TimeSpan?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -676,7 +681,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_CancelBackgroundWriteAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.CancelBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">
   CancelBackgroundWriteAsync(TimeSpan?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -714,7 +719,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_Dispose" data-uid="System.IO.StreamBuffer.Dispose">
   Dispose()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -740,7 +745,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_Dispose_System_Boolean_" data-uid="System.IO.StreamBuffer.Dispose(System.Boolean)">
   Dispose(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -771,7 +776,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_DisposeAsync" data-uid="System.IO.StreamBuffer.DisposeAsync">
   DisposeAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -802,10 +807,11 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_DisposeAsyncCore" data-uid="System.IO.StreamBuffer.DisposeAsyncCore">
   DisposeAsyncCore()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Over-ridable implemention for async dispose by implementors.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -833,10 +839,11 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_RunAction_System_IO_StreamBuffer_RunActionParameters_System_Threading_CancellationToken___" data-uid="System.IO.StreamBuffer.RunAction(System.IO.StreamBuffer.RunActionParameters,System.Threading.CancellationToken[])">
   RunAction(RunActionParameters, params CancellationToken[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>/// Internal background task factory method.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -846,15 +853,18 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>actionParameters</code> <a class="xref" href="System.IO.StreamBuffer.html">StreamBuffer</a>.<a class="xref" href="System.IO.StreamBuffer.RunActionParameters.html">RunActionParameters</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="System.IO.StreamBuffer.RunActionParameters.html">StreamBuffer.RunActionParameters</a>The Parameters controlling the background task creation.</p>
+</dd>
     <dt><code>cancellationTokens</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>[]</dt>
-    <dd></dd>
+    <dd><p>The cancellation tokens.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing the action running in the background.</p>
+</dd>
   </dl>
 
 
@@ -871,7 +881,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_StartBackgroundRead_System_Action_System_IO_Stream_System_Threading_CancellationToken__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)">
   StartBackgroundRead(Action&lt;Stream, CancellationToken&gt;, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -909,7 +919,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_StartBackgroundRead_System_Action_System_IO_Stream__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.StartBackgroundRead(System.Action{System.IO.Stream},System.Threading.CancellationToken)">
   StartBackgroundRead(Action&lt;Stream&gt;, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -947,7 +957,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_StartBackgroundRead_System_Func_System_IO_Stream_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.StartBackgroundRead(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)">
   StartBackgroundRead(Func&lt;Stream, CancellationToken, Task&gt;, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -985,7 +995,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_StartBackgroundRead_System_IO_StreamBuffer_BackgroundAction_System_Nullable_System_Threading_Tasks_TaskCreationOptions__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.StartBackgroundRead(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)">
   StartBackgroundRead(BackgroundAction, TaskCreationOptions?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1025,7 +1035,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_StartBackgroundWrite_System_Action_System_IO_Stream_System_Threading_CancellationToken__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream,System.Threading.CancellationToken},System.Threading.CancellationToken)">
   StartBackgroundWrite(Action&lt;Stream, CancellationToken&gt;, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1063,7 +1073,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_StartBackgroundWrite_System_Action_System_IO_Stream__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.StartBackgroundWrite(System.Action{System.IO.Stream},System.Threading.CancellationToken)">
   StartBackgroundWrite(Action&lt;Stream&gt;, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1101,7 +1111,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_StartBackgroundWrite_System_Func_System_IO_Stream_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.StartBackgroundWrite(System.Func{System.IO.Stream,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)">
   StartBackgroundWrite(Func&lt;Stream, CancellationToken, Task&gt;, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1139,10 +1149,11 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_StartBackgroundWrite_System_IO_StreamBuffer_BackgroundAction_System_Nullable_System_Threading_Tasks_TaskCreationOptions__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.StartBackgroundWrite(System.IO.StreamBuffer.BackgroundAction,System.Nullable{System.Threading.Tasks.TaskCreationOptions},System.Threading.CancellationToken)">
   StartBackgroundWrite(BackgroundAction, TaskCreationOptions?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Starts the writing process in a background task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1154,15 +1165,18 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
     <dt><code>action</code> <a class="xref" href="System.IO.StreamBuffer.html">StreamBuffer</a>.<a class="xref" href="System.IO.StreamBuffer.BackgroundAction.html">BackgroundAction</a></dt>
     <dd></dd>
     <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcreationoptions">TaskCreationOptions</a>?</dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcreationoptions">TaskCreationOptions</a> for finer control of the background task creation.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> proxy to the process and stored in the <a class="xref" href="System.IO.StreamBuffer.html#System_IO_StreamBuffer_backgroundWriteTask">backgroundWriteTask</a></p>
+</dd>
   </dl>
 
 
@@ -1172,6 +1186,15 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Beackground write already started.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Beackground write already started.</p>
+</dd>
+  </dl>
 
 
 
@@ -1179,10 +1202,11 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_WaitForBackgroundAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.WaitForBackgroundAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">
   WaitForBackgroundAsync(TimeSpan?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Waits aynchronously for the background tasks to complete.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1192,9 +1216,11 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>waitTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>?</dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a> to wait for completion.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to cancel the wait.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -1217,10 +1243,11 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_WaitForBackgroundReadAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.WaitForBackgroundReadAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">
   WaitForBackgroundReadAsync(TimeSpan?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>asynchronously wait for background read to complete.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1230,9 +1257,11 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>timeout</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>?</dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt; to wait to complete.</p>
+</dd>
     <dt><code>cancelWait</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to cancel the wait.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -1255,7 +1284,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="System_IO_StreamBuffer_WaitForBackgroundWriteAsync_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_" data-uid="System.IO.StreamBuffer.WaitForBackgroundWriteAsync(System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">
   WaitForBackgroundWriteAsync(TimeSpan?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1293,7 +1322,7 @@ Class StreamBuffer  <a class="header-action link-secondary" title="View source" 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs" class="edit-link">Edit this page</a>
         </div>
 
 

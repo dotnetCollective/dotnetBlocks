@@ -16,7 +16,7 @@ items:
   fullName: System.EnumMetaAttribute
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMetaAttribute.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMetaAttribute.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -105,10 +105,12 @@ items:
   fullName: System.EnumMetaAttribute.Name
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMetaAttribute.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMetaAttribute.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
+  summary: Display Name for the enum value..
+  example: []
   syntax:
     content: public string? Name
     return:
@@ -126,10 +128,12 @@ items:
   fullName: System.EnumMetaAttribute.Description
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMetaAttribute.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMetaAttribute.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
+  summary: Description of the enum.
+  example: []
   syntax:
     content: public string? Description
     return:
@@ -147,7 +151,7 @@ items:
   fullName: System.EnumMetaAttribute.EnumMetaAttribute()
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMetaAttribute.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMetaAttribute.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System

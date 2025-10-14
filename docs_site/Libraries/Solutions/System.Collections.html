@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>DotNetBlocks.System.Collections | DotNetBlocks </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="DotNetBlocks.System.Collections | DotNetBlocks ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/dotnetCollective/dotnetBlocks/blob/features/general-create/Docs/Libraries/Solutions/System.Collections.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../Images/DotNetBlocks.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="dotnetblockssystemcollections">DotNetBlocks.System.Collections</h1>
+<!---
+Title: DotNetBlocks.System.Collections
+
+ShowInSidebar: true
+Excerpt: Extends the System.Collections namespace with new functionality
+Level: 0
+Order: 0
+--->
+
+<h3 id="overview">Overview</h3>
+<p>extends functionality for collections in the System.Collections and the System.Collections.Generic namespace.</p>
+<h3 id="getting-started">Getting started</h3>
+<p><a href="https://www.nuget.org/packages/dotNetBlocks.System.Collections"> NuGet : dotnetBlocks.System.Collections</a></p>
+<p><a href="/">Licensing and other information</a></p>
+<h3 id="functionality">Functionality</h3>
+<h1 id="systemcollectionsgenericextensions">System.Collections.Generic.Extensions.</h1>
+<p>ThrowIfItemIsDefault - throws an exception if an item in the enumeration is default or null. This ensure the collection only has non-null and non-default values.
+IgnoreDefaultValues - filters out default or null values when the enumeration is being executed ensures no null or non-default values are returned without interupting the enumeration.</p>
+<p>MustHaveOneOrMore - throws an exception if the enumeration or queryable does not have at least one item in the enumeration. It more peformant then Any() and good for ensuring there are results.</p>
+<h1 id="problem-solved">Problem solved</h1>
+<h1 id="-examples"># Examples</h1>
+<ol>
+<li>streaming a file as an MVC http response</li>
+</ol>
+<pre><code class="lang-c#">
+ // Using memory stream - this is the in memory problem
+
+        var blobClient = container.GetBlobClient(blobPath);
+        var resultStream = new MemoryStream();
+
+            await blobClient.DownloadToAsync(resultStream);
+            // Reset the stream.
+            resultStream.position = 0;
+
+            // Return the stream.
+        return new FileStreamResult(stream, &quot;application/pdf&quot;)
+ 
+</code></pre>
+<pre><code class="lang-c#">
+ // Using buffer stream - eliminates memory issue
+
+        var blobClient = container.GetBlobClient(blobPath);
+        var resultStream = new StreamBuffer();
+
+            await blobClient.DownloadToAsync(resultStream.WriteStream);
+
+            // Return the stream.
+        return new FileStreamResult(resultStream.ReadStream, &quot;application/pdf&quot;)
+ 
+</code></pre>
+<p>This example is very basic and does not show other advantages including built in alternative threading models etc.</p>
+<ul>
+<li>Stream Extensions - New functions to copy between streams and to calculate CRC values for a stream.</li>
+</ul>
+<h1 id="stream-copy-extensions">Stream Copy extensions</h1>
+<h1 id="problem-solved-1">Problem solved</h1>
+<p>Existing methods on the streams to copy from one stream to another expect to copy the entire stream and block until the process is complete. For streams like the StreamBuffer implementation that block until there is capacity, the applications can hang.</p>
+<p>These functions let you copy a subset of the stream from one stream to another and not the entire stream.</p>
+<p>When you are testing copy functionality and working with streams where the may be hidden data issues, CRC functions can detect issues and ensure there are no errors in the process.</p>
+<h2 id="examples">Examples</h2>
+<ol start="2">
+<li>copying parts of a a stream.</li>
+</ol>
+<pre><code class="lang-cs">
+using(var sourceStream = new FileStream(&quot;sourcefile&quot;, FileMode.Open))
+{
+// Copy 100 bytes from the source stream to the destination stream.
+using(var destinationStream = new FileStream(&quot;destinationfile&quot;, FileMode.Create))
+{
+sourceStream.CopyBytes(destinationStream, 100);
+}
+
+</code></pre>
+<p>}</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/features/general-create/Docs/Libraries/Solutions/System.Collections.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright © Brian Rogers - DotNetBlocks.<br>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

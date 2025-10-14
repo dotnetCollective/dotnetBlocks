@@ -16,10 +16,13 @@ items:
   fullName: dotNetBlocks.Business.Shared.Result
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/Result.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/Result.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: operation contains all the information required to execute a business operation in the framework.
+  remarks: Operations are similar to a command patter, but are not active. They contain data only and are not active except for self-validation.
+  example: []
   syntax:
     content: 'public class Result : Event'
     content.vb: Public Class Result Inherits Event
@@ -62,7 +65,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.Result.Result()
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/Result.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/Result.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -85,7 +88,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.Result.Result(dotNetBlocks.Business.Shared.Event)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/Result.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/Result.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -111,7 +114,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.Result.Result(dotNetBlocks.Business.Shared.BusinessActivity)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/Result.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/Result.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared

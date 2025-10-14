@@ -17,15 +17,21 @@ items:
   fullName: dotNetBlocks.Business.Shared.KeyedEntity<TId>
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: <xref href="dotNetBlocks.Business.Shared.KeyedEntity" data-throw-if-not-resolved="false"></xref> implementing an Id of type <code class="typeparamref">TId</code>
+  example: []
   syntax:
     content: 'public class KeyedEntity<TId> : KeyedEntity where TId : struct, IEquatable<TId>'
     typeParameters:
     - id: TId
+      description: The type of the identifier.
     content.vb: Public Class KeyedEntity(Of TId As {Structure, IEquatable(Of TId)}) Inherits KeyedEntity
+  seealso:
+  - linkId: dotNetBlocks.Business.Shared.BusinessEntity
+    commentId: T:dotNetBlocks.Business.Shared.BusinessEntity
   inheritance:
   - System.Object
   - dotNetBlocks.Business.Shared.BusinessEntity
@@ -63,7 +69,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.KeyedEntity<TId>.KeyedEntity(TId)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -89,7 +95,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.KeyedEntity<TId>.Id
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -114,10 +120,11 @@ items:
   fullName: dotNetBlocks.Business.Shared.KeyedEntity<TId>.IsNew
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  remarks: Keyed entities are new when their identifier has not been set.
   example: []
   syntax:
     content: public override bool IsNew { get; }
@@ -141,20 +148,40 @@ items:
   fullName: dotNetBlocks.Business.Shared.KeyedEntity<TId>.NewId
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/KeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Creates new id.
+  remarks: Override this implementation for custom id generation strategies.
+  example: []
   syntax:
     content: public virtual TId NewId { get; }
     parameters: []
     return:
       type: '{TId}'
+      description: a new identifier.
     content.vb: Public Overridable ReadOnly Property NewId As TId
   overload: dotNetBlocks.Business.Shared.KeyedEntity`1.NewId*
   nameWithType.vb: KeyedEntity(Of TId).NewId
   fullName.vb: dotNetBlocks.Business.Shared.KeyedEntity(Of TId).NewId
 references:
+- uid: dotNetBlocks.Business.Shared.BusinessEntity
+  commentId: T:dotNetBlocks.Business.Shared.BusinessEntity
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessEntity.html
+  name: BusinessEntity
+  nameWithType: BusinessEntity
+  fullName: dotNetBlocks.Business.Shared.BusinessEntity
+- uid: dotNetBlocks.Business.Shared.KeyedEntity
+  commentId: T:dotNetBlocks.Business.Shared.KeyedEntity
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.KeyedEntity.html
+  name: KeyedEntity
+  nameWithType: KeyedEntity
+  fullName: dotNetBlocks.Business.Shared.KeyedEntity
 - uid: dotNetBlocks.Business.Shared
   commentId: N:dotNetBlocks.Business.Shared
   isExternal: true
@@ -203,22 +230,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: dotNetBlocks.Business.Shared.BusinessEntity
-  commentId: T:dotNetBlocks.Business.Shared.BusinessEntity
-  parent: dotNetBlocks.Business.Shared
-  isExternal: true
-  href: dotNetBlocks.Business.Shared.BusinessEntity.html
-  name: BusinessEntity
-  nameWithType: BusinessEntity
-  fullName: dotNetBlocks.Business.Shared.BusinessEntity
-- uid: dotNetBlocks.Business.Shared.KeyedEntity
-  commentId: T:dotNetBlocks.Business.Shared.KeyedEntity
-  parent: dotNetBlocks.Business.Shared
-  isExternal: true
-  href: dotNetBlocks.Business.Shared.KeyedEntity.html
-  name: KeyedEntity
-  nameWithType: KeyedEntity
-  fullName: dotNetBlocks.Business.Shared.KeyedEntity
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object

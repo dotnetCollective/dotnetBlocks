@@ -17,10 +17,12 @@ items:
   fullName: System.Collections.Generic.CollectionExtensions
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/CollectionExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/CollectionExtensions.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections.Generic
+  summary: Extends functionality of existing items types in the System.Collections.Generic namespace.
+  example: []
   syntax:
     content: public static class CollectionExtensions
     content.vb: Public Module CollectionExtensions
@@ -47,23 +49,36 @@ items:
   fullName: System.Collections.Generic.CollectionExtensions.ThrowIfItemIsDefaultValue<TItem>(System.Collections.Generic.IEnumerable<TItem>, System.Func<System.Exception>?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/CollectionExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/CollectionExtensions.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections.Generic
+  summary: Checks the enumerator for default items and throws an exception if any are found.
+  example: []
   syntax:
     content: public static IEnumerable<TItem> ThrowIfItemIsDefaultValue<TItem>(this IEnumerable<TItem> items, Func<Exception>? exceptionFactory = null)
     parameters:
     - id: items
       type: System.Collections.Generic.IEnumerable{{TItem}}
+      description: The items.
     - id: exceptionFactory
       type: System.Func{System.Exception}
+      description: Creates execption to throw when default item detected.
     typeParameters:
     - id: TItem
+      description: The type of the item.
     return:
       type: System.Collections.Generic.IEnumerable{{TItem}}
+      description: <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> that doesn't allow default values.
     content.vb: Public Shared Function ThrowIfItemIsDefaultValue(Of TItem)(items As IEnumerable(Of TItem), exceptionFactory As Func(Of Exception) = Nothing) As IEnumerable(Of TItem)
   overload: System.Collections.Generic.CollectionExtensions.ThrowIfItemIsDefaultValue*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: default(TItem) detetected
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: default(TItem) detetected
   nameWithType.vb: CollectionExtensions.ThrowIfItemIsDefaultValue(Of TItem)(IEnumerable(Of TItem), Func(Of Exception))
   fullName.vb: System.Collections.Generic.CollectionExtensions.ThrowIfItemIsDefaultValue(Of TItem)(System.Collections.Generic.IEnumerable(Of TItem), System.Func(Of System.Exception))
   name.vb: ThrowIfItemIsDefaultValue(Of TItem)(IEnumerable(Of TItem), Func(Of Exception))
@@ -80,19 +95,24 @@ items:
   fullName: System.Collections.Generic.CollectionExtensions.IgnoreDefaultValues<TItem>(System.Collections.Generic.IEnumerable<TItem>)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/CollectionExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/CollectionExtensions.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections.Generic
+  summary: Ignores default items in the enumeration.
+  example: []
   syntax:
     content: public static IEnumerable<TItem> IgnoreDefaultValues<TItem>(this IEnumerable<TItem> items)
     parameters:
     - id: items
       type: System.Collections.Generic.IEnumerable{{TItem}}
+      description: The items.
     typeParameters:
     - id: TItem
+      description: Type of items in the enumeration.
     return:
       type: System.Collections.Generic.IEnumerable{{TItem}}
+      description: IEnumerable&lt;TItem&gt; with default items filtered out.
     content.vb: Public Shared Function IgnoreDefaultValues(Of TItem)(items As IEnumerable(Of TItem)) As IEnumerable(Of TItem)
   overload: System.Collections.Generic.CollectionExtensions.IgnoreDefaultValues*
   nameWithType.vb: CollectionExtensions.IgnoreDefaultValues(Of TItem)(IEnumerable(Of TItem))
@@ -111,23 +131,32 @@ items:
   fullName: System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore<TItem>(System.Linq.IQueryable<TItem>, System.Func<System.Exception>?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/CollectionExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/CollectionExtensions.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections.Generic
+  summary: Checks that the <xref href="System.Linq.IQueryable%601" data-throw-if-not-resolved="false"></xref> has one or more items; otherwise throws a custom exception.
+  example: []
   syntax:
     content: public static IEnumerable<TItem> MustHaveOneOrMore<TItem>(this IQueryable<TItem> queryable, Func<Exception>? exceptionFactory = null)
     parameters:
     - id: queryable
       type: System.Linq.IQueryable{{TItem}}
+      description: The queryable.
     - id: exceptionFactory
       type: System.Func{System.Exception}
+      description: The exception factory.
     typeParameters:
     - id: TItem
+      description: ''
     return:
       type: System.Collections.Generic.IEnumerable{{TItem}}
+      description: ''
     content.vb: Public Shared Function MustHaveOneOrMore(Of TItem)(queryable As IQueryable(Of TItem), exceptionFactory As Func(Of Exception) = Nothing) As IEnumerable(Of TItem)
   overload: System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore*
+  seealso:
+  - linkId: System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Exception})
+    commentId: M:System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Exception})
   nameWithType.vb: CollectionExtensions.MustHaveOneOrMore(Of TItem)(IQueryable(Of TItem), Func(Of Exception))
   fullName.vb: System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore(Of TItem)(System.Linq.IQueryable(Of TItem), System.Func(Of System.Exception))
   name.vb: MustHaveOneOrMore(Of TItem)(IQueryable(Of TItem), Func(Of Exception))
@@ -144,21 +173,31 @@ items:
   fullName: System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore<TItem>(System.Collections.Generic.IEnumerable<TItem>, System.Func<System.Exception>?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/CollectionExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/CollectionExtensions.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections.Generic
+  summary: Throws a custom exception if the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> has no items."/&gt; otherwise returns the items.
+  remarks: >-
+    Useful to ensure that a items has at least one item before proceeding. without materializing the enumeration. Cheaper than the Linq Any() method.
+
+    Manages the enumerator directly for efficiency and to avoid multiple enumeration of the items.
+  example: []
   syntax:
     content: public static IEnumerable<TItem> MustHaveOneOrMore<TItem>(this IEnumerable<TItem> items, Func<Exception>? exceptionFactory = null)
     parameters:
     - id: items
       type: System.Collections.Generic.IEnumerable{{TItem}}
+      description: The items.
     - id: exceptionFactory
       type: System.Func{System.Exception}
+      description: called to create the exception thrown if there are no items in the enumerator.
     typeParameters:
     - id: TItem
+      description: The type of the item.
     return:
       type: System.Collections.Generic.IEnumerable{{TItem}}
+      description: IEnumerable&lt;TItem&gt; of one or more items
     content.vb: Public Shared Function MustHaveOneOrMore(Of TItem)(items As IEnumerable(Of TItem), exceptionFactory As Func(Of Exception) = Nothing) As IEnumerable(Of TItem)
   overload: System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore*
   nameWithType.vb: CollectionExtensions.MustHaveOneOrMore(Of TItem)(IEnumerable(Of TItem), Func(Of Exception))
@@ -439,6 +478,41 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
 - uid: System.Collections.Generic.CollectionExtensions.ThrowIfItemIsDefaultValue*
   commentId: Overload:System.Collections.Generic.CollectionExtensions.ThrowIfItemIsDefaultValue
   isExternal: true
@@ -510,34 +584,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.exception
   - name: )
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: System.Func`1
   commentId: T:System.Func`1
   isExternal: true
@@ -573,6 +619,108 @@ references:
   name: IgnoreDefaultValues
   nameWithType: CollectionExtensions.IgnoreDefaultValues
   fullName: System.Collections.Generic.CollectionExtensions.IgnoreDefaultValues
+- uid: System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Exception})
+  commentId: M:System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Exception})
+  isExternal: true
+  href: System.Collections.Generic.CollectionExtensions.html#System_Collections_Generic_CollectionExtensions_MustHaveOneOrMore__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Exception__
+  name: MustHaveOneOrMore<TItem>(IEnumerable<TItem>, Func<Exception>)
+  nameWithType: CollectionExtensions.MustHaveOneOrMore<TItem>(IEnumerable<TItem>, Func<Exception>)
+  fullName: System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore<TItem>(System.Collections.Generic.IEnumerable<TItem>, System.Func<System.Exception>)
+  nameWithType.vb: CollectionExtensions.MustHaveOneOrMore(Of TItem)(IEnumerable(Of TItem), Func(Of Exception))
+  fullName.vb: System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore(Of TItem)(System.Collections.Generic.IEnumerable(Of TItem), System.Func(Of System.Exception))
+  name.vb: MustHaveOneOrMore(Of TItem)(IEnumerable(Of TItem), Func(Of Exception))
+  spec.csharp:
+  - uid: System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Exception})
+    name: MustHaveOneOrMore
+    isExternal: true
+    href: System.Collections.Generic.CollectionExtensions.html#System_Collections_Generic_CollectionExtensions_MustHaveOneOrMore__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Exception__
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Exception})
+    name: MustHaveOneOrMore
+    isExternal: true
+    href: System.Collections.Generic.CollectionExtensions.html#System_Collections_Generic_CollectionExtensions_MustHaveOneOrMore__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Exception__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  - name: )
+- uid: System.Linq.IQueryable`1
+  commentId: T:System.Linq.IQueryable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore*
   commentId: Overload:System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore
   isExternal: true
@@ -608,34 +756,6 @@ references:
   - name: Of
   - name: " "
   - name: TItem
-  - name: )
-- uid: System.Linq.IQueryable`1
-  commentId: T:System.Linq.IQueryable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
-  name: IQueryable<T>
-  nameWithType: IQueryable<T>
-  fullName: System.Linq.IQueryable<T>
-  nameWithType.vb: IQueryable(Of T)
-  fullName.vb: System.Linq.IQueryable(Of T)
-  name.vb: IQueryable(Of T)
-  spec.csharp:
-  - uid: System.Linq.IQueryable`1
-    name: IQueryable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Linq.IQueryable`1
-    name: IQueryable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
   - name: )
 - uid: System.Linq
   commentId: N:System.Linq

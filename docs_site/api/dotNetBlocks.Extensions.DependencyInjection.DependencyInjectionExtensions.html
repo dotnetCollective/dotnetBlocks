@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DependencyInjectionExtensions | DotNetBlocks ">
       
-      
+      <meta name="description" content="Extends dependency injection with Lazy support.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="dotNetBlocks_Extensions_DependencyInjection_DependencyInjectionExtensions" data-uid="dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions" class="text-break">
-Class DependencyInjectionExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class DependencyInjectionExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class DependencyInjectionExtensions  <a class="header-action link-secondary" tit
   <dl><dt>Assembly</dt><dd>dotNetBlocks.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Extends dependency injection with Lazy support.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +157,11 @@ Class DependencyInjectionExtensions  <a class="header-action link-secondary" tit
 
   <h3 id="dotNetBlocks_Extensions_DependencyInjection_DependencyInjectionExtensions_AddLazyServiceSupport_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_DependencyInjection_ServiceLifetime_" data-uid="dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AddLazyServiceSupport(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceLifetime)">
   AddLazyServiceSupport(IServiceCollection, ServiceLifetime)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds support for lazy types implementing using <a class="xref" href="dotNetBlocks.Extensions.DependencyInjection.LazyService-1.html">LazyService&lt;T&gt;</a> approximation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,9 +171,11 @@ Class DependencyInjectionExtensions  <a class="header-action link-secondary" tit
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> service collection being extended.</p>
+</dd>
     <dt><code>lifetime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime">ServiceLifetime</a></dt>
-    <dd></dd>
+    <dd><p>The default lifetime for a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.lazy-1">Lazy&lt;T&gt;</a> class.</p>
+</dd>
   </dl>
 
 
@@ -181,6 +185,9 @@ Class DependencyInjectionExtensions  <a class="header-action link-secondary" tit
 
 
 
+  <h4 class="section" id="dotNetBlocks_Extensions_DependencyInjection_DependencyInjectionExtensions_AddLazyServiceSupport_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_DependencyInjection_ServiceLifetime__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is not a true <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.lazy-1">Lazy&lt;T&gt;</a> class implementation but uses a descendant service class to provide identical functionality <a class="xref" href="dotNetBlocks.Extensions.DependencyInjection.LazyService-1.html">LazyService&lt;T&gt;</a></p>
+</div>
 
 
 
@@ -189,10 +196,11 @@ Class DependencyInjectionExtensions  <a class="header-action link-secondary" tit
 
   <h3 id="dotNetBlocks_Extensions_DependencyInjection_DependencyInjectionExtensions_AsLazy_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Nullable_Microsoft_Extensions_DependencyInjection_ServiceLifetime__" data-uid="dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazy(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime})">
   AsLazy(IServiceCollection, ServiceLifetime?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>/// Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.lazy-1">Lazy&lt;T&gt;</a> definition to lookup the last registration and add a lazy class to.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -202,9 +210,11 @@ Class DependencyInjectionExtensions  <a class="header-action link-secondary" tit
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>containing the registration to add a lazy functionality for.</p>
+</dd>
     <dt><code>serviceLifetime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime">ServiceLifetime</a>?</dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime">ServiceLifetime</a> of class.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -219,7 +229,16 @@ Class DependencyInjectionExtensions  <a class="header-action link-secondary" tit
 
 
 
+  <h4 class="section" id="dotNetBlocks_Extensions_DependencyInjection_DependencyInjectionExtensions_AsLazy_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Nullable_Microsoft_Extensions_DependencyInjection_ServiceLifetime___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Looks up the last class and adds a lazy registration.</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>service collection is null.</p>
+</dd>
+  </dl>
 
 
 
@@ -227,10 +246,11 @@ Class DependencyInjectionExtensions  <a class="header-action link-secondary" tit
 
   <h3 id="dotNetBlocks_Extensions_DependencyInjection_DependencyInjectionExtensions_AsLazyAdvanced_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Nullable_Microsoft_Extensions_DependencyInjection_ServiceLifetime__System_Object_System_Object_" data-uid="dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime},System.Object,System.Object)">
   AsLazyAdvanced(IServiceCollection, ServiceLifetime?, object?, object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.lazy-1">Lazy&lt;T&gt;</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a> for the descriptor provided.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -240,19 +260,24 @@ Class DependencyInjectionExtensions  <a class="header-action link-secondary" tit
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>containing the registration to add a lazy functionality for.</p>
+</dd>
     <dt><code>serviceLifetime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime">ServiceLifetime</a>?</dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime">ServiceLifetime</a>&gt; for the lazy class. Uses the source lifetime if none provided.</p>
+</dd>
     <dt><code>valueInstance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd><p>Instance value to use in the lazy class instead of resolving the value.</p>
+</dd>
     <dt><code>lazyInstance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd><p>The lazy instance to register.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
-    <dd></dd>
+    <dd><p>New <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a> defining a lazy version of the source descriptor.</p>
+</dd>
   </dl>
 
 
@@ -262,6 +287,12 @@ Class DependencyInjectionExtensions  <a class="header-action link-secondary" tit
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p lazyservicetype.fullname="">instance object is not  - lazyInstance</p>
+</dd>
+  </dl>
 
 
 
@@ -269,7 +300,7 @@ Class DependencyInjectionExtensions  <a class="header-action link-secondary" tit
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs" class="edit-link">Edit this page</a>
         </div>
 
 

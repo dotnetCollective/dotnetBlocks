@@ -1,16 +1,14 @@
-- name: Documentation
-  href: index.md
-  topicHref: index.md
-  auto: true
-- name: Libraries
-  href: Libraries/
-  auto: true
-- name: Design
-  href: Design/
-  auto: true
-- name: Process
-  href: Process/
-  auto: true
-- name: API
-  href: api/
-  auto: true
+items:
+  - name: Get started
+    href: Get.started.md
+  - name: About .NetBlocks
+    href: index.md
+    order: 0
+  - name: API
+    href: api/
+  - name: The Design
+    href: Design/
+    order: 1
+  - name: Libraries
+    href: Libraries/
+  - href: Process/

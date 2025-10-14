@@ -17,15 +17,18 @@ items:
   fullName: System.IO.StreamBuffer.BufferAction
   type: Delegate
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
+  summary: Buffer action signature for Background work of void (Stream).
+  example: []
   syntax:
     content: public delegate void StreamBuffer.BufferAction(Stream stream)
     parameters:
     - id: stream
       type: System.IO.Stream
+      description: The <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref>&gt; to process
     content.vb: Public Delegate Sub StreamBuffer.BufferAction(stream As Stream)
   extensionMethods:
   - System.IO.StreamBuffer.BufferAction.System.Linq.WildCard.Search``1
@@ -47,7 +50,7 @@ items:
   fullName: System.IO.StreamBuffer.BufferAction.BufferAction(object, nint)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -75,7 +78,7 @@ items:
   fullName: System.IO.StreamBuffer.BufferAction.Invoke(System.IO.Stream)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -98,7 +101,7 @@ items:
   fullName: System.IO.StreamBuffer.BufferAction.BeginInvoke(System.IO.Stream, System.AsyncCallback, object)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -130,7 +133,7 @@ items:
   fullName: System.IO.StreamBuffer.BufferAction.EndInvoke(System.IAsyncResult)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -142,6 +145,14 @@ items:
     content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
   overload: System.IO.StreamBuffer.BufferAction.EndInvoke*
 references:
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
 - uid: System.IO
   commentId: N:System.IO
   isExternal: true
@@ -263,14 +274,6 @@ references:
     isExternal: true
     href: System.IO.StreamBuffer.BufferAction.html
   - name: )
-- uid: System.IO.Stream
-  commentId: T:System.IO.Stream
-  parent: System.IO
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.io.stream
-  name: Stream
-  nameWithType: Stream
-  fullName: System.IO.Stream
 - uid: System.Linq.WildCard.Search``1(``0)
   commentId: M:System.Linq.WildCard.Search``1(``0)
   isExternal: true

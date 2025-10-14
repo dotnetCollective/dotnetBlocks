@@ -21,14 +21,18 @@ items:
   fullName: System.EnumMetaManager<TEnum>
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
+  summary: Provides meta data information about Enums classes.
+  remarks: Relies on generic closure to maintain internal information on each enum built on demand.
+  example: []
   syntax:
     content: 'public static class EnumMetaManager<TEnum> where TEnum : struct, Enum'
     typeParameters:
     - id: TEnum
+      description: The type of the enum.
     content.vb: Public Module EnumMetaManager(Of TEnum As {Structure, [Enum]})
   inheritance:
   - System.Object
@@ -55,7 +59,7 @@ items:
   fullName: System.EnumMetaManager<TEnum>.GetMeta(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -82,7 +86,7 @@ items:
   fullName: System.EnumMetaManager<TEnum>.GetMeta()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -106,7 +110,7 @@ items:
   fullName: System.EnumMetaManager<TEnum>.GetName(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -133,7 +137,7 @@ items:
   fullName: System.EnumMetaManager<TEnum>.GetDescription(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -160,7 +164,7 @@ items:
   fullName: System.EnumMetaManager<TEnum>.MetaData
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -185,7 +189,7 @@ items:
   fullName: System.EnumMetaManager<TEnum>.Length
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -210,7 +214,7 @@ items:
   fullName: System.EnumMetaManager<TEnum>.Max
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -235,7 +239,7 @@ items:
   fullName: System.EnumMetaManager<TEnum>.Min
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumMetaManager.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System

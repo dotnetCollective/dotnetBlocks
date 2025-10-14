@@ -15,14 +15,17 @@ items:
   fullName: dotNetBlocks.Business.Shared.Event<TEntity>
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/Event.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/Event.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: operation containing <xref href="dotNetBlocks.Business.Shared.BusinessEntity" data-throw-if-not-resolved="false"></xref> required to execute the business operation.
+  example: []
   syntax:
     content: 'public class Event<TEntity> : Event where TEntity : BusinessEntity, new()'
     typeParameters:
     - id: TEntity
+      description: The type of the entity.
     content.vb: Public Class [Event](Of TEntity As {BusinessEntity, New}) Inherits Event
   inheritance:
   - System.Object
@@ -64,7 +67,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.Event<TEntity>.Event(TEntity?, dotNetBlocks.Business.Shared.Event)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/Event.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/Event.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -92,20 +95,31 @@ items:
   fullName: dotNetBlocks.Business.Shared.Event<TEntity>.Entity
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/Event.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/Event.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Gets or sets the entity used in the operation.
+  example: []
   syntax:
     content: public TEntity? Entity { get; set; }
     parameters: []
     return:
       type: '{TEntity}'
+      description: The entity to use in the operation.
     content.vb: Public Property Entity As TEntity
   overload: dotNetBlocks.Business.Shared.Event`1.Entity*
   nameWithType.vb: Event(Of TEntity).Entity
   fullName.vb: dotNetBlocks.Business.Shared.Event(Of TEntity).Entity
 references:
+- uid: dotNetBlocks.Business.Shared.BusinessEntity
+  commentId: T:dotNetBlocks.Business.Shared.BusinessEntity
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessEntity.html
+  name: BusinessEntity
+  nameWithType: BusinessEntity
+  fullName: dotNetBlocks.Business.Shared.BusinessEntity
 - uid: dotNetBlocks.Business.Shared
   commentId: N:dotNetBlocks.Business.Shared
   isExternal: true

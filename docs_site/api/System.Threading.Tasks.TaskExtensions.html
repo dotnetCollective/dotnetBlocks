@@ -89,7 +89,7 @@
 
 
   <h1 id="System_Threading_Tasks_TaskExtensions" data-uid="System.Threading.Tasks.TaskExtensions" class="text-break">
-Class TaskExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class TaskExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -156,10 +156,11 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_Threading_Tasks_TaskExtensions_DisposeAfter_System_Threading_Tasks_Task_System_IDisposable_System_Threading_CancellationToken_" data-uid="System.Threading.Tasks.TaskExtensions.DisposeAfter(System.Threading.Tasks.Task,System.IDisposable,System.Threading.CancellationToken)">
   DisposeAfter(Task, IDisposable, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Disposes resources after task completion.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,11 +170,14 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>taskusingdispoable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt; using the resource</p>
+</dd>
     <dt><code>disposable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a> resource to dispose.</p>
+</dd>
     <dt><code>cancelDispose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> cancel the dispose process.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -189,6 +193,11 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -196,10 +205,11 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_Threading_Tasks_TaskExtensions_DisposeAfterAsync_System_Threading_Tasks_Task_System_IAsyncDisposable_System_Threading_CancellationToken_" data-uid="System.Threading.Tasks.TaskExtensions.DisposeAfterAsync(System.Threading.Tasks.Task,System.IAsyncDisposable,System.Threading.CancellationToken)">
   DisposeAfterAsync(Task, IAsyncDisposable, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Disposes resources after task completion.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -209,11 +219,14 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>taskusingdisposable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt; using the resource</p>
+</dd>
     <dt><code>disposable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a> resource to dispose./&gt;</p>
+</dd>
     <dt><code>cancelDispose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> cancel the dispose process.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -229,6 +242,11 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -236,10 +254,11 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_Threading_Tasks_TaskExtensions_WaitAll_System_Threading_Tasks_Task_System_TimeSpan_System_Threading_CancellationToken_System_Threading_Tasks_Task___" data-uid="System.Threading.Tasks.TaskExtensions.WaitAll(System.Threading.Tasks.Task,System.TimeSpan,System.Threading.CancellationToken,System.Threading.Tasks.Task[])">
   WaitAll(Task, TimeSpan, CancellationToken, params Task[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Waits asynchronously for all tasks to complete</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -249,13 +268,17 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>task</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p>The task.</p>
+</dd>
     <dt><code>waitTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
-    <dd></dd>
+    <dd><p>The wait time.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token.</p>
+</dd>
     <dt><code>tasks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>[]</dt>
-    <dd></dd>
+    <dd><p>The tasks.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -278,10 +301,11 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_Threading_Tasks_TaskExtensions_WaitAllAsync_System_Collections_Generic_IEnumerable_System_Threading_Tasks_Task__System_TimeSpan_System_Threading_CancellationToken_" data-uid="System.Threading.Tasks.TaskExtensions.WaitAllAsync(System.Collections.Generic.IEnumerable{System.Threading.Tasks.Task},System.TimeSpan,System.Threading.CancellationToken)">
   WaitAllAsync(IEnumerable&lt;Task&gt;, TimeSpan, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Waits asynchronously for all tasks to complete</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -291,11 +315,14 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tasks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The tasks.</p>
+</dd>
     <dt><code>waitTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
-    <dd></dd>
+    <dd><p>The wait time.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -318,10 +345,11 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_Threading_Tasks_TaskExtensions_WaitAllAsync_System_Threading_Tasks_Task___System_TimeSpan_System_Threading_CancellationToken_" data-uid="System.Threading.Tasks.TaskExtensions.WaitAllAsync(System.Threading.Tasks.Task[],System.TimeSpan,System.Threading.CancellationToken)">
   WaitAllAsync(Task[], TimeSpan, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Waits asynchronously for all tasks to complete</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -331,11 +359,14 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tasks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>[]</dt>
-    <dd></dd>
+    <dd><p>The tasks.</p>
+</dd>
     <dt><code>waitTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
-    <dd></dd>
+    <dd><p>The wait time.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -358,10 +389,11 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_Threading_Tasks_TaskExtensions_WaitAnyAsync_System_Collections_Generic_IEnumerable_System_Threading_Tasks_Task__System_TimeSpan_System_Threading_CancellationToken_" data-uid="System.Threading.Tasks.TaskExtensions.WaitAnyAsync(System.Collections.Generic.IEnumerable{System.Threading.Tasks.Task},System.TimeSpan,System.Threading.CancellationToken)">
   WaitAnyAsync(IEnumerable&lt;Task&gt;, TimeSpan, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Waits asynchronously for all tasks to complete</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -371,11 +403,14 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tasks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The tasks.</p>
+</dd>
     <dt><code>waitTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
-    <dd></dd>
+    <dd><p>The wait time.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -398,10 +433,11 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_Threading_Tasks_TaskExtensions_WaitAnyAsync_System_Threading_Tasks_Task_System_TimeSpan_System_Threading_CancellationToken_System_Threading_Tasks_Task___" data-uid="System.Threading.Tasks.TaskExtensions.WaitAnyAsync(System.Threading.Tasks.Task,System.TimeSpan,System.Threading.CancellationToken,System.Threading.Tasks.Task[])">
   WaitAnyAsync(Task, TimeSpan, CancellationToken, params Task[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Waits asynchronously for any tasks to complete</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -411,13 +447,17 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>task</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p>The task.</p>
+</dd>
     <dt><code>waitTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
-    <dd></dd>
+    <dd><p>The wait time.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token.</p>
+</dd>
     <dt><code>tasks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>[]</dt>
-    <dd></dd>
+    <dd><p>The tasks.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -440,10 +480,11 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
 
   <h3 id="System_Threading_Tasks_TaskExtensions_WaitAnyAsync_System_Threading_Tasks_Task___System_TimeSpan_System_Threading_CancellationToken_" data-uid="System.Threading.Tasks.TaskExtensions.WaitAnyAsync(System.Threading.Tasks.Task[],System.TimeSpan,System.Threading.CancellationToken)">
   WaitAnyAsync(Task[], TimeSpan, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Waits asynchronously for any tasks to complete</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -453,11 +494,14 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tasks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>[]</dt>
-    <dd></dd>
+    <dd><p>The tasks.</p>
+</dd>
     <dt><code>waitTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
-    <dd></dd>
+    <dd><p>The wait time.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -480,7 +524,7 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/TaskExtensions.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/TaskExtensions.cs" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -18,7 +18,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity<TId>
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditableGlobalKeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/AuditableGlobalKeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -71,7 +71,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity<TId>.AuditableGlobalKeyedEntity(System.Guid, dotNetBlocks.IAuditable?)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditableGlobalKeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/AuditableGlobalKeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -99,16 +99,18 @@ items:
   fullName: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity<TId>.CreatedAt
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditableGlobalKeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/AuditableGlobalKeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Date time created;
   example: []
   syntax:
     content: public DateTimeOffset? CreatedAt { get; set; }
     parameters: []
     return:
       type: System.Nullable{System.DateTimeOffset}
+      description: time created
     content.vb: Public Property CreatedAt As DateTimeOffset?
   overload: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity`1.CreatedAt*
   implements:
@@ -127,16 +129,18 @@ items:
   fullName: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity<TId>.CreatedBy
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditableGlobalKeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/AuditableGlobalKeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: creator
   example: []
   syntax:
     content: public string? CreatedBy { get; set; }
     parameters: []
     return:
       type: System.String
+      description: Creator.
     content.vb: Public Property CreatedBy As String
   overload: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity`1.CreatedBy*
   implements:
@@ -155,16 +159,18 @@ items:
   fullName: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity<TId>.UpdatedAt
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditableGlobalKeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/AuditableGlobalKeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: date time updated.
   example: []
   syntax:
     content: public DateTimeOffset? UpdatedAt { get; set; }
     parameters: []
     return:
       type: System.Nullable{System.DateTimeOffset}
+      description: Date time of the last update.
     content.vb: Public Property UpdatedAt As DateTimeOffset?
   overload: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity`1.UpdatedAt*
   implements:
@@ -183,16 +189,18 @@ items:
   fullName: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity<TId>.UpdatedBy
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditableGlobalKeyedEntity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/AuditableGlobalKeyedEntity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Gets or sets the updated by.
   example: []
   syntax:
     content: public string? UpdatedBy { get; set; }
     parameters: []
     return:
       type: System.String
+      description: Update actor.
     content.vb: Public Property UpdatedBy As String
   overload: dotNetBlocks.Business.Shared.AuditableGlobalKeyedEntity`1.UpdatedBy*
   implements:

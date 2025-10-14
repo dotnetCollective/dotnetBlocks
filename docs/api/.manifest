@@ -63,8 +63,6 @@
   "dotNetBlocks.Business.Shared.Result`1.Entity": "dotNetBlocks.Business.Shared.Result-1.yml",
   "dotNetBlocks.Extensions": "dotNetBlocks.Extensions.yml",
   "dotNetBlocks.Extensions.DependencyInjection": "dotNetBlocks.Extensions.DependencyInjection.yml",
-  "dotNetBlocks.Extensions.DependencyInjection.DependencyInjection": "dotNetBlocks.Extensions.DependencyInjection.DependencyInjection.yml",
-  "dotNetBlocks.Extensions.DependencyInjection.DependencyInjection.#ctor": "dotNetBlocks.Extensions.DependencyInjection.DependencyInjection.yml",
   "dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions": "dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.yml",
   "dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AddLazyServiceSupport(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceLifetime)": "dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.yml",
   "dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazy(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime})": "dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.yml",

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CollectionExtensions | DotNetBlocks ">
       
-      
+      <meta name="description" content="Extends functionality of existing items types in the System.Collections.Generic namespace.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="System_Collections_Generic_CollectionExtensions" data-uid="System.Collections.Generic.CollectionExtensions" class="text-break">
-Class CollectionExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/CollectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class CollectionExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/CollectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class CollectionExtensions  <a class="header-action link-secondary" title="View 
   <dl><dt>Assembly</dt><dd>dotNetBlocks.System.Collections.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Extends functionality of existing items types in the System.Collections.Generic namespace.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +157,11 @@ Class CollectionExtensions  <a class="header-action link-secondary" title="View 
 
   <h3 id="System_Collections_Generic_CollectionExtensions_IgnoreDefaultValues__1_System_Collections_Generic_IEnumerable___0__" data-uid="System.Collections.Generic.CollectionExtensions.IgnoreDefaultValues``1(System.Collections.Generic.IEnumerable{``0})">
   IgnoreDefaultValues&lt;TItem&gt;(IEnumerable&lt;TItem&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/CollectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/CollectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Ignores default items in the enumeration.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,19 +171,22 @@ Class CollectionExtensions  <a class="header-action link-secondary" title="View 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TItem&gt;</dt>
-    <dd></dd>
+    <dd><p>The items.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TItem&gt;</dt>
-    <dd></dd>
+    <dd><p>IEnumerable&lt;TItem&gt; with default items filtered out.</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TItem</code></dt>
-    <dd></dd>
+    <dd><p>Type of items in the enumeration.</p>
+</dd>
   </dl>
 
 
@@ -197,10 +202,11 @@ Class CollectionExtensions  <a class="header-action link-secondary" title="View 
 
   <h3 id="System_Collections_Generic_CollectionExtensions_MustHaveOneOrMore__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Exception__" data-uid="System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Exception})">
   MustHaveOneOrMore&lt;TItem&gt;(IEnumerable&lt;TItem&gt;, Func&lt;Exception&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/CollectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/CollectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Throws a custom exception if the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> has no items.&quot;/&gt; otherwise returns the items.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -210,21 +216,25 @@ Class CollectionExtensions  <a class="header-action link-secondary" title="View 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TItem&gt;</dt>
-    <dd></dd>
+    <dd><p>The items.</p>
+</dd>
     <dt><code>exceptionFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>called to create the exception thrown if there are no items in the enumerator.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TItem&gt;</dt>
-    <dd></dd>
+    <dd><p>IEnumerable&lt;TItem&gt; of one or more items</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TItem</code></dt>
-    <dd></dd>
+    <dd><p>The type of the item.</p>
+</dd>
   </dl>
 
 
@@ -232,6 +242,10 @@ Class CollectionExtensions  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section" id="System_Collections_Generic_CollectionExtensions_MustHaveOneOrMore__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Exception___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Useful to ensure that a items has at least one item before proceeding. without materializing the enumeration. Cheaper than the Linq Any() method.
+Manages the enumerator directly for efficiency and to avoid multiple enumeration of the items.</p>
+</div>
 
 
 
@@ -240,10 +254,11 @@ Class CollectionExtensions  <a class="header-action link-secondary" title="View 
 
   <h3 id="System_Collections_Generic_CollectionExtensions_MustHaveOneOrMore__1_System_Linq_IQueryable___0__System_Func_System_Exception__" data-uid="System.Collections.Generic.CollectionExtensions.MustHaveOneOrMore``1(System.Linq.IQueryable{``0},System.Func{System.Exception})">
   MustHaveOneOrMore&lt;TItem&gt;(IQueryable&lt;TItem&gt;, Func&lt;Exception&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/CollectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/CollectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks that the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable&lt;T&gt;</a> has one or more items; otherwise throws a custom exception.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -253,9 +268,11 @@ Class CollectionExtensions  <a class="header-action link-secondary" title="View 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>queryable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;TItem&gt;</dt>
-    <dd></dd>
+    <dd><p>The queryable.</p>
+</dd>
     <dt><code>exceptionFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The exception factory.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -277,16 +294,23 @@ Class CollectionExtensions  <a class="header-action link-secondary" title="View 
 
 
 
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="System.Collections.Generic.CollectionExtensions.html#System_Collections_Generic_CollectionExtensions_MustHaveOneOrMore__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Exception__">MustHaveOneOrMore&lt;TItem&gt;(IEnumerable&lt;TItem&gt;, Func&lt;Exception&gt;?)</a></div>
+    </dd>
+  </dl>
 
 
   <a id="System_Collections_Generic_CollectionExtensions_ThrowIfItemIsDefaultValue_" data-uid="System.Collections.Generic.CollectionExtensions.ThrowIfItemIsDefaultValue*"></a>
 
   <h3 id="System_Collections_Generic_CollectionExtensions_ThrowIfItemIsDefaultValue__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Exception__" data-uid="System.Collections.Generic.CollectionExtensions.ThrowIfItemIsDefaultValue``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Exception})">
   ThrowIfItemIsDefaultValue&lt;TItem&gt;(IEnumerable&lt;TItem&gt;, Func&lt;Exception&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/CollectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/CollectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks the enumerator for default items and throws an exception if any are found.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -296,21 +320,25 @@ Class CollectionExtensions  <a class="header-action link-secondary" title="View 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TItem&gt;</dt>
-    <dd></dd>
+    <dd><p>The items.</p>
+</dd>
     <dt><code>exceptionFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Creates execption to throw when default item detected.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TItem&gt;</dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> that doesn't allow default values.</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TItem</code></dt>
-    <dd></dd>
+    <dd><p>The type of the item.</p>
+</dd>
   </dl>
 
 
@@ -319,6 +347,15 @@ Class CollectionExtensions  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>default(TItem) detetected</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>default(TItem) detetected</p>
+</dd>
+  </dl>
 
 
 
@@ -326,7 +363,7 @@ Class CollectionExtensions  <a class="header-action link-secondary" title="View 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/CollectionExtensions.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/CollectionExtensions.cs" class="edit-link">Edit this page</a>
         </div>
 
 

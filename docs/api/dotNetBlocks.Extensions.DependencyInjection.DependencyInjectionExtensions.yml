@@ -16,10 +16,12 @@ items:
   fullName: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs
   assemblies:
   - dotNetBlocks.Extensions
   namespace: dotNetBlocks.Extensions.DependencyInjection
+  summary: Extends dependency injection with Lazy support.
+  example: []
   syntax:
     content: public static class DependencyInjectionExtensions
     content.vb: Public Module DependencyInjectionExtensions
@@ -46,17 +48,22 @@ items:
   fullName: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AddLazyServiceSupport(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.DependencyInjection.ServiceLifetime)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs
   assemblies:
   - dotNetBlocks.Extensions
   namespace: dotNetBlocks.Extensions.DependencyInjection
+  summary: Adds support for lazy types implementing using <xref href="dotNetBlocks.Extensions.DependencyInjection.LazyService%601" data-throw-if-not-resolved="false"></xref> approximation.
+  remarks: This is not a true <xref href="System.Lazy%601" data-throw-if-not-resolved="false"></xref> class implementation but uses a descendant service class to provide identical functionality <xref href="dotNetBlocks.Extensions.DependencyInjection.LazyService%601" data-throw-if-not-resolved="false"></xref>
+  example: []
   syntax:
     content: public static void AddLazyServiceSupport(this IServiceCollection services, ServiceLifetime lifetime = ServiceLifetime.Transient)
     parameters:
     - id: services
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> service collection being extended.
     - id: lifetime
       type: Microsoft.Extensions.DependencyInjection.ServiceLifetime
+      description: The default lifetime for a <xref href="System.Lazy%601" data-throw-if-not-resolved="false"></xref> class.
     content.vb: Public Shared Sub AddLazyServiceSupport(services As IServiceCollection, lifetime As ServiceLifetime = ServiceLifetime.Transient)
   overload: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AddLazyServiceSupport*
 - uid: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazy(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime})
@@ -72,21 +79,31 @@ items:
   fullName: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazy(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.DependencyInjection.ServiceLifetime?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs
   assemblies:
   - dotNetBlocks.Extensions
   namespace: dotNetBlocks.Extensions.DependencyInjection
+  summary: /// Adds a <xref href="System.Lazy%601" data-throw-if-not-resolved="false"></xref> definition to lookup the last registration and add a lazy class to.
+  remarks: Looks up the last class and adds a lazy registration.
+  example: []
   syntax:
     content: public static IServiceCollection AsLazy(this IServiceCollection services, ServiceLifetime? serviceLifetime = null)
     parameters:
     - id: services
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref>containing the registration to add a lazy functionality for.
     - id: serviceLifetime
       type: System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime}
+      description: <xref href="Microsoft.Extensions.DependencyInjection.ServiceLifetime" data-throw-if-not-resolved="false"></xref> of class.
     return:
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: ''
     content.vb: Public Shared Function AsLazy(services As IServiceCollection, serviceLifetime As ServiceLifetime? = Nothing) As IServiceCollection
   overload: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazy*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: service collection is null.
 - uid: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime},System.Object,System.Object)
   commentId: M:dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime},System.Object,System.Object)
   id: AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime},System.Object,System.Object)
@@ -100,25 +117,36 @@ items:
   fullName: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.DependencyInjection.ServiceLifetime?, object?, object?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/DependencyInjection/DependencyInjectionExtensions.cs
   assemblies:
   - dotNetBlocks.Extensions
   namespace: dotNetBlocks.Extensions.DependencyInjection
+  summary: Creates a <xref href="System.Lazy%601" data-throw-if-not-resolved="false"></xref> <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref> for the descriptor provided.
+  example: []
   syntax:
     content: public static IServiceCollection AsLazyAdvanced(this IServiceCollection services, ServiceLifetime? serviceLifetime = null, object? valueInstance = null, object? lazyInstance = null)
     parameters:
     - id: services
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref>containing the registration to add a lazy functionality for.
     - id: serviceLifetime
       type: System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime}
+      description: The <xref href="Microsoft.Extensions.DependencyInjection.ServiceLifetime" data-throw-if-not-resolved="false"></xref>&gt; for the lazy class. Uses the source lifetime if none provided.
     - id: valueInstance
       type: System.Object
+      description: Instance value to use in the lazy class instead of resolving the value.
     - id: lazyInstance
       type: System.Object
+      description: The lazy instance to register.
     return:
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: New <xref href="Microsoft.Extensions.DependencyInjection.ServiceDescriptor" data-throw-if-not-resolved="false"></xref> defining a lazy version of the source descriptor.
     content.vb: Public Shared Function AsLazyAdvanced(services As IServiceCollection, serviceLifetime As ServiceLifetime? = Nothing, valueInstance As Object = Nothing, lazyInstance As Object = Nothing) As IServiceCollection
   overload: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazyAdvanced*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: instance object is not {lazyServiceType.FullName} - lazyInstance
   nameWithType.vb: DependencyInjectionExtensions.AsLazyAdvanced(IServiceCollection, ServiceLifetime?, Object, Object)
   fullName.vb: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.DependencyInjection.ServiceLifetime?, Object, Object)
   name.vb: AsLazyAdvanced(IServiceCollection, ServiceLifetime?, Object, Object)
@@ -397,13 +425,34 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AddLazyServiceSupport*
-  commentId: Overload:dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AddLazyServiceSupport
+- uid: dotNetBlocks.Extensions.DependencyInjection.LazyService`1
+  commentId: T:dotNetBlocks.Extensions.DependencyInjection.LazyService`1
   isExternal: true
-  href: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.html#dotNetBlocks_Extensions_DependencyInjection_DependencyInjectionExtensions_AddLazyServiceSupport_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_DependencyInjection_ServiceLifetime_
-  name: AddLazyServiceSupport
-  nameWithType: DependencyInjectionExtensions.AddLazyServiceSupport
-  fullName: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AddLazyServiceSupport
+  href: dotNetBlocks.Extensions.DependencyInjection.LazyService-1.html
+  name: LazyService<T>
+  nameWithType: LazyService<T>
+  fullName: dotNetBlocks.Extensions.DependencyInjection.LazyService<T>
+  nameWithType.vb: LazyService(Of T)
+  fullName.vb: dotNetBlocks.Extensions.DependencyInjection.LazyService(Of T)
+  name.vb: LazyService(Of T)
+  spec.csharp:
+  - uid: dotNetBlocks.Extensions.DependencyInjection.LazyService`1
+    name: LazyService
+    isExternal: true
+    href: dotNetBlocks.Extensions.DependencyInjection.LazyService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.Extensions.DependencyInjection.LazyService`1
+    name: LazyService
+    isExternal: true
+    href: dotNetBlocks.Extensions.DependencyInjection.LazyService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
   commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
   parent: Microsoft.Extensions.DependencyInjection
@@ -412,6 +461,41 @@ references:
   name: IServiceCollection
   nameWithType: IServiceCollection
   fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: System.Lazy`1
+  commentId: T:System.Lazy`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.lazy-1
+  name: Lazy<T>
+  nameWithType: Lazy<T>
+  fullName: System.Lazy<T>
+  nameWithType.vb: Lazy(Of T)
+  fullName.vb: System.Lazy(Of T)
+  name.vb: Lazy(Of T)
+  spec.csharp:
+  - uid: System.Lazy`1
+    name: Lazy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.lazy-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Lazy`1
+    name: Lazy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.lazy-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AddLazyServiceSupport*
+  commentId: Overload:dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AddLazyServiceSupport
+  isExternal: true
+  href: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.html#dotNetBlocks_Extensions_DependencyInjection_DependencyInjectionExtensions_AddLazyServiceSupport_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_DependencyInjection_ServiceLifetime_
+  name: AddLazyServiceSupport
+  nameWithType: DependencyInjectionExtensions.AddLazyServiceSupport
+  fullName: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AddLazyServiceSupport
 - uid: Microsoft.Extensions.DependencyInjection.ServiceLifetime
   commentId: T:Microsoft.Extensions.DependencyInjection.ServiceLifetime
   parent: Microsoft.Extensions.DependencyInjection
@@ -457,6 +541,13 @@ references:
     name: DependencyInjection
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
 - uid: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazy*
   commentId: Overload:dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazy
   isExternal: true
@@ -512,6 +603,21 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+  commentId: T:Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor
+  name: ServiceDescriptor
+  nameWithType: ServiceDescriptor
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
 - uid: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazyAdvanced*
   commentId: Overload:dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions.AsLazyAdvanced
   isExternal: true

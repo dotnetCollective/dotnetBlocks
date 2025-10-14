@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ServiceDescriptorExtensions | DotNetBlocks ">
       
-      
+      <meta name="description" content="Service Description Lazy extensions.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="dotNetBlocks_Extensions_ServiceDescriptorExtensions" data-uid="dotNetBlocks.Extensions.ServiceDescriptorExtensions" class="text-break">
-Class ServiceDescriptorExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class ServiceDescriptorExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class ServiceDescriptorExtensions  <a class="header-action link-secondary" title
   <dl><dt>Assembly</dt><dd>dotNetBlocks.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Service Description Lazy extensions.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +157,11 @@ Class ServiceDescriptorExtensions  <a class="header-action link-secondary" title
 
   <h3 id="dotNetBlocks_Extensions_ServiceDescriptorExtensions_AsLazy_Microsoft_Extensions_DependencyInjection_ServiceDescriptor_System_Nullable_Microsoft_Extensions_DependencyInjection_ServiceLifetime__" data-uid="dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazy(Microsoft.Extensions.DependencyInjection.ServiceDescriptor,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime})">
   AsLazy(ServiceDescriptor, ServiceLifetime?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.lazy-1">Lazy&lt;T&gt;</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a> for the descriptor provided.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,15 +171,18 @@ Class ServiceDescriptorExtensions  <a class="header-action link-secondary" title
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>sourceDescriptor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a></dt>
-    <dd></dd>
+    <dd><p>The source <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a>  &gt; for the new service descriptor.</p>
+</dd>
     <dt><code>serviceLifetime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime">ServiceLifetime</a>?</dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime">ServiceLifetime</a>&gt; for the lazy class. Uses the source lifetime if none provided.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a></dt>
-    <dd></dd>
+    <dd><p>New <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a> defining a lazy version of the source descriptor.</p>
+</dd>
   </dl>
 
 
@@ -187,6 +192,12 @@ Class ServiceDescriptorExtensions  <a class="header-action link-secondary" title
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p lazyservicetype.fullname="">instance object is not  - lazyInstance</p>
+</dd>
+  </dl>
 
 
 
@@ -194,10 +205,11 @@ Class ServiceDescriptorExtensions  <a class="header-action link-secondary" title
 
   <h3 id="dotNetBlocks_Extensions_ServiceDescriptorExtensions_AsLazyAdvanced_Microsoft_Extensions_DependencyInjection_ServiceDescriptor_System_Nullable_Microsoft_Extensions_DependencyInjection_ServiceLifetime__System_Object_System_Object_" data-uid="dotNetBlocks.Extensions.ServiceDescriptorExtensions.AsLazyAdvanced(Microsoft.Extensions.DependencyInjection.ServiceDescriptor,System.Nullable{Microsoft.Extensions.DependencyInjection.ServiceLifetime},System.Object,System.Object)">
   AsLazyAdvanced(ServiceDescriptor, ServiceLifetime?, object?, object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.lazy-1">Lazy&lt;T&gt;</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a> for the descriptor provided.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -207,19 +219,24 @@ Class ServiceDescriptorExtensions  <a class="header-action link-secondary" title
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>sourceDescriptor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a></dt>
-    <dd></dd>
+    <dd><p>The source <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a>  &gt; for the new service descriptor.</p>
+</dd>
     <dt><code>serviceLifetime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime">ServiceLifetime</a>?</dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicelifetime">ServiceLifetime</a>&gt; for the lazy class. Uses the source lifetime if none provided.</p>
+</dd>
     <dt><code>valueInstance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd><p>Instance value to use in the lazy class instead of resolving the value.</p>
+</dd>
     <dt><code>lazyInstance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd><p>The lazy instance to register.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a></dt>
-    <dd></dd>
+    <dd><p>New <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a> defining a lazy version of the source descriptor.</p>
+</dd>
   </dl>
 
 
@@ -229,6 +246,12 @@ Class ServiceDescriptorExtensions  <a class="header-action link-secondary" title
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p lazyservicetype.fullname="">instance object is not  - lazyInstance</p>
+</dd>
+  </dl>
 
 
 
@@ -236,7 +259,7 @@ Class ServiceDescriptorExtensions  <a class="header-action link-secondary" title
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/ServiceDescriptorExtensions.cs" class="edit-link">Edit this page</a>
         </div>
 
 

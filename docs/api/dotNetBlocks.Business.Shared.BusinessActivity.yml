@@ -20,10 +20,16 @@ items:
   fullName: dotNetBlocks.Business.Shared.BusinessActivity
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Represents all business activities in the system.
+  remarks: >-
+    common activities:
+
+    <xref href="dotNetBlocks.Business.Shared.Operation" data-throw-if-not-resolved="false"></xref>
+  example: []
   syntax:
     content: public class BusinessActivity
     content.vb: Public Class BusinessActivity
@@ -61,10 +67,15 @@ items:
   fullName: dotNetBlocks.Business.Shared.BusinessActivity.BusinessActivity()
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: >-
+    Default constructor for <xref href="dotNetBlocks.Business.Shared.BusinessActivity" data-throw-if-not-resolved="false"></xref> class with default values.
+
+    Initializes a new instance of the <xref href="dotNetBlocks.Business.Shared.BusinessActivity" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public BusinessActivity()
     content.vb: Public Sub New()
@@ -84,15 +95,18 @@ items:
   fullName: dotNetBlocks.Business.Shared.BusinessActivity.BusinessActivity(dotNetBlocks.Business.Shared.BusinessActivity)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Initializes a new instance of the <xref href="dotNetBlocks.Business.Shared.BusinessActivity" data-throw-if-not-resolved="false"></xref> class.with values transferred from <code class="paramref">relatedTo</code> object provided.
+  example: []
   syntax:
     content: public BusinessActivity(BusinessActivity relatedTo)
     parameters:
     - id: relatedTo
       type: dotNetBlocks.Business.Shared.BusinessActivity
+      description: The related to.
     content.vb: Public Sub New(relatedTo As BusinessActivity)
   overload: dotNetBlocks.Business.Shared.BusinessActivity.#ctor*
   nameWithType.vb: BusinessActivity.New(BusinessActivity)
@@ -110,15 +124,18 @@ items:
   fullName: dotNetBlocks.Business.Shared.BusinessActivity.Id
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Unique id for the business activity.
+  example: []
   syntax:
     content: public Guid Id { get; set; }
     parameters: []
     return:
       type: System.Guid
+      description: The identifier.
     content.vb: Public Property Id As Guid
   overload: dotNetBlocks.Business.Shared.BusinessActivity.Id*
 - uid: dotNetBlocks.Business.Shared.BusinessActivity.CorrelationId
@@ -133,15 +150,19 @@ items:
   fullName: dotNetBlocks.Business.Shared.BusinessActivity.CorrelationId
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Gets or sets the correlation identifier.
+  remarks: Set at the initiation of a multiple event process to connect diagnostics and reporting for an entire process chain.
+  example: []
   syntax:
     content: public Guid CorrelationId { get; set; }
     parameters: []
     return:
       type: System.Guid
+      description: The correlation identifier.
     content.vb: Public Property CorrelationId As Guid
   overload: dotNetBlocks.Business.Shared.BusinessActivity.CorrelationId*
 - uid: dotNetBlocks.Business.Shared.BusinessActivity.TransactionId
@@ -156,15 +177,18 @@ items:
   fullName: dotNetBlocks.Business.Shared.BusinessActivity.TransactionId
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Gets or sets the transaction identifier.
+  example: []
   syntax:
     content: public Guid TransactionId { get; set; }
     parameters: []
     return:
       type: System.Guid
+      description: The transaction identifier.
     content.vb: Public Property TransactionId As Guid
   overload: dotNetBlocks.Business.Shared.BusinessActivity.TransactionId*
 - uid: dotNetBlocks.Business.Shared.BusinessActivity.RelatedToId
@@ -179,15 +203,18 @@ items:
   fullName: dotNetBlocks.Business.Shared.BusinessActivity.RelatedToId
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Gets or sets the related to identifier.
+  example: []
   syntax:
     content: public Guid RelatedToId { get; set; }
     parameters: []
     return:
       type: System.Guid
+      description: The related to identifier.
     content.vb: Public Property RelatedToId As Guid
   overload: dotNetBlocks.Business.Shared.BusinessActivity.RelatedToId*
 - uid: dotNetBlocks.Business.Shared.BusinessActivity.CreatedAt
@@ -202,7 +229,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.BusinessActivity.CreatedAt
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/BusinessActivity.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -214,6 +241,14 @@ items:
     content.vb: Public Property CreatedAt As DateTimeOffset
   overload: dotNetBlocks.Business.Shared.BusinessActivity.CreatedAt*
 references:
+- uid: dotNetBlocks.Business.Shared.Operation
+  commentId: T:dotNetBlocks.Business.Shared.Operation
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.Operation.html
+  name: Operation
+  nameWithType: Operation
+  fullName: dotNetBlocks.Business.Shared.Operation
 - uid: dotNetBlocks.Business.Shared
   commentId: N:dotNetBlocks.Business.Shared
   isExternal: true
@@ -693,6 +728,14 @@ references:
     name: Linq
     isExternal: true
     href: System.Linq.html
+- uid: dotNetBlocks.Business.Shared.BusinessActivity
+  commentId: T:dotNetBlocks.Business.Shared.BusinessActivity
+  parent: dotNetBlocks.Business.Shared
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.BusinessActivity.html
+  name: BusinessActivity
+  nameWithType: BusinessActivity
+  fullName: dotNetBlocks.Business.Shared.BusinessActivity
 - uid: dotNetBlocks.Business.Shared.BusinessActivity.#ctor*
   commentId: Overload:dotNetBlocks.Business.Shared.BusinessActivity.#ctor
   isExternal: true
@@ -703,14 +746,6 @@ references:
   nameWithType.vb: BusinessActivity.New
   fullName.vb: dotNetBlocks.Business.Shared.BusinessActivity.New
   name.vb: New
-- uid: dotNetBlocks.Business.Shared.BusinessActivity
-  commentId: T:dotNetBlocks.Business.Shared.BusinessActivity
-  parent: dotNetBlocks.Business.Shared
-  isExternal: true
-  href: dotNetBlocks.Business.Shared.BusinessActivity.html
-  name: BusinessActivity
-  nameWithType: BusinessActivity
-  fullName: dotNetBlocks.Business.Shared.BusinessActivity
 - uid: dotNetBlocks.Business.Shared.BusinessActivity.Id*
   commentId: Overload:dotNetBlocks.Business.Shared.BusinessActivity.Id
   isExternal: true

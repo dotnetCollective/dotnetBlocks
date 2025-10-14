@@ -67,9 +67,6 @@ items:
   name: dotNetBlocks.Extensions.DependencyInjection
   type: Namespace
   items:
-  - uid: dotNetBlocks.Extensions.DependencyInjection.DependencyInjection
-    name: DependencyInjection
-    type: Class
   - uid: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions
     name: DependencyInjectionExtensions
     type: Class

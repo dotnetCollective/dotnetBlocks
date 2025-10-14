@@ -24,7 +24,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus.Shared/Message.cs
   assemblies:
   - dotNetBlocks.ServiceBus.Shared
   namespace: dotNetBlocks.ServiceBus.Shared
@@ -65,7 +65,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.Message(TActivity?)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus.Shared/Message.cs
   assemblies:
   - dotNetBlocks.ServiceBus.Shared
   namespace: dotNetBlocks.ServiceBus.Shared
@@ -91,7 +91,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.ToString()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus.Shared/Message.cs
   assemblies:
   - dotNetBlocks.ServiceBus.Shared
   namespace: dotNetBlocks.ServiceBus.Shared
@@ -117,7 +117,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.PrintMembers(System.Text.StringBuilder)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus.Shared/Message.cs
   assemblies:
   - dotNetBlocks.ServiceBus.Shared
   namespace: dotNetBlocks.ServiceBus.Shared
@@ -144,7 +144,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.operator !=(dotNetBlocks.ServiceBus.Shared.Message<TActivity>?, dotNetBlocks.ServiceBus.Shared.Message<TActivity>?)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus.Shared/Message.cs
   assemblies:
   - dotNetBlocks.ServiceBus.Shared
   namespace: dotNetBlocks.ServiceBus.Shared
@@ -174,7 +174,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.operator ==(dotNetBlocks.ServiceBus.Shared.Message<TActivity>?, dotNetBlocks.ServiceBus.Shared.Message<TActivity>?)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus.Shared/Message.cs
   assemblies:
   - dotNetBlocks.ServiceBus.Shared
   namespace: dotNetBlocks.ServiceBus.Shared
@@ -204,7 +204,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.GetHashCode()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus.Shared/Message.cs
   assemblies:
   - dotNetBlocks.ServiceBus.Shared
   namespace: dotNetBlocks.ServiceBus.Shared
@@ -230,7 +230,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.Equals(object?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus.Shared/Message.cs
   assemblies:
   - dotNetBlocks.ServiceBus.Shared
   namespace: dotNetBlocks.ServiceBus.Shared
@@ -260,7 +260,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.Equals(dotNetBlocks.ServiceBus.Shared.Message<TActivity>?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus.Shared/Message.cs
   assemblies:
   - dotNetBlocks.ServiceBus.Shared
   namespace: dotNetBlocks.ServiceBus.Shared
@@ -291,7 +291,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.Message(dotNetBlocks.ServiceBus.Shared.Message<TActivity>)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus.Shared/Message.cs
   assemblies:
   - dotNetBlocks.ServiceBus.Shared
   namespace: dotNetBlocks.ServiceBus.Shared
@@ -317,7 +317,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.EqualityContract
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus.Shared/Message.cs
   assemblies:
   - dotNetBlocks.ServiceBus.Shared
   namespace: dotNetBlocks.ServiceBus.Shared
@@ -342,7 +342,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.Shared.Message<TActivity>.Activity
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus.Shared/Message.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus.Shared/Message.cs
   assemblies:
   - dotNetBlocks.ServiceBus.Shared
   namespace: dotNetBlocks.ServiceBus.Shared

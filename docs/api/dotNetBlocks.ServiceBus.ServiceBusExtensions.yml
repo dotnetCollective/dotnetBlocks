@@ -14,7 +14,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.ServiceBusExtensions
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus/ServiceBusExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus/ServiceBusExtensions.cs
   assemblies:
   - dotNetBlocks.ServiceBus
   namespace: dotNetBlocks.ServiceBus
@@ -51,7 +51,7 @@ items:
   fullName: dotNetBlocks.ServiceBus.ServiceBusExtensions.ServiceBusExtensions()
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.ServiceBus/ServiceBusExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.ServiceBus/ServiceBusExtensions.cs
   assemblies:
   - dotNetBlocks.ServiceBus
   namespace: dotNetBlocks.ServiceBus

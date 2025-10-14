@@ -34,10 +34,12 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
+  summary: Parameter object for different background methods.
+  example: []
   syntax:
     content: 'public record StreamBuffer.BackgroundAction : IEquatable<StreamBuffer.BackgroundAction>'
     content.vb: Public Class StreamBuffer.BackgroundAction Implements IEquatable(Of StreamBuffer.BackgroundAction)
@@ -70,10 +72,12 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.BackgroundAction(System.IO.StreamBuffer.BufferFunction?, System.IO.StreamBuffer.BufferAction?, System.IO.StreamBuffer.BufferActionWithCancel?)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
+  summary: Parameter object for different background methods.
+  example: []
   syntax:
     content: public BackgroundAction(StreamBuffer.BufferFunction? BufferFunction = null, StreamBuffer.BufferAction? BufferAction = null, StreamBuffer.BufferActionWithCancel? BufferActionWithCancel = null)
     parameters:
@@ -100,7 +104,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.explicit operator System.IO.StreamBuffer.BackgroundAction(System.IO.StreamBuffer.BufferFunction)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -128,7 +132,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.explicit operator System.IO.StreamBuffer.BackgroundAction(System.Func<System.IO.Stream, System.Threading.CancellationToken, System.Threading.Tasks.Task>)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -156,7 +160,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.explicit operator System.IO.StreamBuffer.BackgroundAction(System.IO.StreamBuffer.BufferAction)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -184,7 +188,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.explicit operator System.IO.StreamBuffer.BackgroundAction(System.Action<System.IO.Stream>)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -212,7 +216,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.explicit operator System.IO.StreamBuffer.BackgroundAction(System.IO.StreamBuffer.BufferActionWithCancel)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -240,7 +244,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.explicit operator System.IO.StreamBuffer.BackgroundAction(System.Action<System.IO.Stream, System.Threading.CancellationToken>)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -268,7 +272,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.Validate()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -288,7 +292,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.ToString()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -312,7 +316,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.PrintMembers(System.Text.StringBuilder)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -337,7 +341,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.operator !=(System.IO.StreamBuffer.BackgroundAction?, System.IO.StreamBuffer.BackgroundAction?)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -367,7 +371,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.operator ==(System.IO.StreamBuffer.BackgroundAction?, System.IO.StreamBuffer.BackgroundAction?)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -397,7 +401,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.GetHashCode()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -421,7 +425,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.Equals(object?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -451,7 +455,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.Equals(System.IO.StreamBuffer.BackgroundAction?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -482,7 +486,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.BackgroundAction(System.IO.StreamBuffer.BackgroundAction)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -508,7 +512,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.Deconstruct(out System.IO.StreamBuffer.BufferFunction?, out System.IO.StreamBuffer.BufferAction?, out System.IO.StreamBuffer.BufferActionWithCancel?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -538,7 +542,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.EqualityContract
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -561,7 +565,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.BufferFunction
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -584,7 +588,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.BufferAction
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO
@@ -607,7 +611,7 @@ items:
   fullName: System.IO.StreamBuffer.BackgroundAction.BufferActionWithCancel
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.IO/StreamBuffer/StreamBuffer.Background.cs
   assemblies:
   - dotNetBlocks.System.IO
   namespace: System.IO

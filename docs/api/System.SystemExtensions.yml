@@ -14,10 +14,12 @@ items:
   fullName: System.SystemExtensions
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/SystemExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/SystemExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
+  summary: Extension classes extending functionality of existing types in the System namespace.
+  example: []
   syntax:
     content: public static class SystemExtensions
     content.vb: Public Module SystemExtensions
@@ -44,19 +46,25 @@ items:
   fullName: System.SystemExtensions.AsLazy<T>(T)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System/SystemExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System/SystemExtensions.cs
   assemblies:
   - dotNetBlocks.System
   namespace: System
+  summary: Wraps an instance  with a  Lazy(value)
+  remarks: fluent notation converting values into Lazy where its required e.g. parameters and testing.
+  example: []
   syntax:
     content: public static Lazy<T> AsLazy<T>(this T value)
     parameters:
     - id: value
       type: '{T}'
+      description: The value.
     typeParameters:
     - id: T
+      description: ''
     return:
       type: System.Lazy{{T}}
+      description: ''
     content.vb: Public Shared Function AsLazy(Of T)(value As T) As Lazy(Of T)
   overload: System.SystemExtensions.AsLazy*
   nameWithType.vb: SystemExtensions.AsLazy(Of T)(T)

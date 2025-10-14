@@ -56,14 +56,21 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: BitArray addressable by enum values.
+  remarks: >-
+    Allowsmore flags per <code class="typeparamref">TEnum</code> than using c# [Flags] attribute.
+               Removes the complexity of flags because each bit is a single enum flags. and bit management is eliminated.
+               Implementation considers zero as an independant flag, not equivalent to no flags set. TODO: - should it?
+  example: []
   syntax:
     content: 'public class EnumBitArray<TEnum> where TEnum : struct, Enum'
     typeParameters:
     - id: TEnum
+      description: The type of the enum.
     content.vb: Public Class EnumBitArray(Of TEnum As {Structure, [Enum]})
   inheritance:
   - System.Object
@@ -95,7 +102,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.Zero
   type: Field
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -118,10 +125,13 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.EnumBitArray()
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Initializes a new instance of the <xref href="System.Collections.EnumBitArray%601" data-throw-if-not-resolved="false"></xref> class.
+  remarks: Default constructor creates <xref href="System.Collections.EnumBitArray%601" data-throw-if-not-resolved="false"></xref> sized for enum but with no bits set.
+  example: []
   syntax:
     content: public EnumBitArray()
     content.vb: Public Sub New()
@@ -141,15 +151,18 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.EnumBitArray(System.Collections.BitArray)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Initializes a new instance of the <xref href="System.Collections.EnumBitArray%601" data-throw-if-not-resolved="false"></xref> containing the <xref href="System.Collections.BitArray" data-throw-if-not-resolved="false"></xref>values passed in.
+  example: []
   syntax:
     content: public EnumBitArray(BitArray flags)
     parameters:
     - id: flags
       type: System.Collections.BitArray
+      description: The flags.
     content.vb: Public Sub New(flags As BitArray)
   overload: System.Collections.EnumBitArray`1.#ctor*
   nameWithType.vb: EnumBitArray(Of TEnum).New(BitArray)
@@ -167,7 +180,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.EnumBitArray(TEnum)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -193,7 +206,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.EnumBitArray(System.Collections.Generic.IEnumerable<TEnum>)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -219,17 +232,21 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.ToFlagIndex(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Converts EnumValue  to index.
+  example: []
   syntax:
     content: protected static int ToFlagIndex(TEnum enumValue)
     parameters:
     - id: enumValue
       type: '{TEnum}'
+      description: The enum flags.
     return:
       type: System.Int32
+      description: ''
     content.vb: Protected Shared Function ToFlagIndex(enumValue As TEnum) As Integer
   overload: System.Collections.EnumBitArray`1.ToFlagIndex*
   nameWithType.vb: EnumBitArray(Of TEnum).ToFlagIndex(TEnum)
@@ -246,7 +263,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.operator ==(System.Collections.EnumBitArray<TEnum>, TEnum)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -276,7 +293,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.operator !=(System.Collections.EnumBitArray<TEnum>, TEnum)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -306,7 +323,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.operator |(System.Collections.EnumBitArray<TEnum>, System.Collections.EnumBitArray<TEnum>)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -336,7 +353,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.operator |(System.Collections.EnumBitArray<TEnum>, TEnum)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -366,7 +383,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.operator ~(System.Collections.EnumBitArray<TEnum>)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -394,7 +411,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.operator !(System.Collections.EnumBitArray<TEnum>)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -422,7 +439,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.operator ==(System.Collections.EnumBitArray<TEnum>, System.Collections.EnumBitArray<TEnum>)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -452,7 +469,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.operator !=(System.Collections.EnumBitArray<TEnum>, System.Collections.EnumBitArray<TEnum>)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -482,17 +499,21 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.implicit operator System.Collections.EnumBitArray<TEnum>(TEnum)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Performs an implicit conversion from TEnum to <xref href="System.Collections.EnumBitArray%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static implicit operator EnumBitArray<TEnum>(TEnum enumValue)
     parameters:
     - id: enumValue
       type: '{TEnum}'
+      description: The enum flags.
     return:
       type: System.Collections.EnumBitArray`1
+      description: <xref href="System.Collections.EnumBitArray%601" data-throw-if-not-resolved="false"></xref> with the flag for <code class="paramref">enumValue</code> set."/&gt;
     content.vb: Public Shared Widening Operator CType(enumValue As TEnum) As EnumBitArray(Of TEnum)
   overload: System.Collections.EnumBitArray`1.op_Implicit*
   nameWithType.vb: EnumBitArray(Of TEnum).CType(TEnum)
@@ -510,17 +531,21 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.explicit operator System.Collections.BitArray(System.Collections.EnumBitArray<TEnum>)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Performs an implicit conversion from <xref href="System.Collections.EnumBitArray%601" data-throw-if-not-resolved="false"></xref> to <xref href="System.Collections.BitArray" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static explicit operator BitArray(EnumBitArray<TEnum> value)
     parameters:
     - id: value
       type: System.Collections.EnumBitArray`1
+      description: The flags.
     return:
       type: System.Collections.BitArray
+      description: Returns the internal <xref href="System.Collections.BitArray" data-throw-if-not-resolved="false"></xref> representing the flags of the flags.
     content.vb: Public Shared Narrowing Operator CType(value As EnumBitArray(Of TEnum)) As BitArray
   overload: System.Collections.EnumBitArray`1.op_Explicit*
   nameWithType.vb: EnumBitArray(Of TEnum).CType(EnumBitArray(Of TEnum))
@@ -538,17 +563,21 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.explicit operator System.Collections.EnumBitArray<TEnum>(System.Collections.BitArray)
   type: Operator
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Performs an implicit conversion from <xref href="System.Collections.BitArray" data-throw-if-not-resolved="false"></xref> to <xref href="System.Collections.EnumBitArray%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static explicit operator EnumBitArray<TEnum>(BitArray flags)
     parameters:
     - id: flags
       type: System.Collections.BitArray
+      description: The flags.
     return:
       type: System.Collections.EnumBitArray`1
+      description: Creates a new <xref href="System.Collections.EnumBitArray%601" data-throw-if-not-resolved="false"></xref> containing the source <xref href="System.Collections.BitArray" data-throw-if-not-resolved="false"></xref>
     content.vb: Public Shared Narrowing Operator CType(flags As BitArray) As EnumBitArray(Of TEnum)
   overload: System.Collections.EnumBitArray`1.op_Explicit*
   nameWithType.vb: EnumBitArray(Of TEnum).CType(BitArray)
@@ -566,15 +595,18 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.Or(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Ors current flags with the flag at position <code class="paramref">value</code>.
+  example: []
   syntax:
     content: public void Or(TEnum value)
     parameters:
     - id: value
       type: '{TEnum}'
+      description: The flags.
     content.vb: Public Sub [Or](value As TEnum)
   overload: System.Collections.EnumBitArray`1.Or*
   nameWithType.vb: EnumBitArray(Of TEnum).Or(TEnum)
@@ -591,15 +623,19 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.Or(System.Collections.EnumBitArray<TEnum>)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Ors the current flags with the flags in <code class="paramref">value</code>.
+  remarks: ''
+  example: []
   syntax:
     content: public void Or(EnumBitArray<TEnum> value)
     parameters:
     - id: value
       type: System.Collections.EnumBitArray`1
+      description: The flags.
     content.vb: Public Sub [Or](value As EnumBitArray(Of TEnum))
   overload: System.Collections.EnumBitArray`1.Or*
   nameWithType.vb: EnumBitArray(Of TEnum).Or(EnumBitArray(Of TEnum))
@@ -617,17 +653,23 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.And(System.Collections.EnumBitArray<TEnum>)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Ands the bits with the current bit values.
+  example: []
   syntax:
     content: public void And(EnumBitArray<TEnum> value)
     parameters:
     - id: value
       type: System.Collections.EnumBitArray`1
+      description: The flags.
     content.vb: Public Sub [And](value As EnumBitArray(Of TEnum))
   overload: System.Collections.EnumBitArray`1.And*
+  seealso:
+  - linkId: System.Collections.BitArray.And(System.Collections.BitArray)
+    commentId: M:System.Collections.BitArray.And(System.Collections.BitArray)
   nameWithType.vb: EnumBitArray(Of TEnum).And(EnumBitArray(Of TEnum))
   fullName.vb: System.Collections.EnumBitArray(Of TEnum).And(System.Collections.EnumBitArray(Of TEnum))
   name.vb: And(EnumBitArray(Of TEnum))
@@ -643,15 +685,18 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.And(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Ands the flag flags at position <code class="paramref">value</code>. with the current flags.
+  example: []
   syntax:
     content: public void And(TEnum value)
     parameters:
     - id: value
       type: '{TEnum}'
+      description: The flags.
     content.vb: Public Sub [And](value As TEnum)
   overload: System.Collections.EnumBitArray`1.And*
   nameWithType.vb: EnumBitArray(Of TEnum).And(TEnum)
@@ -668,14 +713,19 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.Not()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Inverts the bits in the current flags.
+  example: []
   syntax:
     content: public void Not()
     content.vb: Public Sub [Not]()
   overload: System.Collections.EnumBitArray`1.Not*
+  seealso:
+  - linkId: System.Collections.BitArray.Not
+    commentId: M:System.Collections.BitArray.Not
   nameWithType.vb: EnumBitArray(Of TEnum).Not()
   fullName.vb: System.Collections.EnumBitArray(Of TEnum).Not()
 - uid: System.Collections.EnumBitArray`1.Set(`0)
@@ -690,15 +740,18 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.Set(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Sets the bit at position <code class="paramref">value</code> to true.
+  example: []
   syntax:
     content: public void Set(TEnum value)
     parameters:
     - id: value
       type: '{TEnum}'
+      description: The flag to set.
     content.vb: Public Sub [Set](value As TEnum)
   overload: System.Collections.EnumBitArray`1.Set*
   nameWithType.vb: EnumBitArray(Of TEnum).Set(TEnum)
@@ -715,7 +768,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.Set(System.Collections.Generic.IEnumerable<TEnum>)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -741,15 +794,18 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.UnSet(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Set the bit at position <code class="paramref">flag</code> to false.
+  example: []
   syntax:
     content: public void UnSet(TEnum flag)
     parameters:
     - id: flag
       type: '{TEnum}'
+      description: The flag.
     content.vb: Public Sub UnSet(flag As TEnum)
   overload: System.Collections.EnumBitArray`1.UnSet*
   nameWithType.vb: EnumBitArray(Of TEnum).UnSet(TEnum)
@@ -766,7 +822,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.UnSet(System.Collections.Generic.IEnumerable<TEnum>)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -792,10 +848,12 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.HasAnySet()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Gets a flags indicating whether this instance has any flags set.
+  example: []
   syntax:
     content: public bool HasAnySet()
     return:
@@ -816,10 +874,12 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.HasAllSet()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Are all the bit flags set?
+  example: []
   syntax:
     content: public bool HasAllSet()
     return:
@@ -840,17 +900,21 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.HasFlag(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Is the specified flag set?
+  example: []
   syntax:
     content: public bool HasFlag(TEnum flag)
     parameters:
     - id: flag
       type: '{TEnum}'
+      description: The flag.
     return:
       type: System.Boolean
+      description: <code>true</code> if the specified flag has flag; otherwise, <code>false</code>.
     content.vb: Public Function HasFlag(flag As TEnum) As Boolean
   overload: System.Collections.EnumBitArray`1.HasFlag*
   nameWithType.vb: EnumBitArray(Of TEnum).HasFlag(TEnum)
@@ -867,17 +931,21 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.HasOtherFlags(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Determines whether any flags other than the specified flag are set.
+  example: []
   syntax:
     content: public bool HasOtherFlags(TEnum flag)
     parameters:
     - id: flag
       type: '{TEnum}'
+      description: The flag.
     return:
       type: System.Boolean
+      description: <code>true</code> if [has other flags] [the specified flag]; otherwise, <code>false</code>.
     content.vb: Public Function HasOtherFlags(flag As TEnum) As Boolean
   overload: System.Collections.EnumBitArray`1.HasOtherFlags*
   nameWithType.vb: EnumBitArray(Of TEnum).HasOtherFlags(TEnum)
@@ -894,17 +962,21 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.IsSet(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Determines whether the specified flag is set.
+  example: []
   syntax:
     content: public bool IsSet(TEnum flag)
     parameters:
     - id: flag
       type: '{TEnum}'
+      description: The flag.
     return:
       type: System.Boolean
+      description: <code>true</code> if the specified flag is set; otherwise, <code>false</code>.
     content.vb: Public Function IsSet(flag As TEnum) As Boolean
   overload: System.Collections.EnumBitArray`1.IsSet*
   nameWithType.vb: EnumBitArray(Of TEnum).IsSet(TEnum)
@@ -921,15 +993,17 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.ToString()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref>
   example: []
   syntax:
     content: public override string ToString()
     return:
       type: System.String
+      description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> with a omma delimited list of the set enum values.representing set flags.
     content.vb: Public Overrides Function ToString() As String
   overridden: System.Object.ToString
   overload: System.Collections.EnumBitArray`1.ToString*
@@ -947,7 +1021,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.Equals(object?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -977,7 +1051,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.Equals(System.Collections.EnumBitArray<TEnum>?)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -1005,7 +1079,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.Equals(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -1032,7 +1106,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.GetSetEnums()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -1056,7 +1130,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.Equals(System.Collections.BitArray, System.Collections.BitArray)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -1085,7 +1159,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.GetFlags()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -1109,7 +1183,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.GetHashCode()
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -1135,10 +1209,12 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.Flags
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Accesses the <xref href="System.Collections.BitArray" data-throw-if-not-resolved="false"></xref> flags backing the enum Flags ]
+  example: []
   syntax:
     content: public BitArray Flags { get; set; }
     parameters: []
@@ -1160,10 +1236,12 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.Count
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Gets the count of flags supported by the Enum.
+  example: []
   syntax:
     content: public int Count { get; }
     parameters: []
@@ -1185,7 +1263,7 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.Length
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
@@ -1210,17 +1288,21 @@ items:
   fullName: System.Collections.EnumBitArray<TEnum>.this[TEnum]
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Collections/EnumBitArray.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Collections/EnumBitArray.cs
   assemblies:
   - dotNetBlocks.System.Collections
   namespace: System.Collections
+  summary: Gets or sets the <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref> with the specified bit flag. for a given enum flags.
+  example: []
   syntax:
     content: public bool this[TEnum flag] { get; set; }
     parameters:
     - id: flag
       type: '{TEnum}'
+      description: The flag.
     return:
       type: System.Boolean
+      description: ''
     content.vb: Public Default Property this[](flag As TEnum) As Boolean
   overload: System.Collections.EnumBitArray`1.Item*
   nameWithType.vb: EnumBitArray(Of TEnum).this[](TEnum)
@@ -1947,6 +2029,35 @@ references:
   fullName: System.Collections.EnumBitArray<TEnum>.Or
   nameWithType.vb: EnumBitArray(Of TEnum).Or
   fullName.vb: System.Collections.EnumBitArray(Of TEnum).Or
+- uid: System.Collections.BitArray.And(System.Collections.BitArray)
+  commentId: M:System.Collections.BitArray.And(System.Collections.BitArray)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray.and
+  name: And(BitArray)
+  nameWithType: BitArray.And(BitArray)
+  fullName: System.Collections.BitArray.And(System.Collections.BitArray)
+  spec.csharp:
+  - uid: System.Collections.BitArray.And(System.Collections.BitArray)
+    name: And
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray.and
+  - name: (
+  - uid: System.Collections.BitArray
+    name: BitArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray
+  - name: )
+  spec.vb:
+  - uid: System.Collections.BitArray.And(System.Collections.BitArray)
+    name: And
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray.and
+  - name: (
+  - uid: System.Collections.BitArray
+    name: BitArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray
+  - name: )
 - uid: System.Collections.EnumBitArray`1.And*
   commentId: Overload:System.Collections.EnumBitArray`1.And
   isExternal: true
@@ -1956,6 +2067,27 @@ references:
   fullName: System.Collections.EnumBitArray<TEnum>.And
   nameWithType.vb: EnumBitArray(Of TEnum).And
   fullName.vb: System.Collections.EnumBitArray(Of TEnum).And
+- uid: System.Collections.BitArray.Not
+  commentId: M:System.Collections.BitArray.Not
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray.not
+  name: Not()
+  nameWithType: BitArray.Not()
+  fullName: System.Collections.BitArray.Not()
+  spec.csharp:
+  - uid: System.Collections.BitArray.Not
+    name: Not
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray.not
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.BitArray.Not
+    name: Not
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray.not
+  - name: (
+  - name: )
 - uid: System.Collections.EnumBitArray`1.Not*
   commentId: Overload:System.Collections.EnumBitArray`1.Not
   isExternal: true
@@ -1983,6 +2115,27 @@ references:
   fullName: System.Collections.EnumBitArray<TEnum>.UnSet
   nameWithType.vb: EnumBitArray(Of TEnum).UnSet
   fullName.vb: System.Collections.EnumBitArray(Of TEnum).UnSet
+- uid: System.Collections.BitArray.HasAnySet
+  commentId: M:System.Collections.BitArray.HasAnySet
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray.hasanyset
+  name: HasAnySet()
+  nameWithType: BitArray.HasAnySet()
+  fullName: System.Collections.BitArray.HasAnySet()
+  spec.csharp:
+  - uid: System.Collections.BitArray.HasAnySet
+    name: HasAnySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray.hasanyset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.BitArray.HasAnySet
+    name: HasAnySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray.hasanyset
+  - name: (
+  - name: )
 - uid: System.Collections.EnumBitArray`1.HasAnySet*
   commentId: Overload:System.Collections.EnumBitArray`1.HasAnySet
   isExternal: true
@@ -2052,15 +2205,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
-- uid: System.Collections.EnumBitArray`1.ToString*
-  commentId: Overload:System.Collections.EnumBitArray`1.ToString
-  isExternal: true
-  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_ToString
-  name: ToString
-  nameWithType: EnumBitArray<TEnum>.ToString
-  fullName: System.Collections.EnumBitArray<TEnum>.ToString
-  nameWithType.vb: EnumBitArray(Of TEnum).ToString
-  fullName.vb: System.Collections.EnumBitArray(Of TEnum).ToString
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -2072,6 +2216,15 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: System.Collections.EnumBitArray`1.ToString*
+  commentId: Overload:System.Collections.EnumBitArray`1.ToString
+  isExternal: true
+  href: System.Collections.EnumBitArray-1.html#System_Collections_EnumBitArray_1_ToString
+  name: ToString
+  nameWithType: EnumBitArray<TEnum>.ToString
+  fullName: System.Collections.EnumBitArray<TEnum>.ToString
+  nameWithType.vb: EnumBitArray(Of TEnum).ToString
+  fullName.vb: System.Collections.EnumBitArray(Of TEnum).ToString
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object

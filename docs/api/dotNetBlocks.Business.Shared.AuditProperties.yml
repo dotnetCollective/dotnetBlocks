@@ -18,13 +18,18 @@ items:
   fullName: dotNetBlocks.Business.Shared.AuditProperties
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditProperties.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/AuditProperties.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
+  summary: Tracks the audit properties for a class.
+  example: []
   syntax:
     content: 'public class AuditProperties : IAuditable'
     content.vb: Public Class AuditProperties Implements IAuditable
+  seealso:
+  - linkId: dotNetBlocks.IAuditable
+    commentId: T:dotNetBlocks.IAuditable
   inheritance:
   - System.Object
   implements:
@@ -57,7 +62,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.AuditProperties.AuditProperties()
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditProperties.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/AuditProperties.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -80,7 +85,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.AuditProperties.CreatedAt
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditProperties.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/AuditProperties.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -106,7 +111,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.AuditProperties.CreatedBy
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditProperties.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/AuditProperties.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -132,7 +137,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditProperties.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/AuditProperties.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -158,7 +163,7 @@ items:
   fullName: dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/AuditProperties.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/AuditProperties.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks.Business.Shared
@@ -173,6 +178,14 @@ items:
   implements:
   - dotNetBlocks.IAuditable.UpdatedBy
 references:
+- uid: dotNetBlocks.IAuditable
+  commentId: T:dotNetBlocks.IAuditable
+  parent: dotNetBlocks
+  isExternal: true
+  href: dotNetBlocks.IAuditable.html
+  name: IAuditable
+  nameWithType: IAuditable
+  fullName: dotNetBlocks.IAuditable
 - uid: dotNetBlocks.Business.Shared
   commentId: N:dotNetBlocks.Business.Shared
   isExternal: true
@@ -221,14 +234,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: dotNetBlocks.IAuditable
-  commentId: T:dotNetBlocks.IAuditable
-  parent: dotNetBlocks
-  isExternal: true
-  href: dotNetBlocks.IAuditable.html
-  name: IAuditable
-  nameWithType: IAuditable
-  fullName: dotNetBlocks.IAuditable
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
@@ -542,13 +547,6 @@ references:
     isExternal: true
     href: dotNetBlocks.Business.Shared.AuditProperties.html
   - name: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: System.html
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: dotNetBlocks
   commentId: N:dotNetBlocks
   isExternal: true
@@ -556,6 +554,13 @@ references:
   name: dotNetBlocks
   nameWithType: dotNetBlocks
   fullName: dotNetBlocks
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: System.html
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: System.Linq.WildCard.Search``1(``0)
   commentId: M:System.Linq.WildCard.Search``1(``0)
   isExternal: true
@@ -677,13 +682,6 @@ references:
   nameWithType.vb: AuditProperties.New
   fullName.vb: dotNetBlocks.Business.Shared.AuditProperties.New
   name.vb: New
-- uid: dotNetBlocks.Business.Shared.AuditProperties.CreatedAt*
-  commentId: Overload:dotNetBlocks.Business.Shared.AuditProperties.CreatedAt
-  isExternal: true
-  href: dotNetBlocks.Business.Shared.AuditProperties.html#dotNetBlocks_Business_Shared_AuditProperties_CreatedAt
-  name: CreatedAt
-  nameWithType: AuditProperties.CreatedAt
-  fullName: dotNetBlocks.Business.Shared.AuditProperties.CreatedAt
 - uid: dotNetBlocks.IAuditable.CreatedAt
   commentId: P:dotNetBlocks.IAuditable.CreatedAt
   parent: dotNetBlocks.IAuditable
@@ -692,6 +690,13 @@ references:
   name: CreatedAt
   nameWithType: IAuditable.CreatedAt
   fullName: dotNetBlocks.IAuditable.CreatedAt
+- uid: dotNetBlocks.Business.Shared.AuditProperties.CreatedAt*
+  commentId: Overload:dotNetBlocks.Business.Shared.AuditProperties.CreatedAt
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.AuditProperties.html#dotNetBlocks_Business_Shared_AuditProperties_CreatedAt
+  name: CreatedAt
+  nameWithType: AuditProperties.CreatedAt
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.CreatedAt
 - uid: System.Nullable{System.DateTimeOffset}
   commentId: T:System.Nullable{System.DateTimeOffset}
   parent: System
@@ -740,13 +745,6 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: dotNetBlocks.Business.Shared.AuditProperties.CreatedBy*
-  commentId: Overload:dotNetBlocks.Business.Shared.AuditProperties.CreatedBy
-  isExternal: true
-  href: dotNetBlocks.Business.Shared.AuditProperties.html#dotNetBlocks_Business_Shared_AuditProperties_CreatedBy
-  name: CreatedBy
-  nameWithType: AuditProperties.CreatedBy
-  fullName: dotNetBlocks.Business.Shared.AuditProperties.CreatedBy
 - uid: dotNetBlocks.IAuditable.CreatedBy
   commentId: P:dotNetBlocks.IAuditable.CreatedBy
   parent: dotNetBlocks.IAuditable
@@ -755,6 +753,13 @@ references:
   name: CreatedBy
   nameWithType: IAuditable.CreatedBy
   fullName: dotNetBlocks.IAuditable.CreatedBy
+- uid: dotNetBlocks.Business.Shared.AuditProperties.CreatedBy*
+  commentId: Overload:dotNetBlocks.Business.Shared.AuditProperties.CreatedBy
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.AuditProperties.html#dotNetBlocks_Business_Shared_AuditProperties_CreatedBy
+  name: CreatedBy
+  nameWithType: AuditProperties.CreatedBy
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.CreatedBy
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -766,13 +771,6 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt*
-  commentId: Overload:dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt
-  isExternal: true
-  href: dotNetBlocks.Business.Shared.AuditProperties.html#dotNetBlocks_Business_Shared_AuditProperties_UpdatedAt
-  name: UpdatedAt
-  nameWithType: AuditProperties.UpdatedAt
-  fullName: dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt
 - uid: dotNetBlocks.IAuditable.UpdatedAt
   commentId: P:dotNetBlocks.IAuditable.UpdatedAt
   parent: dotNetBlocks.IAuditable
@@ -781,13 +779,13 @@ references:
   name: UpdatedAt
   nameWithType: IAuditable.UpdatedAt
   fullName: dotNetBlocks.IAuditable.UpdatedAt
-- uid: dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy*
-  commentId: Overload:dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy
+- uid: dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt*
+  commentId: Overload:dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt
   isExternal: true
-  href: dotNetBlocks.Business.Shared.AuditProperties.html#dotNetBlocks_Business_Shared_AuditProperties_UpdatedBy
-  name: UpdatedBy
-  nameWithType: AuditProperties.UpdatedBy
-  fullName: dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy
+  href: dotNetBlocks.Business.Shared.AuditProperties.html#dotNetBlocks_Business_Shared_AuditProperties_UpdatedAt
+  name: UpdatedAt
+  nameWithType: AuditProperties.UpdatedAt
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.UpdatedAt
 - uid: dotNetBlocks.IAuditable.UpdatedBy
   commentId: P:dotNetBlocks.IAuditable.UpdatedBy
   parent: dotNetBlocks.IAuditable
@@ -796,3 +794,10 @@ references:
   name: UpdatedBy
   nameWithType: IAuditable.UpdatedBy
   fullName: dotNetBlocks.IAuditable.UpdatedBy
+- uid: dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy*
+  commentId: Overload:dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy
+  isExternal: true
+  href: dotNetBlocks.Business.Shared.AuditProperties.html#dotNetBlocks_Business_Shared_AuditProperties_UpdatedBy
+  name: UpdatedBy
+  nameWithType: AuditProperties.UpdatedBy
+  fullName: dotNetBlocks.Business.Shared.AuditProperties.UpdatedBy

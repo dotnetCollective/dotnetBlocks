@@ -1,29 +1,7 @@
 items:
-  - name: Business.Shared
-    href: Business.Shared.md
-  - name: DotNetBlocks.Extensions
-    href: Extensions.md
-    order: 0
   - name: Libraries
     href: index.md
-  - name: DotNetBlocks.ServiceBus
-    href: ServiceBus.md
-  - name: DotNetBlocks.ServiceBus.Shared
-    href: ServiceBus.Shared.md
-  - name: DotNetBlocks.System.Collections
-    href: System.Collections.md
-    order: 0
-  - name: DotNetBlocks.System.Enums
-    href: System.Enums.md
-    order: 0
-  - name: DotNetBlocks.System.IO
-    href: System.IO.md
-    order: 0
-  - name: DotNetBlocks.System.Linq
-    href: System.Linq.md
-    order: 0
-  - name: DotNetBlocks.System
-    href: System.md
-    order: 0
-  - name: dotNetBlocks.System.Threading
-    href: System.Threading.md
+  - name: Block Libraries
+    href: Blocks/toc.yml
+  - name: Solution Libraries
+    href: Solutions/toc.yml

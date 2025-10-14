@@ -19,7 +19,7 @@ items:
   fullName: System.EnumExtensions
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumExtensions.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -49,7 +49,7 @@ items:
   fullName: System.EnumExtensions.Min<TEnum>(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumExtensions.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -80,7 +80,7 @@ items:
   fullName: System.EnumExtensions.Max<TEnum>(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumExtensions.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -111,7 +111,7 @@ items:
   fullName: System.EnumExtensions.Length<TEnum>(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumExtensions.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -142,7 +142,7 @@ items:
   fullName: System.EnumExtensions.Name<TEnum>(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumExtensions.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -173,7 +173,7 @@ items:
   fullName: System.EnumExtensions.Description<TEnum>(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumExtensions.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System
@@ -204,7 +204,7 @@ items:
   fullName: System.EnumExtensions.GetMeta<TEnum>(TEnum)
   type: Method
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Enums/EnumExtensions.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Enums/EnumExtensions.cs
   assemblies:
   - dotNetBlocks.System.Enums
   namespace: System

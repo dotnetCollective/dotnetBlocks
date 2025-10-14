@@ -4,7 +4,6 @@ items:
   commentId: N:dotNetBlocks.Extensions.DependencyInjection
   id: dotNetBlocks.Extensions.DependencyInjection
   children:
-  - dotNetBlocks.Extensions.DependencyInjection.DependencyInjection
   - dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions
   - dotNetBlocks.Extensions.DependencyInjection.LazyService`1
   - dotNetBlocks.Extensions.DependencyInjection.ServiceCollectionLazyExtensions
@@ -18,13 +17,6 @@ items:
   assemblies:
   - dotNetBlocks.Extensions
 references:
-- uid: dotNetBlocks.Extensions.DependencyInjection.DependencyInjection
-  commentId: T:dotNetBlocks.Extensions.DependencyInjection.DependencyInjection
-  isExternal: true
-  href: dotNetBlocks.Extensions.DependencyInjection.DependencyInjection.html
-  name: DependencyInjection
-  nameWithType: DependencyInjection
-  fullName: dotNetBlocks.Extensions.DependencyInjection.DependencyInjection
 - uid: dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions
   commentId: T:dotNetBlocks.Extensions.DependencyInjection.DependencyInjectionExtensions
   isExternal: true

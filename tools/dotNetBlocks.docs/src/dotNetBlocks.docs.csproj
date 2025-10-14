@@ -68,6 +68,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="..\..\..\docs\Libraries\toc.yml" />
+    <Content Remove="..\..\..\docs\templates\material\public\toc.yml" />
+    <Content Remove="..\..\..\docs\templates\material\toc.yml" />
+    <Content Remove="..\..\..\docs\templates\toc.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
   <Content Update="$(NuGetPackageRoot)\microsoft.codeanalysis.workspaces.msbuild\**\**" Visible="false" />
 </ItemGroup>
 

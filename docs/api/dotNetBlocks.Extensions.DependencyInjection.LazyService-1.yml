@@ -14,15 +14,22 @@ items:
   fullName: dotNetBlocks.Extensions.DependencyInjection.LazyService<T>
   type: Class
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/DependencyInjection/LazyService.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/DependencyInjection/LazyService.cs
   assemblies:
   - dotNetBlocks.Extensions
   namespace: dotNetBlocks.Extensions.DependencyInjection
+  summary: Extends the <xref href="System.Lazy%601" data-throw-if-not-resolved="false"></xref> class with SI constructor support;
+  remarks: Is the implementation class type registered for open lazy type.
+  example: []
   syntax:
     content: 'public class LazyService<T> : Lazy<T> where T : class'
     typeParameters:
     - id: T
+      description: ''
     content.vb: Public Class LazyService(Of T As Class) Inherits Lazy(Of T)
+  seealso:
+  - linkId: System.Lazy`1
+    commentId: T:System.Lazy`1
   inheritance:
   - System.Object
   - System.Lazy{{T}}
@@ -59,21 +66,52 @@ items:
   fullName: dotNetBlocks.Extensions.DependencyInjection.LazyService<T>.LazyService(Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)
   type: Constructor
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Extensions/DependencyInjection/LazyService.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Extensions/DependencyInjection/LazyService.cs
   assemblies:
   - dotNetBlocks.Extensions
   namespace: dotNetBlocks.Extensions.DependencyInjection
+  summary: Initializes a new instance of the <xref href="dotNetBlocks.Extensions.DependencyInjection.LazyService%601" data-throw-if-not-resolved="false"></xref> class. with a specific <xref href="Microsoft.Extensions.DependencyInjection.IServiceScopeFactory" data-throw-if-not-resolved="false"></xref>
+  example: []
   syntax:
     content: public LazyService(IServiceScopeFactory scopeFactory)
     parameters:
     - id: scopeFactory
       type: Microsoft.Extensions.DependencyInjection.IServiceScopeFactory
+      description: The scope factory.
     content.vb: Public Sub New(scopeFactory As IServiceScopeFactory)
   overload: dotNetBlocks.Extensions.DependencyInjection.LazyService`1.#ctor*
   nameWithType.vb: LazyService(Of T).New(IServiceScopeFactory)
   fullName.vb: dotNetBlocks.Extensions.DependencyInjection.LazyService(Of T).New(Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)
   name.vb: New(IServiceScopeFactory)
 references:
+- uid: System.Lazy`1
+  commentId: T:System.Lazy`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.lazy-1
+  name: Lazy<T>
+  nameWithType: Lazy<T>
+  fullName: System.Lazy<T>
+  nameWithType.vb: Lazy(Of T)
+  fullName.vb: System.Lazy(Of T)
+  name.vb: Lazy(Of T)
+  spec.csharp:
+  - uid: System.Lazy`1
+    name: Lazy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.lazy-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Lazy`1
+    name: Lazy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.lazy-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: dotNetBlocks.Extensions.DependencyInjection
   commentId: N:dotNetBlocks.Extensions.DependencyInjection
   isExternal: true
@@ -523,34 +561,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Lazy`1
-  commentId: T:System.Lazy`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.lazy-1
-  name: Lazy<T>
-  nameWithType: Lazy<T>
-  fullName: System.Lazy<T>
-  nameWithType.vb: Lazy(Of T)
-  fullName.vb: System.Lazy(Of T)
-  name.vb: Lazy(Of T)
-  spec.csharp:
-  - uid: System.Lazy`1
-    name: Lazy
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.lazy-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Lazy`1
-    name: Lazy
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.lazy-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: System.Lazy`1.ToString
   commentId: M:System.Lazy`1.ToString
   isExternal: true
@@ -703,6 +713,42 @@ references:
     name: Linq
     isExternal: true
     href: System.Linq.html
+- uid: dotNetBlocks.Extensions.DependencyInjection.LazyService`1
+  commentId: T:dotNetBlocks.Extensions.DependencyInjection.LazyService`1
+  isExternal: true
+  href: dotNetBlocks.Extensions.DependencyInjection.LazyService-1.html
+  name: LazyService<T>
+  nameWithType: LazyService<T>
+  fullName: dotNetBlocks.Extensions.DependencyInjection.LazyService<T>
+  nameWithType.vb: LazyService(Of T)
+  fullName.vb: dotNetBlocks.Extensions.DependencyInjection.LazyService(Of T)
+  name.vb: LazyService(Of T)
+  spec.csharp:
+  - uid: dotNetBlocks.Extensions.DependencyInjection.LazyService`1
+    name: LazyService
+    isExternal: true
+    href: dotNetBlocks.Extensions.DependencyInjection.LazyService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: dotNetBlocks.Extensions.DependencyInjection.LazyService`1
+    name: LazyService
+    isExternal: true
+    href: dotNetBlocks.Extensions.DependencyInjection.LazyService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Extensions.DependencyInjection.IServiceScopeFactory
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicescopefactory
+  name: IServiceScopeFactory
+  nameWithType: IServiceScopeFactory
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceScopeFactory
 - uid: dotNetBlocks.Extensions.DependencyInjection.LazyService`1.#ctor*
   commentId: Overload:dotNetBlocks.Extensions.DependencyInjection.LazyService`1.#ctor
   isExternal: true
@@ -713,14 +759,6 @@ references:
   nameWithType.vb: LazyService(Of T).New
   fullName.vb: dotNetBlocks.Extensions.DependencyInjection.LazyService(Of T).New
   name.vb: New
-- uid: Microsoft.Extensions.DependencyInjection.IServiceScopeFactory
-  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory
-  parent: Microsoft.Extensions.DependencyInjection
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicescopefactory
-  name: IServiceScopeFactory
-  nameWithType: IServiceScopeFactory
-  fullName: Microsoft.Extensions.DependencyInjection.IServiceScopeFactory
 - uid: Microsoft.Extensions.DependencyInjection
   commentId: N:Microsoft.Extensions.DependencyInjection
   isExternal: true

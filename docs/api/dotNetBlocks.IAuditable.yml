@@ -17,10 +17,13 @@ items:
   fullName: dotNetBlocks.IAuditable
   type: Interface
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/IAuditable.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/IAuditable.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks
+  summary: Interface for _auditProperties objects and entities.
+  remarks: Standard Properties for tracking item CRUD behaviors.
+  example: []
   syntax:
     content: public interface IAuditable
     content.vb: Public Interface IAuditable
@@ -44,15 +47,18 @@ items:
   fullName: dotNetBlocks.IAuditable.CreatedAt
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/IAuditable.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/IAuditable.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks
+  summary: Date time created;
+  example: []
   syntax:
     content: DateTimeOffset? CreatedAt { get; set; }
     parameters: []
     return:
       type: System.Nullable{System.DateTimeOffset}
+      description: time created
     content.vb: Property CreatedAt As DateTimeOffset?
   overload: dotNetBlocks.IAuditable.CreatedAt*
 - uid: dotNetBlocks.IAuditable.CreatedBy
@@ -67,15 +73,18 @@ items:
   fullName: dotNetBlocks.IAuditable.CreatedBy
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/IAuditable.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/IAuditable.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks
+  summary: creator
+  example: []
   syntax:
     content: string? CreatedBy { get; set; }
     parameters: []
     return:
       type: System.String
+      description: Creator.
     content.vb: Property CreatedBy As String
   overload: dotNetBlocks.IAuditable.CreatedBy*
 - uid: dotNetBlocks.IAuditable.UpdatedAt
@@ -90,15 +99,18 @@ items:
   fullName: dotNetBlocks.IAuditable.UpdatedAt
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/IAuditable.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/IAuditable.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks
+  summary: date time updated.
+  example: []
   syntax:
     content: DateTimeOffset? UpdatedAt { get; set; }
     parameters: []
     return:
       type: System.Nullable{System.DateTimeOffset}
+      description: Date time of the last update.
     content.vb: Property UpdatedAt As DateTimeOffset?
   overload: dotNetBlocks.IAuditable.UpdatedAt*
 - uid: dotNetBlocks.IAuditable.UpdatedBy
@@ -113,15 +125,18 @@ items:
   fullName: dotNetBlocks.IAuditable.UpdatedBy
   type: Property
   source:
-    href: https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.Business.Shared/IAuditable.cs
+    href: https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.Business.Shared/IAuditable.cs
   assemblies:
   - dotNetBlocks.Business.Shared
   namespace: dotNetBlocks
+  summary: Gets or sets the updated by.
+  example: []
   syntax:
     content: string? UpdatedBy { get; set; }
     parameters: []
     return:
       type: System.String
+      description: Update actor.
     content.vb: Property UpdatedBy As String
   overload: dotNetBlocks.IAuditable.UpdatedBy*
 references:

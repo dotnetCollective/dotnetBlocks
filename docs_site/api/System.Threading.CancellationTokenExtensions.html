@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CancellationTokenExtensions | DotNetBlocks ">
       
-      
+      <meta name="description" content="Adds functionality to cancelation tokens. Specifically helps for scenarios where you have the token but may not have access to the source.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="System_Threading_CancellationTokenExtensions" data-uid="System.Threading.CancellationTokenExtensions" class="text-break">
-Class CancellationTokenExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class CancellationTokenExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
   <dl><dt>Assembly</dt><dd>dotNetBlocks.System.Threading.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Adds functionality to cancelation tokens.
+Specifically helps for scenarios where you have the token but may not have access to the source.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -146,6 +148,10 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 
 
 
+  <h2 id="System_Threading_CancellationTokenExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Cancelation functions can either access the internal token source or use an intermediate source. Common practice uses a temporary linked <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a>. We use that method here.
+LLots of these methods only work because         disposing a token source doesn't break the token.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,7 +162,7 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 
   <h3 id="System_Threading_CancellationTokenExtensions_Cancel_System_Threading_CancellationToken_" data-uid="System.Threading.CancellationTokenExtensions.Cancel(System.Threading.CancellationToken)">
   Cancel(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -187,7 +193,7 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 
   <h3 id="System_Threading_CancellationTokenExtensions_CancelAfter_System_Threading_CancellationToken_System_Int32_" data-uid="System.Threading.CancellationTokenExtensions.CancelAfter(System.Threading.CancellationToken,System.Int32)">
   CancelAfter(CancellationToken, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -220,7 +226,7 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 
   <h3 id="System_Threading_CancellationTokenExtensions_CancelAfter_System_Threading_CancellationToken_System_TimeSpan_" data-uid="System.Threading.CancellationTokenExtensions.CancelAfter(System.Threading.CancellationToken,System.TimeSpan)">
   CancelAfter(CancellationToken, TimeSpan)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -253,7 +259,7 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 
   <h3 id="System_Threading_CancellationTokenExtensions_CancelAsync_System_Threading_CancellationToken_" data-uid="System.Threading.CancellationTokenExtensions.CancelAsync(System.Threading.CancellationToken)">
   CancelAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -289,10 +295,11 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 
   <h3 id="System_Threading_CancellationTokenExtensions_CreateLinkedToken_System_Collections_Generic_IEnumerable_System_Threading_CancellationToken__" data-uid="System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})">
   CreateLinkedToken(IEnumerable&lt;CancellationToken&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates the linked token.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -302,7 +309,8 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tokens</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The tokens.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -317,15 +325,24 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 
 
 
+  <h4 class="section" id="System_Threading_CancellationTokenExtensions_CreateLinkedToken_System_Collections_Generic_IEnumerable_System_Threading_CancellationToken___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This only works because disposing a token source doesn't break the token.</p>
+</div>
 
 
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource.createlinkedtokensource#system-threading-cancellationtokensource-createlinkedtokensource(system-threading-cancellationtoken())">CreateLinkedTokenSource</a>(params <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>[])</div>
+    </dd>
+  </dl>
 
 
   <a id="System_Threading_CancellationTokenExtensions_CreateLinkedToken_" data-uid="System.Threading.CancellationTokenExtensions.CreateLinkedToken*"></a>
 
   <h3 id="System_Threading_CancellationTokenExtensions_CreateLinkedToken_System_Threading_CancellationToken_System_Collections_Generic_IEnumerable_System_Threading_CancellationToken__" data-uid="System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})">
   CreateLinkedToken(CancellationToken, IEnumerable&lt;CancellationToken&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -357,13 +374,19 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 
 
 
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource.createlinkedtokensource#system-threading-cancellationtokensource-createlinkedtokensource(system-threading-cancellationtoken())">CreateLinkedTokenSource</a>(params <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>[])</div>
+    </dd>
+  </dl>
 
 
   <a id="System_Threading_CancellationTokenExtensions_CreateLinkedToken_" data-uid="System.Threading.CancellationTokenExtensions.CreateLinkedToken*"></a>
 
   <h3 id="System_Threading_CancellationTokenExtensions_CreateLinkedToken_System_Threading_CancellationToken_System_Threading_CancellationToken___" data-uid="System.Threading.CancellationTokenExtensions.CreateLinkedToken(System.Threading.CancellationToken,System.Threading.CancellationToken[])">
   CreateLinkedToken(CancellationToken, params CancellationToken[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -395,13 +418,19 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 
 
 
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource.createlinkedtokensource#system-threading-cancellationtokensource-createlinkedtokensource(system-threading-cancellationtoken())">CreateLinkedTokenSource</a>(params <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>[])</div>
+    </dd>
+  </dl>
 
 
   <a id="System_Threading_CancellationTokenExtensions_CreateLinkedTokenSource_" data-uid="System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource*"></a>
 
   <h3 id="System_Threading_CancellationTokenExtensions_CreateLinkedTokenSource_System_Collections_Generic_IEnumerable_System_Threading_CancellationToken__" data-uid="System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})">
   CreateLinkedTokenSource(IEnumerable&lt;CancellationToken&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -431,13 +460,19 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 
 
 
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource.createlinkedtokensource#system-threading-cancellationtokensource-createlinkedtokensource(system-threading-cancellationtoken())">CreateLinkedTokenSource</a>(params <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>[])</div>
+    </dd>
+  </dl>
 
 
   <a id="System_Threading_CancellationTokenExtensions_CreateLinkedTokenSource_" data-uid="System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource*"></a>
 
   <h3 id="System_Threading_CancellationTokenExtensions_CreateLinkedTokenSource_System_Threading_CancellationToken_System_Collections_Generic_IEnumerable_System_Threading_CancellationToken__" data-uid="System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{System.Threading.CancellationToken})">
   CreateLinkedTokenSource(CancellationToken, IEnumerable&lt;CancellationToken&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -469,13 +504,19 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 
 
 
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource.createlinkedtokensource#system-threading-cancellationtokensource-createlinkedtokensource(system-threading-cancellationtoken())">CreateLinkedTokenSource</a>(params <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>[])</div>
+    </dd>
+  </dl>
 
 
   <a id="System_Threading_CancellationTokenExtensions_CreateLinkedTokenSource_" data-uid="System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource*"></a>
 
   <h3 id="System_Threading_CancellationTokenExtensions_CreateLinkedTokenSource_System_Threading_CancellationToken_System_Threading_CancellationToken___" data-uid="System.Threading.CancellationTokenExtensions.CreateLinkedTokenSource(System.Threading.CancellationToken,System.Threading.CancellationToken[])">
   CreateLinkedTokenSource(CancellationToken, params CancellationToken[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -507,16 +548,23 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 
 
 
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource.createlinkedtokensource#system-threading-cancellationtokensource-createlinkedtokensource(system-threading-cancellationtoken())">CreateLinkedTokenSource</a>(params <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>[])</div>
+    </dd>
+  </dl>
 
 
   <a id="System_Threading_CancellationTokenExtensions_GetSetCanInternalTokenSource_" data-uid="System.Threading.CancellationTokenExtensions.GetSetCanInternalTokenSource*"></a>
 
   <h3 id="System_Threading_CancellationTokenExtensions_GetSetCanInternalTokenSource_System_Threading_CancellationToken__" data-uid="System.Threading.CancellationTokenExtensions.GetSetCanInternalTokenSource(System.Threading.CancellationToken@)">
   GetSetCanInternalTokenSource(ref CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the internal <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> from the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -526,13 +574,15 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> for the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</dd>
   </dl>
 
 
@@ -541,6 +591,9 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 
 
 
+  <h4 class="section" id="System_Threading_CancellationTokenExtensions_GetSetCanInternalTokenSource_System_Threading_CancellationToken___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Read the documetation before using this very unsafe technique.</p>
+</div>
 
 
 
@@ -549,7 +602,7 @@ Class CancellationTokenExtensions  <a class="header-action link-secondary" title
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/db43d826724d3ebd40fa1b0b810ab45c0dd8f9c0/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/861b63c986923085177f2ab5bc993b426e7aa43e/src/dotNetBlocks.System.Threading/CancellationTokenExtensions.cs" class="edit-link">Edit this page</a>
         </div>
 
 
