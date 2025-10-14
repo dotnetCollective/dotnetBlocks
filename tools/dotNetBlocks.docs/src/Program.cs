@@ -57,30 +57,54 @@ namespace dotNetBlocks.Docs
             if (updateToc)
             {
                 var tocGenerator = new TocGenerator();
-                const TocActions basicActions = TocActions.Process | TocActions.WriteToc | TocActions.Overwrite;
+                const TocActions basicActions = TocActions.Process | TocActions.WriteToc | TocActions.Overwrite | TocActions.SortNodes;
 
 
                 var rootToc = await tocGenerator.BuildTocAsync(
                     rootFolder: rootFolderName,
-                    ( string? folderName, out string? title) =>
+                    ( string? folderName, out string? title, out int? order) =>
                     {
                         title = null;
-                        var action = TocActions.Process | TocActions.WriteToc | TocActions.Overwrite | TocActions.ReferencedToc;
+                        order = null;
+                        var action = basicActions | TocActions.ReferencedToc;
 
                         if (folderName!.EndsWith("docs", StringComparison.OrdinalIgnoreCase))
                         {
                             title = "Documentation";
+                            action |= TocActions.SortNodes;
+                            order = -1;
                         }
                         if (folderName.Contains(@"\api", StringComparison.OrdinalIgnoreCase))
                         {
                             title = "API";
+                            action = TocActions.Process | TocActions.ReferencedToc ;
+                            order = 3;
+                        }
+                        if (folderName.EndsWith(@"\Design", StringComparison.OrdinalIgnoreCase))
+                        {
                             action = TocActions.Process | TocActions.ReferencedToc;
+                            order = 2;
+                        }
+                        if (folderName.EndsWith(@"\Process", StringComparison.OrdinalIgnoreCase))
+                        {
+                            action = TocActions.Process | TocActions.ReferencedToc;
+                            order = 1;
                         }
                         if (folderName.Contains(@"\images", StringComparison.OrdinalIgnoreCase))
                             action = TocActions.Ignore;
 
                         if (folderName.Contains(@"\templates", StringComparison.OrdinalIgnoreCase))
                             action = TocActions.Ignore;
+                        if (folderName.EndsWith(@"\libraries", StringComparison.OrdinalIgnoreCase))
+                        {
+                            action = basicActions;
+                            order = -1;
+                        }
+                        if (folderName.Contains(@"\libraries\solutions", StringComparison.OrdinalIgnoreCase))
+                        {
+                            action = basicActions | TocActions.NestedToc;
+                        }
+
                         if (folderName.Contains(@"\libraries\blocks", StringComparison.OrdinalIgnoreCase))
                             action = basicActions | TocActions.NestedToc;
                         if (folderName.Contains(@"\libraries\solutions", StringComparison.OrdinalIgnoreCase))

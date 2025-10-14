@@ -6,7 +6,7 @@ ShowInNavigation: True
 ShowInSidebar: True
 NoSidebar: false
 Level: 1
-Order: 1
+Order: 0
 Excerpt: Describes the design and philosophy for the architecture.
 --->
 

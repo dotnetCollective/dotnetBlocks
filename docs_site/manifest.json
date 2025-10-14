@@ -1360,6 +1360,16 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "Design/Business/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Design/Business/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "Design/Business/toc.yml",
       "output": {
@@ -1404,10 +1414,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Design/ServiceBus/ServiceBus.md",
+      "source_relative_path": "Design/ServiceBus/index.md",
       "output": {
         ".html": {
-          "relative_path": "Design/ServiceBus/ServiceBus.html"
+          "relative_path": "Design/ServiceBus/index.html"
         }
       },
       "version": ""

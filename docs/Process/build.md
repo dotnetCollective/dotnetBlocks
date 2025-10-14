@@ -4,6 +4,7 @@ BreadcrumbTitle: Process.Build
 ShowInNavigation: true
 ShowInSidebar: true
 NoSidebar: false
+Order: 1
 Description: Describes how the build process works with references to the tooling and ideaologies.
 
 --->

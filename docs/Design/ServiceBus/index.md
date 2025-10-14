@@ -1,5 +1,5 @@
 ﻿<!---
-Title: Service Bus
+Title: Design - Service Bus
 --->
 
 ## Messages, Envelopes, the Design approach and architectural decisions.

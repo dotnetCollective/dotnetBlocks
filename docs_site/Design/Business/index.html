@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | DotNetBlocks </title>
+      <title>Summary | DotNetBlocks </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | DotNetBlocks ">
+      <meta name="title" content="Summary | DotNetBlocks ">
       
       
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
       
-      <meta name="docfx:rel" content="../">
+      <meta name="docfx:rel" content="../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/dotnetCollective/dotnetBlocks/blob/features/general-create/Docs/Process/build.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/dotnetCollective/dotnetBlocks/blob/features/general-create/Docs/Design/Business/index.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./../public/docfx.min.js"></script>
+      <script type="module" src="./../../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -43,8 +43,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../Images/DotNetBlocks.svg" alt="">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../Images/DotNetBlocks.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,26 +87,33 @@
         <article data-uid="">
 
 <!---
-Title: Process.Build
-BreadcrumbTitle: Process.Build
-ShowInNavigation: true
-ShowInSidebar: true
+Title: Design - Business
+NavigationTitle: Design - Business
+BreadcrumbTitle: Design - Business
+ShowInNavigation: True
+ShowInSidebar: True
 NoSidebar: false
-Order: 1
-Description: Describes how the build process works with references to the tooling and ideaologies.
-
+Level: 1
+Order: 0
+Excerpt: Describes what the business area of the design is.
 --->
-<h2 id="versioning">Versioning</h2>
-<p>Projects use semantic versioning. (major, minor, build, patch, rev)/ See this link from semantic versioning.org for more information.</p>
-<p><a href="https://semver.org/">https://semver.org/</a></p>
-<h2 id="pack-attributes">Pack attributes</h2>
-<p>This link explains attributes you can mange for the nuget pack process.
-<a href="https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#nuget-metadata-properties">https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#nuget-metadata-properties</a></p>
+<blockquote>
+</blockquote>
+<h1 id="summary">Summary</h1>
+<p>In this design, the business classes are the base uses to implement all the business logic and domain models.</p>
+<p>Using these classes as the base allows the rest of the system to extend and wrap these classes to easily solve business problems.</p>
+<h2 id="business-logic"><a href="Business.Logic.html">Business Logic</a></h2>
+<p>Business logic classes support, contain and isolate business logic, preventing bleeding into the rest of the design.</p>
+<h3 id="operations"><a href="../Operations.html">Operations</a></h3>
+<p>Operations and events are the implementations of a command parameter pattern, isolating the events and commands from the business logic and transport. Operations are self-validating increasing the probability of success prior to presentation for processing.</p>
+<h3 id="business-entities"><a href="Business.Entities.html">Business Entities</a></h3>
+<p>Business entities represent the domain model base building blocks. A business entity approach forces engineers to model the business using a domain model approach and allows the framework to expand generically, but extends the functionality gated to business entities or business entity based intefaces.</p>
+<h3 id="references"><a href="../References.html">References</a></h3>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/features/general-create/Docs/Process/build.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/features/general-create/Docs/Design/Business/index.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

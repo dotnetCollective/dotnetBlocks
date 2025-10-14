@@ -1,14 +1,19 @@
 items:
   - name: Get started
     href: Get.started.md
+    order: -2
   - name: About .NetBlocks
     href: index.md
-    order: 0
-  - name: API
-    href: api/
-  - name: The Design
-    href: Design/
-    order: 1
+    order: -1
   - name: Libraries
     href: Libraries/
-  - href: Process/
+    order: -1
+  - name: Process
+    href: Process/
+    order: 1
+  - name: The Design
+    href: Design/
+    order: 2
+  - name: API
+    href: api/
+    order: 3

@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | DotNetBlocks </title>
+      <title>Message design approach. | DotNetBlocks </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | DotNetBlocks ">
+      <meta name="title" content="Message design approach. | DotNetBlocks ">
       
       
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
       
-      <meta name="docfx:rel" content="../">
+      <meta name="docfx:rel" content="../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/dotnetCollective/dotnetBlocks/blob/features/general-create/Docs/Process/build.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/dotnetCollective/dotnetBlocks/blob/features/general-create/Docs/Design/ServiceBus/index.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./../public/docfx.min.js"></script>
+      <script type="module" src="./../../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -43,8 +43,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../Images/DotNetBlocks.svg" alt="">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../Images/DotNetBlocks.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,26 +87,23 @@
         <article data-uid="">
 
 <!---
-Title: Process.Build
-BreadcrumbTitle: Process.Build
-ShowInNavigation: true
-ShowInSidebar: true
-NoSidebar: false
-Order: 1
-Description: Describes how the build process works with references to the tooling and ideaologies.
-
+Title: Design - Service Bus
 --->
-<h2 id="versioning">Versioning</h2>
-<p>Projects use semantic versioning. (major, minor, build, patch, rev)/ See this link from semantic versioning.org for more information.</p>
-<p><a href="https://semver.org/">https://semver.org/</a></p>
-<h2 id="pack-attributes">Pack attributes</h2>
-<p>This link explains attributes you can mange for the nuget pack process.
-<a href="https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#nuget-metadata-properties">https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#nuget-metadata-properties</a></p>
+<h2 id="messages-envelopes-the-design-approach-and-architectural-decisions">Messages, Envelopes, the Design approach and architectural decisions.</h2>
+<h1 id="message-design-approach">Message design approach.</h1>
+<p>Mass transit messages a class and MT uses an envelope design pattern, wrapping every transmitted message in an envelope.
+In our service bus implementation, we also use an envelope design pattern, but we will hide it from the end consumer using extensions and generic types.
+. When a message is transmitted in mass transit, it is wrapped in an envelope - a standard pattern for service bus and messaging technologies.</p>
+<h1 id="handlers---handlers-function-as-consumers-in-the-mt-world">Handlers - handlers function as consumers in the MT world.</h1>
+<p>We are implementing the base handler so it can be used as is in straight inheritance or can be injected with a class and a delegate.</p>
+<h3 id="servicebusshared"><a href="/Libraries/ServiceBus.html">ServiceBus.Shared</a></h3>
+<p>This library contains all the models contracts and attributes used by message bus functionality.
+Creating a message base class is against recommendations by mass transit, but this is actually a common envelope for our business activities and is a different approach to MT which we are extending.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/features/general-create/Docs/Process/build.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/dotnetCollective/dotnetBlocks/blob/features/general-create/Docs/Design/ServiceBus/index.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

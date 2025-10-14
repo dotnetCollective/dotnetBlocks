@@ -4,6 +4,7 @@ NavigationTitle: Get started
 ShowInNavigation: true
 ShowInSidebar: true
 NoSidebar: false
+Order: -2
 Excerpt: How to get going with .NetBlocks
 --->
 

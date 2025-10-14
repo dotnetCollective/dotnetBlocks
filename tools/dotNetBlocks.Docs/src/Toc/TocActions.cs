@@ -22,7 +22,7 @@ namespace dotNetBlocks.Docs.Toc
         /// <summary>
         /// Process the folder
         /// </summary>
-        Process = 0x01,
+        Process = 0x01, 
         /// <summary>
         /// Write Toc.yaml file if missing
         /// </summary>
@@ -31,8 +31,27 @@ namespace dotNetBlocks.Docs.Toc
         /// Overwrite toc.yaml file if it exists
         /// </summary>
         Overwrite = 0x04,
-        NestedToc = 0x10,
-        ReferencedToc = 0x20,
+        /// <summary>
+        /// Creates a nested TOC node
+        /// </summary>
+        /// <remarks>
+        /// href = folder/toc.yml
+        /// </remarks>
+        NestedToc = 0x100,
+        /// <summary>
+        /// Creates a referenced TOC node
+        /// </summary>
+        /// <remarks>
+        /// href = folder/
+        /// </remarks>
+        ReferencedToc = 0x200,
+
+        /// <summary>
+        /// Sorts the nodes by ascending order.
+        /// Lowest value nodes come first.
+        /// </summary>
+        SortNodes = 0x400,
+        // SortNodesAscending = 0x800,
 
     }
 }

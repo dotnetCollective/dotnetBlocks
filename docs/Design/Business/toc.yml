@@ -3,3 +3,6 @@ items:
     href: Business.Entities.md
   - name: Business Logic
     href: Business.Logic.md
+  - name: Design - Business
+    href: index.md
+    order: 0

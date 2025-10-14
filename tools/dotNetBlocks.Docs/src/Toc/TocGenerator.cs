@@ -1,5 +1,6 @@
 ﻿using Docfx.YamlSerialization;
 using dotNetBlocks.Docs.Markdown;
+using ICSharpCode.Decompiler.Util;
 using Microsoft.AspNetCore.Builder;
 using System;
 using System.Diagnostics.CodeAnalysis;
@@ -12,9 +13,10 @@ namespace dotNetBlocks.Docs.Toc;
 /// Signature for a method delegate to decide the actions to perform for a specified folder.
 /// </summary>
 /// <param name="folderName"> folder being processed</param>
-/// <param name="Title">Title to use for the entry. </param>
+/// <param name="title">title to use for the entry. </param>
+/// <param name="order"> Overrides the order value for the node.</param>
 /// <returns><see cref="TocActions"/> to take on the entry. </returns>
-public delegate TocActions TocFolderDecision(string? folderName, out string? Title);
+public delegate TocActions TocFolderDecision(string? folderName, out string? title, out int? order);
 
 /// <summary>
 /// Generates Table of Contents Files.
@@ -26,7 +28,7 @@ public class TocGenerator
     /// </summary>
     /// <remarks>This property provides a default delegate that determines how TOC folders are processed. It
     /// can be used as a fallback when no specific folder decision logic is supplied by the caller.</remarks>
-    public static TocFolderDecision DefaultTocDecision { get; } = (string? folderName, out string? title) => { title = default; return TocActions.Ignore; }; // Do nothing.
+    public static TocFolderDecision DefaultTocDecision { get; } = (string? folderName, out string? title, out int? order ) => { title = default; order = default; return TocActions.Ignore; }; // Do nothing.
 
     private const string TOC_FILE_NAME = "toc.yml";
     private const string INDEX_FILE_NAME = "index.md";
@@ -78,7 +80,7 @@ public class TocGenerator
         CheckFolderExists(folderName);
 
         // Get a decision for this folder.
-        var action = folderDecision(folderName, out var newTitle);
+        var action = folderDecision(folderName, out var newTitle, out var order);
 
         if (action.HasFlag(TocActions.ReferencedToc) && action.HasFlag(TocActions.NestedToc)) throw new InvalidOperationException($"Action cannot specify referenced and nested TOC flags.");
 
@@ -103,7 +105,7 @@ public class TocGenerator
         foreach (var subFolderName in Directory.GetDirectories(folderName))
         {
             // Do we process this folder?
-            if (folderDecision(subFolderName, out _) == TocActions.Ignore)
+            if (folderDecision(subFolderName, out _, out _) == TocActions.Ignore)
                 continue;
 
             // Process the sub folder.
@@ -115,6 +117,12 @@ public class TocGenerator
         }
 
         // TODO: Add sorting rules based on natural sort, sort order and special files like index.md and toc.yml.
+        if (action.HasFlag(TocActions.SortNodes))
+        {
+            tocItems.Sort(
+                (x, y) =>(x.Order??0).CompareTo(y.Order??0)
+                );
+        }
 
 
         // We have all our file content and our sub-folder content.
@@ -157,8 +165,15 @@ public class TocGenerator
             if (indexFileNode is null) throw new NullReferenceException(nameof(indexFileNode));
 
             // Update the node info.
-            toc.Name = newTitle ?? indexFileNode.Name ?? relativeFolderName?.ToUpper(); // Decision file name or fallback on index file;
-            toc.Order = indexFileNode.Order;
+            toc.Name = newTitle ?? indexFileNode.Name ?? relativeFolderName; // Decision file name or fallback on index file;
+            toc.Order = order ?? indexFileNode.Order;
+        }
+        else
+        {
+            // Set the properties based on the action values.
+            // Update the node info.
+            toc.Name = toc.Name ??  newTitle ?? relativeFolderName; // Decision file name or fallback on index file;
+            toc.Order = toc.Order ??  order;
         }
 
         // Href is good, now point to toc or index file.
@@ -171,7 +186,7 @@ public class TocGenerator
                 toc.Href += TOC_FILE_NAME;
             }
             else
-            { 
+            {
                 // Default is referenced href=folder/
             }
         }

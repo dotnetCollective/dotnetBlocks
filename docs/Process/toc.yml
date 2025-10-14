@@ -1,3 +1,4 @@
 items:
   - name: Process.Build
     href: build.md
+    order: 1
